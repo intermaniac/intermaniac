@@ -1,12 +1,12 @@
 
-var page_size=5;
+var page_size=6;
 var preview_template = '<div class="col-lg-12">'+
 '                  <div class="blog-post">'+
 '                    <div class="blog-thumb d-none">'+
 '                      <img src="assets/images/blog-post-01.jpg" alt="">'+
 '                    </div>'+
 '                    <div class="down-content">'+
-'                      <span>Lifestyle</span>'+
+'                      <!--<span>Lifestyle</span>-->'+
 '                      <a href="pages/__url__"><h4>__title__</h4></a>'+
 '                      <ul class="post-info">'+
 '                        <li><a href="#">Admin</a></li>'+
@@ -41,7 +41,7 @@ var post_list_template = '<div class="col-lg-6 post-list-elem">'+
 '                      <img src="assets/images/blog-thumb-06.jpg" alt="">'+
 '                    </div>'+
 '                    <div class="down-content">'+
-'                      <span>Lifestyle</span>'+
+'                      <!--<span>Lifestyle</span>-->'+
 '                      <a href="pages/__url__"><h4>__title__</h4></a>'+
 '                      <ul class="post-info">'+
 '                        <li><a href="#">Admin</a></li>'+
@@ -69,8 +69,8 @@ var load_data = function(limit, from) {
 		url : "meta-config.json",
 		success : function(result) {
 
-			
-			
+
+
 			var pages = result.pages;
 			console.log(result.pages);
 			var count=0;
@@ -87,16 +87,16 @@ var load_data = function(limit, from) {
 				page_num=from;
 				from=(from+page_size)-1;
 			}
-			
+
 			for(var i=from;i<pages.length && count<limit;i++,count++){
 				var page = pages[i];
-				
+
 				if(is_preview){
 					var preview = preview_template.replace('__url__', page.url);
 					preview = preview.replace('__desc__', page.desc);
 					preview = preview.replace('__title__', page.title);
 					preview = preview.replace('__date__', page.date);
-					
+
 					$(preview).insertBefore($('#view_all'));
 				}
 				else{
@@ -104,15 +104,15 @@ var load_data = function(limit, from) {
 					blog_list = blog_list.replace('__desc__', page.desc);
 					blog_list = blog_list.replace('__title__', page.title);
 					blog_list = blog_list.replace('__date__', page.date);
-					
+
 					$(blog_list).insertBefore($('#page-numbers-div'));
-					
+
 					//update pagination
-					
+
 				}
 			}
-			
-			
+
+
 			var total_pages = pages.length/page_size;
 			$('.page-numbers').empty();
 			var is_active_set = false;
