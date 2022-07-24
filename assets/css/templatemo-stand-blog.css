@@ -513,6 +513,13 @@ header .navbar {
 	color: #f48840;
 }
 
+.post-tags a {
+  border: 1px solid;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .blog-posts .main-button a {
 	height: 60px;
 	line-height: 60px;

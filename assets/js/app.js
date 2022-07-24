@@ -69,11 +69,11 @@ var load_data = function(limit, from) {
 		url : "meta-config.json",
 		success : function(result) {
 
-
-
+			
+			
 			var pages = result.pages;
 			console.log(result.pages);
-			var count=0;
+			var count=1;
 			var is_preview = true;
 			if($('#post-list').length>0){
 				limit=page_size;
@@ -81,22 +81,23 @@ var load_data = function(limit, from) {
 				$('#post-list .post-list-elem').remove();
 			}
 			var page_num=1;
-			if(from == undefined || from==0){
-				from = 0;
+			if(from == undefined || from==1){
+				from = 1;
 			}else{
 				page_num=from;
-				from=(from+page_size)-1;
+				//from=(from+page_size)-1;
+				from=((from*page_size)-limit)+1;
 			}
-
-			for(var i=from;i<pages.length && count<limit;i++,count++){
-				var page = pages[i];
-
+			
+			for(var i=from;i<=pages.length && count<=limit;i++,count++){
+				var page = pages[i-1];
+				
 				if(is_preview){
 					var preview = preview_template.replace('__url__', page.url);
 					preview = preview.replace('__desc__', page.desc);
 					preview = preview.replace('__title__', page.title);
 					preview = preview.replace('__date__', page.date);
-
+					
 					$(preview).insertBefore($('#view_all'));
 				}
 				else{
@@ -104,44 +105,81 @@ var load_data = function(limit, from) {
 					blog_list = blog_list.replace('__desc__', page.desc);
 					blog_list = blog_list.replace('__title__', page.title);
 					blog_list = blog_list.replace('__date__', page.date);
-
+					
 					$(blog_list).insertBefore($('#page-numbers-div'));
-
+					
 					//update pagination
-
+					
 				}
 			}
-
-
+			
+			
 			var total_pages = pages.length/page_size;
 			$('.page-numbers').empty();
 			var is_active_set = false;
-			for(var i=0;i<total_pages;i++){
-				if(from == 0 || i==page_num){
+			
+			/*for(var i=1;i<=total_pages;i++){
+				if(from == 1 || i==page_num){
 					if(!is_active_set){
-						$('.page-numbers').append('<li class="active" data="'+(i)+'"><a href="#" onclick="select_page(event);">'+(i+1)+'</a></li>');
+						$('.page-numbers').append('<li class="active" data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
 						is_active_set=true;
 					}
 					else{
-						$('.page-numbers').append('<li data="'+(i)+'"><a href="#" onclick="select_page(event);">'+(i+1)+'</a></li>');
+						$('.page-numbers').append('<li data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
 					}
 				}
 				else{
-					$('.page-numbers').append('<li data="'+(i)+'"><a href="#" onclick="select_page(event);">'+(i+1)+'</a></li>');
+					$('.page-numbers').append('<li data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
 				}
-			}
+			}*/
+			
+			
+
+			
+		    $('.page-numbers').pagination({
+		        dataSource: Array.from({length: total_pages}, (_, i) => i + 1),
+		        pageSize: 1,
+		        pageNumber: Number(page_num),
+		        autoHidePrevious: true,
+		        autoHideNext: true,
+		        pageLink: '?page=?',
+		        callback: function(data, pagination) {
+		            console.log('page', data);
+		        }
+		    });
+
+
+			
 		}
 	});
 
 }
 
+var getUrlVars = function() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+    function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+  }
+
 var select_page = function(e){
 	e.preventDefault();
 	var page=$(e.target.parentElement).attr('data');
-	load_data(page_size, Number(page))
+	//load_data(page_size, Number(page))
+	
+	window.open('?page='+(Number(page))+'','_self');
 }
 
 window.onload = function() {
 	$('.owl-banner.owl-carousel .item').remove();
-	load_data(3);
+	
+	var page = getUrlVars()['page'];
+	if(page){
+		load_data(page_size, Number(page))
+	}
+	else{
+		load_data(3);
+	}
 };
