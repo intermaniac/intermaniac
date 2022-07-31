@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Regular expressions in javascript are not ...">
+    <meta name="author" content="Team intermaniac">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Regular expressions in javascript are no...</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><h2>Technology Blog<em>.</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">Blog Entries</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link d-none" href="../post-details.html">Post Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h2>Regular expressions in javascript are no...</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section class="blog-posts grid-system">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="all-blog-posts">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="blog-post">
+                    <div class="blog-thumb d-none">
+                      <img src="../assets/images/blog-post-02.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                      <span>Regular expressions in javascript are no...</span>
+                      <a href="#"><h4>Regular expressions in javascript are not ...</h4></a>
+                      <ul class="post-info">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">2022-07-31 05:47:56.312344</a></li>
+
+                      </ul>
+                      <p>Regular expressions in javascript are not that scary, here's a detailed thread on what they are, how they are used and their use cases. 💥💥 https://t.co/9a6yx4cs8e<br><br>regular expressions (regex) is an object that is used to match a sequence of characters in strings.
+
+this is used to define search patterns, input validation and so on.
+regex are executed using the exec() and test() methods in javascript.<br><br>the code below defines a regex pattern.
+
+ the pattern is: any five letter string starting with b and ending with s. https://t.co/lkwtvenjbd<br><br>using the pattern above, check out which words would actually match below.
+
+  /^b...s$/
+
+"bucks" -----&gt; match ✅
+"beans" -----&gt; match ✅
+"bass" -----&gt; no match ❎
+"bucks" -----&gt; no match ❎<br><br>there are two ways of creating regex in javascript:
+
+- using a regular expression literal (pattern enclosed between forward slashes)
+- using the regexp() constructor 
+
+check codes below https://t.co/mwgzohetdl<br><br>metacharacters
+to specify regular expression patterns, we use metacharacters such as the ones below:
+
+[] . ^ $ * + ? {} () \ |<br><br>square brackets []
+this is used to specify the set of characters you wish to match.
+
+for example: [xyz] will match if the string contains "x, y, or z"<br><br>period .
+we use the period to match any single character except a new line.
+
+for example:
+given two periods  ..
+
+a -----&gt; no match 
+ab -----&gt; 1 match 
+abc -----&gt; 1 match (contains 3 characters)
+abcd -----&gt; 2 matches (contains 4 characters)<br><br>caret ^
+we use a caret to check if a string begins with a specified character.
+
+for example:
+^ca 
+
+cat -----&gt; 1 match ✅
+carrot -----&gt; 1 match ✅
+corn -----&gt; no match ❎<br><br>dollar $
+we use a dollar to check if a string ends with a specified character
+
+for example:
+g$
+
+g -----&gt; 1 match ✅
+dog -----&gt; 1 match ✅
+doge -----&gt; no match ❎<br><br>star *
+the star symbol * matches zero or more occurrences of the pattern at the left hand side of it.
+
+for example:
+ba*n
+
+ban -----&gt; 1 match ✅
+banner -----&gt; 1 match ✅
+barn -----&gt; no match ❎ ( a is not followed by n)<br><br>plus +
+the plus symbol + matches one or more occurrences of the pattern at the left hand side of it.
+
+for example: 
+ba+n 
+
+bn -----&gt; no match ❎ (a is missing) 
+ban -----&gt; 1 match ✅ 
+bann -----&gt; 1 match ✅ 
+barn -----&gt; no match ❎ ( a is not followed by n)<br><br>question mark  ?
+
+the question mark symbol ? matches zero or one occurrence of the pattern left side of it.
+
+for example:
+ba?n
+
+bn -----&gt; 1 match ✅
+ban -----&gt; 1 match ✅
+baan -----&gt; no match ❎ ( more than one "a" character)
+barn -----&gt; no match ❎ ( a is not followed by n)<br><br>braces {}
+this contains 2 parameters, where the first one specifies the least, and the second one the most repeatitions of patterns at the left of it.
+
+for example:
+b{2,3}. 
+
+this means at least 2, and at most 3 repetitions of the pattern b at the left side of it.<br><br>alternation |
+we use the vertical bar to match specified characters located at alternating positions
+
+for example: 
+a | b
+
+ade -----&gt; 1 match ✅ ( which is a)
+acdbda-----&gt; 3 matches ✅ ( a..b.a)<br><br>parentheses ()
+parentheses () is used to group sub-patterns. 
+
+for example,
+ (a|b|c)xyz match any string that matches either a or b or c followed by xyz<br><br>backslash \
+a backslash is used to bypass or escape characters and metacharacters.
+
+\$a is used to escape the $ and a
+in this case, the interpreter does not treat $ as a special character.<br><br>asides the regexp() methods, we can also use different string methods that allows us pass regexp as parameter.
+
+some of these methods include:
+- match()
+- split()
+- replace()
+- search()<br><br>flags
+there are optional flags that allow for functionality like global searching and case-insensitive searching.
+
+they are part of regex and can be used together or separately.<br><br>g -----&gt; global search 
+ i -----&gt;  case-insensitive search
+ m -----&gt; multi-line search 
+ etc<br><br>that wraps it up!
+  hello i'm captain-eo and i share my web development learning journey via twitter threads.
+  follow me @eo_eboh for more educative contents around frontend development and beyond.</p>
+                      <div class="post-options">
+                        <div class="row">
+                          <div class="col-12">
+                            <ul class="post-tags">
+                              <li><i class="fa fa-tags"></i></li>
+								<li><a href="#">match</a></li>
+<li><a href="#">pattern</a></li>
+<li><a href="#">Regular Expressions</a></li>
+<li><a href="#">regular expression patterns</a></li>
+<li><a href="#">Regular</a></li>
+                            </ul>
+                          </div>
+                          <!--<div class="col-6">
+                            <ul class="post-share">
+                              <li><i class="fa fa-share-alt"></i></li>
+                              <li><a href="#">Facebook</a>,</li>
+                              <li><a href="#"> Twitter</a></li>
+                            </ul>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item comments">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+                      <ul>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item submit-comment">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sidebar-item search">
+                    <form id="search_form" name="gs" method="GET" action="#">
+                      <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item recent-posts d-none">
+                    <div class="sidebar-heading">
+                      <h2>Recent Posts</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="post-details.html">
+                          <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
+                          <span>May 31, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
+                          <span>May 28, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
+                          <span>May 14, 2020</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item categories d-none">
+                    <div class="sidebar-heading">
+                      <h2>Categories</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="#">- Nature Lifestyle</a></li>
+                        <li><a href="#">- Awesome Layouts</a></li>
+                        <li><a href="#">- Creative Ideas</a></li>
+                        <li><a href="#">- Responsive Templates</a></li>
+                        <li><a href="#">- HTML5 / CSS3 Templates</a></li>
+                        <li><a href="#">- Creative &amp; Unique</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item tags">
+                    <div class="sidebar-heading">
+                      <h2>Tag Clouds</h2>
+                    </div>
+                    <div class="content d-none">
+                      <ul>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Motivation</a></li>
+                        <li><a href="#">PSD</a></li>
+                        <li><a href="#">Responsive</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Dribbble</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <div class="copyright-text">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/owl.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/isotope.js"></script>
+    <script src="../assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>

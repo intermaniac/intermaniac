@@ -1,154 +1,1213 @@
 {
     "pages": [
         {
-            "url": "linux-commands.html",
-            "desc": "Almost all Linux users",
-            "title": "linux-commands",
-            "date": "2022-07-17 15:48:09.681936"
+            "url": "brief-introduction-about-aws-ecs-am.html",
+            "desc": "A brief introduction about aws ecs - amazo...",
+            "title": "brief introduction about aws ecs am",
+            "date": "2022-07-31 05:47:53.895750",
+            "tags": [
+                "Amazon Elastic Service",
+                "Amazon Elastic",
+                "Elastic Service",
+                "AWS ECS",
+                "Amazon"
+            ]
         },
         {
-            "url": "gst-s-value-is-spiraling-down-so-to.html",
-            "desc": "Gst\u2019s value is spiraling down\u2026 \n\ud83d\udcc9\ud83d\udcc9\ud83d\udcc9\n\nso to...",
-            "title": "gst s value is spiraling down so to",
-            "date": "2022-07-21 12:39:31.427808"
+            "url": "web-development-1-a-complete-beginn.html",
+            "desc": "Web development thread #1 \ud83e\uddf5\n\na complete be...",
+            "title": "web development 1 a complete beginn",
+            "date": "2022-07-31 05:47:54.018159",
+            "tags": [
+                "Web Development Thread",
+                "Web Development",
+                "Operators",
+                "Comments Comments",
+                "JavaScript Bitwise Operators"
+            ]
         },
         {
-            "url": "bible-verses-and-surahs-on-financia.html",
-            "desc": "A thread on bible verses and surahs on fin...",
-            "title": "bible verses and surahs on financia",
-            "date": "2022-07-21 12:39:31.443250"
+            "url": "about-rest-api-all-basic-stuff-are-.html",
+            "desc": "A thread about rest api \nall basic stuff a...",
+            "title": "about rest api all basic stuff are ",
+            "date": "2022-07-31 05:47:54.084005",
+            "tags": [
+                "HTML",
+                "Python",
+                "Java",
+                "REST API",
+                "Tags"
+            ]
         },
         {
-            "url": "sing-in-me-o-ah-xoc-xin-of-the-deat.html",
-            "desc": "Sing in me, o\u2019 ah-xoc-xin, of the death go...",
-            "title": "sing in me o ah xoc xin of the deat",
-            "date": "2022-07-21 12:39:31.463499"
+            "url": "javascript-variable-.-variables-is-.html",
+            "desc": "Javascript variable  \ud83d\udc81: a thread.\n\nvariabl...",
+            "title": "javascript variable . variables is ",
+            "date": "2022-07-31 05:47:54.127062",
+            "tags": [
+                "Variables",
+                "JavaScript variable",
+                "JavaScript",
+                "store",
+                "underscore"
+            ]
         },
         {
-            "url": "this-is-on-one-of-the-best-if-not-t.html",
-            "desc": "This is a thread \ud83e\uddf5on one of the best, if n...",
-            "title": "this is on one of the best if not t",
-            "date": "2022-07-21 12:39:31.486113"
+            "url": "css-variables-explained-https-t.co-.html",
+            "desc": "#css variables explained\n\na thread \ud83e\uddf5 https...",
+            "title": "css variables explained https t.co ",
+            "date": "2022-07-31 05:47:54.180585",
+            "tags": [
+                "CSS Variables Explained",
+                "Variables Explained",
+                "CSS Variables",
+                "Variables",
+                "equally to html"
+            ]
         },
         {
-            "url": "this-the-perfect-place-to-start-the.html",
-            "desc": "1. this the perfect place to start a threa...",
-            "title": "this the perfect place to start the",
-            "date": "2022-07-21 12:39:31.494592"
+            "url": "when-looking-at-various-open-source.html",
+            "desc": "\ud83c\udf0d when looking at various open source reac...",
+            "title": "when looking at various open source",
+            "date": "2022-07-31 05:47:54.233839",
+            "tags": [
+                "open source React",
+                "source React repositories",
+                "pagination component",
+                "open source",
+                "repositories having pagination"
+            ]
         },
         {
-            "url": "hello-everyone-wilkoszewelina-here-.html",
-            "desc": "Hello everyone, @wilkoszewelina here \ud83d\udc4b sin...",
-            "title": "hello everyone wilkoszewelina here ",
-            "date": "2022-07-21 12:39:31.508662"
+            "url": "december-2005-mark-zuckerberg-lectu.html",
+            "desc": "December 2005 mark zuckerberg lecture in h...",
+            "title": "december 2005 mark zuckerberg lectu",
+            "date": "2022-07-31 05:47:54.333801",
+            "tags": [
+                "Mark Zuckerberg lecture",
+                "lecture in Harvard",
+                "Zuckerberg lecture",
+                "Mark Zuckerberg",
+                "open source"
+            ]
         },
         {
-            "url": "completed-reading-steal-like-an-art.html",
-            "desc": "Completed reading steal like an artist by ...",
-            "title": "completed reading steal like an art",
-            "date": "2022-07-21 12:39:31.517902"
+            "url": "webdev-tailwindcss-do-you-want-to-g.html",
+            "desc": "#webdev #tailwindcss\n\ndo you want to get s...",
+            "title": "webdev tailwindcss do you want to g",
+            "date": "2022-07-31 05:47:54.390670",
+            "tags": [
+                "superb CSS framework",
+                "Running Tailwind CSS",
+                "Tailwind CSS",
+                "Tailwind CSS features",
+                "CSS framework"
+            ]
         },
         {
-            "url": "in-a-letter-to-the-us-federal-trade.html",
-            "desc": "In a letter to the us federal trade commis...",
-            "title": "in a letter to the us federal trade",
-            "date": "2022-07-21 12:39:31.542084"
+            "url": "last-week-i-wrote-about-monolambdas.html",
+            "desc": "Last week i wrote about \u201cmonolambdas vs na...",
+            "title": "last week i wrote about monolambdas",
+            "date": "2022-07-31 05:47:54.491934",
+            "tags": [
+                "Lambda",
+                "event types",
+                "event",
+                "AWS Lambda Apps",
+                "week I wrote"
+            ]
         },
         {
-            "url": "it-s-been-a-while-since-i-ve-posted.html",
-            "desc": "It's been a while since i've posted anythi...",
-            "title": "it s been a while since i ve posted",
-            "date": "2022-07-21 12:39:31.551981"
+            "url": "do-you-need-to-learn-solidity-rust-.html",
+            "desc": "Do you need to learn solidity/rust to get ...",
+            "title": "do you need to learn solidity rust ",
+            "date": "2022-07-31 05:47:54.552815",
+            "tags": [
+                "Ethereum",
+                "Ethereum Virtual Machine",
+                "learn Solidity",
+                "Complete Ethereum library",
+                "java Lightweight Java"
+            ]
         },
         {
-            "url": "here-is-the-last-time-these-elite-f.html",
-            "desc": "Here is a thread on the last time these el...",
-            "title": "here is the last time these elite f",
-            "date": "2022-07-21 12:39:31.565651"
+            "url": "as-organisations-increasingly-rely-.html",
+            "desc": "As organisations increasingly rely on data...",
+            "title": "as organisations increasingly rely ",
+            "date": "2022-07-31 05:47:54.598144",
+            "tags": [
+                "organisations increasingly rely",
+                "make decisions",
+                "data architect",
+                "organisations increasingly",
+                "increasingly rely"
+            ]
         },
         {
-            "url": "privacy-as-number-one-priority.-onl.html",
-            "desc": "1/\na thread on privacy as number one prior...",
-            "title": "privacy as number one priority. onl",
-            "date": "2022-07-21 12:39:31.575274"
+            "url": "i-know-html-css-javascript-php-mysq.html",
+            "desc": "I know html, css, javascript, php, mysql a...",
+            "title": "i know html css javascript php mysq",
+            "date": "2022-07-31 05:47:54.646833",
+            "tags": [
+                "full stack developer",
+                "full stack",
+                "stack developer",
+                "CSS",
+                "PHP"
+            ]
         },
         {
-            "url": "why-i-think-primatesnft-are-crimina.html",
-            "desc": "1/\ud83e\uddf5 a thread on  why i think @primatesnft ...",
-            "title": "why i think primatesnft are crimina",
-            "date": "2022-07-21 12:39:31.595173"
+            "url": "here-is-a-look-at-the-landing-page-.html",
+            "desc": "Here is a look at the landing page templat...",
+            "title": "here is a look at the landing page ",
+            "date": "2022-07-31 05:47:54.670934",
+            "tags": [
+                "landing page template",
+                "landing page",
+                "page template",
+                "HTML",
+                "CSS"
+            ]
         },
         {
-            "url": "gst-s-value-is-spiraling-down-so-to.html",
-            "desc": "Gst\u2019s value is spiraling down\u2026 \n\ud83d\udcc9\ud83d\udcc9\ud83d\udcc9\n\nso to...",
-            "title": "gst s value is spiraling down so to",
-            "date": "2022-07-21 12:39:45.196835"
+            "url": "javascript-classes.-.-javascript-la.html",
+            "desc": "Javascript classes.\na thread.\n#javascript ...",
+            "title": "javascript classes. . javascript la",
+            "date": "2022-07-31 05:47:54.697062",
+            "tags": [
+                "JavaScript Classes",
+                "Class methods",
+                "Classes",
+                "Constructor Method",
+                "Class"
+            ]
         },
         {
-            "url": "bible-verses-and-surahs-on-financia.html",
-            "desc": "A thread on bible verses and surahs on fin...",
-            "title": "bible verses and surahs on financia",
-            "date": "2022-07-21 12:39:45.207172"
+            "url": "day-1-of-learning-javascript.-these.html",
+            "desc": "Day 1 of learning javascript.\nthese are th...",
+            "title": "day 1 of learning javascript. these",
+            "date": "2022-07-31 05:47:54.729188",
+            "tags": [
+                "Day",
+                "learning JavaScript",
+                "loop",
+                "learning",
+                "variable"
+            ]
         },
         {
-            "url": "sing-in-me-o-ah-xoc-xin-of-the-deat.html",
-            "desc": "Sing in me, o\u2019 ah-xoc-xin, of the death go...",
-            "title": "sing in me o ah xoc xin of the deat",
-            "date": "2022-07-21 12:39:45.219618"
+            "url": "create-button-with-pulse-effect-usi.html",
+            "desc": "Create button with pulse effect using css ...",
+            "title": "create button with pulse effect usi",
+            "date": "2022-07-31 05:47:54.749874",
+            "tags": [
+                "scale and box-shadow",
+                "CSS Animation code",
+                "Create button",
+                "CSS Animation",
+                "Create"
+            ]
         },
         {
-            "url": "this-is-on-one-of-the-best-if-not-t.html",
-            "desc": "This is a thread \ud83e\uddf5on one of the best, if n...",
-            "title": "this is on one of the best if not t",
-            "date": "2022-07-21 12:39:45.234919"
+            "url": "dom-part-7-javascript-dom-append-me.html",
+            "desc": "Dom part 7\ufe0f\u20e3\n\njavascript dom append method...",
+            "title": "dom part 7 javascript dom append me",
+            "date": "2022-07-31 05:47:54.795087",
+            "tags": [
+                "append methods append",
+                "DOM Append Methods",
+                "DOM Part",
+                "Append Methods",
+                "JavaScript DOM Append"
+            ]
         },
         {
-            "url": "this-the-perfect-place-to-start-the.html",
-            "desc": "1. this the perfect place to start a threa...",
-            "title": "this the perfect place to start the",
-            "date": "2022-07-21 12:39:45.246331"
+            "url": "many-projects-out-there-manage-rele.html",
+            "desc": "Many projects out there manage releases wi...",
+            "title": "many projects out there manage rele",
+            "date": "2022-07-31 05:47:54.884341",
+            "tags": [
+                "branch",
+                "BIG merge conflicts",
+                "Branch by Abstraction",
+                "bug fixes",
+                "hotfix branch"
+            ]
         },
         {
-            "url": "hello-everyone-wilkoszewelina-here-.html",
-            "desc": "Hello everyone, @wilkoszewelina here \ud83d\udc4b sin...",
-            "title": "hello everyone wilkoszewelina here ",
-            "date": "2022-07-21 12:39:45.261706"
+            "url": "tips-on-how-to-write-the-perfect-co.html",
+            "desc": "Tips on how to write the \"perfect\" code, \ud83d\udcdd...",
+            "title": "tips on how to write the perfect co",
+            "date": "2022-07-31 05:47:54.926356",
+            "tags": [
+                "Declare meaningful variable",
+                "Declare meaningful",
+                "Perfect",
+                "Tips",
+                "Declare"
+            ]
         },
         {
-            "url": "completed-reading-steal-like-an-art.html",
-            "desc": "Completed reading steal like an artist by ...",
-            "title": "completed reading steal like an art",
-            "date": "2022-07-21 12:39:45.274950"
+            "url": "another-big-update-to-the-codes-on-.html",
+            "desc": "Another big update to the codes on my gith...",
+            "title": "another big update to the codes on ",
+            "date": "2022-07-31 05:47:55.001063",
+            "tags": [
+                "big update",
+                "code files",
+                "code",
+                "change",
+                "files"
+            ]
         },
         {
-            "url": "in-a-letter-to-the-us-federal-trade.html",
-            "desc": "In a letter to the us federal trade commis...",
-            "title": "in a letter to the us federal trade",
-            "date": "2022-07-21 12:39:45.294192"
+            "url": "trending-minimal-website-templates-.html",
+            "desc": "4 trending minimal website templates on te...",
+            "title": "trending minimal website templates ",
+            "date": "2022-07-31 05:47:55.055461",
+            "tags": [
+                "trending minimal website",
+                "minimal website templates",
+                "Lawyer WordPress Theme",
+                "Eyewear WordPress Theme",
+                "Businesses WordPress Theme"
+            ]
         },
         {
-            "url": "it-s-been-a-while-since-i-ve-posted.html",
-            "desc": "It's been a while since i've posted anythi...",
-            "title": "it s been a while since i ve posted",
-            "date": "2022-07-21 12:39:45.314205"
+            "url": "just-finished-creating-a-simple-stu.html",
+            "desc": "Just finished creating a simple \"student g...",
+            "title": "just finished creating a simple stu",
+            "date": "2022-07-31 05:47:55.082145",
+            "tags": [
+                "Student Grading System",
+                "Student Grading",
+                "Grading System",
+                "creating a simple",
+                "finished creating"
+            ]
         },
         {
-            "url": "here-is-the-last-time-these-elite-f.html",
-            "desc": "Here is a thread on the last time these el...",
-            "title": "here is the last time these elite f",
-            "date": "2022-07-21 12:39:45.325565"
+            "url": "square-kite-pattern-in-java-class-s.html",
+            "desc": "Square kite pattern in java:\n\nclass square...",
+            "title": "square kite pattern in java class s",
+            "date": "2022-07-31 05:47:55.104503",
+            "tags": [
+                "Square kite pattern",
+                "public static void",
+                "static void main",
+                "String args",
+                "Square kite"
+            ]
         },
         {
-            "url": "privacy-as-number-one-priority.-onl.html",
-            "desc": "1/\na thread on privacy as number one prior...",
-            "title": "privacy as number one priority. onl",
-            "date": "2022-07-21 12:39:45.339683"
+            "url": "javascript-callbacks-https-t.co-74k.html",
+            "desc": "Javascript callbacks\ud83d\ude80\n\n(thread\ud83d\udd03) https://t...",
+            "title": "javascript callbacks https t.co 74k",
+            "date": "2022-07-31 05:47:55.146351",
+            "tags": [
+                "callback function",
+                "function",
+                "JavaScript Callbacks",
+                "callback",
+                "JavaScript"
+            ]
         },
         {
-            "url": "why-i-think-primatesnft-are-crimina.html",
-            "desc": "1/\ud83e\uddf5 a thread on  why i think @primatesnft ...",
-            "title": "why i think primatesnft are crimina",
-            "date": "2022-07-21 12:39:45.363763"
+            "url": "so-i-completed-my-self-challenge-of.html",
+            "desc": "So i completed my self-challenge of comple...",
+            "title": "so i completed my self challenge of",
+            "date": "2022-07-31 05:47:55.184546",
+            "tags": [
+                "completed my self-challenge",
+                "self-challenge of completing",
+                "completing and updating",
+                "updating my LinkedIn",
+                "completed"
+            ]
+        },
+        {
+            "url": "about-docker-hub-https-t.co-jotjpji.html",
+            "desc": "About docker hub\na thread \ud83e\uddf5 https://t.co/j...",
+            "title": "about docker hub https t.co jotjpji",
+            "date": "2022-07-31 05:47:55.217148",
+            "tags": [
+                "Docker Hub",
+                "Docker",
+                "Hub",
+                "docker registry",
+                "public registry"
+            ]
+        },
+        {
+            "url": "last-week-our-ceo-dave-cole-mediafi.html",
+            "desc": "[thread] last week, our ceo dave cole, @me...",
+            "title": "last week our ceo dave cole mediafi",
+            "date": "2022-07-31 05:47:55.256198",
+            "tags": [
+                "CEO Dave Cole",
+                "Open Raven solved",
+                "Dave Cole",
+                "CEO Dave",
+                "Open Raven"
+            ]
+        },
+        {
+            "url": "concatenation-in-javascript-https-t.html",
+            "desc": "Concatenation in javascript \u26a1\ufe0f\u26a1\ufe0f\n\na thread...",
+            "title": "concatenation in javascript https t",
+            "date": "2022-07-31 05:47:55.317363",
+            "tags": [
+                "Learn JavaScript",
+                "JavaScript",
+                "Concatenation in JavaScript",
+                "Learn",
+                "important JavaScript concepts"
+            ]
+        },
+        {
+            "url": "text-indent-property-in-css-https-t.html",
+            "desc": "Text-indent property in css \ud83d\ude80\n\nthread \ud83e\uddf5 ht...",
+            "title": "text indent property in css https t",
+            "date": "2022-07-31 05:47:55.369037",
+            "tags": [
+                "give horizontal space",
+                "property in CSS",
+                "text block",
+                "give horizontal",
+                "text-indent property"
+            ]
+        },
+        {
+            "url": "when-it-comes-to-excel-and-python-i.html",
+            "desc": "When it comes to #excel and #python i feel...",
+            "title": "when it comes to excel and python i",
+            "date": "2022-07-31 05:47:55.459193",
+            "tags": [
+                "Captain Underpants",
+                "Captain",
+                "Underpants",
+                "George and Harold",
+                "excel"
+            ]
+        },
+        {
+            "url": "are-you-using-carp-for-your-project.html",
+            "desc": "Are you using carp for your project? carp,...",
+            "title": "are you using carp for your project",
+            "date": "2022-07-31 05:47:55.512053",
+            "tags": [
+                "Cardano SQL Indexer",
+                "Carp",
+                "SQL Indexer",
+                "Cardano SQL",
+                "stars on GitHub"
+            ]
+        },
+        {
+            "url": "important-javascript-array-methods-.html",
+            "desc": "Important javascript array methods cheat s...",
+            "title": "important javascript array methods ",
+            "date": "2022-07-31 05:47:55.568896",
+            "tags": [
+                "Methods Cheat Sheet",
+                "Important Javascript Array",
+                "Javascript Array Methods",
+                "Array Methods Cheat",
+                "Important Javascript"
+            ]
+        },
+        {
+            "url": "aws-global-infrastructure-1-4-cloud.html",
+            "desc": "Aws global infrastructure \ud83c\udf10 \n\na thread \ud83e\uddf5\n\n...",
+            "title": "aws global infrastructure 1 4 cloud",
+            "date": "2022-07-31 05:47:55.617067",
+            "tags": [
+                "AWS Global Infrastructure",
+                "AWS Global",
+                "Data Centres",
+                "Global Infrastructure",
+                "Data Centres fails"
+            ]
+        },
+        {
+            "url": "demystifying-javascript-asynchronou.html",
+            "desc": "Demystifying javascript asynchronous progr...",
+            "title": "demystifying javascript asynchronou",
+            "date": "2022-07-31 05:47:55.702992",
+            "tags": [
+                "Demystifying JavaScript Asynchronous",
+                "understand JavaScript promises",
+                "Demystifying JavaScript",
+                "JavaScript promises",
+                "Jill"
+            ]
+        },
+        {
+            "url": "html-basics-for-beginners-the-web-d.html",
+            "desc": "Html basics for beginners\n\nthe web develop...",
+            "title": "html basics for beginners the web d",
+            "date": "2022-07-31 05:47:55.820446",
+            "tags": [
+                "HTML Basics",
+                "Decomposing HTML Elements",
+                "HTML",
+                "tag",
+                "Basics for Beginners"
+            ]
+        },
+        {
+            "url": "lots-of-great-new-parsers-in-the-la.html",
+            "desc": "Lots of great new parsers in the latest jc...",
+            "title": "lots of great new parsers in the la",
+            "date": "2022-07-31 05:47:55.882978",
+            "tags": [
+                "Lots of great",
+                "JWT token strings",
+                "latest JC release",
+                "great new parsers",
+                "datetimes and Unix"
+            ]
+        },
+        {
+            "url": "javascript-concepts-part-2-https-t..html",
+            "desc": "Javascript concepts part-2\n\na thread \ud83e\uddf5 htt...",
+            "title": "javascript concepts part 2 https t.",
+            "date": "2022-07-31 05:47:55.929354",
+            "tags": [
+                "Shallow copy Output",
+                "Deep Copy OutPut",
+                "Temparl Dead Zone",
+                "Global execution Context",
+                "Shallow Copy"
+            ]
+        },
+        {
+            "url": "javascript-roadmap-for-beginners-ht.html",
+            "desc": "Javascript roadmap for beginners \u2728\n\nthread...",
+            "title": "javascript roadmap for beginners ht",
+            "date": "2022-07-31 05:47:56.026489",
+            "tags": [
+                "Roadmap For Beginners",
+                "Javascript",
+                "Javascript Roadmap",
+                "Primitive Data Types",
+                "Data Types"
+            ]
+        },
+        {
+            "url": "javascript-async-await-https-t.co-y.html",
+            "desc": "Javascript async/await\ud83d\ude80\ud83d\udca5\n\n(thread\ud83d\udd03) https:...",
+            "title": "javascript async await https t.co y",
+            "date": "2022-07-31 05:47:56.074967",
+            "tags": [
+                "async function",
+                "function",
+                "async",
+                "promise",
+                "async function returns"
+            ]
+        },
+        {
+            "url": "i-ve-updated-the-doc-from-a-backend.html",
+            "desc": "I've updated the doc from a backend sql vi...",
+            "title": "i ve updated the doc from a backend",
+            "date": "2022-07-31 05:47:56.102110",
+            "tags": [
+                "backend SQL view",
+                "SQL view",
+                "backend SQL",
+                "Team Map Stats",
+                "ESLImpact Cash Cup"
+            ]
+        },
+        {
+            "url": "11-master-set-this-contains-some-qu.html",
+            "desc": "\ud83c\udd73\ud83c\udd70\ud83c\udd88-11: master set \nthis thread contains s...",
+            "title": "11 master set this contains some qu",
+            "date": "2022-07-31 05:47:56.131610",
+            "tags": [
+                "Tom Riddle Diary",
+                "Master set",
+                "Java",
+                "HTML",
+                "Python"
+            ]
+        },
+        {
+            "url": "under-the-hood-of-the-javascript-se.html",
+            "desc": "\ud83e\udd2f under the hood of the javascript series!...",
+            "title": "under the hood of the javascript se",
+            "date": "2022-07-31 05:47:56.188346",
+            "tags": [
+                "Set",
+                "returns",
+                "JavaScript series",
+                "JavaScript",
+                "object"
+            ]
+        },
+        {
+            "url": "super-proud-of-myself-i-m-finally-g.html",
+            "desc": "Super proud of myself \ud83e\udd70\ud83e\udd70\ni'm finally getti...",
+            "title": "super proud of myself i m finally g",
+            "date": "2022-07-31 05:47:56.215882",
+            "tags": [
+                "Super proud",
+                "Super",
+                "CSS grid",
+                "flexbox and CSS",
+                "https"
+            ]
+        },
+        {
+            "url": "regular-expressions-in-javascript-a.html",
+            "desc": "Regular expressions in javascript are not ...",
+            "title": "regular expressions in javascript a",
+            "date": "2022-07-31 05:47:56.314245",
+            "tags": [
+                "match",
+                "pattern",
+                "Regular Expressions",
+                "regular expression patterns",
+                "Regular"
+            ]
+        },
+        {
+            "url": "everything-about-github-a-mega-http.html",
+            "desc": "\ud83d\udccc everything about github: a mega-thread! ...",
+            "title": "everything about github a mega http",
+            "date": "2022-07-31 05:47:56.416727",
+            "tags": [
+                "Github",
+                "Open source",
+                "open source projects",
+                "Github work",
+                "Open"
+            ]
+        },
+        {
+            "url": "why-you-should-stop-arguing-about-w.html",
+            "desc": "Why you should stop arguing about which te...",
+            "title": "why you should stop arguing about w",
+            "date": "2022-07-31 05:47:56.488677",
+            "tags": [
+                "programming language",
+                "\u2019re",
+                "Programming",
+                "language",
+                "n\u2019t"
+            ]
+        },
+        {
+            "url": "number-theory-for-building-logic-in.html",
+            "desc": "Number theory\na thread for building logic ...",
+            "title": "number theory for building logic in",
+            "date": "2022-07-31 05:47:56.540862",
+            "tags": [
+                "Python",
+                "Java",
+                "HTML",
+                "javascript",
+                "css"
+            ]
+        },
+        {
+            "url": "javascript-array-methods-part-2-htt.html",
+            "desc": "Javascript array methods (part - 2)\n\na thr...",
+            "title": "javascript array methods part 2 htt",
+            "date": "2022-07-31 05:47:56.574204",
+            "tags": [
+                "Javascript Array Methods",
+                "Javascript Array",
+                "Array Methods",
+                "Part",
+                "Javascript"
+            ]
+        },
+        {
+            "url": "k6-articles-that-you-should-not-mis.html",
+            "desc": "20 k6 articles that you should not miss in...",
+            "title": "k6 articles that you should not mis",
+            "date": "2022-07-31 05:47:56.640497",
+            "tags": [
+                "load testing",
+                "Beginner guide",
+                "Introductory guide",
+                "source load testing",
+                "load"
+            ]
+        },
+        {
+            "url": "arrow-function-in-javascript-https-.html",
+            "desc": "\u2728 arrow function in javascript \u2728\n\na thread...",
+            "title": "arrow function in javascript https ",
+            "date": "2022-07-31 05:47:56.681714",
+            "tags": [
+                "Arrow Function",
+                "learn Arrow function",
+                "Function",
+                "Check this thread",
+                "Arrow"
+            ]
+        },
+        {
+            "url": "up-for-a-css-challenge-how-would-yo.html",
+            "desc": "Up for a css challenge \u2694\ufe0f\nhow would you ma...",
+            "title": "up for a css challenge how would yo",
+            "date": "2022-07-31 05:47:56.711954",
+            "tags": [
+                "CSS Challenge",
+                "Challenge",
+                "CSS",
+                "div",
+                "Credits"
+            ]
+        },
+        {
+            "url": "the-ultimate-list-of-css-code-gener.html",
+            "desc": "The ultimate list of css code generators f...",
+            "title": "the ultimate list of css code gener",
+            "date": "2022-07-31 05:47:56.775396",
+            "tags": [
+                "Development A Thread",
+                "Ultimate List",
+                "Schema Markup Generator",
+                "Meta Tags Generator",
+                "CSS"
+            ]
+        },
+        {
+            "url": "save-time-writing-css-meg-with-the-.html",
+            "desc": "Save time writing css!\n\nmega thread with t...",
+            "title": "save time writing css meg with the ",
+            "date": "2022-07-31 05:47:56.853170",
+            "tags": [
+                "Save time writing",
+                "CSS",
+                "sarah",
+                "Generator",
+                "Save time"
+            ]
+        },
+        {
+            "url": "best-dark-theme-in-vscode.-.-coding.html",
+            "desc": "Best dark theme in vscode.\n\na thread.\ud83e\uddf5\n\nco...",
+            "title": "best dark theme in vscode. . coding",
+            "date": "2022-07-31 05:47:56.871628",
+            "tags": [
+                "https",
+                "t.co",
+                "dark theme",
+                "theme in vscode",
+                "vscode"
+            ]
+        },
+        {
+            "url": "best-free-resources-to-practice-htm.html",
+            "desc": "Best free resources to practice html &amp;...",
+            "title": "best free resources to practice htm",
+            "date": "2022-07-31 05:47:56.928741",
+            "tags": [
+                "FREE Resources",
+                "learn web development",
+                "HTML",
+                "freeCodeCamp Inarguably",
+                "Resources to practice"
+            ]
+        },
+        {
+            "url": "best-vs-code-themes-for-you-to-use-.html",
+            "desc": "7 best vs code themes for you to use \ud83d\udcbb \ud83d\udcbb \n...",
+            "title": "best vs code themes for you to use ",
+            "date": "2022-07-31 05:47:56.945290",
+            "tags": [
+                "Code Themes",
+                "Themes",
+                "Thread",
+                "Shades Of Purple",
+                "Code"
+            ]
+        },
+        {
+            "url": "i-use-these-python-packages-for-my-.html",
+            "desc": "I use these python packages for my #seo au...",
+            "title": "i use these python packages for my ",
+            "date": "2022-07-31 05:47:56.985205",
+            "tags": [
+                "Python SEO Analyzer",
+                "google trends",
+                "keyword research",
+                "SEO audit",
+                "latest from google"
+            ]
+        },
+        {
+            "url": "everydayaws-aws-outposts-a-a-fully-.html",
+            "desc": "#everydayaws\naws outposts a \ud83e\uddf5 \na fully man...",
+            "title": "everydayaws aws outposts a a fully ",
+            "date": "2022-07-31 05:47:57.015942",
+            "tags": [
+                "AWS",
+                "Outposts",
+                "AWS Outposts",
+                "extends AWS infrastructure,tools",
+                "customers"
+            ]
+        },
+        {
+            "url": "here-s-a-list-of-some-of-the-python.html",
+            "desc": "Here's a list (\ud83e\uddf5)of some of the #python-ba...",
+            "title": "here s a list of some of the python",
+            "date": "2022-07-31 05:47:57.057949",
+            "tags": [
+                "Python library",
+                "Crypto Currency Library",
+                "library for interacting",
+                "python",
+                "Ethereum development framework"
+            ]
+        },
+        {
+            "url": "learn-how-to-add-auto-typing-effect.html",
+            "desc": "Learn how to add \"auto-typing effect\" usin...",
+            "title": "learn how to add auto typing effect",
+            "date": "2022-07-31 05:47:57.095207",
+            "tags": [
+                "CSS and JavaScript",
+                "shown",
+                "Learn",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "url": "top-coding-resources-which-i-like-t.html",
+            "desc": "Top coding resources which i like to scrol...",
+            "title": "top coding resources which i like t",
+            "date": "2022-07-31 05:47:57.131059",
+            "tags": [
+                "Top coding resources",
+                "Top coding",
+                "free time",
+                "scroll in free",
+                "coding resources"
+            ]
+        },
+        {
+            "url": "story-time-how-i-got-my-start-in-we.html",
+            "desc": "\ud83e\uddf5 story time: how i got my start in web de...",
+            "title": "story time how i got my start in we",
+            "date": "2022-07-31 05:47:57.249494",
+            "tags": [
+                "knew HTML",
+                "job",
+                "HTML",
+                "web",
+                "barely knew HTML"
+            ]
+        },
+        {
+            "url": "html-tip-access-any-html-element-us.html",
+            "desc": "Html tip \u26a1\ufe0f\naccess any html element using ...",
+            "title": "html tip access any html element us",
+            "date": "2022-07-31 05:47:57.288699",
+            "tags": [
+                "HTML tip",
+                "HTML View full",
+                "HTML View",
+                "HTML",
+                "Linux and Mac"
+            ]
+        },
+        {
+            "url": "top-10-programming-languages-used-b.html",
+            "desc": "Top 10 programming languages used by githu...",
+            "title": "top 10 programming languages used b",
+            "date": "2022-07-31 05:47:57.378693",
+            "tags": [
+                "Programming Languages",
+                "Programming",
+                "GitHub Contributors",
+                "Languages",
+                "language"
+            ]
+        },
+        {
+            "url": "how-to-redirect-to-another-webpage-.html",
+            "desc": "\ud83e\uddf5 how to redirect to another webpage using...",
+            "title": "how to redirect to another webpage ",
+            "date": "2022-07-31 05:47:57.449844",
+            "tags": [
+                "Back button",
+                "Redirect",
+                "Back",
+                "JavaScript",
+                "writing some piece"
+            ]
+        },
+        {
+            "url": "wordpressusers-will-updating-wordpr.html",
+            "desc": "#wordpressusers \n\nwill updating wordpress ...",
+            "title": "wordpressusers will updating wordpr",
+            "date": "2022-07-31 05:47:57.502896",
+            "tags": [
+                "Update",
+                "WordPress",
+                "Backup",
+                "updating WordPress affect",
+                "updates"
+            ]
+        },
+        {
+            "url": "php-is-actually-underrated-in-this-.html",
+            "desc": "#php  is actually underrated, in this thre...",
+            "title": "php is actually underrated in this ",
+            "date": "2022-07-31 05:47:57.570374",
+            "tags": [
+                "PHP",
+                "PHP framework",
+                "framework",
+                "PHP Framework Interop",
+                "frameworks"
+            ]
+        },
+        {
+            "url": "i-am-running-wordpress-on-aws-light.html",
+            "desc": "I am running wordpress on aws lights=sail....",
+            "title": "i am running wordpress on aws light",
+            "date": "2022-07-31 05:47:57.617718",
+            "tags": [
+                "AWS Lights",
+                "Amazon Web Services",
+                "AWS Cloud server",
+                "Amazon Web",
+                "running Wordpress"
+            ]
+        },
+        {
+            "url": "good-morning-guys-lemme-show-you-ho.html",
+            "desc": "Good morning guys \ud83d\udc4b\n\nlemme show you how to...",
+            "title": "good morning guys lemme show you ho",
+            "date": "2022-07-31 05:47:57.645036",
+            "tags": [
+                "Good morning guys",
+                "Good morning",
+                "Lemme show",
+                "morning guys",
+                "dropdown menu"
+            ]
+        },
+        {
+            "url": "as-a-developer-you-must-know-git-am.html",
+            "desc": "\ud83d\udc68\u200d\ud83d\udcbb as a developer you must know git &amp;...",
+            "title": "as a developer you must know git am",
+            "date": "2022-07-31 05:47:57.746975",
+            "tags": [
+                "Git",
+                "git remote",
+                "git branch",
+                "branch",
+                "remote"
+            ]
+        },
+        {
+            "url": "need-help-deciding-whether-to-use-w.html",
+            "desc": "Need help deciding whether to use wordpres...",
+            "title": "need help deciding whether to use w",
+            "date": "2022-07-31 05:47:57.822586",
+            "tags": [
+                "website",
+                "WordPress",
+                "Blog",
+                "Love WordPress Sites",
+                "easily"
+            ]
+        },
+        {
+            "url": "automate-web-browsers-using-these-s.html",
+            "desc": "Automate web browsers using these seven me...",
+            "title": "automate web browsers using these s",
+            "date": "2022-07-31 05:47:57.874618",
+            "tags": [
+                "Open Source Library",
+                "Selenium Open Source",
+                "Automate Web Browsers",
+                "Automate Web",
+                "Open Source"
+            ]
+        },
+        {
+            "url": "for-scraping-purposes-a-lot-of-time.html",
+            "desc": "For scraping purposes a lot of times i nee...",
+            "title": "for scraping purposes a lot of time",
+            "date": "2022-07-31 05:47:57.939764",
+            "tags": [
+                "Redis",
+                "scraping purposes",
+                "queue",
+                "purposes a lot",
+                "lot of times"
+            ]
+        },
+        {
+            "url": "there-are-countless-libraries-in-py.html",
+            "desc": "There are countless libraries in python fo...",
+            "title": "there are countless libraries in py",
+            "date": "2022-07-31 05:47:58.014589",
+            "tags": [
+                "machine learning",
+                "Python",
+                "machine learning library",
+                "library",
+                "learning"
+            ]
+        },
+        {
+            "url": "basics-of-python-slicing-how-to-get.html",
+            "desc": "Basics of python slicing \u2702\ufe0f: how to get a ...",
+            "title": "basics of python slicing how to get",
+            "date": "2022-07-31 05:47:58.061970",
+            "tags": [
+                "Python Slicing",
+                "Basics of Python",
+                "Default includes",
+                "Default",
+                "index"
+            ]
+        },
+        {
+            "url": "here-is-the-of-our-most-viewed-blog.html",
+            "desc": "Here is the thread\ud83e\uddf5 of our most viewed blo...",
+            "title": "here is the of our most viewed blog",
+            "date": "2022-07-31 05:47:58.146193",
+            "tags": [
+                "Python",
+                "Information gain",
+                "viewed blog",
+                "market",
+                "Ta-Lib python library"
+            ]
+        },
+        {
+            "url": "linux-absolute-path-and-relative-pa.html",
+            "desc": "Linux absolute path  and relative path nam...",
+            "title": "linux absolute path and relative pa",
+            "date": "2022-07-31 05:47:58.216964",
+            "tags": [
+                "working directory",
+                "directory",
+                "absolute path",
+                "path",
+                "current working directory"
+            ]
+        },
+        {
+            "url": "create-glowing-diamond-effect-in-cs.html",
+            "desc": "Create glowing diamond effect in css \n\nuse...",
+            "title": "create glowing diamond effect in cs",
+            "date": "2022-07-31 05:47:58.241007",
+            "tags": [
+                "Create glowing",
+                "Create glowing diamond",
+                "glowing",
+                "Animation",
+                "CSS Animation"
+            ]
+        },
+        {
+            "url": "create-button-with-pulse-effect-usi.html",
+            "desc": "Create button with pulse effect using css ...",
+            "title": "create button with pulse effect usi",
+            "date": "2022-07-31 05:47:58.275288",
+            "tags": [
+                "scale and box-shadow",
+                "CSS Animation code",
+                "Create button",
+                "CSS Animation",
+                "Create"
+            ]
+        },
+        {
+            "url": "dom-part-7-javascript-dom-append-me.html",
+            "desc": "Dom part 7\ufe0f\u20e3\n\njavascript dom append method...",
+            "title": "dom part 7 javascript dom append me",
+            "date": "2022-07-31 05:47:58.325349",
+            "tags": [
+                "append methods append",
+                "DOM Append Methods",
+                "DOM Part",
+                "Append Methods",
+                "JavaScript DOM Append"
+            ]
+        },
+        {
+            "url": "many-projects-out-there-manage-rele.html",
+            "desc": "Many projects out there manage releases wi...",
+            "title": "many projects out there manage rele",
+            "date": "2022-07-31 05:47:58.393368",
+            "tags": [
+                "branch",
+                "BIG merge conflicts",
+                "Branch by Abstraction",
+                "bug fixes",
+                "hotfix branch"
+            ]
+        },
+        {
+            "url": "tips-on-how-to-write-the-perfect-co.html",
+            "desc": "Tips on how to write the \"perfect\" code, \ud83d\udcdd...",
+            "title": "tips on how to write the perfect co",
+            "date": "2022-07-31 05:47:58.437929",
+            "tags": [
+                "Declare meaningful variable",
+                "Declare meaningful",
+                "Perfect",
+                "Tips",
+                "Declare"
+            ]
+        },
+        {
+            "url": "trending-minimal-website-templates-.html",
+            "desc": "4 trending minimal website templates on te...",
+            "title": "trending minimal website templates ",
+            "date": "2022-07-31 05:47:58.498971",
+            "tags": [
+                "trending minimal website",
+                "minimal website templates",
+                "Lawyer WordPress Theme",
+                "Eyewear WordPress Theme",
+                "Businesses WordPress Theme"
+            ]
+        },
+        {
+            "url": "just-finished-creating-a-simple-stu.html",
+            "desc": "Just finished creating a simple \"student g...",
+            "title": "just finished creating a simple stu",
+            "date": "2022-07-31 05:47:58.539692",
+            "tags": [
+                "Student Grading System",
+                "Student Grading",
+                "Grading System",
+                "creating a simple",
+                "finished creating"
+            ]
+        },
+        {
+            "url": "javascript-callbacks-https-t.co-74k.html",
+            "desc": "Javascript callbacks\ud83d\ude80\n\n(thread\ud83d\udd03) https://t...",
+            "title": "javascript callbacks https t.co 74k",
+            "date": "2022-07-31 05:47:58.573927",
+            "tags": [
+                "callback function",
+                "function",
+                "JavaScript Callbacks",
+                "callback",
+                "JavaScript"
+            ]
+        },
+        {
+            "url": "so-i-completed-my-self-challenge-of.html",
+            "desc": "So i completed my self-challenge of comple...",
+            "title": "so i completed my self challenge of",
+            "date": "2022-07-31 05:47:58.622412",
+            "tags": [
+                "completed my self-challenge",
+                "self-challenge of completing",
+                "completing and updating",
+                "updating my LinkedIn",
+                "completed"
+            ]
+        },
+        {
+            "url": "concatenation-in-javascript-https-t.html",
+            "desc": "Concatenation in javascript \u26a1\ufe0f\u26a1\ufe0f\n\na thread...",
+            "title": "concatenation in javascript https t",
+            "date": "2022-07-31 05:47:58.668728",
+            "tags": [
+                "Learn JavaScript",
+                "JavaScript",
+                "Concatenation in JavaScript",
+                "Learn",
+                "important JavaScript concepts"
+            ]
+        },
+        {
+            "url": "text-indent-property-in-css-https-t.html",
+            "desc": "Text-indent property in css \ud83d\ude80\n\nthread \ud83e\uddf5 ht...",
+            "title": "text indent property in css https t",
+            "date": "2022-07-31 05:47:58.732922",
+            "tags": [
+                "give horizontal space",
+                "property in CSS",
+                "text block",
+                "give horizontal",
+                "text-indent property"
+            ]
+        },
+        {
+            "url": "when-it-comes-to-excel-and-python-i.html",
+            "desc": "When it comes to #excel and #python i feel...",
+            "title": "when it comes to excel and python i",
+            "date": "2022-07-31 05:47:58.818981",
+            "tags": [
+                "Captain Underpants",
+                "Captain",
+                "Underpants",
+                "George and Harold",
+                "excel"
+            ]
+        },
+        {
+            "url": "are-you-using-carp-for-your-project.html",
+            "desc": "Are you using carp for your project? carp,...",
+            "title": "are you using carp for your project",
+            "date": "2022-07-31 05:47:58.897119",
+            "tags": [
+                "Cardano SQL Indexer",
+                "Carp",
+                "SQL Indexer",
+                "Cardano SQL",
+                "stars on GitHub"
+            ]
+        },
+        {
+            "url": "important-javascript-array-methods-.html",
+            "desc": "Important javascript array methods cheat s...",
+            "title": "important javascript array methods ",
+            "date": "2022-07-31 05:47:58.972811",
+            "tags": [
+                "Methods Cheat Sheet",
+                "Important Javascript Array",
+                "Javascript Array Methods",
+                "Array Methods Cheat",
+                "Important Javascript"
+            ]
+        },
+        {
+            "url": "aws-global-infrastructure-1-4-cloud.html",
+            "desc": "Aws global infrastructure \ud83c\udf10 \n\na thread \ud83e\uddf5\n\n...",
+            "title": "aws global infrastructure 1 4 cloud",
+            "date": "2022-07-31 05:47:59.022405",
+            "tags": [
+                "AWS Global Infrastructure",
+                "AWS Global",
+                "Data Centres",
+                "Global Infrastructure",
+                "Data Centres fails"
+            ]
+        },
+        {
+            "url": "demystifying-javascript-asynchronou.html",
+            "desc": "Demystifying javascript asynchronous progr...",
+            "title": "demystifying javascript asynchronou",
+            "date": "2022-07-31 05:47:59.120178",
+            "tags": [
+                "Demystifying JavaScript Asynchronous",
+                "understand JavaScript promises",
+                "Demystifying JavaScript",
+                "JavaScript promises",
+                "Jill"
+            ]
         }
     ]
 }
