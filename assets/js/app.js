@@ -123,39 +123,41 @@ var load_data = function(limit, from) {
 
 
 			var total_pages = pages.length/page_size;
-			$('.page-numbers').empty();
-			var is_active_set = false;
 
-			/*for(var i=1;i<=total_pages;i++){
-				if(from == 1 || i==page_num){
-					if(!is_active_set){
-						$('.page-numbers').append('<li class="active" data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
-						is_active_set=true;
-					}
-					else{
-						$('.page-numbers').append('<li data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
-					}
-				}
-				else{
-					$('.page-numbers').append('<li data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
-				}
-			}*/
+			if($('.page-numbers').length>0){
+			    $('.page-numbers').empty();
+    			var is_active_set = false;
+
+    			/*for(var i=1;i<=total_pages;i++){
+    				if(from == 1 || i==page_num){
+    					if(!is_active_set){
+    						$('.page-numbers').append('<li class="active" data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
+    						is_active_set=true;
+    					}
+    					else{
+    						$('.page-numbers').append('<li data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
+    					}
+    				}
+    				else{
+    					$('.page-numbers').append('<li data="'+(i)+'"><a href="?page='+(i)+'" onclick="select_page(event);">'+(i)+'</a></li>');
+    				}
+    			}*/
 
 
 
 
-		    $('.page-numbers').pagination({
-		        dataSource: Array.from({length: total_pages}, (_, i) => i + 1),
-		        pageSize: 1,
-		        pageNumber: Number(page_num),
-		        autoHidePrevious: true,
-		        autoHideNext: true,
-		        pageLink: '?page=?',
-		        callback: function(data, pagination) {
-		            console.log('page', data);
-		        }
-		    });
-
+    		    $('.page-numbers').pagination({
+    		        dataSource: Array.from({length: total_pages}, (_, i) => i + 1),
+    		        pageSize: 1,
+    		        pageNumber: Number(page_num),
+    		        autoHidePrevious: true,
+    		        autoHideNext: true,
+    		        pageLink: '?page=?',
+    		        callback: function(data, pagination) {
+    		            console.log('page', data);
+    		        }
+    		    });
+			}
 
 
 		}
