@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="🧵i'm going to try to implement a #chess♟️ ...">
+    <meta name="author" content="Team intermaniac">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>🧵i'm going to try to implement a #chess♟...</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><h2>Technology Blog<em>.</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">Blog Entries</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link d-none" href="../post-details.html">Post Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h2>🧵i'm going to try to implement a #chess♟...</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section class="blog-posts grid-system">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="all-blog-posts">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="blog-post">
+                    <div class="blog-thumb d-none">
+                      <img src="../assets/images/blog-post-02.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                      <span>🧵i'm going to try to implement a #chess♟...</span>
+                      <a href="#"><h4>🧵i'm going to try to implement a #chess♟️ ...</h4></a>
+                      <ul class="post-info">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">2022-08-06 13:28:59.875127</a></li>
+
+                      </ul>
+                      <p>🧵i'm going to try to implement a #chess♟️ engine from scratch in #python🐍 and then teach it to beat me using different #ai🤖techniques. to make it more fun (and keep myself motivated!), i will document the whole process in this thread. comments and suggestions are most welcome!<br><br>however, except pawns and king, which can only attack from an adjacent square, other pieces can attack from any square along a straight line, as long as there is no other piece in between.<br><br>so, it's not enough to check whether e.g. a diagonally attacking piece is on a diagonal square; we should also check that there is nothing in between. in other words, we are looking for the nearest neighbouring piece in each of the 8 directions.<br><br>now, let's first assume that we have a method `position_nearest_piece_in_direction` that takes a square and a direction, and returns the position (index) of the nearest piece to the given square in the given direction (we will implement it later).<br><br>having this method, we can easily check whether a square is being attacked from any straight-line direction.
+to do so, let's first define our directions as a class attribute so we don't have to generate them at each function call: https://t.co/sssahog0db<br><br>now, we can define a method to check for straight-line attacks. first, we get the positions of the nearest neighbours, then we index our board with those positions to get the neighbouring pieces.<br><br>if any of the opponent's queens, rooks or bishops is in the neighbours, then we can declare an attack. for pawns and kings we have to do a bit more calculations, and also calculate their distance, and attacking direction (for pawns only) as well: https://t.co/ymq0mp4u7a<br><br>it turns out we don't need both `square_is_attacked_orthogonal` and `square_is_attacked_diagonal` methods, but only a single `square_is_attacked_in_straight_line` method! so we can update the `square_is_attacked_by_opponent` method: https://t.co/wq1bw6dk7x<br><br>ok, now let's get back to the `position_nearest_piece_in_direction` method; how do we get the position of the piece nearest to a square in a given direction? well, we can first perform #array_slicing on our board (2d-array) in the given direction.<br><br>this either gives a 1d-array (in case of orthogonal directions; green boxes) or a 2d-array (in case of diagonal directions; red boxes).  for the diagonal 2d #array_slices, we can then take the diagonal elements, so that now for each direction, we have a 1d-array (green + blue). https://t.co/higyhqynqg<br><br>if all slices are made in the direction of their corresponding arrow, then for all cases the index of the first non-zero element in the resulting 1d array will be equal to the distance of the nearest neighbour to the given square (yellow) in the given direction, minus 1.<br><br>this way, we can compute the position of the nearest piece to a given square in any direction. after a bit of thinking, it turned out that there is consistent mapping from directions to slices, so it can all be written down in a single generalized method: https://t.co/tjnltpz0oy<br><br>so, now we are done with the `square_is_attacked_by_opponent` method. but this was only the first part of the `move_results_in_own_check` method.  the second part, is `move_breaks_absolute_pin` that we haven't defined yet.<br><br>this method takes care of the second situation that can result in the current player getting into a check, i.e. when the player moves a piece that is under #absolute_pin outside of the #pinning direction, which is the attacking direction of the opponent's pinning piece.<br><br>since only bishops, rooks and queens can pin, the direction is always either horizontal, vertical or diagonal. so, first thing we can do is to find the player's king, and calculate a vector from the square under investigation to the king's square.<br><br>if this vector is neither horizontal, vertical, or diagonal, then the piece cannot be pinned, and we return false. otherwise, we now check the move vector (from start to end square).<br><br>if both the king vector and the move vector have the same slope, (i.e. one is a #scalar_multiple of the other) then even if the piece is pinned, it is still moving along the pinning direction, so the move cannot possibly break a pin, so we return false.<br><br>otherwise, we now have to check whether there is another piece between our square and the king. this can now be easily done using the `position_nearest_piece_in_direction` method we defined earlier for checking straight-line attacks;<br><br>we just get the #nearest_neighbor in the king's direction, and check whether it's the king itself. if so, then there is no piece in between and we also have to check the opposite direction to see whether an opponent's attacking piece is the nearest neighbor from that direction.<br><br>that's all we have to check for pinning. as we saw, the procedure can be nicely generalized into a single method. so, we write the `move_breaks_absolute_pin` method: https://t.co/iwub6tbjv9<br><br>now before we move on to next criteria for illegal moves, let's do some #code_review  and clean-ups.
+for example, look at the beginning of the `neighbor_in_direction` method; if the inputs were #numpy arrays instead of #tuples, then we could use some #numpy_magic to simplify: https://t.co/gxz2waclst</p>
+                      <div class="post-options">
+                        <div class="row">
+                          <div class="col-12">
+                            <ul class="post-tags">
+                              <li><i class="fa fa-tags"></i></li>
+								<li><a href="#">direction</a></li>
+<li><a href="#">square</a></li>
+<li><a href="#">piece</a></li>
+<li><a href="#">method</a></li>
+<li><a href="#">nearest</a></li>
+                            </ul>
+                          </div>
+                          <!--<div class="col-6">
+                            <ul class="post-share">
+                              <li><i class="fa fa-share-alt"></i></li>
+                              <li><a href="#">Facebook</a>,</li>
+                              <li><a href="#"> Twitter</a></li>
+                            </ul>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item comments">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+                      <ul>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item submit-comment">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sidebar-item search">
+                    <form id="search_form" name="gs" method="GET" action="#">
+                      <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item recent-posts d-none">
+                    <div class="sidebar-heading">
+                      <h2>Recent Posts</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="post-details.html">
+                          <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
+                          <span>May 31, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
+                          <span>May 28, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
+                          <span>May 14, 2020</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item categories d-none">
+                    <div class="sidebar-heading">
+                      <h2>Categories</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="#">- Nature Lifestyle</a></li>
+                        <li><a href="#">- Awesome Layouts</a></li>
+                        <li><a href="#">- Creative Ideas</a></li>
+                        <li><a href="#">- Responsive Templates</a></li>
+                        <li><a href="#">- HTML5 / CSS3 Templates</a></li>
+                        <li><a href="#">- Creative &amp; Unique</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item tags">
+                    <div class="sidebar-heading">
+                      <h2>Tag Clouds</h2>
+                    </div>
+                    <div class="content d-none">
+                      <ul>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Motivation</a></li>
+                        <li><a href="#">PSD</a></li>
+                        <li><a href="#">Responsive</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Dribbble</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <div class="copyright-text">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/owl.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/isotope.js"></script>
+    <script src="../assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>
