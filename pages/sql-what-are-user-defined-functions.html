@@ -5,19 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn javascript for beginners a mega thread 
+    <meta name="description" content="Sql: what are user defined functions?
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...">
+a thread...
+
+(part: 2)before reading further please go through part 1...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn javascript for beginners a meg 
+    <title>Sql: what are user defined functions?
 
-➊ callback function!
-➋ function...</title>
+...
+
+(part: 2)before reading further please...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,10 +83,11 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn javascript for beginners a meg 
+                <h2>Sql: what are user defined functions?
 
-➊ callback function!
-➋ function...</h2>
+...
+
+(part: 2)before reading further please...</h2>
               </div>
             </div>
           </div>
@@ -108,95 +109,80 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn javascript for beginners a meg 
+                      <span>Sql: what are user defined functions?
 
-➊ callback function!
-➋ function...</span>
-                      <a href="#"><h4>Learn javascript for beginners a mega thread 
+...
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...</h4></a>
+(part: 2)before reading further please...</span>
+                      <a href="#"><h4>Sql: what are user defined functions?
+
+a thread...
+
+(part: 2)before reading further please go through part 1...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.026889</a></li>
+                        <li><a href="#">2022-08-14 13:51:18.390435</a></li>
 
                       </ul>
-                      <p>Learn javascript for beginners a mega thread 
+                      <p>Sql: what are user defined functions?
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone objects!
-➎ call(), apply() and bind().
-➏ lexical scope!
-➐ default or rest parameters.
-➑ arithmetic operators!
-➒ basic events!
-➓ global and local variables!<br><br>➊ callback function! https://t.co/80jgdnehxl<br><br>➋ function returning! https://t.co/iqmtova0vq<br><br>➌ array methods!
+a thread...
 
-❑ array methods!
+(part: 2)<br><br>before reading further please go through part 1 where i've explained the basics of functions and in-built functions:
 
-➊ foreach()
-➋ some()
-➌ includes()
-➍ every()
-➎ filter()
-➏ sort()
-➐ map()
-➑ arrar.from()
-➒ reduce()
-➊0  array.of() https://t.co/n0752zy2uc<br><br>➍ clone objects! 
+https://t.co/tnhheagvqp<br><br>1. user-defined functions
 
-❑ here are 3 ways for you to clone an object 
+- it's a customized function created for our need, it optionally takes an argument, processes it and returns the output.
 
-➊ using spread
-➋ using object.assign
-➌ using json https://t.co/hjthlytpfe<br><br>➎ javascript: call(), apply() and bind(). https://t.co/d45iynfjrv<br><br>➏ lexical scope! https://t.co/npfbolowts<br><br>➐ default or rest parameters.
-https://t.co/0zsyv18j3u<br><br>➑ arithmetic operators!
+- it is reusable and can be used inline in query.<br><br>2. create function
 
-❍ different types of arithmetic operators!
-+    ➟ additon 
--  ➟ subtraction 
-*      ➟ multiplication 
-**   ➟ exponentiation 
-/       ➟ division 
-%      ➟ modulus (remainder) 
-++    ➟ increment 
- --    ➟ decrement https://t.co/bjxapysypi<br><br>➒ basic events!
+- using "create" statement we can create a new function.
 
-❍ type of event!
+- below, we've created function "getemployeename" which takes "id" as parameter and returns "employeename".
 
-✔ click               ✔ double click
-✔ right-click    🖱 mouse enter
-🖱 mouse out     🖱 mouse down
-🖱 mouse up     🌡 key press
-⌨ key up           ⏳load
-📁 unload         🥅 resize
- 🧵 scroll https://t.co/q9qhtgmmfd<br><br>➓ global and local variables! https://t.co/y1dzsfbwil<br><br>that's it for this thread. if you found it useful!
- 🤝 follow me  
-@sourav_code
+eg: https://t.co/q8jendczuj<br><br>3. remove function
 
-hey, i am a web developer from india, helping people learn web development. i tweet around.
+- use "drop" command to remove the function
 
-html
-css
-javascript
-react, &amp; more tips &amp; web development content.
+eg: https://t.co/7lcno6cbik<br><br>4. modify function
 
-like 💖 
-retweet✨</p>
+- many db don't directly allow to modify the function using alter command.
+
+- as a workaround, we need to drop it and create it with new definition.
+
+eg: https://t.co/uw1teywqt9<br><br>5. usage
+
+- we can use the function inside the select query as shown in the below code snippet.
+
+- below, we're fetching the employee name against the employee id for each row in the query.
+
+eg: https://t.co/jwncx2bqpv<br><br>6. benefits of function
+
+- reusability
+
+- can be used effectively in select, where, and case statements
+
+- it's easy to use as compared to store procedure and can be used easily within the sql statements.<br><br>that's it for now!
+
+wanna learn sql the cool way? 
+
+try out these sql games👇
+https://t.co/hqs9zbocdh<br><br>namaste, i'm vikas!
+
+every mon, wed &amp; fri - i write a thread
+on fullstack development.
+
+follow @vikasrajputin to read all my future threads.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">beginners A Mega</a></li>
-<li><a href="#">Array Methods</a></li>
-<li><a href="#">Mega Thread</a></li>
-<li><a href="#">Function Returning</a></li>
-<li><a href="#">Arithmetic Operators</a></li>
+								<li><a href="#">User Defined Functions</a></li>
+<li><a href="#">User Defined</a></li>
+<li><a href="#">Defined Functions</a></li>
+<li><a href="#">function</a></li>
+<li><a href="#">User</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">

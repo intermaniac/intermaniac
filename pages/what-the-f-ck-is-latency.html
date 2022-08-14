@@ -5,19 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn javascript for beginners a mega thread 
+    <meta name="description" content="What the f*ck is latency?
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...">
+why does it matter for defi?
+
+what does this entail for oracle...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn javascript for beginners a meg 
+    <title>What the f*ck is latency?
 
-➊ callback function!
-➋ function...</title>
+why does it matter for defi?
+
+what...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,10 +83,11 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn javascript for beginners a meg 
+                <h2>What the f*ck is latency?
 
-➊ callback function!
-➋ function...</h2>
+why does it matter for defi?
+
+what...</h2>
               </div>
             </div>
           </div>
@@ -108,95 +109,102 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn javascript for beginners a meg 
+                      <span>What the f*ck is latency?
 
-➊ callback function!
-➋ function...</span>
-                      <a href="#"><h4>Learn javascript for beginners a mega thread 
+why does it matter for defi?
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...</h4></a>
+what...</span>
+                      <a href="#"><h4>What the f*ck is latency?
+
+why does it matter for defi?
+
+what does this entail for oracle...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.026889</a></li>
+                        <li><a href="#">2022-08-14 13:51:21.178096</a></li>
 
                       </ul>
-                      <p>Learn javascript for beginners a mega thread 
+                      <p>What the f*ck is latency?
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone objects!
-➎ call(), apply() and bind().
-➏ lexical scope!
-➐ default or rest parameters.
-➑ arithmetic operators!
-➒ basic events!
-➓ global and local variables!<br><br>➊ callback function! https://t.co/80jgdnehxl<br><br>➋ function returning! https://t.co/iqmtova0vq<br><br>➌ array methods!
+why does it matter for defi?
 
-❑ array methods!
+what does this entail for oracle design?
 
-➊ foreach()
-➋ some()
-➌ includes()
-➍ every()
-➎ filter()
-➏ sort()
-➐ map()
-➑ arrar.from()
-➒ reduce()
-➊0  array.of() https://t.co/n0752zy2uc<br><br>➍ clone objects! 
+a short &amp; sweet 🧵👇<br><br>9/ why should you care about oracle latency? 
 
-❑ here are 3 ways for you to clone an object 
+re: the “dodging the bullet”:
 
-➊ using spread
-➋ using object.assign
-➌ using json https://t.co/hjthlytpfe<br><br>➎ javascript: call(), apply() and bind(). https://t.co/d45iynfjrv<br><br>➏ lexical scope! https://t.co/npfbolowts<br><br>➐ default or rest parameters.
-https://t.co/0zsyv18j3u<br><br>➑ arithmetic operators!
+if your oracle source does not update fast/frequently enough, you won't have time to see what’s coming!
 
-❍ different types of arithmetic operators!
-+    ➟ additon 
--  ➟ subtraction 
-*      ➟ multiplication 
-**   ➟ exponentiation 
-/       ➟ division 
-%      ➟ modulus (remainder) 
-++    ➟ increment 
- --    ➟ decrement https://t.co/bjxapysypi<br><br>➒ basic events!
+for defi applications, this can severely affect the operations and health of your platform 🥶<br><br>10/ let’s imagine a scenario for a lending protocol:
 
-❍ type of event!
+a user deposits one $a asset, worth $100, and borrows one $b asset, worth $100 (loan to collateral value = 100%)
 
-✔ click               ✔ double click
-✔ right-click    🖱 mouse enter
-🖱 mouse out     🖱 mouse down
-🖱 mouse up     🌡 key press
-⌨ key up           ⏳load
-📁 unload         🥅 resize
- 🧵 scroll https://t.co/q9qhtgmmfd<br><br>➓ global and local variables! https://t.co/y1dzsfbwil<br><br>that's it for this thread. if you found it useful!
- 🤝 follow me  
-@sourav_code
+if $a’s price &lt; $b’s price, the user is liquidated
 
-hey, i am a web developer from india, helping people learn web development. i tweet around.
+the prices for $a and $b come from an oracle<br><br>11/ what if the oracle updates too slowly, and there’s a 10% price decrease in $a? on the next oracle update, you would suddenly see:
 
-html
-css
-javascript
-react, &amp; more tips &amp; web development content.
+$a = $90
+$b = $100
+$a &lt; $b, so the user must be liquidated
 
-like 💖 
-retweet✨</p>
+the user’s collateral no longer covers the initial debt. the latter is now bad debt!<br><br>12/ it would be strictly better if you could see $a’s price change in real-time from $100 to $90.
+
+if latency is too high (i.e. updating every handful of block/min), you (the borrower or trader) may not have enough time to counter what’s incoming
+
+oracle latency is important ‼️<br><br>13/ nonetheless, the above latency is only one of the latency coin 🪙
+
+the other side of the coin concerns the oracle’s data sources:
+
+where does the data come from? how does it flow from off-chain to on-chain? is your oracle network designed to provide timely updates?<br><br>14/ imagine two oracles on the same chain:
+
+block times are the same for both oracles: they could theoretically update their respective on-chain prices at the same pace.
+
+but this is not always the case!<br><br>15/ even if both oracles try to update their on-chain prices at every block, what happens if the data sources of one oracle do not update as fast as the blockchain? 
+
+that oracle will end up replaying the same value or price over multiple blocks ❌<br><br>16/ earlier in the thread, we stated that blockchains were ‘slow’. still, some go relatively fast like @solana (with its 400ms block time)
+
+if your oracle’s sources do not or cannot refresh their quotes as fast as the blockchain, you are introducing further latency in the system<br><br>17/ so why not only use data sources updating e.g. 10x faster than even the fastest blockchains?
+
+well, it’s hard! and often times, it’s insanely expensive (if not outright impossible) to get such sources in the first place — and let’s not discuss commercial distribution rights…<br><br>18/ but luckily for you, @pythnetwork anticipated this need!
+
+as such, pyth is built as a #publishernetwork, with only first-party data owners 🔮
+
+that’s a lot of new words introduced. i’ll explain:
+https://t.co/wrezolmuyt<br><br>19/ in a #publishernetwork, data sources own and publish their proprietary data on-chain directly 
+
+in contrast, a reporter oracle network has nodes carrying data over the last mile from, usually, any public api endpoint https://t.co/rjspdeqnaw<br><br>20/ while valuable for many common use cases, public api data is not appropriate when billions or trillions are at stake, subject to the smallest variance in network latency<br><br>21/ could you imagine trading firms leveraging free data aggregators updating sporadically every 1 to 10 minutes while crypto assets might gain/lose 10% of its value in the meantime?<br><br>22/ even here, we assume that folks like you and me can access the “raw” data via api
+
+while this is mostly true for crypto, this does not apply to other asset classes<br><br>23/ look up free equities on yahoo or google finance: you’ll be served a 15-20 min old price—an unavoidable latency of the legacy world, one might call it 🤷<br><br>24/ on top of that, introducing operators/middlemen in the data pipeline increases the overall latency:
+
+a —&gt; b —&gt; … —&gt; y —&gt; z 
+or
+a —&gt; z
+
+that’s why pyth’s publishers submit their data directly to the pyth on-chain aggregation program: to eliminate middlemen delays (and fees)!<br><br>25/ the @pythnetwork is one where 60+ publishers submit prices and #confidenceintervals to the pyth on-chain program every solana block!
+
+that’s once every 400ms and &gt;200k outputs per day!
+
+is that fast enough for you?<br><br>26/ summary:
+
+1️⃣ oracle latency is important. any sub-optimal design choice introduces latency<br><br>2️⃣ oracle latency is not solely dependent on the blockchain speed: the latter is the common lowest denominator, but not everyone can or wants to match it
+
+3️⃣ oracle latency, or the oracle’s ability to update (change) its price, firstly depends on the data sources<br><br>27/ to learn more about pyth:
+
+whitepaper: https://t.co/qergjo2vry
+walkthrough: https://t.co/zzg4gnvaid
+whitepaper summary: https://t.co/jj1jtcahxo
+become pythian: https://t.co/br8hjt3iar</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">beginners A Mega</a></li>
-<li><a href="#">Array Methods</a></li>
-<li><a href="#">Mega Thread</a></li>
-<li><a href="#">Function Returning</a></li>
-<li><a href="#">Arithmetic Operators</a></li>
+								<li><a href="#">oracle</a></li>
+<li><a href="#">oracle latency</a></li>
+<li><a href="#">latency</a></li>
+<li><a href="#">data</a></li>
+<li><a href="#">data sources</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">

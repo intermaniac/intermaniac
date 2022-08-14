@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn javascript for beginners a mega thread 
+    <meta name="description" content="Undo wrong git changes 🚀
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...">
+we'll be looking at a couple of levels of changes. each...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn javascript for beginners a meg 
+    <title>Undo wrong git changes 🚀
 
-➊ callback function!
-➋ function...</title>
+we'll be looking at a couple...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,10 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn javascript for beginners a meg 
+                <h2>Undo wrong git changes 🚀
 
-➊ callback function!
-➋ function...</h2>
+we'll be looking at a couple...</h2>
               </div>
             </div>
           </div>
@@ -108,95 +103,56 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn javascript for beginners a meg 
+                      <span>Undo wrong git changes 🚀
 
-➊ callback function!
-➋ function...</span>
-                      <a href="#"><h4>Learn javascript for beginners a mega thread 
+we'll be looking at a couple...</span>
+                      <a href="#"><h4>Undo wrong git changes 🚀
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...</h4></a>
+we'll be looking at a couple of levels of changes. each...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.026889</a></li>
+                        <li><a href="#">2022-08-14 13:51:21.845610</a></li>
 
                       </ul>
-                      <p>Learn javascript for beginners a mega thread 
+                      <p>Undo wrong git changes 🚀
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone objects!
-➎ call(), apply() and bind().
-➏ lexical scope!
-➐ default or rest parameters.
-➑ arithmetic operators!
-➒ basic events!
-➓ global and local variables!<br><br>➊ callback function! https://t.co/80jgdnehxl<br><br>➋ function returning! https://t.co/iqmtova0vq<br><br>➌ array methods!
+we'll be looking at a couple of levels of changes. each one required a slightly different approach.
 
-❑ array methods!
+1. you have not yet committed the changes
+2. undo a commit that has not been pushed
+3. undo a pushed commit
 
-➊ foreach()
-➋ some()
-➌ includes()
-➍ every()
-➎ filter()
-➏ sort()
-➐ map()
-➑ arrar.from()
-➒ reduce()
-➊0  array.of() https://t.co/n0752zy2uc<br><br>➍ clone objects! 
+a thread 🧵<br><br>1. undo changes that you haven't committed in git
 
-❑ here are 3 ways for you to clone an object 
+it could happen that you have made some changes, but then you quickly realize that you did something that isn't right and should be reverted.
 
-➊ using spread
-➋ using object.assign
-➌ using json https://t.co/hjthlytpfe<br><br>➎ javascript: call(), apply() and bind(). https://t.co/d45iynfjrv<br><br>➏ lexical scope! https://t.co/npfbolowts<br><br>➐ default or rest parameters.
-https://t.co/0zsyv18j3u<br><br>➑ arithmetic operators!
+git checkout filename.extension<br><br>2. undo a commit that has not been pushed
 
-❍ different types of arithmetic operators!
-+    ➟ additon 
--  ➟ subtraction 
-*      ➟ multiplication 
-**   ➟ exponentiation 
-/       ➟ division 
-%      ➟ modulus (remainder) 
-++    ➟ increment 
- --    ➟ decrement https://t.co/bjxapysypi<br><br>➒ basic events!
+perhaps you got to the point where you already committed the changes.
+luckily you didn't push them yet.
 
-❍ type of event!
+git reset --soft head~
 
-✔ click               ✔ double click
-✔ right-click    🖱 mouse enter
-🖱 mouse out     🖱 mouse down
-🖱 mouse up     🌡 key press
-⌨ key up           ⏳load
-📁 unload         🥅 resize
- 🧵 scroll https://t.co/q9qhtgmmfd<br><br>➓ global and local variables! https://t.co/y1dzsfbwil<br><br>that's it for this thread. if you found it useful!
- 🤝 follow me  
-@sourav_code
+if we want to undo the last two commits,
+git reset --soft head~2<br><br>3. undo an already pushed commit
 
-hey, i am a web developer from india, helping people learn web development. i tweet around.
+this one is the most common scenario and also the messiest.
 
-html
-css
-javascript
-react, &amp; more tips &amp; web development content.
+you have committed and pushed code to git.
 
-like 💖 
-retweet✨</p>
+step one is to ensure that you are on a clean working directory. you shouldn't have any open new changes.
+
+git revert f193a76 --no-edit https://t.co/v31hgeqten</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">beginners A Mega</a></li>
-<li><a href="#">Array Methods</a></li>
-<li><a href="#">Mega Thread</a></li>
-<li><a href="#">Function Returning</a></li>
-<li><a href="#">Arithmetic Operators</a></li>
+								<li><a href="#">Git</a></li>
+<li><a href="#">Undo</a></li>
+<li><a href="#">couple of levels</a></li>
+<li><a href="#">Undo wrong Git</a></li>
+<li><a href="#">pushed</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">

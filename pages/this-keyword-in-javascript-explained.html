@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn javascript for beginners a mega thread 
+    <meta name="description" content="💚 ' this ' keyword in javascript: explained 💚
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...">
+thread 👇👇 https://t.co/biuoxm6nrfin javascript, the this keyword...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn javascript for beginners a meg 
+    <title>💚 ' this ' keyword in javascript: explained 💚
 
-➊ callback function!
-➋ function...</title>
+ 👇👇...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,10 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn javascript for beginners a meg 
+                <h2>💚 ' this ' keyword in javascript: explained 💚
 
-➊ callback function!
-➋ function...</h2>
+ 👇👇...</h2>
               </div>
             </div>
           </div>
@@ -108,95 +103,59 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn javascript for beginners a meg 
+                      <span>💚 ' this ' keyword in javascript: explained 💚
 
-➊ callback function!
-➋ function...</span>
-                      <a href="#"><h4>Learn javascript for beginners a mega thread 
+ 👇👇...</span>
+                      <a href="#"><h4>💚 ' this ' keyword in javascript: explained 💚
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...</h4></a>
+thread 👇👇 https://t.co/biuoxm6nrfin javascript, the this keyword...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.026889</a></li>
+                        <li><a href="#">2022-08-14 13:51:20.215353</a></li>
 
                       </ul>
-                      <p>Learn javascript for beginners a mega thread 
+                      <p>💚 ' this ' keyword in javascript: explained 💚
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone objects!
-➎ call(), apply() and bind().
-➏ lexical scope!
-➐ default or rest parameters.
-➑ arithmetic operators!
-➒ basic events!
-➓ global and local variables!<br><br>➊ callback function! https://t.co/80jgdnehxl<br><br>➋ function returning! https://t.co/iqmtova0vq<br><br>➌ array methods!
+thread 👇👇 https://t.co/biuoxm6nrf<br><br>in javascript, the this keyword refers to an object, and that object depends on how this is being invoked (used or called).
 
-❑ array methods!
+sounds interesting? let's dive more into it..<br><br>the this keyword refers to different objects depending on how it is used: https://t.co/zhwdr3mulz<br><br>1. this in a method:
 
-➊ foreach()
-➋ some()
-➌ includes()
-➍ every()
-➎ filter()
-➏ sort()
-➐ map()
-➑ arrar.from()
-➒ reduce()
-➊0  array.of() https://t.co/n0752zy2uc<br><br>➍ clone objects! 
+when used in an object method, this refers to the object.
+in the example on top of this page, this refers to the person object.
+because the fullname method is a method of the person object. https://t.co/2nuiisnvs0<br><br>2. this alone:
 
-❑ here are 3 ways for you to clone an object 
+when used alone, this refers to the global object.
+because this is running in the global scope.
+in a browser window the global object is [object window]: https://t.co/sxzwy9aw1y<br><br>3. this in a function (default)
+in a function, the global object is the default binding for this.
+in a browser window the global object is [object window]:
 
-➊ using spread
-➋ using object.assign
-➌ using json https://t.co/hjthlytpfe<br><br>➎ javascript: call(), apply() and bind(). https://t.co/d45iynfjrv<br><br>➏ lexical scope! https://t.co/npfbolowts<br><br>➐ default or rest parameters.
-https://t.co/0zsyv18j3u<br><br>➑ arithmetic operators!
+4. this in event handlers
+in html event handlers, this refers to the html element that received the event: https://t.co/lhar3xwv8e<br><br>5. object method binding
+in these examples, this is the person object:
+i.e. this.firstname is the firstname property of this (the person object). https://t.co/xjphfjirxo<br><br>6. explicit function binding
 
-❍ different types of arithmetic operators!
-+    ➟ additon 
--  ➟ subtraction 
-*      ➟ multiplication 
-**   ➟ exponentiation 
-/       ➟ division 
-%      ➟ modulus (remainder) 
-++    ➟ increment 
- --    ➟ decrement https://t.co/bjxapysypi<br><br>➒ basic events!
+the call() and apply() methods are predefined javascript methods.
+they can both be used to call an object method with another object as argument.<br><br>the example below calls person1.fullname with person2 as an argument, this refers to person2, even if fullname is a method of person1: https://t.co/lejdqjtuvi<br><br>7. function borrowing
 
-❍ type of event!
+with the bind() method, an object can borrow a method from another object.
+this example creates 2 objects (person and member).
+the member object borrows the fullname method from the person object: https://t.co/vhbjrq2aht<br><br>that's all for ' this ' keyword in javascript,
 
-✔ click               ✔ double click
-✔ right-click    🖱 mouse enter
-🖱 mouse out     🖱 mouse down
-🖱 mouse up     🌡 key press
-⌨ key up           ⏳load
-📁 unload         🥅 resize
- 🧵 scroll https://t.co/q9qhtgmmfd<br><br>➓ global and local variables! https://t.co/y1dzsfbwil<br><br>that's it for this thread. if you found it useful!
- 🤝 follow me  
-@sourav_code
+if you like it please like and share it with your friends
 
-hey, i am a web developer from india, helping people learn web development. i tweet around.
-
-html
-css
-javascript
-react, &amp; more tips &amp; web development content.
-
-like 💖 
-retweet✨</p>
+follow @amazingfarooqq 
+for more amazing javascript content</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">beginners A Mega</a></li>
-<li><a href="#">Array Methods</a></li>
-<li><a href="#">Mega Thread</a></li>
-<li><a href="#">Function Returning</a></li>
-<li><a href="#">Arithmetic Operators</a></li>
+								<li><a href="#">object</a></li>
+<li><a href="#">Method</a></li>
+<li><a href="#">refers</a></li>
+<li><a href="#">person object</a></li>
+<li><a href="#">Explained</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">

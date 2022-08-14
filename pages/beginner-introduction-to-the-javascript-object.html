@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn javascript for beginners a mega thread 
+    <meta name="description" content="Beginner: introduction to the javascript object methods - final part 
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...">
+a mega thread 🧵👉 object.getownpropertysymbols()
+
+returns...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn javascript for beginners a meg 
-
-➊ callback function!
-➋ function...</title>
+    <title>Beginner: introduction to the javascript object methods - final part...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,10 +79,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn javascript for beginners a meg 
-
-➊ callback function!
-➋ function...</h2>
+                <h2>Beginner: introduction to the javascript object methods - final part...</h2>
               </div>
             </div>
           </div>
@@ -108,95 +101,60 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn javascript for beginners a meg 
+                      <span>Beginner: introduction to the javascript object methods - final part...</span>
+                      <a href="#"><h4>Beginner: introduction to the javascript object methods - final part 
 
-➊ callback function!
-➋ function...</span>
-                      <a href="#"><h4>Learn javascript for beginners a mega thread 
+a mega thread 🧵👉 object.getownpropertysymbols()
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...</h4></a>
+returns...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.026889</a></li>
+                        <li><a href="#">2022-08-14 13:51:20.878188</a></li>
 
                       </ul>
-                      <p>Learn javascript for beginners a mega thread 
+                      <p>Beginner: introduction to the javascript object methods - final part 
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone objects!
-➎ call(), apply() and bind().
-➏ lexical scope!
-➐ default or rest parameters.
-➑ arithmetic operators!
-➒ basic events!
-➓ global and local variables!<br><br>➊ callback function! https://t.co/80jgdnehxl<br><br>➋ function returning! https://t.co/iqmtova0vq<br><br>➌ array methods!
+a mega thread 🧵<br><br>👉 object.getownpropertysymbols()
 
-❑ array methods!
+returns an array of all symbol properties found directly upon a given object. 
 
-➊ foreach()
-➋ some()
-➌ includes()
-➍ every()
-➎ filter()
-➏ sort()
-➐ map()
-➑ arrar.from()
-➒ reduce()
-➊0  array.of() https://t.co/n0752zy2uc<br><br>➍ clone objects! 
+this method returns an empty array unless you have set symbol properties on your object. https://t.co/tupfk9cxdd<br><br>👉 object.seal()
 
-❑ here are 3 ways for you to clone an object 
+seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. 
 
-➊ using spread
-➋ using object.assign
-➌ using json https://t.co/hjthlytpfe<br><br>➎ javascript: call(), apply() and bind(). https://t.co/d45iynfjrv<br><br>➏ lexical scope! https://t.co/npfbolowts<br><br>➐ default or rest parameters.
-https://t.co/0zsyv18j3u<br><br>➑ arithmetic operators!
+values of present properties can still be changed as long as they are writable.<br><br>👉 object.issealed()
 
-❍ different types of arithmetic operators!
-+    ➟ additon 
--  ➟ subtraction 
-*      ➟ multiplication 
-**   ➟ exponentiation 
-/       ➟ division 
-%      ➟ modulus (remainder) 
-++    ➟ increment 
- --    ➟ decrement https://t.co/bjxapysypi<br><br>➒ basic events!
+is used to determine if an object is sealed or not.
 
-❍ type of event!
+an object is sealed if it is not extensible and if all its properties are non-configurable and therefore not removable (but not necessarily non-writable).<br><br>example: https://t.co/bankhewdrb<br><br>👉 object.preventextensions()
 
-✔ click               ✔ double click
-✔ right-click    🖱 mouse enter
-🖱 mouse out     🖱 mouse down
-🖱 mouse up     🌡 key press
-⌨ key up           ⏳load
-📁 unload         🥅 resize
- 🧵 scroll https://t.co/q9qhtgmmfd<br><br>➓ global and local variables! https://t.co/y1dzsfbwil<br><br>that's it for this thread. if you found it useful!
- 🤝 follow me  
-@sourav_code
+prevents new properties from ever being added to an object (i.e. prevents future extensions to the object). https://t.co/ljnnausuc9<br><br>👉 object.setprototypeof()
 
-hey, i am a web developer from india, helping people learn web development. i tweet around.
+sets the prototype of a specified object to another object or null. https://t.co/m6gi7xgzda<br><br>👉 object.tostring()
 
-html
-css
-javascript
-react, &amp; more tips &amp; web development content.
+returns the object as a string. every object descended from object inherits tostring() and if not overridden, it returns "[object &lt;type&gt;]" https://t.co/fgypjuhwri<br><br>👉 object.tolocalestring()
 
-like 💖 
-retweet✨</p>
+this method is meant to be overridden by derived objects for locale-specific purposes. https://t.co/hvze3p2z8c<br><br>👉 object.prototype.valueof()
+
+the valueof() method returns the primitive value of the specified object.
+
+in the below example since the valueof() method is not overridden,  the object itself is returned https://t.co/82cjycy5qu<br><br>with custom object: https://t.co/cowshhxrgo<br><br>👉 object.keys()
+
+returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would. https://t.co/bs9fnfzqe2<br><br>👉 object.values()
+
+returns an array of a given object's own enumerable property values, iterated in the same order that a normal loop would. https://t.co/pwjhujwxuu<br><br>if you found this content useful,
+👉 do like, comment or retweet
+👉 follow  @supergradshq for more informative content.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">beginners A Mega</a></li>
-<li><a href="#">Array Methods</a></li>
-<li><a href="#">Mega Thread</a></li>
-<li><a href="#">Function Returning</a></li>
-<li><a href="#">Arithmetic Operators</a></li>
+								<li><a href="#">Final Part</a></li>
+<li><a href="#">Part A Mega</a></li>
+<li><a href="#">Mega thread</a></li>
+<li><a href="#">object</a></li>
+<li><a href="#">Returns</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">

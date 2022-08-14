@@ -5,19 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn javascript for beginners a mega thread 
+    <meta name="description" content="Simplifying closures in javascript✨
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...">
+a thread + article https://t.co/kjciwmyipn💛what exactly is a closure?
+
+- it is the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn javascript for beginners a meg 
+    <title>Simplifying closures in javascript✨
 
-➊ callback function!
-➋ function...</title>
+ + article https://t.co/kjciwmyipn💛what exactly is a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,10 +81,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn javascript for beginners a meg 
+                <h2>Simplifying closures in javascript✨
 
-➊ callback function!
-➋ function...</h2>
+ + article https://t.co/kjciwmyipn💛what exactly is a...</h2>
               </div>
             </div>
           </div>
@@ -108,95 +105,84 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn javascript for beginners a meg 
+                      <span>Simplifying closures in javascript✨
 
-➊ callback function!
-➋ function...</span>
-                      <a href="#"><h4>Learn javascript for beginners a mega thread 
+ + article https://t.co/kjciwmyipn💛what exactly is a...</span>
+                      <a href="#"><h4>Simplifying closures in javascript✨
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone...</h4></a>
+a thread + article https://t.co/kjciwmyipn💛what exactly is a closure?
+
+- it is the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.026889</a></li>
+                        <li><a href="#">2022-08-14 13:51:21.320747</a></li>
 
                       </ul>
-                      <p>Learn javascript for beginners a mega thread 
+                      <p>Simplifying closures in javascript✨
 
-➊ callback function!
-➋ function returning!
-➌ array methods!
-➍ clone objects!
-➎ call(), apply() and bind().
-➏ lexical scope!
-➐ default or rest parameters.
-➑ arithmetic operators!
-➒ basic events!
-➓ global and local variables!<br><br>➊ callback function! https://t.co/80jgdnehxl<br><br>➋ function returning! https://t.co/iqmtova0vq<br><br>➌ array methods!
+a thread + article https://t.co/kjciwmyipn<br><br>💛what exactly is a closure?
 
-❑ array methods!
+- it is the combo of a function bundled together with references to its surrounding state (the lexical environment). 
 
-➊ foreach()
-➋ some()
-➌ includes()
-➍ every()
-➎ filter()
-➏ sort()
-➐ map()
-➑ arrar.from()
-➒ reduce()
-➊0  array.of() https://t.co/n0752zy2uc<br><br>➍ clone objects! 
+- basically, it gives you access to an outer function's scope from an inner function.<br><br>- in a closure, an inner function has access to the outer (enclosing) function’s variables — a scope chain.
 
-❑ here are 3 ways for you to clone an object 
+👉scope chain of closure:
 
-➊ using spread
-➋ using object.assign
-➌ using json https://t.co/hjthlytpfe<br><br>➎ javascript: call(), apply() and bind(). https://t.co/d45iynfjrv<br><br>➏ lexical scope! https://t.co/npfbolowts<br><br>➐ default or rest parameters.
-https://t.co/0zsyv18j3u<br><br>➑ arithmetic operators!
+- access to its own scope. (refers to variables defined b/w its curly brackets)
+- access to outer func’s variables
+- access to global variables<br><br>💛lexical scoping
 
-❍ different types of arithmetic operators!
-+    ➟ additon 
--  ➟ subtraction 
-*      ➟ multiplication 
-**   ➟ exponentiation 
-/       ➟ division 
-%      ➟ modulus (remainder) 
-++    ➟ increment 
- --    ➟ decrement https://t.co/bjxapysypi<br><br>➒ basic events!
+- it defines the scope of a variable according to the position of that variable declared in the source code.
 
-❍ type of event!
+- here, the variable fname is a global variable, so it is accessible from anywhere. but the variable lname is a local variable. https://t.co/pkew7vdotp<br><br>- so it is accessible only within the full_name() function. if we try to access the msg variable outside the full_name() function, we will get an error.
 
-✔ click               ✔ double click
-✔ right-click    🖱 mouse enter
-🖱 mouse out     🖱 mouse down
-🖱 mouse up     🌡 key press
-⌨ key up           ⏳load
-📁 unload         🥅 resize
- 🧵 scroll https://t.co/q9qhtgmmfd<br><br>➓ global and local variables! https://t.co/y1dzsfbwil<br><br>that's it for this thread. if you found it useful!
- 🤝 follow me  
-@sourav_code
+- so, javascript uses the "scope" to manage the variable accessibility.<br><br>👉 according to lexical scoping, the scopes can be nested and the inner function can access the variables declared in its outer scope. 
 
-hey, i am a web developer from india, helping people learn web development. i tweet around.
+- the greeting() function creates a local variable named msg and another function named sayhello(). https://t.co/bzgiqaub2g<br><br>-sayhello() is inner func and is available only within the body of the greeting() func.
 
-html
-css
-javascript
-react, &amp; more tips &amp; web development content.
+-sayhello() func can access variables of outer func such as the msg variable of the greeting() func.
 
-like 💖 
-retweet✨</p>
+-inside greeting() func, we call the sayhello() func to display msg "hello world :)'.<br><br>💛javascript closures
+
+👉to make a closure, let's just modify our greeting() function, which was created previously.
+
+-here, instead of executing the sayhello() func inside the greeting() func, the greeting() func returns the sayhello() func object. https://t.co/vr0f4e6b64<br><br>-since funcs are very important in javascript, you can return a function from another func.they practically get a celebrity treatment👀
+
+-outside of greeting() func, we assigned hello variable the value returned by greeting() func.that is actually a reference to sayhello() func!<br><br>-we then executed the sayhello() func using the reference of that func: hello(). 
+
+-normally, a local variable only exists during the execution of the func. in the ideal case, when the greeting() func has been executed,msg variable should be no longer accessible.<br><br>- but here, we execute the hello() func that references the sayhello() func, so the msg variable still exists and can be accessible.
+
+-the sayhello() func is the magical being, also known as a closure!
+
+-so, closure is a func that preserves the outer scope in its inner scope.<br><br>💛why learn closures?
+
+👉 init functions - used to ensure that a function is only called once
+
+👉 memory optimization -used to make functions more memory efficient and performant<br><br>👉 encapsulation - used to hide variables of a function and selectively expose methods
+
+👉 functional programming - without them, higher-order functions and currying is not possible<br><br>for more examples and closures in loops + on how to use let keyword and iife in js closures, checkout the article!<br><br>for my @hashnode readers:
+
+https://t.co/rpbit41bkl<br><br>for my @thepracticaldev readers:
+
+https://t.co/ib86axbd8u<br><br>hope that you liked this thread!
+
+if you like more content like this:
+- follow @iayeshasahar 
+- rt so more people can benefit
+
+thanks for reading❤
+
+happy coding✨</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">beginners A Mega</a></li>
-<li><a href="#">Array Methods</a></li>
-<li><a href="#">Mega Thread</a></li>
-<li><a href="#">Function Returning</a></li>
-<li><a href="#">Arithmetic Operators</a></li>
+								<li><a href="#">func</a></li>
+<li><a href="#">Simplifying Closures</a></li>
+<li><a href="#">variable</a></li>
+<li><a href="#">function</a></li>
+<li><a href="#">sayHello</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
