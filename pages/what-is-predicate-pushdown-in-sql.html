@@ -5,9 +5,9 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="What is predicate pushdown in sql? 🤔 
+    <meta name="description" content="What is Predicate Pushdown in SQL? 🤔 
 
-predicates are statements that result in true or...">
+Predicates are statements that result in True or...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
@@ -106,41 +106,41 @@ predicates are statements...</h2>
                       <span>What is predicate pushdown in sql? 🤔 
 
 predicates are statements...</span>
-                      <a href="#"><h4>What is predicate pushdown in sql? 🤔 
+                      <a href="#"><h4>What is Predicate Pushdown in SQL? 🤔 
 
-predicates are statements that result in true or...</h4></a>
+Predicates are statements that result in True or...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.914655</a></li>
+                        <li><a href="#">2022-08-16 09:45:28</a></li>
 
                       </ul>
-                      <p>What is predicate pushdown in sql? 🤔 
+                      <p>What is Predicate Pushdown in SQL? 🤔 
 
-predicates are statements that result in true or false.
-in sql, you can think of where/having as a predicate.
+Predicates are statements that result in True or False.
+In SQL, you can think of WHERE/HAVING as a predicate.
 
-now, let's see what is the predicate pushdown 🧵<br><br>consider a schema as shown in the image.
+Now, let's see what is the predicate pushdown 🧵<br><br>Consider a schema as shown in the image.
 
-we want to find the total_amount spent by customers whose name starts with 'a'. https://t.co/masifmgfai<br><br>so, here's the query along with its execution plan: https://t.co/c6ltss4q5g<br><br>as you can see, the where clause is executed as the first step, while reading the customers from the disk. even before the join.
+We want to find the total_amount spent by customers whose name starts with 'A'. https://t.co/masIfMgFai<br><br>So, here's the query along with its execution plan: https://t.co/C6LtSS4q5G<br><br>As you can see, the WHERE clause is executed as the first step, while reading the customers from the disk. Even before the JOIN.
 
-this helps in reducing the amount of data to be processed at a later stage of the query execution.
+This helps in reducing the amount of data to be processed at a later stage of the query execution.
 
-let's take another example.<br><br>we want to find the total_amount of customers having odd customer ids.
+Let's take another example.<br><br>We want to find the total_amount of customers having odd customer ids.
 
-here's the query and the execution plan for the same: https://t.co/01oswj69sy<br><br>even though having is used to perform filtering after the aggregation, sql is smart enough to realize that filtering the records before the aggregation will not be a problem in this case. 
+Here's the query and the execution plan for the same: https://t.co/01OsWj69sY<br><br>Even though HAVING is used to perform filtering after the aggregation, SQL is smart enough to realize that filtering the records before the aggregation will not be a problem in this case. 
 
-hence, the records are filtered while reading from the disk.<br><br>however, if you have a condition on aggregation like sum(total_amount) &gt; 50 or likewise, the filtering will be done after the aggregation.
+Hence, the records are filtered while reading from the disk.<br><br>However, if you have a condition on aggregation like sum(total_amount) &gt; 50 or likewise, the filtering will be done after the aggregation.
 
-i hope you get the idea. let's put it more formally. https://t.co/fvo7humhbi<br><br>predicate pushdown is a behaviour according to which certain predicates/filters in a sql query can be performed as early as possible so that further processing can be reduced.
+I hope you get the idea. Let's put it more formally. https://t.co/fvo7hUMHBi<br><br>Predicate Pushdown is a behaviour according to which certain predicates/filters in a SQL query can be performed as early as possible so that further processing can be reduced.
 
-that's it for predicate pushdowns!<br><br>💡 bonus question:
+That's it for predicate pushdowns!<br><br>💡 Bonus Question:
 
-if you look at the execution plan of the first query, you'll find that it is sorting data on cust_id before aggregation even when we're not using group by.
+If you look at the execution plan of the first query, you'll find that it is sorting data on cust_id before aggregation even when we're not using GROUP BY.
 
-can you find out why? ⚡<br><br>that's it for today! 👋  i hope you learned something new. 
+Can you find out why? ⚡<br><br>That's it for today! 👋  I hope you learned something new. 
 
-thanks!<br><br>you can read the unrolled version of this thread here: https://t.co/xpmdzxzkp7<br><br>*order by
-https://t.co/ptvhyftqsb</p>
+Thanks!<br><br>You can read the unrolled version of this thread here: https://t.co/xpMdZXZkP7<br><br>*ORDER BY
+https://t.co/PTVhYFTQsb</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -312,6 +312,7 @@ https://t.co/ptvhyftqsb</p>
       }
     </script>
 
+<!--1063579253781993551-->
 
   </body>
 

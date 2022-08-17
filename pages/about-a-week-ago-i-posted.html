@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="About a week ago i posted a twitter thread...">
+    <meta name="description" content="About a week ago I posted a Twitter Thread about how to SSH to a...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>About a week ago i posted a twitter  abo...</title>
+    <title>About a week ago i posted a twitter  about...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>About a week ago i posted a twitter  abo...</h2>
+                <h2>About a week ago i posted a twitter  about...</h2>
               </div>
             </div>
           </div>
@@ -97,25 +97,25 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>About a week ago i posted a twitter  abo...</span>
-                      <a href="#"><h4>About a week ago i posted a twitter thread...</h4></a>
+                      <span>About a week ago i posted a twitter  about...</span>
+                      <a href="#"><h4>About a week ago I posted a Twitter Thread about how to SSH to a...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-06 13:28:59.094172</a></li>
+                        <li><a href="#">2022-08-06 13:28:59</a></li>
 
                       </ul>
-                      <p>About a week ago i posted a twitter thread about how to ssh to a server without a password from a windows based client. now i’m positing how to do it from a macos/linux based client.
+                      <p>About a week ago I posted a Twitter Thread about how to SSH to a server without a password from a Windows based Client. Now I’m positing how to do it from a macOS/Linux based Client.
 
-see thread below!<br><br>same disclaimer's as before!
-**disclaimer** this is only for a one to one connection. if accessing same system via another machine, you will need to repeat the steps or type a password in to access system.<br><br>**second disclaimer** do this at your own security risk.<br><br>1. you don't have to make a directory here on macos/linux based machines. it already exists!<br><br>2. creating a public and private key!
+See thread below!<br><br>Same Disclaimer's as before!
+**Disclaimer** This is only for a one to one connection. If accessing same system via another machine, you will need to repeat the steps or type a password in to access system.<br><br>**Second Disclaimer** Do this at your own security risk.<br><br>1. You don't have to make a directory here on macOS/Linux based machines. It already exists!<br><br>2. Creating a Public and Private Key!
 
-ssh-keygen -f ~/.ssh/id_rsa -t rsa -p ""<br><br>3. copy the public key over to the system that you are accessing. there are two ways that you can do it:<br><br>a. you can do this ssh-copy-id (this way will require a password):
+ssh-keygen -f ~/.ssh/id_rsa -t rsa -P ""<br><br>3. Copy the Public Key over to the system that you are accessing. There are two ways that you can do it:<br><br>a. You can do this ssh-copy-id (this way will require a password):
 
-ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;username&gt;@&lt;server-ip-address&gt; -o stricthostkeychecking=no<br><br>b. or you can use cat:
+ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;username&gt;@&lt;server-ip-address&gt; -o StrictHostKeyChecking=No<br><br>b. Or you can use cat:
 
-cat ~/.ssh/id_rsa.pub | ssh &lt;username&gt;@&lt;server-ip-address&gt; 'mkdir -p .ssh; cat &gt;&gt; .ssh/authorized_keys'<br><br>now test!<br><br>and that should be it! you should be able to ssh into the new system without having to type in a password!<br><br>here's the previous thread for instructions on how to handle this with a windows based os.
+cat ~/.ssh/id_rsa.pub | ssh &lt;username&gt;@&lt;server-ip-address&gt; 'mkdir -p .ssh; cat &gt;&gt; .ssh/authorized_keys'<br><br>Now Test!<br><br>And that should be it! You should be able to SSH into the new system without having to type in a password!<br><br>Here's the previous thread for instructions on how to handle this with a Windows based OS.
 
-https://t.co/myov6rezvx<br><br>follow for more random tips that i come across in my journey of tech!</p>
+https://t.co/Myov6Rezvx<br><br>Follow for more random tips that I come across in my journey of tech!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -287,6 +287,7 @@ https://t.co/myov6rezvx<br><br>follow for more random tips that i come across in
       }
     </script>
 
+<!--6127968545106791551-->
 
   </body>
 

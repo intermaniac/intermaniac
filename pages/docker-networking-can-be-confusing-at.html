@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content=".@docker networking can be confusing at first, but there are only a few types to...">
+    <meta name="description" content=".@Docker networking can be confusing at first, but there are only a few types to...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
@@ -98,40 +98,40 @@
                     </div>
                     <div class="down-content">
                       <span>.@docker networking can be confusing at first, but there are...</span>
-                      <a href="#"><h4>.@docker networking can be confusing at first, but there are only a few types to...</h4></a>
+                      <a href="#"><h4>.@Docker networking can be confusing at first, but there are only a few types to...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:22.474278</a></li>
+                        <li><a href="#">2022-08-16 09:45:28</a></li>
 
                       </ul>
-                      <p>.@docker networking can be confusing at first, but there are only a few types to know: bridge, host, and overlay. 
+                      <p>.@Docker networking can be confusing at first, but there are only a few types to know: bridge, host, and overlay. 
 
-here's a quick rundown of each:
+Here's a quick rundown of each:
 
-thread below 🧵<br><br>1. bridge network - the container runs in a private network that is only accessible to other containers in the same network. if you want to communicate with a service outside of the host, you need to use network address translation (nat). 
+Thread below 🧵<br><br>1. Bridge Network - The container runs in a private network that is only accessible to other containers in the same network. If you want to communicate with a service outside of the host, you need to use network address translation (NAT). 
 
-this is the default mode of networking.<br><br>example: $ docker run --name nginx -p 8080:80 nginx<br><br>2. host network - services running inside the container share the same ip address and network namespace as the host, meaning they have the same network capabilities as services running directly on the host.
+This is the default mode of networking.<br><br>Example: $ docker run --name nginx -p 8080:80 nginx<br><br>2. Host Network - Services running inside the container share the same IP address and network namespace as the host, meaning they have the same network capabilities as services running directly on the host.
 
-example: $ docker run --rm --net=host busybox<br><br>3. overlay network - the overlay network driver creates a secure, distributed network among multiple docker hosts. this network sits on top of the host-specific networks, allowing containers connected to it (including swarm service containers) to communicate transparently.<br><br>example: 
+Example: $ docker run --rm --net=host busybox<br><br>3. Overlay Network - The overlay network driver creates a secure, distributed network among multiple Docker hosts. This network sits on top of the host-specific networks, allowing containers connected to it (including swarm service containers) to communicate transparently.<br><br>Example: 
 $ docker network create --driver overlay --attachable my_overlay_network
 
 $ docker run --rm --it 
 --name=container-b
---network=my_overlay_network busybox<br><br>other network types:
+--network=my_overlay_network busybox<br><br>Other Network Types:
 
-4. custom bridge network - this is the same as bridge networking but uses a bridge explicitly created for this (and other) containers. you can use this by creating a container that runs on an exclusive “database” bridge network.<br><br>another container can have an interface on the default bridge and the database bridge, enabling it to communicate with both networks.
+4. Custom Bridge Network - This is the same as Bridge Networking but uses a bridge explicitly created for this (and other) containers. You can use this by creating a container that runs on an exclusive “database” bridge network.<br><br>Another container can have an interface on the default bridge and the database bridge, enabling it to communicate with both networks.
 
-example: 
+Example: 
 $ docker network create mynetwork
 
 $ docker run -it --rm --name=container-a
---network=mynetwork busybox<br><br>5. container-defined network - a container can share the address and network configuration of another container, which enables process isolation between containers while still allowing communication between services on the localhost address.<br><br>example: $ docker run -it --rm --name=container-b --network=container:container-a busybox<br><br>6. no networking: this option disables all networking for the container. t is not assigned an ip address, and it cannot publish any ports.
+--network=mynetwork busybox<br><br>5. Container-defined Network - A container can share the address and network configuration of another container, which enables process isolation between containers while still allowing communication between services on the localhost address.<br><br>Example: $ docker run -it --rm --name=container-b --network=container:container-a busybox<br><br>6. No networking: This option disables all networking for the container. t is not assigned an IP address, and it cannot publish any ports.
 
-example: $ docker run --net=none --name busybox busybox<br><br>for more about docker networking, check out the official documentation: https://t.co/33a2zakyhv
+Example: $ docker run --net=none --name busybox busybox<br><br>For more about Docker Networking, check out the official Documentation: https://t.co/33a2zakYHv
 
-i write about golang, devops, cloud-native, kubernetes, docker, linux, apis, networking, and more, consider subscribing to my newsletter!
+I write about Golang, DevOps, Cloud-native, Kubernetes, Docker, Linux, APIs, Networking, and more, consider subscribing to my Newsletter!
 
-https://t.co/0hb7qpmtrg</p>
+https://t.co/0hb7qpMTrG</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -303,6 +303,7 @@ https://t.co/0hb7qpmtrg</p>
       }
     </script>
 
+<!--4078420941344193551-->
 
   </body>
 

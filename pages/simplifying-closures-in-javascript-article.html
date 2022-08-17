@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Simplifying closures in javascript✨
+    <meta name="description" content="Simplifying Closures in JavaScript✨
 
-a thread + article https://t.co/kjciwmyipn💛what exactly is a closure?
+A THREAD + ARTICLE https://t.co/KjciWMYipn💛What exactly is a Closure?
 
-- it is the...">
+- It is the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
@@ -108,71 +108,71 @@ a thread + article https://t.co/kjciwmyipn💛what exactly is a closure?
                       <span>Simplifying closures in javascript✨
 
  + article https://t.co/kjciwmyipn💛what exactly is a...</span>
-                      <a href="#"><h4>Simplifying closures in javascript✨
+                      <a href="#"><h4>Simplifying Closures in JavaScript✨
 
-a thread + article https://t.co/kjciwmyipn💛what exactly is a closure?
+A THREAD + ARTICLE https://t.co/KjciWMYipn💛What exactly is a Closure?
 
-- it is the...</h4></a>
+- It is the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-14 13:51:21.320747</a></li>
+                        <li><a href="#">2022-08-16 09:45:28</a></li>
 
                       </ul>
-                      <p>Simplifying closures in javascript✨
+                      <p>Simplifying Closures in JavaScript✨
 
-a thread + article https://t.co/kjciwmyipn<br><br>💛what exactly is a closure?
+A THREAD + ARTICLE https://t.co/KjciWMYipn<br><br>💛What exactly is a Closure?
 
-- it is the combo of a function bundled together with references to its surrounding state (the lexical environment). 
+- It is the combo of a function bundled together with references to its surrounding state (the lexical environment). 
 
-- basically, it gives you access to an outer function's scope from an inner function.<br><br>- in a closure, an inner function has access to the outer (enclosing) function’s variables — a scope chain.
+- Basically, it gives you access to an outer function's scope from an inner function.<br><br>- In a closure, an inner function has access to the outer (enclosing) function’s variables — a scope chain.
 
-👉scope chain of closure:
+👉Scope chain of closure:
 
 - access to its own scope. (refers to variables defined b/w its curly brackets)
 - access to outer func’s variables
-- access to global variables<br><br>💛lexical scoping
+- access to global variables<br><br>💛Lexical Scoping
 
-- it defines the scope of a variable according to the position of that variable declared in the source code.
+- It defines the scope of a variable according to the position of that variable declared in the source code.
 
-- here, the variable fname is a global variable, so it is accessible from anywhere. but the variable lname is a local variable. https://t.co/pkew7vdotp<br><br>- so it is accessible only within the full_name() function. if we try to access the msg variable outside the full_name() function, we will get an error.
+- Here, the variable fname is a global variable, so it is accessible from anywhere. But the variable lname is a local variable. https://t.co/pkEW7VdOtP<br><br>- So it is accessible only within the full_name() function. If we try to access the msg variable outside the full_name() function, we will get an error.
 
-- so, javascript uses the "scope" to manage the variable accessibility.<br><br>👉 according to lexical scoping, the scopes can be nested and the inner function can access the variables declared in its outer scope. 
+- So, JavaScript uses the "scope" to manage the variable accessibility.<br><br>👉 According to lexical scoping, the scopes can be nested and the inner function can access the variables declared in its outer scope. 
 
-- the greeting() function creates a local variable named msg and another function named sayhello(). https://t.co/bzgiqaub2g<br><br>-sayhello() is inner func and is available only within the body of the greeting() func.
+- The greeting() function creates a local variable named msg and another function named sayHello(). https://t.co/BZGiqAUb2g<br><br>-sayHello() is inner func and is available only within the body of the greeting() func.
 
--sayhello() func can access variables of outer func such as the msg variable of the greeting() func.
+-sayHello() func can access variables of outer func such as the msg variable of the greeting() func.
 
--inside greeting() func, we call the sayhello() func to display msg "hello world :)'.<br><br>💛javascript closures
+-Inside greeting() func, we call the sayHello() func to display msg "Hello World :)'.<br><br>💛JavaScript Closures
 
-👉to make a closure, let's just modify our greeting() function, which was created previously.
+👉To make a closure, let's just modify our greeting() function, which was created previously.
 
--here, instead of executing the sayhello() func inside the greeting() func, the greeting() func returns the sayhello() func object. https://t.co/vr0f4e6b64<br><br>-since funcs are very important in javascript, you can return a function from another func.they practically get a celebrity treatment👀
+-Here, instead of executing the sayHello() func inside the greeting() func, the greeting() func returns the sayHello() func object. https://t.co/Vr0f4E6b64<br><br>-Since funcs are very important in JavaScript, you can return a function from another func.They practically get a celebrity treatment👀
 
--outside of greeting() func, we assigned hello variable the value returned by greeting() func.that is actually a reference to sayhello() func!<br><br>-we then executed the sayhello() func using the reference of that func: hello(). 
+-Outside of greeting() func, we assigned hello variable the value returned by greeting() func.That is actually a reference to sayHello() func!<br><br>-We then executed the sayHello() func using the reference of that func: hello(). 
 
--normally, a local variable only exists during the execution of the func. in the ideal case, when the greeting() func has been executed,msg variable should be no longer accessible.<br><br>- but here, we execute the hello() func that references the sayhello() func, so the msg variable still exists and can be accessible.
+-Normally, a local variable only exists during the execution of the func. In the ideal case, when the greeting() func has been executed,msg variable should be no longer accessible.<br><br>- But here, we execute the hello() func that references the sayHello() func, so the msg variable still exists and can be accessible.
 
--the sayhello() func is the magical being, also known as a closure!
+-The sayHello() func is the magical being, also known as a closure!
 
--so, closure is a func that preserves the outer scope in its inner scope.<br><br>💛why learn closures?
+-So, closure is a func that preserves the outer scope in its inner scope.<br><br>💛Why learn Closures?
 
-👉 init functions - used to ensure that a function is only called once
+👉 Init functions - used to ensure that a function is only called once
 
-👉 memory optimization -used to make functions more memory efficient and performant<br><br>👉 encapsulation - used to hide variables of a function and selectively expose methods
+👉 Memory optimization -used to make functions more memory efficient and performant<br><br>👉 Encapsulation - used to hide variables of a function and selectively expose methods
 
-👉 functional programming - without them, higher-order functions and currying is not possible<br><br>for more examples and closures in loops + on how to use let keyword and iife in js closures, checkout the article!<br><br>for my @hashnode readers:
+👉 Functional programming - without them, higher-order functions and currying is not possible<br><br>For more examples and closures in loops + on how to use let keyword and IIFE in JS Closures, checkout the article!<br><br>For my @hashnode readers:
 
-https://t.co/rpbit41bkl<br><br>for my @thepracticaldev readers:
+https://t.co/rpbit41bKl<br><br>For my @ThePracticalDev readers:
 
-https://t.co/ib86axbd8u<br><br>hope that you liked this thread!
+https://t.co/Ib86aXBd8u<br><br>Hope that you liked this thread!
 
-if you like more content like this:
-- follow @iayeshasahar 
-- rt so more people can benefit
+If you like more content like this:
+- follow @IAyeshaSahar 
+- RT so more people can benefit
 
-thanks for reading❤
+Thanks for reading❤
 
-happy coding✨</p>
+Happy Coding✨</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -344,6 +344,7 @@ happy coding✨</p>
       }
     </script>
 
+<!--6393430546807904551-->
 
   </body>
 

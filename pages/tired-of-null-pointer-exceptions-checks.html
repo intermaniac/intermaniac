@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Tired of null pointer exceptions checks? c...">
+    <meta name="description" content="Tired of Null Pointer Exceptions checks? Consider Using Java SE 8's Optional!
+
+The problem is that...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Tired of null pointer exceptions checks?...</title>
+    <title>Tired of null pointer exceptions checks? consider using java se...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Tired of null pointer exceptions checks?...</h2>
+                <h2>Tired of null pointer exceptions checks? consider using java se...</h2>
               </div>
             </div>
           </div>
@@ -97,56 +99,58 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Tired of null pointer exceptions checks?...</span>
-                      <a href="#"><h4>Tired of null pointer exceptions checks? c...</h4></a>
+                      <span>Tired of null pointer exceptions checks? consider using java se...</span>
+                      <a href="#"><h4>Tired of Null Pointer Exceptions checks? Consider Using Java SE 8's Optional!
+
+The problem is that...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-06 13:28:56.952117</a></li>
+                        <li><a href="#">2022-08-06 13:28:57</a></li>
 
                       </ul>
-                      <p>Tired of null pointer exceptions checks? consider using java se 8's optional!
+                      <p>Tired of Null Pointer Exceptions checks? Consider Using Java SE 8's Optional!
 
-the problem is that null is a core concept in the language. any variable that references an object can be null.
+The problem is that null is a core concept in the language. Any variable that references an Object can be null.
 
-let's go quick about java's nullpointerexception!!
-read on, 🧵<br><br>optional is to wrap an object and to provide a convenient api to handle nullability in a fluent manner.
+Let's go quick about JAVA's NullPointerException!!
+Read On, 🧵<br><br>Optional is to wrap an Object and to provide a convenient API to handle nullability in a fluent manner.
 
-javadoc: a container object which may or may not contain a non-null value.
-ispresent() will return true 
-get() will return value.<br><br>construction: 
-three ways to create an instance of optional:
+Javadoc: A container object which may or may not contain a non-null value.
+isPresent() will return true 
+get() will return value.<br><br>Construction: 
+Three ways to create an instance of Optional:
 
-// before java 8 you would simply use a null reference here
-🔺optional&lt;string&gt; empty = optional.empty();
+// before Java 8 you would simply use a null reference here
+🔺Optional&lt;String&gt; empty = Optional.empty();
 
 //if you already know you're assigning a non-null value 
-🔺optional&lt;string&gt; full = optional.of("input string");<br><br>//create an instance of optional that might contain a null value
-🔺optional&lt;string&gt; halffull = optional.ofnullable(someotherstring);
+🔺Optional&lt;String&gt; full = Optional.of("Input String");<br><br>//create an instance of Optional that might contain a null value
+🔺Optional&lt;String&gt; halfFull = Optional.ofNullable(someOtherString);
 
-basic methods:
+Basic Methods:
 
-boolean ispresent() returns true if - you guessed it - the value is present.<br><br>t get() returns the value; otherwise a nosuchelementexception is thrown.
+boolean isPresent() returns true if - you guessed it - the value is present.<br><br>T get() returns the value; otherwise a NoSuchElementException is thrown.
 
-should check with ispresent() whether there even is a value before calling get() to retrieve it.
+Should check with isPresent() whether there even is a value before calling get() to retrieve it.
 
-why optional ?
-goes well with java 8 lambda expressions, which allow for lazy execution of operations.<br><br>null pointer occured in many different scenario.
-1. should it actually reference an instance.
+Why Optional ?
+Goes well with Java 8 lambda expressions, which allow for lazy execution of operations.<br><br>Null Pointer occured in many different scenario.
+1. Should it actually reference an instance.
 2. null a legal state for that variable.
-3. it is maybe the return value of some method.
+3. It is maybe the return value of some method.
 
-good reason to use optional is fail fast.<br><br>when you have a reference and are positive, that it can't be null, use of().
+Good reason to use Optional is fail fast.<br><br>When you have a reference and are positive, that it can't be null, use of().
 
-you should only use ofnullable() if you can't reason whether the reference is null or not.
+You should only use ofNullable() if you can't reason whether the reference is null or not.
 
-still unpopular statements and drawbacks by a programmer of optional.<br><br>▶️optional throws nullpointerexceptions.
-▶️can itself be null, causing a nullpointerexception.
-▶️makes debugging more difficult.
-▶️it's not serializable.
+Still unpopular statements and drawbacks by a programmer of Optional.<br><br>▶️Optional throws NullPointerExceptions.
+▶️Can itself be null, causing a NullPointerException.
+▶️Makes debugging more difficult.
+▶️It's not serializable.
 
-share more about optional below in the comments if you have any?
+Share more about Optional below in the comments if you have any?
 
-#java #developer #codenewbie</p>
+#JAVA #Developer #CodeNewbie</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -318,6 +322,7 @@ share more about optional below in the comments if you have any?
       }
     </script>
 
+<!--6796005510832461551-->
 
   </body>
 

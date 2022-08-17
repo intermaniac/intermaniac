@@ -5,11 +5,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Cheat sheet of the most common string oper...">
+    <meta name="description" content="Cheat sheet of the most common string operations in #Python
+
+Read the article or the thread.
+🧵👇
+
+https://t.co/5IWsHGaQRaFirst,...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Cheat sheet of the most common string op...</title>
+    <title>Cheat sheet of the most common string operations in #python
+
+read...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +82,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Cheat sheet of the most common string op...</h2>
+                <h2>Cheat sheet of the most common string operations in #python
+
+read...</h2>
               </div>
             </div>
           </div>
@@ -97,79 +106,86 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Cheat sheet of the most common string op...</span>
-                      <a href="#"><h4>Cheat sheet of the most common string oper...</h4></a>
-                      <ul class="post-info">
-                        <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-06 13:28:58.562227</a></li>
+                      <span>Cheat sheet of the most common string operations in #python
 
-                      </ul>
-                      <p>Cheat sheet of the most common string operations in #python
+read...</span>
+                      <a href="#"><h4>Cheat sheet of the most common string operations in #Python
 
-read the article or the thread.
+Read the article or the thread.
 🧵👇
 
-https://t.co/5iwshgaqra<br><br>first, there are two important things we need to remember:
+https://t.co/5IWsHGaQRaFirst,...</h4></a>
+                      <ul class="post-info">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">2022-08-06 13:28:59</a></li>
 
-1️⃣ strings in python are immutable
+                      </ul>
+                      <p>Cheat sheet of the most common string operations in #Python
 
-that means we can never change (edit) a string. we always create a new one.
+Read the article or the thread.
+🧵👇
 
-(we can then assign newly created string to the same variable, of course.)<br><br>2️⃣ everything is case sensitive unless stated otherwise.
+https://t.co/5IWsHGaQRa<br><br>First, there are two important things we need to remember:
 
-that means “here” is not equal to “here” and “two” is not equal to “two” etc.<br><br>*joining strings*
+1️⃣ Strings in Python are immutable
 
-we can join strings in python with a ➕ (addition) operator: https://t.co/swpdfliegi<br><br>we can join more than two strings, of course.
+That means we can never change (edit) a string. We always create a new one.
 
-but using ➕ to join more than a few strings is inefficient.
+(We can then assign newly created string to the same variable, of course.)<br><br>2️⃣ Everything is case sensitive unless stated otherwise.
 
-especially in a loop -- so never do that.
+That means “Here” is NOT equal to “here” and “two” is not equal to “TWO” etc.<br><br>*Joining strings*
 
-instead, it's much better to use the join() method. https://t.co/mdzroewgcb<br><br>*splitting string*
+We can join strings in Python with a ➕ (addition) operator: https://t.co/sWpdFLieGI<br><br>We can join more than two strings, of course.
 
-to split one string into multiple using some separator we use the split() method.
+But using ➕ to join more than a few strings is inefficient.
+
+Especially in a loop -- so never do that.
+
+Instead, it's much better to use the join() method. https://t.co/mdZroewgCb<br><br>*Splitting string*
+
+To split one string into multiple using some separator we use the split() method.
 
 split() needs one argument, separator, which it uses to split the string.
 
-it also takes the optional argument maxsplit, limiting how many times to split the string. https://t.co/3lnhpqljrd<br><br>when we have multiple lines in our string (e.g. from a small file or other input), 
+It also takes the optional argument maxsplit, limiting how many times to split the string. https://t.co/3LnhpqljrD<br><br>When we have multiple lines in our string (e.g. from a small file or other input), 
 
 it's handy to use the splitlines() method. 
 
-it splits a string at line boundaries, so the resulting list contains each line separately. https://t.co/sazpljgiub<br><br>*check if a string contains a substring*
+It splits a string at line boundaries, so the resulting list contains each line separately. https://t.co/sAzpLJgiUB<br><br>*Check if a string contains a substring*
 
-to check if a string contains some other string, we use the in operator. https://t.co/vu1sova4uq<br><br>*check if a string starts with a prefix*
+To check if a string contains some other string, we use the in operator. https://t.co/vU1Sova4UQ<br><br>*Check if a string starts with a prefix*
 
-to check if a string starts with some string, we use the startswith() function. https://t.co/wuzwgsxmav<br><br>but what if we want to check if a string starts with one of the multiple prefixes?
+To check if a string starts with some string, we use the startswith() function. https://t.co/WuZwGSxmAv<br><br>But what if we want to check if a string starts with one of the multiple prefixes?
 
-startswith() also takes a tuple as a first argument so we can pass multiple prefixes to check against. https://t.co/w0s57n44ux<br><br>startswith() also takes two optional parameters -- start and end. 
+startswith() also takes a tuple as a first argument so we can pass multiple prefixes to check against. https://t.co/w0s57n44Ux<br><br>startswith() also takes two optional parameters -- start and end. 
 
-we can use these to tell it where it should start to look for a prefix and where the search should end. 
+We can use these to tell it where it should start to look for a prefix and where the search should end. 
 
-essentially it cuts our string before checking it. https://t.co/o9wpvhqbnc<br><br>*check if a string ends with a suffix*
+Essentially it cuts our string before checking it. https://t.co/o9wPvHqbNC<br><br>*Check if a string ends with a suffix*
 
-to check if a string ends with some strings, we use endswith(). 
+To check if a string ends with some strings, we use endswith(). 
 
-it works the similarly to the startswith(). https://t.co/oy85jz4hjf<br><br>*count occurrences of a substring*
+It works the similarly to the startswith(). https://t.co/oY85jZ4Hjf<br><br>*Count occurrences of a substring*
 
-when we need to know how many times substring occurs in our string, we use the count() method. https://t.co/eoedwhc3aw<br><br>*length of a string*
+When we need to know how many times substring occurs in our string, we use the count() method. https://t.co/EoeDWhc3Aw<br><br>*Length of a string*
 
-to get the length of the string, that is, how many characters it has, we use the len() function. https://t.co/gy3g6zevhw<br><br>*replacing part of a string*
+To get the length of the string, that is, how many characters it has, we use the len() function. https://t.co/GY3G6ZEVHW<br><br>*Replacing part of a string*
 
-to replace part of the string with another string we use the replace(old, new) method. https://t.co/kzmao3d2nw<br><br>*convert string to lowercase*
+To replace part of the string with another string we use the replace(old, new) method. https://t.co/kzMao3d2nW<br><br>*Convert string to lowercase*
 
-to make all characters in string lower case, we use the lower() method. https://t.co/rnylgodhtf<br><br>*convert string to uppercase*
+To make all characters in string lower case, we use the lower() method. https://t.co/RnYlGOdhTf<br><br>*Convert string to uppercase*
 
-we use the upper() method. https://t.co/yx0bzzkuvb<br><br>📖 thanks for reading
+We use the upper() method. https://t.co/yx0bzZKuVb<br><br>📖 Thanks for reading
 
-✅ follow me for more #python content and career advice.
+✅ Follow me for more #Python content and career advice.
 
-🔁 please retweet the first tweet of the 🧵 so it gets to more people
+🔁 Please retweet the first tweet of the 🧵 so it gets to more people
 
-❓any questions? just ask!
+❓Any questions? Just ask!
 
-🔗 here is this thread as an article on my website https://t.co/5iwshgaqra
+🔗 Here is this thread as an article on my website https://t.co/5IWsHGaQRa
 
-https://t.co/il1hmg3uah</p>
+https://t.co/IL1hMG3uah</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -341,6 +357,7 @@ https://t.co/il1hmg3uah</p>
       }
     </script>
 
+<!--3624030171523951551-->
 
   </body>
 

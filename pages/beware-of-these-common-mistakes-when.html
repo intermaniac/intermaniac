@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Beware of these common mistakes when using...">
+    <meta name="description" content="Beware of these common mistakes when using Promises in JavaScript:
+
+Thread 🧵 https://t.co/tTWSb8ZmtOAs beginners of JavaScript...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Beware of these common mistakes when usi...</title>
+    <title>Beware of these common mistakes when using promises in javascript:...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Beware of these common mistakes when usi...</h2>
+                <h2>Beware of these common mistakes when using promises in javascript:...</h2>
               </div>
             </div>
           </div>
@@ -97,53 +99,55 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Beware of these common mistakes when usi...</span>
-                      <a href="#"><h4>Beware of these common mistakes when using...</h4></a>
+                      <span>Beware of these common mistakes when using promises in javascript:...</span>
+                      <a href="#"><h4>Beware of these common mistakes when using Promises in JavaScript:
+
+Thread 🧵 https://t.co/tTWSb8ZmtOAs beginners of JavaScript...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-13 09:42:39.956166</a></li>
+                        <li><a href="#">2022-08-13 09:42:40</a></li>
 
                       </ul>
-                      <p>Beware of these common mistakes when using promises in javascript:
+                      <p>Beware of these common mistakes when using Promises in JavaScript:
 
-thread 🧵 https://t.co/ttwsb8zmto<br><br>as beginners of javascript promises, you may make a few common mistakes.
+Thread 🧵 https://t.co/tTWSb8ZmtO<br><br>As beginners of JavaScript Promises, you may make a few common mistakes.
 
-this thread is to help you identify them and start using them in the right way.<br><br>1. looping with promises
+This thread is to help you identify them and start using them in the right way.<br><br>1. Looping with Promises
 
-→ the most common mistake is handling promises inside a loop(for, foreach, and all other cousin loops).
+→ The most common mistake is handling promises inside a loop(for, forEach, and all other cousin loops).
 
-→ when we handle multiple promises within a loop, we need to be a bit careful.<br><br>→ some promises may take longer to resolve.
+→ When we handle multiple promises within a loop, we need to be a bit careful.<br><br>→ Some promises may take longer to resolve.
 
-→ the rest of the code inside the loop may finish execution early and may cause undesirable behaviours.
+→ The rest of the code inside the loop may finish execution early and may cause undesirable behaviours.
 
-→ example- i want to fetch a few github details of my three dear friends along with mine: https://t.co/h6nfnoekzh<br><br>→ we use the for-loop to loop through the user id array and call the fetchdata() method. 
+→ Example- I want to fetch a few GitHub details of my three dear friends along with mine: https://t.co/h6NfnOEkzH<br><br>→ We use the for-loop to loop through the user id array and call the fetchData() method. 
 
-→ the fetchdata() method returns a promise with a response. so we get the response value using the .then() handler method.
+→ The fetchData() method returns a promise with a response. So we get the response value using the .then() handler method.
 
- → the response value is another promise. https://t.co/5khedyxhnj<br><br>→ hence we need to invoke .then() one more time to fetch the intended data.
+ → The response value is another promise. https://t.co/5khedyxHNj<br><br>→ Hence we need to invoke .then() one more time to fetch the intended data.
 
-→ the fetchdata() performs an asynchronous operation, and you can not ensure the sequence of output in this case.
+→ The fetchData() performs an asynchronous operation, and you can not ensure the sequence of output in this case.
 
-→ there are chances we get the output in a different order than the user id passed https://t.co/cf67sugnpt<br><br>→ now we will change the loop function a bit to use our favourite async/await keywords.
+→ There are chances we get the output in a different order than the user id passed https://t.co/cF67SUGNpt<br><br>→ Now we will change the loop function a bit to use our favourite async/await keywords.
 
-→ in this case, the control waits when it encounters the await keyword.
+→ In this case, the control waits when it encounters the await keyword.
 
-→ we have an assurance of getting the first user data and then move to the second one, then the next one, and so on https://t.co/xe8vaobu53<br><br>→ but, still, there is a problem! fetching each of the user details should be an asynchronous activity.
+→ We have an assurance of getting the first user data and then move to the second one, then the next one, and so on https://t.co/Xe8vAobu53<br><br>→ But, still, there is a problem! Fetching each of the user details should be an asynchronous activity.
 
-→ also, these are unrelated promises, and they must run in parallel to produce a result.
+→ Also, these are unrelated promises, and they must run in parallel to produce a result.
 
-→ in the example above, the promise execution is synchronous.<br><br>→ to fix that, use the promise.all([...]) or promise.allsettled([...]) apis
+→ In the example above, the promise execution is synchronous.<br><br>→ To fix that, use the Promise.all([...]) or Promise.allSettled([...]) APIs
 
-→ they both take an array of promises, run them in parallel, and return the result in the same order of the inputs.
+→ They both take an array of promises, run them in parallel, and return the result in the same order of the inputs.
 
-→ the total time taken depends on the max time taken by any of the input promises. https://t.co/fblkpapkb0<br><br>spoiler- use promise apis(.all or .allsettled) to handle multiple unrelated promise executions than using loops. https://t.co/vsse1dkcl1<br><br>to learn more about promises in javascript head over to this series by @tapasadhikary 👇🏻
+→ The total time taken depends on the max time taken by any of the input promises. https://t.co/fbLkpApKb0<br><br>Spoiler- Use promise APIs(.all or .allSettled) to handle multiple unrelated promise executions than using loops. https://t.co/vSSE1dkCl1<br><br>To learn more about Promises in JavaScript head over to this series by @tapasadhikary 👇🏻
 
-🔗 https://t.co/omlrth1zla<br><br>@tapasadhikary that's a wrap!
+🔗 https://t.co/oMLrth1zLA<br><br>@tapasadhikary That's a wrap!
 
-if you enjoyed this thread:
+If you enjoyed this thread:
 
-1. follow me @showwcasehq for more of these
-2. rt the tweet below to share this thread with your audience https://t.co/0nowu5kgw8</p>
+1. Follow me @ShowwcaseHQ for more of these
+2. RT the tweet below to share this thread with your audience https://t.co/0nOWU5kGW8</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -315,6 +319,7 @@ if you enjoyed this thread:
       }
     </script>
 
+<!--4228431349139263551-->
 
   </body>
 

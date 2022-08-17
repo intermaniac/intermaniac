@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="I have a background in software engineerin...">
+    <meta name="description" content="I have a background in software engineering so I thought I'd share some knowledge about...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>I have a background in software engineer...</title>
+    <title>I have a background in software engineering so i thought...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>I have a background in software engineer...</h2>
+                <h2>I have a background in software engineering so i thought...</h2>
               </div>
             </div>
           </div>
@@ -97,47 +97,47 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>I have a background in software engineer...</span>
-                      <a href="#"><h4>I have a background in software engineerin...</h4></a>
+                      <span>I have a background in software engineering so i thought...</span>
+                      <a href="#"><h4>I have a background in software engineering so I thought I'd share some knowledge about...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-08-06 13:29:01.036412</a></li>
+                        <li><a href="#">2022-08-06 13:29:01</a></li>
 
                       </ul>
-                      <p>I have a background in software engineering so i thought i'd share some knowledge about one of my favourite design patterns:
+                      <p>I have a background in software engineering so I thought I'd share some knowledge about one of my favourite design patterns:
 
-composition
+Composition
 
-with an example in typescript
+With an example in typescript
 
-🧵<br><br>the composite design pattern takes a group of objects and treats it like a single object.
+🧵<br><br>The composite design pattern takes a group of objects and treats it like a single object.
 
-it helps us abstract code and makes it easier for the "client" (the caller of the code) to use a single object instead of having to maintain a list of objects.<br><br>let's look at a real world example:
+It helps us abstract code and makes it easier for the "client" (the caller of the code) to use a single object instead of having to maintain a list of objects.<br><br>Let's look at a real world example:
 
-you may be writing code to push analytic events to multiple areas. you could be sending events to google analytics, amplitude, mixpanel, etc. 
+You may be writing code to push analytic events to multiple areas. You could be sending events to Google analytics, Amplitude, Mixpanel, etc. 
 
-it's annoying to have to individually call each sdk. it's also difficult to add/remove one.<br><br>another case i've used it for:
+It's annoying to have to individually call each SDK. It's also difficult to add/remove one.<br><br>Another case I've used it for:
 
-changing mobile app caching libs. we used realm but wanted to move to an sql based db. we didn't have time to write schemas for all objects so we used composition to abstract the implementation so we could come back and finish refactoring later.<br><br>example implementation:
+Changing mobile app caching libs. We used Realm but wanted to move to an SQL based DB. We didn't have time to write schemas for all objects so we used composition to abstract the implementation so we could come back and finish refactoring later.<br><br>Example implementation:
 
-create an interface called analyticsprovider. inside we'll define a method called track(event: string).
+Create an interface called AnalyticsProvider. Inside we'll define a method called track(event: string).
 
-we always define an interface to tie everything as one object. https://t.co/0waouoyxmr<br><br>next we define the individual implementations of each analytics sdk.
+We always define an interface to tie everything as one object. https://t.co/0WAouOyxMr<br><br>Next we define the individual implementations of each analytics sdk.
 
-create a class for each analytics sdk and have it inherit analyticsprovider.
+Create a class for each analytics sdk and have it inherit AnalyticsProvider.
 
-each class will implement the track(event: string) method with it's own specific code. https://t.co/ajkbhtyaxa<br><br>lastly create a compositeanalyticsprovider class that implements analyticsprovider.
+Each class will implement the track(event: string) method with it's own specific code. https://t.co/AJkbhTyaXa<br><br>Lastly create a CompositeAnalyticsProvider class that implements AnalyticsProvider.
 
-this class has a list of analyticprovider objects. it iterates through the list of objects and calls the method on each one.
+This class has a list of AnalyticProvider objects. It iterates through the list of objects and calls the method on each one.
 
-it ties all the individual pieces together. https://t.co/bozaupcpjo<br><br>now from anywhere in our code we can create a new compositeanalyticsprovider object, pass in the analytics providers we want to use, and only use one object to invoke the methods of all the individual analytic providers we defined earlier.
+It ties all the individual pieces together. https://t.co/BozaUpcPJO<br><br>Now from anywhere in our code we can create a new CompositeAnalyticsProvider object, pass in the analytics providers we want to use, and only use one object to invoke the methods of all the individual analytic providers we defined earlier.
 
-you can easily swap classes in/out. https://t.co/2vontmgagm<br><br>that's a wrap!
+You can easily swap classes in/out. https://t.co/2VONTMGagM<br><br>That's a wrap!
 
-if you enjoyed this thread:
+If you enjoyed this thread:
 
-1. follow me @gourave_v for more of these
-2. rt the tweet below to share this thread with your audience https://t.co/hrbef78hzb</p>
+1. Follow me @Gourave_V for more of these
+2. RT the tweet below to share this thread with your audience https://t.co/HrBEf78Hzb</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
@@ -309,6 +309,7 @@ if you enjoyed this thread:
       }
     </script>
 
+<!--8902508904210391551-->
 
   </body>
 
