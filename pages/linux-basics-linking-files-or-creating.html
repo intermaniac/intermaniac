@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="5 JavaScript interview questions and answers you don't want to miss 🧵
-
-#100daysofcode #webdevelopment🔹 What is...">
+    <meta name="description" content="Linux basics- Linking files or creating shortcuts in Linux. 🧵↓The ability to link files is...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>5 javascript interview questions and answers you don't want to...</title>
+    <title>Linux basics- linking files or creating shortcuts in linux. 🧵↓the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>5 javascript interview questions and answers you don't want to...</h2>
+                <h2>Linux basics- linking files or creating shortcuts in linux. 🧵↓the...</h2>
               </div>
             </div>
           </div>
@@ -99,37 +97,52 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>5 javascript interview questions and answers you don't want to...</span>
-                      <a href="#"><h4>5 JavaScript interview questions and answers you don't want to miss 🧵
-
-#100daysofcode #webdevelopment🔹 What is...</h4></a>
+                      <span>Linux basics- linking files or creating shortcuts in linux. 🧵↓the...</span>
+                      <a href="#"><h4>Linux basics- Linking files or creating shortcuts in Linux. 🧵↓The ability to link files is...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-08-21 13:22:17.230106</a></li>
 
                       </ul>
-                      <p>5 JavaScript interview questions and answers you don't want to miss 🧵
+                      <p>Linux basics- Linking files or creating shortcuts in Linux. 🧵↓<br><br>The ability to link files is a fantastic feature of the Linux filesystem. Consider linking files in Linux to be similar to creating Windows shortcuts.<br><br>Links are extremely useful, especially if you need to have two (or more) versions of the same file on the system.
 
-#100daysofcode #webdevelopment<br><br>🔹 What is NaN?
-🔸 NaN represents the “Not-a-Number” value. It indicates a value that is not a legal number.<br><br>🔹 How do you check if a value is not a number?
-🔸 You can use the “isNaN(…)” function to check if a variable is not a number.<br><br>🔹 What is the type of a NaN variable?
-🔸 Its type is “Number”.<br><br>🔹 Do parameters in JavaScript get passed by value or by reference?
-🔸 Primitive data types are passed by value and non-primitive data types are passed by reference.<br><br>🔹 What is an Immediately Invoked Function?
-🔸 An Immediately Invoked Function (known as IIFE) is a function that runs as soon as it is defined.<br><br>Thanks for reaching this point ⭐
+Instead of having multiple physical copies of the same file on the system, you can have one physical copy and numerous virtual copies, known as links.<br><br>A link is a placeholder in a directory that points to the file's actual location. In Linux, there are two types of file links:
 
-I'm a Full Stack developer that enjoys sharing both lifestyle and technical tips and tricks for devs.️
+• symbolic link 
+• hard link<br><br>Symbolic link 
 
-If you found this thread useful, follow me for more️!</p>
+A symbolic link, also known as a soft link, is a physical file that points to another file in the virtual directory structure.
+
+The contents of the two files that are symbolically linked together are not the same.<br><br>To create a symbolic link, the original file must already exist. The ln command, when combined with the -s option, allows you to create a symbolic link. <a href="https://t.co/kzGPZHqXSN">https://t.co/kzGPZHqXSN</a><br><br>In the preceding example, the name of the symbolic link, sl_logs.txt, is listed second in the ln command.<br><br>You can use ls -l to see if the files are linked together, the -&gt; sign displayed after the symbolic link filename indicates that it is symbolically linked to the file backup.tar<br><br>Also, compare the file size of the symbolic link with that of logs.txt file. The symbolic link, sl_logs.txt file, is just 8 bytes long, while the file logs.txt is 46 bytes long.<br><br>This is because the sl_logs.txt file is only pointing to logs.txt . They do not share contents and they are two physically separate files.<br><br>Viewing their inode numbers is another way to tell that these linked files are separate physical files.
+
+Incase you don't know 
+
+The inode number of a file or directory is a unique identification number assigned by the kernel to each object in the filesystem.<br><br>To view the inode number of a file or directory, use the -i option with the ls command:
+
+The below example shows that the inode number of the logs.txt file is 2097212, whereas the inode number of the sl_logs.txt file is 2097193. Which clearly shows that these files are different. <a href="https://t.co/LybQI8VjSa">https://t.co/LybQI8VjSa</a><br><br>A nice example of utilizing symbolic links is to link third-party binaries downloaded from the internet to the /bin directory so you can execute them anywhere from your command line, rather than navigating to where the binaries are. <a href="https://t.co/UO6L1t4met">https://t.co/UO6L1t4met</a><br><br>Hard Link 
+
+A hard link creates a separate virtual file with information about the original file and where to find it. The two files, however, are the same physical file.<br><br>To create a hard link, the original file must still exist, but no options are required on the ln command this time. <a href="https://t.co/x8x6qMQke1">https://t.co/x8x6qMQke1</a><br><br>Following the creation of the hard link file, we used the ls -li command to display both the inode numbers and a long listing for the logs.txt and hl_logs.txt files.<br><br>It's worth noting that both hard-linked files have the same inode number. This is due to the fact that they are physically the same file. Their file sizes are also identical.<br><br>Differences, soft link &amp; hard link:
+
+• Soft links, like shortcuts, can point to any file or
+directory in any file system.
+
+• Hard links are similar to shortcuts for files and
+folders, but they cannot be created for directories or
+files in a different file systems.<br><br>That's it for today's thread! 
+
+Thank you for taking the time to read my brief Linux thread! 
+
+If you enjoyed this thread, follow us @linuxopsys for future Linux posts, which we will be posting on a daily basis.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">JavaScript interview questions</a></li>
-<li><a href="#">Immediately Invoked Function</a></li>
-<li><a href="#">interview questions</a></li>
-<li><a href="#">questions and answers</a></li>
-<li><a href="#">Immediately Invoked</a></li>
+								<li><a href="#">symbolic link</a></li>
+<li><a href="#">file</a></li>
+<li><a href="#">link</a></li>
+<li><a href="#">hard link</a></li>
+<li><a href="#">Linux</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +304,7 @@ If you found this thread useful, follow me for more️!</p>
       }
     </script>
 
-<!--0616383832191421651-->
+<!--0483806471421711651-->
 
   </body>
 
