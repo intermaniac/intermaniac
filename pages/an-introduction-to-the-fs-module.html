@@ -5,19 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="JavaScript Learning Resources
-A THREAD 🧵
+    <meta name="description" content="An introduction to the 'fs' module of Node.js. 👇
 
-Want to learn JavaScript for free?
-Here are a few resources for...">
+Thread 🧵:What Is Node.js?
+
+Node.js is a runtime,...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Javascript learning resources
- 🧵
+    <title>An introduction to the 'fs' module of node.js. 👇
 
-want to learn javascript for free?
-here are...</title>
+ 🧵:what...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +81,9 @@ here are...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Javascript learning resources
- 🧵
+                <h2>An introduction to the 'fs' module of node.js. 👇
 
-want to learn javascript for free?
-here are...</h2>
+ 🧵:what...</h2>
               </div>
             </div>
           </div>
@@ -109,37 +105,107 @@ here are...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Javascript learning resources
- 🧵
+                      <span>An introduction to the 'fs' module of node.js. 👇
 
-want to learn javascript for free?
-here are...</span>
-                      <a href="#"><h4>JavaScript Learning Resources
-A THREAD 🧵
+ 🧵:what...</span>
+                      <a href="#"><h4>An introduction to the 'fs' module of Node.js. 👇
 
-Want to learn JavaScript for free?
-Here are a few resources for...</h4></a>
+Thread 🧵:What Is Node.js?
+
+Node.js is a runtime,...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-08-27 04:59:14.850844</a></li>
 
                       </ul>
-                      <p>JavaScript Learning Resources
-A THREAD 🧵
+                      <p>An introduction to the 'fs' module of Node.js. 👇
 
-Want to learn JavaScript for free?
-Here are a few resources for you❤️👇
-#100DaysOfCode<br><br><a href="https://t.co/hwpWN2MXYA">https://t.co/hwpWN2MXYA</a><br><br><a href="https://t.co/E3czCXguJh">https://t.co/E3czCXguJh</a><br><br><a href="https://t.co/KA5KToSf6c">https://t.co/KA5KToSf6c</a><br><br><a href="https://t.co/uvldldD6x9">https://t.co/uvldldD6x9</a><br><br><a href="https://t.co/rHgfVISM75">https://t.co/rHgfVISM75</a></p>
+Thread 🧵:<br><br>What Is Node.js?
+
+Node.js is a runtime, which helps us to write JavaScript code on the server.
+
+Download Node.js: <a href="https://t.co/EAmzvKz6J7">https://t.co/EAmzvKz6J7</a><br><br>⦿ What is the 'fs' module?
+
+➤ 'fs' is also referred to as File System. it's a module in Node.js to help us interact with files in our system.
+
+➤ It's an inbuilt module, which means we don't have to install any dependencies along with it.
+
+➤ Let's explore it.<br><br>⦿ Common uses of the fs module.
+
+❖ Read Files
+❖ Create Files
+❖ Update Files
+❖ Delete Files
+❖ Rename Files<br><br>➤ Every method in the fs module have a synchronous as well as asynchronous form.
+
+➤ You can use either synchronous or asynchronous. we will be using the asynchronous method throughout this tutorial.<br><br>⦿ Setup of fs module.
+
+➤ After installing Node.js, you can import the fs module by the following code. <a href="https://t.co/zTWaAHi7SX">https://t.co/zTWaAHi7SX</a><br><br>⦿ Create files
+
+➤ For creating files we have three functions i.e. fs.appendFile(), fs. open(), fs.writeFile()
+
+➤ The fs.appendFile() method appends specified content to a file. If the file does not exist, the file will be created:
+
+Syntax: <a href="https://t.co/7htbGryUxE">https://t.co/7htbGryUxE</a><br><br>➤ The fs .open() method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing. If the file does not exist, an empty file is created.
+
+Syntax: <a href="https://t.co/AtNauZGNPD">https://t.co/AtNauZGNPD</a><br><br>➤ The fs.writeFile() method replaces the specified file and content if it exists. If the file does not exist, a new file, containing the specified content, will be created:
+
+Syntax: <a href="https://t.co/aABLRSdspS">https://t.co/aABLRSdspS</a><br><br>⦿ Read Files
+
+➤ We have created a file called 'file.txt' from the above methods, let's read the content in that file.
+
+➤ For reading the file content we can use the fs.readFile() method.
+
+Syntax: <a href="https://t.co/epuQ9tBoKh">https://t.co/epuQ9tBoKh</a><br><br>⦿ Update Files
+
+➤ The fs module has 2 methods to update files i.e. fs.appendFile() and fs.writeFile()
+
+➤The fs.appendFile() method appends the given content at the end of the file.
+
+➤ We are going to update the file that we created earlier.
+
+Syntax: <a href="https://t.co/6SVOdakqEg">https://t.co/6SVOdakqEg</a><br><br>➤ The fs.writeFile() methods replace the file content with the given content.
+
+Syntax: <a href="https://t.co/oPZEKzf6zn">https://t.co/oPZEKzf6zn</a><br><br>⦿ Rename Files
+
+➤ To rename a file we can use the fs.rename() method.
+
+➤ In the first argument we have to specify a file name which we want to be renamed. And in the second argument, we have to specify a name that we want to be a new name for the file.
+
+Syntax: <a href="https://t.co/K9TUZcQbXW">https://t.co/K9TUZcQbXW</a><br><br>⦿ Delete Files
+
+➤ Now let's finally delete a file on which we have used all the above methods.
+
+➤ To delete a file we can use the fs.unlink() method.
+
+➤ We have to give it a new name because we already renamed the file from 'file.txt' to 'renamedFile.txt'.
+
+Syntax: <a href="https://t.co/5bu3SrsYfi">https://t.co/5bu3SrsYfi</a><br><br>Thanks! For Reading Till Here.
+
+If You Found It Useful. Please Like 💗 The Tweets And Retweet 🔁 The First Tweet To Help Other<br><br>Hi 👋
+I'm Pushkaraj Kulkarni
+
+A Passionate Programmer!!!
+
+You'll see my tweets and threads on:
+
+➡️ Web Development 🕸
+➡️ Technology 🤩
+➡️ Programming 👨‍💻
+➡️ Self Growth ⬆
+➡️ Memes
+
+If You Are Interested In Tech/Programming Connect With Me @pushkaraj2007 🤝</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">JavaScript Learning Resources</a></li>
-<li><a href="#">Learning Resources</a></li>
-<li><a href="#">JavaScript Learning</a></li>
-<li><a href="#">https</a></li>
-<li><a href="#">t.co</a></li>
+								<li><a href="#">File</a></li>
+<li><a href="#">files</a></li>
+<li><a href="#">Node.js</a></li>
+<li><a href="#">Syntax</a></li>
+<li><a href="#">Update Files</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -301,7 +367,7 @@ Here are a few resources for you❤️👇
       }
     </script>
 
-<!--0420142491996431651-->
+<!--3720911984598151651-->
 
   </body>
 

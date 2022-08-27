@@ -5,19 +5,23 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="JavaScript Learning Resources
-A THREAD 🧵
+    <meta name="description" content="🧵 The unknown #HTML Element: &lt;base /&gt;
 
-Want to learn JavaScript for free?
-Here are a few resources for...">
+#1
+
+Definition from w3:
+
+The base element allows authors to specify...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Javascript learning resources
- 🧵
+    <title>🧵 the unknown #html element: &lt;base /&gt;
 
-want to learn javascript for free?
-here are...</title>
+#1
+
+definition from w3:
+
+the base...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +87,13 @@ here are...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Javascript learning resources
- 🧵
+                <h2>🧵 the unknown #html element: &lt;base /&gt;
 
-want to learn javascript for free?
-here are...</h2>
+#1
+
+definition from w3:
+
+the base...</h2>
               </div>
             </div>
           </div>
@@ -109,37 +115,97 @@ here are...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Javascript learning resources
- 🧵
+                      <span>🧵 the unknown #html element: &lt;base /&gt;
 
-want to learn javascript for free?
-here are...</span>
-                      <a href="#"><h4>JavaScript Learning Resources
-A THREAD 🧵
+#1
 
-Want to learn JavaScript for free?
-Here are a few resources for...</h4></a>
+definition from w3:
+
+the base...</span>
+                      <a href="#"><h4>🧵 The unknown #HTML Element: &lt;base /&gt;
+
+#1
+
+Definition from w3:
+
+The base element allows authors to specify...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-08-27 04:59:14.850844</a></li>
 
                       </ul>
-                      <p>JavaScript Learning Resources
-A THREAD 🧵
+                      <p>🧵 The unknown #HTML Element: &lt;base /&gt;
 
-Want to learn JavaScript for free?
-Here are a few resources for you❤️👇
-#100DaysOfCode<br><br><a href="https://t.co/hwpWN2MXYA">https://t.co/hwpWN2MXYA</a><br><br><a href="https://t.co/E3czCXguJh">https://t.co/E3czCXguJh</a><br><br><a href="https://t.co/KA5KToSf6c">https://t.co/KA5KToSf6c</a><br><br><a href="https://t.co/uvldldD6x9">https://t.co/uvldldD6x9</a><br><br><a href="https://t.co/rHgfVISM75">https://t.co/rHgfVISM75</a></p>
+#1
+
+Definition from w3:
+
+The base element allows authors to specify the document base URL for the purposes of resolving relative URLs, and the name of the default browsing context for the purposes of following hyperlinks<br><br>#2
+
+"The base element allows authors to specify the document base URL for the purposes of resolving relative URLs" 
+
+- It defines the base URL for relative links on the website.
+- Once it is defined, all the links on your page, will use the href attribute of &lt;base /&gt; as base URL.<br><br>#3
+
+Let's look at an example: 
+
+The link shown in this image will redirect the user to <a href="https://t.co/Hxn4oCqgoR,">https://t.co/Hxn4oCqgoR,</a> instead of <a href="https://t.co/fNg50Khnt5">https://t.co/fNg50Khnt5</a>
+
+Notice how even if we are using `/` in the link's href, it is NOT using the domain as the base URL. <a href="https://t.co/b4ATqkx18n">https://t.co/b4ATqkx18n</a><br><br>#4
+
+"It allows the authors to define the default browsing context for the purposes of following hyperlinks"
+
+- It defines the default browser context for all the links on your page
+- Browser Context means where to open links on your website (Ex. Open a link on new page)<br><br>#5
+
+The &lt;a&gt; tag in the example will open the link into a new tab.
+
+Notice that we didn't define the target attribute on the &lt;a&gt; tag, but it still opens it in a new tab.
+
+We are noticing this  because all the &lt;a&gt; tags inherit `target` attributes from &lt;base /&gt; element (if defined) <a href="https://t.co/KCGWJPOLyI">https://t.co/KCGWJPOLyI</a><br><br>#6.1
+
+REAL-WORLD USE-CASES:
+
+- If you have version-based URLs (<a href="https://t.co/tgPf9MzTcU">https://t.co/tgPf9MzTcU</a>), you can define the &lt;base&gt; element in your code to easily define base URLs for all of your links to use the latest version URLs
+
+(Cont.)<br><br>#6.2
+
+- If most of your links open in a new tab (ex links on Hackernews), you can use this element to define the default context for links, instead of adding `target` to all links.
+
+- In the past, it was used on frameset pages to make links open in a particular frame.<br><br>#7
+
+RESTRICTIONS:
+
+- There can be only one base element
+- It's a self-closing
+- It must come before other elements with URL attributes like &lt;link&gt;
+- Open Graph tags don't follow &lt;base /&gt;
+- If multiple &lt;base&gt; are used, only the first href and first target are obeyed<br><br>#8
+
+OTHER INFO:
+
+- Permitted parents: A &lt;head&gt; that doesn't contain another &lt;base&gt; element
+- A document's used base URL can be accessed by scripts with Node.baseURI
+- Supported by all the browsers
+- DOM Interface (shown in the image)
+  - Supported attributes: `href`, `target` <a href="https://t.co/miU30iIvbH">https://t.co/miU30iIvbH</a><br><br>#9
+
+REFERENCES:
+
+- <a href="https://t.co/YPE5P8Vlnm">https://t.co/YPE5P8Vlnm</a>
+- <a href="https://t.co/WhzYI3yBcv">https://t.co/WhzYI3yBcv</a>
+- <a href="https://t.co/jfThvtNKL6">https://t.co/jfThvtNKL6</a>
+- <a href="https://t.co/qplBK8KWcJ">https://t.co/qplBK8KWcJ</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">JavaScript Learning Resources</a></li>
-<li><a href="#">Learning Resources</a></li>
-<li><a href="#">JavaScript Learning</a></li>
-<li><a href="#">https</a></li>
-<li><a href="#">t.co</a></li>
+								<li><a href="#">resolving relative URLs</a></li>
+<li><a href="#">base URL</a></li>
+<li><a href="#">document base URL</a></li>
+<li><a href="#">relative URLs</a></li>
+<li><a href="#">resolving relative</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -301,7 +367,7 @@ Here are a few resources for you❤️👇
       }
     </script>
 
-<!--0420142491996431651-->
+<!--5466104619985631651-->
 
   </body>
 

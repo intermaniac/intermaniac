@@ -5,19 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="JavaScript Learning Resources
-A THREAD 🧵
+    <meta name="description" content="How to use R and Python in one file in VS code?
 
-Want to learn JavaScript for free?
-Here are a few resources for...">
+Let's make a thread...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Javascript learning resources
- 🧵
-
-want to learn javascript for free?
-here are...</title>
+    <title>How to use r and python in one file in...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +77,7 @@ here are...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Javascript learning resources
- 🧵
-
-want to learn javascript for free?
-here are...</h2>
+                <h2>How to use r and python in one file in...</h2>
               </div>
             </div>
           </div>
@@ -109,37 +99,97 @@ here are...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Javascript learning resources
- 🧵
+                      <span>How to use r and python in one file in...</span>
+                      <a href="#"><h4>How to use R and Python in one file in VS code?
 
-want to learn javascript for free?
-here are...</span>
-                      <a href="#"><h4>JavaScript Learning Resources
-A THREAD 🧵
-
-Want to learn JavaScript for free?
-Here are a few resources for...</h4></a>
+Let's make a thread...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-08-27 04:59:14.850844</a></li>
 
                       </ul>
-                      <p>JavaScript Learning Resources
-A THREAD 🧵
+                      <p>How to use R and Python in one file in VS code?
 
-Want to learn JavaScript for free?
-Here are a few resources for you❤️👇
-#100DaysOfCode<br><br><a href="https://t.co/hwpWN2MXYA">https://t.co/hwpWN2MXYA</a><br><br><a href="https://t.co/E3czCXguJh">https://t.co/E3czCXguJh</a><br><br><a href="https://t.co/KA5KToSf6c">https://t.co/KA5KToSf6c</a><br><br><a href="https://t.co/uvldldD6x9">https://t.co/uvldldD6x9</a><br><br><a href="https://t.co/rHgfVISM75">https://t.co/rHgfVISM75</a></p>
+Let's make a thread about it 
+
+#pythonkachilla2 #pythonkachilla #pakdatasci #DataScience #MachineLearning  #DataVisualization<br><br>First all u need to have some knowledge about Rmarkdown. It is a markdown specifically designed to run different code from code languages. U can run C++ code in one chunk and Python in next code chunk.
+
+Code chunk is just line a code line in between markdown text<br><br>Secondly we need to learn how to use R in VS code. 
+For that Go to this link and install Radian terminal for VS code. I am assuming u have installed R already on ur system. 
+
+<a href="https://t.co/isHYDfRUwb">https://t.co/isHYDfRUwb</a><br><br>For MacOS users install XQuartz as well. u can install it from homebrew or from this link 
+
+<a href="https://t.co/bOq9B7crRO">https://t.co/bOq9B7crRO</a><br><br>Go to extensions in VS code and install this extension <a href="https://t.co/d7zYMPVJ1U">https://t.co/d7zYMPVJ1U</a><br><br>Go to ur terminal and type 'which radian' and copy the output
+
+This can different for windows users. This Command locates the radian path<br><br>press Command+shift+P in vs code and write this 
+
+RTerm:Mac 
+
+Paste the link given fro radian in the previous tweet under R path for MacOS <a href="https://t.co/x8HzNRfZ7u">https://t.co/x8HzNRfZ7u</a><br><br>Make an Rmarkdown file in a folder. Remember u can make use a Random txt editor and edit it's extension to .Rmd or u can use VS code and open it . it will be read by VS code and R file<br><br>In the first 3 lines of Rmd file write this 
+
+---
+output: pdf_document
+---
+
+this will give u a pdf output when u run the file.
+
+Before that u have do 2 package installation.<br><br>press command+shift+P search for toggle terminal. 
+
+Click on it and add a new R terminal under terminals by clicking plus sign. 
+
+Another way around is to open R without any IDE which u have installed and run following commands<br><br>install.packages("languageserver")
+
+install.packages("httpgd") 
+
+It will install these 2 packages in R home directory.<br><br>Try to run the file by pressing Cmd+shift+K 
+
+it will render the .Rmd file to a pdf output. if it works it means u have succesfully set the VS code to run Rmarkdown files. May be u will need to install a latex distribution. if u don't have latex u can edit 
+
+output: html_document<br><br>Now comes the part where we can use python and R in 2 different code chunks in 1 Rmarkdown file in VS code<br><br>Go to R terminal in VS code  and run these command 
+
+install.packages("reticulate")
+library(reticulate)
+
+wait for the process to end<br><br>Now we can go back to our .Rmd file.
+
+step 1: write some text
+step2: write
+
+```{r}
+library(reticulate)
+summary(pressure)
+```
+this is some text 
+
+```{python}
+import pandas as pd
+```
+
+Step3: run by pressing Cmd+shift+K<br><br>What if we don't the output and just render the code chunks?
+For that go to R / Radian terminal in VS code 
+
+click on lines after ```{r} and press shift+enter 
+
+it will give u a graph for base R. 
+
+Now write ~
+in the terminal . the signs will change from &gt; to &gt;&gt;&gt;<br><br>it means now u have shifted to python from R. 
+
+to go back to R from python write in same terminal
+
+exit
+
+and that's it now u can use both R and Python in 1 Rmarkdown file without using R studio. Remember when u have &gt;&gt;&gt; it means u can run python commands only</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">JavaScript Learning Resources</a></li>
-<li><a href="#">Learning Resources</a></li>
-<li><a href="#">JavaScript Learning</a></li>
-<li><a href="#">https</a></li>
-<li><a href="#">t.co</a></li>
+								<li><a href="#">code</a></li>
+<li><a href="#">file</a></li>
+<li><a href="#">Python</a></li>
+<li><a href="#">Rmarkdown file</a></li>
+<li><a href="#">run</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -301,7 +351,7 @@ Here are a few resources for you❤️👇
       }
     </script>
 
-<!--0420142491996431651-->
+<!--0065265628211151651-->
 
   </body>
 
