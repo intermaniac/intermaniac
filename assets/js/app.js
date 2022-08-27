@@ -63,7 +63,9 @@ var load_data = function(limit, from) {
 
 
 			var pages = result.pages;
-			console.log(result.pages);
+			//reversing pages so that last updated one will be always displayed on first page
+			pages.reverse();
+			//console.log(result.pages);
 			var count=1;
 			var is_preview = true;
 			if($('#post-list').length>0){
@@ -154,7 +156,7 @@ var load_data = function(limit, from) {
     		        autoHideNext: true,
     		        pageLink: '?page=?',
     		        callback: function(data, pagination) {
-    		            console.log('page', data);
+    		            //console.log('page', data);
     		        }
     		    });
 			}
