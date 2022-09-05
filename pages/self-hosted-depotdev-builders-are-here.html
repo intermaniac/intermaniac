@@ -5,12 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Self-hosted @depotdev builders are here 🎉
+
+All of the benefits of faster Docker image builds via...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Self-hosted @depotdev builders are here 🎉
+
+all of the benefits of...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +79,9 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Self-hosted @depotdev builders are here 🎉
+
+all of the benefits of...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +103,53 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Self-hosted @depotdev builders are here 🎉
+
+all of the benefits of...</span>
+                      <a href="#"><h4>Self-hosted @depotdev builders are here 🎉
+
+All of the benefits of faster Docker image builds via...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-05 13:12:35.478931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Self-hosted @depotdev builders are here 🎉
 
-SQL Course 2022: SQL for Data Analysis and Data Science.: 
-<a href="https://t.co/lrJwYx3MCO">https://t.co/lrJwYx3MCO</a>
+All of the benefits of faster Docker image builds via Depot, but using your own infrastructure orchestrated via our thin API layer. Blog post coming this week, but here are some quick thoughts 🧵👇<br><br>Why did we build out a way to have self-hosted Depot builders?
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Python Course:Learn Python By building Games 2022 in Python.: 
-<a href="https://t.co/VHGIFRA5j1">https://t.co/VHGIFRA5j1</a><br><br>Python Data Course: Python for Data Analysis &amp; Visualization: 
-<a href="https://t.co/nGjjF1kG6T">https://t.co/nGjjF1kG6T</a><br><br>Certificate in Heat, Ventilation and Air Conditioning System: 
-<a href="https://t.co/JkL80llqYW">https://t.co/JkL80llqYW</a><br><br>Data Analyst Boot camp 2022: Get Ready to Be a Data Analyst.: 
-<a href="https://t.co/2nmGdiA4fY">https://t.co/2nmGdiA4fY</a></p>
+1⃣ It was asked for to help an early adopter meet their organization requirements of all build data being self-hosted.
+2⃣ It fits with our ultimate mission -- faster CI builds everywhere ⚡️<br><br>We think our take on self-hosted is interesting and powerful. Here is some details of what we did.
+
+☁️ Self-hosted builders are configured by creating what we call a cloud connection on the Depot organization. This connection generates a cloud connection token.<br><br>That cloud connection token is used when launching the Depot infrastructure that is needed for self-hosted builders. Currently, we only offer this infrastructure via an open-source Terraform module, but we will add others in the future. 
+
+<a href="https://t.co/rwI4LRbMJx">https://t.co/rwI4LRbMJx</a><br><br>The module provisions a set of resources to allow Depot to launch builders in the connected account. It's own VPC, subnets, security groups, launch templates, and an IAM role with limited permissions.
+
+Notably, it doesn't use any cross-account IAM permissions 💡<br><br>We chose not to use cross-account IAM permissions because we don't want any direct access to your cloud account. 
+
+Resources are launched via the open-source project that we are calling cloud-agent. It runs as a Fargate task in your account.
+
+<a href="https://t.co/FBxgkwDsKT">https://t.co/FBxgkwDsKT</a><br><br>The cloud-agent itself is restricted in what it can touch in your AWS account. It has a restricted IAM policy that only allows it to interact with EC2 instances &amp; EBS volumes that are tagged with the specific depot-connection tag.
+
+<a href="https://t.co/6WG7VvjdMf">https://t.co/6WG7VvjdMf</a><br><br>It can only launch resources with a depot-connection tag and therefore only manage what it has directly launched.<br><br>The cloud-agent reports the current status of Depot infrastructure in the connected account and asks for any pending changes of the Depot API. When there is a new build waiting to be served, it receives a description of the machine to start and launches it.<br><br>When the machine launches, another open-source process starts running inside the VM, we call this one machine-agent.
+
+When machine-agent starts, it registers with the Depot API and starts BuildKit with specific mTLS certificates provisioned for the build.
+
+<a href="https://t.co/dX396VlQ5g">https://t.co/dX396VlQ5g</a><br><br>With BuildKit fully online, the machine-agent reports to the Depot API that the machine is ready to receive any pending builds. The build is assigned, specific mTLS certificates are issued for that build.
+
+The Depot CLI can then connect to the machine for the pending build.<br><br>🔏The latest Depot CLI communicates with self-hosted builder machines directly, using mTLS. This means that builds making use of self-hosted builders communicate directly with self-hosted machines, never passing through a Depot proxy.<br><br>With this architecture you can configure as many cloud connections as you want in your Depot organization. You just provision the Depot resources for each cloud connection with the given connection token.<br><br>You can configure a project to use a given cloud connection, and thus self-hosted builders, on a project by project basis. So, you can mix &amp; match Depot hosted and self-hosted if you so desire ✨<br><br>Self-hosted Depot builders is a major milestone for us, but it is only really the beginning. Today, we are rolling this our for AWS accounts, but plan on adding @flydotio support in the very near future as well as GCP &amp; Azure.<br><br>We are still working a bit on pricing with regards to self-hosted Depot builders. But it is, and always will be available to everyone without any special enterprise pricing gates to get through.
+
+We want to make CI builds faster everywhere, period.<br><br>Blog post on all of this is coming in the next week or so, but we have documentation up today if you want to check it out 👉 <a href="https://t.co/nUZZgPb1vt">https://t.co/nUZZgPb1vt</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Data Analyst Boot</a></li>
+								<li><a href="#">self-hosted Depot builders</a></li>
+<li><a href="#">Docker image builds</a></li>
+<li><a href="#">Depot</a></li>
+<li><a href="#">faster Docker image</a></li>
+<li><a href="#">self-hosted Depot</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +311,7 @@ SQL Course 2022: SQL for Data Analysis and Data Science.:
       }
     </script>
 
-<!--1631196528817522651-->
+<!--2760243674206822651-->
 
   </body>
 

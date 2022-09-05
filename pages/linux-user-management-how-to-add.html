@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Linux user management - how to add users in Linux 🧵↓The useradd command is the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Linux user management - how to add users in linux...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Linux user management - how to add users in linux...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +97,45 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Linux user management - how to add users in linux...</span>
+                      <a href="#"><h4>Linux user management - how to add users in Linux 🧵↓The useradd command is the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-05 13:12:35.478931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Linux user management - how to add users in Linux 🧵↓<br><br>The useradd command is the main tool for adding new users to a Linux system. This command allows you to quickly create a new user account and configure the user's $HOME directory structure.<br><br>The useradd command creates a user account by combining system default settings and command-line parameters.
 
-SQL Course 2022: SQL for Data Analysis and Data Science.: 
-<a href="https://t.co/lrJwYx3MCO">https://t.co/lrJwYx3MCO</a>
+To see the system default values on your Linux distribution, use the useradd command with the -D option: <a href="https://t.co/MoAJ0QyBTF">https://t.co/MoAJ0QyBTF</a><br><br>Important
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Python Course:Learn Python By building Games 2022 in Python.: 
-<a href="https://t.co/VHGIFRA5j1">https://t.co/VHGIFRA5j1</a><br><br>Python Data Course: Python for Data Analysis &amp; Visualization: 
-<a href="https://t.co/nGjjF1kG6T">https://t.co/nGjjF1kG6T</a><br><br>Certificate in Heat, Ventilation and Air Conditioning System: 
-<a href="https://t.co/JkL80llqYW">https://t.co/JkL80llqYW</a><br><br>Data Analyst Boot camp 2022: Get Ready to Be a Data Analyst.: 
-<a href="https://t.co/2nmGdiA4fY">https://t.co/2nmGdiA4fY</a></p>
+The /etc/default/useradd file is used to set the default settings for the useradd command. In addition, additional security settings are defined in the /etc/login.defs file. You can change the default security behavior on your Linux system by editing these files.<br><br>Here are the default values that the useradd command uses if you don't specify them on the command line when creating a new user on the system:
+
+• The new user will be assigned to a group with the ID 100.
+• The $HOME directory /home/username will be created for the new user.<br><br>• When the password expires, the account will not be terminated.
+• The new account will not have a set expiration date.
+• The bash shell will be the new account's default shell.<br><br>• The contents of the /etc/skel directory will be copied to the user's $HOME directory.
+• For the user account to receive mail, the system will create a file in the mail directory.<br><br>An administrator can create a default $HOME directory configuration using the useradd command, and the new user's $HOME directory is then created using that configuration as a template. This enables you to automatically add system default files to each new user's $HOME directory.<br><br>The files can be found in the /etc/skel directory on many Linux systems: <a href="https://t.co/JNyWLavD9j">https://t.co/JNyWLavD9j</a><br><br>These are the default startup files for your login shell environment (such as zsh, bash, fsh, and so on). When a user is created, the system automatically copies these default files into their $HOME directory.<br><br>You can check this by making a new user account with the system's default settings and then checking the new user's $HOME directory.<br><br>The useradd program does not by default create a $HOME directory in many Linux distributions, but the -m command-line option instructs it to do so. That behavior may be modified in the /etc/login.defs file.<br><br>You can use the useradd command-line options to alter a default value or behavior when creating a new user. Here are some of the options you should be aware of:<br><br>• -d dir_name - Specifies a name other than the login name for the HOME directory.
+• -m - Creates the user’s HOME directory.
+• -M - Disables the creation of a user's HOME directory (used if the default setting is to create one).<br><br>•-N - do not create a group with the same name as
+the user
+• -p pass - encrypted password of the new account.
+•-U-  create a group with the same name as the user.
+• -s SHELL - login shell of the new account.
+• -r - Creates a system account.<br><br>•-u uid - Specifies a unique UID for the account<br><br>Feel free to check the useradd command help (useradd --help) or manual (man useradd)for more options you can use with.<br><br>That's it for today's thread! 
+
+Thank you for taking the time to read my brief Linux thread! 
+
+If you enjoyed this thread, follow us at @linuxopsys for future Linux posts, which we will be posting on a daily basis.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Data Analyst Boot</a></li>
+								<li><a href="#">HOME directory</a></li>
+<li><a href="#">HOME</a></li>
+<li><a href="#">useradd command</a></li>
+<li><a href="#">user</a></li>
+<li><a href="#">default</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +297,7 @@ SQL Course 2022: SQL for Data Analysis and Data Science.:
       }
     </script>
 
-<!--1631196528817522651-->
+<!--2952247706396502651-->
 
   </body>
 

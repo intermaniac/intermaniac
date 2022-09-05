@@ -5,12 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="What is debouncing in JavaScript and how do you use it in React?
+
+📚 Debouncing is...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>What is debouncing in javascript and how do you use...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +77,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>What is debouncing in javascript and how do you use...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +99,52 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>What is debouncing in javascript and how do you use...</span>
+                      <a href="#"><h4>What is debouncing in JavaScript and how do you use it in React?
+
+📚 Debouncing is...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-05 13:12:35.478931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>What is debouncing in JavaScript and how do you use it in React?
 
-SQL Course 2022: SQL for Data Analysis and Data Science.: 
-<a href="https://t.co/lrJwYx3MCO">https://t.co/lrJwYx3MCO</a>
+📚 Debouncing is a technique used to improve the performance of frequently executed actions, by delaying them, grouping them, and only executing the last call.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Python Course:Learn Python By building Games 2022 in Python.: 
-<a href="https://t.co/VHGIFRA5j1">https://t.co/VHGIFRA5j1</a><br><br>Python Data Course: Python for Data Analysis &amp; Visualization: 
-<a href="https://t.co/nGjjF1kG6T">https://t.co/nGjjF1kG6T</a><br><br>Certificate in Heat, Ventilation and Air Conditioning System: 
-<a href="https://t.co/JkL80llqYW">https://t.co/JkL80llqYW</a><br><br>Data Analyst Boot camp 2022: Get Ready to Be a Data Analyst.: 
-<a href="https://t.co/2nmGdiA4fY">https://t.co/2nmGdiA4fY</a></p>
+Here's how to implement it and use it 🧵<br><br>💭 Problem: frequently executed actions.
+
+Typing is an example of a frequently executed action. If you'd like to save the text to the backend or to occasionally execute some expensive action in response to text changes - you wouldn't want it to happen on every keystroke. <a href="https://t.co/Cus9Wh5FrY">https://t.co/Cus9Wh5FrY</a><br><br>💡 Solution: debouncing.
+
+Debounce is commonly implemented using a timer, the action executes after the timeout. If the action is repeated before the timer has finished, the timer is restarted with the latest action pending.
+
+Here's a basic implementation of debounce function. <a href="https://t.co/CgwwdAuedb">https://t.co/CgwwdAuedb</a><br><br>1. Create a function that accepts a function to debounce and the timeout delay as arguments.
+2. The debounce function returns a new function, which when executed, creates a timer to execute the original function after a delay and clear the previous timer.
+
+But there's more...<br><br>💭 What if we sometimes need to immediately call action? We don't want it to execute again after the timeout in that case...
+
+Solution: flushing.
+
+We can attach an extra method to the debounce function that runs the pending action instantly and cancels the timer. Here's how: <a href="https://t.co/v9n1L9lKnS">https://t.co/v9n1L9lKnS</a><br><br>1. Store the arguments of the last action into an array when calling the debounced function.
+2. Create a new "debounce.flush" function - it will run the action with the last arguments and clear the timer and stored arguments.
+3. Call debounce.flush() to run the action instantly.<br><br>Use debounce if you want to optimize running batches of frequent updates, and you only care about the end result of the final call.
+
+As always, you can find the code examples in my repo: <a href="https://t.co/s6RuTFH1WQ">https://t.co/s6RuTFH1WQ</a><br><br>That's it!
+
+If you enjoyed this thread:
+
+1. Follow me @VincasStonys for more of these
+2. RT the tweet below to share this thread with your audience <a href="https://t.co/Vq4tMSECJW">https://t.co/Vq4tMSECJW</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Data Analyst Boot</a></li>
+								<li><a href="#">frequently executed actions</a></li>
+<li><a href="#">action</a></li>
+<li><a href="#">function</a></li>
+<li><a href="#">frequently executed</a></li>
+<li><a href="#">timer</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +306,7 @@ SQL Course 2022: SQL for Data Analysis and Data Science.:
       }
     </script>
 
-<!--1631196528817522651-->
+<!--2996386073812712651-->
 
   </body>
 
