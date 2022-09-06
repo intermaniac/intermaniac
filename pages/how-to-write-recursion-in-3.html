@@ -5,15 +5,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+    <meta name="description" content="How to write recursion in 3 steps?
 
-·        Common...">
+Follow 🧵
+#100DaysOfCode #JavaStep 1: Recursive case - the flow
+Step...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+    <title>How to write recursion in 3 steps?
 
-·...</title>
+follow 🧵
+#100daysofcode #javastep 1:...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +82,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+                <h2>How to write recursion in 3 steps?
 
-·...</h2>
+follow 🧵
+#100daysofcode #javastep 1:...</h2>
               </div>
             </div>
           </div>
@@ -103,62 +107,67 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+                      <span>How to write recursion in 3 steps?
 
-·...</span>
-                      <a href="#"><h4>#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+follow 🧵
+#100daysofcode #javastep 1:...</span>
+                      <a href="#"><h4>How to write recursion in 3 steps?
 
-·        Common...</h4></a>
+Follow 🧵
+#100DaysOfCode #JavaStep 1: Recursive case - the flow
+Step...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-06 08:44:44.936571</a></li>
 
                       </ul>
-                      <p>#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+                      <p>How to write recursion in 3 steps?
 
-·        Common text properties:
+Follow 🧵
+#100DaysOfCode #Java<br><br>Step 1: Recursive case - the flow
+Step 2: Base case - the stopping criterion
+Step 3: Unintentional case - the constraint<br><br>Let's look into it with an example.
 
-5.      Letter spacing:
+Problem: Find the factorial of the given number.
 
-The letter-spacing CSS property sets the horizontal spacing behavior between text characters.<br><br>This value is added to the natural spacing between characters while rendering the text. Positive values of letter-spacing cause characters to spread farther apart, while negative values of letter-spacing bring characters closer together.<br><br>Exp: letter-spacing: 5px, 10px, 15px etc. (Space between letters).
-         h1{
-                   Letter-spacing: 10px;
-          }
+Factorial is the product of all positive integers less than or equal to a given positive integer.
+i.e. 4! = 4 * 3 * 2 * 1 = 24<br><br>Step 1: Recursive case - the flow
+To identify the recursive case we need to find how the factorial is defined using the factorial function.
 
-0/<br><br>6.      Font size:
+General expression of factorial is
+n! = n * (n-1) * (n-2) * ...2 * 1
+Can be written as
+n! = n * (n-1)!
+Now we got the recursive flow!
+Code: <a href="https://t.co/g7ZhlcCkVk">https://t.co/g7ZhlcCkVk</a><br><br>Step 2: Base case - the stopping criterion
+In the above code, we can clearly see that the function keeps calling itself without stopping.
+To prevent the infinite loop of recursion we need a base case.
 
-The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative &lt;length&gt; units, such as em, ex, and so forth.<br><br>Exp: font-size: xx-small, x-small, small, medium, large, x-large, xx-large also have units Px, em and % etc.
+In our case, 
+0! = 1 
+1! = 1
+So as a base case, we can use these cases.
+Code: <a href="https://t.co/NpuU3dUHGB">https://t.co/NpuU3dUHGB</a><br><br>Step 3: Unintentional case - the constraint
+If someone calls the above function for -1 or -2, What will happen?
+(-1)! = ?
+(-2)! = ?
+We can never reach the base condition that we declared over here.
 
-         h1{
-                   font-size: 10px;
-          }
+So in this case, we need to make sure that N is always a positive integer.
 
-1/<br><br>7.      The Font Family Property:
+Code: <a href="https://t.co/DvyUFtMtHf">https://t.co/DvyUFtMtHf</a><br><br>That is all about writing a recursive code.
 
-The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
-Exp:
-                        h1{
-    font-family: Arial;
- }<br><br>We can also add two or more fonts as backup fonts.
-h1{
-font-family: Segoe UI, Futura;
- }
-
-CSS Font Stack: <a href="https://t.co/DOl2SH1f3a">https://t.co/DOl2SH1f3a</a>
-
-2/
-
-#learning #development #css #html #javascript #webdesign #webdevelopment #frontend #webdeveloper #internet #frontenddeveloper #backenddeveloper <a href="https://t.co/4FnW3Iz1wH">https://t.co/4FnW3Iz1wH</a></p>
+Is this thread helpful?</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Common text properties</a></li>
-<li><a href="#">Common text</a></li>
-<li><a href="#">CSS property sets</a></li>
-<li><a href="#">CSS property</a></li>
-<li><a href="#">Font</a></li>
+								<li><a href="#">Step</a></li>
+<li><a href="#">case</a></li>
+<li><a href="#">Recursive</a></li>
+<li><a href="#">Base case</a></li>
+<li><a href="#">Base</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -320,7 +329,7 @@ CSS Font Stack: <a href="https://t.co/DOl2SH1f3a">https://t.co/DOl2SH1f3a</a>
       }
     </script>
 
-<!--6752953583411372651-->
+<!--8980656196059582651-->
 
   </body>
 

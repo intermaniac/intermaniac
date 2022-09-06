@@ -5,15 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+    <meta name="description" content="This is how we separate Storage &amp; Compute // 🧵
 
-·        Common...">
+A short story on how @NikitaShamgunov...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+    <title>This is how we separate storage &amp; compute // 🧵
 
-·...</title>
+a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+                <h2>This is how we separate storage &amp; compute // 🧵
 
-·...</h2>
+a...</h2>
               </div>
             </div>
           </div>
@@ -103,62 +103,100 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+                      <span>This is how we separate storage &amp; compute // 🧵
 
-·...</span>
-                      <a href="#"><h4>#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+a...</span>
+                      <a href="#"><h4>This is how we separate Storage &amp; Compute // 🧵
 
-·        Common...</h4></a>
+A short story on how @NikitaShamgunov...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-06 08:44:44.936571</a></li>
 
                       </ul>
-                      <p>#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+                      <p>This is how we separate Storage &amp; Compute // 🧵
 
-·        Common text properties:
+A short story on how @NikitaShamgunov went through the *idea maze* of SQL markets to invent OSS serverless Postgres.
 
-5.      Letter spacing:
+Meet Neon ❇️ <a href="https://t.co/tIhZPNKYK5">https://t.co/tIhZPNKYK5</a><br><br>📝 I summarized highlights from 4 interviews over past 7 years:
 
-The letter-spacing CSS property sets the horizontal spacing behavior between text characters.<br><br>This value is added to the natural spacing between characters while rendering the text. Positive values of letter-spacing cause characters to spread farther apart, while negative values of letter-spacing bring characters closer together.<br><br>Exp: letter-spacing: 5px, 10px, 15px etc. (Space between letters).
-         h1{
-                   Letter-spacing: 10px;
-          }
+• working at MS &amp; FB
+• taking 5 years to build 1st database release
+• growing memSQL into @SingleStoreDB $1.3B
+• how @khoslaventures incubated the next killer Snowflake, @neondatabase
 
-0/<br><br>6.      Font size:
+Read on for notes👇 <a href="https://t.co/fj5esczl71">https://t.co/fj5esczl71</a><br><br>1/ Back in 2015 after releasing v1 MemSQL, Nikita shared how they applied a TuringAward winner’s observation to database workloads: online analytical vs transactional processing that was dynamically-adjustable unlike Oracle’s. <a href="https://t.co/zj4aDn1qJh">https://t.co/zj4aDn1qJh</a><br><br>2/ Hurdle at Facebook in ~2010 was painful multi-day-long downloads of ETL (extract-transform-load) before available in Hadoop, so took lesson from @nathanmarz who *open-sourced* Apache Storm &amp; built Lambda Architecture; spiritual successors in OSS were @RedHat &amp; @Cloudera <a href="https://t.co/wOBZnFyD7f">https://t.co/wOBZnFyD7f</a><br><br>3/ @Azure &amp; @AWScloud became distribution centers, paired well with Apache Spark which had streaming, but not ⭐️ Persistence nor ⭐️ Transactionality 
 
-The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative &lt;length&gt; units, such as em, ex, and so forth.<br><br>Exp: font-size: xx-small, x-small, small, medium, large, x-large, xx-large also have units Px, em and % etc.
+Getting full ACID compliance important:
+💽 Atomicity
+💽 Consistency 
+💽 Isolation
+💽 Durability
 
-         h1{
-                   font-size: 10px;
-          }
+but Cobalt/C++ devs wanted SQL… <a href="https://t.co/VcfsweBzZA">https://t.co/VcfsweBzZA</a><br><br>4/ By 2017 Nikita realized product-market-fit for @SingleStoreDB with customers in:
 
-1/<br><br>7.      The Font Family Property:
+⬆️ Concurrency
+⬇️ Latency 
+❌ eliminating “Stop &amp; Go” uploads 
+✅ data available asap in unified API
 
-The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
-Exp:
-                        h1{
-    font-family: Arial;
- }<br><br>We can also add two or more fonts as backup fonts.
-h1{
-font-family: Segoe UI, Futura;
- }
+All achieved with low-level builds of 3 multiplication types as fundamental building block. <a href="https://t.co/K1q6EMTNoP">https://t.co/K1q6EMTNoP</a><br><br>5/ Next step was realizing new problems, like API separation between Py-libraries &amp; Spark + optimizing hardware usage by &gt;2 orders of magnitude.  Many more optimizations, until “latency gets squished to zero”, both Compute &amp; Storage are total utilities. <a href="https://t.co/jFwcHEXVGI">https://t.co/jFwcHEXVGI</a><br><br>6/ So in 2018 when M&amp;A accelerated for *transactional data* systems, team focused on 3 sectors:
+💸 Fintech
+🎥 Media
+🏥 Healthcare
 
-CSS Font Stack: <a href="https://t.co/DOl2SH1f3a">https://t.co/DOl2SH1f3a</a>
+Tier1 workloads with strain from 40-database systems needed immediately-helpful product to close sales: “we couldn’t wait on 3rd party ecosystem” dev <a href="https://t.co/n6EmB15zmX">https://t.co/n6EmB15zmX</a><br><br>7/ So north-star became optimizing for cloudAPI 🌧 reliability to prevent “Greatest Sin of databases”:
+☠️ losing data
+🙅🏻‍♀️ giving wrong results 
 
-2/
+Benchmark KPI became &gt;1 Trillion rows/second. 
 
-#learning #development #css #html #javascript #webdesign #webdevelopment #frontend #webdeveloper #internet #frontenddeveloper #backenddeveloper <a href="https://t.co/4FnW3Iz1wH">https://t.co/4FnW3Iz1wH</a></p>
+Focus moved from ~95% of in-house code to utilizing OSS PostgreSQL 🐘 parser + binder… <a href="https://t.co/W4mnC8hn60">https://t.co/W4mnC8hn60</a><br><br>8/ and that’s when the vision was born to go 
+
+🥀 fully-elastic 
+👨‍🔧 with managed-service 💻 of open-source solution 
+💯 &amp; radical customer-satisfaction 
+🌎 in a world of exponentially-growing AI &amp; ML workloads … <a href="https://t.co/7dCDGDPQPs">https://t.co/7dCDGDPQPs</a><br><br>9/ which brings us to 2022 &amp; the launch 🚀 of <a href="https://t.co/I4YirpOuYY">https://t.co/I4YirpOuYY</a> from:
+
+🤐 stealth incubation at @khoslaventures
+🤝 with cofounders @HLinnakangas &amp; @kelvich 
+✍️ &amp; an investment memo by former Dropbox CEO @quentinclark at  @GeneralCatalyst <a href="https://t.co/KgvYPkFQvX">https://t.co/KgvYPkFQvX</a><br><br>10/ with backing from aligned angel engineers (Database Avengers … ?) like @natfriedman @ajeets @rauchg @wesmckinn @andy_pavlo @sorenbs @amasad @OlegR &amp; others accelerating storage/compute future @eladgil @MichaelOvitz + team at @foundersfund<br><br>11/ On podcast with lead investor GGV @GlennSolomon, they dig into:
+
+📈 the growing $100B+ TAM for database workloads
+✨👀 why developers have a ‘twinkle in their eyes’ for Postgres &gt; MongoDB or mySQL
+❄️ lesson from Slootman &amp; @SnowflakeDB on focus: just tx, SMB, cloud, postgres <a href="https://t.co/saNM1zlet2">https://t.co/saNM1zlet2</a><br><br>12/ plus how:
+
+💻 @neondatabase organically fits into CI/CD workflows
+🐘 @PostgreSQL is on winning side of history 
+🥳 optimizing for delighting developers
+📲 but unique GTM of consumer &gt; B2B SaaS  
+🥊 Force-multiplier for engineers already using @vercel @Netlify @Cloudflare <a href="https://t.co/sIMpQxwtDr">https://t.co/sIMpQxwtDr</a><br><br>13/ So if that vision was compelling, now it’s your turn:
+
+1. Build with Neon while still available in freemium: <a href="https://t.co/kFmtBcxWGc">https://t.co/kFmtBcxWGc</a>
+2. Check out &amp; Star the git repo: <a href="https://t.co/PQ1ZaLRj5V">https://t.co/PQ1ZaLRj5V</a>
+3. Join the team: <a href="https://t.co/7I8c707GSN">https://t.co/7I8c707GSN</a><br><br>14/ Several roles are currently open for all-star teammates in:
+
+• DevRel
+• EngManager
+• Systems Storage Software: migrate off RocksDB with custom (#Rustacean 🦞) 
+• Backend (just be super deep into #Golang)
+• but do *not* apply for Tech Recruiter, I want that role … <a href="https://t.co/yIIw5xisyf">https://t.co/yIIw5xisyf</a><br><br>15/ That’s it for now! I only heard about Neon yesterday from @LM_Braswell, but already impressed with the team, vision, opportunity &amp; would love to help recruit.
+
+🧢 With my investor’s hat on, they pass the DD litmus test of:
+
+1. is it real?
+2. is it worth it?
+3. can they win? <a href="https://t.co/ryG8wNYBjP">https://t.co/ryG8wNYBjP</a><br><br>16/ If you’re passionate about this mission or just enjoyed learning in this thread &amp; want to share, make sure to go back to the start &amp; click Retweet ♻️ on this one right here: <a href="https://t.co/HnGTt6Zuvn">https://t.co/HnGTt6Zuvn</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Common text properties</a></li>
-<li><a href="#">Common text</a></li>
-<li><a href="#">CSS property sets</a></li>
-<li><a href="#">CSS property</a></li>
-<li><a href="#">Font</a></li>
+								<li><a href="#">invent OSS serverless</a></li>
+<li><a href="#">OSS serverless Postgres</a></li>
+<li><a href="#">built Lambda Architecture</a></li>
+<li><a href="#">devs wanted SQL</a></li>
+<li><a href="#">SQL markets</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -320,7 +358,7 @@ CSS Font Stack: <a href="https://t.co/DOl2SH1f3a">https://t.co/DOl2SH1f3a</a>
       }
     </script>
 
-<!--6752953583411372651-->
+<!--8024397811844992651-->
 
   </body>
 

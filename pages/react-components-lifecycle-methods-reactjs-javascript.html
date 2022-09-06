@@ -5,15 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+    <meta name="description" content="React Components Lifecycle Methods
 
-·        Common...">
+#reactjs #javascript #100DaysOfCode 
+
+Thread 🧵Every component will have following phases in its...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+    <title>React components lifecycle methods
 
-·...</title>
+#reactjs #javascript #100daysofcode 
+
+ 🧵every component will...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +83,11 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+                <h2>React components lifecycle methods
 
-·...</h2>
+#reactjs #javascript #100daysofcode 
+
+ 🧵every component will...</h2>
               </div>
             </div>
           </div>
@@ -103,62 +109,100 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#web_development_bootcamp_2022 #day-12 #part-2 of learning:  🧵
+                      <span>React components lifecycle methods
 
-·...</span>
-                      <a href="#"><h4>#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+#reactjs #javascript #100daysofcode 
 
-·        Common...</h4></a>
+ 🧵every component will...</span>
+                      <a href="#"><h4>React Components Lifecycle Methods
+
+#reactjs #javascript #100DaysOfCode 
+
+Thread 🧵Every component will have following phases in its...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-06 08:44:44.936571</a></li>
 
                       </ul>
-                      <p>#Web_Development_Bootcamp_2022 #Day-12 #Part-2 of learning: Thread 🧵
+                      <p>React Components Lifecycle Methods
 
-·        Common text properties:
+#reactjs #javascript #100DaysOfCode 
 
-5.      Letter spacing:
+Thread 🧵<br><br>Every component will have following phases in its Lifecycle:
 
-The letter-spacing CSS property sets the horizontal spacing behavior between text characters.<br><br>This value is added to the natural spacing between characters while rendering the text. Positive values of letter-spacing cause characters to spread farther apart, while negative values of letter-spacing bring characters closer together.<br><br>Exp: letter-spacing: 5px, 10px, 15px etc. (Space between letters).
-         h1{
-                   Letter-spacing: 10px;
-          }
+Mounting phase - when the component is mounted to DOM tree
 
-0/<br><br>6.      Font size:
+Updating phase - when component is being updated with new state, new props are being received
 
-The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative &lt;length&gt; units, such as em, ex, and so forth.<br><br>Exp: font-size: xx-small, x-small, small, medium, large, x-large, xx-large also have units Px, em and % etc.
+Unmounting phase - destroying component from DOM tree<br><br>Every phase in the lifecycle of a component has few methods which will be invoked during that phase of a component's lifecycle. We can override these methods to provide the desired functionality.<br><br>These methods can be used in the following cases:
 
-         h1{
-                   font-size: 10px;
-          }
+For making an Ajax call, to set timer and to integrate with other frameworks
+To avoid unnecessary re-rendering of a component
+To update the component, based on the props changes
+For clearing the values when component is unmounted<br><br>At Mounting phase of a component, following methods which will be invoked:
 
-1/<br><br>7.      The Font Family Property:
+1️⃣constructor()
+2️⃣static getDerivedStateFromProps()
+3️⃣render()
+4️⃣componentDidMount()<br><br>constructor() are used only for the below 2 purposes which we have already seen in the state demo:
 
-The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
-Exp:
-                        h1{
-    font-family: Arial;
- }<br><br>We can also add two or more fonts as backup fonts.
-h1{
-font-family: Segoe UI, Futura;
- }
+1️⃣Initializing state of a component
 
-CSS Font Stack: <a href="https://t.co/DOl2SH1f3a">https://t.co/DOl2SH1f3a</a>
+2️⃣For binding event handler methods to an instance<br><br>getDerivedStateFromProps() is invoked right before the render method. This method is called both in mounting and updating phase.
 
-2/
+Since it is a static method, we cannot access 'this' keyword within this method. Hence we cannot call setState method.<br><br>render(): Every React component must have render() method. render() method should be a pure function which returns the same result every time it is called which means, it doesn't modify any component's state.<br><br>componentDidMount():
+Invoked immediately after the component is mounted to DOM tree
 
-#learning #development #css #html #javascript #webdesign #webdevelopment #frontend #webdeveloper #internet #frontenddeveloper #backenddeveloper <a href="https://t.co/4FnW3Iz1wH">https://t.co/4FnW3Iz1wH</a></p>
+Now will have access to all the DOM nodes hence any initialization which requires DOM nodes should be done here
+
+Best place for setting timers and handling Ajax request<br><br>Updating phase
+
+At updating phase of a component, below methods are executed based on props or state being received and updates happens in a component:
+
+1️⃣static getDerivedStateFromProps()
+2️⃣shouldComponentUpdate()
+3️⃣render()
+4️⃣getSnapshotBeforeUpdate()
+5️⃣componentDidUpdate()<br><br>shouldComponentUpdate(nextProps, nextState):
+
+1️⃣Executed before rendering when new state or props are being received
+
+2️⃣By default it will return true by calling componentDidUpdate() method. If it returns false componentDidUpdate() method will not be invoked<br><br>3️⃣In case we want to skip re-rendering, this method could be used by returning false, so this would skip re-rendering.
+
+4️⃣This method only exists as a performance optimization<br><br>getSnapshotBeforeUpdate(prevProps, prevState):
+
+1️⃣Invoked right before changes are made to the DOM
+
+2️⃣It is recommended to return a value from this method which will be passed as a third parameter(as 'snapshot') to the componentDidUpdate()<br><br>3️⃣Once the updates flushed to the DOM, immediately next lifecycle method will be invoked.<br><br>getSnapshotBeforeUpdate(prevProps, prevState):
+
+This method is called immediately after the render and before the changes are uodated to the DOM.
+
+One of the use case of this method is to save the scroll position in chat application.<br><br>This method is the last chance to get the prevState and prevProps values before the component is updated. The method can return values based on the prevState and prevProps values.<br><br>componentDidUpdate(prevProps, prevState, snapshot):
+
+Invoked immediately after the changes are updated<br><br>Unmounting phase
+
+componentWillUnmount() method will be invoked immediately before a component is unmounted and destroyed.
+
+1️⃣This method is used at the unmounting process of a component<br><br>2️⃣This is the place for performing any necessary cleanup. e.g: any subscription which was created in componentDidMount()
+
+A component can be unmounted from DOM using ReactDOM.unmountComponentAtNode()<br><br>Error Handling can be taken care in React using the below methods
+
+• static getDerivedStateFromError()  
+• componentDidCatch()
+
+Error boundaries should be defined in order to catch errors occurring within the child components.<br><br>Whenever a component crashes because of a JavaScript error, the error will be logged and fall back UI is displayed.
+
+Error boundaries are nothing but class components which defines either "getDerivedStateFromError" or "componentDidCatch" method</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Common text properties</a></li>
-<li><a href="#">Common text</a></li>
-<li><a href="#">CSS property sets</a></li>
-<li><a href="#">CSS property</a></li>
-<li><a href="#">Font</a></li>
+								<li><a href="#">component</a></li>
+<li><a href="#">method</a></li>
+<li><a href="#">DOM</a></li>
+<li><a href="#">Updating phase</a></li>
+<li><a href="#">Methods</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -320,7 +364,7 @@ CSS Font Stack: <a href="https://t.co/DOl2SH1f3a">https://t.co/DOl2SH1f3a</a>
       }
     </script>
 
-<!--6752953583411372651-->
+<!--4629107835769372651-->
 
   </body>
 
