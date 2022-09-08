@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="I've spent quite some time building CLI tools in TypeScript and every library for prompting,...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>I've spent quite some time building cli tools in typescript...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>I've spent quite some time building cli tools in typescript...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,33 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>I've spent quite some time building cli tools in typescript...</span>
+                      <a href="#"><h4>I've spent quite some time building CLI tools in TypeScript and every library for prompting,...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-08 07:15:39.444159</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>I've spent quite some time building CLI tools in TypeScript and every library for prompting, I mean every, the provide you a strict API and almost no way to easily customise you rendering/output. In/Enquirer, prompts, ink, etc.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/CtaJ5Ik9qS">https://t.co/CtaJ5Ik9qS</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+/thread<br><br>First interaction was with Ink, that is an incredible library, built on top of Yoga layout engine, provides you a flexbox in terminal. I suppose it's a huge engineering effort and result is incredible, but I don't see how this is good for CLI..<br><br>CLI is usually a sequential communication between command line and developer. Declarative UI is an overkill for CLI. You have to write an obscure amount of code for simple stuff in terminal.<br><br>Ink has a massive amount of prebuilt components, but those are meant to be used as is, if you need to customise - you have to fork a particular one, learn how it works and change it. We've built an CLI app with ink and it was fun until we made a step back<br><br>When we wrote the same thing in an imperative manner codebase went like 70% down and business logic was way simpler and slimmer. At that point we started walking around Inquirer/Enquirer and prompts<br><br>They're really solid and being developed for many years and some of them adopted hooks, they're really nice but it's still hard to design it your way and that is something I can't wrap my hand around.
+
+I want a different look and feel <a href="https://t.co/Ug54lEJeEs">https://t.co/Ug54lEJeEs</a><br><br>And every time I literally have to build my own. I bumped into oclif and they have a dedicated command line to generate a FOLDER for you to write your own component, sheesh<br><br>I've recently watched a video of @t3dotgg where he watched a video of @tannerlinsley giving a speech at react summit and talking about the future of @tan_stack. That idea of headless/designless did really solidified in my mind<br><br>When you have a designless/headless library - some developer has done 90% of heavy lifting for you and you now have freedom to lay it out the way you want. As opposed to headfull where you've got 100% done, but you're within strict boundaries now<br><br>I truly believe that in long run every time if you stick to head/design-less libraries you gonna benefit immensely. Wether it's backend or frontend. I've been doing and managing software development for quite a while and if you're not delusional<br><br>If you can make a step back and analyse - mostly every time you'll see that in a long run, using headless will benefit both you as an engineer and your product.<br><br>Okay, back to CLIs. Since I haven't found a sweet spot for my use case, I decided to build one. I just love building stuff, I can't stop doing that and I probably wont and I'm completely fine with it. So I've spent couple of hours on weekdays with internals of the cli libraries<br><br>Mainly everything comes down to obtaining stdin/stdout, observing keypresses and either halt or consume the input and render the output. When you render - you just clear what you've rendered before and render new stuff. It's so easy conceptually<br><br>The above you need when you need to prompt user. If you want to statically render the text - I encourage you to just console.log and use chalk or ansiicolors or kleur for styling, they're all awesome.<br><br>This is how you prepare readline and how you teardown when you're done with the prompt <a href="https://t.co/wZCcLZ3YqU">https://t.co/wZCcLZ3YqU</a><br><br>That's it, that's all you need from command line itself. Ah, maybe to just remove and show cursor if you're doing selects of something. There's a sisteransi library with all hex commands for command line operations <a href="https://t.co/YF0xldWimX">https://t.co/YF0xldWimX</a><br><br>to render you just make a text <a href="https://t.co/n54IgeYKrw">https://t.co/n54IgeYKrw</a><br><br>So on library side I handle CL lifecycle and for prompts like Select or Input I will prepare a UI agnostic data bundle to handle all the "back", "forward", "up", "down", "delete", "return", etc
+And all you need is to just define how to render<br><br>I've spent some spare time and published v0.0.1
+I literally spent more time searching for a vacant name on NPM
+
+Thanks!
+<a href="https://t.co/J1hczYrkai">https://t.co/J1hczYrkai</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">building CLI tools</a></li>
+<li><a href="#">strict API</a></li>
+<li><a href="#">tools in TypeScript</a></li>
+<li><a href="#">CLI tools</a></li>
+<li><a href="#">CLI</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +285,7 @@
       }
     </script>
 
-<!--2552927554597073651-->
+<!--0257898563074853651-->
 
   </body>
 
