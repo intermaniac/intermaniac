@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...">
+    <meta name="description" content="#Git: I keep seeing tech leaders pushing for long lived branches and branches per environment....">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>#git: i keep seeing tech leaders pushing for long lived...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>#git: i keep seeing tech leaders pushing for long lived...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +97,26 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...</h4></a>
+                      <span>#git: i keep seeing tech leaders pushing for long lived...</span>
+                      <a href="#"><h4>#Git: I keep seeing tech leaders pushing for long lived branches and branches per environment....</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-10 07:15:35.848223</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇<br><br>1. Software Engineer, SDK Platform at @thirdweb_.
-
-A remote opportunity at a San Francisco-based, Coinbase Ventures-backed fast-growing startup that has recently received Series-A funding.
-
-Check out the job at: <a href="https://t.co/NU3HSDHBNx">https://t.co/NU3HSDHBNx</a><br><br>2. DevOps Engineer II at @CivisAnalytics.
-
-A remote opportunity at a Chicago-based, Alumni Ventures-backed fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/sWH1PjL4si">https://t.co/sWH1PjL4si</a><br><br>3. Data Engineer - Platform at @SteelEyeLtd.
-
-A remote opportunity at a London-based, Eight Roads Ventures-backed fast-growing startup that received Series-A funding in 2021.
-
-Check out the job at: <a href="https://t.co/26Mzjnf1v3">https://t.co/26Mzjnf1v3</a><br><br>4. Backend Python Engineer at @Teikametrics.
-
-A remote opportunity at a Boston-based, Intel Capital-backed fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf</a></p>
+                      <p>#Git: I keep seeing tech leaders pushing for long lived branches and branches per environment. Why? A thread 👇<br><br>First, I believe that Git branching strategies are the foundations on how frequently you can release, how Dev and Ops roles interact and how quickly you can recover from incidents.<br><br>As we want to handle "everything as code", Git branching strategy becomes key for how we manage not only application code but also infrastructure, tests, CI and CD, configuration and documentation code.<br><br>Unpopular opinion: #Git branching strategies can make or break a #DevOps transformation. 
+#EverythingAsCode<br><br>Second, you will hear me advocate for Trunk Based Development and short lived branches (if any). In my experience, TBD is easily understood by developers, yet a powerful and complete workflow for building, testing, deploying and operating applications and services. <a href="https://t.co/ifrKmG9p5m">https://t.co/ifrKmG9p5m</a><br><br>Back to the title of the thread: many tech leaders are still advocating for "Git Flow" (aka nvie). While Git flow has since then been challenged by many and specifically by @adam_ruka in his famous blog post "GitFlow consider harmful" - 7 years ago. <a href="https://t.co/58wgmF0GmJ">https://t.co/58wgmF0GmJ</a><br><br>Why is Git flow (still) so popular? The mental model which consists in separating different shipping targets (dev/staging/prod environments, different customers) with a Git branch is very appealing at first.<br><br>As separating shipping targets is an essential question, leveraging Git capabilities - Git branches, as implemented in Git flow - sounds like a good idea. It is often not.<br><br>Yet, developers can be very happy with Git flow as merging activity can be the role of a "release manager/coordinator" whose job is to assemble all the code from all developers and hope for the best. This is not where we are going. But this is also how it worked before.<br><br>Start seeing a pattern? Git flow implements an earlier workflow which used to work. But when business demands an increase in frequency of changes / releases, those practices (as well as manual testing) become unsustainable.<br><br>As you increase the frequency from years, months, down to days or even hours, merging changes must be continuous. Merging must shift left.<br><br>I also see tech leaders advocating for Git branches per shipping target, sometimes referred to as "environment branching" <a href="https://t.co/V5hAUK9BB6">https://t.co/V5hAUK9BB6</a><br><br>Git branches per shipping target - while slightly less harmful than Git flow - also creates late merging activities. You don't want to have the surprise of having all the code from all developers being put together just before releasing or testing.<br><br>You also do not want to have deviation between all the branches. With Git flow, you can very easily 10s of branches live in parallel - a little bit less with Git branches per shipping target.
+Keeping them in sync demands a lot of energy.<br><br>Regardless how much effort you put in keeping this branching madness under control, merging the changes in those branches with other live branches will always be too late in the cycle. Get ready for surprises.<br><br>Today, I prefer to use configuration files specific to each environment (<a href="https://t.co/0JbikPe6nv,">https://t.co/0JbikPe6nv,</a> <a href="https://t.co/oi5SdcQpp1">https://t.co/oi5SdcQpp1</a> or config.customerA, config.customerB) and complement that with feature toggles.<br><br>With environment specific configuration files and feature toggles, merging activity between branches is done at a much smaller granularity and thus easier. I can also drastically reduce the chance of code deviation and behaviors being different between shipping targets.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">Ventures-backed fast-growing startup</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Ventures-backed fast-growing</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">Git Flow</a></li>
+<li><a href="#">Git</a></li>
+<li><a href="#">Git branches</a></li>
+<li><a href="#">Git branching strategies</a></li>
+<li><a href="#">Git branching</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +278,7 @@ Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf<
       }
     </script>
 
-<!--6167022586745824651-->
+<!--6600657164236324651-->
 
   </body>
 

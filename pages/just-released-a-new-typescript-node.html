@@ -5,13 +5,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="⏰ 🚨 Just released a new typescript node_module to manage serialized rust_decimal values.
+https://t.co/5OJK8Ie5X9
 
-🧵👇1. Software...">
+Here's why 🧵During...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>⏰ 🚨 just released a new typescript node_module to manage...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +78,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>⏰ 🚨 just released a new typescript node_module to manage...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +100,32 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>⏰ 🚨 just released a new typescript node_module to manage...</span>
+                      <a href="#"><h4>⏰ 🚨 Just released a new typescript node_module to manage serialized rust_decimal values.
+https://t.co/5OJK8Ie5X9
 
-🧵👇1. Software...</h4></a>
+Here's why 🧵During...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-10 07:15:35.848223</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>⏰ 🚨 Just released a new typescript node_module to manage serialized rust_decimal values.
+<a href="<a href="https://t.co/5OJK8Ie5X9">https://t.co/5OJK8Ie5X9</a>"><a href="https://t.co/5OJK8Ie5X9">https://t.co/5OJK8Ie5X9</a></a>
 
-🧵👇<br><br>1. Software Engineer, SDK Platform at @thirdweb_.
-
-A remote opportunity at a San Francisco-based, Coinbase Ventures-backed fast-growing startup that has recently received Series-A funding.
-
-Check out the job at: <a href="https://t.co/NU3HSDHBNx">https://t.co/NU3HSDHBNx</a><br><br>2. DevOps Engineer II at @CivisAnalytics.
-
-A remote opportunity at a Chicago-based, Alumni Ventures-backed fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/sWH1PjL4si">https://t.co/sWH1PjL4si</a><br><br>3. Data Engineer - Platform at @SteelEyeLtd.
-
-A remote opportunity at a London-based, Eight Roads Ventures-backed fast-growing startup that received Series-A funding in 2021.
-
-Check out the job at: <a href="https://t.co/26Mzjnf1v3">https://t.co/26Mzjnf1v3</a><br><br>4. Backend Python Engineer at @Teikametrics.
-
-A remote opportunity at a Boston-based, Intel Capital-backed fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf</a></p>
+Here's why 🧵<br><br>During the last developments of vyper-core we introduced some new parameters, serialized on-chain, representing decimal values. We needed better performance than standard rust f64 type, so we evaluated different libraries, including @solana official one: <a href="https://t.co/IiX048DBXd">https://t.co/IiX048DBXd</a><br><br>But then rust_decimal seemed the best options, both in terms of performance and developer experience. (👏👏 to @paupino_masano for the great work)
+<a href="https://t.co/YCv7pOdJm5">https://t.co/YCv7pOdJm5</a><br><br>Due to @anchorlang lack of support for 3rd party types during IDL generation we were forced to serialize all the rust_decimal values as plain bytes array. <a href="https://t.co/Z80HBzWJrY">https://t.co/Z80HBzWJrY</a><br><br>Having decimal values serialized solved smoothly our problem chain-side during Anchor IDL generation, but introduced a new tough problem: reading those values in all the non-rust client (aka js frontends)<br><br>We had to compose the downloaded data the same way the library do in typescript. Long story short, rust_decimal uses 16 bytes to represent a Decimal value, with the following data layout. (ref: <a href="https://t.co/7qZIfIlZ93">https://t.co/7qZIfIlZ93</a> ) <a href="https://t.co/Zek97fhHLC">https://t.co/Zek97fhHLC</a><br><br>So today this is possible and super easy with Vyper-crafted rust-decimal-wrapper node module. Once received the byte array (anchor convert it in a number[] in the ts IDL generated class) we can just create a wrapper and calculate the underlying number. 🥂 <a href="https://t.co/2LoWWvkeI4">https://t.co/2LoWWvkeI4</a><br><br>As usual any feedback is more than welcome, if you like please retweet and share:
+<a href="<a href="https://t.co/5OJK8Ie5X9">https://t.co/5OJK8Ie5X9</a>"><a href="https://t.co/5OJK8Ie5X9">https://t.co/5OJK8Ie5X9</a></a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">Ventures-backed fast-growing startup</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Ventures-backed fast-growing</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">manage serialized rust</a></li>
+<li><a href="#">decimal</a></li>
+<li><a href="#">rust</a></li>
+<li><a href="#">manage serialized</a></li>
+<li><a href="#">IDL generation</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +287,7 @@ Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf<
       }
     </script>
 
-<!--6167022586745824651-->
+<!--8446569574438034651-->
 
   </body>
 

@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...">
+    <meta name="description" content="Tip #4: 💄 CSS specificity is the king! 👑 If you ever wonder why one...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Tip #4: 💄 css specificity is the king! 👑 if...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Tip #4: 💄 css specificity is the king! 👑 if...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +97,48 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...</h4></a>
+                      <span>Tip #4: 💄 css specificity is the king! 👑 if...</span>
+                      <a href="#"><h4>Tip #4: 💄 CSS specificity is the king! 👑 If you ever wonder why one...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-10 07:15:35.848223</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>Tip #4: 💄 CSS specificity is the king! 👑 If you ever wonder why one style is applied but not the other, it’s time to go back and make sure CSS specifics holds no secrets for you!
 
-🧵👇<br><br>1. Software Engineer, SDK Platform at @thirdweb_.
+More about this in the 🧵👇🏼
 
-A remote opportunity at a San Francisco-based, Coinbase Ventures-backed fast-growing startup that has recently received Series-A funding.
+#CSS #FrontEndDeveloper <a href="https://t.co/NH2uxedRF1">https://t.co/NH2uxedRF1</a><br><br>1️⃣ What CSS specificity is?
 
-Check out the job at: <a href="https://t.co/NU3HSDHBNx">https://t.co/NU3HSDHBNx</a><br><br>2. DevOps Engineer II at @CivisAnalytics.
+Styles can have multiple competing rules and try to change background-color of the same element multiple times to different value. Browser needs to make a call at some point thus specificity! Rules with highest specificity will get priority! <a href="https://t.co/TlEApj9z3R">https://t.co/TlEApj9z3R</a><br><br>It means that if two competing rules are important! then browser will take a look at selectors. If that is still not enough (same specificity) final decision will be made base on the document order (now we also have @layers but that’s a separate topic 🤓).<br><br>2️⃣ How specificity is calculated?
 
-A remote opportunity at a Chicago-based, Alumni Ventures-backed fast-growing startup that received Series-B funding in 2021.
+There are 3 main levels at which browser calculates specificity:
 
-Check out the job at: <a href="https://t.co/sWH1PjL4si">https://t.co/sWH1PjL4si</a><br><br>3. Data Engineer - Platform at @SteelEyeLtd.
+- !important
+- inline/selectors
+- document order
 
-A remote opportunity at a London-based, Eight Roads Ventures-backed fast-growing startup that received Series-A funding in 2021.
+!important is most important, so it takes priority over inline/selectors and inline/selectors takes priority over document order. <a href="https://t.co/LRBXkI6WDx">https://t.co/LRBXkI6WDx</a><br><br>3️⃣ How inline/selector’s specificity is calculated?
 
-Check out the job at: <a href="https://t.co/26Mzjnf1v3">https://t.co/26Mzjnf1v3</a><br><br>4. Backend Python Engineer at @Teikametrics.
+Now this is where most confusion comes from but at core it’s exactly the same principle: selectors are divided into more and less important, if one rule has more high priority selectors than the others, it wins 🏆<br><br>- Inlines are checked - inline rule wins over non inline
+- Then ID selectors are counted - rule with more wins
+- Then classes and attributes selectors are counted - rule with more wins
+- Then element selectors are counted - rule with more wins<br><br>You can visualize this by 4 counters and assign proper value base on number of ID, classes, attributes and elements selectors for a given rule then compare it with another one - bigger number wins! ie. 0130 vs 0200 ⇒ 200 🥇 <a href="https://t.co/BMIweBPmSe">https://t.co/BMIweBPmSe</a><br><br>If that is still not enough, document order decides on which rule should take precedence:
 
-A remote opportunity at a Boston-based, Intel Capital-backed fast-growing startup that received Series-B funding in 2021.
+- rule defined later in the same css file take precedence
+- if rules are defined in separate css files order in which these files where defined in html file decides (later wins).<br><br>If there is one thing to remember from this thread, please take this: 
 
-Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf</a></p>
+Always try to write as unspecific rules as possible so you wont take other tools out of your tool belt.<br><br>Imagine having in-line style - from now on only way to override it is !important. Once that’s done you’re left with inline !importnat 🤯<br><br>SASS, Tailwind CSS, Windi CSS, CSS Modules, ShadowDom, static css, generated css or whatever works for you, it doesn't matter - these rules work in every scenario 💪🏼</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">Ventures-backed fast-growing startup</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Ventures-backed fast-growing</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">CSS</a></li>
+<li><a href="#">CSS specificity</a></li>
+<li><a href="#">specificity</a></li>
+<li><a href="#">selectors</a></li>
+<li><a href="#">Tip</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +300,7 @@ Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf<
       }
     </script>
 
-<!--6167022586745824651-->
+<!--0021985747795324651-->
 
   </body>
 

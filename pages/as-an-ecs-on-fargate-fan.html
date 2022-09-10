@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...">
+    <meta name="description" content="As an ECS on Fargate fan, I got a lot of questions about the recent...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>As an ecs on fargate fan, i got a lot...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>As an ecs on fargate fan, i got a lot...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +97,101 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...</h4></a>
+                      <span>As an ecs on fargate fan, i got a lot...</span>
+                      <a href="#"><h4>As an ECS on Fargate fan, I got a lot of questions about the recent...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-10 07:15:35.848223</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>As an ECS on Fargate fan, I got a lot of questions about the recent incident / outage.
 
-🧵👇<br><br>1. Software Engineer, SDK Platform at @thirdweb_.
+Let's talk about it... 🧵 1/43 
 
-A remote opportunity at a San Francisco-based, Coinbase Ventures-backed fast-growing startup that has recently received Series-A funding.
+TL;DR: meh. Incidents happen and this one did not teach us anything new about building on AWS. I expect more profound drama during these roaring 20s!<br><br>🧑‍🏫 Lesson number 0: everything always fails and AWS is bad at communication!
 
-Check out the job at: <a href="https://t.co/NU3HSDHBNx">https://t.co/NU3HSDHBNx</a><br><br>2. DevOps Engineer II at @CivisAnalytics.
+🤷
 
-A remote opportunity at a Chicago-based, Alumni Ventures-backed fast-growing startup that received Series-B funding in 2021.
+Addendum: you can build a 99.9999% available service for 100 million or you can build a service that fails like... 3 days a year for 1 million. Business will often chose the latter and that's ok!<br><br>🧑‍🏫 Lesson number 1: have good observability in place!
 
-Check out the job at: <a href="https://t.co/sWH1PjL4si">https://t.co/sWH1PjL4si</a><br><br>3. Data Engineer - Platform at @SteelEyeLtd.
+If your systems were impacted, did you notice the errors before AWS declared an incident? Did you understand them?
 
-A remote opportunity at a London-based, Eight Roads Ventures-backed fast-growing startup that received Series-A funding in 2021.
+Genuinely the impact might've been too small to trigger anything, so it's ok if you did not notice it!<br><br>Potential indicator: 📈SLIs/SLOs for response times
 
-Check out the job at: <a href="https://t.co/26Mzjnf1v3">https://t.co/26Mzjnf1v3</a><br><br>4. Backend Python Engineer at @Teikametrics.
+If you were running at say 90% capacity, then response times and latency should go up, no?
 
-A remote opportunity at a Boston-based, Intel Capital-backed fast-growing startup that received Series-B funding in 2021.
+Again, these might'n've triggered and that's ok! It depends on your scale — for example, only 1 of my clients had an SLI alert.<br><br>Potential indicator:📈ECS/EKS events
 
-Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf</a></p>
+For everything regarding your cluster an event is emitted: ECS can natively send events to EventBridge and for EKS you can parse the logs or use a third party tool.
+
+This is quite an in-depth implementation tho — usually not worth it.<br><br>Potential indicator: 📈Number of actual running containers versus number of desired running containers
+
+This is debatably the easiest and most common metric. Depending on your scale, it might'n've been triggered tho!
+
+Some clients had this trigger, some did not.<br><br>🧑‍🏫 Lesson number 2: when AWS declares an incident, you should declare an incident too!
+
+It's fine if you missed the sporadic initial errors, but once AWS declared an incident your on-call had to be alerted!
+
+ALL my clients got altered and you should've had this too!<br><br>Yes, it may be a noisy alert at times, but it's worth it — this also creates a really nice culture of "oh, everything DOES fail all the time".
+
+These events are served on a "best effort" basis, so also subscribe to RSS and Twitter feeds:  <a href="https://t.co/oZNX1SL89Q">https://t.co/oZNX1SL89Q</a><br><br>🧑‍🏫 Lesson number 3: when there's an incident, know what matters for your company!
+
+AWS made it clear that only new containers are affected and proposed mitigations:
+  1) migrate from Fargate to EC2 if you can (hard, but cheap)
+  2) stop scaling down (easy, but expensive)<br><br>At 15:30 the incident was official and it was made clear that *only new* containers are affected. 
+
+At 20:46 AWS explicitly said we should disable scaling down for Fargate containers since running containers are fine.
+
+Only 30 minutes later were new launches disabled!<br><br>⏲️ your company cares more about staying up that money?
+
+The second the incident started or, at worst, when AWS explicitly said it, you should've scaled up to a sane maximum.
+
+Usually scaling up and down between 30 and 50 containers? Forced static 75 containers, scaling disabled!<br><br>This is what most folks did and it made this incident a non-event. 
+
+"Oh, only new containers are affected. Meh, let's make sure we have no new containers for a while"
+
+This is what most of my customers did. It took a while for all containers to successfully start though.<br><br>If your on-call engineers did not feel comfortable making this tradeoff OR if your engineers did not know what your company prioritizes between money and staying up...  you have a problem!
+
+Seriously, look into this! ⚠️<br><br>💸 Does your company care more about money that staying up?
+
+That's a valid option too! Gracefully fail your apps, enable some downtime mode, do whatever you plan is in these cases. You do have a plan, right?
+
+In my case, some customers just disabled a couple non-vital workflows.<br><br>The "switch workers from Fargate to EC2" line was interesting and unexpected.
+
+For EKS clusters with both Fargate and EC2 workers this switch was trivial, if your code could handle it. Definitely something to architect for!
+
+For anything else... I'd say it's over-engineering.<br><br>🧑‍🏫 Lesson number 4: you need operational feature flags!
+
+Again, everything fails all the time, so make sure you can handle failure gracefully.
+
+Operational feature flags are lifesaving in moments like these.<br><br>↕️ "We only have 30% of our desired capacity, flip the switch so we don't do that complex processing anymore. This way we can handle all the traffic with 30%"
+
+↕️ "Service X is barely working due to the incident, let's disable that for now but we'll let the rest of the app work"<br><br>↕️ "Oops, scaling is broken. Let's disable aggressive scaling and let's reuse workers since we don't know how easily new workers will come up"
+
+These depend a lot on what your company is doing and on how your services are architected, but there are always options!<br><br>🧑‍🏫 Lesson number 5: only one production AWS account is not ideal!
+
+When things recovered, they went on a per-AWS-account basis. If you had multiple AWS accounts, some accounts recovered way faster that others. If you only had 1 AWS account that was at the end of the line...<br><br>I think that's all the lessons from this incident, but I am biased on this since I've been doing cloud for a while now 🤔 
+
+Do you have any other learnings from this incident? Anything unexpected happen? Did your experience not match the one I had?
+If so, please reply to this!<br><br>In conclusion, meh.
+
+If you've been doing cloud for a while, this was a "heh, Fargate got it's first big incident and it's not what I expected"
+
+If you're newer to cloud, congrats! You got to learn 🎉 
+
+Read the unrolled version of this thread here: <a href="https://t.co/cgeXW71hnb">https://t.co/cgeXW71hnb</a>
+
+43/43</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">Ventures-backed fast-growing startup</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Ventures-backed fast-growing</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">Lesson number</a></li>
+<li><a href="#">AWS</a></li>
+<li><a href="#">incident</a></li>
+<li><a href="#">containers</a></li>
+<li><a href="#">number</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +353,7 @@ Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf<
       }
     </script>
 
-<!--6167022586745824651-->
+<!--2599810442229224651-->
 
   </body>
 

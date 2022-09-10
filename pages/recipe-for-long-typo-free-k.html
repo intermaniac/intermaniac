@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...">
+    <meta name="description" content="A recipe for long, typo-free k-shot prompts in GPT-3:
+1. Prepare examples in Python (e.g. list...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>A recipe for long, typo-free k-shot prompts in gpt-3:
+1. prepare...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,8 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>A recipe for long, typo-free k-shot prompts in gpt-3:
+1. prepare...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +100,33 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...</h4></a>
+                      <span>A recipe for long, typo-free k-shot prompts in gpt-3:
+1. prepare...</span>
+                      <a href="#"><h4>A recipe for long, typo-free k-shot prompts in GPT-3:
+1. Prepare examples in Python (e.g. list...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-10 07:15:35.848223</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇<br><br>1. Software Engineer, SDK Platform at @thirdweb_.
-
-A remote opportunity at a San Francisco-based, Coinbase Ventures-backed fast-growing startup that has recently received Series-A funding.
-
-Check out the job at: <a href="https://t.co/NU3HSDHBNx">https://t.co/NU3HSDHBNx</a><br><br>2. DevOps Engineer II at @CivisAnalytics.
-
-A remote opportunity at a Chicago-based, Alumni Ventures-backed fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/sWH1PjL4si">https://t.co/sWH1PjL4si</a><br><br>3. Data Engineer - Platform at @SteelEyeLtd.
-
-A remote opportunity at a London-based, Eight Roads Ventures-backed fast-growing startup that received Series-A funding in 2021.
-
-Check out the job at: <a href="https://t.co/26Mzjnf1v3">https://t.co/26Mzjnf1v3</a><br><br>4. Backend Python Engineer at @Teikametrics.
-
-A remote opportunity at a Boston-based, Intel Capital-backed fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf</a></p>
+                      <p>A recipe for long, typo-free k-shot prompts in GPT-3:
+1. Prepare examples in Python (e.g. list of dicts)
+2. Prepare actual task as incomplete final example
+3. Use a distinct "split sentinel" for generated portion
+4. Encode into JSON, XML, NestedText, etc.
+(Continued in thread...) <a href="https://t.co/fmWPaj4Pmy">https://t.co/fmWPaj4Pmy</a><br><br>5. Split encoded text on (encoded form of) your sentinel
+6. Pre-sentinel portion of text is now your prompt.
+7. Post-sentinel portion is now your stop sequence. <a href="https://t.co/fnhRitTqrm">https://t.co/fnhRitTqrm</a><br><br>Note that for this to work, the prompt must somehow imply that your task is the final example, i.e. that your stop sequence is guaranteed to appear right after. This means including an example count, as shown. For long lists, you also need to add sequential ids to examples.<br><br>Note this method differs greatly from what OpenAI recommends. Their approach is simpler: Pick a really weird delimiter, and use that between examples. This bothers me deeply as a programmer — the only delimiter I trust completely is a GUID, and GUIDs cost too many tokens.<br><br>Remember that completions will be encoded in whatever form you used to encode the prompt. If you used JSON, newlines will be \n's. To decode your output, concat the prompt, the generation, and the stop sequence and decode the entire string into a completed list of examples.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">Ventures-backed fast-growing startup</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Ventures-backed fast-growing</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">typo-free k-shot prompts</a></li>
+<li><a href="#">typo-free k-shot</a></li>
+<li><a href="#">stop sequence</a></li>
+<li><a href="#">recipe for long</a></li>
+<li><a href="#">k-shot prompts</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +288,7 @@ Check out the job at: <a href="https://t.co/QfLfx7xDHf">https://t.co/QfLfx7xDHf<
       }
     </script>
 
-<!--6167022586745824651-->
+<!--4768267945097344651-->
 
   </body>
 
