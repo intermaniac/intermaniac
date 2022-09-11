@@ -5,17 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#VueJS Fundamental 3.3
-A Thread 🧵🧵🧵
+    <meta name="description" content="How to Build a ChatBot with React (Maintenance Calorie Calculator Bot) 🧵
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developer https://t.co/TzSiit02f9➡️...">
+Output is given with...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#vuejs fundamental 3.3
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</title>
+    <title>How to build a chatbot with react (maintenance calorie calculator...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +77,7 @@ A Thread 🧵🧵🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#vuejs fundamental 3.3
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</h2>
+                <h2>How to build a chatbot with react (maintenance calorie calculator...</h2>
               </div>
             </div>
           </div>
@@ -106,40 +99,60 @@ A Thread 🧵🧵🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#vuejs fundamental 3.3
- 🧵🧵🧵
+                      <span>How to build a chatbot with react (maintenance calorie calculator...</span>
+                      <a href="#"><h4>How to Build a ChatBot with React (Maintenance Calorie Calculator Bot) 🧵
 
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</span>
-                      <a href="#"><h4>#VueJS Fundamental 3.3
-A Thread 🧵🧵🧵
-
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developer https://t.co/TzSiit02f9➡️...</h4></a>
+Output is given with...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-11 07:15:42.414493</a></li>
 
                       </ul>
-                      <p>#VueJS Fundamental 3.3
-A Thread 🧵🧵🧵
+                      <p>How to Build a ChatBot with React (Maintenance Calorie Calculator Bot) 🧵
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developer <a href="https://t.co/TzSiit02f9">https://t.co/TzSiit02f9</a><br><br>➡️ 3.3 Computed Properties 
-In Vue.js, computed properties enable you to create a property that can be used to modify, manipulate, and display data within your components in a readable and efficient manner.<br><br>You can use computed properties to calculate and display values based on a value or set of values in the data model.<br><br>➡️ Data and Computed Properties :
-The main use-case difference for the data and computed properties of a Vue instance is dependent on the potential state or probability of changing of the data.<br><br>When deciding what category a certain object should be, these questions might help :
-💥Is this a constant value? (data)
-💥 Does this have the possibility to change? (computed or data)
-💥Is the value of it reliant on the value of other data? (computed)<br><br>💥Does it need additional data or calculations to be complete before being used? (computed)
-💥Will the value only change under certain circumstances? (data)<br><br>That's all for today. 
-Hope you will like it.</p>
+Output is given with every step
+
+Try it Out: <a href="https://t.co/HVsnjd2Y2t">https://t.co/HVsnjd2Y2t</a>
+    
+GitHub Repo link at the end 
+#100DaysOfCode #React <a href="https://t.co/ybtPXHAwDT">https://t.co/ybtPXHAwDT</a><br><br>Initial Setup :
+1) Create React app
+2) Install react-simple-chatbot
+
+ChatBot Docs: <a href="https://t.co/PjFuT4nvku">https://t.co/PjFuT4nvku</a> <a href="https://t.co/NawuSuQTFl">https://t.co/NawuSuQTFl</a><br><br>Delete unwanted files and make some changes to index.js. 
+    
+Import Chatbot from react-simple-chatbot in App.js <a href="https://t.co/0XrOkK6vog">https://t.co/0XrOkK6vog</a><br><br>Let’s create a simple “Hello World” Chatbot to get yourself familiarwith the syntax. 
+
+The Chatbot takes in Steps which is an array of objects. An Object contains:
+Id: Address of Step
+Message: String displayed to the user
+Trigger: Points to Next Step
+End: Terminates the ChatBot <a href="https://t.co/BrBI0hKy9u">https://t.co/BrBI0hKy9u</a><br><br>So, our goal is to create a Calorie calculator bot. So steps include
+    
+Gender → Age → Height → Weight → Activity
+Validate Weight and Height to be a number
+Gender and Activity are added as options <a href="https://t.co/zZuhV8itnb">https://t.co/zZuhV8itnb</a><br><br>Creating a CalorieCal Component and importing it into App.js. Add that component at the last step of ChatBot <a href="https://t.co/vkXpAouBCD">https://t.co/vkXpAouBCD</a><br><br>We are going to send all the values from Chatbot to CaloriesCal.js through props.
+
+props is an object, we only care about steps object from it, so we will destructure it when CaloriesCal is mounted. Later will destructure gender, age, height, weight, activity <a href="https://t.co/CxCxRZQihm">https://t.co/CxCxRZQihm</a><br><br>Let’s add Logic to CalorieCal and store Calories in the calories state. Formula I am using for maintenance calories is  “THE MIFFLIN ST. JEOR FORMULA” ref: <a href="https://t.co/7g8pOavulw">https://t.co/7g8pOavulw</a>
+    
+Our App works perfectly! <a href="https://t.co/zCZReZ2wCX">https://t.co/zCZReZ2wCX</a><br><br>Last Step, add styling. 
+ 
+Adding Heading, Icon to ChatBot
+Wrapping the ChatBot with ThemeProvider ref: <a href="https://t.co/u4HO8hSyVm">https://t.co/u4HO8hSyVm</a>
+Centring the Chatbot <a href="https://t.co/goP7TsLLTt">https://t.co/goP7TsLLTt</a><br><br>GitHub: <a href="https://t.co/LifcnmYvee">https://t.co/LifcnmYvee</a>
+Check out @BhavyaGiri_ for more projects coming in soon!
+    
+Let’s Collaborate and build projects together.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Computed Properties</a></li>
-<li><a href="#">VueJS Fundamental</a></li>
-<li><a href="#">Computed</a></li>
-<li><a href="#">computed properties enable</a></li>
-<li><a href="#">data</a></li>
+								<li><a href="#">Delete unwanted files</a></li>
+<li><a href="#">Initial Setup</a></li>
+<li><a href="#">Create React app</a></li>
+<li><a href="#">GitHub Repo link</a></li>
+<li><a href="#">Create React</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -301,7 +314,7 @@ Hope you will like it.</p>
       }
     </script>
 
-<!--6351008865975784651-->
+<!--4032466514388984651-->
 
   </body>
 
