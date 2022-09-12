@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="`pnpm deploy` is the best thing when deploying from @pnpmjs monorepo.
+
+Now building our app directly...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>`pnpm deploy` is the best thing when deploying from @pnpmjs...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>`pnpm deploy` is the best thing when deploying from @pnpmjs...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +99,38 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>`pnpm deploy` is the best thing when deploying from @pnpmjs...</span>
+                      <a href="#"><h4>`pnpm deploy` is the best thing when deploying from @pnpmjs monorepo.
+
+Now building our app directly...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-12 07:15:44.109525</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>`pnpm deploy` is the best thing when deploying from @pnpmjs monorepo.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/r2rkCpJKQt">https://t.co/r2rkCpJKQt</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+Now building our app directly on the Github Actions runner and just adding the deploy command output to a container.
+
+🧵 
+
+<a href="https://t.co/MP27uRBI1e">https://t.co/MP27uRBI1e</a><br><br>So much faster:
+
+- Can use Github Actions caching which is more fine grained than docker layer caching (must less cache busting)
+- Only one `pnpm install` since no need run it in the container
+- No need to install build tools in the container<br><br>Found a bug though `node_modules/.bin` scripts do not work in the container because pnpm generates those scripts on the runner and the paths are broken when moved into the container.
+
+But that's fair. This is an experimental command.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Github Actions runner</a></li>
+<li><a href="#">Github Actions</a></li>
+<li><a href="#">pnpmjs monorepo</a></li>
+<li><a href="#">Github Actions caching</a></li>
+<li><a href="#">thing when deploying</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +292,7 @@
       }
     </script>
 
-<!--6458096746057515651-->
+<!--6737918473195425651-->
 
   </body>
 

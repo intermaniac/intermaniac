@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Updating your apps due to #breakingchanges in your dependencies is complex.
+
+If the dependency is one...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Updating your apps due to #breakingchanges in your dependencies is...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Updating your apps due to #breakingchanges in your dependencies is...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +99,41 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Updating your apps due to #breakingchanges in your dependencies is...</span>
+                      <a href="#"><h4>Updating your apps due to #breakingchanges in your dependencies is complex.
+
+If the dependency is one...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-12 07:15:44.109525</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Updating your apps due to #breakingchanges in your dependencies is complex.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/r2rkCpJKQt">https://t.co/r2rkCpJKQt</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+If the dependency is one of the Core services of your #cloud you should be even more careful.
+
+I've just update our #azure Schema Registry without a #downtime.  Here's some useful tips you may reuse: 🧵<br><br>CONTEXT first: 
+- we use Azure Schema Registry so Producers and Consumers agree on an AVRO Schema for relevant events
+- we started using Standard version not knowing there was a hard limit on the number of #AVRO schemas versions: 25 ⚠️<br><br>- we created a Producer and 2 Consumers before hitting the limit
+- Azure Schema Registry does not allow an hot upgrade: you must create a new one 🥲
+
+So what we did?<br><br>- we started from the consumers so we could upgrade the producer on its own and at different times. It is crucial not to temporally bind the deployment of producer and consumers: should you roll back one of them, you are forced to roll back the 3 of them 🥲<br><br>- we modified the consumers so they try deserialize the event from Schema Registry Premium first. If it fails, we fall back to the Standard one. If the Standard fails too, it's a rightful error ✅<br><br>- we were able to update the Producer after 2 weeks: after dequeuing all the message serialized with the Standard Registry, we removed the try&amp;fallback code from the consumers ✂️<br><br>- Try to limit updates' scope not having too many systems depending on each other ⛓️
+- Always try the upgrade in a Test environment 🦺
+- When you plan on using a new Cloud Service, make sure you know the limit of the chosen plan and how hard the upgrade is 🤓<br><br>- Discuss your migration strategy with a colleague or someone you respect so you may catch some flaw in your logic 🧑‍🤝‍🧑
+
+See the code: <a href="https://t.co/LYduFPMKqW">https://t.co/LYduFPMKqW</a>
+
+DAJE</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">azure Schema Registry</a></li>
+<li><a href="#">Schema Registry</a></li>
+<li><a href="#">Schema Registry Premium</a></li>
+<li><a href="#">Updating your apps</a></li>
+<li><a href="#">azure Schema</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +295,7 @@
       }
     </script>
 
-<!--6458096746057515651-->
+<!--7458417238784625651-->
 
   </body>
 

@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Just a reminder when focusing on #security for your #office365 and #azuread tenants one of...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Just a reminder when focusing on #security for your #office365...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Just a reminder when focusing on #security for your #office365...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,33 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Just a reminder when focusing on #security for your #office365...</span>
+                      <a href="#"><h4>Just a reminder when focusing on #security for your #office365 and #azuread tenants one of...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-12 07:15:44.109525</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Just a reminder when focusing on #security for your #office365 and #azuread tenants one of the key attack vectors comes from your on-premises environment.  If you have not read and implemented the guidance in <a href="https://t.co/eWqtjmEpmd">https://t.co/eWqtjmEpmd</a> you should &amp; read this thread.  1/7  #identity<br><br>"Federated trust relationships, such as Security Assertions Markup Language (SAML) authentication,are used to authenticate to Microsoft 365 through your on-premises identity infrastructure.Ifa SAML token-signing certificate is compromised, federation allows anyone who has.."2/7<br><br>certificate to impersonate any user in your cloud.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/r2rkCpJKQt">https://t.co/r2rkCpJKQt</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+We recommend that you disable federation trust relationships for authentication to Microsoft 365 when possible."
+3/7<br><br>"Account synchronization can be used to modify privileged users, including their credentials, or groups that have administrative privileges in Microsoft 365.
+
+We recommend that you ensure that synchronized objects hold no privileges beyond a user in Microsoft 365."  4/7<br><br>"You can control privileges either directly or through inclusion in trusted roles or groups. Ensure these objects have no direct or nested assignment in trusted cloud roles or groups." 5/7<br><br>This is one reason why we recommend moving away from federated identity providers whether they are #adfs onprem, 3rd party IDP onprem, or 3rd party cloud IDP and move to cloud managed hybrid auth. 6/7 <a href="https://t.co/Wjkfnoqyx4">https://t.co/Wjkfnoqyx4</a><br><br>And for accounts you will use for admin privileges, create them as cloud native, not syncing them and managing their role/group assignments natively in the cloud. Enable the CA policy template to require MFA for admin role holders at minimum and use #passwordless creds. 7/7<br><br>See CA policy template here <a href="https://t.co/8N2nzeox2A">https://t.co/8N2nzeox2A</a> and using #passwordless credentials in #azuread here <a href="https://t.co/WBQi31wUlB">https://t.co/WBQi31wUlB</a> and of course using a breakglass account Here <a href="https://t.co/o4aiL7QU7i">https://t.co/o4aiL7QU7i</a><br><br>What I love about the <a href="https://t.co/9RFsVImGFo">https://t.co/9RFsVImGFo</a> article is it gives you actionable recommendations on steps you can take TODAY to help secure your cloud environments from those attack vectors.  Have you implemented them yet?  How can we help you do so, if you have not? #azuread<br><br>Now if you have enabled the CA policy to require MFA for Admin role holders, I would be amazed!  But that is the minimum as I said, and you should strive for MFA For ALL Users and deploy <a href="https://t.co/WMUa9E6hhO">https://t.co/WMUa9E6hhO</a><br><br>There are many infrastructures and application-level roles and tasks done by users you may not consider "Admin".  Your business org has users accessing business apps/mail are prime targets so you want to ensure you have some CA policy coverage for controls beyond just password.<br><br>Use the CA policy Gap Analyzer workbook to identify users who are accessing apps and services without any CA policy coverage.  Close those gaps with the CA policy templates!   <a href="https://t.co/gInqg5UYj9">https://t.co/gInqg5UYj9</a><br><br>If you are still using Federated Authentication providers (See above why you want to move away from that) I do want to call out an update to the SupportsMFA flag for the federation and use federatedIdpMfaBehavior instead.  See <a href="https://t.co/RK5zClLAZS">https://t.co/RK5zClLAZS</a><br><br>✅ Upgrade from Federated to #azuread Managed Auth
+✅ Deploy Azure MFA -  Microsoft Authenticator app
+✅ Enable users for #passwordless Phone Sign In &amp; WHFB
+✅ Use CA policies to require MFA for ALL users All the time
+🔥 Manage your CA policy exceptions w/Entitlement Management</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Security Assertions Markup</a></li>
+<li><a href="#">Assertions Markup Language</a></li>
+<li><a href="#">Microsoft</a></li>
+<li><a href="#">policy</a></li>
+<li><a href="#">MFA</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +285,7 @@
       }
     </script>
 
-<!--6458096746057515651-->
+<!--6718790859671894651-->
 
   </body>
 
