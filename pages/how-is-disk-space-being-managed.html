@@ -5,21 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="HTML &amp; CSS Roadmap for Beginners in 2022.
+    <meta name="description" content="How is Disk Space being managed by SQL Server's Storage Engine?
 
-Thread 🧵➯ HTML
-
-➺ What is HTML?
-➺ HTML Elements
-➺...">
+This time I wouldn't call...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Html &amp; css roadmap for beginners in 2022.
-
- 🧵➯ html
-
-➺...</title>
+    <title>How is disk space being managed by sql server's storage...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,11 +77,7 @@ Thread 🧵➯ HTML
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Html &amp; css roadmap for beginners in 2022.
-
- 🧵➯ html
-
-➺...</h2>
+                <h2>How is disk space being managed by sql server's storage...</h2>
               </div>
             </div>
           </div>
@@ -111,93 +99,34 @@ Thread 🧵➯ HTML
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Html &amp; css roadmap for beginners in 2022.
+                      <span>How is disk space being managed by sql server's storage...</span>
+                      <a href="#"><h4>How is Disk Space being managed by SQL Server's Storage Engine?
 
- 🧵➯ html
-
-➺...</span>
-                      <a href="#"><h4>HTML &amp; CSS Roadmap for Beginners in 2022.
-
-Thread 🧵➯ HTML
-
-➺ What is HTML?
-➺ HTML Elements
-➺...</h4></a>
+This time I wouldn't call...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-13 07:15:38.995302</a></li>
 
                       </ul>
-                      <p>HTML &amp; CSS Roadmap for Beginners in 2022.
+                      <p>How is Disk Space being managed by SQL Server's Storage Engine?
 
-Thread 🧵<br><br>➯ HTML
+This time I wouldn't call it SIMPLE out of the box, but once you grasp it - it really IS simple :)
 
-➺ What is HTML?
-➺ HTML Elements
-➺ Attributes
-➺ Semantic HTML
-➺ Accessibility<br><br>➯ CSS
+A #bitesizedengineering thread 👇👇👇
 
-✦ Fundamentals
+#sqlserver #azuresql #databases <a href="https://t.co/aHdpPhhPvC">https://t.co/aHdpPhhPvC</a><br><br>Picture the following - you have an .MDF file which contains all your data - Tables, Rows, Metadata, etc. Everything inside a single binary .MDF file.<br><br>In order to make this manageable, the whole content is split into 8KB chunks called "Pages". And these Pages are then further grouped into logical groups called "Extents" (if you need to refresh the memory - check the previous #BitesizedEngineering posts).<br><br>So we have a huge file segmented into 8KB chunks and all our data (Tables, Rows, Indexes, etc.) is stored across these pages (just like in Books!).<br><br>But here's the thing - how do you keep track of which Pages have something, which ones are free, etc.? You need some way to do the accounting, right?
 
-➲ What is CSS?
-
-➲ CSS Selectors
-➺ Basic
-➺ Complex
-➺ Pseudo<br><br>➲ CSS Properties
-➺ Color
-➺ Background-color
-➺ Font-family
-➺ ...many more.<br><br>➲ Box Model
-➺ Padding
-➺ Border
-➺ Margin
-
-➲ Values &amp; Units
-
-➲ CSS Specificity &amp; inheritance
-
-➲ Display
-
-➲ Positioning
-➺ Static
-➺ Relative 
-➺ Absolute
-➺ Fixed
-➺ Sticky<br><br>✦ Advanced
-
-➲ Shadows
-➲ Gradients
-➲ Transforms
-➲ Transitions
-➲ Animations
-➲ CSS Varisables
-➲ Media Queries<br><br>➲Layouts
-➺ Flexbox
-➺ Grid
-
-➲ CSS Preprocessors
-➺ SASS
-➺ LESS
-➺ PostCSS
-
-➲ CSS Frameworks
-➺ Tailwind CSS
-➺ Bootstrap
-➺ Materialize<br><br>➪ Building Projects is the only way to master above-mentioned topics.
-
-➪ Build at least 8 Projects</p>
+Turns out that this Accounting job is handled by what is called "Allocation Maps". And there are THREE of them :)<br><br>It might sound as much but in a nutshell - it's all about efficiency. You really want your DB to be able to RETRIEVE and STORE data as fast as possible. And in order to do that, having THREE levels of accounting really seems to help.<br><br>On a highest level you keep track of which Extents are allocated and which ones are free. Simple. Because if you want to WRITE something you can just quickly ask the first accountant to tell you the first free Extent. This accountant is called - GAM (Global Allocation Map).<br><br>Once you know which ones are free and which ones are occupied, next thing you want to know is - which ones are used for Mixed purpose and which ones are Uniform. This is what SGAM (Shared Global Allocation Map) accountant keeps track of.<br><br>Finally, it turns out to be useful to know how much free space is left on each free extent. It's useful because you can quickly decide whether you can write your data down to existing page or you need a completely blank one. This accountant is called PFS (Page Free Space).<br><br>And there you have it. Three Accountants where each one needs to know just ONE thing. And that makes it super-fast to navigate around the Pages &amp; Extents and to figure out where to store your data!<br><br>P.S. There's a fourth one as well called "IAM" (Index Allocation Map). But that one is a species on it's own and it's a bit more than accountant. It's more of a private lawyer for each table that deals with all it's dirty business. Hence, it will be covered at other time!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Roadmap for Beginners</a></li>
-<li><a href="#">CSS Roadmap</a></li>
-<li><a href="#">CSS</a></li>
-<li><a href="#">HTML</a></li>
-<li><a href="#">HTML Elements</a></li>
+								<li><a href="#">Server Storage Engine</a></li>
+<li><a href="#">SQL Server Storage</a></li>
+<li><a href="#">Storage Engine</a></li>
+<li><a href="#">SQL Server</a></li>
+<li><a href="#">Server Storage</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -359,7 +288,7 @@ Thread 🧵<br><br>➯ HTML
       }
     </script>
 
-<!--2340778772354035651-->
+<!--2365086574077165651-->
 
   </body>
 

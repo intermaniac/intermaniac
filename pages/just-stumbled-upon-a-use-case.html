@@ -5,21 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="HTML &amp; CSS Roadmap for Beginners in 2022.
-
-Thread 🧵➯ HTML
-
-➺ What is HTML?
-➺ HTML Elements
-➺...">
+    <meta name="description" content="Just stumbled upon a use case where I needed a new #reactivex #rxjs flattening strategy:...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Html &amp; css roadmap for beginners in 2022.
-
- 🧵➯ html
-
-➺...</title>
+    <title>Just stumbled upon a use case where i needed a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,11 +75,7 @@ Thread 🧵➯ HTML
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Html &amp; css roadmap for beginners in 2022.
-
- 🧵➯ html
-
-➺...</h2>
+                <h2>Just stumbled upon a use case where i needed a...</h2>
               </div>
             </div>
           </div>
@@ -111,93 +97,45 @@ Thread 🧵➯ HTML
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Html &amp; css roadmap for beginners in 2022.
-
- 🧵➯ html
-
-➺...</span>
-                      <a href="#"><h4>HTML &amp; CSS Roadmap for Beginners in 2022.
-
-Thread 🧵➯ HTML
-
-➺ What is HTML?
-➺ HTML Elements
-➺...</h4></a>
+                      <span>Just stumbled upon a use case where i needed a...</span>
+                      <a href="#"><h4>Just stumbled upon a use case where I needed a new #reactivex #rxjs flattening strategy:...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-13 07:15:38.995302</a></li>
 
                       </ul>
-                      <p>HTML &amp; CSS Roadmap for Beginners in 2022.
+                      <p>Just stumbled upon a use case where I needed a new #reactivex #rxjs flattening strategy: switchMapOnNext
 
-Thread 🧵<br><br>➯ HTML
+Instead of unsubscribing from previous observables when it subscribes to a new observables, it waits for the new observable to emit.
 
-➺ What is HTML?
-➺ HTML Elements
-➺ Attributes
-➺ Semantic HTML
-➺ Accessibility<br><br>➯ CSS
+Anyone else needs this?
 
-✦ Fundamentals
+🧵
 
-➲ What is CSS?
+#javascript <a href="https://t.co/iAR2x6mR8f">https://t.co/iAR2x6mR8f</a><br><br>Say you are polling every 100ms, and the projection function emits after 50 to 150ms.
 
-➲ CSS Selectors
-➺ Basic
-➺ Complex
-➺ Pseudo<br><br>➲ CSS Properties
-➺ Color
-➺ Background-color
-➺ Font-family
-➺ ...many more.<br><br>➲ Box Model
-➺ Padding
-➺ Border
-➺ Margin
+- switchMap will keep canceling until you are lucky and the projection function takes less than 100ms
 
-➲ Values &amp; Units
+- concatMap will keep buffering work until it explodes
+🧵<br><br>- mergeMap might show results in the wrong order if the first projection takes 200ms and the second one 50ms because
+200 &gt; 100 + 50
 
-➲ CSS Specificity &amp; inheritance
+- exhaustMap is the best fit but if the first projection takes 150ms then we will miss the 100ms “tick” &amp; will have to wait for the 200ms tick
 
-➲ Display
+🧵<br><br>If the second projection takes 50ms, we will receive the second value after 250ms
+🧵<br><br>With switchMapOnNext, if the first projection takes 120ms and the second 50ms then we would get the first value at 120ms and the second at 150ms
 
-➲ Positioning
-➺ Static
-➺ Relative 
-➺ Absolute
-➺ Fixed
-➺ Sticky<br><br>✦ Advanced
-
-➲ Shadows
-➲ Gradients
-➲ Transforms
-➲ Transitions
-➲ Animations
-➲ CSS Varisables
-➲ Media Queries<br><br>➲Layouts
-➺ Flexbox
-➺ Grid
-
-➲ CSS Preprocessors
-➺ SASS
-➺ LESS
-➺ PostCSS
-
-➲ CSS Frameworks
-➺ Tailwind CSS
-➺ Bootstrap
-➺ Materialize<br><br>➪ Building Projects is the only way to master above-mentioned topics.
-
-➪ Build at least 8 Projects</p>
+And if they take 160ms and 50ms then the first value would be ignored and we would get the second value at 150ms</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Roadmap for Beginners</a></li>
-<li><a href="#">CSS Roadmap</a></li>
-<li><a href="#">CSS</a></li>
-<li><a href="#">HTML</a></li>
-<li><a href="#">HTML Elements</a></li>
+								<li><a href="#">rxjs flattening strategy</a></li>
+<li><a href="#">previous observables</a></li>
+<li><a href="#">rxjs flattening</a></li>
+<li><a href="#">flattening strategy</a></li>
+<li><a href="#">unsubscribing from previous</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -359,7 +297,7 @@ Thread 🧵<br><br>➯ HTML
       }
     </script>
 
-<!--2340778772354035651-->
+<!--6283946389989635651-->
 
   </body>
 

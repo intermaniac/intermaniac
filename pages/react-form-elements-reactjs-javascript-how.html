@@ -5,21 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="HTML &amp; CSS Roadmap for Beginners in 2022.
+    <meta name="description" content="React form elements
 
-Thread 🧵➯ HTML
+#ReactJS #javascript #Thread 🧵📜How to work with React form elements?
 
-➺ What is HTML?
-➺ HTML Elements
-➺...">
+we can make form...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Html &amp; css roadmap for beginners in 2022.
+    <title>React form elements
 
- 🧵➯ html
-
-➺...</title>
+#reactjs #javascript # 🧵📜how to work with react...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,11 +81,9 @@ Thread 🧵➯ HTML
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Html &amp; css roadmap for beginners in 2022.
+                <h2>React form elements
 
- 🧵➯ html
-
-➺...</h2>
+#reactjs #javascript # 🧵📜how to work with react...</h2>
               </div>
             </div>
           </div>
@@ -111,93 +105,62 @@ Thread 🧵➯ HTML
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Html &amp; css roadmap for beginners in 2022.
+                      <span>React form elements
 
- 🧵➯ html
+#reactjs #javascript # 🧵📜how to work with react...</span>
+                      <a href="#"><h4>React form elements
 
-➺...</span>
-                      <a href="#"><h4>HTML &amp; CSS Roadmap for Beginners in 2022.
+#ReactJS #javascript #Thread 🧵📜How to work with React form elements?
 
-Thread 🧵➯ HTML
-
-➺ What is HTML?
-➺ HTML Elements
-➺...</h4></a>
+we can make form...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-13 07:15:38.995302</a></li>
 
                       </ul>
-                      <p>HTML &amp; CSS Roadmap for Beginners in 2022.
+                      <p>React form elements
 
-Thread 🧵<br><br>➯ HTML
+#ReactJS #javascript #Thread 🧵📜<br><br>How to work with React form elements?
 
-➺ What is HTML?
-➺ HTML Elements
-➺ Attributes
-➺ Semantic HTML
-➺ Accessibility<br><br>➯ CSS
+we can make form elements interactive by setting a callback to the onChange prop. Form components listen to changes and they are fired when, value of &lt;input&gt; /&lt;textarea&gt; changes
+ Checked state of input changes
+ Selected state of input change<br><br>we should maintain a state for every form field 
 
-✦ Fundamentals
+updating the value in response to user interaction, the onChange prop can be used
 
-➲ What is CSS?
+On change of the input field, the value can be fetched using <a href="https://t.co/bwFeHYYZ1w.value">https://t.co/bwFeHYYZ1w.value</a> and the corresponding state is updated.<br><br>You can create two types of forms in React:
+1️⃣ Controlled component
+2️⃣ Uncontrolled component
 
-➲ CSS Selectors
-➺ Basic
-➺ Complex
-➺ Pseudo<br><br>➲ CSS Properties
-➺ Color
-➺ Background-color
-➺ Font-family
-➺ ...many more.<br><br>➲ Box Model
-➺ Padding
-➺ Border
-➺ Margin
+1️⃣Controlled component: In controlled components the input values are set to corresponding state variables and when the value changes, the state is updated accordingly.<br><br>Uncontrolled component:  In an uncontrolled component, the form elements data is handled by the DOM and not by the state. 
 
-➲ Values &amp; Units
+&lt;input type="text" ref={input} /&gt;
 
-➲ CSS Specificity &amp; inheritance
+The input does not have value attribute and an event handler, instead DOM ref is used to get the value of the form field<br><br>'ref' is used to access the React elements, and helps in getting the value of input field from the DOM.
 
-➲ Display
+To create refs we can use useRef hook<br><br>useRef hook 
 
-➲ Positioning
-➺ Static
-➺ Relative 
-➺ Absolute
-➺ Fixed
-➺ Sticky<br><br>✦ Advanced
+syntax:
+         let countRef = useRef(0) 
 
-➲ Shadows
-➲ Gradients
-➲ Transforms
-➲ Transitions
-➲ Animations
-➲ CSS Varisables
-➲ Media Queries<br><br>➲Layouts
-➺ Flexbox
-➺ Grid
+useRef hook accepts the initial value and returns a ref object 
 
-➲ CSS Preprocessors
-➺ SASS
-➺ LESS
-➺ PostCSS
+The countRef ref object returned, is mutable and will persist for the full lifetime of the component<br><br>we can assign the ref instance created using useRef hook to the input field using ref attribute, as shown below:
 
-➲ CSS Frameworks
-➺ Tailwind CSS
-➺ Bootstrap
-➺ Materialize<br><br>➪ Building Projects is the only way to master above-mentioned topics.
+&lt;input type="text" ref={countRef} /&gt;
 
-➪ Build at least 8 Projects</p>
+we can access the value of the input field as shown below:
+countRef.current.value</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Roadmap for Beginners</a></li>
-<li><a href="#">CSS Roadmap</a></li>
-<li><a href="#">CSS</a></li>
-<li><a href="#">HTML</a></li>
-<li><a href="#">HTML Elements</a></li>
+								<li><a href="#">React form elements</a></li>
+<li><a href="#">input</a></li>
+<li><a href="#">form elements</a></li>
+<li><a href="#">input field</a></li>
+<li><a href="#">React form</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -359,7 +322,7 @@ Thread 🧵<br><br>➯ HTML
       }
     </script>
 
-<!--2340778772354035651-->
+<!--3190301499093855651-->
 
   </body>
 
