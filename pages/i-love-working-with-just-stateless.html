@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="I love working with just stateless functions, interfaces and literal objects in #TypeScript becaus everything's...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>I love working with just stateless functions, interfaces and literal...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>I love working with just stateless functions, interfaces and literal...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,42 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>I love working with just stateless functions, interfaces and literal...</span>
+                      <a href="#"><h4>I love working with just stateless functions, interfaces and literal objects in #TypeScript becaus everything's...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-15 07:15:41.060042</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>I love working with just stateless functions, interfaces and literal objects in #TypeScript becaus everything's so easy to understand and to test.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/h3zh4K07m7">https://t.co/h3zh4K07m7</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+But sometimes, when everything falls into place, classes can be beautiful, too!
+
+Let me explain... 🧵<br><br>I am currently re-writing the parser for @MarmotaApp so that it can partially parse a document based on a set of changes (when you edit the document and add a letter in the middle of a headline, it can parse only that headline, leaving the rest of the parsed document as-is).<br><br>This requires tracking a lot of state, and because of that, I decided to use classes for most of the code from the start.
+
+Then, I implemented partial parsing in two parsers as straight-forward as possible: One for "leaf" nodes and one for nodes that can contain other nodes.<br><br>I saw that the code was completely generic for both cases. And I wanted to extract it, so that no future parser implementation (e.g. for list items) never has to deal with partially parsing.
+
+But I wanted to make sure that my assumption ("it's completely generic") was valid...<br><br>So I implemented a dozen tests for partially parsing headings and checked that they fail with a reasonable error message (see <a href="https://t.co/n6xvGN740T">https://t.co/n6xvGN740T</a> ).
+
+But then, I immediately skipped all those tests and started the refactoring, with all tests green.<br><br>The remaining steps were quick and easy:
+* Create a base class for leaf parsers and use it -&gt; tests green
+* Move code to parse the node itself to base class -&gt; tests green
+* Create a base class for container parsers and use it -&gt; tests green<br><br>* Move code to parse container node to base class -&gt; all green
+* Remove duplicated code in container parser by calling leaf parser -&gt; all green<br><br>And then, there was this moment where everything fell into place:
+
+I un-skipped the tests, made the heading parser extend the container parser, and all the previously-red tests were green!<br><br>Sometimes, class hierarchies (with interfaces and abstract base classes) can be beautiful.
+
+("Prefer pure functions+data" and "Prefer composition over inheritance" still apply. "Prefer" just doesn't mean "Always use instead")</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">TypeScript becaus</a></li>
+<li><a href="#">love working</a></li>
+<li><a href="#">literal objects</a></li>
+<li><a href="#">tests</a></li>
+<li><a href="#">green</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +294,7 @@
       }
     </script>
 
-<!--6775579110764426651-->
+<!--8809029819367036651-->
 
   </body>
 
