@@ -5,15 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="10 Best Termux Tools For Ethical Hacking 🧵👇🏼(Part 2)
-#Linux1. Social Engineering Toolkit
+    <meta name="description" content="1/ Introducing Cloud-ZK: A Toolkit for Developing Zero Knowledge Proof Acceleration in the Cloud 🥳
 
-TrustedSec’s Social-Engineer Toolkit is...">
+TL;DR...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>10 best termux tools for ethical hacking 🧵👇🏼(part 2)
-#linux1. social...</title>
+    <title>1/ introducing cloud-zk: a toolkit for developing zero knowledge proof...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,8 +77,7 @@ TrustedSec’s Social-Engineer Toolkit is...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>10 best termux tools for ethical hacking 🧵👇🏼(part 2)
-#linux1. social...</h2>
+                <h2>1/ introducing cloud-zk: a toolkit for developing zero knowledge proof...</h2>
               </div>
             </div>
           </div>
@@ -102,107 +99,85 @@ TrustedSec’s Social-Engineer Toolkit is...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>10 best termux tools for ethical hacking 🧵👇🏼(part 2)
-#linux1. social...</span>
-                      <a href="#"><h4>10 Best Termux Tools For Ethical Hacking 🧵👇🏼(Part 2)
-#Linux1. Social Engineering Toolkit
+                      <span>1/ introducing cloud-zk: a toolkit for developing zero knowledge proof...</span>
+                      <a href="#"><h4>1/ Introducing Cloud-ZK: A Toolkit for Developing Zero Knowledge Proof Acceleration in the Cloud 🥳
 
-TrustedSec’s Social-Engineer Toolkit is...</h4></a>
+TL;DR...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-16 07:15:47.816069</a></li>
 
                       </ul>
-                      <p>10 Best Termux Tools For Ethical Hacking 🧵👇🏼(Part 2)
-#Linux<br><br>1. Social Engineering Toolkit
+                      <p>1/ Introducing Cloud-ZK: A Toolkit for Developing Zero Knowledge Proof Acceleration in the Cloud 🥳
 
-TrustedSec’s Social-Engineer Toolkit is an advanced structure that emulates many types of attacks in cybersecurity. For example, IDs collection, phishing attacks, etc.<br><br>Command to install the Social Engineering Toolkit in Termux
+TL;DR 
 
-pkg update &amp;&amp; pkg upgrade -y
+Today we #opensource a new way to accelerate ZK. Using #FPGA. In #AWS cloud. Easy. Accessible. Cheap.
 
-apt install curl -y
+Read on, or check out the blog
+Thread 🧵👇
 
-curl -LO <a href="https://t.co/MAxh1t0Nit">https://t.co/MAxh1t0Nit</a>
+<a href="https://t.co/0KDXcfQri6">https://t.co/0KDXcfQri6</a> <a href="https://t.co/0G0io9Lmb7">https://t.co/0G0io9Lmb7</a><br><br>2/ 
+Zero Knowledge (ZK) technology is a fundamental building block for decentralized computing.
+ 
+Its two main applications are privacy-preserving computation and verifiable computation.
 
-sh <a href="https://t.co/HoE5nVcw9O">https://t.co/HoE5nVcw9O</a>
+Blogpost: <a href="https://t.co/yt1TzfVMQI">https://t.co/yt1TzfVMQI</a><br><br>3/ 
+For specific types of ZK such as SNARK and STARK-based systems, additional properties include public verifiability, smaller proof sizes, and fast verification.
 
-cd setoolkit
+This makes these kinds of ZK perfect for use in blockchains for scalability and privacy purposes. <a href="https://t.co/8xs7JbAuW8">https://t.co/8xs7JbAuW8</a><br><br>4/  
+At present, ZK tech is being developed and used by leading blockchains (e.g. @Filecoin, @AleoHQ), L2s (e.g. Starknet, @zksync) and decentralized applications (e.g. @darkforest_eth, ZKAttestor)<br><br>5/
+BUT.. nothing great ever comes easy 🤷‍♂️
 
-./setup.py install
+The Prover must run a computationally intensive algorithm with significant data blowup during the computation. Recent estimates suggest up to 10M in prover overhead while producing the proof, compared to directly running the computation <a href="https://t.co/of2pJCQR9P">https://t.co/of2pJCQR9P</a><br><br>6/
+Today, prover overhead is considered the main computational bottleneck for applied ZK 🚧
 
-./setoolkit<br><br>2. Nikto
+Without exception, every project built on ZK technology is facing or will face this bottleneck, which manifests adversely in either latency, throughput, memory, power consumption, or cost<br><br>7/ 
+ZK computation requires modular arithmetic on large field sizes
 
-Nikto is a software developed in Perl programming language. The goal is to provide guidelines on WEB servers, falling into the scope of a vulnerability scanner, OpenVAS.
+Trials on CPUs lead 2 the conclusion that modern CPU architecture is just not built to handle this form of computation efficiently
 
-It was created to find various files, configurations, standard or insecure programs on Web servers<br><br>Command to install Nikto on Termux
+As a result, the need for specialized hardware ZK prover acceleration is clear<br><br>8/  
+Until now, the majority of hardware experimentation for accelerating ZK has been done with GPUs. In our recent paper, PipeMSM, we explored bringing functioning and operational ZK for the first time to FPGAs
+ 
+<a href="https://t.co/VyEBaEXoys">https://t.co/VyEBaEXoys</a><br><br>9/ 
+We believe this to be a superior approach for accelerating ZK computation, on the path to developing ZK for Application Specific Integrated Circuits (ASICs)
+ 
+It is our belief that the energy efficiency in FPGAs is more suitable for ZK due to their function-specific design<br><br>10/
+With FPGAs at the base, we take a holistic approach to ZK optimization with designs based on a novel algorithmic approach and hardware-specific optimizations<br><br>11/ 
+We implemented and tested our design on FPGA, and highlight the promise of optimized hardware over state-of-the-art GPU-based MSM solvers, in terms of both speed and energy expenditure. <a href="https://t.co/YSZ3zYmUBW">https://t.co/YSZ3zYmUBW</a><br><br>12/
+A disadvantage of FPGAs compared to GPUs is their lack of accessibility, while GPUs have effectively become commodity hardware. 
 
-apt update &amp;&amp; apt upgrade
+This means there is a high barrier for ZK users simply getting an FPGA into their hands.<br><br>13/
+One promising approach to overcoming this barrier is by utilizing cloud computing
 
-pkg install git
+Clouds offering FPGA resources such as @awscloud, @alibaba_cloud have made FPGAs more accessible with “on-tap” accessibility.
 
-pkg install Perl
+This is a GAME-CHANGER in the world of hardware acceleration. <a href="https://t.co/SIc7N189hU">https://t.co/SIc7N189hU</a><br><br>14/
+Introducing Cloud-ZK
 
-git clone <a href="https://t.co/DG9PVO1iVn">https://t.co/DG9PVO1iVn</a>
+With the Cloud-ZK toolkit we have made #opensource, the benefits of ZK hardware acceleration on FPGAs are accessible to anyone, anywhere, anytime and with costs comparable to any other standard CPU instance on an hourly basis (link in Tweet 1)<br><br>15/
+Our FPGA code achieves 4x the baseline of Zprize FPGA MSM competition, where max prize criteria is 2x :)
 
-cd nikto
+<a href="https://t.co/BbYt875Tch">https://t.co/BbYt875Tch</a><br><br>16/
+As an example application, our AWS F1 instance can be used to accelerate Aleo prover. 
 
-cd program<br><br>3. Tool-X
+In terms of proofs per second, the accelerator can generate up to ~5x proofs per second compared to running on CPU alone<br><br>17/
+Follow for more Zero Knowledge hardware acceleration news as we work to make ZKP inexpensive, accessible, and fast
 
-Tool-X is considered the best Termux hacking tool since it was specially created for Termux. With Tool-X’s help, one can download more than 370 hacking tools for Termux with just a click.<br><br>Command to install Nikto on Termux
+FIN
 
-pkg update &amp;&amp; pkg upgrade -y
-
-pkg install git
-
-git clone <a href="https://t.co/esxsXdKsbF">https://t.co/esxsXdKsbF</a>
-
-cd Tool-X
-
-chmod +x install.aex
-
-sh install. aex
-
-./install.aex
-
-Tool-X<br><br>4. Fsociety Toolkit
-
-Fsociety Toolkit contains all the Termux hacking tools that are appeared in many TV series for cybersecurity purposes.
-
-Fsociety Hacking Tools Pack— It contains a Pen-Testing Framework, and one can have every code that a hacker needs.<br><br>Command to install Fsociety Toolkit on Termux
-
-pkg update &amp;&amp; pkg upgrade
-
-pkg install git
-
-pkg install python2
-
-git clone <a href="https://t.co/DPSxBYfHNj">https://t.co/DPSxBYfHNj</a>
-
-cd fsociety
-
-chmod +x <a href="https://t.co/BIfMeF7olt">https://t.co/BIfMeF7olt</a><br><br>10. Slowrolis
-
-Slowloris is a low-bandwidth DoS hacking tool. The software is rewritten in Python, and it performs an HTTP Denial of Service attack that slows down or makes the small servers crash.<br><br>Command to install Fsociety Toolkit on Termux
-
-pkg update &amp;&amp; pkg upgrade -y
-
-pkg install Python
-
-pkg install slowloris
-
-slowloris<br><br>Conclusion
-
-As there are many tools available, the list goes on, but here we have included the ten best tools that you’ll ever need. By practicing safe and ethical hacking in 2021 with these tools, you can learn hacking and other cybersecurity aspects from the android Termux app.<br><br>Thanks For Reading !</p>
+Github: <a href="https://t.co/OdhrRM8l5J">https://t.co/OdhrRM8l5J</a> <a href="https://t.co/OJCsaB2p2E">https://t.co/OJCsaB2p2E</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Termux pkg update</a></li>
-<li><a href="#">Social Engineering Toolkit</a></li>
-<li><a href="#">Termux pkg</a></li>
-<li><a href="#">Termux</a></li>
-<li><a href="#">pkg install</a></li>
+								<li><a href="#">cloud computing Clouds</a></li>
+<li><a href="#">FPGA</a></li>
+<li><a href="#">FPGAs</a></li>
+<li><a href="#">Cloud</a></li>
+<li><a href="#">computation</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -364,7 +339,7 @@ As there are many tools available, the list goes on, but here we have included t
       }
     </script>
 
-<!--6121022328104836651-->
+<!--7057781463786076651-->
 
   </body>
 
