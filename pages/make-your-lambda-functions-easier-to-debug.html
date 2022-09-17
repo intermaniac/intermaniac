@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Make your Lambda functions easier to debug by combining  middleware with better error reporting...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Make your lambda functions easier to debug by combining...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Make your lambda functions easier to debug by combining...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +97,47 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Make your lambda functions easier to debug by combining...</span>
+                      <a href="#"><h4>Make your Lambda functions easier to debug by combining  middleware with better error reporting...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-17 07:15:37.406399</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Make your Lambda functions easier to debug by combining  middleware with better error reporting to level-up your error-handling game when using JavaScript/TypeScript.
 
-Project Development Using JAVA for Beginners - 2022: 
-<a href="https://t.co/wOCVwxATZ9">https://t.co/wOCVwxATZ9</a>
+🧵 👇<br><br>The default API Gateway error reporting for uncaught Lambda exceptions is terrible. You get a generic Internal Server Error message with 500 status code for everything.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Fear of Public Speaking: Never Fear Public Speaking Again: 
-<a href="https://t.co/0rlGa0FwN6">https://t.co/0rlGa0FwN6</a><br><br>YouTube Marketing: Become a Digital TV Star in Your Niche: 
-<a href="https://t.co/8yiRkh5HNr">https://t.co/8yiRkh5HNr</a><br><br>Automated Machine Learning for Beginners (Google &amp; Apple): 
-<a href="https://t.co/uJ8Nm33uOS">https://t.co/uJ8Nm33uOS</a><br><br>Career Change: Become a Paid Expert in What You Love: 
-<a href="https://t.co/mVuHKwEoS1">https://t.co/mVuHKwEoS1</a></p>
+Use middleware like middy to wrap your Lambda handlers, catch errors and return a consistent error response.<br><br>Avoid throwing the built-in Error class. 
+
+Instead, use something like VError to throw and subclass your errors, so that they are reported with a different name, have a formatted message, add extra context with info, and include the cause of the exception for error chaining.<br><br>When you combine VError with a custom Lambda middleware for exception handling, you unlock a powerful duo that you can really up your error reporting game.
+
+Some of the things you can do with VError:<br><br>1. Use VError.fullStack() for a full error chain
+
+In your custom middleware, use VError.fullStack() instead of just console.log to report your error. It will include any extra context you added (via the .info field), as well as the full error chain (via the .cause field).<br><br>2. Add descriptive fields to the VError object for API response
+
+Add these fields to the .info part of the VError you throw:
+
+statusCode - HTTP statusCode
+errorCode - one of an enumeration of error codes that are publicly documented in your API<br><br>3. Use those custom fields in your middleware to customise API response
+
+You can use these fields to customise the response HTTP code (statusCode) and an human readable error code in the body (errorCode), naturally leveraging JavaScript's exception mechanism<br><br>4. Hide internal errors
+
+Conversely, when those fields are absent, you know it was an internal error and you can just return a generic 500. 
+
+Your logs will still have the full error chain from your middleware using VError.fullStack().<br><br>5. Add the exception to your current OpenTelemetry span
+
+If you're using OpenTelemetry in your AWS Lambda functions (and if you're not, you should be), you can leverage middleware again to add details from the uncaught exception to your current span.<br><br>Use <a href="https://t.co/gJBj8l4teO()">https://t.co/gJBj8l4teO()</a> to retrieve the extra context added when it was thrown, VError.cause() to get the cause of the error, and VError.fullStack() to report the full stack trace as extra attributes on the span.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">error</a></li>
+<li><a href="#">API Gateway error</a></li>
+<li><a href="#">Gateway error reporting</a></li>
+<li><a href="#">Lambda</a></li>
+<li><a href="#">Make your Lambda</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +299,7 @@ Project Development Using JAVA for Beginners - 2022:
       }
     </script>
 
-<!--3112803770107376651-->
+<!--3042622944121607651-->
 
   </body>
 
