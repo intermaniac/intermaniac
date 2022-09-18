@@ -5,13 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="Python class curious? 🤔
 
-🧵👇1. Software...">
+Here's a 4-in-1 thread about class-related Python terms 🐍
+
+• class
+• class instance
+•...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Python class curious? 🤔
+
+here's a 4-in-1  about class-related python...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +83,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Python class curious? 🤔
+
+here's a 4-in-1  about class-related python...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +107,97 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>Python class curious? 🤔
 
-🧵👇1. Software...</h4></a>
+here's a 4-in-1  about class-related python...</span>
+                      <a href="#"><h4>Python class curious? 🤔
+
+Here's a 4-in-1 thread about class-related Python terms 🐍
+
+• class
+• class instance
+•...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-18 07:15:39.080436</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>Python class curious? 🤔
 
-🧵👇<br><br>1. Software Engineer, Python (Backend) at @AssemblyAI.
+Here's a 4-in-1 thread about class-related Python terms 🐍
 
-A remote opportunity at a San Francisco-based YCombinator-backed, fast-growing startup that has recently received Series-B funding.
+• class
+• class instance
+• method
+• initializer method
 
-Check out the job at: <a href="https://t.co/4DurV0sxMP">https://t.co/4DurV0sxMP</a><br><br>2. Senior Software Engineer (Python) at @KOSHEXHQ.
+Make sure to click through to each of the 4 thread for more 🧵
 
-A remote opportunity at a Bengaluru-based YCombinator-backed, fast-growing startup that has recently received Seed funding.
+#Python #TerminologyTuesday<br><br>A class is essentially a template for creating an object in Python.
 
-Check out the job at: <a href="https://t.co/7UHZPcSTmz">https://t.co/7UHZPcSTmz</a><br><br>3. Python Developer at @Securly.
+Every object has a class, seen by the "type" function:
 
-A remote opportunity at a San Jose-based Defy.vc-backed, fast-growing startup that received Series-B funding in 2018.
+&gt;&gt;&gt; type(4)
+&lt;class 'int'&gt;
 
-Check out the job at: <a href="https://t.co/opmjpBST4b">https://t.co/opmjpBST4b</a><br><br>4. Backend Python Engineer at @Teikametrics.
+The terms "type" &amp; "class" are synonyms in Python.
 
-A remote opportunity at a Boston-based Intel Capital-backed, fast-growing startup that received Series-B funding in 2021.
+Some "functions" are actually implemented as classes.
 
-Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn</a></p>
+On 𝗰𝗹𝗮𝘀𝘀𝗲𝘀 🖱️ <a href="https://t.co/zaND5e6gdP">https://t.co/zaND5e6gdP</a><br><br>Calling a class returns an "instance" of that class.
+
+All objects are instances of their "type".
+
+&gt;&gt;&gt; x = True
+&gt;&gt;&gt; type(x) == bool
+True
+&gt;&gt;&gt; isinstance(x, bool)
+True
+
+But objects are instances of parent classes as well:
+
+&gt;&gt;&gt; isinstance(x, int)
+True
+
+On 𝗶𝗻𝘀𝘁𝗮𝗻𝗰𝗲𝘀 🖱️ <a href="https://t.co/8pDJPXf1xY">https://t.co/8pDJPXf1xY</a><br><br>Methods are functions attached to classes. They're typically designed to operate on instances of the class.
+
+Under the hood every method call:
+
+&gt;&gt;&gt; numbers.append(3)
+
+Is translated to a function call on the class itself:
+
+&gt;&gt;&gt; type(numbers).append(numbers, 3)
+
+On 𝗺𝗲𝘁𝗵𝗼𝗱𝘀 🖱️ <a href="https://t.co/xgmRGIBWKf">https://t.co/xgmRGIBWKf</a><br><br>When defining a class, the first method you'll define is often __init__, the initializer method.
+
+Want to accept arguments when calling your class?
+
+Want to initialize attributes on your class instance?
+
+That's what __init__ is for.
+
+On 𝗶𝗻𝗶𝘁𝗶𝗮𝗹𝗶𝘇𝗲𝗿𝘀 🖱️ <a href="https://t.co/EalEhSgM2D">https://t.co/EalEhSgM2D</a><br><br>I'm taking a #TerminologyTuesday break during September. 🍵
+
+I'll be re-sharing past terminology Tuesday threads each week for the next 4 weeks. 🔄
+
+This was the first Python terminology revisit. 🐍
+
+Stay tuned for #Python terminology reruns over the next 4 weeks. 🌠 <a href="https://t.co/Aqo0VpJYTW">https://t.co/Aqo0VpJYTW</a><br><br>Learn something new? 🐍💖
+
+For more terminology Tuesday tweets and daily #Python tips, follow me at @treyhunner and @PythonMorsels. 🌠
+
+For my longer-form Python tips, get on my email newsletter: <a href="https://t.co/DBpqyLul0Q">https://t.co/DBpqyLul0Q</a> 📨</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">Python</a></li>
+<li><a href="#">class</a></li>
+<li><a href="#">type</a></li>
+<li><a href="#">Python class curious</a></li>
+<li><a href="#">method</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +359,7 @@ Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn<
       }
     </script>
 
-<!--8370662541896817651-->
+<!--2992358487353227651-->
 
   </body>
 

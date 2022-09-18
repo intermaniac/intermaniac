@@ -5,13 +5,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="GitHub Actions are an amazing tool that lets us do things like:
 
-🧵👇1. Software...">
+👉 Lint code
+👉 Run...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Github actions are an amazing tool that lets us do...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +78,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Github actions are an amazing tool that lets us do...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +100,86 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>Github actions are an amazing tool that lets us do...</span>
+                      <a href="#"><h4>GitHub Actions are an amazing tool that lets us do things like:
 
-🧵👇1. Software...</h4></a>
+👉 Lint code
+👉 Run...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-18 07:15:39.080436</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>GitHub Actions are an amazing tool that lets us do things like:
 
-🧵👇<br><br>1. Software Engineer, Python (Backend) at @AssemblyAI.
+👉 Lint code
+👉 Run tests
+👉 And much more
 
-A remote opportunity at a San Francisco-based YCombinator-backed, fast-growing startup that has recently received Series-B funding.
+Let's build our first one and take advantage of this great tool for free 👇
 
-Check out the job at: <a href="https://t.co/4DurV0sxMP">https://t.co/4DurV0sxMP</a><br><br>2. Senior Software Engineer (Python) at @KOSHEXHQ.
+🧵<br><br>1️⃣ .github folder
 
-A remote opportunity at a Bengaluru-based YCombinator-backed, fast-growing startup that has recently received Seed funding.
+In the root of your project create a .github folder and then within that folder create a folder called workflows.
 
-Check out the job at: <a href="https://t.co/7UHZPcSTmz">https://t.co/7UHZPcSTmz</a><br><br>3. Python Developer at @Securly.
+Inside of .github/workflows is where we will put out our GitHub Actions.
 
-A remote opportunity at a San Jose-based Defy.vc-backed, fast-growing startup that received Series-B funding in 2018.
+Now create a file inside of workflows called build.yml <a href="https://t.co/UHObGoT66b">https://t.co/UHObGoT66b</a><br><br>2️⃣ Naming our action &amp; triggering it
 
-Check out the job at: <a href="https://t.co/opmjpBST4b">https://t.co/opmjpBST4b</a><br><br>4. Backend Python Engineer at @Teikametrics.
+The first part of our action is the name, this is simply what we want the Action to be called and what GitHub will label it throughout our repo.
 
-A remote opportunity at a Boston-based Intel Capital-backed, fast-growing startup that received Series-B funding in 2021.
+Then, use the 'on' keyword to specify when to trigger the action. E.g.
 
-Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn</a></p>
+👉 PRs
+👉 pushing code <a href="https://t.co/ig8mhM4p4g">https://t.co/ig8mhM4p4g</a><br><br>In our example, we will trigger the Action on pushing code as well as any pull requests.
+
+But, there are loads more options, check them out below 👇
+
+<a href="https://t.co/BDk9Ok24JW">https://t.co/BDk9Ok24JW</a><br><br>3️⃣ Jobs - part 1
+
+For our example, we will build a GitHub Action that runs a lint script and our tests.
+
+For this to work, in our repo, we need scripts defined in our package.json to do these functions.
+
+This way GitHub will install our packages and these scripts.<br><br>3️⃣ Jobs - part 2
+
+Let's look at adding our lint action.
+
+Here we define our lint job and the steps it needs to run within it. This includes:
+
+👉 Checking out the code
+👉 Setting up node 
+👉 Installing our dependencies 
+👉 And, finally, running our lint script. <a href="https://t.co/YULUqcWl4e">https://t.co/YULUqcWl4e</a><br><br>3️⃣ Jobs - part 2
+
+Now, to add our tests job, we can do the same steps as before but change the final step to run our tests instead of linting.  👇 <a href="https://t.co/saBW07Xowv">https://t.co/saBW07Xowv</a><br><br>4️⃣ Running our actions
+
+After pushing our actions to our repo, when we push future code or create a PR, GitHub will automatically run our defined actions.
+
+For PRs, we can check on the progress by using the 'checks' tab on a PR. Like below 👇 <a href="https://t.co/HhHAsvdZrn">https://t.co/HhHAsvdZrn</a><br><br>Congrats, you just created your first GitHub Action 🎉
+
+But, this is just the tip of the iceberg, GitHub Actions are powerful tools and can do amazing things. 
+
+Check out some of the amazing things you can do and find out more about Actions here 👇
+
+<a href="https://t.co/k8QCjuGGvP">https://t.co/k8QCjuGGvP</a><br><br>Did you enjoy this thread/find it helpful?
+
+If so please consider doing one of the below to show your support:
+
+❤️ Like these tweets
+🔄 Retweet the 1st tweet in this thread so others can see it.
+👤 Follow me ( @MrConerMurphy ) for more content like this.
+🔔 Turn on notifications</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">folder called workflows</a></li>
+<li><a href="#">github folder</a></li>
+<li><a href="#">action</a></li>
+<li><a href="#">GitHub Actions</a></li>
+<li><a href="#">Actions</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +341,7 @@ Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn<
       }
     </script>
 
-<!--8370662541896817651-->
+<!--1211628066845937651-->
 
   </body>
 

@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...">
+    <meta name="description" content="Lets talk about currying in JavaScript.
+A thread 🧵 https://t.co/kDxkfrs5nACurrying is a technique of evaluating function...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Lets talk about currying in javascript.
+ 🧵 https://t.co/kdxkfrs5nacurrying is a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,8 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Lets talk about currying in javascript.
+ 🧵 https://t.co/kdxkfrs5nacurrying is a...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +100,51 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Software...</h4></a>
+                      <span>Lets talk about currying in javascript.
+ 🧵 https://t.co/kdxkfrs5nacurrying is a...</span>
+                      <a href="#"><h4>Lets talk about currying in JavaScript.
+A thread 🧵 https://t.co/kDxkfrs5nACurrying is a technique of evaluating function...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-18 07:15:39.080436</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>Lets talk about currying in JavaScript.
+A thread 🧵 <a href="https://t.co/kDxkfrs5nA">https://t.co/kDxkfrs5nA</a><br><br>Currying is a technique of evaluating function with multiple arguments, into sequence of functions with single argument.
 
-🧵👇<br><br>1. Software Engineer, Python (Backend) at @AssemblyAI.
+Let's take an example :
 
-A remote opportunity at a San Francisco-based YCombinator-backed, fast-growing startup that has recently received Series-B funding.
+const f1 =(a,b,c)=&gt;{
+    return a+b+c; 
+}
 
-Check out the job at: <a href="https://t.co/4DurV0sxMP">https://t.co/4DurV0sxMP</a><br><br>2. Senior Software Engineer (Python) at @KOSHEXHQ.
+function call : f1(1,2,3)
+output : 6<br><br>f1 is a function that takes in 3 arguments and returns their sum. 
+This function can be defined in another way. 
 
-A remote opportunity at a Bengaluru-based YCombinator-backed, fast-growing startup that has recently received Seed funding.
+function f2 (a)
+{
+  return (b)=&gt;{
+      return (c)=&gt;{
+        a+b+c;
+}}}
+function call : f2(1)(2)(3)
+output : 6
+Function f2 is what we call a curryed function<br><br>When a function, instead of taking all arguments at one time, takes the first one and return a new function that takes the second one and returns a new function which takes the third one, and so forth, until all arguments have been fulfilled.
 
-Check out the job at: <a href="https://t.co/7UHZPcSTmz">https://t.co/7UHZPcSTmz</a><br><br>3. Python Developer at @Securly.
-
-A remote opportunity at a San Jose-based Defy.vc-backed, fast-growing startup that received Series-B funding in 2018.
-
-Check out the job at: <a href="https://t.co/opmjpBST4b">https://t.co/opmjpBST4b</a><br><br>4. Backend Python Engineer at @Teikametrics.
-
-A remote opportunity at a Boston-based Intel Capital-backed, fast-growing startup that received Series-B funding in 2021.
-
-Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn</a></p>
+Uses of currying a function : 👇<br><br>🟢 It helps to avoid passing same variable again and again.
+ 🟢 It is extremely useful in event handling.<br><br>Thanks for reading till the end. Follow for more concepts on JS and Web Development.
+Retweet the first tweet to save on your timeline.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">function</a></li>
+<li><a href="#">currying</a></li>
+<li><a href="#">return</a></li>
+<li><a href="#">arguments</a></li>
+<li><a href="#">function call</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +306,7 @@ Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn<
       }
     </script>
 
-<!--8370662541896817651-->
+<!--6817155187745737651-->
 
   </body>
 

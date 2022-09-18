@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="Let's create your first React.js project (a Counter app) from scratch. ⚛️ 
 
-🧵👇1. Software...">
+See the image...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Let's create your first react.js project (a counter app) from...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Let's create your first react.js project (a counter app) from...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +99,105 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>Let's create your first react.js project (a counter app) from...</span>
+                      <a href="#"><h4>Let's create your first React.js project (a Counter app) from scratch. ⚛️ 
 
-🧵👇1. Software...</h4></a>
+See the image...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-18 07:15:39.080436</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>Let's create your first React.js project (a Counter app) from scratch. ⚛️ 
 
-🧵👇<br><br>1. Software Engineer, Python (Backend) at @AssemblyAI.
+See the image below to know how does it look like.
 
-A remote opportunity at a San Francisco-based YCombinator-backed, fast-growing startup that has recently received Series-B funding.
+A beginner-friendly thread 🧵 <a href="https://t.co/NlTcf1UaVV">https://t.co/NlTcf1UaVV</a><br><br>Set up your React App so that we can start implementing Counter functionality.
 
-Check out the job at: <a href="https://t.co/4DurV0sxMP">https://t.co/4DurV0sxMP</a><br><br>2. Senior Software Engineer (Python) at @KOSHEXHQ.
+If you don't know how to set up and run the app, here is a thread to help you out.👇 
 
-A remote opportunity at a Bengaluru-based YCombinator-backed, fast-growing startup that has recently received Seed funding.
+<a href="https://t.co/WP2N0NgbQh">https://t.co/WP2N0NgbQh</a><br><br>Once React App is set up and running, navigate inside your src folder and look for App.js File.
 
-Check out the job at: <a href="https://t.co/7UHZPcSTmz">https://t.co/7UHZPcSTmz</a><br><br>3. Python Developer at @Securly.
+We will be editing App.js only.
 
-A remote opportunity at a San Jose-based Defy.vc-backed, fast-growing startup that received Series-B funding in 2018.
+At this point, your App.js should look like as shown in the picture below.
+Delete all other extra code. <a href="https://t.co/dmYPOO5yBd">https://t.co/dmYPOO5yBd</a><br><br>Now it's time to create the interface.
 
-Check out the job at: <a href="https://t.co/opmjpBST4b">https://t.co/opmjpBST4b</a><br><br>4. Backend Python Engineer at @Teikametrics.
+We need to have an h1 tag to show the count value and three buttons
+1. Increment button --&gt; every click will increase the count by 1
 
-A remote opportunity at a Boston-based Intel Capital-backed, fast-growing startup that received Series-B funding in 2021.
+2. Decrement --&gt; every click will decrease the count by 1
 
-Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn</a></p>
+3. Reset --&gt; Reset the count value back to 0👇 <a href="https://t.co/6BXFFhyGcK">https://t.co/6BXFFhyGcK</a><br><br>we have the interface but it's all black and white 👿
+
+Let's give  some cool styling. We will write our CSS in App.css file.
+
+So, go inside App.css, delete everything there, &amp; copy-paste the below code. It's just normal styling, don't care much about it.
+Interface and App.css 👇 <a href="https://t.co/MKy16Q7kpJ">https://t.co/MKy16Q7kpJ</a><br><br>At this point, our app looks good but there is no functionality. Clicking buttons doesn't do anything.
+
+So let's start adding functionality to the app.
+
+It should be obvious to you that we need a variable to store the count value and to show that on the screen (interface).<br><br>State - In React, the variables which are used to render the interface are either something called props or state. 
+These two are simple JavaScript objects
+
+props are passed to components like function parameters. 
+
+State are variables we declare and manage within our component.<br><br>I'll be using state var to store our count value
+
+When the state or prop of a component changes, React re-renders the component, &amp; hence our interface is updated.
+
+So, somehow we need to tell React that we are going to use a state variable.
+
+For that React gives us useState hook<br><br>Hooks are simply functions provided by React. 
+
+This useState is used to manage the state of a component. 
+
+It takes one argument, the initial value for state var, and returns an array of 2 values. 1st being the state var and 2nd a function to update that state.
+
+see the code👇 <a href="https://t.co/Ta221d1GeG">https://t.co/Ta221d1GeG</a><br><br>There are three changes
+
+1. We have imported the useState so that we can use it.
+2. Declaring the state variable --&gt; we have used useState and passed 0 as initial value. 
+
+The returned array by useState is destructured and stored in count and setCount.
+continued...👇<br><br>3. {count} in h1 tag to get  value of count variable and show on the screen. it shows 0, the initial value.
+
+All set, time to listen to click event on all 3 buttons
+
+In React onclick is written as onClick camelcase)
+
+Let's add onClick on buttons &amp; write corresponding functions <a href="https://t.co/7U5u7Tvf7W">https://t.co/7U5u7Tvf7W</a><br><br>We have added the onClick and corresponding function but they don't do anything yet.
+
+To update state var, we need to call setCount() and pass the updated value.
+
+for increment -&gt; setCount(count+1)
+for decrement -&gt; setCount(count - 1)
+To reset -&gt; setCount(0) <a href="https://t.co/PKtY4iFgiP">https://t.co/PKtY4iFgiP</a><br><br>That's it. 
+Your counter app is ready. It should be working fine.
+
+You can test it here 
+<a href="https://t.co/OPh5Svceti">https://t.co/OPh5Svceti</a><br><br>Check these resources to learn everything related to Web Development.
+
+<a href="https://t.co/bTvhPkk9yx">https://t.co/bTvhPkk9yx</a><br><br>Download this pdf that contains 15+ Interview questions with Best Possible Answers.
+
+<a href="https://t.co/GcY3SrNSM7">https://t.co/GcY3SrNSM7</a><br><br>This is all for this thread, my friend.
+
+Thanks for reading ❤️ 
+
+if you find it useful, like and retweet the top-most tweet in this thread and help me make it reach more people.
+
+Follow @faheem_khan_dev for more threads on JavaScript and React.
+❤️ 🙏</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">React.js project</a></li>
+<li><a href="#">React</a></li>
+<li><a href="#">State</a></li>
+<li><a href="#">count</a></li>
+<li><a href="#">Counter app</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +359,7 @@ Check out the job at: <a href="https://t.co/QfLfx7PMVn">https://t.co/QfLfx7PMVn<
       }
     </script>
 
-<!--8370662541896817651-->
+<!--0880714781515117651-->
 
   </body>
 
