@@ -5,17 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+    <meta name="description" content=""Why would anybody use vim or emacs when there are modern IDEs around???"
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...">
+Good question! To...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</title>
+    <title>"why would anybody use vim or emacs when there are...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +77,7 @@ A Thread 🧵🧵🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</h2>
+                <h2>"why would anybody use vim or emacs when there are...</h2>
               </div>
             </div>
           </div>
@@ -106,50 +99,49 @@ A Thread 🧵🧵🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#vuejs fundamental 3.5
- 🧵🧵🧵
+                      <span>"why would anybody use vim or emacs when there are...</span>
+                      <a href="#"><h4>"Why would anybody use vim or emacs when there are modern IDEs around???"
 
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</span>
-                      <a href="#"><h4>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
-
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...</h4></a>
+Good question! To...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-19 07:15:42.752708</a></li>
 
                       </ul>
-                      <p>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+                      <p>"Why would anybody use vim or emacs when there are modern IDEs around???"
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk <a href="https://t.co/NPGn8YVKOL">https://t.co/NPGn8YVKOL</a><br><br>➡️ 3.5 #VueJS  Slots 
+Good question! To answer this, I need to know something first: what do we mean by "IDE"? Are we talking about VSCode or IntelliJ?
 
-Slots are another way in Vue for a component to inject content into a child component. This does this using template code.<br><br>In terms of final output, slots perform a similar function as props in Vue getting data from a parent component to a child component. Slots are also helpful at creating reusable code.
+(This thread will be vim-centric btw)<br><br>IntelliJ IDEA is a language-specific IDE, designed from ground up for Java and JVM languages. It even has built-in features for Spring and Maven! I have no doubt that a good IDEA user will blow a good vim user out of the water when it comes to JVM programming.<br><br>On the other hand, if you need to instead program in Rust, you'll have to learn a different language-specific IDE. So while tools like IDEA are incredible for *specific* languages, they're less suited for *general* programming, which is a constraint a lot of people have.<br><br>VSCode, by contrast, is what I'll call a "modular" IDE, or "IDE-lite". It's a set of general-purpose core features with lots of extension points, so that people can write language-specific adapters for the built-in symbol finder/show signature/autocomplete etc.<br><br>This provides a much better development experience than unmodified vim. But also this was standardized by Microsoft as the Language Server Protocol, which is designed to work with any editor, so you can use the LSP inside vim, too. Neovim has it built-in!
 
-Whereas props pass data values to the component, slots can just pass direct template code.<br><br>💥 Benefits Of Using Slots 
+<a href="https://t.co/SHc4R7fv5w">https://t.co/SHc4R7fv5w</a><br><br>Now VSCode was designed ground-up with the LSP, while it's a vim extension (or neovim builtin), so it works a lot more smoothly in Code. I use it regularly for this reason. But even so, it means Code isn't INSURMOUNTABLY better than other editors, which have their own advantages<br><br>And what are vim's advantages? I know I'm supposed to start with "modal editing", but I'll skip right past that to by far the biggest:
 
-✅ Your child component is more reusable — you can pass it different components without worrying about a consistent format/data values<br><br>💥 Benefits Of Using Slots 
+VSCode is designed to be extended by DEVELOPERS.
+Vim is designed to be extended by USERS.<br><br>What do I mean by that? Let's say you wanted your editor to show the wordcount of markdown files.
 
-✅ It’s a lot more flexible — you don’t always have to fill every value whereas with props, you’d have to worry about checking if values exist using v-if<br><br>Let us understand with the help of an example
+To do that in Code, you'd create an entire "wordcount" extension. The actual code is 100 lines. 
+ <a href="https://t.co/JYxjSEl2YQ">https://t.co/JYxjSEl2YQ</a><br><br>Now to show the wordcount in vim, just add this to your .vimrc:
 
-First of all we need to declare a slot in child component and then to inject data in it through parent component. 
+autocmd BufEnter *.md setlocal statusline=%{%&amp;g:statusline%}\ %{wordcount()['words']}
 
-Let  us create a parent component called MyComponent.vue <a href="https://t.co/VSeKuaTXyJ">https://t.co/VSeKuaTXyJ</a><br><br>Next, let’s setup a child component MyButton.vue component.
+That's fewer characters than the VSCode plugin has LINES!<br><br>The difference is that Code assumes the user isn't interested in learning how to extend it themselves and wants to use prepackaged plugins. So it focuses on making plugin use seamless and the plugins play nice with each other, at the cost of making them harder to develop.<br><br>Whereas Vim assumes the user will use some plugins, but also wants to be able to directly extend the editor themselves. So everything is exposed to you. On the other hand, it's also easy to fuck everything up, and the onus is on the user to unfuck stuff<br><br>For many, many developers, this is a bad tradeoff, since they don't want to dig around in editor guts. I 100% agree that most developers don't need vim, they're better off using a batteries-included editor<br><br>But in the right hands, vim's user-centric extensibility is astoundingly powerful. You ever want to compose plugins? You know, run plugin A, run a conditional on the results, and either raise an error or pass something into plugin B? In vim, you can! In vim, it's *trivial*!<br><br>Even the developer plugins are designed with user-centric extensibility in mind. Most neovim plugins accept custom callbacks in their config, like with the main fuzzy finder, you can attach custom errors and lookups <a href="https://t.co/8GoyIZBOM8">https://t.co/8GoyIZBOM8</a><br><br>That extensibility is the thing I love most about vim. If I just cared about modal editing or macros I'd just use the vim plugin for vscode (which is also where I recommend beginners interested in vim start)
 
-When, MyButton.vue renders, the &lt;slot&gt; will be replaced by Click Me! — the content from the parent. <a href="https://t.co/e0uS6M1VTa">https://t.co/e0uS6M1VTa</a><br><br>You can pass any sort of template from the parent component, it doesn’t have to be just text. It can be a Font Awesome icon, image, or even another component.<br><br>That's All for today. Hope you will found it helpful.
-Topics to be covered 
-Named Slots 
-Scoped Slots</p>
+<a href="https://t.co/DVtxqujg5s">https://t.co/DVtxqujg5s</a><br><br>In short:
+
+- You'd use vim over a "true IDE" if you're not working in the blessed set of languages
+- You'd use vim over an "IDE-lite" if you care more about user-extensibility than a frictionless experience<br><br>As a bonus fun thing, here's a script I wrote to set a custom task shortcut, per buffer, for arbitrary commands. Yes, it *can* delete files and stuff, so it'd make a terrible plugin, but it's a great example of the power of user-extensibility.
+
+<a href="https://t.co/RG956U7qkA">https://t.co/RG956U7qkA</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">VueJS Fundamental</a></li>
-<li><a href="#">VueJS Slots Slots</a></li>
-<li><a href="#">Slots</a></li>
-<li><a href="#">component</a></li>
-<li><a href="#">child component</a></li>
+								<li><a href="#">vim</a></li>
+<li><a href="#">IDE</a></li>
+<li><a href="#">modern IDEs</a></li>
+<li><a href="#">Code</a></li>
+<li><a href="#">language-specific IDE</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +303,7 @@ Scoped Slots</p>
       }
     </script>
 
-<!--7927485608007677651-->
+<!--2382347934696067651-->
 
   </body>
 

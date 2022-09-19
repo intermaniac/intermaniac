@@ -5,17 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
-
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...">
+    <meta name="description" content="In two weeks, #Java19 will be released with some of Java's most anticipated features: virtual...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</title>
+    <title>In two weeks, #java19 will be released with some of...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +75,7 @@ A Thread 🧵🧵🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</h2>
+                <h2>In two weeks, #java19 will be released with some of...</h2>
               </div>
             </div>
           </div>
@@ -106,50 +97,65 @@ A Thread 🧵🧵🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</span>
-                      <a href="#"><h4>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
-
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...</h4></a>
+                      <span>In two weeks, #java19 will be released with some of...</span>
+                      <a href="#"><h4>In two weeks, #Java19 will be released with some of Java's most anticipated features: virtual...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-19 07:15:42.752708</a></li>
 
                       </ul>
-                      <p>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+                      <p>In two weeks, #Java19 will be released with some of Java's most anticipated features: virtual threads and structured concurrency! 🤩
+ 
+To make the best use of virtual threads, servers/frameworks need to support them - here's a list of those that do (reply with those I missed). 🧵<br><br>📣 All of this is still experimental!
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk <a href="https://t.co/NPGn8YVKOL">https://t.co/NPGn8YVKOL</a><br><br>➡️ 3.5 #VueJS  Slots 
+Virtual threads and the new APIs are (you need `--enable-preview` and the incubator module `jdk.incubator.concurrent` to use them) and so is support in these projects. You can help them mature over the next months by testing with your app.<br><br>The @JakartaEE server @TheApacheTomcat provided experimental support as a part of their 10.1.0-M16 release back in June, but there was a bug that broke HTTP/2 support if async IO was disabled. The unreleased 10.1.0-M17 will include a fix.
 
-Slots are another way in Vue for a component to inject content into a child component. This does this using template code.<br><br>In terms of final output, slots perform a similar function as props in Vue getting data from a parent component to a child component. Slots are also helpful at creating reusable code.
+Details: <a href="https://t.co/IJR0apO8vy">https://t.co/IJR0apO8vy</a><br><br>The async Java-based HTTP server @JettyProject merged changes to support Loom in <a href="https://t.co/612Wk9amNr.">https://t.co/612Wk9amNr.</a> It will be part of their 10.0.x release train, likely 10.0.12.
 
-Whereas props pass data values to the component, slots can just pass direct template code.<br><br>💥 Benefits Of Using Slots 
+Keep an eye on their release page for details: <a href="https://t.co/0knbxJviZD">https://t.co/0knbxJviZD</a><br><br>Helidon supports virtual threads since 2.2.0 (and 3.0): <a href="https://t.co/2kRpUr5BqB">https://t.co/2kRpUr5BqB</a>
 
-✅ Your child component is more reusable — you can pass it different components without worrying about a consistent format/data values<br><br>💥 Benefits Of Using Slots 
+But it does one better! 4.0 will come with a Nima (<a href="https://t.co/HkomL0GuK7">https://t.co/HkomL0GuK7</a>), a server written entirely around virtual threads with similar performance as Netty. Follow @helidon_project for updates!<br><br>Supersonic, subatomic Java server @QuarkusIO merged virtual thread support in May (<a href="https://t.co/GhaaQFFnVH">https://t.co/GhaaQFFnVH</a>), which was released in version 2.10.0 in June.
 
-✅ It’s a lot more flexible — you don’t always have to fill every value whereas with props, you’d have to worry about checking if values exist using v-if<br><br>Let us understand with the help of an example
+(Here's a very interesting report by @clementplop on that: <a href="https://t.co/BVkJSqcKTd)">https://t.co/BVkJSqcKTd)</a>
+ 
+Release notes: <a href="https://t.co/Zu6KOY6ttC">https://t.co/Zu6KOY6ttC</a><br><br>Other projects have the topic on their roadmap:
 
-First of all we need to declare a slot in child component and then to inject data in it through parent component. 
+@springframework has an issue slated for 6.0 (<a href="https://t.co/14KT6MSGGI">https://t.co/14KT6MSGGI</a>), which implies to me that it would also be available in @springboot 3.0.
 
-Let  us create a parent component called MyComponent.vue <a href="https://t.co/VSeKuaTXyJ">https://t.co/VSeKuaTXyJ</a><br><br>Next, let’s setup a child component MyButton.vue component.
+@micronautfw considers support in 4.0 (<a href="https://t.co/3JIsYu3oeb">https://t.co/3JIsYu3oeb</a>).<br><br>IDEs will work out of the box with virtual threads but could improve in at least two ways:
 
-When, MyButton.vue renders, the &lt;slot&gt; will be replaced by Click Me! — the content from the parent. <a href="https://t.co/e0uS6M1VTa">https://t.co/e0uS6M1VTa</a><br><br>You can pass any sort of template from the parent component, it doesn’t have to be just text. It can be a Font Awesome icon, image, or even another component.<br><br>That's All for today. Hope you will found it helpful.
-Topics to be covered 
-Named Slots 
-Scoped Slots</p>
+➀ Find a better way to select a thread than showing a drop-down box with potentially millions of them. 😬
+➁ Show the relationship between them that's created by structured concurrency.<br><br>I know some IDEs have an issue that you can track, but as far as I can tell, they're not yet very active:
+
+@EclipseJavaIDE has one on their BETA_JAVA19 milestone: <a href="https://t.co/RGjYoj49pX">https://t.co/RGjYoj49pX</a>
+
+@VSCodeJava: <a href="https://t.co/kaKoAf0iax">https://t.co/kaKoAf0iax</a>
+
+What about you, @intellijidea? 😉<br><br>@EclipseJavaIDE @VSCodeJava @intellijidea If you've made it this far, can you do me one (or more ☺️) of these favors?
+
+➀ Reply with projects that I missed (I will add them to this thread).
+➁ Follow @BillyKorando - he has done most of this research.
+➂ retweet 👇🏾 <a href="https://t.co/MOgO5QbQGz">https://t.co/MOgO5QbQGz</a><br><br>@EclipseJavaIDE @VSCodeJava @intellijidea @BillyKorando News on @netty_project. 👇
+
+(Thanks @mooreds!) <a href="https://t.co/idY4sdM46L">https://t.co/idY4sdM46L</a><br><br>@EclipseJavaIDE @VSCodeJava @intellijidea @BillyKorando @netty_project @mooreds News on @vertx_project. 👇
+
+Here's their virtual thread incubator: <a href="https://t.co/AtiUbe3xw9">https://t.co/AtiUbe3xw9</a>
+
+(Thanks @WhiteWoodCity!) <a href="https://t.co/XUzssGI1hp">https://t.co/XUzssGI1hp</a><br><br>@EclipseJavaIDE @VSCodeJava @intellijidea @BillyKorando @netty_project @mooreds @vertx_project @WhiteWoodCity The cloud native extensible runtime @piranha_cloud supports virtual threads since July:
+
+<a href="https://t.co/iggSXKEAbn">https://t.co/iggSXKEAbn</a>
+
+(Thanks @Thi_Hup for letting me know!)</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">VueJS Fundamental</a></li>
-<li><a href="#">VueJS Slots Slots</a></li>
-<li><a href="#">Slots</a></li>
-<li><a href="#">component</a></li>
-<li><a href="#">child component</a></li>
+								<li><a href="#">virtual threads</a></li>
+<li><a href="#">virtual</a></li>
+<li><a href="#">supports virtual threads</a></li>
+<li><a href="#">threads</a></li>
+<li><a href="#">anticipated features</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +317,7 @@ Scoped Slots</p>
       }
     </script>
 
-<!--7927485608007677651-->
+<!--6161517635338447651-->
 
   </body>
 

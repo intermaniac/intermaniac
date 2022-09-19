@@ -5,17 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+    <meta name="description" content="When to use var, let, and const in JavaScript. 🧵 👇🏻var
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...">
+Before ES6 var was the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</title>
+    <title>When to use var, let, and const in javascript. 🧵...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +77,7 @@ A Thread 🧵🧵🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</h2>
+                <h2>When to use var, let, and const in javascript. 🧵...</h2>
               </div>
             </div>
           </div>
@@ -106,50 +99,64 @@ A Thread 🧵🧵🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#vuejs fundamental 3.5
- 🧵🧵🧵
+                      <span>When to use var, let, and const in javascript. 🧵...</span>
+                      <a href="#"><h4>When to use var, let, and const in JavaScript. 🧵 👇🏻var
 
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</span>
-                      <a href="#"><h4>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
-
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...</h4></a>
+Before ES6 var was the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-19 07:15:42.752708</a></li>
 
                       </ul>
-                      <p>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+                      <p>When to use var, let, and const in JavaScript. 🧵 👇🏻<br><br>var
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk <a href="https://t.co/NPGn8YVKOL">https://t.co/NPGn8YVKOL</a><br><br>➡️ 3.5 #VueJS  Slots 
+Before ES6 var was the only way to declare JavaScript variables. 
 
-Slots are another way in Vue for a component to inject content into a child component. This does this using template code.<br><br>In terms of final output, slots perform a similar function as props in Vue getting data from a parent component to a child component. Slots are also helpful at creating reusable code.
+the scope of var is usually global. As long as a variable is declared outside a function it can be accessed in the global scope (in the whole window object)
 
-Whereas props pass data values to the component, slots can just pass direct template code.<br><br>💥 Benefits Of Using Slots 
+1/2<br><br>var variables can be redeclared and updated
 
-✅ Your child component is more reusable — you can pass it different components without worrying about a consistent format/data values<br><br>💥 Benefits Of Using Slots 
+var variables are also automatically hoisted to the top. No matter where you declare them they will always be declared at the top of the file. 
 
-✅ It’s a lot more flexible — you don’t always have to fill every value whereas with props, you’d have to worry about checking if values exist using v-if<br><br>Let us understand with the help of an example
+var should not be used anymore, let and const have replaced them. 
 
-First of all we need to declare a slot in child component and then to inject data in it through parent component. 
+2/2<br><br>let 
 
-Let  us create a parent component called MyComponent.vue <a href="https://t.co/VSeKuaTXyJ">https://t.co/VSeKuaTXyJ</a><br><br>Next, let’s setup a child component MyButton.vue component.
+let came as part of the ES6 update to give a better-scoped option to var.
 
-When, MyButton.vue renders, the &lt;slot&gt; will be replaced by Click Me! — the content from the parent. <a href="https://t.co/e0uS6M1VTa">https://t.co/e0uS6M1VTa</a><br><br>You can pass any sort of template from the parent component, it doesn’t have to be just text. It can be a Font Awesome icon, image, or even another component.<br><br>That's All for today. Hope you will found it helpful.
-Topics to be covered 
-Named Slots 
-Scoped Slots</p>
+Instead of being globally scoped, let variables are block scoped. Meaning that when declared in any {} block they are only available in that block. 
+
+1/3<br><br>let variables can be updated but not redeclared in the same scope. This makes them safer to use as redeclared variables can lead to errors and confusion. 
+
+let variables are hoisted but are not initialized so it will error if called before the declaration.
+
+2/3<br><br>Use let variables when declaring a variable that you either don't know the value of on declaration or if the value will be changing/updated at any point. 
+
+3/3<br><br>const
+
+const also came as a part of the ES6 update, but its intention was to allow for variables that would remain constant after declaration. 
+
+They are also block scoped just like let, so will only be accessible within the blocks {} they are defined in. 
+
+1/3<br><br>const variables are meant to be used for values that won't be changing, like number coefficients or static URLs. They cannot be redeclared or updated. 
+
+const variables are hoisted but are not initialized so it will error if called before the declaration.
+
+2/3<br><br>Use const when you know the value of the variable will not change after you set (declare) it. 
+
+3/3<br><br>JavaScript only has these three ways to declare basic variables. They can hold primitive types (number, string, boolean, etc) as well as other data types (objects). 
+
+Give @plasmicapp a follow if you want more JavaScript tips!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">VueJS Fundamental</a></li>
-<li><a href="#">VueJS Slots Slots</a></li>
-<li><a href="#">Slots</a></li>
-<li><a href="#">component</a></li>
-<li><a href="#">child component</a></li>
+								<li><a href="#">variables</a></li>
+<li><a href="#">var</a></li>
+<li><a href="#">const</a></li>
+<li><a href="#">var variables</a></li>
+<li><a href="#">block</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +318,7 @@ Scoped Slots</p>
       }
     </script>
 
-<!--7927485608007677651-->
+<!--6293975553900947651-->
 
   </body>
 

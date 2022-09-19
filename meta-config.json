@@ -19341,6 +19341,955 @@
                 "Guys",
                 "Review Carousel"
             ]
+        },
+        {
+            "url": "azure-web-app-v-s-app.html",
+            "desc": "Azure Web app V/S  App Service Plan\n\ud83e\uddf5Web app is nothing but an hosting space...",
+            "title": "azure web app v s app",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "App Service Plan",
+                "Azure Web app",
+                "web app service",
+                "App Service",
+                "Service Plan"
+            ]
+        },
+        {
+            "url": "python-libraries-data-engineers-should-know.html",
+            "desc": "7\ufe0f\u20e3 Python Libraries Data Engineers Should Know in 2022 \ud83c\udfaf\n\n#DataEngineering\n\nA thread \ud83e\uddf5\ud83d\udc47 https://t.co/zWTAjKDjZn1\ufe0f\u20e3 FlashText\n\n\ud83d\udccc Used...",
+            "title": "python libraries data engineers should know",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Python Libraries Data",
+                "Libraries Data Engineers",
+                "time series analysis",
+                "data visualization apps",
+                "creating data visualization"
+            ]
+        },
+        {
+            "url": "essential-linux-command-line-tips-and-tricks.html",
+            "desc": "15 Essential Linux Command Line Tips and Tricks (part 1)\ud83e\uddf5\ud83d\udc47\ud83c\udffc\n#programmer #Linux1. The !!\n\nHow many times...",
+            "title": "essential linux command line tips and tricks",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Essential Linux Command",
+                "Essential Linux",
+                "Linux Command Line",
+                "Command Line Tips",
+                "Linux Command"
+            ]
+        },
+        {
+            "url": "openscience-fan-python-wizard-we-want.html",
+            "desc": "#OpenScience fan? #Python wizard? \n\nWe want \ud83d\udc49YOU\ud83d\udc48 to contribute to a @CUAHSI -funded project developing...",
+            "title": "openscience fan python wizard we want",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "OpenScience fan",
+                "Python wizard",
+                "groundwater model portal",
+                "OpenScience",
+                "fan"
+            ]
+        },
+        {
+            "url": "hey-folks-next-up-in-my-series.html",
+            "desc": "Hey folks,\nNext up in my thread series on Git is \"Git Tags\" \ud83c\udff7\ufe0f\u2728\n\nGit Tags are...",
+            "title": "hey folks next up in my series",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Hey folks",
+                "Git",
+                "Tags",
+                "git tag",
+                "tag"
+            ]
+        },
+        {
+            "url": "how-to-not-lose-hundreds-of-hours.html",
+            "desc": "\ud83c\udf64How to not lose hundreds of hours a year\ud83e\udd56\nA Thread 5 things that will make...",
+            "title": "how to not lose hundreds of hours",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "hours a year",
+                "lose hundreds",
+                "hundreds of hours",
+                "sleep",
+                "year"
+            ]
+        },
+        {
+            "url": "learn-css-the-easy-way-with-these.html",
+            "desc": "Learn CSS the easy way with these websites \ud83d\udc47\n\nA Thread \ud83e\uddf51. Tympanus\n\nhttps://t.co/FYZih8NSu12. CSS Tricks\n\nhttps://t.co/2D97Z7iwOT https://t.co/cMT9UhOJjp3....",
+            "title": "learn css the easy way with these",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Learn CSS",
+                "Learn",
+                "CSS Tricks",
+                "CSS Battle",
+                "CSS"
+            ]
+        },
+        {
+            "url": "json.html",
+            "desc": "\u2728 JSON.stringify() in JavaScript \n\n\ud83d\udccc Data type need to be in string when sending it...",
+            "title": "json",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Data type",
+                "web server",
+                "code in thread",
+                "JavaScript object",
+                "JSON.stringify"
+            ]
+        },
+        {
+            "url": "essential-linux-command-line-tips-and-tricks.html",
+            "desc": "15 Essential Linux Command Line Tips and Tricks (part 2)\ud83e\uddf5\ud83d\udc47\ud83c\udffc\n#programmer #Linux6. Copy and Paste\n\nYou probably...",
+            "title": "essential linux command line tips and tricks",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Command Line Tips",
+                "Essential Linux Command",
+                "Linux Command Line",
+                "Tips and Tricks",
+                "Line Tips"
+            ]
+        },
+        {
+            "url": "can-autoscaling-in-heroku-really-scale.html",
+            "desc": "Can autoscaling in Heroku REALLY scale to meet the needs of your business? \n\nMany companies...",
+            "title": "can autoscaling in heroku really scale",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Heroku",
+                "scale to meet",
+                "AWS",
+                "autoscaling",
+                "dynos"
+            ]
+        },
+        {
+            "url": "the-right-wordpress-plugins-and-tools.html",
+            "desc": "The right #WordPress plugins and tools can assist you in growing your website.\n\nThere are more...",
+            "title": "the right wordpress plugins and tools",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "WordPress",
+                "plugin",
+                "plugins",
+                "website",
+                "WordPress SEO plugins"
+            ]
+        },
+        {
+            "url": "daysofcode-day-100-today-s-a-relatively.html",
+            "desc": "#100DaysOfCode Day 100\n\nToday's a relatively chill day, just focused on deploying my recent project and...",
+            "title": "daysofcode day 100 today s a relatively",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Github profile",
+                "focused on deploying",
+                "deploying my recent",
+                "projects",
+                "Github"
+            ]
+        },
+        {
+            "url": "when-i-started-to-learn-javascript.html",
+            "desc": "When I started to learn Javascript, I've used different but complementary sources  \ud83e\uddf5 \ud83d\udc47...",
+            "title": "when i started to learn javascript",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "started to learn",
+                "complementary sources",
+                "learn Javascript",
+                "Javascript",
+                "Javascript Certification"
+            ]
+        },
+        {
+            "url": "bucket4j-is-a-java-rate-limiting.html",
+            "desc": "Bucket4j is a Java rate-limiting library based on the token-bucket algorithm. Bucket4j is a thread-safe...",
+            "title": "bucket4j is a java rate limiting",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Java rate-limiting library",
+                "rate-limiting library based",
+                "Java rate-limiting",
+                "token-bucket algorithm",
+                "standalone JVM application"
+            ]
+        },
+        {
+            "url": "today-in-the-fraught-world-of-python.html",
+            "desc": "Today in the fraught world of Python packaging, this is an interesting article that misses...",
+            "title": "today in the fraught world of python",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Python",
+                "important technical details",
+                "single binary",
+                "fraught world",
+                "interesting article"
+            ]
+        },
+        {
+            "url": "bulma-css-official-website.html",
+            "desc": "\ud83d\udccc Bulma CSS -\n\nThread \ud83e\uddf5\u27a1\ufe0fOfficial Website\n\nhttps://t.co/eopmttFt3b1. Bulma CSS Tutorial\n\nhttps://t.co/NTnlFHbooC2. Bulma CSS Framework Crash Course\n\nhttps://t.co/RfjGKAQdWd3. Bulma...",
+            "title": "bulma css official website",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Bulma CSS",
+                "Bulma CSS Framework",
+                "Bulma CSS Tutorial",
+                "Learn Bulma CSS",
+                "CSS Framework Crash"
+            ]
+        },
+        {
+            "url": "google-scholar-stand-on-the-shoulders.html",
+            "desc": "Google Scholar - stand on the shoulders of giants\n\nYour ultimate guide to academic research!\na thread...",
+            "title": "google scholar stand on the shoulders",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Google Scholar",
+                "Google Scholar search",
+                "entries Google Scholar",
+                "Google",
+                "Scholar"
+            ]
+        },
+        {
+            "url": "as-promised-release-time-we-release.html",
+            "desc": "As promised: Release Time \ud83d\ude80\ud83d\ude80\n\nWe release nuxt-sidebase-parse, a library that makes data-handling in @nuxt_js 3...",
+            "title": "as promised release time we release",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Release Time",
+                "apps a breeze",
+                "makes data-handling",
+                "Release",
+                "data"
+            ]
+        },
+        {
+            "url": "cryptogame-leaderboard-101-part-1-what.html",
+            "desc": "#cryptogame {leaderboard_101}:PART 1\n\n\u2754What is a game leaderboard\u2754\n\nA THREAD \ud83e\uddf5\ud83d\udc47\n\n#blockchaingames #metaverse #p2e #play2earn #play2own #avalanche #bsc...",
+            "title": "cryptogame leaderboard 101 part 1 what",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "commonly called score",
+                "player interaction",
+                "player performance",
+                "commonly called",
+                "player"
+            ]
+        },
+        {
+            "url": "list-of-free-cyber-security-learning.html",
+            "desc": "A List of FREE Cyber security learning on Udemy\n\n#Cybersecurity #Hacking #Python #SqlInjection #dockers #Kalilinux #Owasp...",
+            "title": "list of free cyber security learning",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "FREE Cyber security",
+                "Web Hacking Tool",
+                "Security Awareness Campaigns",
+                "Security Operation Centre",
+                "Intercept Transmitted Data"
+            ]
+        },
+        {
+            "url": "ever-wondered-why-java-is-platform.html",
+            "desc": "Ever wondered why java is platform-independent \ud83e\udd13while other languages such as C, C++, and python...",
+            "title": "ever wondered why java is platform",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "java",
+                "JAVA compiler",
+                "machine native code",
+                "human-readable language",
+                "bytecode"
+            ]
+        },
+        {
+            "url": "sql-injections-it-is-very-common.html",
+            "desc": "SQL Injections a thread \ud83e\uddf5\ud83d\udea8 It is very common even today as well, to be...",
+            "title": "sql injections it is very common",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "SQL Injections",
+                "SQL injection query",
+                "SQL strategy",
+                "SQL",
+                "common even today"
+            ]
+        },
+        {
+            "url": "who-adds-features-to-javascript-google.html",
+            "desc": "Who adds features to Javascript?\n\nGoogle, Apple, Facebook etc.\n\nThere are even notes from their meetings [thread]\n\nJavascript...",
+            "title": "who adds features to javascript google",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "adds features",
+                "Javascript connects big",
+                "features to Javascript",
+                "Javascript",
+                "Javascript connects"
+            ]
+        },
+        {
+            "url": "little-while-ago-i-wrote-an-artificialintelligence.html",
+            "desc": "A little while ago I wrote an #ArtificialIntelligence-powered PDF search engine in #Python . Now...",
+            "title": "little while ago i wrote an artificialintelligence",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "ArtificialIntelligence-powered PDF search",
+                "PDF search engine",
+                "ago I wrote",
+                "DocArray to collect",
+                "ArtificialIntelligence-powered PDF"
+            ]
+        },
+        {
+            "url": "in-two-weeks-java19-will-be.html",
+            "desc": "In two weeks, #Java19 will be released with some of Java's most anticipated features: virtual...",
+            "title": "in two weeks java19 will be",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "virtual threads",
+                "virtual",
+                "supports virtual threads",
+                "threads",
+                "anticipated features"
+            ]
+        },
+        {
+            "url": "i-trained-a-markov-model-on.html",
+            "desc": "I trained a Markov model on a corpus of all of the existing Python Enhancement...",
+            "title": "i trained a markov model on",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Python Enhancement Proposals",
+                "existing Python Enhancement",
+                "Enhancement Proposals",
+                "PEP",
+                "PEP proposes"
+            ]
+        },
+        {
+            "url": "css-properties-you-need-to-know.html",
+            "desc": "CSS properties you need to know to build a website\u2728\n\n#webdev #webdevelopment #CSS \n\nThread  \ud83e\uddf5...",
+            "title": "css properties you need to know",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "build a website",
+                "CSS",
+                "property",
+                "CSS Thread",
+                "CSS properties"
+            ]
+        },
+        {
+            "url": "why-would-anybody-use-vim-or.html",
+            "desc": "\"Why would anybody use vim or emacs when there are modern IDEs around???\"\n\nGood question! To...",
+            "title": "why would anybody use vim or",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "vim",
+                "IDE",
+                "modern IDEs",
+                "Code",
+                "language-specific IDE"
+            ]
+        },
+        {
+            "url": "salutari-alephium-peers-here-s-the-dev.html",
+            "desc": "Salutari Alephium peers!\n\nHere's the dev update \ud83e\uddf5 for everyone who didn't get the chance to...",
+            "title": "salutari alephium peers here s the dev",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Salutari Alephium peers",
+                "Salutari Alephium",
+                "Explorer Backend Team",
+                "Alephium peers",
+                "Frontend Team Mobile"
+            ]
+        },
+        {
+            "url": "my-favorite-part-of-working-in-the-cloud.html",
+            "desc": "My favorite part of working \"in the cloud\" is the crescendo between \"hm, that's not...",
+            "title": "my favorite part of working in the cloud",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "month-old slack thread",
+                "slack thread explaining",
+                "favor of Klammy.",
+                "AWS LOBs",
+                "part of working"
+            ]
+        },
+        {
+            "url": "css-background-clip-property.html",
+            "desc": "CSS background-clip property \ud83e\uddf5 https://t.co/2cZVW353fX1\ufe0f\u20e3 background-clip: border-box \n\nThis is by default.\nIn this background extends behind...",
+            "title": "css background clip property",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "CSS background-clip property",
+                "CSS background-clip",
+                "background extends",
+                "background-clip property",
+                "background extends till"
+            ]
+        },
+        {
+            "url": "python-includes-more-than-200-modules.html",
+            "desc": "#Python includes more than 200 modules as a part of its standard library.\n\nToday we will...",
+            "title": "python includes more than 200 modules",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "atexit",
+                "standard library",
+                "Python",
+                "Python includes",
+                "module"
+            ]
+        },
+        {
+            "url": "what-is-flyway-db-flyway-is.html",
+            "desc": "What is Flyway DB?\nFlyway is an open-source tool, that helps you implement automated and version-based...",
+            "title": "what is flyway db flyway is",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Flyway",
+                "Baseline and Repair",
+                "SQL",
+                "Java",
+                "Quarkus"
+            ]
+        },
+        {
+            "url": "webdev-tweet100-4-ways-to-compare.html",
+            "desc": "#webdev #tweet100\n\n4 ways to compare objects in JavaScript \ud83c\udfaf\n\nA thread \ud83e\uddf5\u2705 Referential Equality\n- This provides...",
+            "title": "webdev tweet100 4 ways to compare",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Referential Equality",
+                "called Referential Equality",
+                "objects",
+                "Referential",
+                "Equality"
+            ]
+        },
+        {
+            "url": "some-of-the-most-popular-javascript.html",
+            "desc": "\u26a1Some of the most popular JavaScript tool libraries \u26a1\n\n\ud83e\uddf5 \ud83d\udc47\ud83c\udffb https://t.co/JotAsxUZxz\u26a1 Day.js\n\nThe Day.js JavaScript library...",
+            "title": "some of the most popular javascript",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "alternative to Moment.js",
+                "JavaScript",
+                "Moment.js",
+                "lightweight JavaScript API",
+                "modern API"
+            ]
+        },
+        {
+            "url": "we-always-say-take-your-business.html",
+            "desc": "We always say, \u2018take your business to the next level,\u2019 but what does that really...",
+            "title": "we always say take your business",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Microsoft Azure",
+                "implementing Microsoft Azure",
+                "THREAD",
+                "Microsoft",
+                "Azure"
+            ]
+        },
+        {
+            "url": "why-is-witnet-so-flexible-the-entire.html",
+            "desc": "Why is Witnet so flexible?\n\nThe entire network was crafted to be malleable and the oracle...",
+            "title": "why is witnet so flexible the entire",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Witnet",
+                "EVM compatible chains",
+                "network",
+                "query the network",
+                "native coin"
+            ]
+        },
+        {
+            "url": "best-css-libraries-2022-1.html",
+            "desc": "Best CSS Libraries(2022)\ud83c\udf1f\n(Thread)\ud83e\uddf5\ud83d\udc471. Animate .css\n\ud83d\udd17 https://t.co/GF6KIVAlJ32. Picnic.css\n\ud83d\udd17 https://t.co/iKGzye2fLz3. MagicAnimation\n\ud83d\udd17 https://t.co/zXuxFDA8gE4. Cirrus.css\n\ud83d\udd17 https://t.co/VQXBHxYlyY5. Halfmoon.css\n\ud83d\udd17 https://t.co/g4ZxFWodc0If you...",
+            "title": "best css libraries 2022 1",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "CSS Libraries",
+                "Libraries",
+                "CSS",
+                "Thread",
+                "Animate"
+            ]
+        },
+        {
+            "url": "javascript-variables-let-var-const-variables.html",
+            "desc": "Javascript variables\ud83d\ude80\n  Let\n   Var \n     Const\n\nThread \ud83e\uddf5Variables are...",
+            "title": "javascript variables let var const variables",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "JavaScript variable",
+                "Var Const Thread",
+                "variable",
+                "Const",
+                "Var"
+            ]
+        },
+        {
+            "url": "learn-javascript-symbol-the-complete-guide.html",
+            "desc": "Learn JavaScript Symbol \n\nThe Complete Guide:\n\nThread \ud83e\uddf5The JavaScript\u00a0ES6 \u00a0introduced a new primitive data type called\u00a0`Symbol`.\n\nif...",
+            "title": "learn javascript symbol the complete guide",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Complete Guide",
+                "data type called",
+                "primitive data type",
+                "data type",
+                "Symbol"
+            ]
+        },
+        {
+            "url": "almost-a-year-ago-i-did.html",
+            "desc": "1[Thread]Almost a year ago I did a announcement trailer for a comic story I was...",
+            "title": "almost a year ago i did",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "draw called Azure",
+                "called Azure Dawn",
+                "write and draw",
+                "draw called",
+                "style I wanted"
+            ]
+        },
+        {
+            "url": "cse-day-303-after-doing-dev.html",
+            "desc": "CSE, a thread\u2026 (Day 303)\n\nAfter doing dev (#ReactJS , #Nodejs , #webdev, #DSA) for a...",
+            "title": "cse day 303 after doing dev",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "college simultaneously",
+                "college students",
+                "simultaneously i \u2019ve",
+                "\u2019ve realised",
+                "realised how broken"
+            ]
+        },
+        {
+            "url": "as-a-specialist-who-only-recruits.html",
+            "desc": "\ud83d\udc0d As a specialist who only recruits within the Python and Django communities I am...",
+            "title": "as a specialist who only recruits",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "unique position",
+                "give insights",
+                "Python and Django",
+                "Django communities",
+                "Python"
+            ]
+        },
+        {
+            "url": "if-you-are-training-as-a-developer.html",
+            "desc": "\ud83e\udd14 If you are training as a #developer, you may wonder: Which programming language should...",
+            "title": "if you are training as a developer",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Python",
+                "JavaScript",
+                "programming language",
+                "programming",
+                "developer"
+            ]
+        },
+        {
+            "url": "underrated-non-python-python-projects-i-m.html",
+            "desc": "Underrated Non-Python Python Projects - A thread\n\nI\u2019m in the middle of a spectacular anxiety attack...",
+            "title": "underrated non python python projects i m",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Underrated Non-Python Python",
+                "spectacular anxiety attack",
+                "hear people talk",
+                "Python deep dives",
+                "Underrated Non-Python"
+            ]
+        },
+        {
+            "url": "ever-wondered-how-pathlib.html",
+            "desc": "Ever wondered how pathlib.Path() overloads the \"/\" in an operation like:\n\nPath(dirname) / filename\n\nAccording to this...",
+            "title": "ever wondered how pathlib",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Path class implements",
+                "Path class",
+                "dunder method",
+                "wondered how pathlib.Path",
+                "class implements"
+            ]
+        },
+        {
+            "url": "javascript-object-notion-json-a-meg.html",
+            "desc": "Javascript Object Notion: JSON\n\nA mega thread \ud83e\uddf5\u2708\ufe0fWhat is JSON?\n\nJSON  is a lightweight data-interchange format...",
+            "title": "javascript object notion json a meg",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Javascript Object Notion",
+                "JSON",
+                "Object Notion",
+                "mega thread",
+                "Document-oriented data stores"
+            ]
+        },
+        {
+            "url": "best-webscraping-tools-libraries-for-developers.html",
+            "desc": "\ud83e\udd13Best #webscraping tools / libraries for developers \ud83d\ude80 #python #javascript \n\n1. https://t.co/SjN7Tn681k\nBeautiful Soup is a...",
+            "title": "best webscraping tools libraries for developers",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "web",
+                "python",
+                "webscraping tools",
+                "Paid tool",
+                "HTML"
+            ]
+        },
+        {
+            "url": "vs-code-extensions-for-web-developers.html",
+            "desc": "10 VS Code Extensions for Web Developers to Boost Productivity\n\nTo install these extensions click on...",
+            "title": "vs code extensions for web developers",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Boost Productivity",
+                "Productivity To install",
+                "Code",
+                "Developers to Boost",
+                "Boost"
+            ]
+        },
+        {
+            "url": "brands-i-know-failed-miserably.html",
+            "desc": "13 brands I know failed miserably. \n\nA thread on their most OBVIOUS mistake \ud83d\ude09\n\n#WordPress #business...",
+            "title": "brands i know failed miserably",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "failed miserably",
+                "Pre-sales",
+                "support",
+                "Pre-sales support",
+                "after-sales"
+            ]
+        },
+        {
+            "url": "javascript-is-the-worst-programming-language.html",
+            "desc": "JavaScript is the worst programming language of all time. \n\nHere's the list of best programming...",
+            "title": "javascript is the worst programming language",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "worst programming language",
+                "worst programming",
+                "programming language",
+                "JavaScript",
+                "time"
+            ]
+        },
+        {
+            "url": "best-free-websites-to-learn-more.html",
+            "desc": "10 Best Free Websites To Learn More About Data Science And Machine Learning\n#DataScientist #BigData #Analytics...",
+            "title": "best free websites to learn more",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Data Science",
+                "Machine Learning",
+                "Machine Learning Mastery",
+                "Science",
+                "Data"
+            ]
+        },
+        {
+            "url": "these-5-ebooks-will-make-you.html",
+            "desc": "These 5 eBooks will make you a better JavaScript developer \u2193 \n\nOpen thread \ud83e\uddf5 \u21931....",
+            "title": "these 5 ebooks will make you",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "eBooks will make",
+                "Open thread",
+                "Front-end Web Developer",
+                "JavaScript Design Patterns",
+                "JavaScript Beginner Handbook"
+            ]
+        },
+        {
+            "url": "check-out-our-guest-speaker-at.html",
+            "desc": "Check out our guest speaker at the Wits School of Public Health weekly seminar! Prof....",
+            "title": "check out our guest speaker at",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Public Health weekly",
+                "Health weekly seminar",
+                "Wits School",
+                "School of Public",
+                "Public Health"
+            ]
+        },
+        {
+            "url": "time-series-can-be-very-tough.html",
+            "desc": "Time series can be very tough. \n\nAnd I want to help. \n\nHere's a quick thread...",
+            "title": "time series can be very tough",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Time series",
+                "time series analysis",
+                "time series workshop",
+                "series",
+                "Time"
+            ]
+        },
+        {
+            "url": "learn-ui-ux-css-javascript-react.html",
+            "desc": "Learn UI / UX, CSS, JavaScript, React, Node.Js, Express, and MongoDB for free from these...",
+            "title": "learn ui ux css javascript react",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "MDN Web Docs",
+                "Web Dev Simplified",
+                "Web Docs",
+                "MDN Web",
+                "Mega Resources Thread"
+            ]
+        },
+        {
+            "url": "undefined-and-null-are-two-dinstict.html",
+            "desc": "Undefined and Null are two dinstict data types in javascript \ud83d\udc47\n\nThread \ud83e\uddf5.. https://t.co/baElnzt1my\u2022 Undefined data...",
+            "title": "undefined and null are two dinstict",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Undefined data types",
+                "dinstict data types",
+                "data types",
+                "Undefined data",
+                "types in javascript"
+            ]
+        },
+        {
+            "url": "new-amazon-service-that-allows-what.html",
+            "desc": "A new Amazon service that allows \"What-If\" analysis - A Thread\n\n#AWS #CloudComputing #AWS2022Seamlessly create \"what-if\"...",
+            "title": "new amazon service that allows what",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Machine Learning experience.",
+                "Creating what-if analysis",
+                "powerful business tool",
+                "latest update enables",
+                "update enables conducting"
+            ]
+        },
+        {
+            "url": "attention-google-india-is-hiring-if.html",
+            "desc": "Attention\nGoogle India is hiring\n\nIf you are a software engineer focused in Back End OR Full...",
+            "title": "attention google india is hiring if",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Full Stack Development",
+                "Stack Development",
+                "Back End",
+                "End OR Full",
+                "Full Stack"
+            ]
+        },
+        {
+            "url": "woocommerce-conversion-tracking-is-essential-to-your-marketing.html",
+            "desc": "WooCommerce conversion tracking is essential to your marketing strategy to grow and improve your WooCommerce...",
+            "title": "woocommerce conversion tracking is essential to your marketing",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "WooCommerce conversion tracking",
+                "tracking WooCommerce conversion",
+                "WooCommerce conversion",
+                "marketing strategy",
+                "strategy to grow"
+            ]
+        },
+        {
+            "url": "when-to-use-var-let-and-const.html",
+            "desc": "When to use var, let, and const in JavaScript. \ud83e\uddf5 \ud83d\udc47\ud83c\udffbvar\n\nBefore ES6 var was the...",
+            "title": "when to use var let and const",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "variables",
+                "var",
+                "const",
+                "var variables",
+                "block"
+            ]
+        },
+        {
+            "url": "spent-some-time-learning-a-bit.html",
+            "desc": "Spent some time learning a bit of Bicep and geez it was awesome.\n\nHere\u2019s a low-friction...",
+            "title": "spent some time learning a bit",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Spent some time",
+                "Bicep",
+                "Azure CLI",
+                "Spent",
+                "code"
+            ]
+        },
+        {
+            "url": "ad-free-articles-that-you-should.html",
+            "desc": "11 AD-FREE Articles That You Should Not Miss in September 2022 \ud83e\uddf5\nhttps://t.co/3cJDEpOhgq\n\ud83d\udc47\n#technology #programming #git #adfreeA...",
+            "title": "ad free articles that you should",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Call for Revolt",
+                "Outdoor Advertising Ban",
+                "Clean City Law",
+                "S\u00e3o Paulo Uncovered",
+                "advertising game"
+            ]
+        },
+        {
+            "url": "if-you-re-currently-looking-for-resources.html",
+            "desc": "If you're currently looking for resources to learn SQL, look no further. I have madea...",
+            "title": "if you re currently looking for resources",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "learn SQL",
+                "playlist",
+                "SQL",
+                "resources to learn",
+                "learn"
+            ]
+        },
+        {
+            "url": "how-to-make-your-vscode-awesome.html",
+            "desc": "How to make your VSCode Awesome?\n\nA threadThemes:\n\nThere are many good themes but the following are...",
+            "title": "how to make your vscode awesome",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "VSCode Awesome",
+                "make your VSCode",
+                "Github Theme",
+                "Awesome",
+                "good themes"
+            ]
+        },
+        {
+            "url": "alabama-deathpenalty-stop-execution-execution-of-alanmiller.html",
+            "desc": "#Alabama: #deathpenalty- (Thread)\n\nStop execution execution of #AlanMiller \n\nState Opposes Lawsuit to Block Execution of Alabama...",
+            "title": "alabama deathpenalty stop execution execution of alanmiller",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "State Opposes Lawsuit",
+                "AlanMiller State Opposes",
+                "argues Alan Miller",
+                "Stop execution execution",
+                "State Opposes"
+            ]
+        },
+        {
+            "url": "we-had-an-amazing-time-connecting.html",
+            "desc": "We had an amazing time connecting with the #Angular community at #ngconf2022 last week! Thank...",
+            "title": "we had an amazing time connecting",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "amazing time connecting",
+                "Angular community",
+                "amazing time",
+                "Rangle Trivia",
+                "Salt Lake City"
+            ]
+        },
+        {
+            "url": "what-is-the-table-open-cache.html",
+            "desc": "What is the table_open_cache in MySQL?\n\n1\ufe0f\u20e3 Description\n2\ufe0f\u20e3 Usage\n3\ufe0f\u20e3 Configuration\n4\ufe0f\u20e3 Recommendations\n\nA thread \ud83e\uddf5\ud83d\udc47 https://t.co/q4UfjyR0Cw1\ufe0f\u20e3 Description\n\nThe table_open_cache...",
+            "title": "what is the table open cache",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "cache",
+                "tables",
+                "Configuration",
+                "open",
+                "table"
+            ]
+        },
+        {
+            "url": "manifestation-of-miracles-with-loa-and-sholawat.html",
+            "desc": "Manifestation of miracles with LoA and sholawat Jibril until 21 days \n\nmorning: positive affirmations, afternoon...",
+            "title": "manifestation of miracles with loa and sholawat",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "positive affirmations",
+                "sholawat Jibril",
+                "Manifestation of miracles",
+                "afternoon until sunset",
+                "night before bed"
+            ]
+        },
+        {
+            "url": "daysofcode-day-16-following-this-learn.html",
+            "desc": "#100DaysOfCode Day 16\nFollowing this \"learn basic CSS\" course by Free Code Camp: \nhttps://t.co/kOPatFyBSS \non day...",
+            "title": "daysofcode day 16 following this learn",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Free Code Camp",
+                "CSS",
+                "div",
+                "Code Camp",
+                "Free Code"
+            ]
+        },
+        {
+            "url": "things-i-wish-i-knew-before.html",
+            "desc": "4 things I wish I knew before finding my first Product Manager role\n\n1. Books teach...",
+            "title": "things i wish i knew before",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Product Management",
+                "Product Management exist",
+                "Product",
+                "Product Manager",
+                "knew before finding"
+            ]
+        },
+        {
+            "url": "only-a-few-weeks-to-the-month.html",
+            "desc": "Only a few weeks to the month of open source @hacktoberfest \ud83e\udd2f\n\nFive websites and tutorials...",
+            "title": "only a few weeks to the month",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "hacktoberfest",
+                "github",
+                "Git",
+                "open source",
+                "freeCodeCamp"
+            ]
+        },
+        {
+            "url": "useful-docker-commands-in-one-tweet.html",
+            "desc": "Useful #Docker Commands in one Tweet:\nCOMMANDS for Docker Images:\n1. Build an Image from a Dockerfile\n&gt;...",
+            "title": "useful docker commands in one tweet",
+            "date": "2022-09-19 07:15:42.752708",
+            "tags": [
+                "Docker",
+                "container",
+                "Image",
+                "Tweet",
+                "Commands"
+            ]
         }
     ]
 }

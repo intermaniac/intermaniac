@@ -5,17 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+    <meta name="description" content="Hey folks,
+Next up in my thread series on Git is "Git Tags" 🏷️✨
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...">
+Git Tags are...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</title>
+    <title>Hey folks,
+next up in my  series on git is...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +79,8 @@ A Thread 🧵🧵🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>#vuejs fundamental 3.5
- 🧵🧵🧵
-
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</h2>
+                <h2>Hey folks,
+next up in my  series on git is...</h2>
               </div>
             </div>
           </div>
@@ -106,50 +102,60 @@ A Thread 🧵🧵🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>#vuejs fundamental 3.5
- 🧵🧵🧵
+                      <span>Hey folks,
+next up in my  series on git is...</span>
+                      <a href="#"><h4>Hey folks,
+Next up in my thread series on Git is "Git Tags" 🏷️✨
 
-#vuejs #vue #100daysofcode  #webdevelopment #programming #javascript...</span>
-                      <a href="#"><h4>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
-
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk...</h4></a>
+Git Tags are...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-19 07:15:42.752708</a></li>
 
                       </ul>
-                      <p>#VueJS Fundamental 3.5
-A Thread 🧵🧵🧵
+                      <p>Hey folks,
+Next up in my thread series on Git is "Git Tags" 🏷️✨
 
-#VueJS #vue #100DaysOfCode  #webdevelopment #programming #javascript #javascript30 #coding #developers #techtalk <a href="https://t.co/NPGn8YVKOL">https://t.co/NPGn8YVKOL</a><br><br>➡️ 3.5 #VueJS  Slots 
+Git Tags are unique annotations/notes assigned to individual commits in git history. Tags help us bookmark important points in the history of the development of any codebase. <a href="https://t.co/EkCOOooVah">https://t.co/EkCOOooVah</a><br><br>If you check out any popular repo on Github, you might spot tags like this 👇
 
-Slots are another way in Vue for a component to inject content into a child component. This does this using template code.<br><br>In terms of final output, slots perform a similar function as props in Vue getting data from a parent component to a child component. Slots are also helpful at creating reusable code.
+Tags are most popularly used to mark releases of software versions.
 
-Whereas props pass data values to the component, slots can just pass direct template code.<br><br>💥 Benefits Of Using Slots 
+For e.g. v1.0.1 OR v2.0.2-beta, etc.
 
-✅ Your child component is more reusable — you can pass it different components without worrying about a consistent format/data values<br><br>💥 Benefits Of Using Slots 
+Semantic Versioning standard is usually followed to give the version numbers. <a href="https://t.co/SA4nSHoFQs">https://t.co/SA4nSHoFQs</a><br><br>Let's see how to do the following:
+-&gt; view tags
+-&gt; create tags
+-&gt; delete tags<br><br>Viewing tags in your git repo:
+-&gt; git tag
+👆 this command will list all the tags in your git repo.
+Viewing all the tags at once may not be a good idea if you have dozens of tags and you're only looking for some specific tags (like beta/experimental)
+In that case; use patterns 👇 <a href="https://t.co/cQEQH1uaUr">https://t.co/cQEQH1uaUr</a><br><br>This is how you create a new tag:
+1. Go to the commit which is to be tagged.
+2. Fire this command -&gt; git tag &lt;tagname&gt;
+Suppose I want to tag an experimental release 👇
+-&gt; git tag v2.1.4-experimental
 
-✅ It’s a lot more flexible — you don’t always have to fill every value whereas with props, you’d have to worry about checking if values exist using v-if<br><br>Let us understand with the help of an example
+You can also add a message to your tag by passing "-a" flag in command 👇 <a href="https://t.co/33LqYlgs8n">https://t.co/33LqYlgs8n</a><br><br>Deleting tags is easy:
+-&gt; git tag -d &lt;tagname&gt;
 
-First of all we need to declare a slot in child component and then to inject data in it through parent component. 
+Let's delete the experimental release that we created earlier 👇
+-&gt; git tag -d v2.1.4-experimental
 
-Let  us create a parent component called MyComponent.vue <a href="https://t.co/VSeKuaTXyJ">https://t.co/VSeKuaTXyJ</a><br><br>Next, let’s setup a child component MyButton.vue component.
-
-When, MyButton.vue renders, the &lt;slot&gt; will be replaced by Click Me! — the content from the parent. <a href="https://t.co/e0uS6M1VTa">https://t.co/e0uS6M1VTa</a><br><br>You can pass any sort of template from the parent component, it doesn’t have to be just text. It can be a Font Awesome icon, image, or even another component.<br><br>That's All for today. Hope you will found it helpful.
-Topics to be covered 
-Named Slots 
-Scoped Slots</p>
+As easy as that!<br><br>Apart from being bookmarks in git history, tags are much more powerful;
+they can be used to refer to specific commits in commands such as git diff to compare to the difference between 2 commits.<br><br>And that's a wrap! 
+Thank you so much for reading! 💟
+See you again next time with another such thread!
+Hope you found this informative!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">VueJS Fundamental</a></li>
-<li><a href="#">VueJS Slots Slots</a></li>
-<li><a href="#">Slots</a></li>
-<li><a href="#">component</a></li>
-<li><a href="#">child component</a></li>
+								<li><a href="#">Hey folks</a></li>
+<li><a href="#">Git</a></li>
+<li><a href="#">Tags</a></li>
+<li><a href="#">git tag</a></li>
+<li><a href="#">tag</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +317,7 @@ Scoped Slots</p>
       }
     </script>
 
-<!--7927485608007677651-->
+<!--3525865299614557651-->
 
   </body>
 
