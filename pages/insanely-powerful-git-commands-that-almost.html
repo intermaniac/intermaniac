@@ -5,13 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+    <meta name="description" content="7 Insanely Powerful Git Commands That Almost Nobody Knows:
 
-🧵👇1. Web...">
+🧵👇1. Choose Selected Files from Stash
+
+- Most...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>7 insanely powerful git commands that almost nobody knows:
+
+🧵👇1. choose...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +81,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>7 insanely powerful git commands that almost nobody knows:
+
+🧵👇1. choose...</h2>
               </div>
             </div>
           </div>
@@ -99,46 +105,95 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+                      <span>7 insanely powerful git commands that almost nobody knows:
 
-🧵👇1. Web...</h4></a>
+🧵👇1. choose...</span>
+                      <a href="#"><h4>7 Insanely Powerful Git Commands That Almost Nobody Knows:
+
+🧵👇1. Choose Selected Files from Stash
+
+- Most...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-20 07:15:43.144498</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+                      <p>7 Insanely Powerful Git Commands That Almost Nobody Knows:
 
-🧵👇<br><br>1. Web Developer at @TheQuillBot.
+🧵👇<br><br>1. Choose Selected Files from Stash
 
-A remote opportunity at a Chicago-based Sierra Ventures-backed, fast-growing startup that received Seed funding in 2020.
+- Most of the time, we stash a group of files and apply the whole stash together what if you only need selected files from the stash
 
-Check out the job at: <a href="https://t.co/bDBcVl2XoY">https://t.co/bDBcVl2XoY</a><br><br>2. eCommerce Developer at @molekuleair.
+- Use the below command to achieve this
 
-A remote opportunity at a San Francisco-based Sand Hill Angels-backed, fast-growing startup that has recently received an unknown round of funding after a Series-C in 2020.
+"git checkout &lt;stash_id&gt; -- &lt;file_path&gt;"
 
-Check out the job at: <a href="https://t.co/AIE8TuSYPu">https://t.co/AIE8TuSYPu</a><br><br>3. Software Development Engineer - Web (React js) at 
-@getmyparking.
+Eg: <a href="https://t.co/urgvjuaXtS">https://t.co/urgvjuaXtS</a><br><br>2. Commit Selected Portion of File
 
-A remote opportunity at a Bengaluru-based IvyCap Ventures-backed, fast-growing startup that received the latest round of funding in 2021.
+- To Stage only selected portion of a file (instead of whole file) use below command
 
-Check out the job at: <a href="https://t.co/FIMFrehhDu">https://t.co/FIMFrehhDu</a><br><br>4. Integration Software Engineer (Javascript) at 
-@fingerprint.
+"git add -p"
 
-A remote opportunity at a San Francisco-based Trinity Capital-backed, fast-growing startup that received Debt financing funding in 2016.
+- This will open an interactive editor and let you pick which change you want to stage, once your changes are staged you can commit it.
 
-Check out the job at: <a href="https://t.co/j1PvxFHYJe">https://t.co/j1PvxFHYJe</a></p>
+Eg: <a href="https://t.co/OnI6fHMOj7">https://t.co/OnI6fHMOj7</a><br><br>3. New Way to Revert Local Changes
+
+- Normally we use git checkout or reset command to revert local changes, it could be confusing as these commands can be used in various other use cases
+
+- Instead, use restore which is specially made for this:
+
+"git restore &lt;file-name&gt;"
+
+Eg: <a href="https://t.co/Ai2eqRflef">https://t.co/Ai2eqRflef</a><br><br>4. View All Staged Changes
+
+- The regular "git diff" command only shows unstaged changes difference
+
+- Add the below argument to the diff command to see all staged changes
+
+"git diff --staged"
+
+Eg: <a href="https://t.co/Bibw268DCJ">https://t.co/Bibw268DCJ</a><br><br>5. Switch to previously active branch in no time
+
+- Use either switch (in the newer git version) to switch to the previously active git branch
+"git switch -"
+
+- Or use the checkout command (for older git)
+"git checkout -"
+
+Eg: <a href="https://t.co/k8CgT68TOV">https://t.co/k8CgT68TOV</a><br><br>6. Smart search inside git log
+
+- Use different arguments in the git log command to perform a powerful search. i.e. viewing logs with particular commit message, viewing logs with specific file content changes, etc.
+
+Eg: <a href="https://t.co/Y1ERhjZGrL">https://t.co/Y1ERhjZGrL</a><br><br>7. Direct commit in one go
+
+- Yes, there's a shortcut where you don't have to separately stage your files and then commit.
+
+- Use the below command to stage and commit all your changes in one go:
+"git commit -a -m"
+
+Eg: <a href="https://t.co/xymcaDhL8k">https://t.co/xymcaDhL8k</a><br><br>Thanks for staying till the end!
+
+Before you go, do you know? 
+From next week I am starting to write on LinkedIn as well.
+
+I'll be sharing some exclusive content there, which I am never going to share here.
+
+Make sure to follow me there:
+<a href="https://t.co/5zsySZMwlj">https://t.co/5zsySZMwlj</a><br><br>Namaste, I'm Vikas!
+
+Every Mon, Wed &amp; Friday - I tweet a thread on Backend Development. Follow me @vikasrajputin to read all my future threads.
+
+Like and RT the first tweet below to support my work. <a href="https://t.co/1ZCp246Bdr">https://t.co/1ZCp246Bdr</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Chicago-based Sierra Ventures-backed</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">featuring JavaScript jobs</a></li>
+								<li><a href="#">Insanely Powerful Git</a></li>
+<li><a href="#">Insanely Powerful</a></li>
+<li><a href="#">Git</a></li>
+<li><a href="#">Selected Portion</a></li>
+<li><a href="#">command</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -300,7 +355,7 @@ Check out the job at: <a href="https://t.co/j1PvxFHYJe">https://t.co/j1PvxFHYJe<
       }
     </script>
 
-<!--3931969874724197651-->
+<!--6790192877339408651-->
 
   </body>
 

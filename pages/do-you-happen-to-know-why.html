@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
-
-🧵👇1. Web...">
+    <meta name="description" content="Do you happen to know why 8000 is the limit you can use for VARCHAR...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Do you happen to know why 8000 is the limit...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Do you happen to know why 8000 is the limit...</h2>
               </div>
             </div>
           </div>
@@ -99,46 +97,36 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
-
-🧵👇1. Web...</h4></a>
+                      <span>Do you happen to know why 8000 is the limit...</span>
+                      <a href="#"><h4>Do you happen to know why 8000 is the limit you can use for VARCHAR...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-20 07:15:43.144498</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+                      <p>Do you happen to know why 8000 is the limit you can use for VARCHAR and other columns in SQL Server?
 
-🧵👇<br><br>1. Web Developer at @TheQuillBot.
+It's because your row has to fit into a single page (8KB)!
 
-A remote opportunity at a Chicago-based Sierra Ventures-backed, fast-growing startup that received Seed funding in 2020.
+Except that ... you can store more ... 🧵 👇
 
-Check out the job at: <a href="https://t.co/bDBcVl2XoY">https://t.co/bDBcVl2XoY</a><br><br>2. eCommerce Developer at @molekuleair.
+#bitesizedengineering #sqlserver #azuresql <a href="https://t.co/Wg48HLCClU">https://t.co/Wg48HLCClU</a><br><br>It's remarkably simple :) There are THREE types of Data Pages.
 
-A remote opportunity at a San Francisco-based Sand Hill Angels-backed, fast-growing startup that has recently received an unknown round of funding after a Series-C in 2020.
+The default one which imposes the initial 8KB limit is the IN_ROW data. It's really - a row. A single row. That has to fit into a single page. And that was a hard limit up until 2005 or something I believe.<br><br>But people complained. And SQL Server heard it. So they introduced an option to go over 8KB if needed by OVERFLOWING your data. And that's what ROW_OVERFLOW Data pages are!<br><br>If your page data is about to spill over 8KBs, SQL Server will allocate a NEW page and store your Overflow data there, while preserving the pointer inside IN_ROW page. Pretty simple, really!<br><br>But there's a limitation - this is valid for variable-lengthed columns only (try adding two CHAR(8000) columns and see what happens) and those columns STILL have to fit into a page.<br><br>That's where LOB comes into a place, allowing you to store up to 2 gigs of data!
 
-Check out the job at: <a href="https://t.co/AIE8TuSYPu">https://t.co/AIE8TuSYPu</a><br><br>3. Software Development Engineer - Web (React js) at 
-@getmyparking.
+LOBs are nothing more than taking your huge chunk of data, splitting it over number of 8KB Pages, and chaining them together. Great for huge storage but awful for performance!<br><br>And there you have it. Hope it makes it more clear now?
 
-A remote opportunity at a Bengaluru-based IvyCap Ventures-backed, fast-growing startup that received the latest round of funding in 2021.
-
-Check out the job at: <a href="https://t.co/FIMFrehhDu">https://t.co/FIMFrehhDu</a><br><br>4. Integration Software Engineer (Javascript) at 
-@fingerprint.
-
-A remote opportunity at a San Francisco-based Trinity Capital-backed, fast-growing startup that received Debt financing funding in 2016.
-
-Check out the job at: <a href="https://t.co/j1PvxFHYJe">https://t.co/j1PvxFHYJe</a></p>
+P.S. As usual, feel free to check past articles by clicking on #bitesizedengineering hashtag.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Chicago-based Sierra Ventures-backed</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">featuring JavaScript jobs</a></li>
+								<li><a href="#">SQL Server</a></li>
+<li><a href="#">Data</a></li>
+<li><a href="#">row</a></li>
+<li><a href="#">VARCHAR</a></li>
+<li><a href="#">page</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -300,7 +288,7 @@ Check out the job at: <a href="https://t.co/j1PvxFHYJe">https://t.co/j1PvxFHYJe<
       }
     </script>
 
-<!--3931969874724197651-->
+<!--9486400033490518651-->
 
   </body>
 

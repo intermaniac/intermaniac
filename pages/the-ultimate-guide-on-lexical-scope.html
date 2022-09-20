@@ -5,13 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+    <meta name="description" content="📢 The Ultimate Guide On "Lexical Scope" In JavaScript
 
-🧵👇1. Web...">
+A Thread 🧵 https://t.co/FEgEWZYfET🚩 Before learning "lexical...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>📢 the ultimate guide on "lexical scope" in javascript
+
+ 🧵...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>📢 the ultimate guide on "lexical scope" in javascript
+
+ 🧵...</h2>
               </div>
             </div>
           </div>
@@ -99,46 +103,92 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+                      <span>📢 the ultimate guide on "lexical scope" in javascript
 
-🧵👇1. Web...</h4></a>
+ 🧵...</span>
+                      <a href="#"><h4>📢 The Ultimate Guide On "Lexical Scope" In JavaScript
+
+A Thread 🧵 https://t.co/FEgEWZYfET🚩 Before learning "lexical...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-20 07:15:43.144498</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring JavaScript jobs.
+                      <p>📢 The Ultimate Guide On "Lexical Scope" In JavaScript
 
-🧵👇<br><br>1. Web Developer at @TheQuillBot.
+A Thread 🧵 <a href="https://t.co/FEgEWZYfET">https://t.co/FEgEWZYfET</a><br><br>🚩 Before learning "lexical scope" you must learn about JavaScript's scope first.
 
-A remote opportunity at a Chicago-based Sierra Ventures-backed, fast-growing startup that received Seed funding in 2020.
+Learn it from this thread
+⬇️ <a href="https://t.co/ULWJC67hpb">https://t.co/ULWJC67hpb</a><br><br>💡Understand Lexical scope with an analogy
 
-Check out the job at: <a href="https://t.co/bDBcVl2XoY">https://t.co/bDBcVl2XoY</a><br><br>2. eCommerce Developer at @molekuleair.
+-We are aware that our DNA is transmitted through our forefathers.
 
-A remote opportunity at a San Francisco-based Sand Hill Angels-backed, fast-growing startup that has recently received an unknown round of funding after a Series-C in 2020.
+-Great-grandfather to Grandfather
+-Grandfather to Father
+-Father to son.
 
-Check out the job at: <a href="https://t.co/AIE8TuSYPu">https://t.co/AIE8TuSYPu</a><br><br>3. Software Development Engineer - Web (React js) at 
-@getmyparking.
+💡 So, indirectly SON has the DNA of all their parents(Great-grandfather, Grandfather, Father) <a href="https://t.co/LLFiFPwZSh">https://t.co/LLFiFPwZSh</a><br><br>- Son is "lexically" associated with father.
 
-A remote opportunity at a Bengaluru-based IvyCap Ventures-backed, fast-growing startup that received the latest round of funding in 2021.
+- Father is "lexically" associated with Grandfather.
 
-Check out the job at: <a href="https://t.co/FIMFrehhDu">https://t.co/FIMFrehhDu</a><br><br>4. Integration Software Engineer (Javascript) at 
-@fingerprint.
+- Grandfather is "lexically" associated with Great-grandfather.<br><br>🍭 Lexical Scope:
 
-A remote opportunity at a San Francisco-based Trinity Capital-backed, fast-growing startup that received Debt financing funding in 2016.
+💡 Similarly:
 
-Check out the job at: <a href="https://t.co/j1PvxFHYJe">https://t.co/j1PvxFHYJe</a></p>
+- A function that is lexically associated with another function, can access the scope of the parent function.
+
+- In other words, child function(Inner fun) can get access to their parent functions variable.
+
+🚩 BUT vice-versa is not true!!!!<br><br>- The parent function can't get access to its child function(Inner function) variables.
+
+- Or, the inner function's variables are inaccessible to the parent function.<br><br>🍭 Eg 1:
+
+- I've created 2 variables called "global" but their scope is different.
+
+- var global = 69; -&gt; Global scope
+- var global = 6969; -&gt; Function Scope
+
+- The "lexical scope" of the test( ) function is the global scope which means it can get access to the global variable.<br><br>- If we run this function then it tries to find the "global" variable in the local scope first.
+
+- JavaScript found a variable called "global" in the local scope, so the output will be 6969.
+
+- If it is not found, then the JS engine tries to look up its lexical(parent) scope. <a href="https://t.co/D7d2HifV5h">https://t.co/D7d2HifV5h</a><br><br>🍭 Eg 2:
+
+- In this example, I've created 4 functions that are a(), b(), c(), and d(), and one variable that is "val" has global scope.
+
+- Inside the d() function call the value of "val" variable.<br><br>💡 JS engine lookup:
+
+1st - Inside the d() function(Locally)
+
+2nd - If not found inside the d() function then the lexical scope of d() function that is c() function.
+
+3rd - If not found inside the c() function then the lexical scope of c() function that is b() function.<br><br>And so on...
+
+- The lexical scope of a()  function is the global scope.
+
+🍭 This type of behavior for looking at variables are known as "variable lookup" in JavaScipt. <a href="https://t.co/RbeZSur8UK">https://t.co/RbeZSur8UK</a><br><br>That's all for now, we will meet in the next thread😍
+
+🔔 Follow Me @ATechAjay
+ For:
+
+🌐 Web Development
+✨ JavaScript
+📝 Writing Skill
+🔥 Motivation
+💹 Growth
+⛔ But Not For Only Resources &amp; Shitpost 😁
+
+Thank you so much for staying to the end of this thread💚</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Chicago-based Sierra Ventures-backed</a></li>
-<li><a href="#">remote opportunity</a></li>
-<li><a href="#">featuring JavaScript jobs</a></li>
+								<li><a href="#">Ultimate Guide</a></li>
+<li><a href="#">Lexical Scope</a></li>
+<li><a href="#">Scope</a></li>
+<li><a href="#">function</a></li>
+<li><a href="#">Understand Lexical scope</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -300,7 +350,7 @@ Check out the job at: <a href="https://t.co/j1PvxFHYJe">https://t.co/j1PvxFHYJe<
       }
     </script>
 
-<!--3931969874724197651-->
+<!--5490985183691187651-->
 
   </body>
 
