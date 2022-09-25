@@ -5,13 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="When it comes to Time Series, colleges and universities have it all wrong.
+    <meta name="description" content="Tiered Administration is among the strongest security controls that exist.
 
-A time series...">
+But the vast majority of organizations...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>When it comes to time series, colleges and universities have...</title>
+    <title>Tiered administration is among the strongest security controls that exist.
+
+but...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +79,9 @@ A time series...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>When it comes to time series, colleges and universities have...</h2>
+                <h2>Tiered administration is among the strongest security controls that exist.
+
+but...</h2>
               </div>
             </div>
           </div>
@@ -99,68 +103,56 @@ A time series...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>When it comes to time series, colleges and universities have...</span>
-                      <a href="#"><h4>When it comes to Time Series, colleges and universities have it all wrong.
+                      <span>Tiered administration is among the strongest security controls that exist.
 
-A time series...</h4></a>
+but...</span>
+                      <a href="#"><h4>Tiered Administration is among the strongest security controls that exist.
+
+But the vast majority of organizations...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-25 07:15:35.430938</a></li>
 
                       </ul>
-                      <p>When it comes to Time Series, colleges and universities have it all wrong.
+                      <p>Tiered Administration is among the strongest security controls that exist.
 
-A time series thread 🧵
+But the vast majority of organizations do not use it.
 
-#rstats #excel #python #timeseries <a href="https://t.co/5YxQ5Gjblj">https://t.co/5YxQ5Gjblj</a><br><br>Universities are stuck in the past, teaching ARIMA. 
+Here is how you can get started using Tiered Administration TODAY in your #Azure environments: 🧵 <a href="https://t.co/POc68KYONq">https://t.co/POc68KYONq</a><br><br>First, understand the problem we are trying to solve with Tiered Administration:
 
-But the cold reality is that ARIMA is NOT winning time series competitions &amp; ARIMA is NOT helping companies solve BIG forecasting problems.<br><br>To be frank, ARIMA is too slow.
+Tiered Administration protects your most privileged assets from compromise in the event that less privileged assets are compromised.
 
-When you use ARIMA, you fall into a trap. You think, hey, this is what they're teaching me... 
+It's the wombo combo of least privilege and defense in depth.<br><br>Do Tiered Administration effectively and you DRAMATICALLY reduce risks posed by ransomware actors, insider threats, etc.
 
-It must be good, right?<br><br>WRONG!
+Most efforts get stuck in the very first step: identifying which assets go into which tiers.
 
-You end up with commodity performance, which won't help you stand out in your career.<br><br>So, I'd love to help you.
+Here's how you do this:<br><br>You need to first understand what your most privileged assets are. These will comprise your "Tier Zero". These assets control *EVERYTHING*, including *EACH OTHER*.
 
-I spent 1 year researching time series...
+For #Azure, you should follow this logic: <a href="https://t.co/rva8I7Qlut">https://t.co/rva8I7Qlut</a><br><br>Some of this is obvious: Global Admins are obviously Tier Zero.
 
-And I lost hope 3 times...
+Some of this is not as obvious. This blog post dives into why those two particular MS Graph app roles grant Tier Zero privileges: <a href="https://t.co/MpPoqrgbho">https://t.co/MpPoqrgbho</a><br><br>What's even less obvious is the final question in that logic: "Does it control or contain something that IS Tier Zero?"
 
-And then I wrote 7 R packages to help...<br><br>Now I want to show them off to the world AND help you in the process.
+Let's talk about control:
 
-I put together a time series workshop that's free to attend.
+In this setup, a Virtual Machine (VM) has a managed identity assignment to a Service Principal (SP) with a T0 MS Graph app role: <a href="https://t.co/quhuBcDo1G">https://t.co/quhuBcDo1G</a><br><br>That means SP A is Tier Zero, and so is "Virtual Machine 001" (here's why: <a href="https://t.co/T9qAYKABZa)">https://t.co/T9qAYKABZa)</a>
 
-Here's what you will learn:<br><br>1. What I learned from researching the winning solutions of 4 elite time series competitions
+But because SP B controls the VM, SP B must ALSO be considered Tier Zero, unless you revoke SP B's control over the VM. <a href="https://t.co/LHQJ5PC05m">https://t.co/LHQJ5PC05m</a><br><br>Now let's talk about hierarchal containment. In Azure, permissions *always* trickle down to all child objects. Control a parent object and you control all of its children.
 
-This was eye opening. 
+The AzureAD Tenant contains *all* objects, so it is obviously a Tier Zero asset itself: <a href="https://t.co/27aUTMQ5dg">https://t.co/27aUTMQ5dg</a><br><br>But because the VM is Tier Zero, *all* of its parent objects must also be considered Tier Zero as well:
 
-Completely the OPPOSITE of what is currently being taught in colleges &amp; universities.<br><br>2. Simple changes in my forecasts that made my company 5X more revenue
+The resource group, subscription, and management group(s) above the VM *must* be considered Tier Zero: <a href="https://t.co/1Xf79Mazwd">https://t.co/1Xf79Mazwd</a><br><br>Need help? This script will help you easily identify Tier Zero service principals by their AzureAD and MS Graph App Role assignments: <a href="https://t.co/zK4ki4EROJ">https://t.co/zK4ki4EROJ</a><br><br>Want to know more? Next week I'm speaking at @quest's #TEC2022 on Managed Identity attack paths. 
 
-Small tweaks. Big savings.<br><br>3. Which tools have helped me do large scale time series analysis for companies like Walmart &amp; MRM McCann
-
-There's 6 tools I'll share.<br><br>4. How I reverse engineered Kaggle solutions to increase my company's profit to $15,000,000 in under 1 year
-
-This is quite a story.<br><br>And, as a BONUS, I'm going to be giving away one of my most prized possessions.
-
-It's my 3-page #TimeSeries #Forecasting #CheatSheet.
-
-Anyone can use it to improve their forecasts. 
-
-My free gift to you.<br><br>What's Your Next Step?
-
-Just join my free time series workshop.
-
-Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a href="https://t.co/n94u3kJksx">https://t.co/n94u3kJksx</a></p>
+I'll publish more details and free tooling you can use to manage those attack paths: <a href="https://t.co/zz5yi2Nct9">https://t.co/zz5yi2Nct9</a> <a href="https://t.co/XejXFW7ci2">https://t.co/XejXFW7ci2</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Time Series</a></li>
-<li><a href="#">ARIMA</a></li>
-<li><a href="#">time series competitions</a></li>
-<li><a href="#">Series</a></li>
-<li><a href="#">time series workshop</a></li>
+								<li><a href="#">Tiered Administration</a></li>
+<li><a href="#">Tiered Administration TODAY</a></li>
+<li><a href="#">Tier</a></li>
+<li><a href="#">Tiered Administration protects</a></li>
+<li><a href="#">Tiered Administration effectively</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -322,7 +314,7 @@ Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a 
       }
     </script>
 
-<!--1291631882873789651-->
+<!--2088645360391389651-->
 
   </body>
 

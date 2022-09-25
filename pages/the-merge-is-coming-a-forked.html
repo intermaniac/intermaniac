@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="When it comes to Time Series, colleges and universities have it all wrong.
-
-A time series...">
+    <meta name="description" content="The Merge is coming, a forked PoW Ethereum chain is possible, and its chainId set...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>When it comes to time series, colleges and universities have...</title>
+    <title>The merge is coming, a forked pow ethereum chain is...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ A time series...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>When it comes to time series, colleges and universities have...</h2>
+                <h2>The merge is coming, a forked pow ethereum chain is...</h2>
               </div>
             </div>
           </div>
@@ -99,68 +97,78 @@ A time series...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>When it comes to time series, colleges and universities have...</span>
-                      <a href="#"><h4>When it comes to Time Series, colleges and universities have it all wrong.
-
-A time series...</h4></a>
+                      <span>The merge is coming, a forked pow ethereum chain is...</span>
+                      <a href="#"><h4>The Merge is coming, a forked PoW Ethereum chain is possible, and its chainId set...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-25 07:15:35.430938</a></li>
 
                       </ul>
-                      <p>When it comes to Time Series, colleges and universities have it all wrong.
+                      <p>The Merge is coming, a forked PoW Ethereum chain is possible, and its chainId set at 1 poses a threat due to replay attacks.
 
-A time series thread 🧵
+On the eve of this situation, the Protocol Engineering Core Unit outlined the implications of this risk for the Maker Oracle Protocol.
 
-#rstats #excel #python #timeseries <a href="https://t.co/5YxQ5Gjblj">https://t.co/5YxQ5Gjblj</a><br><br>Universities are stuck in the past, teaching ARIMA. 
+🧵↓
 
-But the cold reality is that ARIMA is NOT winning time series competitions &amp; ARIMA is NOT helping companies solve BIG forecasting problems.<br><br>To be frank, ARIMA is too slow.
+1/<br><br>Once the Merge is complete, the Maker Protocol will continue to work as it does today on the Ethereum Proof of Stake (PoS) chain.
 
-When you use ARIMA, you fall into a trap. You think, hey, this is what they're teaching me... 
+As a user, you don’t have to take any specific action to keep your Maker Vault up and running or to hold your Dai securely on the PoS chain.
 
-It must be good, right?<br><br>WRONG!
+2/<br><br>But, what could happen on the forked Proof of Work (PoW) chain?
 
-You end up with commodity performance, which won't help you stand out in your career.<br><br>So, I'd love to help you.
+First of all, we need to define what a replay attack is.
 
-I spent 1 year researching time series...
+A replay attack is taking a transaction from one network and using it on another network.
 
-And I lost hope 3 times...
+3/<br><br>If the forked PoW Ethereum's chainId remains at 1 and does not change, replay attacks are possible.
 
-And then I wrote 7 R packages to help...<br><br>Now I want to show them off to the world AND help you in the process.
+Replay attacks mean that any transaction broadcast to the forked PoW network can be replayed on the PoS network and vice versa if both networks share the same chainId.
 
-I put together a time series workshop that's free to attend.
+4/<br><br>When it comes to the Maker Oracles system, the main issue is within the median.sol contract.
 
-Here's what you will learn:<br><br>1. What I learned from researching the winning solutions of 4 elite time series competitions
+In short, the median is the smart contract that provides Maker's trusted reference price.
 
-This was eye opening. 
+↓
 
-Completely the OPPOSITE of what is currently being taught in colleges &amp; universities.<br><br>2. Simple changes in my forecasts that made my company 5X more revenue
+<a href="https://t.co/sw3vHZZX72">https://t.co/sw3vHZZX72</a>
 
-Small tweaks. Big savings.<br><br>3. Which tools have helped me do large scale time series analysis for companies like Walmart &amp; MRM McCann
+5/<br><br>It works by maintaining a whitelist of price feed contracts that are authorized to post price updates. 
 
-There's 6 tools I'll share.<br><br>4. How I reverse engineered Kaggle solutions to increase my company's profit to $15,000,000 in under 1 year
+Every time a new list of prices is received, the median of these is computed and used to update the stored value in the Maker Protocol.
 
-This is quite a story.<br><br>And, as a BONUS, I'm going to be giving away one of my most prized possessions.
+6/<br><br>The median.sol contract does not have any verification of chainId value, meaning that collateral prices on the PoS chain can be used via replay attacks to “force” the Maker Protocol system to “work” on the forked PoW chain.
 
-It's my 3-page #TimeSeries #Forecasting #CheatSheet.
+7/<br><br>Forcing oracle values coming from the PoS chain into the PoW chain would likely overvalue the underlying collateral of the Maker Protocol on the PoW chain, meaning that Dai on PoW would be backed by less value in reality than the system would think.
 
-Anyone can use it to improve their forecasts. 
+8/<br><br>It should be noted that, in this case, undercollateralized Dai on the forked PoW Ethereum network is *not* expected to impact Dai on PoS Ethereum.
 
-My free gift to you.<br><br>What's Your Next Step?
+9/<br><br>This thread is a summary of a document called “Maker Protocol, the Merge and Future Forks of Ethereum," published by the Protocol Engineering Core Unit.
 
-Just join my free time series workshop.
+We encourage you to read the full post here → <a href="https://t.co/UDWgqz6yFA">https://t.co/UDWgqz6yFA</a>
 
-Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a href="https://t.co/n94u3kJksx">https://t.co/n94u3kJksx</a></p>
+10/<br><br>Additionally, we have published an earlier summary explaining other potential risks of replay attacks on the Maker Protocol and DeFi ecosystem.
+
+↓
+
+<a href="https://t.co/wRC89BjXyk">https://t.co/wRC89BjXyk</a>
+
+11/<br><br>If you are concerned about what will happen to your Maker Vault position or Dai held in your wallet once the Merge is complete, we encourage you to read the following thread.
+
+↓
+
+<a href="https://t.co/QuwlMbWyoo">https://t.co/QuwlMbWyoo</a>
+
+12/</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Time Series</a></li>
-<li><a href="#">ARIMA</a></li>
-<li><a href="#">time series competitions</a></li>
-<li><a href="#">Series</a></li>
-<li><a href="#">time series workshop</a></li>
+								<li><a href="#">Maker Protocol</a></li>
+<li><a href="#">forked PoW Ethereum</a></li>
+<li><a href="#">Maker</a></li>
+<li><a href="#">Maker Oracle Protocol</a></li>
+<li><a href="#">Protocol Engineering Core</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -322,7 +330,7 @@ Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a 
       }
     </script>
 
-<!--1291631882873789651-->
+<!--5753758301089579651-->
 
   </body>
 

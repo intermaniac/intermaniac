@@ -5,13 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="When it comes to Time Series, colleges and universities have it all wrong.
+    <meta name="description" content="#JavaTuesdayThread
 
-A time series...">
+A month ago I thought that building #Java libraries out of C++ code using Project...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>When it comes to time series, colleges and universities have...</title>
+    <title>#javatuesday
+
+a month ago i thought that building #java libraries out...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +79,9 @@ A time series...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>When it comes to time series, colleges and universities have...</h2>
+                <h2>#javatuesday
+
+a month ago i thought that building #java libraries out...</h2>
               </div>
             </div>
           </div>
@@ -99,68 +103,34 @@ A time series...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>When it comes to time series, colleges and universities have...</span>
-                      <a href="#"><h4>When it comes to Time Series, colleges and universities have it all wrong.
+                      <span>#javatuesday
 
-A time series...</h4></a>
+a month ago i thought that building #java libraries out...</span>
+                      <a href="#"><h4>#JavaTuesdayThread
+
+A month ago I thought that building #Java libraries out of C++ code using Project...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-25 07:15:35.430938</a></li>
 
                       </ul>
-                      <p>When it comes to Time Series, colleges and universities have it all wrong.
+                      <p>#JavaTuesdayThread
 
-A time series thread 🧵
+A month ago I thought that building #Java libraries out of C++ code using Project Panama is all about two things:
+1. Create a C struct that represents the C++ class.
+2. Creating proxy methods against that C struct.
 
-#rstats #excel #python #timeseries <a href="https://t.co/5YxQ5Gjblj">https://t.co/5YxQ5Gjblj</a><br><br>Universities are stuck in the past, teaching ARIMA. 
-
-But the cold reality is that ARIMA is NOT winning time series competitions &amp; ARIMA is NOT helping companies solve BIG forecasting problems.<br><br>To be frank, ARIMA is too slow.
-
-When you use ARIMA, you fall into a trap. You think, hey, this is what they're teaching me... 
-
-It must be good, right?<br><br>WRONG!
-
-You end up with commodity performance, which won't help you stand out in your career.<br><br>So, I'd love to help you.
-
-I spent 1 year researching time series...
-
-And I lost hope 3 times...
-
-And then I wrote 7 R packages to help...<br><br>Now I want to show them off to the world AND help you in the process.
-
-I put together a time series workshop that's free to attend.
-
-Here's what you will learn:<br><br>1. What I learned from researching the winning solutions of 4 elite time series competitions
-
-This was eye opening. 
-
-Completely the OPPOSITE of what is currently being taught in colleges &amp; universities.<br><br>2. Simple changes in my forecasts that made my company 5X more revenue
-
-Small tweaks. Big savings.<br><br>3. Which tools have helped me do large scale time series analysis for companies like Walmart &amp; MRM McCann
-
-There's 6 tools I'll share.<br><br>4. How I reverse engineered Kaggle solutions to increase my company's profit to $15,000,000 in under 1 year
-
-This is quite a story.<br><br>And, as a BONUS, I'm going to be giving away one of my most prized possessions.
-
-It's my 3-page #TimeSeries #Forecasting #CheatSheet.
-
-Anyone can use it to improve their forecasts. 
-
-My free gift to you.<br><br>What's Your Next Step?
-
-Just join my free time series workshop.
-
-Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a href="https://t.co/n94u3kJksx">https://t.co/n94u3kJksx</a></p>
+How wrong I was [thread]…<br><br>Most modern C++ libs were developed in C in the past, which means they had structs, functions, globals, etc. But obviously, the only way to evolve was to move to C++ which is much better in terms of encapsulation, templating, etc.<br><br>But now, in JDK 19 we’ll get Foreign Function &amp; Memory API in their first preview - an implementation of the ABI. The only downside it can work with C native code which good thing at the very beginning.<br><br>Some time ago, I did a few projects whose purpose was to degrade C++ API to C API in order to integrate C code into CPython. And now, the same approach is possible for Java.<br><br>So, no matter what kind of C++ variable you’re working with, just keep in mind that it’s only a memory segment or a pointer. The fact that it has a type is secondary. Let me explain it.<br><br>C++ variable type matters only to you as a developer (and a compiler) but not to the runtime. For instance, if you have a C++ vector instance, then nothing stopping you from creating an un-associated pointer to that vector that can be processed within C code or through the ABI <a href="https://t.co/74UGWmlKvi">https://t.co/74UGWmlKvi</a><br><br>A newly constructed un-associated pointer is a pure piece of memory that can be consumed by any higher-level system like JVM. So, if you ever wanted to have the functionality of C++ vector but in Java, you surely can get it within a few lines of code: <a href="https://t.co/vTxgkGTka6">https://t.co/vTxgkGTka6</a><br><br>Such an approach makes interaction with the C++ libraries as smooth as possible. So, one day after the JDK 19 release you already have an answer to a question about how to work with something beyond C because it’s old and ugly.<br><br>Even more, a few other alternatives to an-associated pointers are far more work. The first one - is C++ to WebAssembly to C to Java. I don’t even want to dig into that, it just doesn’t work nor will it be a conscious developer choice.<br><br>the alternative is better but bound to the trade-offs - degrade C++ API to C. I tried a few times. It didn’t work well, because it’s not just turning a C++ class into a C struct to make it work in Java, it’s a choice to degrade some fine-grained APIs to nothing.<br><br>The only common ground among these approaches is a need to create an intermediate entity or a proxy that knows how to restore the original type and C function for each of the C++ class methods, which is inevitable C++ native symbols unavailable through C ABI. <a href="https://t.co/HpxVcbitN5">https://t.co/HpxVcbitN5</a><br><br>Anyways, we’re one week before the JDK 19 release (imagine that!) and still have a lot to talk about. Project Panama is like a Klondike, it’s full of features and it’s really nice technology to work with. #Java #OpenJDK #JDK_19</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Time Series</a></li>
-<li><a href="#">ARIMA</a></li>
-<li><a href="#">time series competitions</a></li>
-<li><a href="#">Series</a></li>
-<li><a href="#">time series workshop</a></li>
+								<li><a href="#">JavaTuesdayThread A month</a></li>
+<li><a href="#">thought that building</a></li>
+<li><a href="#">Java</a></li>
+<li><a href="#">work</a></li>
+<li><a href="#">Project Panama</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -322,7 +292,7 @@ Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a 
       }
     </script>
 
-<!--1291631882873789651-->
+<!--5661844138312679651-->
 
   </body>
 

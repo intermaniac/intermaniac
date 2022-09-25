@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="When it comes to Time Series, colleges and universities have it all wrong.
-
-A time series...">
+    <meta name="description" content="JavaScript's creator, @BrendanEich, once said, "JS is a mistake," let's see how wonk JavaScript really...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>When it comes to time series, colleges and universities have...</title>
+    <title>Javascript's creator, @brendaneich, once said, "js is a mistake," let's...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ A time series...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>When it comes to time series, colleges and universities have...</h2>
+                <h2>Javascript's creator, @brendaneich, once said, "js is a mistake," let's...</h2>
               </div>
             </div>
           </div>
@@ -99,68 +97,49 @@ A time series...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>When it comes to time series, colleges and universities have...</span>
-                      <a href="#"><h4>When it comes to Time Series, colleges and universities have it all wrong.
-
-A time series...</h4></a>
+                      <span>Javascript's creator, @brendaneich, once said, "js is a mistake," let's...</span>
+                      <a href="#"><h4>JavaScript's creator, @BrendanEich, once said, "JS is a mistake," let's see how wonk JavaScript really...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-25 07:15:35.430938</a></li>
 
                       </ul>
-                      <p>When it comes to Time Series, colleges and universities have it all wrong.
+                      <p>JavaScript's creator, @BrendanEich, once said, "JS is a mistake," let's see how wonk JavaScript really can be!
 
-A time series thread 🧵
+Thread 🧵 👇 <a href="https://t.co/b3qU35lpur">https://t.co/b3qU35lpur</a><br><br>@BrendanEich JavaScript can get weird when adding different data types together. JavaScript's type coercion handles these additions. For example, adding a string and a number returns a string, while adding a number and a boolean return a number. <a href="https://t.co/W7FgKuY5LV">https://t.co/W7FgKuY5LV</a><br><br>@BrendanEich A few years ago you may have seen a tweet saying that `('b' + 'a'+ + 'a' + 'a').toLowerCase()` gives you a `'banana'`. Which is odd... We're missing a couple of `'n'`s. This works because of an `'a'` being added to nothing.<br><br>@BrendanEich If you were to console log `+ 'a'`, you'd get `NaN` (Not a number). String values can't be coerced into being a number. Numbers can be coerced into a string, so what ends up being added is something more like this: `'b' + 'a'+ NaN + 'a'`. Oddly `+ []` returns `0`. <a href="https://t.co/o4atURWTuc">https://t.co/o4atURWTuc</a><br><br>@BrendanEich Let's get weirder; what happens when you add two arrays filled with numbers? Well, the two Arrays are coerced into strings and then combined. You're probably better off using the spread operator if you really want to merge them 🤭 <a href="https://t.co/LeqQIJ4XnM">https://t.co/LeqQIJ4XnM</a><br><br>@BrendanEich Here's another fun one! What's the result of `0.2 + 0.1 === 0.3`. I'll give you 5 seconds.
 
-#rstats #excel #python #timeseries <a href="https://t.co/5YxQ5Gjblj">https://t.co/5YxQ5Gjblj</a><br><br>Universities are stuck in the past, teaching ARIMA. 
+1...
 
-But the cold reality is that ARIMA is NOT winning time series competitions &amp; ARIMA is NOT helping companies solve BIG forecasting problems.<br><br>To be frank, ARIMA is too slow.
+2...
 
-When you use ARIMA, you fall into a trap. You think, hey, this is what they're teaching me... 
+3...
 
-It must be good, right?<br><br>WRONG!
+4...
 
-You end up with commodity performance, which won't help you stand out in your career.<br><br>So, I'd love to help you.
+5...
 
-I spent 1 year researching time series...
+I hope you guessed `false`! And now you're left wondering why and don't worry, dear reader, we'll explain it to you.<br><br>@BrendanEich Floating point numbers in JS are stored as double-precision floating-point numbers. Numbers are represented as whole numbers multiplied by a power of two. Rational numbers whose denominator is not a power of two cannot be exactly represented this way.<br><br>@BrendanEich The double closest to `0.1` ends up actually being `0.1000000000000000055511151231257827021181583404541015625`. The double closest to `0.2`, like that of `0.1`, is a little larger than `0.2`. And the double closest to `0.3` is a little smaller than `0.3`.<br><br>@BrendanEich Knowing `0.1` and `0.2` are larger than what they should be, and `0.3` is smaller than what it should be, it makes sense that they aren't the same. <a href="https://t.co/YHC5YVTCE5">https://t.co/YHC5YVTCE5</a><br><br>@BrendanEich Finally, let's talk about `parseInt`. Check out the image below and guess what the value of all of these `parseInt`s are. <a href="https://t.co/SN1vO274TI">https://t.co/SN1vO274TI</a><br><br>@BrendanEich If you guessed that they all resulted in 0 as they're all less than 1, you'd be mistaken.
 
-And I lost hope 3 times...
+The reality is that `parseInt(0.0000005)` is the outlier as it returns `5`. Why?<br><br>@BrendanEich `parseInt` will convert a number input into a string and then back into a number. It then takes the first character from the string of the number it converted into. `String(0.0000005)` ends up being `'5e-7'`. So, `parseInt` takes that `'5`' and turns it back into the number `5`. <a href="https://t.co/60wlba1BPt">https://t.co/60wlba1BPt</a><br><br>@BrendanEich For a deeper dive into JavaScript's weirdness, check out these resources:
 
-And then I wrote 7 R packages to help...<br><br>Now I want to show them off to the world AND help you in the process.
+- <a href="https://t.co/ez9eerCl9N">https://t.co/ez9eerCl9N</a>
+- <a href="https://t.co/ElX4N7gr6K">https://t.co/ElX4N7gr6K</a><br><br>@BrendanEich For more such threads in the future:
 
-I put together a time series workshop that's free to attend.
+- Follow @amplication 🚀
+- RT the first tweet of the thread 💜
+- Join our discord server to talk with experts 👇
 
-Here's what you will learn:<br><br>1. What I learned from researching the winning solutions of 4 elite time series competitions
-
-This was eye opening. 
-
-Completely the OPPOSITE of what is currently being taught in colleges &amp; universities.<br><br>2. Simple changes in my forecasts that made my company 5X more revenue
-
-Small tweaks. Big savings.<br><br>3. Which tools have helped me do large scale time series analysis for companies like Walmart &amp; MRM McCann
-
-There's 6 tools I'll share.<br><br>4. How I reverse engineered Kaggle solutions to increase my company's profit to $15,000,000 in under 1 year
-
-This is quite a story.<br><br>And, as a BONUS, I'm going to be giving away one of my most prized possessions.
-
-It's my 3-page #TimeSeries #Forecasting #CheatSheet.
-
-Anyone can use it to improve their forecasts. 
-
-My free gift to you.<br><br>What's Your Next Step?
-
-Just join my free time series workshop.
-
-Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a href="https://t.co/n94u3kJksx">https://t.co/n94u3kJksx</a></p>
+🔗 <a href="https://t.co/ymDqPF4CIS">https://t.co/ymDqPF4CIS</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Time Series</a></li>
-<li><a href="#">ARIMA</a></li>
-<li><a href="#">time series competitions</a></li>
-<li><a href="#">Series</a></li>
-<li><a href="#">time series workshop</a></li>
+								<li><a href="#">BrendanEich</a></li>
+<li><a href="#">number</a></li>
+<li><a href="#">string</a></li>
+<li><a href="#">Numbers</a></li>
+<li><a href="#">JavaScript</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -322,7 +301,7 @@ Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a 
       }
     </script>
 
-<!--1291631882873789651-->
+<!--2383125134214469651-->
 
   </body>
 

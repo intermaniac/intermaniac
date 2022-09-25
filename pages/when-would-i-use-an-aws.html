@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="When it comes to Time Series, colleges and universities have it all wrong.
-
-A time series...">
+    <meta name="description" content="❓ When would I use an AWS Application Load Balancer vs an AWS Network Load...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>When it comes to time series, colleges and universities have...</title>
+    <title>❓ when would i use an aws application load balancer...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ A time series...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>When it comes to time series, colleges and universities have...</h2>
+                <h2>❓ when would i use an aws application load balancer...</h2>
               </div>
             </div>
           </div>
@@ -99,68 +97,30 @@ A time series...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>When it comes to time series, colleges and universities have...</span>
-                      <a href="#"><h4>When it comes to Time Series, colleges and universities have it all wrong.
-
-A time series...</h4></a>
+                      <span>❓ when would i use an aws application load balancer...</span>
+                      <a href="#"><h4>❓ When would I use an AWS Application Load Balancer vs an AWS Network Load...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-25 07:15:35.430938</a></li>
 
                       </ul>
-                      <p>When it comes to Time Series, colleges and universities have it all wrong.
+                      <p>❓ When would I use an AWS Application Load Balancer vs an AWS Network Load Balancer? ❓
 
-A time series thread 🧵
+To answer this you have to understand what each load balancer is actually doing and how it is operating. Then you can pick the model that works best...
 
-#rstats #excel #python #timeseries <a href="https://t.co/5YxQ5Gjblj">https://t.co/5YxQ5Gjblj</a><br><br>Universities are stuck in the past, teaching ARIMA. 
+Thread 🔽<br><br>Network Load Balancer is a layer 4 load balancer. It load balances incoming connections. When a client opens a connection to the load balancer it opens a connection to a backend target, and forwards all packets from the client to the target<br><br>Application Load Balancer is a layer 7 load balancer. It load balances HTTP requests. When a client opens a connection to the load balancer ALB reads and identifies HTTP requests, and distributes the HTTP requests across backend targets according to your rules<br><br>NLB does not care about distributing HTTP requests evenly. If one client is sending 100 HTTP reqs/sec and another client is sending 10 req/sec then NLB will just forward these client connections as is. One of your backend instances will get 100 reqs/sec, another one 10 req/sec.<br><br>ALB on the other hand will split these two connections up into 110 HTTP total reqs/sec and evenly distribute the HTTP reqs across all backends. If you have two backend instances then one will receive 55 reqs/sec and the other 55 reqs/sec.<br><br>Even if you don't plan to use advanced ALB routing rules for path or hosted based pattern matching, you should probably still use an ALB instead of an NLB if your workload is HTTP and you have some "whale" clients/customers open "hot" connections with more reqs/sec than normal<br><br>@sjmiller609 Ideally a client connecting to NLB has good behavior for reconnecting and you can force close the connection and have the client reconnect to a different target.
 
-But the cold reality is that ARIMA is NOT winning time series competitions &amp; ARIMA is NOT helping companies solve BIG forecasting problems.<br><br>To be frank, ARIMA is too slow.
-
-When you use ARIMA, you fall into a trap. You think, hey, this is what they're teaching me... 
-
-It must be good, right?<br><br>WRONG!
-
-You end up with commodity performance, which won't help you stand out in your career.<br><br>So, I'd love to help you.
-
-I spent 1 year researching time series...
-
-And I lost hope 3 times...
-
-And then I wrote 7 R packages to help...<br><br>Now I want to show them off to the world AND help you in the process.
-
-I put together a time series workshop that's free to attend.
-
-Here's what you will learn:<br><br>1. What I learned from researching the winning solutions of 4 elite time series competitions
-
-This was eye opening. 
-
-Completely the OPPOSITE of what is currently being taught in colleges &amp; universities.<br><br>2. Simple changes in my forecasts that made my company 5X more revenue
-
-Small tweaks. Big savings.<br><br>3. Which tools have helped me do large scale time series analysis for companies like Walmart &amp; MRM McCann
-
-There's 6 tools I'll share.<br><br>4. How I reverse engineered Kaggle solutions to increase my company's profit to $15,000,000 in under 1 year
-
-This is quite a story.<br><br>And, as a BONUS, I'm going to be giving away one of my most prized possessions.
-
-It's my 3-page #TimeSeries #Forecasting #CheatSheet.
-
-Anyone can use it to improve their forecasts. 
-
-My free gift to you.<br><br>What's Your Next Step?
-
-Just join my free time series workshop.
-
-Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a href="https://t.co/n94u3kJksx">https://t.co/n94u3kJksx</a></p>
+This is a bit more tricky than with ALB though, of course<br><br>@shaharko I think many folks haven't yet reached the point where they are giving each of their services its own security group, but with ECS and AWS VPC networking mode it is easier than ever. Each service gets its own unique security group which allows you to control network communication<br><br>@dsballantyne As always it depends on how well you can trust your clients to do the right thing, and distribute their traffic across multiple source ports in a connection pool rather than hitting your backend hard with a few hot connections. ALB makes this easier on your backend</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Time Series</a></li>
-<li><a href="#">ARIMA</a></li>
-<li><a href="#">time series competitions</a></li>
-<li><a href="#">Series</a></li>
-<li><a href="#">time series workshop</a></li>
+								<li><a href="#">Load Balancer</a></li>
+<li><a href="#">Application Load Balancer</a></li>
+<li><a href="#">Network Load Balancer</a></li>
+<li><a href="#">load balancer ALB</a></li>
+<li><a href="#">Load</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -322,7 +282,7 @@ Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a 
       }
     </script>
 
-<!--1291631882873789651-->
+<!--3939122771754969651-->
 
   </body>
 

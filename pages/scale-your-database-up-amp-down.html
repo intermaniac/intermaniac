@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="When it comes to Time Series, colleges and universities have it all wrong.
+    <meta name="description" content="Scale your database up &amp; down with RDS on AWS 💾
 
-A time series...">
+Let's see all about horizontal...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>When it comes to time series, colleges and universities have...</title>
+    <title>Scale your database up &amp; down with rds on aws...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,7 @@ A time series...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>When it comes to time series, colleges and universities have...</h2>
+                <h2>Scale your database up &amp; down with rds on aws...</h2>
               </div>
             </div>
           </div>
@@ -99,68 +99,75 @@ A time series...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>When it comes to time series, colleges and universities have...</span>
-                      <a href="#"><h4>When it comes to Time Series, colleges and universities have it all wrong.
+                      <span>Scale your database up &amp; down with rds on aws...</span>
+                      <a href="#"><h4>Scale your database up &amp; down with RDS on AWS 💾
 
-A time series...</h4></a>
+Let's see all about horizontal...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-25 07:15:35.430938</a></li>
 
                       </ul>
-                      <p>When it comes to Time Series, colleges and universities have it all wrong.
+                      <p>Scale your database up &amp; down with RDS on AWS 💾
 
-A time series thread 🧵
+Let's see all about horizontal scaling &amp; vertical scaling on RDS
 
-#rstats #excel #python #timeseries <a href="https://t.co/5YxQ5Gjblj">https://t.co/5YxQ5Gjblj</a><br><br>Universities are stuck in the past, teaching ARIMA. 
+Let's go 🧵<br><br>RDS is the Relational Database Service of AWS
 
-But the cold reality is that ARIMA is NOT winning time series competitions &amp; ARIMA is NOT helping companies solve BIG forecasting problems.<br><br>To be frank, ARIMA is too slow.
+It allows you to build fully managed SQL Databases. There are six different main engines available on RDS <a href="https://t.co/1oewNIzUWK">https://t.co/1oewNIzUWK</a><br><br>Why do you need scaling?
 
-When you use ARIMA, you fall into a trap. You think, hey, this is what they're teaching me... 
+There are two main reasons to scale. 
 
-It must be good, right?<br><br>WRONG!
+1️⃣ You have a predictable workload
+2️⃣ You have an unpredictable workload<br><br>A predictable workload could be a ride-hailing service. 
 
-You end up with commodity performance, which won't help you stand out in your career.<br><br>So, I'd love to help you.
+You know that the demand increases a lot at certain times.
 
-I spent 1 year researching time series...
+Between 00 - 06 am almost nobody is using it. But between 07 - 09 am a lot of people need to go to work.
 
-And I lost hope 3 times...
+Your database will have more requests <a href="https://t.co/sReBehiJx4">https://t.co/sReBehiJx4</a><br><br>Unpredictable workloads can be events you're not aware of. 
 
-And then I wrote 7 R packages to help...<br><br>Now I want to show them off to the world AND help you in the process.
+For example, if a concert or a football match happens that you didn't account for your database will get a HUGE number of requests at the same time as well. <a href="https://t.co/zwszZNlQrw">https://t.co/zwszZNlQrw</a><br><br>Upscaling &amp; Downscaling
 
-I put together a time series workshop that's free to attend.
+Upscaling means your database requires more resources like CPU or storage.
 
-Here's what you will learn:<br><br>1. What I learned from researching the winning solutions of 4 elite time series competitions
+Downscaling means that your database needs fewer resources to save costs.
 
-This was eye opening. 
+RDS allows you to define auto-scaling policies for these cases <a href="https://t.co/fAVOUVW6m0">https://t.co/fAVOUVW6m0</a><br><br>Horizontal vs Vertical Scaling
 
-Completely the OPPOSITE of what is currently being taught in colleges &amp; universities.<br><br>2. Simple changes in my forecasts that made my company 5X more revenue
+Horizontal scaling means more instances
 
-Small tweaks. Big savings.<br><br>3. Which tools have helped me do large scale time series analysis for companies like Walmart &amp; MRM McCann
+Vertical Scaling means improving the current instance - more CPU, Storage, etc. <a href="https://t.co/pGYHrbOyNc">https://t.co/pGYHrbOyNc</a><br><br>Horizontal Scaling with Read Replicas
 
-There's 6 tools I'll share.<br><br>4. How I reverse engineered Kaggle solutions to increase my company's profit to $15,000,000 in under 1 year
+You can scale your DB by adding read replicas. This can reduce the load on your primary database and can also be used cross-regional
 
-This is quite a story.<br><br>And, as a BONUS, I'm going to be giving away one of my most prized possessions.
+For example, if your DB is in us-east-1 and your users are in US and EU <a href="https://t.co/pjXl3noDCr">https://t.co/pjXl3noDCr</a><br><br>You can add a read replica in eu-central-1 and point all EU users to this database.
 
-It's my 3-page #TimeSeries #Forecasting #CheatSheet.
+This will reduce the read load a lot on your primary DB
 
-Anyone can use it to improve their forecasts. 
+RDS also allows you to scale horizontally by adding RDS proxies. <a href="https://t.co/7ppwIkcIS3">https://t.co/7ppwIkcIS3</a><br><br>Vertical scaling increases the performance of your current DB.
 
-My free gift to you.<br><br>What's Your Next Step?
+You can activate Auto-Scaling in RDS for scaling storage. 
 
-Just join my free time series workshop.
+This only works for storage, not for the actual instance class. 
 
-Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a href="https://t.co/n94u3kJksx">https://t.co/n94u3kJksx</a></p>
+A policy looks like that: if there is only 10% free storage → Scale up <a href="https://t.co/uJQZW5ljNf">https://t.co/uJQZW5ljNf</a><br><br>If you want to scale your instance class you need to build a custom solution. You can leverage CloudWatch, EventBridge, and lambda to build a solution like that.<br><br>That's it! 🎉
+
+There are more cases where you need to scale your database and also different options out there to do so. 
+
+With fully serverless services like DynamoDB you often don't have the issue of thinking about scaling. Make sure to check these out as well!<br><br>This is also available as a blog post here: <a href="https://t.co/12muo2pItx">https://t.co/12muo2pItx</a><br><br>If you're interested in learning the AWS fundamentals for the real world make sure to check out <a href="https://t.co/Zf58lqVBbf">https://t.co/Zf58lqVBbf</a>
+
+We send you bite-sized tips, free preview chapters, and AWS news regularly 💌</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Time Series</a></li>
-<li><a href="#">ARIMA</a></li>
-<li><a href="#">time series competitions</a></li>
-<li><a href="#">Series</a></li>
-<li><a href="#">time series workshop</a></li>
+								<li><a href="#">managed SQL Databases</a></li>
+<li><a href="#">Relational Database Service</a></li>
+<li><a href="#">fully managed SQL</a></li>
+<li><a href="#">managed SQL</a></li>
+<li><a href="#">Relational Database</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -322,7 +329,7 @@ Register Here: <a href="https://t.co/OozWTkCKPS">https://t.co/OozWTkCKPS</a> <a 
       }
     </script>
 
-<!--1291631882873789651-->
+<!--6078234456669169651-->
 
   </body>
 
