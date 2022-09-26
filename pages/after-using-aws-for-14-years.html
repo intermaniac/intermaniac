@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="After using AWS for ~14 years, I've internalised a handful of design patterns that I...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>After using aws for ~14 years, i've internalised a handful...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>After using aws for ~14 years, i've internalised a handful...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +97,53 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>After using aws for ~14 years, i've internalised a handful...</span>
+                      <a href="#"><h4>After using AWS for ~14 years, I've internalised a handful of design patterns that I...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-26 07:15:39.825651</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>After using AWS for ~14 years, I've internalised a handful of design patterns that I try to apply to my own software. I'm keen to know if it's the same for other folks.
 
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/OFqi0klqIC">https://t.co/OFqi0klqIC</a>
+Roughly: tags, IDs (thrice), limits, pagination.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Lean-Agile Leadership: The Foundation Of Enterprise Agility: 
-<a href="https://t.co/C77WzIflDW">https://t.co/C77WzIflDW</a><br><br>awk tutorial: 
-<a href="https://t.co/g4TQw2OmZW">https://t.co/g4TQw2OmZW</a><br><br>SEO - The Complete SEO Course Beginners to Advanced 2022: 
-<a href="https://t.co/8Pm3hrwM1g">https://t.co/8Pm3hrwM1g</a><br><br>Excel - Microsoft Excel Course Beginner to Expert 2022: 
-<a href="https://t.co/6ubOodokNP">https://t.co/6ubOodokNP</a></p>
+(I'm not going to use the thread emoji)<br><br>Turns out they gave you a session ID instead of an order ID. Doh!
+This is where resource ID *prefixes* are insanely useful. Think EC2 instance IDs: i-abc123 or EBS volumes: vol-def456.
+
+Now when you ask a user for an ID, you'll know immediately if it's the wrong thing entirely.<br><br>2b: Fully qualified IDs
+
+Sometimes an object ID by itself isn't enough. You store your data hierarchically on S3, so an invoice ID alone can't find its PDF. You also need the customer ID. 
+
+This is where AWS uses ARNs. An ARN should be sufficient to locate the stored object.<br><br>E.g. instead of passing around invoice IDs like inv-12345, you pass fully qualified IDs like eu:c-acd223:inv-12345. With that string, your code knows the PDF is in the EU partition, under the c-acd223 customer directory, file name inv-12345.pdf. Much quicker troubleshooting.<br><br>AWS doesn't always get this right! When ECS first launched, task ARNs were of the format arn:aws:ecs:${region}:${account}:task/${taskId}. But you could have multiple clusters in a single region - so which cluster do you look up?
+
+They later migrated to :task/${cluster}/${taskId}.<br><br>2c: ULIDs &gt; GUIDs &gt;&gt; Integers
+
+This is a bonus one on the theme of IDs, because I don't think AWS does it.
+
+GUIDs are better than auto-incrementing integer IDs because they don't reveal the number of objects in your DB and they don't have contention on the "next ID" counter.<br><br>But ULIDs are better than GUIDs because they encode creation timestamps in the prefix. This means they are naturally sortable by creation time. This is useful for databases like DynamoDB or Redshift where data can be stored sorted and you can easily return the latest N objects.<br><br>It's also useful in unexpected places. Maybe you think you don't need creation timestamp in your customer IDs? I mean, how often are they created? And they rarely ever need to be sorted.<br><br>What about when you migrate data store? Your proxy (in the hot path of every request) can forward any customers created after date X to service B and older ones to service A -- all without needing a roundtrip to the DB to look up if they were created before/after the cutover.<br><br>3: Limits.
+
+AWS publishes limits for just about every service. This serves a number of purposes. 
+
+* They can build a service with reliable performance because they know there will never be 10,000x more objects than anticipated during system design.<br><br>* Customers can be confident that the service can handle their use case, because it's well within the published limits. Their app isn't going to break because it will hit a pathological behaviour in the AWS service.<br><br>* Limits can always be raised over time, or in response to a customer request. This means AWS can provision an appropriate level of resourcing.
+
+IMO, limits show a level of professionalism. It means that the service operator understands what their service can -- and cannot -- do.<br><br>4: Pagination.
+
+Every AWS service (that I can think of) uses "next page" cursors for pagination, not page indexes. Hell, maybe they *do* use page indexes under the hood, but that is an *implementation detail* that is not exposed in the opaque "next page" cursor.<br><br>This gives you the ability to implement pagination with ease. If your data store is DynamoDB, you can return a wrapped DynamoDB pagination token to your users.<br><br>You can also migrate data stores. Maybe you're moving from one that supports page indexes to one that doesn't. Now you don't need to break your API contract or introduce a new v2 API with different pagination.<br><br>Maybe your pages need an expensive query to a SQL DB. You don't want to have to repeat that query 10x for 10 pages and throw away 90% of the data each time. This makes your DBA sad.<br><br>Instead, on page 1 you retrieve the whole dataset and store it in Redis under a GUID. Now your pagination token can be that GUID + an offset into the Redis array. Now your pages are super speedy to load. You have a happy DBA.<br><br>Also on pagination: your docs should make explicit that the number of results on a page can be ≤ ${pageSize}. 
+
+This means that you can have more predictable performance for your API. You can make sure a page is never more than 1MB of data.<br><br>Or that a page doesn't spill over to a second DB partition and take 15x longer to load as the previous page.<br><br>PS: don't forget to encrypt your pagination token, or users will reverse engineer the format and start crafting their own. Ideally using AEAD, so they can't tamper with it at all - and the encryption context should include the customer ID to avoid data leaks.<br><br>Anyway, that's all I can think of for now. Do you have any others that I missed?
+
+I partially wrote this list for that sweet Twitter fame, but mostly so I have a reference for when my colleague @kmcquade3 asks why I'm implementing something a particular way.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">AWS</a></li>
+<li><a href="#">page</a></li>
+<li><a href="#">IDs</a></li>
+<li><a href="#">pagination</a></li>
+<li><a href="#">internalised a handful</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +305,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--2743598915758400751-->
+<!--5414316921808020751-->
 
   </body>
 

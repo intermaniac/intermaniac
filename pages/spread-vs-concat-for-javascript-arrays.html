@@ -5,12 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="SPREAD vs CONCAT for JavaScript Arrays
+
+(A Thread)  🧵   ↓- Since ES6, we...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Spread vs concat for javascript arrays
+
+()  🧵...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +79,9 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Spread vs concat for javascript arrays
+
+()  🧵...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +103,83 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Spread vs concat for javascript arrays
+
+()  🧵...</span>
+                      <a href="#"><h4>SPREAD vs CONCAT for JavaScript Arrays
+
+(A Thread)  🧵   ↓- Since ES6, we...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-26 07:15:39.825651</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>SPREAD vs CONCAT for JavaScript Arrays
 
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/OFqi0klqIC">https://t.co/OFqi0klqIC</a>
+(A Thread)  🧵   ↓<br><br>- Since ES6, we can use the ... (yes, three consecutive dots) as a spread operator to destructure arrays.
+- We can use the spread operator on arrays within an array literal([]) to merge them. 
+- Let's see it with an example.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Lean-Agile Leadership: The Foundation Of Enterprise Agility: 
-<a href="https://t.co/C77WzIflDW">https://t.co/C77WzIflDW</a><br><br>awk tutorial: 
-<a href="https://t.co/g4TQw2OmZW">https://t.co/g4TQw2OmZW</a><br><br>SEO - The Complete SEO Course Beginners to Advanced 2022: 
-<a href="https://t.co/8Pm3hrwM1g">https://t.co/8Pm3hrwM1g</a><br><br>Excel - Microsoft Excel Course Beginner to Expert 2022: 
-<a href="https://t.co/6ubOodokNP">https://t.co/6ubOodokNP</a></p>
+↓<br><br>- First, we will take two arrays, arr1 and arr2. Then merge the arrays using the spread operator(...) within an array literal.
+- Now, notice the output. The arrays arr1 and arr2 are merged, and their elements are combined into a new array. The input arrays are not changed.
+
+↓ <a href="https://t.co/uocn1h4g2y">https://t.co/uocn1h4g2y</a><br><br>- JavaScript Array object has several practical methods. One of them is the concat() method.
+- The primary usage of the concat method is to merge two arrays.
+
+↓<br><br>- Here, we merge two arrays using the concat() method.
+- However, it is not my favorite syntax in merging arrays. 
+- We may misinterpret The syntax arr1.concat(arr2) as we are merging arr2's element into arr1 and changing the array1 array itself. That's not the fact, though.
+
+↓ <a href="https://t.co/T8EQ6MDBwf">https://t.co/T8EQ6MDBwf</a><br><br>- Like we used the spread operator, the concat method will not change the input arrays.
+- Rather, it creates a new array merging all the input arrays and returns it.
+
+So, a better way of writing the concat() method to merge arrays is,
+
+const merged = [].concat(arr1, arr2);
+
+↓<br><br>Great, but which one to use? The spread operator or the concat() method?
+
+- If you are sure the inputs are all arrays, please use the spread operator. It is straightforward and modern.
+- If unsure about the input element type, use the concat() method.
+
+↓<br><br>- For example, let's take a string "tapas" and use the spread operator on it with the array literals,
+- The string tapas will be destructured into an array of characters it is made of.
+- the final result may not be the one you were expecting.
+
+↓ <a href="https://t.co/ZwyFF6I0vK">https://t.co/ZwyFF6I0vK</a><br><br>- In such cases, use the concat() method instead.
+
+↓ <a href="https://t.co/yGIqMTmdga">https://t.co/yGIqMTmdga</a><br><br>Btw, Spread and Concat are not the only ways to merge two or more arrays in JavaScript. Do you want to know other ways as well?
+
+Here is an article covers that for you!
+
+<a href="https://t.co/h2zM70X3Lh">https://t.co/h2zM70X3Lh</a>
+
+↓<br><br>To Summarize,
+
+We learned these in this  🧵
+ 
+- What is a Spread operator for JavaScript Arrays?
+- What is the Concat method?
+- How to merge Arrays in JavaScript using Spread and Concat?
+- Which one to use when?
+- And a RESOURCE to learn many other ways of merging.
+
+↓<br><br>That's all, friends, for now!
+
+If you enjoyed this thread:
+
+1. Follow me @tapasadhikary for more of these
+2. RT the tweet below to share this thread with your audience <a href="https://t.co/bfNomPyo89">https://t.co/bfNomPyo89</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">Arrays</a></li>
+<li><a href="#">spread operator</a></li>
+<li><a href="#">CONCAT</a></li>
+<li><a href="#">SPREAD</a></li>
+<li><a href="#">array</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +341,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--2743598915758400751-->
+<!--5646659454639230751-->
 
   </body>
 

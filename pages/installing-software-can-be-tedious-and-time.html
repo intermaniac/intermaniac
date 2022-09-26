@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Installing software can be tedious and time-consuming. And then you get the incompatible new software...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Installing software can be tedious and time-consuming. and then you...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Installing software can be tedious and time-consuming. and then you...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +97,102 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Installing software can be tedious and time-consuming. and then you...</span>
+                      <a href="#"><h4>Installing software can be tedious and time-consuming. And then you get the incompatible new software...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-26 07:15:39.825651</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Installing software can be tedious and time-consuming. And then you get the incompatible new software version, and you have to start again from scratch, and your old scripts no longer work. Frustration. No bueno. 
 
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/OFqi0klqIC">https://t.co/OFqi0klqIC</a>
+Solution to the problem: Docker.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Lean-Agile Leadership: The Foundation Of Enterprise Agility: 
-<a href="https://t.co/C77WzIflDW">https://t.co/C77WzIflDW</a><br><br>awk tutorial: 
-<a href="https://t.co/g4TQw2OmZW">https://t.co/g4TQw2OmZW</a><br><br>SEO - The Complete SEO Course Beginners to Advanced 2022: 
-<a href="https://t.co/8Pm3hrwM1g">https://t.co/8Pm3hrwM1g</a><br><br>Excel - Microsoft Excel Course Beginner to Expert 2022: 
-<a href="https://t.co/6ubOodokNP">https://t.co/6ubOodokNP</a></p>
+A 🧵 on how to get started.<br><br>OK, that was easy. Now, how do I launch a container and start using the program? 
+
+There are at least two ways of doing this, and I will show you both. 
+
+The most intuitive way is to use the container interactively. Example.
+
+2.1.0 $docker run -it my_favorite_image bash<br><br>After running this command, you will have access to the terminal inside the container.
+
+[container]$ my_favorite_program -h
+
+Yes, that's it. Now you can run your program.<br><br>To see what containers are running, use:
+
+2.1.1 $docker ps
+
+This will show you all the containers running and their IDs.
+
+And remember to close your containers after you are done with them using their IDs with the following command.
+
+2.1.2. $docker rm c0NtaiN3RiD<br><br>However, in many cases, we would just want to call the program inside the container directly from our computer terminal without interacting with the container's internal terminal. We can do that as follows: 
+
+2.2 $docker run --rm my_favorite_program -h<br><br>There is one problem remaining. You still need to give the container access to the files on your computer so that it can get some input data and then spit the output. How do we do that? We use the -v and -w flags.
+
+Let's see them one at a time.<br><br>2.3.1 $docker run --rm -v $(pwd):$(pwd) my_favorite_program -h
+
+This will give the container access to the current working directory (i.e., $(pwd)) and all its subdirectories. 
+
+We are also creating the same path to the working directory in the container.<br><br>To make the current working directory in the computer also the current working directory in the container, we use the -w flag.
+
+2.3.2  $docker run --rm -v $(pwd):$(pwd) -w $(pwd) my_favorite_program -h
+
+Note that $(pwd) can be changed for other directories if you wish.<br><br>So now you are good to go. You can run your program from your terminal, having access to all subdirectories and files in the current directory.
+
+To finalize, we need to discuss how to handle needed software upgrades and how to install software inside preexisting images.<br><br>So, what happens when we need a new version of the software incompatible with previous scripts? 
+
+We can always pull the old image versions when needed using the older version tag. Example.
+
+3.1 $docker pull a_develper/pull my_favorite_image:1.0<br><br>You can find the different versions/tags of your image at its <a href="https://t.co/g6UeFFPiOq">https://t.co/g6UeFFPiOq</a> page.
+
+Now, what happens when there is no docker image available for a program we want to use? 
+
+We can install it on top of a preexisting docker image. I will show you two ways to do this.<br><br>3.2.1 Save the container as an image.
+
+One way to create an image with a given software is to launch an interactive container (see 2.1) and install the software from the command line as usual.<br><br>Once that is done, we can convert the current container into a new image with:
+
+$docker commit c0NtaiN3RiD  me/my_image:new_version<br><br>3.2.2 Dockerfiles
+
+An alternative way to create images is to use dockerfiles. This is how you can install R and an R library on a Ubuntu computer. First, create a file, name it dockeRfile, and put the following inside:<br><br>FROM ubuntu 
+
+RUN apt-get update 
+RUN apt-get install --no-install-recommends -y \
+      r-base 
+RUN R -e 'install.packages("remotes")'<br><br>Then use the following command to generate the docker image:
+
+$docker build -t me/docker_r:1.0 - &lt; dockeRfile
+
+If you want to save your new images as files, you can do it using the save command.
+
+3.3 $docker save -o my_image_R.tar me/docker_r:1.0<br><br>Well, that's it for today. This is what we covered.
+
+0.0 images &amp; containers
+
+1.1 $docker pull
+1.2 $docker load
+1.3 $docker images
+1.4 $docker rmi<br><br>2.1 Interactive containers -it
+2.1.1 $docker ps
+2.1.2 $docker rm 
+2.2.  Non-interactive containers -rm
+2.3.1 Mounting volumes -v 
+2.3.2 Choosing the working directory -w 
+
+3.1 docker tags
+3.2.1 $docker commit
+3.2.2 Dockerfiles
+3.3 $docker save<br><br>This is the link to the Docker documentation, with the download page and installation steps. Hopefully, you will need less of the latter from now on. <a href="https://t.co/6fNRzjgwCn">https://t.co/6fNRzjgwCn</a><br><br>For the bioinformaticians in the audience, you can find a lot of relevant images here: <a href="https://t.co/4fY78i7rUa.">https://t.co/4fY78i7rUa.</a><br><br>Well, I hope you enjoyed the thread and are ready to go. I put together a file with the commands in this threat, together with the dockerfiles for you to play at: <a href="https://t.co/LkQIJ48kF1">https://t.co/LkQIJ48kF1</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">Docker</a></li>
+<li><a href="#">container</a></li>
+<li><a href="#">image</a></li>
+<li><a href="#">docker run</a></li>
+<li><a href="#">run</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +354,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--2743598915758400751-->
+<!--5074643007950810751-->
 
   </body>
 

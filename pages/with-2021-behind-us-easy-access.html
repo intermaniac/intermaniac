@@ -5,12 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="1/ With 2021 behind us, easy access to capital has disappeared. 😶‍🌫️
+ 
+2022 is about...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>1/ with 2021 behind us, easy access to capital has...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +77,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>1/ with 2021 behind us, easy access to capital has...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +99,51 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>1/ with 2021 behind us, easy access to capital has...</span>
+                      <a href="#"><h4>1/ With 2021 behind us, easy access to capital has disappeared. 😶‍🌫️
+ 
+2022 is about...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-26 07:15:39.825651</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>1/ With 2021 behind us, easy access to capital has disappeared. 😶‍🌫️
+ 
+2022 is about managing costs and tightening engineering spend. 💸
+ 
+🎬 Presenting 5 tips from the #Neeva infra team to control your #AWS bill.
+ 
+Read on... 🧵 <a href="https://t.co/zmlZAUkhax">https://t.co/zmlZAUkhax</a><br><br>2/ We use #AWS today for most of our storage and compute needs (with #kubernetes &amp; #karpenter for provisioning compute resources).
 
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/OFqi0klqIC">https://t.co/OFqi0klqIC</a>
+While AWS Cost Explorer is great, we realized you must explicitly enable tags [1] in order to slice and dice the numbers by tags you assign. ✂️🎲<br><br>3/ Tip 1️⃣ Watch your notebooks
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Lean-Agile Leadership: The Foundation Of Enterprise Agility: 
-<a href="https://t.co/C77WzIflDW">https://t.co/C77WzIflDW</a><br><br>awk tutorial: 
-<a href="https://t.co/g4TQw2OmZW">https://t.co/g4TQw2OmZW</a><br><br>SEO - The Complete SEO Course Beginners to Advanced 2022: 
-<a href="https://t.co/8Pm3hrwM1g">https://t.co/8Pm3hrwM1g</a><br><br>Excel - Microsoft Excel Course Beginner to Expert 2022: 
-<a href="https://t.co/6ubOodokNP">https://t.co/6ubOodokNP</a></p>
+Helpful rule of 👍 = "notebooks aren’t to be left unattended”
+
+Data scientists are known for expensive overnight computations. So we:
+☑️ Have scripts to monitor how long notebook instances run
+☑️ Reach out to engineers that have them up for 1+ day <a href="https://t.co/I7uyXrpEFo">https://t.co/I7uyXrpEFo</a><br><br>4/ Tip 2️⃣ Jobs over notebooks
+ 
+With #databricks, notebooks are 3x the cost of jobs[2]! Long running tasks (e.g,. training deep learning models, data processing on the index) should use jobs (kubernetes jobs, databricks jobs) and not notebooks. 🙅 📒<br><br>5/ Tip 3️⃣ Use S3 Storage Lens[3]
+ 
+Using S3 Storage Lens, we learned that we had a ton of space wasted by multipart uploads from canceled/incomplete jobs. We then switched to the lifecycle policy which cleans-up old versions and old multipart uploads. <a href="https://t.co/sQDH9oBtvu">https://t.co/sQDH9oBtvu</a><br><br>6/ Tip 4️⃣ ⚠️ Use S3 storage classes (can be utilized to reduce costs for infrequently used data) ⚠️
+
+We once set up a policy to transition data to the “IA” tier, but then one job that happened to analyze old data made it more expensive than leaving the data in the standard tier.<br><br>7/ FYI: We’re experimenting with S3 intelligent tiering now. 🙂<br><br>8/ Tip 5️⃣ Analyze data transfer costs 
+ 
+Enabling flow logs and analyzing them helps, but requires manual analysis to correlate logs with the corresponding processes.<br><br>9/ We’ve caught egregious mistakes (e.g., a job running in one region reading large amounts of data from an S3 bucket in another), but would love some better tooling here. <a href="https://t.co/ynFw2uG0UA">https://t.co/ynFw2uG0UA</a><br><br>10/ References:
+🔎 <a href="https://t.co/Xb21y3uPhu">https://t.co/Xb21y3uPhu</a>
+🔎 <a href="https://t.co/Chp1oFCDvh">https://t.co/Chp1oFCDvh</a>
+🔎 <a href="https://t.co/542FZP9ZER">https://t.co/542FZP9ZER</a><br><br>11/ We'd love for you to share any learnings or techniques you have found helpful in making sure the back-of-the-envelope calculations and the bills are consistent! 👇 <a href="https://t.co/nvvZRWcR1l">https://t.co/nvvZRWcR1l</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">easy access</a></li>
+<li><a href="#">capital has disappeared</a></li>
+<li><a href="#">access to capital</a></li>
+<li><a href="#">Tip</a></li>
+<li><a href="#">AWS Cost Explorer</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +305,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--2743598915758400751-->
+<!--2331778491789500751-->
 
   </body>
 
