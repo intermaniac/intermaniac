@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Today is the time to understand how the dimensions of the data change through the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Today is the time to understand how the dimensions of...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Today is the time to understand how the dimensions of...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,43 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Today is the time to understand how the dimensions of...</span>
+                      <a href="#"><h4>Today is the time to understand how the dimensions of the data change through the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-27 07:15:34.533130</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Today is the time to understand how the dimensions of the data change through the #ConvolutionalLayers. Examples of code in #Keras and #Tensorflow in #Python will be given for a more practical approach. Let's start!
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/E3la1RoFe4">https://t.co/E3la1RoFe4</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJnsFE">https://t.co/dgeRFJnsFE</a></p>
+🧵👇<br><br>As seen before, the output feature map will have different dimensions depending on the selected parameters for the convolutional layer.
+
+If we consider ten colour images with dimensions 16x8 pixels, the input data would have the following shape:
+
+input_shape = (10, 8, 16, 3)<br><br>The 1st argument indicates the number of images, the 2nd and 3rd arguments refer to the height and width respectively, and the 4th indicates the number of channels or depth (3 for colour images because of the 3 RGB channels, and 1 for black&amp;white images).<br><br>For this example, we will consider that the input data goes through the following convolutional layer:
+
+tf.keras.layers.Conv2D(filters=5, kernel_size=3, strides=(2,2), padding='valid')<br><br>The output feature map would have a depth of 5, determined by the number of filters.<br><br>The dimensions of the output will be determined by the kernel size, the stride and the padding. For example, the output width dimension can be calculated as:
+
+output_width = (image_width - kernel_size + strides) / strides = (16 - 3 + 2) / 2 = 7.5<br><br>Depending on the padding we set the width will differ:
+
+• "valid": it will be rounded down, so the result will be 7.
+• "same": it will be rounded up, yielding 8.<br><br>This is done also for the height:
+
+output_height = (image_height - kernel_size + strides) / strides = (8 - 3 + 2) / 2 = 3.5<br><br>Therefore, for this example, in which the padding is set to "valid" (no zero padding applied), the dimensions of the output feature maps will be:
+
+output_shape = (10, 3, 7, 5)<br><br>Further information on the #Keras / #TensorFlow implementation of the convolutional layers can be found here:
+<a href="https://t.co/lFsNlf11Zw.">https://t.co/lFsNlf11Zw.</a><br><br>Every week I'll discuss an important, interesting or confusing topic in #MachineLearning. 
+On other days during that week, I'll talk about those concepts I wish I had known when I started working in the field! If you like this content follow me on @daansan_ml  😀</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">output feature map</a></li>
+<li><a href="#">output</a></li>
+<li><a href="#">output feature</a></li>
+<li><a href="#">output width dimension</a></li>
+<li><a href="#">time to understand</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +295,7 @@
       }
     </script>
 
-<!--2599871821233950751-->
+<!--3741847112786630751-->
 
   </body>
 
