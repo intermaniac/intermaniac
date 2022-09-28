@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🟡 Machine Learning from Scratch with Python #5
-⚪️ Random Forest from scratch 
-
-Random Forest uses...">
+    <meta name="description" content="I've just made a GitHub repository (https://t.co/WPAzsM2b0r) where I addressed the problem of finding Line...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🟡 machine learning from scratch with python #5
-⚪️ random forest...</title>
+    <title>I've just made a github repository (https://t.co/wpazsm2b0r) where i addressed...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,8 +75,7 @@ Random Forest uses...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🟡 machine learning from scratch with python #5
-⚪️ random forest...</h2>
+                <h2>I've just made a github repository (https://t.co/wpazsm2b0r) where i addressed...</h2>
               </div>
             </div>
           </div>
@@ -102,44 +97,45 @@ Random Forest uses...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🟡 machine learning from scratch with python #5
-⚪️ random forest...</span>
-                      <a href="#"><h4>🟡 Machine Learning from Scratch with Python #5
-⚪️ Random Forest from scratch 
-
-Random Forest uses...</h4></a>
+                      <span>I've just made a github repository (https://t.co/wpazsm2b0r) where i addressed...</span>
+                      <a href="#"><h4>I've just made a GitHub repository (https://t.co/WPAzsM2b0r) where I addressed the problem of finding Line...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-28 07:15:48.404364</a></li>
 
                       </ul>
-                      <p>🟡 Machine Learning from Scratch with Python #5
-⚪️ Random Forest from scratch 
+                      <p>I've just made a GitHub repository (<a href="<a href="https://t.co/WPAzsM2b0r">https://t.co/WPAzsM2b0r</a>"><a href="https://t.co/WPAzsM2b0r">https://t.co/WPAzsM2b0r</a></a>) where I addressed the problem of finding Line Breaking Passes using @statsbomb 360 open data. 
+This thread briefly discusses an algorithm that individuates line breaking passes and presents  some tendencies at Euro2020 <a href="https://t.co/49D3u94QZA">https://t.co/49D3u94QZA</a><br><br>This problem was often overlooked for the lack of tools (tracking data) and not for the lack of importance, is the ability of player or a team to find teammates behind the enemy lines,  i.e., the ability to make passes that dissect a line of the opponent’s formation.<br><br>StatsBomb360 data allows to have the positions of a subset of defenders and therefore I decided to apply the ideas presented in <a href="https://t.co/tzcFQAA59U">https://t.co/tzcFQAA59U</a> by @KubaMichalczyk to StatsBomb360 instead of tracking data.<br><br>A pass is considered a Line Breaking Pass (LBP) if:
+- The pass is successful; 
+- Progress the ball forward at least 10 meters; 
+- It breaks at least one defensive line, which is defined as  a “vertical line” between two defenders that are at most 8 m apart.<br><br>Note that it may break more than one line, but we are interested only if it breaks at least one. <a href="https://t.co/17kXy4pOgk">https://t.co/17kXy4pOgk</a><br><br>Scheme of the algorithm: 
 
-Random Forest uses many trees, and it makes a prediction by averaging the predictions of each Decision Tree. 
+1) The positions of the defenders, which may be less than 11 in the visible area, is taken by considering the SB360 frame corresponding to the start of the pass (we freeze the defenders at that time).
+2) We exclude the goalkeeper from the defenders<br><br>3) The defensive lines are identified with a 1-D clustering Fisher-Jenks algorithm and by ordering along the y-direction. The number of clusters is set between (0,3) depending on the number of defenders in the frames.<br><br>4) We compute if the segment line of the pass intersects with one defensive line
 
-Source code in the 2️⃣ tweet 
+Time of execution for 51 games with a very common notebook: approx. 10 minutes!<br><br>Is it worth to look at line breaking passes? 
 
-A Thread 👇<br><br>Implement Random Forest from scratch using Python <a href="https://t.co/1bsP4nTjz5">https://t.co/1bsP4nTjz5</a><br><br>You can check out Decision Tree implementation here <a href="https://t.co/LVqVndzaSP">https://t.co/LVqVndzaSP</a><br><br>Course credits 👇
- → Machine Learning from Scratch with Python by 
-@AssemblyAI
+As a metric to quantify actions value I considered StatsBomb’s On-Ball Value (OBV),
+On the right we can see that the distribution of LBPs  have a higher median OBV than not-LBPs, i.e., the usually produce more values. <a href="https://t.co/Zej2idKwrq">https://t.co/Zej2idKwrq</a><br><br>Since the OBVs are not publicly available, you cannot find these values in the repository. I'd like to thank Statsbomb for providing me these values.<br><br>As expected, this is also a sanity check for the algorithm, CBs and Midfielders usually make more LBPs than the other roles. <a href="https://t.co/n8St51rOJW">https://t.co/n8St51rOJW</a><br><br>Here instead the percentage of LBPs of total passes divided by roles. <a href="https://t.co/Fj5X5tms71">https://t.co/Fj5X5tms71</a><br><br>Now some player standings about the LBS. Interestingly, Bruno Fernandes had the highest percentage of LBPs. <a href="https://t.co/wQniYvgQ0f">https://t.co/wQniYvgQ0f</a><br><br>Same standings but for teams. <a href="https://t.co/aSBUNpdQxr">https://t.co/aSBUNpdQxr</a><br><br>My work was also inspired by this article <a href="https://t.co/NJPguhFCIX">https://t.co/NJPguhFCIX</a> by @jair1970. 
 
-Check out the full course details:
-<a href="https://t.co/0I1VNp3ieH">https://t.co/0I1VNp3ieH</a><br><br>That's all for today! 
+I believe that Statsbomb algorithm performs better than mine but It would be interesting to see some comparison, if it's possible.<br><br>Perspectives:
+-To incorporate height of passes in the algorithm. 
+- To discriminate which defensive line is broken by the pass. 
+- Investigating which players are the best line breaking pass receivers. 
+- Testing different 1-D clustering models .<br><br>- To narrow the “vertical” distance between defenders to find which players make narrow line breaking passes<br><br>For those who are interested in playing a little bit with Line Breaking Passes, you can download a csv that contains information about all passes made at Euro2020 with the added information by the algorithm. 
+ <a href="<a href="https://t.co/WPAzsM2b0r">https://t.co/WPAzsM2b0r</a>"><a href="https://t.co/WPAzsM2b0r">https://t.co/WPAzsM2b0r</a></a><br><br>You can also reproduce the analyses since the intere code is available ( I numbered the notebooks for clarity). 
 
-Thanks for reading! I hope you enjoyed the thread. 
-
-Follow me @itsafiz for more updates.</p>
+Any feedback would be greatly appreciated!<br><br>On a personal note, a big announcement coming soon 👀😀</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">scratch Random Forest</a></li>
-<li><a href="#">Implement Random Forest</a></li>
-<li><a href="#">Random Forest</a></li>
-<li><a href="#">Machine Learning</a></li>
-<li><a href="#">Learning from Scratch</a></li>
+								<li><a href="#">Line Breaking Passes</a></li>
+<li><a href="#">Line Breaking Pass</a></li>
+<li><a href="#">Line Breaking</a></li>
+<li><a href="#">finding Line Breaking</a></li>
+<li><a href="#">Breaking Passes</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -301,7 +297,7 @@ Follow me @itsafiz for more updates.</p>
       }
     </script>
 
-<!--5950787327760280751-->
+<!--0213312726643080751-->
 
   </body>
 
