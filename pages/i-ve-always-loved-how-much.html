@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="I've always loved how much polish a subtle animation like the one on this Stripe...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>I've always loved how much polish a subtle animation like...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>I've always loved how much polish a subtle animation like...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +97,44 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>I've always loved how much polish a subtle animation like...</span>
+                      <a href="#"><h4>I've always loved how much polish a subtle animation like the one on this Stripe...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-29 07:15:45.631354</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>I've always loved how much polish a subtle animation like the one on this Stripe button can add to a UI 😍
 
-Python for beginners - Learn all the basics of python: 
-<a href="https://t.co/0xTBxRvZJu">https://t.co/0xTBxRvZJu</a>
+Let me show you how to recreate it with Tailwind CSS! 🧵 <a href="https://t.co/pow5jyxDjF">https://t.co/pow5jyxDjF</a><br><br>First, let's create the button! We'll use `rounded-full` for the pill shape, add padding with `px-4` and `py-1.5`, set the font-weight with `font-semibold`, add color with `text-white` and `bg-slate-900`, then set a hover color with `hover:bg-slate-700`.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Marketing Fundamentals: Introduction into Digital Marketing: 
-<a href="https://t.co/PwheOq5O1x">https://t.co/PwheOq5O1x</a><br><br>Cryptocurrency Course: Learn to Make Money Online WORLDWIDE!: 
-<a href="https://t.co/wM2o2IRheP">https://t.co/wM2o2IRheP</a><br><br>Complete Pixel Art Megacourse: Beginner to Expert: 
-<a href="https://t.co/i0gNvkjkZs">https://t.co/i0gNvkjkZs</a><br><br>How to create an animated promo video in PowerPoint: 
-<a href="https://t.co/QgA1rF3NPM">https://t.co/QgA1rF3NPM</a></p>
+<a href="https://t.co/beBuj3JKQr">https://t.co/beBuj3JKQr</a> <a href="https://t.co/TfReTnQkbG">https://t.co/TfReTnQkbG</a><br><br>Next, let's figure out how this icon needs to be built to animate the way we want it to.
+
+Here's what the animation looks in slow motion — notice how the horizontal line fades in, and the chevron slides to the right? <a href="https://t.co/zr8yhxPxlg">https://t.co/zr8yhxPxlg</a><br><br>To do this in our UI, we're going to need those two parts of the icon to be separate paths in the SVG.
+
+I created two frames in Figma that were the same size, and drew these two pieces so I could export them separately: <a href="https://t.co/BXtdYiCxga">https://t.co/BXtdYiCxga</a><br><br>We'll export these as SVG, then bring them into our code and combine them by just copying the `path` element from each one and pasting them into a single SVG with the same `viewBox`:
+
+<a href="https://t.co/kLsojH37oK">https://t.co/kLsojH37oK</a>
+
+(We'll fix the chevron placement soon!) <a href="https://t.co/ES2i3gh4W4">https://t.co/ES2i3gh4W4</a><br><br>Next, let's slap that SVG into our button. I've added `inline-flex` and `items-center` to make them render side by side, then fine-tuned the icon placement with some margin classes on the &lt;svg&gt; itself.
+
+I've commented out the horizontal line, since it's hidden by default. <a href="https://t.co/bQnvPJy2cL">https://t.co/bQnvPJy2cL</a><br><br>Now let's animate it! Using the `group` variants in Tailwind, we can animate each part of the SVG whenever the whole button is hovered.
+
+The line goes from `opacity-0` to `opacity-100`, and we translate the chevron right by 3px. <a href="https://t.co/BT5CShXt8N">https://t.co/BT5CShXt8N</a><br><br>The real trick here is that each `&lt;path&gt;` element in an SVG is really just like any other element, and you can add classes to them just like you can with a `&lt;div&gt;` — SVGs aren't a black box like a raster image. Pretty neat!<br><br>Here's what the finished result looks like:
+
+<a href="https://t.co/RMpxqrczzY">https://t.co/RMpxqrczzY</a>
+
+All achieved directly in the markup with utility classes 💅 <a href="https://t.co/GMpUECRwar">https://t.co/GMpUECRwar</a><br><br>(This thread brought to you by the hotel bar while my wife is getting a spa treatment 💆🏻‍♀️)</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">Tailwind CSS</a></li>
+<li><a href="#">Stripe button</a></li>
+<li><a href="#">polish a subtle</a></li>
+<li><a href="#">SVG</a></li>
+<li><a href="#">CSS</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +296,7 @@ Python for beginners - Learn all the basics of python:
       }
     </script>
 
-<!--1259774674917321751-->
+<!--0650373931555711751-->
 
   </body>
 

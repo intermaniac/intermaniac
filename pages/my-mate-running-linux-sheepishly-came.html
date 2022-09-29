@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="My mate running Linux sheepishly came to me with a support request - his laptop...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>My mate running linux sheepishly came to me with a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>My mate running linux sheepishly came to me with a...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +97,64 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>My mate running linux sheepishly came to me with a...</span>
+                      <a href="#"><h4>My mate running Linux sheepishly came to me with a support request - his laptop...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-29 07:15:45.631354</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>My mate running Linux sheepishly came to me with a support request - his laptop wasn’t connecting to the internet.
 
-Python for beginners - Learn all the basics of python: 
-<a href="https://t.co/0xTBxRvZJu">https://t.co/0xTBxRvZJu</a>
+Obviously, I thought he was being a noob so I dove right in. It’s Linux after all, i know this…
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Marketing Fundamentals: Introduction into Digital Marketing: 
-<a href="https://t.co/PwheOq5O1x">https://t.co/PwheOq5O1x</a><br><br>Cryptocurrency Course: Learn to Make Money Online WORLDWIDE!: 
-<a href="https://t.co/wM2o2IRheP">https://t.co/wM2o2IRheP</a><br><br>Complete Pixel Art Megacourse: Beginner to Expert: 
-<a href="https://t.co/i0gNvkjkZs">https://t.co/i0gNvkjkZs</a><br><br>How to create an animated promo video in PowerPoint: 
-<a href="https://t.co/QgA1rF3NPM">https://t.co/QgA1rF3NPM</a></p>
+Little did I expect the adventure that followed…
+
+🧵 /9 <a href="https://t.co/5g6ynYFb9R">https://t.co/5g6ynYFb9R</a><br><br>1/9 I was 99% confident turning it off and on again would fix it… it didn’t.
+
+Was it even on the local network? Quick ping confirmed it could resolve private IPs.
+
+Then I tried to ping google. Fail
+
+Curious 🤨. The Internet was Defo working, what would you do next?<br><br>2/9 time to draw on my fav triage technique good ol’ bisect and binary search.
+
+I pinged the google IP directly. Success! Then tried nslookup the domain… dum dum. No dice.
+
+Sweet. So we can route externally, it’s *just* DNS is borked.<br><br>3/9 is it just the local dns or something else? Ran nslookup again with <a href="<a href="<a href="8.8.8.8">8.8.8.8</a>"><a href="8.8.8.8">8.8.8.8</a></a>"><a href="<a href="8.8.8.8">8.8.8.8</a>"><a href="8.8.8.8">8.8.8.8</a></a></a> - again no dice.
+
+Tried all of this on my own machine that’s on the same network and it did exactly what you’d expect.
+
+F*@! - it’s some mis configured local network stack…<br><br>4/9 at this stage, I realise I know jack shit about what networking voodoo magic is going on. Time to flex another life skill. Speed learning…
+
+A tight iteration of research + gathering data to understand wtf is going on, and what’s meant to happen…<br><br>5/9 after a bunch of googling, I worked out all dns queries go through resolv. 
+
+More googling to see the logs… nothing useful.
+
+More googling to enable debug logs. Now we are getting somewhere!<br><br>6/9 it’s putting DNS requests down some interface called protonvpnkill… that sounds ominous
+
+Apparently my mate was using proton vpn, which has a kill switch feature.
+
+YES! I can see the finish line! Just have to make resolv use the right interface… whatever that is…<br><br>7/9 another bout of googling and found nmcli (network manager cli) listed interfaces, compared to another box.
+
+Found the command to delete a network interface and lined it up <a href="https://t.co/7Tq79hUF7i">https://t.co/7Tq79hUF7i</a><br><br>8/9 It worked!!! 
+
+Nslookup <a href="https://t.co/VDYw6X16fI">https://t.co/VDYw6X16fI</a> - success! 
+
+Opened the web browser.. success! 
+
+I’ve had a great life, and done some awesome shit. Getting internet back on my mates borked machine is easily in the top 5 :)<br><br>9/9 Good operators know things. Great operators experiment, the best experiment at lightning speed!
+
+Hypothesis. =&gt; data (either research or experiments) =&gt; repeat. Those who make this loop tight win.<br><br>10/9 as always, likes/RT/comments welcome. Especially in the mood to hear random triage success stories from others!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">running Linux sheepishly</a></li>
+<li><a href="#">mate running Linux</a></li>
+<li><a href="#">running Linux</a></li>
+<li><a href="#">Linux sheepishly</a></li>
+<li><a href="#">n’t connecting</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +316,7 @@ Python for beginners - Learn all the basics of python:
       }
     </script>
 
-<!--1259774674917321751-->
+<!--6522198988066621751-->
 
   </body>
 

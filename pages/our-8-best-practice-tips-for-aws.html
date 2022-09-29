@@ -5,12 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Our 8 Best Practice Tips for #AWS #KMS
+🚦 Least privilege principle
+🔑 Key policy
+🤝 Permissions
+🔐 Encryption
+📱...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Our 8 best practice tips for #aws #kms
+🚦 least privilege...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +81,8 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Our 8 best practice tips for #aws #kms
+🚦 least privilege...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +104,64 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Our 8 best practice tips for #aws #kms
+🚦 least privilege...</span>
+                      <a href="#"><h4>Our 8 Best Practice Tips for #AWS #KMS
+🚦 Least privilege principle
+🔑 Key policy
+🤝 Permissions
+🔐 Encryption
+📱...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-29 07:15:45.631354</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Our 8 Best Practice Tips for #AWS #KMS
+🚦 Least privilege principle
+🔑 Key policy
+🤝 Permissions
+🔐 Encryption
+📱 MFA
+⌛️ Expiring Grants
+🤼‍♂️ Double is trouble
+📝 Auditing
 
-Python for beginners - Learn all the basics of python: 
-<a href="https://t.co/0xTBxRvZJu">https://t.co/0xTBxRvZJu</a>
+🧵👇<br><br>🚦 Give only the required permissions to the relevant principals. 
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Marketing Fundamentals: Introduction into Digital Marketing: 
-<a href="https://t.co/PwheOq5O1x">https://t.co/PwheOq5O1x</a><br><br>Cryptocurrency Course: Learn to Make Money Online WORLDWIDE!: 
-<a href="https://t.co/wM2o2IRheP">https://t.co/wM2o2IRheP</a><br><br>Complete Pixel Art Megacourse: Beginner to Expert: 
-<a href="https://t.co/i0gNvkjkZs">https://t.co/i0gNvkjkZs</a><br><br>How to create an animated promo video in PowerPoint: 
-<a href="https://t.co/QgA1rF3NPM">https://t.co/QgA1rF3NPM</a></p>
+Do not include kms:* permissions in an #IAM or key policy. 
+
+Create a top-level KMS policy that denies access to KMS except for the principals that need it.<br><br>🔑  Whenever possible, choose to use the key policy over an IAM policy, as it can affect only one KMS key. 
+
+If you must use an IAM policy, specify KMS keys in the resource element or use values like arn:aws:kms:region:account:key/* or arn:aws:kms:*:account:key/*<br><br>🤝 Risky permissions – Pay extra attention when dealing with risky permissions, such as:
+- kms:PutKeyPolicy
+- kms:CreateGrant
+- kms:ScheduleKeyDeletion.<br><br>🔐 An #encryption context is an additional layer of #authentication for your KMS API calls. 
+
+It is a set of key pairs that can contain additional contextual information about the data. 
+
+The same encryption context is required to decrypt (or decrypt and re-encrypt) the data.<br><br>📱Multi-Factor Authentication – You can add #MFA / #2FA for certain API calls to add another layer of security. 
+
+You can add a condition to the key policy that checks for when or if an MFA device was used as part of authentication.<br><br>⌛️ Grants do not expire on their own – Remember to retire or revoke them when they are not needed anymore.<br><br>🤼‍♂️ Delete duplicate grants that have the same:
+- Key ARN
+- API actions
+- Grantee principal
+- Encryption context
+- Name. 
+
+Duplicate grants can lead to unintended privileges if one is retired or revoked.<br><br>📝 Auditing - Enable #CloudTrail logging to ensure that all KMS API calls made on keys in your AWS account are automatically logged. Use this information to determine which request was made, the source IP address from which the request was made, who made the request, and more!<br><br>ℹ️ For more information on AWS KMS check out:
+- The Complete Guide to AWS KMS 👇
+<a href="https://t.co/0P81kl7oWw">https://t.co/0P81kl7oWw</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">Practice Tips</a></li>
+<li><a href="#">KMS</a></li>
+<li><a href="#">Double is trouble</a></li>
+<li><a href="#">KMS API calls</a></li>
+<li><a href="#">Key policy</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +323,7 @@ Python for beginners - Learn all the basics of python:
       }
     </script>
 
-<!--1259774674917321751-->
+<!--4625761485306831751-->
 
   </body>
 
