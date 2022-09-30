@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="You know what's really hard to do in @typescript? Describe the type of a generic...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>You know what's really hard to do in @typescript? describe...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>You know what's really hard to do in @typescript? describe...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,68 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>You know what's really hard to do in @typescript? describe...</span>
+                      <a href="#"><h4>You know what's really hard to do in @typescript? Describe the type of a generic...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-09-30 07:15:39.855140</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>You know what's really hard to do in @typescript? Describe the type of a generic state machine.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/qEZJN0ue1d">https://t.co/qEZJN0ue1d</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+But! You can do it ⚙️
+
+(Thread because I'm annoyed and just spent two hours thinking about this) <a href="https://t.co/igEfv4pxb0">https://t.co/igEfv4pxb0</a><br><br>Why is this hard?
+
+If you search "finite state machine in typescript," you'll find a plethora of examples on how to build FSMs. 
+
+The problem is that all of these are examples of how to build **specific** FSMs.<br><br>What we want is a way to create generic state machines under the constraints
+
+1. They're type safe 
+2. They can be created without defining any new types
+3. Intermediate states are serializable (a personal constraint, not always needed)<br><br>In a perfect world, what would this look like? In my mind, the optimal version of this state machine would look something like this (untyped).
+
+Note that we can transfer to any state in the FSM, with an optional set of arguments to be passed. <a href="https://t.co/hqQo9zyqtQ">https://t.co/hqQo9zyqtQ</a><br><br>You can pretty easily write the type for this specific object, but what is the type of all objects that allow this kind of behavior?
+
+More importantly, how do we write the return type of these functions such that the only values they allow are valid next-states?<br><br>In a perfect world, we would define it kind of like this (borrowing some terminology from math/pl)
+
+In other words, we want to define our GameState type in terms of itself (hence the use of the existential type X in this bogus example) <a href="https://t.co/vw6xVOynow">https://t.co/vw6xVOynow</a><br><br>However this is all just made up syntax, and not something TypeScript supports. So how do we get around this?
+
+The basic principle is by taking that highly recursive type and cutting the cycle.<br><br>Instead of having each state of the FSM return a type that depends on the type of the FSM itself, each state will return an opaque type.
+
+Then, instead of type checking the return type, we use a function to generate that opaque result from type checked arguments.<br><br>That's a lot of word soup, but what does it look like? We define an OpaqueResult type, and a next function to create it. <a href="https://t.co/oyt95YivsL">https://t.co/oyt95YivsL</a><br><br>This is still completely unsafe, as "next" makes no attempt to verify it's arguments. In order to do that, we need to have it know the type of the FSM.
+
+We can do this by making use of "this" (however gross that may be). <a href="https://t.co/JGjISfOYo5">https://t.co/JGjISfOYo5</a><br><br>This.... doesn't work. Interestingly, it almost does. If we drop the part where our state machine can have cycles.
+
+Unfortunately, if at any point our FSM develops a cycle, TypeScript will throw up its hands to complain that the type of states in the cycle are self-dependent.<br><br>This is false, as "next" is required to return an "OpaqueResult," so each node in the cycle can be safely collapsed into a well-defined type.
+
+However, since TypeScript is unable/willing to do so, we must validate cycles ourselves. <a href="https://t.co/wM3yLGUqPi">https://t.co/wM3yLGUqPi</a><br><br>With this, we have a well typed FSM that can be defined on-the-fly without any explicit types being made. 
+
+However, we never answered the question of "what is the type of this class of state machine."
+
+The reason for this, is that we don't have one.<br><br>The best we can do in TypeScript write now is define something that must be valid under a broader set of assumptions.
+
+Namely, because of our use of "next," we can only acquire "OpaqueResult"s by invoking it. Thus, we define a "mostly correct" FSM type <a href="https://t.co/yXl0Mx2LL0">https://t.co/yXl0Mx2LL0</a><br><br>In theory, any inhabitant of this type must have produced OpaqueResults that are valid within the constraints of the FSM, but by the time we want to use it, **we can no longer prove that.**
+
+We're left to trust that whomever produced our FSM did not do so maliciously.<br><br>Obviously, this kind of trust is undesirable. However, to my knowledge we are limited by the constraints of the type system.
+
+And while this is not perfect, it lets us do some cool things!<br><br>Here we have a simple game of tic-tac-toe implemented using this structure. By defining it this way, we know that our FSM is valid, and "games" is assignable to the "FSM" type we defined above. 
+
+As such, we can easily implement an executor for any such FSM. <a href="https://t.co/OpWdC9SML4">https://t.co/OpWdC9SML4</a><br><br>All told, this feels a bit clunky. With that said, the fact that we can define it at all is very nice! 
+
+State machines are the lifeblood UX design, and frankly most code regardless of purpose. Having a good way to do it in TypeScript can save you a lot of headaches!<br><br>For the full code, and a running example of the TicTacToe FSM, check out my gist here: <a href="https://t.co/K94u6RqSck">https://t.co/K94u6RqSck</a>
+
+Also, if you have any questions about what we did here, or why we did it, feel free to @ me!<br><br>Thanks for following along ⚙️❤️</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">type</a></li>
+<li><a href="#">FSM</a></li>
+<li><a href="#">state machine</a></li>
+<li><a href="#">state</a></li>
+<li><a href="#">typescript</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +320,7 @@
       }
     </script>
 
-<!--9615185525840861751-->
+<!--4606907620040371751-->
 
   </body>
 
