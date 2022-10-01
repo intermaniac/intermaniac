@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Did you know that you can configure different .gitconfig instances for different file directories in...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Did you know that you can configure different .gitconfig instances...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Did you know that you can configure different .gitconfig instances...</h2>
               </div>
             </div>
           </div>
@@ -98,34 +97,29 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Did you know that you can configure different .gitconfig instances...</span>
+                      <a href="#"><h4>Did you know that you can configure different .gitconfig instances for different file directories in...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-01 07:15:39.934956</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Did you know that you can configure different .gitconfig instances for different file directories in Git? I'll try my best to make this thread beginner-friendly but you're free to ask any questions if you don't understand any of the details. Let me explain 👇<br><br>Note: I'm using macOS but this can be done in any operating system if you have Git v2.13.0 and above installed. Let's get started.<br><br>First you need to find your global .gitconfig file. This file is placed in root directory (~/.gitconfig). Use your favorite editor to open it. The command "code ~/.gitconfig" to opens it via VS Code if you have "code" command installed correctly.<br><br>You'll see something like this if you configured your credentials before: <a href="https://t.co/5pBjEoogbg">https://t.co/5pBjEoogbg</a><br><br>Now we'll add some lines that conditionally adds another .gitconfig file with different settings:
 
-Learn Coding with Java from Scratch: Essential Training 2022: 
-<a href="https://t.co/N1rCkSFotG">https://t.co/N1rCkSFotG</a>
+[includeIf "gitdir:~/customer-a/"]
+path = .gitconfig-customer-a
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Object-Oriented Programming with Python: Code Faster in 2022: 
-<a href="https://t.co/hv5le0SFZy">https://t.co/hv5le0SFZy</a><br><br>Learn Coding with C# from Scratch | C# Comprehensive Course: 
-<a href="https://t.co/xuW5b3YeZI">https://t.co/xuW5b3YeZI</a></p>
+"customer-a" is a directory that I created under the root directory. <a href="https://t.co/IXeQNSuMQw">https://t.co/IXeQNSuMQw</a><br><br>I want to use a different email in Customer A's projects, therefore I create a different .gitconfig file called ".gitconfig-customer-a" in the root directory as well. This file can contain any setting available in here: <a href="https://t.co/gfS0Zz2VK9.">https://t.co/gfS0Zz2VK9.</a> I'll only change my user settings. <a href="https://t.co/GoApZ1UseC">https://t.co/GoApZ1UseC</a><br><br>That's it. Now my config changes depending on the directory I'm in. If I create a test repository under the "customer-a" directory and I run this command to check what is my configured email, I'll see that my customera email is being used. <a href="https://t.co/61LEkTTL8o">https://t.co/61LEkTTL8o</a><br><br>All the other directories still use my personal config settings. You can think it as a fallback mechanism. Feel free to ask any questions, I'll do my best to help. Happy coding 👨‍💻</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Learn Coding</a></li>
+								<li><a href="#">gitconfig</a></li>
+<li><a href="#">gitconfig file</a></li>
+<li><a href="#">gitconfig instances</a></li>
+<li><a href="#">file</a></li>
+<li><a href="#">Git</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -287,7 +281,7 @@ Learn Coding with Java from Scratch: Essential Training 2022:
       }
     </script>
 
-<!--6228287208442302751-->
+<!--2386523271654081751-->
 
   </body>
 

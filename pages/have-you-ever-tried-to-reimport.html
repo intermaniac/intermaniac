@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Have you ever tried to reimport a python module and noticed your changes have not...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Have you ever tried to reimport a python module and...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Have you ever tried to reimport a python module and...</h2>
               </div>
             </div>
           </div>
@@ -98,34 +97,46 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Have you ever tried to reimport a python module and...</span>
+                      <a href="#"><h4>Have you ever tried to reimport a python module and noticed your changes have not...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-01 07:15:39.934956</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Have you ever tried to reimport a python module and noticed your changes have not been applied? 
 
-Learn Coding with Java from Scratch: Essential Training 2022: 
-<a href="https://t.co/N1rCkSFotG">https://t.co/N1rCkSFotG</a>
+Why does this happen? 🧵 (1/4)<br><br>When a module is imported into an iPython environment, a check is completed ensuring the module does not exist in the environment's cache (sys.module).
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Object-Oriented Programming with Python: Code Faster in 2022: 
-<a href="https://t.co/hv5le0SFZy">https://t.co/hv5le0SFZy</a><br><br>Learn Coding with C# from Scratch | C# Comprehensive Course: 
-<a href="https://t.co/xuW5b3YeZI">https://t.co/xuW5b3YeZI</a></p>
+As the module has already been imported previously, the attempt to reimport fails and this request is ignored. (2/4)<br><br>To fix this problem there are two popular solutions.
+
+Firstly, you can use the reload function within the importlib package in your script.
+
+import importlib
+importlib.reload(&lt;module_name&gt;) 
+
+Each time your script executes all your modules will be re-imported. (3/4)<br><br>Secondly, if using Jupyter, you can use a magic method.
+
+Insert the following into a cell at the top of your notebook:
+
+%load_ext autoreload
+%autoreload 2
+
+This method will reimport all modules each time you execute a cell of code. 
+
+Happy coding! (4/4)<br><br>Thank you for reading.
+
+If you enjoyed this thread, drop @marccodess a follow and feel free to let me know of any other topics you'd like me to cover.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Learn Coding</a></li>
+								<li><a href="#">module</a></li>
+<li><a href="#">python module</a></li>
+<li><a href="#">reimport</a></li>
+<li><a href="#">applied</a></li>
+<li><a href="#">python</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -287,7 +298,7 @@ Learn Coding with Java from Scratch: Essential Training 2022:
       }
     </script>
 
-<!--6228287208442302751-->
+<!--6772346405303491751-->
 
   </body>
 

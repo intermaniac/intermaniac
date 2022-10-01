@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="A thread about #Python #programming. Typed on an Android phone with a scrunched, touch-screen, full...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>About #python #programming. typed on an android phone with...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>About #python #programming. typed on an android phone with...</h2>
               </div>
             </div>
           </div>
@@ -98,34 +97,79 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>About #python #programming. typed on an android phone with...</span>
+                      <a href="#"><h4>A thread about #Python #programming. Typed on an Android phone with a scrunched, touch-screen, full...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-01 07:15:39.934956</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>A thread about #Python #programming. Typed on an Android phone with a scrunched, touch-screen, full keyboard.
 
-Learn Coding with Java from Scratch: Essential Training 2022: 
-<a href="https://t.co/N1rCkSFotG">https://t.co/N1rCkSFotG</a>
+While many hate it for the indentation, I wonder why they do.
+It is still the same as with readable code containing curly braces.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Object-Oriented Programming with Python: Code Faster in 2022: 
-<a href="https://t.co/hv5le0SFZy">https://t.co/hv5le0SFZy</a><br><br>Learn Coding with C# from Scratch | C# Comprehensive Course: 
-<a href="https://t.co/xuW5b3YeZI">https://t.co/xuW5b3YeZI</a></p>
+[1/10]<br><br>Someone told me: "I cannot automatically indent with my linter" and never really stated why they needed this, which I figured out on my own just a moment ago:
+Apparently they don't use VSCode or something that allows them to indent / unindent multiple lines at once.
+
+[2/10]<br><br>"I want to make the code longer" said someone who had the code working just fine.
+… The beauty in Python is how simple it is is to not need to write a lot of boilerplate code just to make it work in the first place (also, obfustication isn't true copy protection).
+
+[3/10]<br><br>Don't try to do non-Python style coding practices in Python.
+Python's `for` loop would be better named as `foreach` for some languages.
+
+for value in seq:
+# OR
+for index, value in enumerate(seq):
+
+enumerate also takes another parameter: enumerate(seq, start=1)
+
+[4/10]<br><br>Slicing is amazing.
+s="01234567890"
+s[7:10] # '789'
+Can also choose the step:
+s[1:10:2] # '13579'
+Negative indexing (LENGTH + INDEX):
+s[-2] # '9'
+Negative step in slicing:
+s[5:0:-1] # '54321'
+
+[5/10]<br><br>While joining a sequence of strings is reversed order (method of the string), it also does not coerce all values to strings either: `joiner.join(sequence)`
+
+All normal sequences, which can be indexed, are iterables. Not fully true the other way around.
+`range()` is cool.
+
+[6/10]<br><br>Internally in the code you make, when it is sliced, it is passed a `slice` object to either `__getitem__`, `__setitem__` or `__delitem__` depending on what is going on.
+Some 3rd-party libraries take advantage of this for easier 2D / 3D slicing by implicit tuples.
+
+[7/10]<br><br>Need to send back more than one value?
+
+def func():
+    return 122333, 404, "spam", "eggs"
+
+This is sent back as a tuple.
+
+a, b, c, d = func()
+
+And that is one way to get it, assuming it is always returning a sequence of 4 items.
+
+[8/10]<br><br>Python may be slower than compiled languages at runtime, it makes up for it at how quick the coding speed is, which can be the downfall if you don't keep backups to roll back to / compare against if something breaks.
+
+[9/10]<br><br>Don't optimize for speed unless the program is completed.
+
+If you need speed, rewrite parts that won't change in C / C++ and have Python interact with that (assuming normal "CPython", the default Python you get in Linux / Unix and at Python's homepage)
+
+[10/10]</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Learn Coding</a></li>
+								<li><a href="#">Python</a></li>
+<li><a href="#">code</a></li>
+<li><a href="#">Android phone</a></li>
+<li><a href="#">Slicing</a></li>
+<li><a href="#">sequence</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -287,7 +331,7 @@ Learn Coding with Java from Scratch: Essential Training 2022:
       }
     </script>
 
-<!--6228287208442302751-->
+<!--2049985190346681751-->
 
   </body>
 

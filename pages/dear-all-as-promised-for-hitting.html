@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Dear all, as promised for hitting 9k, a 🤓 #geeky 🧵 on crazy coding quirks...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Dear all, as promised for hitting 9k, a 🤓 #geeky...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Dear all, as promised for hitting 9k, a 🤓 #geeky...</h2>
               </div>
             </div>
           </div>
@@ -98,34 +97,70 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Dear all, as promised for hitting 9k, a 🤓 #geeky...</span>
+                      <a href="#"><h4>Dear all, as promised for hitting 9k, a 🤓 #geeky 🧵 on crazy coding quirks...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-01 07:15:39.934956</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Dear all, as promised for hitting 9k, a 🤓 #geeky 🧵 on crazy coding quirks I came across in the last year in three other languages (R, Python, JS, C++, Fortran), that had to be translated in #Stata/#Mata code for #dataviz packages.
 
-Learn Coding with Java from Scratch: Essential Training 2022: 
-<a href="https://t.co/N1rCkSFotG">https://t.co/N1rCkSFotG</a>
+#codeporn<br><br>1. From Python, this statement made no sense for a long time:
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Object-Oriented Programming with Python: Code Faster in 2022: 
-<a href="https://t.co/hv5le0SFZy">https://t.co/hv5le0SFZy</a><br><br>Learn Coding with C# from Scratch | C# Comprehensive Course: 
-<a href="https://t.co/xuW5b3YeZI">https://t.co/xuW5b3YeZI</a></p>
+while True:
+   # some code
+
+When we learn while, we usually think of variable reaching a condition. In psuedocode:
+
+i = 1
+while (i &lt;= 5) {
+print i
+i = i + 1
+}
+
+is just printing i from 1-5 &amp; incrementing the counter<br><br>But "while True" is always a true. It is an "infinite loop"! So why do this? Inside "while True" we can do complex iterations e.g. some convergence conditions &amp; "break" out of it when needed. 
+while True:
+    if x!=y:  do operations 
+    else:  break
+
+See <a href="https://t.co/voFD2eezif">https://t.co/voFD2eezif</a><br><br>2) Functions calling themselves before the program ends 🤯! These are called "recursive functions":
+
+function myfunc(a, b)
+     myfunc(a,b)
+end
+
+This top-level programming for convergence conditions can drive you crazy 😵‍💫. Stata allows these btw.
+
+<a href="https://t.co/SrMUDErI4b">https://t.co/SrMUDErI4b</a><br><br>3) "Bit shifts". Often one comes this code in JavaScript/Python/C++: 
+a &gt;&gt; b, e.g. 5 &gt;&gt;1
+It means convert 5 to a binary. Whatever 1s &amp; 0s you get, move them right ➡️ by one! So what does this do? 
+
+This is just fancy way of dividing by 2 &amp; throwing out the remainder! So 5&gt;&gt;1 = 2.<br><br>In Stata this would be: floor(5/2)
+
+But why do this? Its low-level programming &amp; memory efficient. Bit shift left ⬅️ by 1 is multiplying by 2. You can shift by more than one. There are also bit rotations, where are used in encryption, e.g. hashing.
+<a href="https://t.co/Dzsp2dD9Ax">https://t.co/Dzsp2dD9Ax</a><br><br>4) "mod": An underrated &amp; extremely powerful tool is modulus. Modulus is the remaining after a division: mod(3,2) = 1. Where do we use it? Run counters for a sequence of numbers. E.g., if I have coordinate triplets for triangles 📐, that are stacked, then<br><br>modulus will track the indexing. e.g. mod(1...6,3) = 1,2,0,1,2,0 etc. The cycles repeats. It can also be used to pick even observations: mod(x,2)==0. 
+
+It's amazing for running counters on stacked data, which is easier on the memory 🤩!
+
+<a href="https://t.co/VknCkd86od">https://t.co/VknCkd86od</a><br><br>5) The last one is a wierd one. The ancient 🦕 language #Fortran (its making a comback!), has a quirk. One can define which line to run after some condition is met:
+if x == 2 GOTO 100.
+This will go execute line 100. 
+
+Stata actually allows this 🤯! 
+<a href="https://t.co/xCzxCI3w9v">https://t.co/xCzxCI3w9v</a><br><br>6) The sixth is how matrices, lists, and arrays 🪜 (these are different things!) are indexed. In most other languages the first observation has an index 0, while Stata starts with an index 1! Which might not be such a trivial adjustment for certain complex applications!
+
+&lt;&lt;END&gt;&gt;</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Learn Coding</a></li>
+								<li><a href="#">Mata code</a></li>
+<li><a href="#">dataviz packages</a></li>
+<li><a href="#">True</a></li>
+<li><a href="#">promised for hitting</a></li>
+<li><a href="#">Python</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -287,7 +322,7 @@ Learn Coding with Java from Scratch: Essential Training 2022:
       }
     </script>
 
-<!--6228287208442302751-->
+<!--4220896151439881751-->
 
   </body>
 

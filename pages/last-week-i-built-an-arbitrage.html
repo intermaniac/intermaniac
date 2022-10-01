@@ -5,12 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Last week I built an arbitrage bot for @ZeitgeistPM and made 30 USD.
+
+This week, the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Last week i built an arbitrage bot for @zeitgeistpm and...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +77,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Last week i built an arbitrage bot for @zeitgeistpm and...</h2>
               </div>
             </div>
           </div>
@@ -98,34 +99,60 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Last week i built an arbitrage bot for @zeitgeistpm and...</span>
+                      <a href="#"><h4>Last week I built an arbitrage bot for @ZeitgeistPM and made 30 USD.
+
+This week, the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-01 07:15:39.934956</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Last week I built an arbitrage bot for @ZeitgeistPM and made 30 USD.
 
-Learn Coding with Java from Scratch: Essential Training 2022: 
-<a href="https://t.co/N1rCkSFotG">https://t.co/N1rCkSFotG</a>
+This week, the bot is obsolete. Over the weekend a new contender has arrived and he is taking it all now.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Object-Oriented Programming with Python: Code Faster in 2022: 
-<a href="https://t.co/hv5le0SFZy">https://t.co/hv5le0SFZy</a><br><br>Learn Coding with C# from Scratch | C# Comprehensive Course: 
-<a href="https://t.co/xuW5b3YeZI">https://t.co/xuW5b3YeZI</a></p>
+The small tale of how I finally started learning @typescript, @PolkadotJs &amp; arbitrage botting 🧵<br><br>Last week, @ZeitgeistPM launched. 
+
+There are 2 pools in ZTG:
+1) The prize pool, aka the bounty
+2) the liquidity pool; where you buy outcome tokens
+
+I know from @CryptoCowboyOG how he found a very simple arb opporunity between the two pools during beta.<br><br>When all prediction tokens are balanced, their value sum is ~1 $ZTG
+
+The liquidity pool is very shallow, because liquidity provision is likely to be net negative. 
+
+Which means token sums can deviate significantly from the value of 1 $ZTG. This is the arbitrage opportunity! <a href="https://t.co/OndsJc1jC9">https://t.co/OndsJc1jC9</a><br><br>The prize pool is interesting. It has an invariant that could be roughly described as x = y (I'm not a mathematician)
+
+You can buy an infinite amount of outcome tokens at the prize pool for an equal amount of $ZTG and vice versa.
+
+So price between pool differs!<br><br>Since you can source unlimited tokens from the prize pool, you can always arbitrage the liquidity pool to reach balance at a token sum of 1 $ZTG
+
+Could I build a bot around that idea?<br><br>All the tooling in the @substrate_io universe is built around @PolkadotJs and @typescript, so I had to pick those up first.
+
+The @ZeitgeistPM Github Repo is also gold: <a href="https://t.co/cGnHjyugtW">https://t.co/cGnHjyugtW</a><br><br>I put together a proof of concept in a day and was super excited for my first automated arbitrage and 0.6 cents of profit! <a href="https://t.co/nFrI1LzfnW">https://t.co/nFrI1LzfnW</a><br><br>The script was very basic, but it worked.
+
+I had built a few small cloud projects in the past, so I took another day to deploy it in @googlecloud. <a href="https://t.co/NE1DHnSWmR">https://t.co/NE1DHnSWmR</a><br><br>The profit kept rolling in while I was sleeping and I couldn't wait to get up in the morning to check how much I made <a href="https://t.co/agCCCVKA1l">https://t.co/agCCCVKA1l</a><br><br>I was already dreaming big. Can I deploy to other markets? Surely there is a ton of competition out there? But how established is it in Dotsama? Could I still be competitive?
+
+Then on Sunday, my rewards stopped coming in...<br><br>I tested my suspicion and it was true. A bot was following up my tx in the block right after a regular tx.
+
+That's a bit more elaborate then my proof of concept that runs every 5 minutes to see if there is an opportunity... <a href="https://t.co/xq9FFxAxJv">https://t.co/xq9FFxAxJv</a><br><br>My bot is very inefficient. It doesn't know the exact amount to arb, I didn't do the math yet. I'm just guessing with a few very simple params.
+
+Which led to me making 30 USD profit over the range of 1475 extrinsics. <a href="https://t.co/hLQeiCgs5W">https://t.co/hLQeiCgs5W</a><br><br>My competitor on the other hand works very elegant. Only 22 extrinsics for about 2 USD profit. <a href="https://t.co/9JcU9R7ZQb">https://t.co/9JcU9R7ZQb</a><br><br>well. I think I won't afford the time to outcompete them in the near term. 
+
+I would see one or two attack vectors that are still open, but I think I'd rather focus on doing analytics again.
+
+Thanks for listening :)</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">Learn Coding</a></li>
+								<li><a href="#">prize pool</a></li>
+<li><a href="#">pool</a></li>
+<li><a href="#">liquidity pool</a></li>
+<li><a href="#">ZTG</a></li>
+<li><a href="#">arbitrage</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -287,7 +314,7 @@ Learn Coding with Java from Scratch: Essential Training 2022:
       }
     </script>
 
-<!--6228287208442302751-->
+<!--0880925371846871751-->
 
   </body>
 
