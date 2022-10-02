@@ -5,15 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Getting your first 100 GitHub Stars.
-
-Over the past two months, I helped several projects cross...">
+    <meta name="description" content="1/ Expensive A100 GPUs being underutilized due to CPU bottlenecks? 💰
+ 
+TensorRT speedup being held...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Getting your first 100 github stars.
-
-over the past two months,...</title>
+    <title>1/ expensive a100 gpus being underutilized due to cpu bottlenecks?...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +77,7 @@ over the past two months,...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Getting your first 100 github stars.
-
-over the past two months,...</h2>
+                <h2>1/ expensive a100 gpus being underutilized due to cpu bottlenecks?...</h2>
               </div>
             </div>
           </div>
@@ -103,75 +99,48 @@ over the past two months,...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Getting your first 100 github stars.
-
-over the past two months,...</span>
-                      <a href="#"><h4>Getting your first 100 GitHub Stars.
-
-Over the past two months, I helped several projects cross...</h4></a>
+                      <span>1/ expensive a100 gpus being underutilized due to cpu bottlenecks?...</span>
+                      <a href="#"><h4>1/ Expensive A100 GPUs being underutilized due to CPU bottlenecks? 💰
+ 
+TensorRT speedup being held...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-02 07:15:36.075571</a></li>
 
                       </ul>
-                      <p>Getting your first 100 GitHub Stars.
-
-Over the past two months, I helped several projects cross the 100 GitHub Stars Milestone.
-
-Want to know a secret?
-
-I use the same steps every time 🧵👇<br><br>Step #1: Create a short but compelling headline
-
-How it works:
-
-- The headline should be short and to the point
-- Should explain the project's unique value proposition
-- Highlight the project's benefits
-- Avoid jargon
-
-The goal? Generate excitement, so people keep reading.<br><br>Step #2: Test your headline on Reddit
-
-How it works:
-
-- Write a post using your headline as the title
-- Publish the post on /r/coolgithubprojects
-- Respond to every comment
-- Repeat until you find a headline that works
-
-Quick note: Don't be spammy.<br><br>Step #3: Share your story everywhere using your new headline
-
-How it works:
-
-- Avoid being salesy
-- Do tell your story
-- If you avoid being salesy and instead tell your story, you'll unlock engagement.
-
-Easy, right?<br><br>Step #4: Optimize your repository's README
-
-How it works:
-
-- Include some form of social proof
-- Show how to use the repo
-- Include a Call-to-Action (Give a star? Join the community)
-
-Do these three things, and you'll be wildly successful.<br><br>That's it!
-
-To recap: use these four steps to get your first 100 GitHub Stars.
-
-- Create a short but compelling headline
-- Test your headline on Reddit
-- Share your story everywhere using your new headline
-- Optimize your repository's README</p>
+                      <p>1/ Expensive A100 GPUs being underutilized due to CPU bottlenecks? 💰
+ 
+TensorRT speedup being held back by a busy Python thread? 🐍
+ 
+Learn more about our journey getting a 20-40% boost by removing CPU as a bottleneck when applying LLM's to millions of pages in our web index. 🧵<br><br>2/ We've talked about optimizing GPU use by an embedding model used to smear signals (e.g. which result was clicked) to nearby queries.
+ 
+Most recently, we’ve been experimenting with encoder-decoder models to generate short summaries of long web pages. <a href="https://t.co/oue7XOdBVq">https://t.co/oue7XOdBVq</a><br><br>3/ Embedding models are encoder-only, which means it just takes one model call to get the embedding.
+ 
+In comparison, encoder-decoder models require us to keep feeding our previous output to the decoder until it outputs an &lt;EOS&gt; (end-of-sentence) token indicating it is done.<br><br>4/ The encoder-decoder model we’re using (T5 variant) requires expensive, high-memory GPU cards.
+ 
+Intuitively, we were expecting that GPU operations would be the bottleneck, with tokenization being very cheap.<br><br>5/ Surprisingly, we found the GPU utilization on our initial batch inference runs to be below what one might consider “well utilized”. So, our first instinct was to see what the CPU was up to. <a href="https://t.co/7pUBlHXhz7">https://t.co/7pUBlHXhz7</a><br><br>6/ We used py-spy to find that 40% of the time was being spent decoding tokens  - converting the integer token IDs output from the decoder into the string text! <a href="https://t.co/jsVPY9Yiz3">https://t.co/jsVPY9Yiz3</a><br><br>7/ Looking deeper, we found that over 30% (out of 40) was spent inside this line ⤵️
+ 
+<a href="https://t.co/tjdOPoSSaT">https://t.co/tjdOPoSSaT</a> <a href="https://t.co/Yda44nRzKd">https://t.co/Yda44nRzKd</a><br><br>8/ That line looked pretty innocent  (there are ~100 “special” tokens in the tokenizer implementation).
+ 
+However, the python property decorator can be tricky, because each iteration of this line was recomputing the token IDs for those ~100 special tokens! <a href="https://t.co/lyzsTRPb4P">https://t.co/lyzsTRPb4P</a><br><br>9/ This means that for every output token being converted to a string, we were converting ~100 token strings to a token id!
+ 
+Those costs added up quickly. 🤑
+ 
+For our purposes, we knew when we were decoding that we would not be changing the value of all_special_ids.<br><br>10/ So, we hacked a drop-in replacement for the Tokenizer (and for extra speed, used a “set” instead of a “List” to speed up the “in” operation). <a href="https://t.co/EwK7dtLPEL">https://t.co/EwK7dtLPEL</a><br><br>11/ With this, we’re now spending 97% instead of 63% of the time on GPU operations (in the TensorRT runtime) as the updated profile shows. 👇 <a href="https://t.co/o5qja8JJNF">https://t.co/o5qja8JJNF</a><br><br>12/ FYI that 3.27% is a bit fishy and we’ll tackle that next. 💪
+ 
+(we’ll be sending a non-hacky version of this as a PR to the HuggingFace transformers project)<br><br>13/ Overall, this CPU optimization leads to an over 20% reduction in overall inference time.
+ 
+Meaning 20% reduction in our iteration time and dollar costs! ✅ <a href="https://t.co/mSGzFcLPJ2">https://t.co/mSGzFcLPJ2</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">GitHub Stars Milestone</a></li>
-<li><a href="#">GitHub Stars</a></li>
-<li><a href="#">headline</a></li>
-<li><a href="#">Stars Milestone</a></li>
-<li><a href="#">GitHub</a></li>
+								<li><a href="#">underutilized due</a></li>
+<li><a href="#">GPU</a></li>
+<li><a href="#">CPU</a></li>
+<li><a href="#">token</a></li>
+<li><a href="#">GPU operations</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -333,7 +302,7 @@ To recap: use these four steps to get your first 100 GitHub Stars.
       }
     </script>
 
-<!--4703825621234522751-->
+<!--2650711150667622751-->
 
   </body>
 

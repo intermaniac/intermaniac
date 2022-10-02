@@ -5,15 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Getting your first 100 GitHub Stars.
+    <meta name="description" content="#Azure Managed Identity assignments are "secure by default."
 
-Over the past two months, I helped several projects cross...">
+Dangerous attack paths can emerge around these assignments.
+
+Here's...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Getting your first 100 github stars.
+    <title>#azure managed identity assignments are "secure by default."
 
-over the past two months,...</title>
+dangerous attack paths...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +81,9 @@ over the past two months,...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Getting your first 100 github stars.
+                <h2>#azure managed identity assignments are "secure by default."
 
-over the past two months,...</h2>
+dangerous attack paths...</h2>
               </div>
             </div>
           </div>
@@ -103,75 +105,69 @@ over the past two months,...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Getting your first 100 github stars.
+                      <span>#azure managed identity assignments are "secure by default."
 
-over the past two months,...</span>
-                      <a href="#"><h4>Getting your first 100 GitHub Stars.
+dangerous attack paths...</span>
+                      <a href="#"><h4>#Azure Managed Identity assignments are "secure by default."
 
-Over the past two months, I helped several projects cross...</h4></a>
+Dangerous attack paths can emerge around these assignments.
+
+Here's...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-02 07:15:36.075571</a></li>
 
                       </ul>
-                      <p>Getting your first 100 GitHub Stars.
+                      <p>#Azure Managed Identity assignments are "secure by default."
 
-Over the past two months, I helped several projects cross the 100 GitHub Stars Milestone.
+Dangerous attack paths can emerge around these assignments.
 
-Want to know a secret?
+Here's those attack paths emerge, how attackers abuse them, and how defenders can eliminate them: 🧵<br><br>The Virtual Machine itself becomes the entity able to authenticate as the Service Principal, and it does this via its local Instance Metadata Service (IMDS).
 
-I use the same steps every time 🧵👇<br><br>Step #1: Create a short but compelling headline
+This local service is not authenticated and any process on the VM can interact with it to request tokens for the SP. <a href="https://t.co/9rvHYkzTHY">https://t.co/9rvHYkzTHY</a><br><br>This is "secure by default" and no risk exists because we haven't given the Service Principal any privileges yet.
 
-How it works:
+But if you've gone through the trouble of configuring this, don't you think that Service Principal is going to need some privilege?<br><br>Let's say we give the SP "Subscription Owner", but that only a Global Admin can access the VM.
 
-- The headline should be short and to the point
-- Should explain the project's unique value proposition
-- Highlight the project's benefits
-- Avoid jargon
+In that case, who cares? A Global Admin is already all-powerful, so no privilege escalation opportunity exists: <a href="https://t.co/5JHfnxZGon">https://t.co/5JHfnxZGon</a><br><br>Dangerous attack paths emerge when the user with access to the VM has *less privilege* than the SP associated with the VM via a Managed Identity assignment: <a href="https://t.co/EsQyPw6QMD">https://t.co/EsQyPw6QMD</a><br><br>Doubt this configuration would ever exist in the real world? We've seen it.
 
-The goal? Generate excitement, so people keep reading.<br><br>Step #2: Test your headline on Reddit
+Don't just take my word for it. Read the replies to this to get an idea of what madness exists in the real world: <a href="https://t.co/HZBIsaVSkc">https://t.co/HZBIsaVSkc</a><br><br>How do attackers abuse Managed Identity attack paths? Let's see three quick examples based on this overall attack path that mirrors different configurations we have observed in real environments: <a href="https://t.co/UDexAfmz5A">https://t.co/UDexAfmz5A</a><br><br>Step 1: compromise User A and RDP into the Virtual Machine. Use our access to request a token for Service Principal B via the IMDS: <a href="https://t.co/rwm2T9hBkc">https://t.co/rwm2T9hBkc</a><br><br>Step 2: Use the JWT for ServicePrincipalB to add a new evil function to the Function App. Fetch the Function App master key, then use the master key to retrieve the output of that function: <a href="https://t.co/FUI1HAmo5S">https://t.co/FUI1HAmo5S</a><br><br>Step 3: Use ServicePrincipalC's JWT to add a new evil runbook to the Automation Account, then retrieve the output of that function: <a href="https://t.co/BQ1V3unXJd">https://t.co/BQ1V3unXJd</a><br><br>The resulting token at the end of this attack path is for ServicePrincipalE, which is a Privileged Role Admin at the tenant. This is a Tier Zero role which allows escalation to Global Admin: <a href="https://t.co/AVCcd3myNh">https://t.co/AVCcd3myNh</a><br><br>Admins need to audit for and eliminate these attack paths. Here's how:
 
-How it works:
+Let's genericize the attack path and see it like this, where the SP has some sort of Tier Zero level of privilege: <a href="https://t.co/ewR6SJhk0v">https://t.co/ewR6SJhk0v</a><br><br>Your first and most important step: identify any service principals with Tier Zero privileges.
 
-- Write a post using your headline as the title
-- Publish the post on /r/coolgithubprojects
-- Respond to every comment
-- Repeat until you find a headline that works
+You can easily discover all Service Principals with Tier Zero rights using BARK's Get-TierZeroServicePrincipals: <a href="https://t.co/jHljiTjFnm">https://t.co/jHljiTjFnm</a><br><br>This function finds all service principals with the following privileges that are definitively Tier Zero: 
 
-Quick note: Don't be spammy.<br><br>Step #3: Share your story everywhere using your new headline
+Global Admin
+Privileged Role Admin
+Privileged Auth Admin
+Partner Tier2 Support
 
-How it works:
+<a href="https://t.co/JY23OSEU5N">https://t.co/JY23OSEU5N</a>
+AppRoleAssignment.ReadWrite.All<br><br>No results? Great! Keep it that way by periodically running that function and KEEPING the results empty.
 
-- Avoid being salesy
-- Do tell your story
-- If you avoid being salesy and instead tell your story, you'll unlock engagement.
+If you have results, try to get rid of those privileges! This is where you will have the LARGEST positive impact on reducing attack paths with the LEAST amount of work.<br><br>Maybe you can't get rid of that privilege for that SP. That's valid.
 
-Easy, right?<br><br>Step #4: Optimize your repository's README
+Your next step is to enumerate all of the AzureRM resources with Managed Identity assignments.
 
-How it works:
+You can do this with BARK's Get-AllAzureManagedIdentityAssignments: <a href="https://t.co/Zxv33RTqja">https://t.co/Zxv33RTqja</a><br><br>Now compare the list of Tier Zero SPs to the list of Managed Identity SPs and see if there is any crossover.
 
-- Include some form of social proof
-- Show how to use the repo
-- Include a Call-to-Action (Give a star? Join the community)
+There are many ways to do this, here's how to do this with PowerShell: <a href="https://t.co/wGud6E6W4k">https://t.co/wGud6E6W4k</a><br><br>See results? Try to get rid of them! This will likely be more difficult than removing the SP's privileges, but is WAY easier than your next step...<br><br>Your next step is to audit who has control of the various AzureRM resources with Managed Identity assignments. This gets very complicated very quickly.
 
-Do these three things, and you'll be wildly successful.<br><br>That's it!
+You can use #FOSS BloodHound to audit who controls any given AzureRM resource: <a href="https://t.co/22s5Lzasix">https://t.co/22s5Lzasix</a><br><br>See results? Good luck. You need to compare the privileges held by each of those principals with the privileges held by the Tier Zero SP.
 
-To recap: use these four steps to get your first 100 GitHub Stars.
+In other words, the Azure resource is now Tier Zero and must only be controllable by other Tier Zero principals.<br><br>All tools used in this thread are free and open source software:
 
-- Create a short but compelling headline
-- Test your headline on Reddit
-- Share your story everywhere using your new headline
-- Optimize your repository's README</p>
+BARK: <a href="https://t.co/FwKiY6vuTv">https://t.co/FwKiY6vuTv</a> 
+BloodHound: <a href="https://t.co/ZhEAeZratA">https://t.co/ZhEAeZratA</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">GitHub Stars Milestone</a></li>
-<li><a href="#">GitHub Stars</a></li>
-<li><a href="#">headline</a></li>
-<li><a href="#">Stars Milestone</a></li>
-<li><a href="#">GitHub</a></li>
+								<li><a href="#">Managed Identity</a></li>
+<li><a href="#">Service Principal</a></li>
+<li><a href="#">Managed Identity assignments</a></li>
+<li><a href="#">Global Admin</a></li>
+<li><a href="#">Instance Metadata Service</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -333,7 +329,7 @@ To recap: use these four steps to get your first 100 GitHub Stars.
       }
     </script>
 
-<!--4703825621234522751-->
+<!--8277770488003822751-->
 
   </body>
 

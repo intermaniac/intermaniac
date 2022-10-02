@@ -5,15 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Getting your first 100 GitHub Stars.
+    <meta name="description" content="Amazon VPC is one of the main foundation service on AWS.
 
-Over the past two months, I helped several projects cross...">
+Do you know that VPC...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Getting your first 100 github stars.
-
-over the past two months,...</title>
+    <title>Amazon vpc is one of the main foundation service on...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +77,7 @@ over the past two months,...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Getting your first 100 github stars.
-
-over the past two months,...</h2>
+                <h2>Amazon vpc is one of the main foundation service on...</h2>
               </div>
             </div>
           </div>
@@ -103,75 +99,89 @@ over the past two months,...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Getting your first 100 github stars.
+                      <span>Amazon vpc is one of the main foundation service on...</span>
+                      <a href="#"><h4>Amazon VPC is one of the main foundation service on AWS.
 
-over the past two months,...</span>
-                      <a href="#"><h4>Getting your first 100 GitHub Stars.
-
-Over the past two months, I helped several projects cross...</h4></a>
+Do you know that VPC...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-02 07:15:36.075571</a></li>
 
                       </ul>
-                      <p>Getting your first 100 GitHub Stars.
+                      <p>Amazon VPC is one of the main foundation service on AWS.
 
-Over the past two months, I helped several projects cross the 100 GitHub Stars Milestone.
+Do you know that VPC wasn’t available when first EC2 was launched?
+Do you know why and how VPC was built at scale?
 
-Want to know a secret?
+Let’s look at behind the scenes of VPC.
 
-I use the same steps every time 🧵👇<br><br>Step #1: Create a short but compelling headline
+👇
+[Thread - 1/13]<br><br>When EC2 Classic (before VPC) was launched, it was assigned a 32 bit unique random number / IP.
 
-How it works:
+Routing from Customer data center to AWS was always /32 due to multi-tenancy.
 
-- The headline should be short and to the point
-- Should explain the project's unique value proposition
-- Highlight the project's benefits
-- Avoid jargon
+[Thread - 2/13] <a href="https://t.co/GzLjr44U6L">https://t.co/GzLjr44U6L</a><br><br>There were many challenges, like what if Data center has overlapping CIDR range?
 
-The goal? Generate excitement, so people keep reading.<br><br>Step #2: Test your headline on Reddit
+Yes, double NAT can solve problem, is it scalable? Do you really want to do that?
 
-How it works:
+VPC Requirements were defined.
 
-- Write a post using your headline as the title
-- Publish the post on /r/coolgithubprojects
-- Respond to every comment
-- Repeat until you find a headline that works
+[Thread - 3/13] <a href="https://t.co/uuu9xFZTOJ">https://t.co/uuu9xFZTOJ</a><br><br>VPC – isn’t this problem was already solved through VRF ?
 
-Quick note: Don't be spammy.<br><br>Step #3: Share your story everywhere using your new headline
+Subnet ~=VLAN
+VPC ~= VRF (Virtual routing and forwarding)
 
-How it works:
+[Thread - 4/13] <a href="https://t.co/1N8zfNypk8">https://t.co/1N8zfNypk8</a><br><br>NO
 
-- Avoid being salesy
-- Do tell your story
-- If you avoid being salesy and instead tell your story, you'll unlock engagement.
+There were scale problems with VLAN for 1 Million+ customers
 
-Easy, right?<br><br>Step #4: Optimize your repository's README
+[Thread - 5/13] <a href="https://t.co/Lg6IzMl124">https://t.co/Lg6IzMl124</a><br><br>Let’s try silos of capacity
 
-How it works:
+Each router assigned to support 4 customers with 40 instance capacity
 
-- Include some form of social proof
-- Show how to use the repo
-- Include a Call-to-Action (Give a star? Join the community)
+Doesn’t scale either with problem in both scenarios 
 
-Do these three things, and you'll be wildly successful.<br><br>That's it!
+Left – spare capacity with all customers mapped &amp;
+Right – insufficient capacity with existing customers
 
-To recap: use these four steps to get your first 100 GitHub Stars.
+[Thread - 6/13] <a href="https://t.co/Y2nvAk59D0">https://t.co/Y2nvAk59D0</a><br><br>VPC Implementation requirements to
 
-- Create a short but compelling headline
-- Test your headline on Reddit
-- Share your story everywhere using your new headline
-- Optimize your repository's README</p>
+•   Scale to millions of environments, the size of <a href="https://t.co/oesXk4blFe">https://t.co/oesXk4blFe</a>
+•   Any server, anywhere in a region can host an instance attached to any subnet in any VPC
+
+[Thread - 7/13]<br><br>Mapping Service – not exposed outside 
+
+Handling Layer 2 (with in Subnet) and Layer 3 (Across Subnet) networking requests.
+
+[Thread - 8/13] <a href="https://t.co/nAGpCpXAMV">https://t.co/nAGpCpXAMV</a><br><br>Mapping Service critical to packet flows and so there’s mapping service replica – a cache - in each server.
+
+[Thread - 9/13] <a href="https://t.co/LSv4JgwCtQ">https://t.co/LSv4JgwCtQ</a><br><br>Hey wait - original problem – how do you get data center traffic back and forth from AWS ?
+
+[Thread - 10/13] <a href="https://t.co/sxBgGoNF5F">https://t.co/sxBgGoNF5F</a><br><br>A new kind of thing – Edges
+
+Responsible for packet wrap/unwrap according to the VPN/Direct Connect/Internet… etc.
+
+Most critical piece in overall VPC architecture.
+
+[Thread - 11/13] <a href="https://t.co/dgNWiDih7N">https://t.co/dgNWiDih7N</a><br><br>and we got flexible and programmable virtual network,  working at scale and available to all customers at no cost.
+
+[Thread - 12/13] <a href="https://t.co/GeG9JkmQKM">https://t.co/GeG9JkmQKM</a><br><br>Watch first session at Re:Invent 2013 - A Day in the Life of a Billion Packets - <a href="https://t.co/LCrKda71X4">https://t.co/LCrKda71X4</a> by @ebrandwine 
+
+Subsequent sessions titled "Another Day, Another Billion Packets” &amp; above screenshots taken from 2015 session - <a href="https://t.co/7F61I3M4QX">https://t.co/7F61I3M4QX</a>
+
+[Thread - 13/13]<br><br>Thanks for reading! 
+
+Hope you found this insightful, follow me at @ashishkp4u to get more threads like this.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">GitHub Stars Milestone</a></li>
-<li><a href="#">GitHub Stars</a></li>
-<li><a href="#">headline</a></li>
-<li><a href="#">Stars Milestone</a></li>
-<li><a href="#">GitHub</a></li>
+								<li><a href="#">Amazon VPC</a></li>
+<li><a href="#">VPC</a></li>
+<li><a href="#">Thread</a></li>
+<li><a href="#">main foundation service</a></li>
+<li><a href="#">main foundation</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -333,7 +343,7 @@ To recap: use these four steps to get your first 100 GitHub Stars.
       }
     </script>
 
-<!--4703825621234522751-->
+<!--1134110997095822751-->
 
   </body>
 
