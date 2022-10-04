@@ -31873,6 +31873,734 @@
                 "Full Site",
                 "Site Editing"
             ]
+        },
+        {
+            "url": "javascript-use-strict-the-complete-guide.html",
+            "desc": "JavaScript \"use strict\" \n\nThe Complete Guide:\n\nThread \ud83e\uddf5In JavaScript,\u00a0`'use strict';`\u00a0states that the code should be executed...",
+            "title": "javascript use strict the complete guide",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "strict mode",
+                "strict",
+                "strict mode inside",
+                "mode",
+                "Complete Guide"
+            ]
+        },
+        {
+            "url": "i-m-disgusted-at-the-toxic.html",
+            "desc": "I'm disgusted at the toxic environment that professors and academics are having to endure...\n\nAnd the...",
+            "title": "i m disgusted at the toxic",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Industry",
+                "data scientist",
+                "data",
+                "Step",
+                "environment that professors"
+            ]
+        },
+        {
+            "url": "september-will-be-my-last-month.html",
+            "desc": "September will be my last month as an official staff member of @cagesideseats. It\u2019s been...",
+            "title": "september will be my last month",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "official staff member",
+                "n\u2019t",
+                "official staff",
+                "staff member",
+                "September"
+            ]
+        },
+        {
+            "url": "do-you-have-an-interest-in-coding.html",
+            "desc": "Do you have an interest in coding? Do you think it's just 1's and 0's?...",
+            "title": "do you have an interest in coding",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "coding",
+                "Technical Writer specialising",
+                "Ahsan Noor",
+                "Software Engineer",
+                "Engineer and Technical"
+            ]
+        },
+        {
+            "url": "i-used-python-to-scrape-tweets.html",
+            "desc": "I used python to scrape tweets from #NamTwitter that mention FNB. I set the limitation...",
+            "title": "i used python to scrape tweets",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "South African tweets",
+                "FNB",
+                "NamTwitter that mention",
+                "python to scrape",
+                "mention FNB"
+            ]
+        },
+        {
+            "url": "common-javascript-questions-used-to-ask.html",
+            "desc": "Common JavaScript Questions  Used to ask in Interview. \n\nFriday Interview Special Thread \ud83e\uddf5\n\nLet's go...",
+            "title": "common javascript questions used to ask",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Common JavaScript Questions",
+                "Friday Interview Special",
+                "JavaScript",
+                "Interview Special Thread",
+                "Interview Special"
+            ]
+        },
+        {
+            "url": "learn-different-programming-languages-for-free.html",
+            "desc": "\ud83c\udfc6 Learn Different Programming Languages for FREE\n\nI have curated separate threads for Python, Java, JavaScript,...",
+            "title": "learn different programming languages for free",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Learn Different Programming",
+                "Programming Languages",
+                "Languages for FREE",
+                "Python Python Thread",
+                "Java Java Thread"
+            ]
+        },
+        {
+            "url": "hey-azurecosmosdb-folks.html",
+            "desc": "Hey, @AzureCosmosDB folks. I'm running into an issue where I'm not able to use SQL...",
+            "title": "hey azurecosmosdb folks",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "AzureCosmosDB folks",
+                "Hey",
+                "SQL",
+                "AzureCosmosDB",
+                "folks"
+            ]
+        },
+        {
+            "url": "electron-articles-that-you-should-not-miss.html",
+            "desc": "12 ELECTRON Articles That You Should Not Miss in September 2022 \ud83e\uddf5\nhttps://t.co/yX3qky7sE4\n\ud83d\udc47\n#technology #programming #git #electronElectron...",
+            "title": "electron articles that you should not miss",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Miss in September",
+                "Electron Fundamentals",
+                "Auto-updating apps",
+                "Building a desktop",
+                "ELECTRON Articles"
+            ]
+        },
+        {
+            "url": "do-you-want-to-increase-your-business.html",
+            "desc": "Do you want to increase your business conversion rate? \ud83d\ude80\n\nI suggest to keep your eyes...",
+            "title": "do you want to increase your business",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "technical SEO",
+                "website",
+                "SEO",
+                "business conversion rate",
+                "conversion rate"
+            ]
+        },
+        {
+            "url": "basics-projects-to-brush-up-on.html",
+            "desc": "Basics Projects to brush up on your HTML and CSS skills.\n\n\ud83e\uddf5\ud83d\udc47 https://t.co/H2yzVSZDm31\u20e3 HTML personal website...",
+            "title": "basics projects to brush up on",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Basics Projects",
+                "HTML personal website",
+                "CSS skills",
+                "Basics",
+                "HTML"
+            ]
+        },
+        {
+            "url": "the-entire-history-of-the-profanity.html",
+            "desc": "The entire history of the Profanity weak-key generation vulnerability (costing Wintermute $160MM USD in recent...",
+            "title": "the entire history of the profanity",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "bug filed Jan",
+                "Profanity weak-key generation",
+                "project authors Fast",
+                "authors Fast forward",
+                "weak-key generation vulnerability"
+            ]
+        },
+        {
+            "url": "happy-to-announce-my-new-course.html",
+            "desc": "Happy to announce my new course Mapping and Data Visualization with #Python. This has been...",
+            "title": "happy to announce my new course",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Happy to announce",
+                "Python data visualization",
+                "Data Visualization",
+                "raster data visualization",
+                "data visualization landscape"
+            ]
+        },
+        {
+            "url": "javascript-conditional-statements-if-ternary-and-switch.html",
+            "desc": "JavaScript conditional statements (if, ternary, and switch) can be used interchangeably, but should they? \ud83e\udd14...",
+            "title": "javascript conditional statements if ternary and switch",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "statements",
+                "statement",
+                "run",
+                "conditional",
+                "conditional statement"
+            ]
+        },
+        {
+            "url": "my-profiles-linkedin-github-instagram1.html",
+            "desc": "My Profiles Thread \ud83e\uddf5\ud83d\udc47\n#linkedin #github #Instagram1. #linkedin\nhttps://t.co/I3q6eagM7B2. #github\nhttps://t.co/Hacb6SLNGK3. #Instagram\n\nhttps://t.co/WrJmH501ln4. #Kaggle\n\nhttps://t.co/2oFO1Msw955. #Twitter\n\nhttps://t.co/Usy7jJD5DU6. #Stackoverflow \n\nhttps://t.co/zhumpKBU047. #Chess com\n\nhttps://t.co/4WsBr5XpLD8....",
+            "title": "my profiles linkedin github instagram1",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Profiles Thread",
+                "Thread",
+                "Profiles",
+                "linkedin",
+                "Instagram"
+            ]
+        },
+        {
+            "url": "are-you-a-budding-techie-here.html",
+            "desc": "Are you a budding techie?\n\nHere are three things that can make you an Outstanding Tech...",
+            "title": "are you a budding techie here",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Outstanding Tech Bro",
+                "Tech",
+                "Tech Bro",
+                "Outstanding Tech",
+                "Learn"
+            ]
+        },
+        {
+            "url": "hey-folks-my-daily-learn-react.html",
+            "desc": "Hey folks! My daily \"Learn React.js\" post plan is landing today.\ud83d\ude80\ud83d\ude80This is the first tweet.\n\nFollow...",
+            "title": "hey folks my daily learn react",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Hey folks",
+                "React.js",
+                "Hey",
+                "Learn React.js",
+                "folks"
+            ]
+        },
+        {
+            "url": "contourner-le-login-via-une-injection.html",
+            "desc": "Contourner le login via une injection SQL \n\nUn thread \ufffc\n\n1/10\n\n#SQLi #injectionSQL #websecurite https://t.co/JP6aLgSpdXD\u00e9tection\u00a0:\n\nIl y a...",
+            "title": "contourner le login via une injection",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "une injection SQL",
+                "d\u00e9couvrir une injection",
+                "provoqu\u00e9 une erreur",
+                "l\u2019ajout d\u2019un guillemet",
+                "d\u2019un guillemet donne"
+            ]
+        },
+        {
+            "url": "membership-operators-in-python-with-visuals.html",
+            "desc": "Membership Operators in Python (with visuals) \n\n \"in\" and \"not in\" are membership operators, which...",
+            "title": "membership operators in python with visuals",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Membership Operators",
+                "Memberships Operator",
+                "operator visuals",
+                "Python",
+                "Operator"
+            ]
+        },
+        {
+            "url": "extract-text-from-pdf-file-in-python.html",
+            "desc": "Extract Text from PDF file in Python \u26a1\ufe0f\n\nWe can extract text from a PDF file...",
+            "title": "extract text from pdf file in python",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Extract Text",
+                "Text",
+                "Extract",
+                "PDF file",
+                "Python"
+            ]
+        },
+        {
+            "url": "i-did-some-analysis-of-top.html",
+            "desc": "I did some analysis of Top Users in HackerNews, just for fun. Let's take a...",
+            "title": "i did some analysis of top",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Users",
+                "submissions",
+                "points",
+                "Top",
+                "Top Users"
+            ]
+        },
+        {
+            "url": "so-starting-today-i-m-going.html",
+            "desc": "So starting today I'm going to work on one tiny JavaScript project a day to...",
+            "title": "so starting today i m going",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "tiny JavaScript project",
+                "starting today",
+                "tiny JavaScript",
+                "JavaScript project",
+                "CSS"
+            ]
+        },
+        {
+            "url": "custom-variable-in-css.html",
+            "desc": "\ud83e\udd14Custom Variable In Css?\n.\n.\n\u2b50\ufe0fFollow this CSS thread.\n.\n#csscustomvariable #csscoding #csstricks #cssdesign #csshacks  #csstips #css #webprogrammer...",
+            "title": "custom variable in css",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Custom Variable",
+                "Variable",
+                "Css",
+                "Follow",
+                "Custom"
+            ]
+        },
+        {
+            "url": "best-vscode-extensions-that-will-make.html",
+            "desc": "10 best VSCode extensions that will make your programming experience fun! \n\nThread \ud83e\uddf5\n#webdevelopment #vscode #FrontEnd1....",
+            "title": "best vscode extensions that will make",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "programming experience fun",
+                "experience fun",
+                "code",
+                "CSS",
+                "Path"
+            ]
+        },
+        {
+            "url": "this-week-at-ecoc2022-a-colleague.html",
+            "desc": "This week at #ECOC2022 a colleague asked me what were my recommendations for someone starting...",
+            "title": "this week at ecoc2022 a colleague",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "colleague asked",
+                "reinforcement learning applied",
+                "learning applied",
+                "single loop",
+                "things"
+            ]
+        },
+        {
+            "url": "did-you-know-how-easy-amp.html",
+            "desc": "Did you know how easy &amp; fast it is to set up a multi-sig on...",
+            "title": "did you know how easy amp",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "multi-sig",
+                "set",
+                "multi-sig contract",
+                "contract",
+                "git clone"
+            ]
+        },
+        {
+            "url": "quick-tip-for-anyone-doing-webdevelopment.html",
+            "desc": "Quick #tip for anyone doing #WebDevelopment for #Business: *Always* check what sites look like with...",
+            "title": "quick tip for anyone doing webdevelopment",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Javascript turned",
+                "Quick",
+                "Javascript",
+                "Business",
+                "Suggested the company"
+            ]
+        },
+        {
+            "url": "the-history-of-cloud-computing-aws.html",
+            "desc": "The History\nof  Cloud Computing - A Thread\n\n#aws #CloudNative #technologynews1. Early Days of Cloud Computing...",
+            "title": "the history of cloud computing aws",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Cloud Computing",
+                "Cloud Technology Boom",
+                "Cloud",
+                "Virtual Private Networks",
+                "Present Day Cloud"
+            ]
+        },
+        {
+            "url": "it-s-confirmed-the-linux-kernel.html",
+            "desc": "\ud83e\uddf5: It\u2019s confirmed: The #Linux kernel will have @RustLang support soon. \n\nAlso this week, @Microsoft\u2019s...",
+            "title": "it s confirmed the linux kernel",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Linux kernel",
+                "RustLang support",
+                "Azure CTO",
+                "Linux",
+                "RustLang"
+            ]
+        },
+        {
+            "url": "callback-function-is-one-of-the-important.html",
+            "desc": "Callback function is one of the important concepts to understand when learning JavaScript.\n\nSo what really...",
+            "title": "callback function is one of the important",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Callback function",
+                "function",
+                "Callback",
+                "learning JavaScript",
+                "important concepts"
+            ]
+        },
+        {
+            "url": "have-some-free-time.html",
+            "desc": "Have some free time. I tried out Vosk (https://t.co/RpLlAgp0CZ), works nicely via the docker image...",
+            "title": "have some free time",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "free time",
+                "Emacs",
+                "works nicely",
+                "websocket testing script",
+                "works"
+            ]
+        },
+        {
+            "url": "github-cli-or-gh-is-a-free.html",
+            "desc": "GitHub CLI, or `gh`, is a free &amp; open source tool that enables you to...",
+            "title": "github cli or gh is a free",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "open source tool",
+                "GitHub CLI",
+                "open source",
+                "source tool",
+                "tool that enables"
+            ]
+        },
+        {
+            "url": "javascript-fundamentals-javascript-is-a-high.html",
+            "desc": "JavaScript Fundamentals!\n\nA Thread \ud83e\uddf5\ud83d\udc47\ud83c\udffdJavaScript is a high level, object-oriented, multi-paradigm programming language. It is the...",
+            "title": "javascript fundamentals javascript is a high",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "JavaScript Fundamentals",
+                "programming language",
+                "multi-paradigm programming language",
+                "JavaScript",
+                "Methods"
+            ]
+        },
+        {
+            "url": "web-developers-spend-daily-8-10.html",
+            "desc": "Web Developers spend daily 8-10 hours on Visual Studio Code.\n\nYou can save 100+ hours yearly...",
+            "title": "web developers spend daily 8 10",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Visual Studio Code",
+                "Visual Studio",
+                "Developers spend daily",
+                "Web Developers spend",
+                "Developers spend"
+            ]
+        },
+        {
+            "url": "we-have-open-sourced-all-the-form.html",
+            "desc": "We have open-sourced all the form templates on GitHub (do whatever you want) \ud83d\udc9c\n\nCreated for...",
+            "title": "we have open sourced all the form",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Tailwind CSS Forms",
+                "GitHub Repository Links",
+                "Plain HTML",
+                "CSS Forms",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "url": "css-animation-sites-to-help-you.html",
+            "desc": "CSS Animation sites to help you build amazing animations for your Websites and Applications \u2193\n\n(Save...",
+            "title": "css animation sites to help you",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Websites and Applications",
+                "Open thread",
+                "build amazing animations",
+                "Save a ton",
+                "CSS Animation sites"
+            ]
+        },
+        {
+            "url": "python-statistics-both-data-science-and-machine.html",
+            "desc": "Python Statistics\nBoth data science and machine learning require statistics.\nIn this Python explanation, I'll go through...",
+            "title": "python statistics both data science and machine",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Python Statistics",
+                "Distribution",
+                "Uniform Distribution",
+                "learning require statistics",
+                "Statistics"
+            ]
+        },
+        {
+            "url": "best-wordpress-file-upload-plugins-for-2022.html",
+            "desc": "10 Best Wordpress File Upload Plugins for 2022 [Free + Paid]\n\n1) WPForms\n2) Gravity Forms\n3) File...",
+            "title": "best wordpress file upload plugins for 2022",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Wordpress File Upload",
+                "Big File Uploads",
+                "File Upload Plugins",
+                "File Upload Types",
+                "Customer Upload Files"
+            ]
+        },
+        {
+            "url": "the-videos-of-the-probai-school.html",
+            "desc": "The videos of the ProbAI School 2022 (in Helsinki) are available on the YouTube channel....",
+            "title": "the videos of the probai school",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Bayesian Neural Networks",
+                "Advanced Bayesian Neural",
+                "ProbAI School",
+                "Deep Generative Models",
+                "Neural Networks"
+            ]
+        },
+        {
+            "url": "seriously-you-won-t-believe-these.html",
+            "desc": "Seriously you won't believe these sites exists ..\ud83d\udd25\nA thread \ud83e\uddf5\ud83d\udc47\n#100Devs #DataScience #MachineLearning  #Analytics #AI...",
+            "title": "seriously you won t believe these",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "sites exists",
+                "Temp mail",
+                "Java",
+                "exists",
+                "Analytics"
+            ]
+        },
+        {
+            "url": "python-pythonprogramming-programming-python3-switch-statement.html",
+            "desc": "#python #pythonprogramming #programming #python3 \nSwitch statement in python? Yes!!\nPython 3.10 has a feature that mimics...",
+            "title": "python pythonprogramming programming python3 switch statement",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Switch statement",
+                "pythonprogramming",
+                "programming",
+                "python",
+                "statement"
+            ]
+        },
+        {
+            "url": "before-starting-to-code-you-need.html",
+            "desc": "Before starting to code, you need to set up your environment.\n\nFrom @github to Visual Studio...",
+            "title": "before starting to code you need",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Install",
+                "Visual Studio",
+                "install Visual Studio",
+                "Visual Studio Code",
+                "github"
+            ]
+        },
+        {
+            "url": "day-4-100daysofcode-intro-to-git.html",
+            "desc": "Day 4 #100daysofcode: Intro to git (Version Control System)\n\n\ud83e\uddf5 A thread.\n\nWhen individuals and teams work...",
+            "title": "day 4 100daysofcode intro to git",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Version Control System",
+                "Version Control",
+                "Control System",
+                "git",
+                "Control"
+            ]
+        },
+        {
+            "url": "during-our-wixdevconhackathon-with-devpost-588.html",
+            "desc": "During our #WixDevConHackathon with @devpost, 588 participants were tasked with developing a game using #JavaScript...",
+            "title": "during our wixdevconhackathon with devpost 588",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Honorable Mention",
+                "JavaScript and Velo",
+                "built",
+                "Play",
+                "game"
+            ]
+        },
+        {
+            "url": "unpopular-opinion-angular-is-way-better.html",
+            "desc": "Unpopular opinion: @angular is way better than @reactjs, @vuejs, @sveltejs and @solid_js and closed source...",
+            "title": "unpopular opinion angular is way better",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "closed source products",
+                "Unpopular opinion",
+                "future of software",
+                "closed source",
+                "source products"
+            ]
+        },
+        {
+            "url": "css-pro-tips-you-might-not-know.html",
+            "desc": "CSS Pro tips you might not know.\n\nA Thread \ud83d\udc471. user-select property\n\nThe user-select property specifies whether...",
+            "title": "css pro tips you might not know",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "CSS Pro tips",
+                "Pro tips",
+                "CSS Pro",
+                "property",
+                "CSS"
+            ]
+        },
+        {
+            "url": "top-3-digital-fashion-brands.html",
+            "desc": "Top 3 Digital Fashion\u00a0Brands\n\nA thread \u2b07\ufe0f https://t.co/QisC7QIlMrWhat is Digital Fashion?\n\nDigital fashion is virtual 3D designs...",
+            "title": "top 3 digital fashion brands",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Digital Fashion",
+                "Digital Fashion Brands",
+                "Fashion",
+                "Digital",
+                "Top"
+            ]
+        },
+        {
+            "url": "best-css-generators-blob-maker-blobmaker.html",
+            "desc": "5 Best CSS Generators  \ud83c\udfa8\n\nThread \ud83e\uddf5\ud83d\udc47\ud83d\udd38Blob maker\n\ud83d\udd17- blobmaker .app\n\nBy @zcreativelabs https://t.co/jRx5zeAiRd\ud83d\udd39Glass Morphism\n\ud83d\udd17- glassgenerator .netlify...",
+            "title": "best css generators blob maker blobmaker",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Glass Morphism",
+                "CSS Generators",
+                "Fancy Border Radius",
+                "Blob maker",
+                "Fancy Border"
+            ]
+        },
+        {
+            "url": "session-keynote-new-and-cool-features.html",
+            "desc": "Session keynote: New and cool features for developers in Oracle database by @GeraldVenzl at #DOAG2022...",
+            "title": "session keynote new and cool features",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Session keynote",
+                "Oracle database",
+                "cool features",
+                "Expected new features",
+                "developers in Oracle"
+            ]
+        },
+        {
+            "url": "people-remember-good-behaviors.html",
+            "desc": "People remember good behaviors. People also remember lousy behavior. \n\n9 things that make your customer...",
+            "title": "people remember good behaviors",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "People remember good",
+                "remember lousy behavior",
+                "People remember",
+                "People",
+                "remember good behaviors"
+            ]
+        },
+        {
+            "url": "do-you-have-no-time-to-practice.html",
+            "desc": "Do you have no time to practice Python programming? \nHere are 5 online compilators to...",
+            "title": "do you have no time to practice",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "practice Python programming",
+                "time to practice",
+                "Python programming",
+                "practice Python",
+                "Python"
+            ]
+        },
+        {
+            "url": "from-2012-2022-wordpress-went-from-powering.html",
+            "desc": "From 2012 - 2022, WordPress went from powering 15.8% of the web to now powering...",
+            "title": "from 2012 2022 wordpress went from powering",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "wpbeginner",
+                "AwesomeMotive",
+                "DreamHost",
+                "WooCommerce",
+                "eddwp"
+            ]
+        },
+        {
+            "url": "angular-vs-react-which-is-the-best.html",
+            "desc": "Angular vs React: Which is the best JavaScript framework?\n\nWell, that\u2019s a tough question to answer....",
+            "title": "angular vs react which is the best",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Angular",
+                "React",
+                "Angular vs React",
+                "Check",
+                "question to answer"
+            ]
+        },
+        {
+            "url": "my-journey-with-coding.html",
+            "desc": "My journey \ud83d\udee4\ufe0fwith coding..\n\nToday marks my 34/100 days in coding HTML CSS done \u2705...js almost...",
+            "title": "my journey with coding",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "HTML CSS",
+                "coding HTML CSS",
+                "United Nations",
+                "thread",
+                "karibuUoN Osama"
+            ]
+        },
+        {
+            "url": "new-topic-of-angular-for-beginnerswhat.html",
+            "desc": "New Thread !!!!\nTopic of thread : Angular for beginnersWhat is Angular?\nAngular is a framework(probably you...",
+            "title": "new topic of angular for beginnerswhat",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Single Page Applications",
+                "Angular",
+                "Command Line Interface",
+                "Single Page",
+                "Page Applications"
+            ]
+        },
+        {
+            "url": "day-30-100daysofcode-learned-about-css.html",
+            "desc": "Day 30 : #100daysofcode\n\n- \n- Learned about CSS FlexBox and Grid Layout\n- Practiced 5 Binary...",
+            "title": "day 30 100daysofcode learned about css",
+            "date": "2022-10-04 07:15:42.749844",
+            "tags": [
+                "Learned about CSS",
+                "Grid Layout",
+                "Binary Search",
+                "CSS FlexBox",
+                "FlexBox and Grid"
+            ]
         }
     ]
 }
