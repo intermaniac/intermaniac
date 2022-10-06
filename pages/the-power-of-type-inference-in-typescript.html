@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="The power of type inference in #Typescript (aka some more crazy stuff you can do...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>The power of type inference in #typescript (aka some more...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>The power of type inference in #typescript (aka some more...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,35 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>The power of type inference in #typescript (aka some more...</span>
+                      <a href="#"><h4>The power of type inference in #Typescript (aka some more crazy stuff you can do...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-06 07:15:50.683272</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>The power of type inference in #Typescript (aka some more crazy stuff you can do in TS).
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/3XDwgIHgdX">https://t.co/3XDwgIHgdX</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+Let's say you wrote a function that creates a database with a number of tables in it (here tables are called `Space` because it is Tarantool).
+
+Now, check out what we can do with it: 🧵 <a href="https://t.co/Gg8CC3Epjx">https://t.co/Gg8CC3Epjx</a><br><br>First, let's infer the return type of the function: <a href="https://t.co/5DKbcBO3On">https://t.co/5DKbcBO3On</a><br><br>Now, it is easy to get a union type of keys of this object, it will be simply `keyof DatabaseType`. And we can remove the `keepAlive` with help of the standard `Exclude`: <a href="https://t.co/IIqQdF2dbE">https://t.co/IIqQdF2dbE</a><br><br>But what if I wanted to get union type of the table **names**? And I did have a need to do it because I wanted to use these table names in the db migration script, and I didn't want any typos there.
+
+Turns out it's possible with `infer`: <a href="https://t.co/oadj8tb4Z2">https://t.co/oadj8tb4Z2</a><br><br>Now, again for the migration script, it would be nice to know type of the table by table name.
+
+And this is where my knowledge ended, but turns out it is still possible, thanks to Key Remapping (added in TS 4.1).
+
+But first, let's map table keys to table names: <a href="https://t.co/Uhd18DebFD">https://t.co/Uhd18DebFD</a><br><br>And now we can use Key Remapping and remap keys to names, - notice the `as` keyword in the iteration, - and then infer the type of the corresponding table 🎉: <a href="https://t.co/BWWf9C2iuk">https://t.co/BWWf9C2iuk</a><br><br>TS Playground with a slightly simplified version of this example:
+<a href="https://t.co/Qo5YTpoqN4">https://t.co/Qo5YTpoqN4</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">crazy stuff</a></li>
+<li><a href="#">type</a></li>
+<li><a href="#">Typescript</a></li>
+<li><a href="#">table</a></li>
+<li><a href="#">Key Remapping</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +287,7 @@
       }
     </script>
 
-<!--2703069692184583751-->
+<!--1483618691987293751-->
 
   </body>
 
