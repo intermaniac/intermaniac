@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know that #Python supports function overloading?
-
-If not, then you might enjoy this mini...">
+    <meta name="description" content="So, what are #AWS Elastic Beanstalk Deployment Policies and which one should you choose for...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know that #python supports function overloading?
-
-if not, then...</title>
+    <title>So, what are #aws elastic beanstalk deployment policies and which...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +75,7 @@ if not, then...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know that #python supports function overloading?
-
-if not, then...</h2>
+                <h2>So, what are #aws elastic beanstalk deployment policies and which...</h2>
               </div>
             </div>
           </div>
@@ -103,44 +97,63 @@ if not, then...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know that #python supports function overloading?
-
-if not, then...</span>
-                      <a href="#"><h4>Did you know that #Python supports function overloading?
-
-If not, then you might enjoy this mini...</h4></a>
+                      <span>So, what are #aws elastic beanstalk deployment policies and which...</span>
+                      <a href="#"><h4>So, what are #AWS Elastic Beanstalk Deployment Policies and which one should you choose for...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-07 07:15:38.282170</a></li>
 
                       </ul>
-                      <p>Did you know that #Python supports function overloading?
+                      <p>So, what are #AWS Elastic Beanstalk Deployment Policies and which one should you choose for your application deployment?
 
-If not, then you might enjoy this mini thread!
+Let's find out 🧵<br><br>Elastic Beanstalk provides different options for how application is deployed, depending on if you want your application to be available, or can sustain a little downtime or want to split your traffic to a new deployment version for testing.<br><br>These are called Deployment Policies and these are following –
 
-🧵🐍👇<br><br>Traditional function overloading is where you have multiple functions with the same name, but they accept different types or different arguments (or both!)
+* All at Once
+* Rolling
+* Rolling with additional batch
+* Immutable
+* Traffic splitting
 
-Which function is called is determined by the data types passed in.
+Let's look at these in brief..<br><br>All at Once -
 
-🐍🤯<br><br>In #Python, function overloading is accomplished using `functools.singledispatch`.
+* This is the default policy applied, if application is not set to be scalable
+* New app version is deployed to all instances at once, causing app to go down for a while.
+* Quickest deployment, since all go at once
+* Should Manual Rollback if deployment fails<br><br>Rolling -
 
-You use `singledispatch` as a decorator on a function. It only checks the type of the first argument that is sent to the function.
+* This is the default policy applied, if app is set to be scalable
+* New app version is deployed to instances in batches
+* Slower deployment, since deployed in one set at a time
+* No downtime, but reduced Availability
+* Should Manual Rollback if deployment fails<br><br>Rolling with additional batch -
 
-Here is an example: <a href="https://t.co/tCUQmshY3C">https://t.co/tCUQmshY3C</a><br><br>You can register multiple data types to a single function using `functools.singledispatch` in #Python <a href="https://t.co/tiYZPXya5B">https://t.co/tiYZPXya5B</a><br><br>The code in this mini-thread come from my introductory article on `singledispatch` @mousevspython
+* Similar to Rolling, but new batch of temporary instances with old version is first created
+* New version deployed in batches, temp instances removed if successful, even Slower deployment
+* No downtime, and Available
+* Manual Rollback if failed<br><br>Immutable -
 
-<a href="https://t.co/TmWNb02RzL">https://t.co/TmWNb02RzL</a><br><br>@mousevspython I hope you enjoyed learning about function overloading in #Python.
+* A new Auto scaling group with same count of instances is first created
+* New version deployed in new group, old instances are removed after health checks are green
+* Slower deployment, No downtime, and always Available
+* If failed, the new instances are terminated<br><br>Traffic splitting -
 
-Be sure to share this thread with your friends and follow me for more fun facts about Python!</p>
+* This is similar to Immutable deployment, but both the versions coexist, and portion of traffic routed to the new group for testing.
+* Suitable for canary releases
+* In case of failure, just need to reroute traffic to old instances and terminate new set.<br><br>That's all you need to know about the deployment policies. Share it if you find it useful.
+
+If you're into #AWS and cloud in general, follow me to stay updated!
+
+<a href="https://t.co/etP6HyVWYp">https://t.co/etP6HyVWYp</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">function</a></li>
-<li><a href="#">function overloading</a></li>
-<li><a href="#">Python supports function</a></li>
-<li><a href="#">Python</a></li>
-<li><a href="#">supports function overloading</a></li>
+								<li><a href="#">Elastic Beanstalk Deployment</a></li>
+<li><a href="#">AWS Elastic Beanstalk</a></li>
+<li><a href="#">Beanstalk Deployment Policies</a></li>
+<li><a href="#">Elastic Beanstalk</a></li>
+<li><a href="#">Deployment Policies</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -302,7 +315,7 @@ Be sure to share this thread with your friends and follow me for more fun facts 
       }
     </script>
 
-<!--8963773640236214751-->
+<!--7758658221207904751-->
 
   </body>
 

@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know that #Python supports function overloading?
-
-If not, then you might enjoy this mini...">
+    <meta name="description" content="Moving Averages (MA) have been widely used for trend-based trading strategies. This thread explores the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know that #python supports function overloading?
-
-if not, then...</title>
+    <title>Moving averages (ma) have been widely used for trend-based trading...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +75,7 @@ if not, then...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know that #python supports function overloading?
-
-if not, then...</h2>
+                <h2>Moving averages (ma) have been widely used for trend-based trading...</h2>
               </div>
             </div>
           </div>
@@ -103,44 +97,94 @@ if not, then...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know that #python supports function overloading?
-
-if not, then...</span>
-                      <a href="#"><h4>Did you know that #Python supports function overloading?
-
-If not, then you might enjoy this mini...</h4></a>
+                      <span>Moving averages (ma) have been widely used for trend-based trading...</span>
+                      <a href="#"><h4>Moving Averages (MA) have been widely used for trend-based trading strategies. This thread explores the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-07 07:15:38.282170</a></li>
 
                       </ul>
-                      <p>Did you know that #Python supports function overloading?
+                      <p>Moving Averages (MA) have been widely used for trend-based trading strategies. This thread explores the indicator using a backtesting tool developed in python.
 
-If not, then you might enjoy this mini thread!
+$BTC $ETH $BNB $SOL $DOGE
 
-🧵🐍👇<br><br>Traditional function overloading is where you have multiple functions with the same name, but they accept different types or different arguments (or both!)
+🧵
 
-Which function is called is determined by the data types passed in.
+(1/18)<br><br>A simple moving average is an arithmetic mean of prices over a given period. It mainly eliminates random fluctuations in price and smoothens the chart.
 
-🐍🤯<br><br>In #Python, function overloading is accomplished using `functools.singledispatch`.
+(2/18)<br><br>This is a very popular indicator and a commonly used strategy that applies moving averages is as follows:
+Long when a candle closes above the MA.
+Short when a candle closes below the MA
 
-You use `singledispatch` as a decorator on a function. It only checks the type of the first argument that is sent to the function.
+(3/18)<br><br>Some questions:
 
-Here is an example: <a href="https://t.co/tCUQmshY3C">https://t.co/tCUQmshY3C</a><br><br>You can register multiple data types to a single function using `functools.singledispatch` in #Python <a href="https://t.co/tiYZPXya5B">https://t.co/tiYZPXya5B</a><br><br>The code in this mini-thread come from my introductory article on `singledispatch` @mousevspython
+Which time interval chart would this best work on?
+What is the most appropriate moving average interval?
+Are there specific assets that this strategy works better on?
+Would it be better to only position long or short rather than trading both directions?
 
-<a href="https://t.co/TmWNb02RzL">https://t.co/TmWNb02RzL</a><br><br>@mousevspython I hope you enjoyed learning about function overloading in #Python.
+(4/18)<br><br>To answer, here is code written in python. 
 
-Be sure to share this thread with your friends and follow me for more fun facts about Python!</p>
+<a href="https://t.co/tfFRySleLh…">https://t.co/tfFRySleLh…</a>
+
+It basically checks the performance of the suggested strategy for all the specified chart intervals, MAs, date ranges and pairs
+
+(5/18)<br><br>I do not own the data used.
+The data source of this tool is the Binance API which provides open source data from 01-05-2021.
+Here is the URL <a href="https://t.co/qoekXnDCTN">https://t.co/qoekXnDCTN</a>
+
+Special thanks to Binance for providing this data otherwise this analysis would not be possible🙌
+
+(6/18)<br><br>For getting started, click the above link and sign into your Google account. Then click File &gt; Save a copy in Drive. This will generate a copy of the file locally for you to make changes.
+
+(7/18) <a href="https://t.co/P186C8r59B">https://t.co/P186C8r59B</a><br><br>The first cell is the only cell that is required to be tweaked to test custom parameters.
+
+First, specify the start and end dates for setting the backtesting period. Please follow the same format to avoid any issues 👾
+
+(8/18) <a href="https://t.co/FrMjvebclt">https://t.co/FrMjvebclt</a><br><br>Then, add other chart intervals and pairs by specifying them in the lists. If 15 minutes and DOGEUSDT need to be added the lines will look as follows: 
+intervals = ['1d' , '12h' , '4h' , '1h' , '15m'] 
+pairs = ['BTCUSDT', 'ETHUSDT' , 'BNBUSDT' , 'SOLUSDT' , 'DOGEUSDT']
+
+(9/18)<br><br>Specify the range of the moving average intervals that need to be tested by changing the lower and upper limits.
+Lastly, test_type indicates where you want to only long (l), only short (s), or both long and short (b).
+
+(10/18)<br><br>Note: Since Binance only returns 1000 data points in each API call, if you choose lower timeframes and a larger range of MAs it will result in longer runtime.
+
+So if you do so please grab a drink, relax and come back after a while to check the results 🥤
+
+(11/18)<br><br>Speaking of results!
+
+Click on Runtime&gt;Run All and wait....
+Once completed, click on the file panel followed by the refresh button and Voila!
+A few folders should appear containing the results 🎉
+
+(12/18) <a href="https://t.co/miNreYSAXr">https://t.co/miNreYSAXr</a><br><br>Charts
+The charts folder contains the performance charts of the best performing strategy of each specified chart interval and pair. Click on the 3 dots beside any of the charts to download the image file generated.
+
+(13/18) <a href="https://t.co/MF1HIiPTFh">https://t.co/MF1HIiPTFh</a><br><br>Tables
+This folder contains the returns and other statistics like max drawdown, profit factor, and win rate for all points in the specified MA range for each of the chart intervals and pairs. The table below has results for BTCUSDT on a 1d timeframe. 
+
+(14/18) <a href="https://t.co/o6aAD99lbN">https://t.co/o6aAD99lbN</a><br><br>Results.csv
+
+This file contains a summary of the results based on the best returns for all the parameters specified. It contains the individual MA to be used for the pair and its chart interval.
+
+(15/18) <a href="https://t.co/pAX2rlKBvA">https://t.co/pAX2rlKBvA</a><br><br>From the above table, a difference in optimal MAs for individual parameters can be noticed. Though the returns generated are substantial, an analysis of the high drawdown numbers and low win_rates suggests that one must bear a lot of pain.
+
+(16/18)<br><br>I believe that this tool is effective to be fine-tuned and can work in specific market environments. For ETHUSDT YTD this approach helped eliminate chop and generated decent returns
+
+(17/18)<br><br>Hope this was helpful folks! Guess these results for different pairs can maybe also be combined to gauge the relative strength. But that's for later :)
+
+(18/18)</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">function</a></li>
-<li><a href="#">function overloading</a></li>
-<li><a href="#">Python supports function</a></li>
-<li><a href="#">Python</a></li>
-<li><a href="#">supports function overloading</a></li>
+								<li><a href="#">moving average</a></li>
+<li><a href="#">moving average interval</a></li>
+<li><a href="#">trend-based trading strategies</a></li>
+<li><a href="#">chart intervals</a></li>
+<li><a href="#">chart</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -302,7 +346,7 @@ Be sure to share this thread with your friends and follow me for more fun facts 
       }
     </script>
 
-<!--8963773640236214751-->
+<!--1631726372670504751-->
 
   </body>
 
