@@ -5,11 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know that you can Build a CRM in 3 Sprints With Nylas? Here's...">
+    <meta name="description" content="Best Practices for TypeScript Monorepo
+
+{a thread 🧵👇} https://t.co/fbWF9oug0ZLooking at the code above, any developer assigned...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know that you can build a crm in...</title>
+    <title>Best practices for typescript monorepo
+
+{ 🧵👇} https://t.co/fbwf9oug0zlooking at the code...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know that you can build a crm in...</h2>
+                <h2>Best practices for typescript monorepo
+
+{ 🧵👇} https://t.co/fbwf9oug0zlooking at the code...</h2>
               </div>
             </div>
           </div>
@@ -97,24 +103,76 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know that you can build a crm in...</span>
-                      <a href="#"><h4>Did you know that you can Build a CRM in 3 Sprints With Nylas? Here's...</h4></a>
+                      <span>Best practices for typescript monorepo
+
+{ 🧵👇} https://t.co/fbwf9oug0zlooking at the code...</span>
+                      <a href="#"><h4>Best Practices for TypeScript Monorepo
+
+{a thread 🧵👇} https://t.co/fbWF9oug0ZLooking at the code above, any developer assigned...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-08 07:15:41.579066</a></li>
 
                       </ul>
-                      <p>Did you know that you can Build a CRM in 3 Sprints With Nylas? Here's a 🧵 for you 👇 #CRM #DevRel #LiveStreams #Blogs #github<br><br>How to Build a CRM in 3 Sprints With Nylas --&gt; <a href="https://t.co/icPhJYJt61">https://t.co/icPhJYJt61</a> by @ashryan_io<br><br>@ashryan_io How to Build a CRM in 3 Sprints With Nylas: Integrating Contacts Features (Sprint #1) <a href="https://t.co/dvXq4BdTRh">https://t.co/dvXq4BdTRh</a> by @Blag<br><br>@ashryan_io How to Build a CRM in 3 Sprints With Nylas: Adding Calendar Functionality (Sprint #2) <a href="https://t.co/ITLDdLJ3Z5">https://t.co/ITLDdLJ3Z5</a> by @Blag<br><br>@ashryan_io How to Build a CRM in 3 Sprints With Nylas: Implementing Email Sync (Sprint #3) <a href="https://t.co/tVitWBE59D">https://t.co/tVitWBE59D</a> by @Blag<br><br>@ashryan_io How to Build a CRM in 3 Sprints: Integrating Contacts Features | Coding with Nylas | Episode 19 <a href="https://t.co/ih0KsireZl">https://t.co/ih0KsireZl</a> with @Blag @ashryan_io<br><br>@ashryan_io How to Build a CRM: Integrating Calendar and Email Features | Coding with Nylas | Episode 20 <a href="https://t.co/o3XPVKsnVO">https://t.co/o3XPVKsnVO</a> with @Blag and @ashryan_io<br><br>@ashryan_io Nylas CRM Github Repo <a href="https://t.co/JRqPzNyEko">https://t.co/JRqPzNyEko</a> by @Blag</p>
+                      <p>Best Practices for TypeScript Monorepo
+
+{a thread 🧵👇} <a href="https://t.co/fbWF9oug0Z">https://t.co/fbWF9oug0Z</a><br><br>Looking at the code above, any developer assigned to work on this file will find it hard to know exactly which folder these code blocks—in this case, Types—were picked and imported from.
+
+So it is best to use an absolute path. Click on the snippet to see a better example <a href="https://t.co/n8iNbuoF9H">https://t.co/n8iNbuoF9H</a><br><br>From the code above, the import is now clear, readable, and predictable, as the developers are aware of the exact folder where the piece of code being imported is coming from.<br><br>There are tools that can help you achieve this. One of those tools is the Babel Plugin Module Resolver.
+
+<a href="https://t.co/pQf6FS4TuE.">https://t.co/pQf6FS4TuE.</a><br><br>5. Prettier and ESLint
+
+A large codebase with multiple projects and multiple people working on them over a long period of time has the tendency to be inconsistent in coding style.
+
+Catching common errors during development should be considered a core part of a developer's work.<br><br>Silly and unintentional mistakes that might have passed the compiler test would get caught in the net of a linter such as Eslint, wrong file imports, unused variables, etc. to mention just a few, can be avoided if Eslint is used.<br><br>With Prettier, you can maintain consistency in your formatting across all of your projects.
+
+Create a .prettierrc configuration file in the monorepo's root directory with your desired configuration settings and it will be applied to all packages in the monorepo automatically<br><br>With ESLint, JS or TS source code can be analyzed in a sophisticated manner. As with Prettier, it can be configured as easy for monorepos.
+
+You simply define a .eslintrc.json configuration file in the main repository of the monorepo and it will apply to all projects.<br><br>If there are many files in the monorepo, Prettier or ESLint may take a long time to run.
+
+This can be resolved by adding script definitions to a local package's package.json that reference the Prettier and ESLint configuration at the root of the project<br><br>6. Using Turborepo
+
+There are several great tools to aid monorepos and ship with a smooth dev experience. One of those tools is Turborepo, a powerful tool that aids in the development of high-quality and performant build systems in JS and TS monorepos
+
+<a href="https://t.co/8p4JYqw3GP">https://t.co/8p4JYqw3GP</a><br><br>When executing npm run dev or yarn dev from the root folder, it starts all of the projects available in the monorepo that have a dev script in their package.json file.
+
+The same thing applies when other commands such as npm run build, npm run lint, and npm run start.<br><br>In Turborepo, you can achieve this by configuring the package.json file top-level folder: <a href="https://t.co/lbZYjq0Kh7">https://t.co/lbZYjq0Kh7</a><br><br>Turborepo also comes with various tools and many other configurations that allow you to execute scripts in deeply nested workspaces in parallel by default or you can choose to do them by order or filter them. <a href="https://t.co/jG7OZLOTXK">https://t.co/jG7OZLOTXK</a><br><br>Turborepo comes with an advanced remote caching feature, high-performant builds for files locally which is a default feature, and also for files remotely.
+
+You can choose to opt out of local caching at any time.<br><br>Furthermore, you can also create a monorepo pipeline for the execution of your scripts using Turborepo.
+
+There are also alternative tools like Lerna and Nx which you can use to achieve the same result.
+
+<a href="https://t.co/vfKdod9Wgv">https://t.co/vfKdod9Wgv</a>
+<a href="https://t.co/5Xifhp3CvF">https://t.co/5Xifhp3CvF</a><br><br>7. The Right Build Tools
+
+Choosing the right build tools for deploying your monorepo should be done carefully.
+
+Without efficient bundling, we can run into the issue of having to deploy all the code in the repo even if deployments should compose of only necessary source files.<br><br>Just as we used Jest, we can also employ Webpack for bundling in a monorepo that can be configured to use Typescript references.
+
+This can be achieved by simply using ts-loader and everything is set to work automatically.
+
+<a href="https://t.co/hOawqZBoqJ">https://t.co/hOawqZBoqJ</a>
+<a href="https://t.co/vle5O7aXaZ">https://t.co/vle5O7aXaZ</a><br><br>There are also more tools to use, such as esbuild
+
+→ Esbuild ships with TypeScript support by default and because of this it automatically resolves any local references because we already have TypeScript project references configured.<br><br>→ Changesets is also a popular versioning tool used for managing multiple packages in a repository such as monorepo.
+
+It provides maintainers workflow that helps automate updating of package versions and publishing of new packages.
+
+<a href="https://t.co/E8TmmoEORG">https://t.co/E8TmmoEORG</a><br><br>Using TS in a monorepo may require some configurations and the use of best practices.
+
+You will, however, increase the maintainability of your codebase and provide uniformity and visibility across your company's entire code base without the need to track down different repos.<br><br>If you want to know the best practices for TypeScript monorepo in detail, visit the blog post below 👇
+
+<a href="https://t.co/eOglLrNLFA">https://t.co/eOglLrNLFA</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Build a CRM</a></li>
-<li><a href="#">Nylas CRM Github</a></li>
-<li><a href="#">Integrating Contacts Features</a></li>
-<li><a href="#">Sprints With Nylas</a></li>
-<li><a href="#">CRM Github Repo</a></li>
+								<li><a href="#">Monorepo</a></li>
+<li><a href="#">tools</a></li>
+<li><a href="#">Plugin Module Resolver</a></li>
+<li><a href="#">Babel Plugin Module</a></li>
+<li><a href="#">Turborepo</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -276,7 +334,7 @@
       }
     </script>
 
-<!--0755047654515934751-->
+<!--6395331115506144751-->
 
   </body>
 
