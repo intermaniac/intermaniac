@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The best way to stand out in data analytics is with an amazing resume.
-
-Here is...">
+    <meta name="description" content="CSS Grid is tricky, but I made some visuals and interactive examples to make it...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>The best way to stand out in data analytics is...</title>
+    <title>Css grid is tricky, but i made some visuals and...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ Here is...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>The best way to stand out in data analytics is...</h2>
+                <h2>Css grid is tricky, but i made some visuals and...</h2>
               </div>
             </div>
           </div>
@@ -99,134 +97,129 @@ Here is...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>The best way to stand out in data analytics is...</span>
-                      <a href="#"><h4>The best way to stand out in data analytics is with an amazing resume.
-
-Here is...</h4></a>
+                      <span>Css grid is tricky, but i made some visuals and...</span>
+                      <a href="#"><h4>CSS Grid is tricky, but I made some visuals and interactive examples to make it...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-09 07:15:34.404672</a></li>
 
                       </ul>
-                      <p>The best way to stand out in data analytics is with an amazing resume.
+                      <p>CSS Grid is tricky, but I made some visuals and interactive examples to make it learn easier (free): 🧵<br><br>You can use the repeat function for `fr` as well.
 
-Here is everything you need to build your perfect resume today.
+repeat(2, 1fr 2fr);
 
-[THREAD]
-#rstats #python<br><br>1/ Find your target
+It will repeat 1fr 2fr two times.
 
-A resume written for any job will appeal to no one.
+{ 10 / 28 } <a href="https://t.co/4LMe9raKxU">https://t.co/4LMe9raKxU</a><br><br>Moving forward, you can set the height of the grid element using grid-auto-rows.
 
-But a specific resume will make you a #1 candidate.
+For ex, grid-auto-rows: 200px;
 
-For this thread our target will be a data analyst position.<br><br>2/ Keywords
+{ 11 / 28 } <a href="https://t.co/8QwVSAVrB6">https://t.co/8QwVSAVrB6</a><br><br>Though there is a problem, by doing this, we are setting the fixed height so content inside items can overflow.
 
-Keywords make our resume go from generic to specific.
+For example:
 
-keywords to include:
+{ 12 / 28 } <a href="https://t.co/wLJGTGcoXb">https://t.co/wLJGTGcoXb</a><br><br>In order to prevent this kind of issue, we have `minmax` function.
 
-• data
-• python
-• analytics
-• analysis
-• big data
-• statistics
-• applied
-• data-driven
-• regression
-• strategies
-• intelligence
-• visualization
-• dashboard
-• machine learning<br><br>3/ Project section
+grid-auto-rows: minmax(200px, auto);
 
-I know a senior data analyst who brought a copy of a project listed on his resume to an interview.
+It's pretty intuitive that the height of gird items will be 200px minimum and "auto" maximum(according to content)
 
-He claims this landed him the job.
+{ 13 / 28 } <a href="https://t.co/0tTWXCGDYK">https://t.co/0tTWXCGDYK</a><br><br>We can do all that we have covered so far using flexbox also.
 
-Having a project section:
+Let's understand the two dimensions of the `grid` layout.
 
-• helps add keywords
-• proves your skillset
-• makes up for lack of experience
+{ 14 / 28 } <a href="https://t.co/PyHik3mITu">https://t.co/PyHik3mITu</a><br><br>We can change the position of a particular item in accordance with row and column.
 
-Add one today.<br><br>4/ Result oriented points
+For example, I want my first item to take up an entire row from the first column to the last column.
 
-The perfect bullet points include:
+grid-column: 1 / 4;
 
-First: Action Verb
+{ 15 / 28 } <a href="https://t.co/DQHEARq14w">https://t.co/DQHEARq14w</a><br><br>Alright moving forward, The next property we have is `grid-template-areas` which specifies the areas within the grid layout.
 
-Second: Detail
+Each row is defined by apostrophes (' ')
 
-Third: Descriptor or Outcome<br><br>Action verb examples:
+Sounds confusing? Let's see this in action.
 
-• guided
-• projected
-• analyzed
-• calculated
-• increased
-• planned
-• programmed
-• designed
-• maintained
-• collaborated<br><br>Detail examples:
+{ 16 / 28 }<br><br>Let's break down this code.
 
-• who?
-• what?
-• when?
-• where?<br><br>Descriptor or Outcome:
+grid-template-areas: 'areaName areaName areaName areaName areaName';
 
-This is the end of the bullet and should be
+• Each row is defined by apostrophes (' ')
+• Hence only one row in this case as there is only one pair of apostrophes
+• Five "areaName" hence five columns
 
-• factual
-• positive
-• include data
-• show the impact<br><br>5/ Consider Applicant Tracking Systems
+CONT...
 
-Your resume isn’t typically going directly to a recruiter.
+{ 17 / 28 } <a href="https://t.co/RtmC3z1u2V">https://t.co/RtmC3z1u2V</a><br><br>Now let's apply this area (areaName) to the first grid item.
 
-It will first be processed by an ATS.
+.one {
+    grid-area: areaName;
+}
 
-An ATS is a computer that tries to sort out the bad resumes.
+As you can see item1 takes one entire row and 5 columns. As simple as that
 
-It looks for keywords but it also easily gets confused.
+<a href="https://t.co/Nu2yVhy6LT">https://t.co/Nu2yVhy6LT</a>
 
-What does this mean?<br><br>You should avoid things that will confuse the ATS.
+{ 18 / 28 } <a href="https://t.co/kWoURDztVU">https://t.co/kWoURDztVU</a><br><br>Alright, moving further let's talk about the context of Grid items.
 
-This includes:
+We can set the ordering and alignment of a particular item. Let's dive into it.
 
-• images
-• links
-• lines
-• graphics
-• colors
+{ 19 / 28 }<br><br>📌 The Order of the items
 
-Remove them all.
+The order is nothing but used to set the order of an item within the grid container.
 
-This advice does not apply for physical resumes.<br><br>6/ Tools
+{ 20 / 28 }<br><br>Here is the visual example, by default the correct order should be 1 2 3 4 but I have applied order property to change the actual ordering.
 
-Once you draft your resume,
+{ 21 / 28 } <a href="https://t.co/1cNDL8l6iY">https://t.co/1cNDL8l6iY</a><br><br>📌 Alignment in CSS Grid Layout
 
-run it through the following tools for increased performance.
+This is confusing, but we will cover everything in this thread.
 
-• JobScan
-• ResumeWorded
+justify-content
+align-items
+justify-self
+align-self
 
-These website will give you the extra boost you need.<br><br>I hope this helps you land your dream data job.
+{ 22 / 28 }<br><br>The `justify-content` is used to align the container's items when the items do not use all available space on the `main-axis` (horizontally).
 
-Follow me @gib_hurst for more data analytics threads.
+🔗 <a href="https://t.co/5L3VY6e5UI">https://t.co/5L3VY6e5UI</a>
 
-RT the first tweet to share with your audience</p>
+{ 23 / 28 } <a href="https://t.co/8RfqvCzWvY">https://t.co/8RfqvCzWvY</a><br><br>The `align-items` property specifies the default alignment for items inside the flexible container.
+
+🔗 <a href="https://t.co/b4kUoUWHFV">https://t.co/b4kUoUWHFV</a>
+
+{ 24 / 28 } <a href="https://t.co/ZA1zbUvqLD">https://t.co/ZA1zbUvqLD</a><br><br>We can use justify-self and align-self in order to set the alignment of a particular item with the grid container.
+
+{ 25 / 28 } <a href="https://t.co/xhSJwQvqfl">https://t.co/xhSJwQvqfl</a><br><br>Let's tackle the trickiest part:
+
+How to center horizontally and vertically using one line of CSS?
+
+It's simple using only one line of code
+
+`place-content: center;`
+
+{ 26 / 28 } <a href="https://t.co/QElmsW4hoC">https://t.co/QElmsW4hoC</a><br><br>Try to play around with code here. This might be a little confusing initially, but once you get used to it, it all becomes pretty easy.
+
+<a href="https://t.co/ePWpgnLCCZ">https://t.co/ePWpgnLCCZ</a>
+
+{ 27 / 28 }<br><br>I think that's pretty much it, If you like this thread share it with your connections. 😁
+
+Follow @PrathKum for more. 
+
+{ 28 / 28 }<br><br>I have prepared a free "CSS Grid eBook" for you.
+
+Download it for free! 😁
+
+🔗 <a href="https://t.co/f3O2yeaV9K">https://t.co/f3O2yeaV9K</a> <a href="https://t.co/Z5q5IFbnKM">https://t.co/Z5q5IFbnKM</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">resume</a></li>
-<li><a href="#">data</a></li>
-<li><a href="#">Keywords Keywords make</a></li>
-<li><a href="#">amazing resume</a></li>
-<li><a href="#">data analytics threads</a></li>
+								<li><a href="#">areaName areaName areaName</a></li>
+<li><a href="#">Grid</a></li>
+<li><a href="#">CSS Grid</a></li>
+<li><a href="#">areaName areaName</a></li>
+<li><a href="#">areaName</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -388,7 +381,7 @@ RT the first tweet to share with your audience</p>
       }
     </script>
 
-<!--0230440698223574751-->
+<!--1462979192633274751-->
 
   </body>
 

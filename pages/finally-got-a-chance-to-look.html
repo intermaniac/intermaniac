@@ -5,13 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The best way to stand out in data analytics is with an amazing resume.
+    <meta name="description" content="Finally got a chance to look into @github Actions today.
 
-Here is...">
+✅ How to keep two branches...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>The best way to stand out in data analytics is...</title>
+    <title>Finally got a chance to look into @github actions today.
+
+✅...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +79,9 @@ Here is...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>The best way to stand out in data analytics is...</h2>
+                <h2>Finally got a chance to look into @github actions today.
+
+✅...</h2>
               </div>
             </div>
           </div>
@@ -99,134 +103,56 @@ Here is...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>The best way to stand out in data analytics is...</span>
-                      <a href="#"><h4>The best way to stand out in data analytics is with an amazing resume.
+                      <span>Finally got a chance to look into @github actions today.
 
-Here is...</h4></a>
+✅...</span>
+                      <a href="#"><h4>Finally got a chance to look into @github Actions today.
+
+✅ How to keep two branches...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-09 07:15:34.404672</a></li>
 
                       </ul>
-                      <p>The best way to stand out in data analytics is with an amazing resume.
+                      <p>Finally got a chance to look into @github Actions today.
 
-Here is everything you need to build your perfect resume today.
+✅ How to keep two branches in sync on Github 👇
 
-[THREAD]
-#rstats #python<br><br>1/ Find your target
+a thread 🧵 1/10
 
-A resume written for any job will appeal to no one.
+#github #tech #gitworkflow<br><br>2/10 - Use case
 
-But a specific resume will make you a #1 candidate.
+Always make sure a #main and #dev branch stays in sync. The workflow would be PRs from a feature branch into dev, and then a PR from dev into main.<br><br>3/10 - Initially, I merged PRs from feature branch to dev with a normal #merge commit, and then used the same flow from dev into main.
 
-For this thread our target will be a data analyst position.<br><br>2/ Keywords
+The issue was that dev kept falling further and further behind main, as dev would never contain the merge commits that ended up in main.<br><br>4/10 - Side note:
 
-Keywords make our resume go from generic to specific.
+Although having nothing to to do with the actual use case, instead of creating a merge commit when merging into dev, I now use "Squash and merge" to neatly package the whole PR into a single, new commit.<br><br>5/10 - To solve the issue of merging dev into main, I thought using "Rebase and merge" would do the trick. If main is a couple of commits behind dev, just take those and apply them on top of main, and we're good, right?<br><br>6/10 - Not quite. Apparently, Githubs rebase differ slightly from git #rebase.
 
-keywords to include:
+"Rebase and merge on GitHub will always update the committer information and create new commit SHAs"
 
-• data
-• python
-• analytics
-• analysis
-• big data
-• statistics
-• applied
-• data-driven
-• regression
-• strategies
-• intelligence
-• visualization
-• dashboard
-• machine learning<br><br>3/ Project section
+<a href="https://t.co/CJVKdy9el9">https://t.co/CJVKdy9el9</a><br><br>7/10 - Again, dev and main kept growing apart in their history.
 
-I know a senior data analyst who brought a copy of a project listed on his resume to an interview.
+Eventually, I turned to @github Actions, with the thought of using plain git to rebase dev from main anytime something happened in main.<br><br>8/10 - The current setup now looks like this:
 
-He claims this landed him the job.
+feature branch -&gt; dev: "Squash and merge"
 
-Having a project section:
+dev -&gt; main: "Merge pull request" (with merge commit)
 
-• helps add keywords
-• proves your skillset
-• makes up for lack of experience
+Github Action: rebase dev from main (to bring the newly merge commit over)<br><br>9/10 - And the Github Action ended up looking like this: <a href="https://t.co/YlRauWiHrc">https://t.co/YlRauWiHrc</a><br><br>10/10 - main and dev now stays in sync 🎉
 
-Add one today.<br><br>4/ Result oriented points
+I know @t3dotgg is not a fan of git rebase, so I'm curious how he, or anyone else for that matter, handles their teams git workflow.
 
-The perfect bullet points include:
-
-First: Action Verb
-
-Second: Detail
-
-Third: Descriptor or Outcome<br><br>Action verb examples:
-
-• guided
-• projected
-• analyzed
-• calculated
-• increased
-• planned
-• programmed
-• designed
-• maintained
-• collaborated<br><br>Detail examples:
-
-• who?
-• what?
-• when?
-• where?<br><br>Descriptor or Outcome:
-
-This is the end of the bullet and should be
-
-• factual
-• positive
-• include data
-• show the impact<br><br>5/ Consider Applicant Tracking Systems
-
-Your resume isn’t typically going directly to a recruiter.
-
-It will first be processed by an ATS.
-
-An ATS is a computer that tries to sort out the bad resumes.
-
-It looks for keywords but it also easily gets confused.
-
-What does this mean?<br><br>You should avoid things that will confuse the ATS.
-
-This includes:
-
-• images
-• links
-• lines
-• graphics
-• colors
-
-Remove them all.
-
-This advice does not apply for physical resumes.<br><br>6/ Tools
-
-Once you draft your resume,
-
-run it through the following tools for increased performance.
-
-• JobScan
-• ResumeWorded
-
-These website will give you the extra boost you need.<br><br>I hope this helps you land your dream data job.
-
-Follow me @gib_hurst for more data analytics threads.
-
-RT the first tweet to share with your audience</p>
+Happy coding, keep learning 💡</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">resume</a></li>
-<li><a href="#">data</a></li>
-<li><a href="#">Keywords Keywords make</a></li>
-<li><a href="#">amazing resume</a></li>
-<li><a href="#">data analytics threads</a></li>
+								<li><a href="#">github Actions today</a></li>
+<li><a href="#">dev</a></li>
+<li><a href="#">merge</a></li>
+<li><a href="#">github Actions</a></li>
+<li><a href="#">main</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -388,7 +314,7 @@ RT the first tweet to share with your audience</p>
       }
     </script>
 
-<!--0230440698223574751-->
+<!--4380235519921374751-->
 
   </body>
 

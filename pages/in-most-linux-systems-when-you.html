@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The best way to stand out in data analytics is with an amazing resume.
-
-Here is...">
+    <meta name="description" content="In most Linux systems, when you want to create a new user, you have two...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>The best way to stand out in data analytics is...</title>
+    <title>In most linux systems, when you want to create a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ Here is...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>The best way to stand out in data analytics is...</h2>
+                <h2>In most linux systems, when you want to create a...</h2>
               </div>
             </div>
           </div>
@@ -99,134 +97,56 @@ Here is...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>The best way to stand out in data analytics is...</span>
-                      <a href="#"><h4>The best way to stand out in data analytics is with an amazing resume.
-
-Here is...</h4></a>
+                      <span>In most linux systems, when you want to create a...</span>
+                      <a href="#"><h4>In most Linux systems, when you want to create a new user, you have two...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-09 07:15:34.404672</a></li>
 
                       </ul>
-                      <p>The best way to stand out in data analytics is with an amazing resume.
+                      <p>In most Linux systems, when you want to create a new user, you have two options: adduser or useradd.
 
-Here is everything you need to build your perfect resume today.
+So, what exactly is the difference between the two? Is one of them superior to the other? Which should you choose? Is it useradd or adduser?
 
-[THREAD]
-#rstats #python<br><br>1/ Find your target
+More in this thread🐧↓<br><br>On the other hand, adduser is not a standard command in Linux. It's purely a Perl script that runs in the background and employs the useradd command.<br><br>This high-level utility is more effective at creating new Linux users, as it allows you to create a home directory, set a password, and configure a few other settings upon user creation.<br><br>Now that you understand the differences between the useradd and adduser commands, let's look at how to use these commands to create users in Linux.<br><br>Useradd
 
-A resume written for any job will appeal to no one.
+Let's start with a look at the useradd command's default behavior. Execute the below command.
 
-But a specific resume will make you a #1 candidate.
+$ useradd username <a href="https://t.co/KE15N4UdtU">https://t.co/KE15N4UdtU</a><br><br>Looking at the /home directory after successfully executing the above command you will notice that the home directory for the user coffescripts hasn't been created. <a href="https://t.co/OMV8hO1vvk">https://t.co/OMV8hO1vvk</a><br><br>Adduser command
 
-For this thread our target will be a data analyst position.<br><br>2/ Keywords
+Some Linux distributions do not include the Adduser command. Others have a soft link to useradd. For some, it is a Perl script.<br><br>Adduser is an interactive high-level utility. This command is less interactive than the adduser command. As a backend, it employs the low-level utility useradd.<br><br>When using the adduser command, the settings in /etc/login.defs will be used. Even the man page on Debian-based distributions recommends it over the useradd command.<br><br>To add a user using this command simply type the following command:
 
-Keywords make our resume go from generic to specific.
+$ adduser username <a href="https://t.co/vjLIlQZdT0">https://t.co/vjLIlQZdT0</a><br><br>The above command will add a new user to your Linux system. It will ask for some details and after entering those details a new user account would be created.<br><br>If you check the /home directory you will notice that this command has also created the home directory of the new user upon creation. <a href="https://t.co/y84Eu5lBTW">https://t.co/y84Eu5lBTW</a><br><br>To achieve nearly the same result as adduser by using the low-level utility useradd, the command would look like this:
 
-keywords to include:
+$ sudo useradd -d /home/coffeaddicts -m -s/bin/zsh -p secretpass  -c FullName,Phone,Other Information<br><br>It is also important to know that you can omit the -c option if you don't wish to add user infomation.
 
-• data
-• python
-• analytics
-• analysis
-• big data
-• statistics
-• applied
-• data-driven
-• regression
-• strategies
-• intelligence
-• visualization
-• dashboard
-• machine learning<br><br>3/ Project section
+The Adduser command provides you with a number of options. Here is a short list of the most important ones. For more information, see the help or man pages.<br><br>• system - Create a new system user. System users are automatically assigned to the nogroup group. Use the -gid or -ingroup options to add a system user to an existing group.<br><br>• home DIR -  Instead of the default home directory, use DIR. If necessary, a directory will be created and skeleton files copied.<br><br>• shell SHELL - Instead of the default, use SHELL.
 
-I know a senior data analyst who brought a copy of a project listed on his resume to an interview.
+• ingroup GROUP: Change the primary group of the user to GROUP.
 
-He claims this landed him the job.
+• add_extra_groups: Add a new user to a configuration-defined extra group.<br><br>The configuration file for Adduser allows you to specify the default values that will be used when creating the account. The file is well documented and allows you to configure default values such as:<br><br>• Default shell
+• Home directory
+• Extra groups
+• Add extra groups<br><br>In my experience as a Linux power user, adduser is far superior at creating new users in Linux. I use it more frequently when I need to create users. As a result, I recommend that everyone use it.
 
-Having a project section:
+So how about you? Which do you prefer, adduser or useradd?<br><br>That's all! Thank you for getting this far. I hope you find this thread useful.
 
-• helps add keywords
-• proves your skillset
-• makes up for lack of experience
+If you found this thread valuable:
 
-Add one today.<br><br>4/ Result oriented points
+1. Toss us a follow for more daily threads on Linux, sysadmin, and DevOps →
+@linuxopsys
 
-The perfect bullet points include:
-
-First: Action Verb
-
-Second: Detail
-
-Third: Descriptor or Outcome<br><br>Action verb examples:
-
-• guided
-• projected
-• analyzed
-• calculated
-• increased
-• planned
-• programmed
-• designed
-• maintained
-• collaborated<br><br>Detail examples:
-
-• who?
-• what?
-• when?
-• where?<br><br>Descriptor or Outcome:
-
-This is the end of the bullet and should be
-
-• factual
-• positive
-• include data
-• show the impact<br><br>5/ Consider Applicant Tracking Systems
-
-Your resume isn’t typically going directly to a recruiter.
-
-It will first be processed by an ATS.
-
-An ATS is a computer that tries to sort out the bad resumes.
-
-It looks for keywords but it also easily gets confused.
-
-What does this mean?<br><br>You should avoid things that will confuse the ATS.
-
-This includes:
-
-• images
-• links
-• lines
-• graphics
-• colors
-
-Remove them all.
-
-This advice does not apply for physical resumes.<br><br>6/ Tools
-
-Once you draft your resume,
-
-run it through the following tools for increased performance.
-
-• JobScan
-• ResumeWorded
-
-These website will give you the extra boost you need.<br><br>I hope this helps you land your dream data job.
-
-Follow me @gib_hurst for more data analytics threads.
-
-RT the first tweet to share with your audience</p>
+2. Like and RT the first tweet so other Linux folks can find it too.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">resume</a></li>
-<li><a href="#">data</a></li>
-<li><a href="#">Keywords Keywords make</a></li>
-<li><a href="#">amazing resume</a></li>
-<li><a href="#">data analytics threads</a></li>
+								<li><a href="#">adduser</a></li>
+<li><a href="#">Adduser command</a></li>
+<li><a href="#">Linux</a></li>
+<li><a href="#">command</a></li>
+<li><a href="#">user</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -388,7 +308,7 @@ RT the first tweet to share with your audience</p>
       }
     </script>
 
-<!--0230440698223574751-->
+<!--6108783743319884751-->
 
   </body>
 

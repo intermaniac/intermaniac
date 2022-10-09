@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The best way to stand out in data analytics is with an amazing resume.
-
-Here is...">
+    <meta name="description" content="I recently started working through @bobziroll's ReactJS course on Scrimba. Starting this thread as notes...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>The best way to stand out in data analytics is...</title>
+    <title>I recently started working through @bobziroll's reactjs course on scrimba....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ Here is...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>The best way to stand out in data analytics is...</h2>
+                <h2>I recently started working through @bobziroll's reactjs course on scrimba....</h2>
               </div>
             </div>
           </div>
@@ -99,134 +97,78 @@ Here is...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>The best way to stand out in data analytics is...</span>
-                      <a href="#"><h4>The best way to stand out in data analytics is with an amazing resume.
-
-Here is...</h4></a>
+                      <span>I recently started working through @bobziroll's reactjs course on scrimba....</span>
+                      <a href="#"><h4>I recently started working through @bobziroll's ReactJS course on Scrimba. Starting this thread as notes...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-09 07:15:34.404672</a></li>
 
                       </ul>
-                      <p>The best way to stand out in data analytics is with an amazing resume.
+                      <p>I recently started working through @bobziroll's ReactJS course on Scrimba. Starting this thread as notes of the main concepts.
+#javascript #ReactJS<br><br>JSX – A syntax extension to JavaScript.
+Eg: return (
+&lt;p&gt; Hello {JS Code here} &lt;/p&gt;
+)<br><br>React Component – The building blocks of the application
+Rendered as:
+return (
+&lt;ComponentName /&gt;
+)<br><br>Props – parameters passed to a component, analogous to function params
 
-Here is everything you need to build your perfect resume today.
+Used as:
+Pass props: &lt;ComponentName  propName: value/&gt;
 
-[THREAD]
-#rstats #python<br><br>1/ Find your target
+Received as: 
+function ComponentName(props){
+props.propName
+}<br><br>React.useState – create state variables. When a state variable is updated, react will re-render the component in which the state is declared. 
 
-A resume written for any job will appeal to no one.
+const [allMemes (State Var), setAllMemes(Setter Func)] = React.useState(DEFAULT_VALUE)<br><br>React.useEffect – create an effect that will run onInit of the component and update any of the dependent state variables.
+React.useEffect(() =&gt; {
+        fetch(URL)
+            .then(res =&gt; res.json())
+            .then(data =&gt; setAllMemes(data))
+    }, [Dependent_vars_here])<br><br>Using function closures for updating states:
+Pass a function from parent to child to avoid having multiple state values for the same state. You can additionally pass key to change value for only one of the children. <a href="https://t.co/SUKtxy8KwX">https://t.co/SUKtxy8KwX</a><br><br>Conditional rendering:
+A shorthand used often is 
+{bool_variable &amp;&amp; &lt;Component /&gt;}
 
-But a specific resume will make you a #1 candidate.
+The above will render Component when bool_variable is true.<br><br>Default props:
+Used to give default values to props
 
-For this thread our target will be a data analyst position.<br><br>2/ Keywords
+Component.defaultProps = {
+propName: defaultValue
+}<br><br>Fragments: 
+When rendering multiple elements in the same component, react requires them to be surrounded by a parent. Usually, divs are used. This causes a complex DOM tree with a lot of enclosing divs. 
 
-Keywords make our resume go from generic to specific.
+Fragments allow rendering multiple components as siblings.<br><br>Eg: Children in div are rendered as follows:
+&lt;div&gt;
+&lt;C1 /&gt;
+&lt;C1 /&gt;
+&lt;/div&gt;
 
-keywords to include:
+&lt;&gt; //Fragment Start
+&lt;C1 /&gt;
+&lt;C2 /&gt;
+&lt;/&gt; //Fragment end
 
-• data
-• python
-• analytics
-• analysis
-• big data
-• statistics
-• applied
-• data-driven
-• regression
-• strategies
-• intelligence
-• visualization
-• dashboard
-• machine learning<br><br>3/ Project section
+Fragments are rendered as siblings:
+&lt;C1 /&gt;
+&lt;C2 /&gt;<br><br>PropTypes: Used to check the data type of props passed to the component.
+Component.propTypes = {
+//Checks here
+}
 
-I know a senior data analyst who brought a copy of a project listed on his resume to an interview.
-
-He claims this landed him the job.
-
-Having a project section:
-
-• helps add keywords
-• proves your skillset
-• makes up for lack of experience
-
-Add one today.<br><br>4/ Result oriented points
-
-The perfect bullet points include:
-
-First: Action Verb
-
-Second: Detail
-
-Third: Descriptor or Outcome<br><br>Action verb examples:
-
-• guided
-• projected
-• analyzed
-• calculated
-• increased
-• planned
-• programmed
-• designed
-• maintained
-• collaborated<br><br>Detail examples:
-
-• who?
-• what?
-• when?
-• where?<br><br>Descriptor or Outcome:
-
-This is the end of the bullet and should be
-
-• factual
-• positive
-• include data
-• show the impact<br><br>5/ Consider Applicant Tracking Systems
-
-Your resume isn’t typically going directly to a recruiter.
-
-It will first be processed by an ATS.
-
-An ATS is a computer that tries to sort out the bad resumes.
-
-It looks for keywords but it also easily gets confused.
-
-What does this mean?<br><br>You should avoid things that will confuse the ATS.
-
-This includes:
-
-• images
-• links
-• lines
-• graphics
-• colors
-
-Remove them all.
-
-This advice does not apply for physical resumes.<br><br>6/ Tools
-
-Once you draft your resume,
-
-run it through the following tools for increased performance.
-
-• JobScan
-• ResumeWorded
-
-These website will give you the extra boost you need.<br><br>I hope this helps you land your dream data job.
-
-Follow me @gib_hurst for more data analytics threads.
-
-RT the first tweet to share with your audience</p>
+Doc Link: <a href="https://t.co/gAvwUZH9FI">https://t.co/gAvwUZH9FI</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">resume</a></li>
-<li><a href="#">data</a></li>
-<li><a href="#">Keywords Keywords make</a></li>
-<li><a href="#">amazing resume</a></li>
-<li><a href="#">data analytics threads</a></li>
+								<li><a href="#">recently started working</a></li>
+<li><a href="#">Component</a></li>
+<li><a href="#">recently started</a></li>
+<li><a href="#">started working</a></li>
+<li><a href="#">state</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -388,7 +330,7 @@ RT the first tweet to share with your audience</p>
       }
     </script>
 
-<!--0230440698223574751-->
+<!--1042455446942305751-->
 
   </body>
 
