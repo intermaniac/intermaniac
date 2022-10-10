@@ -5,13 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="How to avoid top 5 mistakes in SQL
 
-🧵👇1. Backend...">
+Thread:1. Never use Select *
+
+- select *, gets...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>How to avoid top 5 mistakes in sql
+
+:1. never use...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +81,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>How to avoid top 5 mistakes in sql
+
+:1. never use...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +105,56 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>How to avoid top 5 mistakes in sql
 
-🧵👇1. Backend...</h4></a>
+:1. never use...</span>
+                      <a href="#"><h4>How to avoid top 5 mistakes in SQL
+
+Thread:1. Never use Select *
+
+- select *, gets...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-10 07:15:38.385229</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>How to avoid top 5 mistakes in SQL
 
-🧵👇<br><br>1. Backend Developer (Python) at @legistify.
+Thread:<br><br>1. Never use Select *
 
-A remote opportunity at a Gurugram-based Titan Capital-backed, fast-growing startup that received a seed round of funding in 2021.
+- select *, gets the data from all the columns, which increases the latency and is expensive for huge data.
+- Instead, get only the required fields, which limits the size of each record <a href="https://t.co/VWnlzTYbmE">https://t.co/VWnlzTYbmE</a><br><br>2. Use EXISTS() Instead of COUNT()
 
-Check out the job at: <a href="https://t.co/RPbctyv0N3">https://t.co/RPbctyv0N3</a><br><br>2. SDE-I Python at @netomi_official.
+- If you want to know whether a record/result exists or not, it is better to use exists(), rather than count()<br><br>- count(), will browse the entire table to get you the number of records.
+- Whereas, exists(), will get back to you, when it finds the first record for the query, saving you time and computing.<br><br>3. Functions on indexed columns is useless
 
-A remote opportunity at a San Mateo-based YCombinator-backed, fast-growing startup that received a Series-B round of funding in 2021.
+- Using functions on indexed columns, while querying, will make the indexes remain useless.
+- In order to use indexes, we need to avoid adding functions on the indexed columns. <a href="https://t.co/3lT84GtNnK">https://t.co/3lT84GtNnK</a><br><br>4. LIMIT Statements
 
-Check out the job at: <a href="https://t.co/OhwZW0CSyc">https://t.co/OhwZW0CSyc</a><br><br>3. Rust Developer (Infrastructure Team) at @ethstatus.
+- Most common used pagination is LIMIT, OFFSET, which is not optimal.
+- It is fast for smaller and immediate sets like “LIMIT 0, 10”<br><br>- But when OFFSET is changed to 1000000, it takes too long, since database doesn't know where 1000000th record exists, it starts from scratch till it finds 1000000th row.
+Better approach would be to add another filter, mostly indexed column, like below <a href="https://t.co/DV4Jfqw98N">https://t.co/DV4Jfqw98N</a><br><br>5. Use GROUP BY Instead of DISTINCT
 
-A remote opportunity at a Zug-based Frestartr-backed, fast-growing startup that received a seed round of funding in 2017.
+- The distinct is an expensive operation, and doesn’t use indexes if available.
+- Faster and easier way to do the same is to use group by. <a href="https://t.co/MQXkpSAxwh">https://t.co/MQXkpSAxwh</a><br><br>In Conclusion…
 
-Check out the job at: <a href="https://t.co/7CrOecL1Bv">https://t.co/7CrOecL1Bv</a><br><br>4. Software Engineer, Machine Learning Frameworks at @weights_biases.
+I haven't covered many major SQL pitfalls. But these are some of the top mistakes, even made by experienced developers. Now you get to avoid them 😁<br><br>Here's the entire article.
 
-A remote opportunity at a San Francisco-based NVIDIA-backed, fast-growing startup that has recently received a corporate round of funding.
+<a href="https://t.co/DR3OadAl3L">https://t.co/DR3OadAl3L</a>
 
-Check out the job at: <a href="https://t.co/Ag95mfIABn">https://t.co/Ag95mfIABn</a></p>
+To be notified about my upcoming articles, subscribe to my newsletter (I’ll not spam you 😂)<br><br>That’s it! Please let me know about your views and comment below for any clarifications.
+
+If you found value in reading this, please consider sharing it with your friends and also on social media 🙏</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Gurugram-based Titan Capital-backed</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">SQL Thread</a></li>
+<li><a href="#">indexed columns</a></li>
+<li><a href="#">Thread</a></li>
+<li><a href="#">EXISTS</a></li>
+<li><a href="#">columns</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +316,7 @@ Check out the job at: <a href="https://t.co/Ag95mfIABn">https://t.co/Ag95mfIABn<
       }
     </script>
 
-<!--2998851664117515751-->
+<!--7526370272974115751-->
 
   </body>
 

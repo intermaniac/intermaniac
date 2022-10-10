@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Backend...">
+    <meta name="description" content="#Java 19 introduces virtual threads to the Java platform for the first time; this is...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>#java 19 introduces virtual s to the java platform for...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>#java 19 introduces virtual s to the java platform for...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +97,54 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
-
-🧵👇1. Backend...</h4></a>
+                      <span>#java 19 introduces virtual s to the java platform for...</span>
+                      <a href="#"><h4>#Java 19 introduces virtual threads to the Java platform for the first time; this is...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-10 07:15:38.385229</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>#Java 19 introduces virtual threads to the Java platform for the first time; this is the primary deliverable of OpenJDK's Project Loom.
 
-🧵👇<br><br>1. Backend Developer (Python) at @legistify.
+This thread is all about it: 
+🧵
 
-A remote opportunity at a Gurugram-based Titan Capital-backed, fast-growing startup that received a seed round of funding in 2021.
+⬇️⬇️⬇️<br><br>Java is made of threads. When we run a Java program, its main method is invoked as the first call frame of the main thread created by the Java launcher. It gives us many things: sequential control flow, local variables, exception handling, single-step debugging, and profiling. ⬇️<br><br>It makes our lives easier by providing exception handling with informative stack traces and serviceability tools that let us observe what's happening in each thread, providing remote debugging, and creating an illusion of sequentiality that makes our code easier to reason.
+⬇️<br><br>Most JVM implementations today implement Java threads as thin wrappers around operating system threads.  
+We call these heavyweight, OS-managed threads platform threads. 
+⬇️<br><br>Operating systems typically allocate thread stacks as monolithic memory blocks at thread creation time that cannot be resized later—generally 2 MB (on Linux). 
+One million threads would require 2 terabytes of memory! 
+It essentially means that we can't have a lot of them. 
+⬇️<br><br>In a server application, a thread is assigned to each incoming request. This approach scales well for moderate-scale applications, e.g., 1000 concurrent requests, but cannot survive 1M concurrent requests, even though we have adequate CPU capacity and IO bandwidth.
+⬇️<br><br>Virtual threads are an alternative implementation of Java threads that store their stack frames in Java's garbage-collected heap rather than in monolithic blocks of memory allocated by the OS. It starts out at only a few hundred bytes and expands and shrinks automatically. 
+⬇️<br><br>The operating system only knows about platform threads, which remain in the scheduling unit. To run code in a virtual thread, the Java runtime arranges for it to run by mounting it on some traditional thread called a "carrier thread." 
+⬇️<br><br>When code running in a virtual thread would otherwise block for IO, locking, or other resource availability, it can be unmounted from the carrier thread, and any modified stack frames copied back to the heap, which frees the carrier thread to run something else. 
+⬇️<br><br>With this virtual thread, we get all the benefits traditional threads have, plus it is cheap, lightweight, and virtually free. Moreover, we can create many of them.
+The following example creates 100,000 virtual threads in under 2 seconds.  
+⬇️ <a href="https://t.co/lMoV6BBnvY">https://t.co/lMoV6BBnvY</a><br><br>Since a large number of virtual threads are easy to create, the thread-per-request programming style alleviates this scalability bottleneck. 
+In other words, high throughput is very simple to achieve.
+⬇️<br><br>Since this is a preview feature, a developer will need to provide the --enable-preview flag to compile this code, as shown in the following command: 
 
-Check out the job at: <a href="https://t.co/RPbctyv0N3">https://t.co/RPbctyv0N3</a><br><br>2. SDE-I Python at @netomi_official.
+javac --release 19 --enable-preview <a href="https://t.co/CYFlaMOfMs">https://t.co/CYFlaMOfMs</a>
+⬇️<br><br>The same flag is also required to run the program:
 
-A remote opportunity at a San Mateo-based YCombinator-backed, fast-growing startup that received a Series-B round of funding in 2021.
+java --enable-preview Main
 
-Check out the job at: <a href="https://t.co/OhwZW0CSyc">https://t.co/OhwZW0CSyc</a><br><br>3. Rust Developer (Infrastructure Team) at @ethstatus.
+However, one can directly run this using the source code launcher. In that case, the command line would be:
 
-A remote opportunity at a Zug-based Frestartr-backed, fast-growing startup that received a seed round of funding in 2017.
-
-Check out the job at: <a href="https://t.co/7CrOecL1Bv">https://t.co/7CrOecL1Bv</a><br><br>4. Software Engineer, Machine Learning Frameworks at @weights_biases.
-
-A remote opportunity at a San Francisco-based NVIDIA-backed, fast-growing startup that has recently received a corporate round of funding.
-
-Check out the job at: <a href="https://t.co/Ag95mfIABn">https://t.co/Ag95mfIABn</a></p>
+java --source 19 --enable-preview <a href="https://t.co/CYFlaMxcKs">https://t.co/CYFlaMxcKs</a>
+⬇️<br><br>While Thread.startVirtualThread(Runnable) is the convenient way to create a virtual thread, new APIs like Thread.Builder, Thread.ofVirtual(), and Thread.ofPlatform() were added to create virtual and platform threads.
+⬇️<br><br>Last but not least, if you liked this thread and want to read more like it in the future, follow me on Twitter (why wouldn't you?).</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Gurugram-based Titan Capital-backed</a></li>
-<li><a href="#">remote opportunity</a></li>
+								<li><a href="#">OpenJDK Project Loom</a></li>
+<li><a href="#">Project Loom</a></li>
+<li><a href="#">OpenJDK Project</a></li>
+<li><a href="#">Java</a></li>
+<li><a href="#">thread</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +306,7 @@ Check out the job at: <a href="https://t.co/Ag95mfIABn">https://t.co/Ag95mfIABn<
       }
     </script>
 
-<!--2998851664117515751-->
+<!--7334125910901615751-->
 
   </body>
 
