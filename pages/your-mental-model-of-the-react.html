@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Your mental model of the React's effect hooks might be a bit off. They aren't...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Your mental model of the react's effect hooks might be...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Your mental model of the react's effect hooks might be...</h2>
               </div>
             </div>
           </div>
@@ -98,38 +97,38 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Your mental model of the react's effect hooks might be...</span>
+                      <a href="#"><h4>Your mental model of the React's effect hooks might be a bit off. They aren't...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-11 07:15:36.082931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Your mental model of the React's effect hooks might be a bit off. They aren't complicated, but do require some thought. 🧵👇
 
-Python And Flask Framework Complete Course For Beginners: 
-<a href="https://t.co/30ogvpOc3n">https://t.co/30ogvpOc3n</a>
+#React #javascript <a href="https://t.co/PB3ojVarqo">https://t.co/PB3ojVarqo</a><br><br>React has a render phase and a commit phase. In the first, it executes your components to figure out what should be on the screen.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Data Science Prerequisites - Numpy - Pandas- Seaborn: 
-<a href="https://t.co/ladeURlB7g">https://t.co/ladeURlB7g</a><br><br>Numpy and PostgreSQL for Beginners.: 
-<a href="https://t.co/RzzWVtvoSk">https://t.co/RzzWVtvoSk</a><br><br>Big Data Programming Languages &amp; Big Data Vs Data Science: 
-<a href="https://t.co/ngJ0xXJXLY">https://t.co/ngJ0xXJXLY</a><br><br>Pandas and PostgreSQL Basic to Advanced: 
-<a href="https://t.co/0UEDouNixu">https://t.co/0UEDouNixu</a><br><br>C++ Programming for Beginners: 
-<a href="https://t.co/zDnzuWYEXg">https://t.co/zDnzuWYEXg</a><br><br>Create Profitable 3D Truck for NFT and METAVERSE W Expert: 
-<a href="https://t.co/C2QaMc5VYj">https://t.co/C2QaMc5VYj</a></p>
+In the second phase, it applies those changes, and executes your hooks.<br><br>With class components, your componentDid/Will* methods run in the update phase. Unlike with hooks, however, they have built-in preconditions.
+
+This is important. If you're trying to reproduce the lifecycle methods, you need to reproduce the preconditions too.<br><br>Otherwise, you *will* be caught off-guard by when they run. Because they aren't lifecycle methods, they are just hooks into React's update process. There's no "lifecycle" in them.
+
+If you need a lifecycle, you can e.g. assemble your own "useComponentDidMount" hook.<br><br>If you do choose to do that, you should create a specific contract for when the hook will run. You may need to maintain or deprecate the hook across major React versions too.
+
+The built-in effect hooks are primitives, not abstractions in/of themselves.<br><br>In many cases, they will be fine to use by themselves. In many other cases, you would prefer a stricter contract (e.g. only run on first mount).
+
+Importantly: you should move that into a new hook. Don't just copy/paste your "make useEffect run once" boilerplate everywhere.<br><br>If you take one thing from this thread, make it this: Effects are not lifecycles. They're callbacks, specifically to give you an opportunity to safely perform a side-effect.
+
+Whether you *should* take that opportunity and perform a side-effect is another story.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">Big Data Programming</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
+								<li><a href="#">mental model</a></li>
+<li><a href="#">React</a></li>
+<li><a href="#">run</a></li>
+<li><a href="#">phase</a></li>
+<li><a href="#">lifecycle</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +290,7 @@ Python And Flask Framework Complete Course For Beginners:
       }
     </script>
 
-<!--2574324634801445751-->
+<!--6794904259680955751-->
 
   </body>
 

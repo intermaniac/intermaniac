@@ -5,12 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="📌 CSS: Conflicts, cascading, and more!
+
+🧵 A thread: 👇 https://t.co/pmdjo5rwo7Continuing our journey from the basics...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>📌 css: conflicts, cascading, and more!
+
+🧵 : 👇 https://t.co/pmdjo5rwo7continuing our...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +79,9 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>📌 css: conflicts, cascading, and more!
+
+🧵 : 👇 https://t.co/pmdjo5rwo7continuing our...</h2>
               </div>
             </div>
           </div>
@@ -98,38 +103,89 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>📌 css: conflicts, cascading, and more!
+
+🧵 : 👇 https://t.co/pmdjo5rwo7continuing our...</span>
+                      <a href="#"><h4>📌 CSS: Conflicts, cascading, and more!
+
+🧵 A thread: 👇 https://t.co/pmdjo5rwo7Continuing our journey from the basics...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-11 07:15:36.082931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>📌 CSS: Conflicts, cascading, and more!
 
-Python And Flask Framework Complete Course For Beginners: 
-<a href="https://t.co/30ogvpOc3n">https://t.co/30ogvpOc3n</a>
+🧵 A thread: 👇 <a href="https://t.co/pmdjo5rwo7">https://t.co/pmdjo5rwo7</a><br><br>Continuing our journey from the basics of CSS, we'll today learn about:
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Data Science Prerequisites - Numpy - Pandas- Seaborn: 
-<a href="https://t.co/ladeURlB7g">https://t.co/ladeURlB7g</a><br><br>Numpy and PostgreSQL for Beginners.: 
-<a href="https://t.co/RzzWVtvoSk">https://t.co/RzzWVtvoSk</a><br><br>Big Data Programming Languages &amp; Big Data Vs Data Science: 
-<a href="https://t.co/ngJ0xXJXLY">https://t.co/ngJ0xXJXLY</a><br><br>Pandas and PostgreSQL Basic to Advanced: 
-<a href="https://t.co/0UEDouNixu">https://t.co/0UEDouNixu</a><br><br>C++ Programming for Beginners: 
-<a href="https://t.co/zDnzuWYEXg">https://t.co/zDnzuWYEXg</a><br><br>Create Profitable 3D Truck for NFT and METAVERSE W Expert: 
-<a href="https://t.co/C2QaMc5VYj">https://t.co/C2QaMc5VYj</a></p>
+- What is cascading?
+- What happens when CSS rules conflict with each other?
+- How to resolve conflicts?
+
+If you wanna take a look at yesterday's thread, you can check it out here: <a href="https://t.co/ToWa4tDRRK">https://t.co/ToWa4tDRRK</a><br><br>But first, let's take a look at what cascade means.
+
+See, in web dev, we've 3 ways to apply CSS rules to HTML. They are:
+
+1. Internal CSS - writing CSS in 'style' tag in HTML
+2. Inline CSS - writing CSS as attributes of HTML tags.
+3. External CSS - writing CSS in an external file<br><br>So, one HTML element can have multiple CSS rules written for it. This causes cascading of CSS rules.
+
+Well, that's easy. Just use only one way to write CSS and avoid it altogether.
+
+Hmmm, it looks plausible but it doesn't quite work that way...👇<br><br>You see, the hierarchy of CSS rules is as follows:
+
+- Default CSS  (by the browser)
+- User-defined stylesheet
+- External CSS
+- Page-specific CSS
+- Inline CSS
+
+And even if we were to write CSS using just one way, we can still write multiple CSS declarations for one HTML element.<br><br>And when we have a situation where there are multiple CSS rules for one HTML element, which rule is going to be applied to it, is determined by the cascade.
+
+There are three factors that determine this:
+
+1. Specificity
+2. Inheritance
+3. Order of appearance
+
+Let's look at them..👇<br><br>1. Specificity: 
+
+CSS selector with higher specificity scores is the one that gets precedence over the one with lower specificity.
+
+Specificity scores of different selectors are as follows:
+1. ID selector - 100
+2. Class selector - 10
+3. Type selector - 1
+4. Important flag - 1000 <a href="https://t.co/1Ldd8ndNgM">https://t.co/1Ldd8ndNgM</a><br><br>2. Inheritance:
+
+Properties that an element gets because some CSS rules were applied to its parent.
+
+Most CSS rules are not inherited but some text properties such as font-family and font size are inherited.
+
+If the child element is targeted directly, then this doesn't apply. <a href="https://t.co/lpLjRQz0DE">https://t.co/lpLjRQz0DE</a><br><br>3. Order of appearance:
+
+All the above-listed rules are fine but what happens if two selectors have the same specificity scores?
+
+Well, in such tie-breaker situations, the rule that was written last wins.
+
+This is like a waterfall, the last one wins! <a href="https://t.co/as9yVejNWZ">https://t.co/as9yVejNWZ</a><br><br>Lastly, note that although we can write CSS rules in multiple ways as specified above, writing it in an external file is the most preferred way of writing CSS.
+
+So, unless you have specific reasons not to do that, always write CSS rules in an external file.<br><br>That's a wrap!
+
+If you enjoyed this thread:
+
+1. Follow me @sumitsaurabh927 for more of these
+2. RT the tweet below to share this thread and show me some love! 🧡🧡🧡 <a href="https://t.co/WGCcsdfFiJ">https://t.co/WGCcsdfFiJ</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">Big Data Programming</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
+								<li><a href="#">CSS</a></li>
+<li><a href="#">CSS rules</a></li>
+<li><a href="#">writing CSS</a></li>
+<li><a href="#">write CSS</a></li>
+<li><a href="#">CSS rules conflict</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +347,7 @@ Python And Flask Framework Complete Course For Beginners:
       }
     </script>
 
-<!--2574324634801445751-->
+<!--0185734097116155751-->
 
   </body>
 

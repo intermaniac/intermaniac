@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="While I was vacationing 🌴, AWS Step Functions got new intrinsic functions. Let's check them...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>While i was vacationing 🌴, aws step functions got new...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +75,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>While i was vacationing 🌴, aws step functions got new...</h2>
               </div>
             </div>
           </div>
@@ -98,38 +97,78 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>While i was vacationing 🌴, aws step functions got new...</span>
+                      <a href="#"><h4>While I was vacationing 🌴, AWS Step Functions got new intrinsic functions. Let's check them...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-11 07:15:36.082931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>While I was vacationing 🌴, AWS Step Functions got new intrinsic functions. Let's check them out!
+permanently delete
+They added 14 new functions, making it 18 in total.
 
-Python And Flask Framework Complete Course For Beginners: 
-<a href="https://t.co/30ogvpOc3n">https://t.co/30ogvpOc3n</a>
+A thread 🧵👇
+(with code examples!) <a href="https://t.co/6aO4N4Vwov">https://t.co/6aO4N4Vwov</a><br><br>A quick Step Functions recap: <a href="https://t.co/vun9UM0Nvp">https://t.co/vun9UM0Nvp</a><br><br>❓ What are intrinsic functions?
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Data Science Prerequisites - Numpy - Pandas- Seaborn: 
-<a href="https://t.co/ladeURlB7g">https://t.co/ladeURlB7g</a><br><br>Numpy and PostgreSQL for Beginners.: 
-<a href="https://t.co/RzzWVtvoSk">https://t.co/RzzWVtvoSk</a><br><br>Big Data Programming Languages &amp; Big Data Vs Data Science: 
-<a href="https://t.co/ngJ0xXJXLY">https://t.co/ngJ0xXJXLY</a><br><br>Pandas and PostgreSQL Basic to Advanced: 
-<a href="https://t.co/0UEDouNixu">https://t.co/0UEDouNixu</a><br><br>C++ Programming for Beginners: 
-<a href="https://t.co/zDnzuWYEXg">https://t.co/zDnzuWYEXg</a><br><br>Create Profitable 3D Truck for NFT and METAVERSE W Expert: 
-<a href="https://t.co/C2QaMc5VYj">https://t.co/C2QaMc5VYj</a></p>
+➡️ Operations you can make on the states' payloads to convert/generate data directly in Step Functions, without using additional Task states and doing it in Lambda functions.
+
+Intrinsic functions = less states = simpler (and cheaper) workflows<br><br>❓ How to use them?
+
+➡️ You end the property key name with ".$" and then put the function name as a value. The function name starts with "States."
+
+You can use intrinsic functions in 𝗣𝗮𝗿𝗮𝗺𝗲𝘁𝗲𝗿𝘀 and 𝗥𝗲𝘀𝘂𝗹𝘁𝗦𝗲𝗹𝗲𝗰𝘁𝗼𝗿 fields. <a href="https://t.co/MQgE4qiMgL">https://t.co/MQgE4qiMgL</a><br><br>1️⃣ "States.Array" returns a JSON array with given elements.
+
+When it's needed? When you want state input values (accessed by "$.") to be put in an array. <a href="https://t.co/dNydLciL6e">https://t.co/dNydLciL6e</a><br><br>2️⃣ "States.ArrayPartition" splits the array into smaller chunks.
+
+When it's needed? When you want to process elements in batches. For example, DynamoDB BatchWriteItem operation accepts up to 25 items. You can split the array into chunks and iterate over them with Map state. <a href="https://t.co/uqs5w465BD">https://t.co/uqs5w465BD</a><br><br>Side note:
+You can provide state input values (accessed by "$.") as any intrinsic function parameters. In some examples, I put hardcoded values for brevity. <a href="https://t.co/UVGmDCdxIt">https://t.co/UVGmDCdxIt</a><br><br>3️⃣ "States.ArrayRange" generates an array of integers in a given range.
+
+Function parameters: start, stop (inclusive), step.
+
+When it's needed? 🤔
+Maybe when you want to run Map state x times, where "x" is a dynamic value. You can create an array and iterate over it with Map. <a href="https://t.co/FgC4XwC6fo">https://t.co/FgC4XwC6fo</a><br><br>4️⃣ Other "States.Array*" functions:
+- "ArrayContains" - true/false if element is present in the array
+- "ArrayGetItem" - returns the item (can pass "$." parameter as the index)
+- "ArrayLength" - returns array length
+- "ArrayUnique" - removes duplicates <a href="https://t.co/IqGtJNOxr5">https://t.co/IqGtJNOxr5</a><br><br>5️⃣ "States.Base64Encode" and "States.Base64Decode" allow, you wouldn't guess it, encoding and decoding from Base64. <a href="https://t.co/034jClraDP">https://t.co/034jClraDP</a><br><br>6️⃣ "States.Hash" generates value hash with a selected algorithm:
+- MD5
+- SHA-1
+- SHA-256
+- SHA-384
+- SHA-512 <a href="https://t.co/tJSx2qYWpK">https://t.co/tJSx2qYWpK</a><br><br>7️⃣ "States.JsonMerge" merges two JSON objects.
+
+It takes two JSON objects as arguments.
+The third argument is whether to make a deep merge. Right now it must be "false" - only supports shallow merges. <a href="https://t.co/IJAd93uMqz">https://t.co/IJAd93uMqz</a><br><br>8️⃣ "States.StringToJson" and "States.JsonToString" convert between a JSON object and a stringified (escaped) JSON value.
+
+When it's needed? When you pass inputs or read outputs from Lambdas and other tasks that operate on stringified JSONs. <a href="https://t.co/I3ebF8EDHY">https://t.co/I3ebF8EDHY</a><br><br>9️⃣ "States.MathRandom" generates a random number.
+
+It takes 3 arguments:
+- start (inclusive)
+- end (exclusive)
+- seed (optional)
+
+🔓 Generated values are not cryptographically secure random numbers! <a href="https://t.co/uaPlQD5Dfp">https://t.co/uaPlQD5Dfp</a><br><br>1️⃣0️⃣ "States.MathAdd" adds numbers. 'Nuff said. <a href="https://t.co/SxD9jPYBnD">https://t.co/SxD9jPYBnD</a><br><br>1️⃣1️⃣ "States.StringSplit" splits the string by a given delimiter. <a href="https://t.co/RiuielXlhY">https://t.co/RiuielXlhY</a><br><br>1️⃣2️⃣ "States.UUID" generates a v4 UUID. <a href="https://t.co/opmtKn7joU">https://t.co/opmtKn7joU</a><br><br>1️⃣3️⃣ "States.Format" builds a string from a given template and values.
+
+"{}" in the template are replaced with provided values. <a href="https://t.co/1MaHUpzyVe">https://t.co/1MaHUpzyVe</a><br><br>That's it! I hope there will be more intrinsic functions in the future to tweet about them 😉
+
+If you found it useful:
+
+1. Follow me @radzikowski_m for more like this
+2. Please ❤️ and 🔁 the 1st tweet below to share 👇 
+
+Thank you!
+<a href="https://t.co/M7X81ieUSM">https://t.co/M7X81ieUSM</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">Big Data Programming</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
+								<li><a href="#">AWS Step Functions</a></li>
+<li><a href="#">AWS Step</a></li>
+<li><a href="#">Functions</a></li>
+<li><a href="#">intrinsic functions</a></li>
+<li><a href="#">Step Functions</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +330,7 @@ Python And Flask Framework Complete Course For Beginners:
       }
     </script>
 
-<!--2574324634801445751-->
+<!--0924273823436945751-->
 
   </body>
 

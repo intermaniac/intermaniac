@@ -5,12 +5,12 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Part 2 of my thread of @apoorvtwts's Git and GitHub masterclass.
+#LearningWithApoorvHow is Git different from...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Part 2 of my  of @apoorvtwts's git and github...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +76,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Part 2 of my  of @apoorvtwts's git and github...</h2>
               </div>
             </div>
           </div>
@@ -98,38 +98,57 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Part 2 of my  of @apoorvtwts's git and github...</span>
+                      <a href="#"><h4>Part 2 of my thread of @apoorvtwts's Git and GitHub masterclass.
+#LearningWithApoorvHow is Git different from...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-11 07:15:36.082931</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
-
-Python And Flask Framework Complete Course For Beginners: 
-<a href="https://t.co/30ogvpOc3n">https://t.co/30ogvpOc3n</a>
-
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Data Science Prerequisites - Numpy - Pandas- Seaborn: 
-<a href="https://t.co/ladeURlB7g">https://t.co/ladeURlB7g</a><br><br>Numpy and PostgreSQL for Beginners.: 
-<a href="https://t.co/RzzWVtvoSk">https://t.co/RzzWVtvoSk</a><br><br>Big Data Programming Languages &amp; Big Data Vs Data Science: 
-<a href="https://t.co/ngJ0xXJXLY">https://t.co/ngJ0xXJXLY</a><br><br>Pandas and PostgreSQL Basic to Advanced: 
-<a href="https://t.co/0UEDouNixu">https://t.co/0UEDouNixu</a><br><br>C++ Programming for Beginners: 
-<a href="https://t.co/zDnzuWYEXg">https://t.co/zDnzuWYEXg</a><br><br>Create Profitable 3D Truck for NFT and METAVERSE W Expert: 
-<a href="https://t.co/C2QaMc5VYj">https://t.co/C2QaMc5VYj</a></p>
+                      <p>Part 2 of my thread of @apoorvtwts's Git and GitHub masterclass.
+#LearningWithApoorv<br><br>How is Git different from other VCS?
+Reasons: 
+        1. Snapshots:
+                      - Most of other VCS keep a tab about their files in the form of list of changes that are made to a particular file. This Version Control System is also known as Delta based VCS. <a href="https://t.co/P9xp0g2rN2">https://t.co/P9xp0g2rN2</a><br><br>(continuing...)
+- In the diagram, V1,V2...V5 are the versions of files and delta is the change made to the base file(the original file(version 1)
+ - Other VCS maintain the changes that are made to the base file over the period of time.<br><br>(continuing...) 
+- So for file A, delta 1 is change context to file A. And delta 2 is also change context to file A not delta 1. Similarly for other files.<br><br>How does Git works?
+- Git thinks of this data as series of the snapshot for a miniature file system.
+With respect to Delta VCS picture. For file A, A1 is first change. For third commit, it will remain A1(because not change made) and for fourth commit, A2 will be there. <a href="https://t.co/Cy7fSY2uTb">https://t.co/Cy7fSY2uTb</a><br><br>File System(brief explanation): We have Version V1 And V2      
+V1                  V2
+ -&gt; App                -&gt; App
+       -&gt; a.txt              -&gt; A1.txt
+       -&gt; b.txt              -&gt; b.txt
+ -&gt; c.txt              -&gt; c.txt
+   27 sept 22             28 sept 22 (time reference)<br><br>(continuing...)
+- Change of A1 has been made in Version 2.
+- Git takes the snapshot(picture of how does file look like and it's content) of Version of V1 and creates a reference to the point of time it has been commited.<br><br>(continuing...)
+- Whenever you make next changes with modification, it takes snapshots and create reference to it.<br><br>(second reason)
+2. Nearly every operation is local:
+- Most of the operations performed by git is by reading all the data from the DB that is in the local system instead of making request to remote server(because git contains all the history or versions)<br><br>(continuing...)
+- So even if you are offline you can still perform git operation and commit changes(that can be saved in your local DB).  You can upload them when you get your internet back.<br><br>3. Integrity:
+ - Integrity means git will be aware of every change that you'll make.
+- The reason is that everything in GIT is checksummed.
+ - GIT uses SHA-1 mechanism for checksumming.
+- SHA-1 is 40 character String composed of hexadecimal characters((0-9) and (A-F))<br><br>(continuing...) 
+- It is calculated based on the content of file or directory structure.
+* If you add or remove a file that goes into the directory structure criterion and if you modify a file then it goes into the contents of the file
+criterion.<br><br>* this string is always going to be unique since it is based on directory structure or the contents of file.
+* GIT stores everything in the database by not the name of file but by these strings that are calculated based on the directory structure or the contents of file.<br><br>(fourth reason)
+  4. It only adds generally:
+  - Whatever you do on git nearly all of it is only going to add some data into the database but it will never remove any data from database.
+ - It's hard for us to make git erase some data.<br><br>That's all from the first video of Git(all covered in part 1 and part 2 of my thread).</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">Big Data Programming</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
+								<li><a href="#">file</a></li>
+<li><a href="#">Git</a></li>
+<li><a href="#">VCS</a></li>
+<li><a href="#">Delta</a></li>
+<li><a href="#">continuing</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +310,7 @@ Python And Flask Framework Complete Course For Beginners:
       }
     </script>
 
-<!--2574324634801445751-->
+<!--0614634561495965751-->
 
   </body>
 
