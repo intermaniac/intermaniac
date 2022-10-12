@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Udemy Courses to learn SQL for FREE ↓
-
-Open thread 🧵 ↓1. Advanced Databases and SQL...">
+    <meta name="description" content="Deploying a secure (HTTPS) web app built as a Docker image? This is why I...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Udemy courses to learn sql for free ↓
-
-open  🧵...</title>
+    <title>Deploying a secure (https) web app built as a docker...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +75,7 @@ open  🧵...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Udemy courses to learn sql for free ↓
-
-open  🧵...</h2>
+                <h2>Deploying a secure (https) web app built as a docker...</h2>
               </div>
             </div>
           </div>
@@ -103,52 +97,65 @@ open  🧵...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Udemy courses to learn sql for free ↓
-
-open  🧵...</span>
-                      <a href="#"><h4>Udemy Courses to learn SQL for FREE ↓
-
-Open thread 🧵 ↓1. Advanced Databases and SQL...</h4></a>
+                      <span>Deploying a secure (https) web app built as a docker...</span>
+                      <a href="#"><h4>Deploying a secure (HTTPS) web app built as a Docker image? This is why I...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-12 07:15:35.976609</a></li>
 
                       </ul>
-                      <p>Udemy Courses to learn SQL for FREE ↓
+                      <p>Deploying a secure (HTTPS) web app built as a Docker image? This is why I prefer @googlecloud over other clouds - Opening thread! (1/6)
 
-Open thread 🧵 ↓<br><br>1. Advanced Databases and SQL Querying
+I’ll be omitting common steps/parameters such as project/resource-group, regions, etc.
 
-<a href="https://t.co/i0UkNAKcEJ">https://t.co/i0UkNAKcEJ</a><br><br>2. A Beginners' Guide to SQL
+If you know better ways, feel free to share!<br><br>@googlecloud 2/6: On @googlecloud:
 
-<a href="https://t.co/mL9cKU0DEO">https://t.co/mL9cKU0DEO</a><br><br>3. SQL Beginner's Level Course
 
-<a href="https://t.co/WHlbBn6red">https://t.co/WHlbBn6red</a><br><br>4. SQL/MySQL Database Basics
 
-<a href="https://t.co/Nsm8rqpK0v">https://t.co/Nsm8rqpK0v</a><br><br>5. Fundamentals of SQL
+Step 1: Run `gcloud run deploy my-service --image=nginx:latest`
 
-<a href="https://t.co/PJHJzbGXKd">https://t.co/PJHJzbGXKd</a><br><br>6. Introduction to SQL &amp; Databases
+There’s no step 2.
 
-<a href="https://t.co/YoGqZyUjVP">https://t.co/YoGqZyUjVP</a><br><br>7. SQL in a Simplified Manner
+And it is close to being serverless - by default, you only pay for the time it takes to spin up and process requests, and keeps listening for 15 mins before shutdown<br><br>3/6: On @Azure (credits to @0x726165666673):
 
-<a href="https://t.co/ZPG4aMdfj8">https://t.co/ZPG4aMdfj8</a><br><br>BEFORE YOU GO ↓
+Step 1: Create a YAML file similar to a Kubernetes deployment… you’ll want a pod with your app container and a caddy container
 
-Thank you for reaching this far. I hope you found the thread helpful. If yes,
+Step 2: Run az container create --name my-service --file deployment.yml
 
-✅ Follow @MbaziiraRonn for more resources
-❤️ Like the 1st tweet to share with others
-🏆 Subscribe to my Newsletter for exclusive content
+see <a href="https://t.co/0GCqQFtkue">https://t.co/0GCqQFtkue</a><br><br>4/6: On @awscloud, of course I’ll be missing out something, that’s precisely my point:
 
-Happy learning. Cheers! 🥂</p>
+Step 1: Create an Application load balancer
+
+
+Step 2: Create some ECS target groups (Type IP, HTTP protocol)
+
+Step 3: Add a load balancer rule that associates the target group<br><br>5/6: Not finished with @awscloud:
+
+
+
+Step 4: Create an Elastic Container Cluster
+
+
+Step 5: Register a Task Definition: aws ecs register-task-definition --family my-service --container-definitions &lt;some-json-structure-similar-to-kube-deployment&gt;<br><br>6/6: Still on @awscloud:
+
+
+
+Step 6: Register/Update service `aws ecs create-service —cluster &lt;cluster-name&gt; --service-name my-service --task-definition &lt;the-task-definition&gt; --network-configuration &lt;some-json-structure&gt;`
+
+
+
+See <a href="https://t.co/Q5lqwWISQx">https://t.co/Q5lqwWISQx</a><br><br>Anyways... if your'e a #rubyonrails dev, use #github, and wants/needs to deploy to #GoogleCloud, check out this template repository from my folks at 
+@icalialabs: <a href="https://t.co/BeRTYKZw1a">https://t.co/BeRTYKZw1a</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">SQL</a></li>
-<li><a href="#">SQL Beginner Level</a></li>
-<li><a href="#">Open thread</a></li>
-<li><a href="#">SQL Querying</a></li>
-<li><a href="#">learn SQL</a></li>
+								<li><a href="#">Deploying a secure</a></li>
+<li><a href="#">web app built</a></li>
+<li><a href="#">Step</a></li>
+<li><a href="#">Docker image</a></li>
+<li><a href="#">Container Cluster Step</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -310,7 +317,7 @@ Happy learning. Cheers! 🥂</p>
       }
     </script>
 
-<!--8655400444839975751-->
+<!--7121611276646195751-->
 
   </body>
 
