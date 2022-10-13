@@ -5,12 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Closures are a way we can achieve lexically scoped name binding.
+
+That sounds like a mouth...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Closures are a way we can achieve lexically scoped name...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +77,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Closures are a way we can achieve lexically scoped name...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +99,62 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Closures are a way we can achieve lexically scoped name...</span>
+                      <a href="#"><h4>Closures are a way we can achieve lexically scoped name binding.
+
+That sounds like a mouth...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-13 07:15:35.018350</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Closures are a way we can achieve lexically scoped name binding.
 
-Wordpress Affiliate System and WP Engagement Boost: 
-<a href="https://t.co/35Mw4SBovo">https://t.co/35Mw4SBovo</a>
+That sounds like a mouth full so let's break down what closures are 🧵
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>The Ultimate SEMrush Guide 2022: 
-<a href="https://t.co/zqUp10JDId">https://t.co/zqUp10JDId</a><br><br>How To - WordPress Plugins: 
-<a href="https://t.co/IXms34NO9R">https://t.co/IXms34NO9R</a><br><br>Stress-free Effective Learning for Adults: Crush your goals!: 
-<a href="https://t.co/6oVilag3hs">https://t.co/6oVilag3hs</a><br><br>Cryptocurrency Course: Learn to Make Money Online WORLDWIDE!: 
-<a href="https://t.co/jsy8Hfu9s5">https://t.co/jsy8Hfu9s5</a></p>
+#Javascript<br><br>A closure is a feature in JS where there is an inner function within a parent function that encloses it while also having access to that parent functions variables.<br><br>This creates three scope chains:
+
+- Access to its own scope, this includes the variables declared and defined between its curly braces
+
+- Access to the parent function's variables
+
+- Access to the global variables outside of the parent function.<br><br>Let's look at a basic example:
+
+Here are two functions, a parent function with variable parentVar and a child function within it's scope that has a variable childVar <a href="https://t.co/vFqZ09GTZS">https://t.co/vFqZ09GTZS</a><br><br>Lets go ahead and invoke the parent() function and store the result in a variable:
+
+var result = parent()
+
+When we call this function the following things happens:<br><br>- There is a scope created that is limited to parent. Within this scope parentVar is created and defined to the value of 10.
+
+- The following line is just a function declaration for child. Nothing is invoked here.<br><br>- The final line is a return statement that returns the child function we declared in the previous line. 
+
+Here the entire body of the child function is returned.<br><br>- The contents returned are then stored in the result variable.
+
+- The parent function completes its execution and all variables that were in it's scope no longer exist. This includes parentVar.<br><br>That last step is important because once a function completes its execution, any variables that were defined inside it no longer exist and cannot be referenced.
+
+Thus, the lifespan of a variable defined within a function is the same as the lifespan of its functions execution.<br><br>Now let's look at the contents stored in our results variable which should be the child function. 
+
+Since the type of the variable is now a function, we can safely invoke it with the () operator, such as result(). <a href="https://t.co/qNuSnPqX3R">https://t.co/qNuSnPqX3R</a><br><br>Now let's go through the steps of result() execution:
+
+- Variable childVar is created and it has value 20 assigned to it.
+
+- JavaScript then tries to do the addition of parentVar + childVar.<br><br>But how is it able to add parentVar to childVar when we know parentVar no longer exists?
+
+This is the magic of closures, and how they allow access to variables of enclosing functions.<br><br>The child function is able to preserve (closure) the scope chain of the parent function at the time that the parent function was executed. 
+
+This gives it the ability to access the parent function's variables.<br><br>I personally like to think of closures like this:
+
+Since functions are of type Object in JavaScript, we are essentially just adding a reference to a parent functions scope within our child function (object).<br><br>Hope this helps you understand Closures in #Javascript better. Thanks for reading 🤠</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">function</a></li>
+<li><a href="#">parent function</a></li>
+<li><a href="#">child function</a></li>
+<li><a href="#">parent</a></li>
+<li><a href="#">achieve lexically scoped</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +316,7 @@ Wordpress Affiliate System and WP Engagement Boost:
       }
     </script>
 
-<!--1021928331787346751-->
+<!--4412622175705816751-->
 
   </body>
 
