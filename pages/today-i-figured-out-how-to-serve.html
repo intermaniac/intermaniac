@@ -5,21 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="💭 Cloud Learning Resources 💭
+    <meta name="description" content="Today I figured out how to serve an AWS Lambda function from a custom domain!
 
-A THREAD 
-👇🏽👇🏽👇🏽👇🏽
-
-#Data #DataScience #dataanalysis #DataAnalytics #dataScientist #machinelearning #python #pythonprogramming #pythonprojects...">
+It...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>💭 cloud learning resources 💭
-
- 
-👇🏽👇🏽👇🏽👇🏽
-
-#data #datascience #dataanalysis #dataanalytics #datascientist...</title>
+    <title>Today i figured out how to serve an aws lambda...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,12 +77,7 @@ A THREAD
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>💭 cloud learning resources 💭
-
- 
-👇🏽👇🏽👇🏽👇🏽
-
-#data #datascience #dataanalysis #dataanalytics #datascientist...</h2>
+                <h2>Today i figured out how to serve an aws lambda...</h2>
               </div>
             </div>
           </div>
@@ -112,39 +99,38 @@ A THREAD
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>💭 cloud learning resources 💭
+                      <span>Today i figured out how to serve an aws lambda...</span>
+                      <a href="#"><h4>Today I figured out how to serve an AWS Lambda function from a custom domain!
 
- 
-👇🏽👇🏽👇🏽👇🏽
-
-#data #datascience #dataanalysis #dataanalytics #datascientist...</span>
-                      <a href="#"><h4>💭 Cloud Learning Resources 💭
-
-A THREAD 
-👇🏽👇🏽👇🏽👇🏽
-
-#Data #DataScience #dataanalysis #DataAnalytics #dataScientist #machinelearning #python #pythonprogramming #pythonprojects...</h4></a>
+It...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-14 07:15:34.836813</a></li>
 
                       </ul>
-                      <p>💭 Cloud Learning Resources 💭
+                      <p>Today I figured out how to serve an AWS Lambda function from a custom domain!
 
-A THREAD 
-👇🏽👇🏽👇🏽👇🏽
+It took me, no kidding, five hours. My issue thread of notes is 77 comments long.
 
-#Data #DataScience #dataanalysis #DataAnalytics #dataScientist #machinelearning #python #pythonprogramming #pythonprojects #pythoncode #artificialintelligence #ai #100DaysOfCode<br><br><a href="https://t.co/q6ozaSyijp">https://t.co/q6ozaSyijp</a></p>
+I was going to write it up, but I'm exhausted so I'm sharing my research issue thread instead: <a href="https://t.co/fE5m9W2acN">https://t.co/fE5m9W2acN</a><br><br>AWS Lambda functions can have Function URLs now, which is great!
+
+But giving them a URL from a custom domain/subdomain is not straight-forward at all: I ended up figuring out a way to do that using CloudFront
+
+Demo at <a href="https://t.co/IV10bsUlDt">https://t.co/IV10bsUlDt</a><br><br>Of course you also need to issue a certificate to do HTTPS for that custom domain, which means figuring out AWS Certificate Manager (ACM)
+
+And you have to verify ownership of your domain
+
+If your DNS is with Vercel, there's an edge-case you have to handle <a href="https://t.co/uawoxIkRfF">https://t.co/uawoxIkRfF</a><br><br>And finally... Datasette needs an x-forwarded-host: header to generate internal URLs, but CloudFront can only provide that if you write a custom CloudFront Function (NOT the same as Lambda@Edge functions) to set that header! <a href="https://t.co/3zljJSD2Zk">https://t.co/3zljJSD2Zk</a> <a href="https://t.co/R8PHZLNwdC">https://t.co/R8PHZLNwdC</a><br><br>This issue thread is an extreme example of how I handle all sorts of different research tasks: I open a research issue, then drop in a stream of comments with URLs, notes, quotations, code samples and screenshots until I figure out the solution<br><br>Here's my write-up of my previous adventures figuring out how to deploy a Python ASGI application as an AWS Lambda function <a href="https://t.co/cwgPlW3vTF">https://t.co/cwgPlW3vTF</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Cloud Learning Resources</a></li>
-<li><a href="#">Cloud Learning</a></li>
-<li><a href="#">Learning Resources</a></li>
-<li><a href="#">Data</a></li>
-<li><a href="#">Cloud</a></li>
+								<li><a href="#">AWS Lambda function</a></li>
+<li><a href="#">Today I figured</a></li>
+<li><a href="#">AWS Lambda</a></li>
+<li><a href="#">AWS Certificate Manager</a></li>
+<li><a href="#">Lambda function</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -306,7 +292,7 @@ A THREAD
       }
     </script>
 
-<!--4410742038578586751-->
+<!--0620082324878276751-->
 
   </body>
 
