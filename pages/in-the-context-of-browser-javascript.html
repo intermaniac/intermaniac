@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="In the context of #browser #javascript #SupplyChainAttacks, defensive solutions commonly miss an important component in...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>In the context of #browser #javascript #supplychainattacks, defensive solutions commonly...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>In the context of #browser #javascript #supplychainattacks, defensive solutions commonly...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,32 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>In the context of #browser #javascript #supplychainattacks, defensive solutions commonly...</span>
+                      <a href="#"><h4>In the context of #browser #javascript #SupplyChainAttacks, defensive solutions commonly miss an important component in...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-15 07:15:45.409688</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>In the context of #browser #javascript #SupplyChainAttacks, defensive solutions commonly miss an important component in their approach, usually regardless of what the approach is.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/431dIW1Qca">https://t.co/431dIW1Qca</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+Because most solutions don’t offer protection against iframes.
+
+🧵 Consider the following example: <a href="https://t.co/bcX6S9Cva9">https://t.co/bcX6S9Cva9</a><br><br>Let’s imagine a simple world where fetch() is the only API attackers can use to leak information from a browser based web app they managed to compromise.<br><br>Since they will obviously try to leak it to “https://t.co/SbzGPsezch” domain, the example above SHOULD be an effective way to prevent them from successfully doing so.<br><br>In the example we override (aka monkey patch) the original behavior of fetch() to disallow communication with the malicious domain.<br><br>This example is of course just a wild simplification for how we can apply different more complicated sorts of protections in the browser against malicious js execution - needless to say, this extends way beyond just communication too (otherwise CSP would have been enough).<br><br>However, any overriding protections that are introduced by different defensive solutions are usually applied to the global object (window).<br><br>But because of how easy it is to form new same origin realms (aka iframes) in the browser, such protections can easily be bypassed and by that cancel the protection motivation completely: <a href="https://t.co/oLgUG7k3Fs">https://t.co/oLgUG7k3Fs</a><br><br>Forming a new same origin iframe brings it up with its own entirely new realm.
+
+In the context of the example above, an attacker can bypass our protection of fetch() by leveraging a new iframe with its own new realm and its own new fetch().<br><br>When you extend the dimensions of this problem beyond the simplified example in this thread, you will discover a complicated problem to defend against.<br><br>How can we successfully limit the power malicious js can obtain once is already executing within a web app when it’s so easy to generate new power by leveraging new same origin realms?<br><br>This is a major component I believe we’ll face trying to protect against supply chain attacks in browser based applications.
+
+That includes websites, web apps, extensions, crypto wallets, electron apps and so on.<br><br>Bottom line, this is a complicated problem, and we’re bringing an appropriately complicated solution - stay tuned! 💪🏻</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">solutions commonly miss</a></li>
+<li><a href="#">defensive solutions commonly</a></li>
+<li><a href="#">commonly miss</a></li>
+<li><a href="#">miss an important</a></li>
+<li><a href="#">defensive solutions</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +284,7 @@
       }
     </script>
 
-<!--7148622893036117751-->
+<!--0420186516012496751-->
 
   </body>
 
