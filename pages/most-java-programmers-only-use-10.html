@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Crack the JavaScript Interview.
-[Difference between var, let, and const]
+    <meta name="description" content="Most @java programmers only use 10% of their... debugger.
 
-#100DaysOfCode
-A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...">
+Use the full power of your debugger...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Crack the javascript interview.
-[difference between var, let, and const]
+    <title>Most @java programmers only use 10% of their... debugger.
 
-#100daysofcode
- 👇🏻...</title>
+use the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +79,9 @@ A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Crack the javascript interview.
-[difference between var, let, and const]
+                <h2>Most @java programmers only use 10% of their... debugger.
 
-#100daysofcode
- 👇🏻...</h2>
+use the...</h2>
               </div>
             </div>
           </div>
@@ -109,56 +103,91 @@ A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Crack the javascript interview.
-[difference between var, let, and const]
+                      <span>Most @java programmers only use 10% of their... debugger.
 
-#100daysofcode
- 👇🏻...</span>
-                      <a href="#"><h4>Crack the JavaScript Interview.
-[Difference between var, let, and const]
+use the...</span>
+                      <a href="#"><h4>Most @java programmers only use 10% of their... debugger.
 
-#100DaysOfCode
-A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...</h4></a>
+Use the full power of your debugger...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-16 07:15:32.067199</a></li>
 
                       </ul>
-                      <p>Crack the JavaScript Interview.
-[Difference between var, let, and const]
+                      <p>Most @java programmers only use 10% of their... debugger.
 
-#100DaysOfCode
-A Thread 👇🏻 <a href="https://t.co/D5jXFaS8kW">https://t.co/D5jXFaS8kW</a><br><br>We can differentiate var, let, and const based on :
-1. Scoping
-2. Hoisting
-3. Updation and Declaration
-4. Initial initialization<br><br>Before the differences, we must understand what Scoping and Hoisting are.<br><br>Scoping
-- The scope is the code's current context, which determines if a variable or a function is assessable by the code. Scoping is categorizing code according to its scope, which can be :
-1. Global Scope
-2. Function Scope
-3. Block Scope<br><br>Hoisting
-- Hoisting refers to the process in which the interpreter appears to move the declaration of function, variables, or classes to the top of their scope before the execution of code.<br><br>Scoping of var
-- var declarations are globally scoped or function scoped which means that when globally scoped it is assessable to everything inside the window object (the global object) and if it is within a function then it is assessable within the function only.<br><br>Scoping of let and const
-- let and const are block scoped. A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block. So a variable declared in a block with let or const is only available for use within that block.<br><br>Hoisting of var, let, and const
-- var, let, and const are all hoisted to the top of their scope. But while var variables are initialized with `undefined`, let and const variables are not initialized.<br><br>Updation and Declaration
-- var variables can be updated and re-declared within its scope
-- let variables can be updated but not re-declared
-- const variables can neither be updated nor re-declared.<br><br>Initial initialization
-- While var and let can be declared without being initialized, const must be initialized during declaration.<br><br>If you found this Informative
-- Like❤️
-- Retweet the first tweet 🔁
-- Follow me 👨‍💻
-I post about Web Development daily.</p>
+Use the full power of your debugger with advanced breakpoints.
+
+Diagnose complex bugs in minutes, instead of hours.
+
+Test your debugger skills with 4 challenges in this thread. Works with @intellijidea and other IDEs. 🧵<br><br>1) Challenge
+
+Line 8 throws a division by zero exception.
+Presume line 5 and 6 are hidden in 1000 lines of code.
+
+How do we find out if variable a or variable b is causing it? <a href="https://t.co/zVmOo8afvW">https://t.co/zVmOo8afvW</a><br><br>1) Solution: Normal Breakpoint
+
+Put a normal breakpoint on line 8 to find out that variable b is 0 and therefore b is the culprit.
+
+Ok, easy enough.
+Let's make it a bit more interesting... <a href="https://t.co/z2N3VQTf0M">https://t.co/z2N3VQTf0M</a><br><br>2) Challenge
+
+Divide by zero at line 9.
+Line 7 is hidden in 1000 lines of code.
+How do I debug this efficiently at line 9? <a href="https://t.co/cr8B4XbxxU">https://t.co/cr8B4XbxxU</a><br><br>2) Fake solution: Normal Breakpoint
+
+A normal breakpoint at line 9 halts at every iteration.
+Most values of i are fine, so it takes many "resume" click before the buggy state shows up. It's a PITA.
+
+What I really want to know is: at which value of variable i does this blow up? <a href="https://t.co/SDMzqVQFk3">https://t.co/SDMzqVQFk3</a><br><br>2) Solution: Exception Breakpoint
+
+An Exception Breakpoint for ArithmeticException halts when the division by zero happens. It immediately shows the guilty value of i.
+
+I can then mentally reason how those 1000 lines of code behave when variable i reaches value 666. <a href="https://t.co/ivTfPW4aDS">https://t.co/ivTfPW4aDS</a><br><br>3) Challenge
+
+In this case, there is no Exception, but still the code misbehaves.
+How do I find out when line 13 is misbehaving?
+What value is variable i?
+
+Presume I can't alter the code to print i too, for example because this this code is part of an upstream dependency jar. <a href="https://t.co/WNnVDmnn9M">https://t.co/WNnVDmnn9M</a><br><br>3) Solution: Conditional Breakpoint
+
+A Conditional Breakpoint halts when the breakpoint is hit AND its boolean condition returns true.
+In this case, it halts if the age is unrealistic (&gt; 1000).
+
+It shows this happens when variable i reaches 666. <a href="https://t.co/Lofq21XgaF">https://t.co/Lofq21XgaF</a><br><br>Once you know that iteration 666 of the loop is problematic, you can put a Conditional Breakpoint at the beginning of the loop with the condition "i == 666", so you can step through the code inside the loop, one line at a time.<br><br>4) Challenge
+
+A breakpoint in a "hot" method is painful: it could be called a thousand times (in earlier phases) before you want it to halt.
+
+This code has 3 phases (= 3 calls).
+Get a breakpoint on line 12 to halt in phase 3, during the last calcAge() call. <a href="https://t.co/WtvzHWzIbL">https://t.co/WtvzHWzIbL</a><br><br>4) Solution: Disable Until Breakpoint
+
+Put in 2 breakpoints:
+- one on line 8 to flag when phase 3 starts, without halting (= not suspended)
+- one on line 12 to halt, but disabled until the other breakpoint flags that phase 3 started <a href="https://t.co/S1oy8JysnX">https://t.co/S1oy8JysnX</a><br><br>4) Alternative solutions:
+
+- Pass Count Breakpoint, if you know how many times calcAge() is called before you want it to halt
+- Conditional Breakpoint, if you can afford to rely in the variable count.
+
+If these works: Great, use them!
+But it depends on the case.<br><br>These 4 advanced debugging techniques don't just shine to find the cause of a bug.
+
+They also help to understand what a piece of code behaves in particular circumstances.
+
+Or - when you make code changes - how the behavior of  a piece of code changes.<br><br>I hope you found these debugging tricks useful for your future bug hunts!<br><br>If you found this thread useful, you might find this one about JVM classloading useful too:
+
+<a href="https://t.co/HFxU69bqOy">https://t.co/HFxU69bqOy</a><br><br>Or this one about profiling Java applications:
+
+<a href="https://t.co/a9bYnDux33">https://t.co/a9bYnDux33</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Crack the JavaScript</a></li>
-<li><a href="#">JavaScript Interview</a></li>
-<li><a href="#">const</a></li>
-<li><a href="#">scope</a></li>
-<li><a href="#">Scoping</a></li>
+								<li><a href="#">Breakpoint</a></li>
+<li><a href="#">Conditional Breakpoint</a></li>
+<li><a href="#">Line</a></li>
+<li><a href="#">Normal Breakpoint</a></li>
+<li><a href="#">code</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -320,7 +349,7 @@ I post about Web Development daily.</p>
       }
     </script>
 
-<!--0694499711200637751-->
+<!--4152937241892627751-->
 
   </body>
 

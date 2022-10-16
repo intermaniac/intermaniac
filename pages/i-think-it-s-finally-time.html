@@ -5,19 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Crack the JavaScript Interview.
-[Difference between var, let, and const]
-
-#100DaysOfCode
-A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...">
+    <meta name="description" content="I think it's finally time for a #TerminologyTuesday thread on iterators. I usually define iterator...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Crack the javascript interview.
-[difference between var, let, and const]
-
-#100daysofcode
- 👇🏻...</title>
+    <title>I think it's finally time for a #terminologytuesday  iterators....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +75,7 @@ A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Crack the javascript interview.
-[difference between var, let, and const]
-
-#100daysofcode
- 👇🏻...</h2>
+                <h2>I think it's finally time for a #terminologytuesday  iterators....</h2>
               </div>
             </div>
           </div>
@@ -109,56 +97,159 @@ A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Crack the javascript interview.
-[difference between var, let, and const]
-
-#100daysofcode
- 👇🏻...</span>
-                      <a href="#"><h4>Crack the JavaScript Interview.
-[Difference between var, let, and const]
-
-#100DaysOfCode
-A Thread 👇🏻 https://t.co/D5jXFaS8kWWe can differentiate var,...</h4></a>
+                      <span>I think it's finally time for a #terminologytuesday  iterators....</span>
+                      <a href="#"><h4>I think it's finally time for a #TerminologyTuesday thread on iterators. I usually define iterator...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-16 07:15:32.067199</a></li>
 
                       </ul>
-                      <p>Crack the JavaScript Interview.
-[Difference between var, let, and const]
+                      <p>I think it's finally time for a #TerminologyTuesday thread on iterators. I usually define iterator in two ways:
 
-#100DaysOfCode
-A Thread 👇🏻 <a href="https://t.co/D5jXFaS8kW">https://t.co/D5jXFaS8kW</a><br><br>We can differentiate var, let, and const based on :
-1. Scoping
-2. Hoisting
-3. Updation and Declaration
-4. Initial initialization<br><br>Before the differences, we must understand what Scoping and Hoisting are.<br><br>Scoping
-- The scope is the code's current context, which determines if a variable or a function is assessable by the code. Scoping is categorizing code according to its scope, which can be :
-1. Global Scope
-2. Function Scope
-3. Block Scope<br><br>Hoisting
-- Hoisting refers to the process in which the interpreter appears to move the declaration of function, variables, or classes to the top of their scope before the execution of code.<br><br>Scoping of var
-- var declarations are globally scoped or function scoped which means that when globally scoped it is assessable to everything inside the window object (the global object) and if it is within a function then it is assessable within the function only.<br><br>Scoping of let and const
-- let and const are block scoped. A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block. So a variable declared in a block with let or const is only available for use within that block.<br><br>Hoisting of var, let, and const
-- var, let, and const are all hoisted to the top of their scope. But while var variables are initialized with `undefined`, let and const variables are not initialized.<br><br>Updation and Declaration
-- var variables can be updated and re-declared within its scope
-- let variables can be updated but not re-declared
-- const variables can neither be updated nor re-declared.<br><br>Initial initialization
-- While var and let can be declared without being initialized, const must be initialized during declaration.<br><br>If you found this Informative
-- Like❤️
-- Retweet the first tweet 🔁
-- Follow me 👨‍💻
-I post about Web Development daily.</p>
+1. iterator: a "lazy" iterable that gets consumed as you loop over it.
+2. iterator: the type of object that powers all forms of iteration in Python
+
+Let's dive in 🧵<br><br>Practically it's the "laziness" of iterators that we (Python users) care about most. By "lazy" I mean that iterators perform work as you loop over them.
+
+File objects are one example of an iterator: when looping over a file Python reads lines from disk as you loop over it.<br><br>Generators are the canonical iterator.
+
+This generator expression makes an iterator that squares every number from 0 onward ♾️
+
+&gt;&gt;&gt; from itertools import count
+&gt;&gt;&gt; squares = (n**2 for n in count())
+
+Generator expressions are one way to make a generator object.<br><br>Generator functions are the other way to make a generator.
+
+This generator function accepts an iterable of lines and returns a new lazy iterable of each line with its line ending removed:
+
+def strip_newlines(lines):
+    for line in lines:
+        yield line.rstrip("\n")<br><br>Generators are the easy way to make an iterator. But many iterator objects you'll find in Python are not implemented as generators.
+
+zip, enumerate, reversed, and everything in the itertools module return custom iterator objects.
+
+&gt;&gt;&gt; zip()
+&lt;zip object at 0x7fce5b2f1680&gt;<br><br>For more on creating your own iterators by using generator expressions &amp; generating functions to create your own generator objects, see my terminology Tuesday thread on "generator" 👇 <a href="https://t.co/9ZfaZgtVpH">https://t.co/9ZfaZgtVpH</a><br><br>Let's talk about the *other* definition: iterators power all iteration.
+
+But first let's revisit the term "iterable".
+
+An iterable is anything that you can loop over.
+
+If an object is "iterable" then you can loop over it with a "for" loop or unpack it with tuple unpacking. <a href="https://t.co/Qq4YoEDlYv">https://t.co/Qq4YoEDlYv</a><br><br>You can get an iterator from ANY iterable in Python by passing it to the built-in iter function:
+
+&gt;&gt;&gt; i = iter("a string")
+&lt;str_iterator object at 0x7fce5b132410&gt;
+
+In fact that's the first step of all iteration: Python asks for an iterator.
+
+But what can you do with an iterator?<br><br>All iterators in Python support 2 operations.
+
+1️⃣ Getting their next item, via the built-in next function
+
+&gt;&gt;&gt; squares = (n**2 for n in range(10, 15))
+&gt;&gt;&gt; next(squares)
+100
+&gt;&gt;&gt; next(squares)
+121
+
+2️⃣ Looping over them
+
+&gt;&gt;&gt; for n in squares:
+...     print(n)
+...
+144
+169
+196<br><br>But wait... if you can loop over an iterator, doesn't that mean that iterators are iterables?
+
+Yes it does.
+
+But... aren't iterables iterator-powered (via the iter function)?
+
+Yes. That's true.
+
+But what happens when you pass an iterator to the built-in iter function? 😱<br><br>When you pass an iterator to the built-in iter function, it will give you itself back.
+
+&gt;&gt;&gt; squares
+&lt;generator object &lt;genexpr&gt; at 0x7fce5b05f4c0&gt;
+&gt;&gt;&gt; iter(squares)
+&lt;generator object &lt;genexpr&gt; at 0x7fce5b05f4c0&gt;
+
+It's weird, but works! Iterators power iterables and ARE iterables.<br><br>When Python is about to loop over an iterable it:
+
+1. Asks it for an iterator
+2. Repeatedly calls passes the iterator to next() to get its next item
+3. If/when next() raises a StopIteration exception, the looping stops
+
+That's how ALL iteration works in Python. 😮
+
+Meaning...<br><br>⭐ This function
+
+def loop(iterable, func):
+    for x in iterable:
+        func(x)
+
+⭐ Is equivalent to this
+
+def loop(iterable, func):
+    i = iter(iterable)
+    while True:
+        try: x = next(i)
+        except StopIteration: break
+        else: func(x)<br><br>To recap...
+
+From Python's perspective:
+
+• Iterables are iterator-powered
+• Iterators are iterables
+• Iterators are their own iterators
+
+From our perspective:
+
+• Iterators perform work as we loop over them
+• Iterator items get consumed as we loop<br><br>While understanding how iterators work is fun and informative, the two most important takeaways about iterators are:
+
+• Generators are the easy way to make an iterator (a lazy iterable)
+• Iterators can be passed to the built-in next() function to get just their next item<br><br>Okay it's time for some links on iterators.
+
+4 mins on "what's an iterator": <a href="https://t.co/gnM1TDS7qp">https://t.co/gnM1TDS7qp</a>
+
+25 mins on making &amp; using iterators: <a href="https://t.co/Jr90cQDtyH">https://t.co/Jr90cQDtyH</a>
+
+28 mins on Python's iterator protocol: <a href="https://t.co/v0JgUHWr66">https://t.co/v0JgUHWr66</a><br><br>Want some hands-on practice with iterators? 👩‍💻
+
+Here's a 3 hour tutorial on iterators &amp; generators, including many exercises: <a href="https://t.co/Yz80w4j4u7">https://t.co/Yz80w4j4u7</a>
+
+There are LOTS of generator &amp; iterator related exercises in @PythonMorsels too. 🐍🍪
+
+Here are a few: <a href="https://t.co/LMMv2MPhdw">https://t.co/LMMv2MPhdw</a><br><br>@PythonMorsels Enjoyed this thread?
+
+I think you'll also enjoy my weekly Python tips newsletter 🐍💡
+
+💌 <a href="https://t.co/7WifStPAxi">https://t.co/7WifStPAxi</a> <a href="https://t.co/IaA6bqOnMs">https://t.co/IaA6bqOnMs</a><br><br>@scare4face @PythonMorsels With non-iterator iterables, their iterators can be consumed independently. Think of "i" and "j" below as two bookmarks in the same book.
+
+&gt;&gt;&gt; nums = [2, 1, 3, 4, 7]
+&gt;&gt;&gt; i = iter(nums)
+&gt;&gt;&gt; j = iter(nums)
+&gt;&gt;&gt; next(i)
+2
+&gt;&gt;&gt; next(i), next(j)
+(1, 2)
+&gt;&gt;&gt; next(i), next(j)
+(3, 1)<br><br>@scare4face @PythonMorsels But really, unless you're re-implementing a "for" loop just for fun (see quoted tweet), it's mostly just low-level looping helpers that use iter.
+
+For example islice from Python's itertools module calls iter under the hood: <a href="https://t.co/417CYn8p3v">https://t.co/417CYn8p3v</a>
+
+<a href="https://t.co/REtQAnXuqL">https://t.co/REtQAnXuqL</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Crack the JavaScript</a></li>
-<li><a href="#">JavaScript Interview</a></li>
-<li><a href="#">const</a></li>
-<li><a href="#">scope</a></li>
-<li><a href="#">Scoping</a></li>
+								<li><a href="#">iterator</a></li>
+<li><a href="#">iterators</a></li>
+<li><a href="#">Python</a></li>
+<li><a href="#">generator</a></li>
+<li><a href="#">loop</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -320,7 +411,7 @@ I post about Web Development daily.</p>
       }
     </script>
 
-<!--0694499711200637751-->
+<!--9064008297232437751-->
 
   </body>
 
