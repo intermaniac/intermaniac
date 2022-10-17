@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="MLOps is an essential skill that a data scientist must learn. In addition to Analysing...">
+    <meta name="description" content="Writing SQL can be daunting at first glance, but once you master it you can...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Mlops is an essential skill that a data scientist must...</title>
+    <title>Writing sql can be daunting at first glance, but once...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Mlops is an essential skill that a data scientist must...</h2>
+                <h2>Writing sql can be daunting at first glance, but once...</h2>
               </div>
             </div>
           </div>
@@ -97,34 +97,70 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Mlops is an essential skill that a data scientist must...</span>
-                      <a href="#"><h4>MLOps is an essential skill that a data scientist must learn. In addition to Analysing...</h4></a>
+                      <span>Writing sql can be daunting at first glance, but once...</span>
+                      <a href="#"><h4>Writing SQL can be daunting at first glance, but once you master it you can...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-17 07:15:34.743834</a></li>
 
                       </ul>
-                      <p>MLOps is an essential skill that a data scientist must learn. In addition to Analysing data and training ML models, one should acquire the skill to deploy the models for production. This is where one of my favourite tools, Docker comes into the picture. A thread 🧵<br><br>Docker is a widely used tool to containerize &amp; deploy software packages. Using docker containers means you don't have to deal with "works on my machine" problems. It broadly consists of two things.<br><br>Container: Think of a container as a shipping container for software — it holds essential content like files and programs so that an application can be delivered efficiently from producer to consumer.<br><br>Similarly, in data science applications, our model may have several packages that need to be installed during deployment.
-Image: Images are read-only templates containing instructions for creating a container.<br><br>Think of an image like a blueprint or snapshot of what will be in a container when it runs.
-In the context of data science projects, once we are ready with the model deployment we can create a simple FastAPI service for inference and containerize it using Docker.<br><br>The best part is Docker supports almost every backend service like FastAPI, Flask, Django, etc.
-Docker containers can easily be deployed to several platforms including my favourite, Heroku.<br><br>In summary, docker gives us the flexibility of portability without having to worry about the system requirements and reproducible work.
+                      <p>Writing SQL can be daunting at first glance, but once you master it you can unlock many new powerful queries on the blockchain that were, until now, impossible.
 
-#datascience #machinelearning #ai #mlops #docker<br><br>That's a wrap!
+Read on for your guide to getting started. 
 
-If you enjoyed this thread:
+🧵👇<br><br>Let’s start simple:
 
-1. Follow me @vishank97 for more of Data Science and Machine Learning related content.
-2. RT the tweet below to share this thread with your audience <a href="https://t.co/5wU4WQRBWv">https://t.co/5wU4WQRBWv</a></p>
+Getting the USD price of the last 100 NFT sales for the @BoredApeYC contract across all major exchanges.<br><br>Step 1:
+
+Understand which columns to return with the `SELECT` keyword. 
+
+This goes at the start of your query. 
+
+💡 If you aren’t sure, `*` serves as a wild card to return everything on the queried table.<br><br>These examples depend on selecting the correct table, more on this later. 
+
+- Get all columns for a table: `SELECT *`
+- Get only NFT names: `SELECT name`
+- Get block number and number of transactions: `SELECT block_number, transaction_count` <a href="https://t.co/EUkyfuFd8p">https://t.co/EUkyfuFd8p</a><br><br>In this example we’ll be using the contract address, token ID, and USD price of each sale: <a href="https://t.co/kCSeXaSyQE">https://t.co/kCSeXaSyQE</a><br><br>Easily see which columns exist in the Table browser in the playground: <a href="https://t.co/JwSZk9QaNj">https://t.co/JwSZk9QaNj</a><br><br>Step 2: 
+
+Tell SQL which table you want to retrieve data from. 
+
+💡 Unlock even more powerful queries when you start combining data across different tables.
+
+For our example, we want to retrieve data from the nft_sales table. Here's the full query now: <a href="https://t.co/uZuoZydfVa">https://t.co/uZuoZydfVa</a><br><br>Step 3:
+
+Time to filter the results. 
+
+This is done with the `WHERE` clause, specifying a constraint to only return sales for BAYC.<br><br>In this example, we’ll filter for sales where the contract address matches the BAYC contract address, but you can filter across any metric contained in any of the columns. <a href="https://t.co/DW33YMBjj1">https://t.co/DW33YMBjj1</a><br><br>Step 4:
+
+Before we can run this query, we need to define what we want from it by ordering the results.  
+
+Ordering is achieved with the `ORDER BY` clause. 
+
+Usage: `ORDER BY [column_name] [ASC/DESC]`<br><br>To retrieve the results for the 100 most recent sales, we’ll want to order by the sale timestamp in descending order. We’ll also break our query out onto separate lines to make things more readable:
+
+`ORDER BY timestamp DESC`<br><br>Our query is almost done. All that’s left is to limit the number of results we want.
+
+Limiting results is easy - we just add a `LIMIT` clause with the number of items to return.
+
+Let's limit to the 100 most recent sales: <a href="https://t.co/EXA0SXNg9T">https://t.co/EXA0SXNg9T</a><br><br>And that's it! 
+
+We’ve now built a simple yet powerful query that combines choosing return columns, selecting a table, ordering our results, and limiting our response size so we get a response quickly. 
+
+Link to the full query in the playground ⬇️<br><br><a href="https://t.co/dbsoAPCNMO">https://t.co/dbsoAPCNMO</a><br><br>Experiment with more queries by changing up some of these input values. 
+
+Open up the schema for the NFT sales table and try selecting a few different columns like `exchange_name` or `seller_address`. See how easy it is to get precisely what you ask for!<br><br>Read the full blog post on Transpose SQL: <a href="https://t.co/XPyETHFIkG">https://t.co/XPyETHFIkG</a><br><br>If you found this guide helpful, follow @TransposeData  for more and retweet the first tweet! 
+
+<a href="https://t.co/0gcJK1G9uO">https://t.co/0gcJK1G9uO</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">scientist must learn</a></li>
-<li><a href="#">Docker</a></li>
-<li><a href="#">data science</a></li>
-<li><a href="#">data</a></li>
-<li><a href="#">docker containers</a></li>
+								<li><a href="#">Writing SQL</a></li>
+<li><a href="#">NFT sales table</a></li>
+<li><a href="#">table</a></li>
+<li><a href="#">SELECT</a></li>
+<li><a href="#">Step</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -286,7 +322,7 @@ If you enjoyed this thread:
       }
     </script>
 
-<!--0274733972341467751-->
+<!--7374487586208177751-->
 
   </body>
 

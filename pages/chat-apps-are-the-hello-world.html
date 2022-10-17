@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="MLOps is an essential skill that a data scientist must learn. In addition to Analysing...">
+    <meta name="description" content="Chat apps are the 'hello world' of real-time data. Opening up a socket connection and...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Mlops is an essential skill that a data scientist must...</title>
+    <title>Chat apps are the 'hello world' of real-time data. opening...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Mlops is an essential skill that a data scientist must...</h2>
+                <h2>Chat apps are the 'hello world' of real-time data. opening...</h2>
               </div>
             </div>
           </div>
@@ -97,34 +97,44 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Mlops is an essential skill that a data scientist must...</span>
-                      <a href="#"><h4>MLOps is an essential skill that a data scientist must learn. In addition to Analysing...</h4></a>
+                      <span>Chat apps are the 'hello world' of real-time data. opening...</span>
+                      <a href="#"><h4>Chat apps are the 'hello world' of real-time data. Opening up a socket connection and...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-17 07:15:34.743834</a></li>
 
                       </ul>
-                      <p>MLOps is an essential skill that a data scientist must learn. In addition to Analysing data and training ML models, one should acquire the skill to deploy the models for production. This is where one of my favourite tools, Docker comes into the picture. A thread 🧵<br><br>Docker is a widely used tool to containerize &amp; deploy software packages. Using docker containers means you don't have to deal with "works on my machine" problems. It broadly consists of two things.<br><br>Container: Think of a container as a shipping container for software — it holds essential content like files and programs so that an application can be delivered efficiently from producer to consumer.<br><br>Similarly, in data science applications, our model may have several packages that need to be installed during deployment.
-Image: Images are read-only templates containing instructions for creating a container.<br><br>Think of an image like a blueprint or snapshot of what will be in a container when it runs.
-In the context of data science projects, once we are ready with the model deployment we can create a simple FastAPI service for inference and containerize it using Docker.<br><br>The best part is Docker supports almost every backend service like FastAPI, Flask, Django, etc.
-Docker containers can easily be deployed to several platforms including my favourite, Heroku.<br><br>In summary, docker gives us the flexibility of portability without having to worry about the system requirements and reproducible work.
+                      <p>Chat apps are the 'hello world' of real-time data. Opening up a socket connection and 2 browser tabs is still feels magical to me 😅 Coupling this with GraphQL is honestly one of my favorite parts of modern development.
 
-#datascience #machinelearning #ai #mlops #docker<br><br>That's a wrap!
+But most chat apps won't scale. AWS AppSync changes that 🧵<br><br>By defining a schema, we essentially define all of the operations our API supports. A lot of GraphQL runtimes handle Queries and Mutations. 
 
-If you enjoyed this thread:
+AppSync takes it further by offering subscriptions. The `@aws_subscribe` directive simply maps to a mutation. <a href="https://t.co/DTgS4BkiHQ">https://t.co/DTgS4BkiHQ</a><br><br>Ok--we defined what we want to do, but how do we define where the data is stored? Even better--how do we do it in an automated way, not just by clicking through a GUI?
 
-1. Follow me @vishank97 for more of Data Science and Machine Learning related content.
-2. RT the tweet below to share this thread with your audience <a href="https://t.co/5wU4WQRBWv">https://t.co/5wU4WQRBWv</a></p>
+The AWS CDK. Use TypeScript to define your backend services, like this database <a href="https://t.co/MJm2fJQeAX">https://t.co/MJm2fJQeAX</a><br><br>So we know our operations, and we know where our data is being stored. But how do we connect the two?
+
+Most GraphQL providers use a JavaScript function to _resolve_ your data. Hence the name "resolver".
+
+You can do that in AppSync too, similar to adding this User to our DB <a href="https://t.co/NVUAFFz7va">https://t.co/NVUAFFz7va</a><br><br>The problem here is that well...the function isn't really doing anything. It's just passing data. On top of that, we now have to manage this code.
+
+AppSync can directly tie into our DB w/o using a function you have to manage! <a href="https://t.co/WDvdkM2ASs">https://t.co/WDvdkM2ASs</a><br><br>Ok ok, that .vtl file makes things super fast, but it's kinda gross right? I think it'd be cool if we could write in JavaScript/TypeScript and AWS would just turn into that VTL stuff w/o me having to think about it.
+
+If you agree, know we're listening 😉
+<a href="https://t.co/ILi4QWy5FO">https://t.co/ILi4QWy5FO</a><br><br>There's so much more to dive into, but I have a full blog post dropping tomorrow that will explain more 😃 In the meantime, if you want to peek behind the curtain of a full chat app backend with authentication, file uploads, subscriptions etc. Here ya go <a href="https://t.co/16sSIlTrQ6">https://t.co/16sSIlTrQ6</a><br><br>But Michael, that's just the backend, how do I get the frontend working??
+
+No worries! I also have a fully deployable frontend repo built with NextJS that is meant to work with the backend repo above! Again, blog post on this tomorrow :) 
+
+<a href="https://t.co/4VIBxZYTGx">https://t.co/4VIBxZYTGx</a><br><br>Also, to see a video overview and demo of how the app is built and how the use case can be extended to well...any other app, I have a tech talk up!
+<a href="https://t.co/E2uBc0pWHP">https://t.co/E2uBc0pWHP</a><br><br>And just remember, whatever you do, just know managing a server, even for your GraphQL API is sooo 2013! 🌶️ <a href="https://t.co/drXKhlUKHG">https://t.co/drXKhlUKHG</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">scientist must learn</a></li>
-<li><a href="#">Docker</a></li>
-<li><a href="#">data science</a></li>
+								<li><a href="#">Chat apps</a></li>
+<li><a href="#">AWS</a></li>
+<li><a href="#">Chat</a></li>
 <li><a href="#">data</a></li>
-<li><a href="#">docker containers</a></li>
+<li><a href="#">real-time data</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -286,7 +296,7 @@ If you enjoyed this thread:
       }
     </script>
 
-<!--0274733972341467751-->
+<!--3171949853924877751-->
 
   </body>
 
