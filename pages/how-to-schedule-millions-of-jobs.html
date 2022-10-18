@@ -5,11 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="How to schedule millions of jobs using AWS
+
+Thread:Use-case:
+- Build a social media scheduler, where users...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>How to schedule millions of jobs using aws
+
+:use-case:
+- build a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +81,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>How to schedule millions of jobs using aws
+
+:use-case:
+- build a...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +106,61 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>How to schedule millions of jobs using aws
+
+:use-case:
+- build a...</span>
+                      <a href="#"><h4>How to schedule millions of jobs using AWS
+
+Thread:Use-case:
+- Build a social media scheduler, where users...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-18 07:15:34.518245</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>How to schedule millions of jobs using AWS
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/6NK2EohAGQ">https://t.co/6NK2EohAGQ</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+Thread:<br><br>Use-case:
+- Build a social media scheduler, where users can schedule their posts, like everyday at 7:30 PM and post them to their social media accounts automatically.
+- Build a product where users can trigger their ETL jobs or some code every 10 min.<br><br>1. Cloudwatch/Eventbridge rules
+
+- Add a rule in eventbridge for every customer need and this rule takes care of hitting that particular job.
+- Easy to setup but has a hard limit of 300 rules per account, so not scalable.<br><br>2. Code it
+
+- Take all the jobs which run in the next 10 min
+- Add it to “to-be-processed” table with exact time.
+- Continuously run a code/executor, to get all the jobs which have execution time &lt;= current time and not processed, and execute them.<br><br>Issues:
+
+- Not scalable with 1 executor.
+- If working with multiple executor threads, need to handle concurrency and not execute the same jobs multiple times.
+- This can re-run failed jobs. But should write a logic to stop after certain number of failures.<br><br>3. SQS
+
+- Using delay feature in SQS. This enables us to send messages now and consume them after some time.
+- Now take all the jobs which run in the next 10 min.<br><br>- Add it to SQS queue with it’s specific delay.
+- Attach a lambda consumer/executor to the SQS, which will consume messages, when available and execute the jobs.<br><br>Does it solve previous solutions issues?
+
+- Since SQS, lambda is server less and highly scalable, this solution is scalable too.
+- Since we can tell SQS to send message to consumers only once, this doesn’t execute the same job multiple times.<br><br>- If failed and we don’t delete message from SQS, this will re-run after certain time automatically (specified by us).
+- Multiple time failed jobs can also be removed from further processing by using/pushing to dead letter queue automatically.<br><br>In Conclusion…
+
+With this architecture, you can schedule a very large number of jobs. Let me know if you have a better solution in mind.<br><br>Here's the entire article, where I explained with examples.
+
+<a href="https://t.co/3ZZ9ORwJVr">https://t.co/3ZZ9ORwJVr</a>
+
+To be notified about my upcoming articles, subscribe to my newsletter (I’ll not spam you 😂)<br><br>That’s it! Please let me know about your views and comment below for any clarifications.
+
+If you found value in reading this, please consider sharing it with your friends and also on social media 🙏</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">AWS Thread</a></li>
+<li><a href="#">jobs</a></li>
+<li><a href="#">SQS</a></li>
+<li><a href="#">Build</a></li>
+<li><a href="#">everyday at 7:30</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +322,7 @@
       }
     </script>
 
-<!--8488539653643028751-->
+<!--8466714499669108751-->
 
   </body>
 

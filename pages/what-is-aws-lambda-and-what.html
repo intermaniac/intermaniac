@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="What is #AWS Lambda and What you need to know about it as a developer?
+
+A...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>What is #aws lambda and what you need to know...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>What is #aws lambda and what you need to know...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +99,58 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>What is #aws lambda and what you need to know...</span>
+                      <a href="#"><h4>What is #AWS Lambda and What you need to know about it as a developer?
+
+A...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-18 07:15:34.518245</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>What is #AWS Lambda and What you need to know about it as a developer?
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/6NK2EohAGQ">https://t.co/6NK2EohAGQ</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+A detailed thread 👇<br><br>Imagine you've developed a restful API and are looking to deploy it on a server for public access. What options do you have?<br><br>First you can deploy it over a normal public facing webserver (IIS, Apache..) and expose.
+
+In a cloud you can do the same thing via a Virtual Machine such as an EC2 instance - install Apache or IIS (for Windows), deploy your API and whitelist it for public internet.<br><br>This works fine...
+
+But you are also picking up the burden of maintaining these instances for software patching, downtime and maintenance.
+
+Also you are paying for the infrastructure, even when your API is not serving any requests / is down for sometime.<br><br>For the first issue, you can use a PaaS solution such as Elastic Beanstalk, where you don't need to maintain underlying infrastructure but just deploy your code.<br><br>But still you're using a fleet of EC2 instances here and still paying for your API idle time...
+
+This is where Lambda shines. 
+
+AWS Lambda is a serveless function as a service offered by AWS. Here you deploy your code as "functions".<br><br>What is a function? 
+
+It is just like your normal function, it takes an input and returns an output. Here the input is an "event" which contains your data and the return is a response with status and data.<br><br>The advantage with Lambda is that it is serverless - meaning you don't need to worry about the underlying infrastructure of the service, and you will be charged for only the computation time!<br><br>So if your function handled 10 requests for about 10 min in an hour, you will be charged only for the 10 minutes that it executed.
+
+How this is possible? Because internally lambda functions work as containers and are boot up only when it is invoked, and shuts down once done.<br><br>Due to this, it adds a very little time in total processing time which is called as “cold start time”.<br><br>A Lambda function can run for a minimum of 3 seconds and a maximum of 15 minutes after which it times out.
+
+If you want to give more compute power to your Lambda, you can do so by adding more RAM, that's all!<br><br>Although for this context we are looking to deploy our API with a lambda function, in reality it can be hooked to various supported integrations within the cloud, such when a new user is signed up in a cognito, or a new message is put into an SQS queue and so on.<br><br>To invoke a lambda function, you need a trigger and so for a restful API you integrate with AWS API Gateway, which is another serverless API Gateway service. It transforms the request according to the lambda context and invokes the lambda internally.<br><br>Lambda supports most of the popular programming languages including Java, C#, Python, Go, NodeJS and so on. 
+
+You just need to wrap your code with a function wrapper and ensure that you are returning the result in the same format as expected.<br><br>For example, you can deploy your expressjs api like this -
+
+<a href="https://t.co/QSLLqx7PsE">https://t.co/QSLLqx7PsE</a><br><br>Or even a dotnetcore api like this -
+
+<a href="https://t.co/WLvzJt1cxg">https://t.co/WLvzJt1cxg</a><br><br>If you don't find your platform in lambda, you can still create a custom platform using docker and deploy your code.<br><br>That's all for this brief but detailed explanation about Lambda.
+
+If you find it useful, please do share it with your friends!<br><br>If you're interested in cloud and api development, do follow me!
+
+<a href="https://t.co/28vMswWTd9">https://t.co/28vMswWTd9</a><br><br>Please do like and retweet the orginal one to reach more developers looking for help!
+
+Cheers! 🙌
+
+<a href="https://t.co/hxuWuBh1IJ">https://t.co/hxuWuBh1IJ</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Lambda</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">AWS API Gateway</a></li>
+<li><a href="#">Lambda function</a></li>
+<li><a href="#">AWS Lambda</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +312,7 @@
       }
     </script>
 
-<!--8488539653643028751-->
+<!--8883506650547528751-->
 
   </body>
 
