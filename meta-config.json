@@ -43365,6 +43365,825 @@
                 "CSS",
                 "Made a netflix"
             ]
+        },
+        {
+            "url": "i-started-with-the-2nd-phase.html",
+            "desc": "A thread \ud83e\uddf5\n\nI started with the 2nd phase of the @learntocloud program which is...drum roll...learning...",
+            "title": "i started with the 2nd phase",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "learning Python fundamentals",
+                "drum roll",
+                "learning Python",
+                "Python fundamentals",
+                "learntocloud program"
+            ]
+        },
+        {
+            "url": "javascript-rest-parameters-you-don-t.html",
+            "desc": "JavaScript \u2014 Rest parameters \n\nYou don't know how many arguments your function will need? Try...",
+            "title": "javascript rest parameters you don t",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "rest parameter syntax",
+                "rest params syntax",
+                "Rest",
+                "Rest parameters",
+                "JavaScript"
+            ]
+        },
+        {
+            "url": "saw-of-someone-malding-about-cold.html",
+            "desc": "Saw a thread of someone malding about Cold Steel while calling Azure peak amazing writing...",
+            "title": "saw of someone malding about cold",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "calling Azure peak",
+                "Azure peak amazing",
+                "peak amazing writing",
+                "Cold Steel",
+                "malding about Cold"
+            ]
+        },
+        {
+            "url": "want-database-driven-code-to-run.html",
+            "desc": "Want database-driven code to run 100x+ faster? You must master SQL joins.\n\nIf you use SQL...",
+            "title": "want database driven code to run",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "JOIN",
+                "left",
+                "table",
+                "LEFT JOIN",
+                "FULL OUTER JOIN"
+            ]
+        },
+        {
+            "url": "ssr-news-published-in-morning-google.html",
+            "desc": "1. SSR News Published In Morning | Google Analytics is more reliable compare to theme's...",
+            "title": "ssr news published in morning google",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "SSR News Published",
+                "Published In Morning",
+                "Google Analytics",
+                "SSR",
+                "Morning"
+            ]
+        },
+        {
+            "url": "starting-out-as-a-frontend-web.html",
+            "desc": "Starting out as a Frontend Web Developer?\n\nBelow are steps to make it to your destination:\n\n1....",
+            "title": "starting out as a frontend web",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Frontend Web Developer",
+                "Web Developer",
+                "Frontend Web",
+                "Hypertext Markup Language",
+                "Cascading Style Sheet"
+            ]
+        },
+        {
+            "url": "useful-css-grid-use-cases-small.html",
+            "desc": "Useful CSS Grid Use Cases\n\n\ud83e\uddf5 Small Thread \ud83d\udc47 https://t.co/ja77wL9OSM1/4 https://t.co/jLJEksPIWH2/4 https://t.co/cR9yb1LAFP3/4 https://t.co/73VX5n63RM4/4 https://t.co/cLWkHsvhjd...",
+            "title": "useful css grid use cases small",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Small Thread",
+                "Grid Use Cases",
+                "CSS Grid",
+                "Cases",
+                "Small"
+            ]
+        },
+        {
+            "url": "if-you-struggle-with-learning-angular.html",
+            "desc": "If you struggle with learning Angular, React, and Node.js on your own, this thread is...",
+            "title": "if you struggle with learning angular",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "learning Angular",
+                "Javascript skills",
+                "DOM manipulation-related topics.",
+                "mentioned technologies step",
+                "React"
+            ]
+        },
+        {
+            "url": "securing-java-archive-jar-files-with-code.html",
+            "desc": "Securing Java Archive (JAR) Files with Code Signing \u2b07\ufe0f A ThreadSigning code digitally serves the...",
+            "title": "securing java archive jar files with code",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Securing Java Archive",
+                "Securing Java",
+                "Java Archive",
+                "JAR file",
+                "code digitally serves"
+            ]
+        },
+        {
+            "url": "hi-there-today-i-wrote-an-great.html",
+            "desc": "Hi there! \ud83d\udc4b\n\nToday I wrote an great article \u270d\ufe0f, where I show you how to...",
+            "title": "hi there today i wrote an great",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "React Query",
+                "Today I wrote",
+                "React",
+                "image search engine",
+                "great article"
+            ]
+        },
+        {
+            "url": "please-look-at-this-amazing-art.html",
+            "desc": "Please look at this amazing art of Ren and Madjihal, commissioned from Luka (link in...",
+            "title": "please look at this amazing art",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Ren and Madjihal",
+                "link in thread",
+                "Read Timeless Eclipse",
+                "Madjihal",
+                "commissioned from Luka"
+            ]
+        },
+        {
+            "url": "object-storage-which-is-built-for-storing.html",
+            "desc": "\ud835\uddd4\ud835\uddea\ud835\udde6 \ud835\udde6\ud835\udfef - \ud835\udde6\ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\udde6\ud835\ude01\ud835\uddfc\ud835\uddff\ud835\uddee\ud835\uddf4\ud835\uddf2 \ud835\udde6\ud835\uddf2\ud835\uddff\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2 \ud83e\uddf5\n\nobject storage which is built for storing and recovering...",
+            "title": "object storage which is built for storing",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "\ud835\udde6\ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\udde6\ud835\ude01\ud835\uddfc\ud835\uddff\ud835\uddee\ud835\uddf4\ud835\uddf2 \ud835\udde6\ud835\uddf2\ud835\uddff\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2",
+                "\ud835\udde6\ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\udde6\ud835\ude01\ud835\uddfc\ud835\uddff\ud835\uddee\ud835\uddf4\ud835\uddf2",
+                "\ud835\udde6\ud835\ude01\ud835\uddfc\ud835\uddff\ud835\uddee\ud835\uddf4\ud835\uddf2 \ud835\udde6\ud835\uddf2\ud835\uddff\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2",
+                "built for storing",
+                "storing and recovering"
+            ]
+        },
+        {
+            "url": "i-would-like-to-create-a-community.html",
+            "desc": "I would like to create a community curated list of all #Zcash Ecosystem Github Repositories...",
+            "title": "i would like to create a community",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "ElectricCapital Developer Report",
+                "Zcash Ecosystem Github",
+                "Ecosystem Github Repositories",
+                "Zcash Ecosystem",
+                "Developer Report"
+            ]
+        },
+        {
+            "url": "top-4-best-nft-market-plugins.html",
+            "desc": "Top 4 Best NFT Market plugins for WordPress!\nFollow this thread!\n#NFTs #NFTCommunity #Wordpress https://t.co/KTcEGTrwZt1. WooCommerce NFT...",
+            "title": "top 4 best nft market plugins",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "NFT Market plugins",
+                "Market plugins",
+                "NFT Market",
+                "NFTs",
+                "Top"
+            ]
+        },
+        {
+            "url": "weekend-briefing-1.html",
+            "desc": "WEEKEND BRIEFING: 1. Lawmakers denounced the government\u2019s new cloud computing cybersecurity certificate at the parliamentary...",
+            "title": "weekend briefing 1",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "WEEKEND BRIEFING",
+                "South Korean lawmaker",
+                "Ministry of Trade",
+                "South Korean",
+                "WEEKEND"
+            ]
+        },
+        {
+            "url": "python-courses-for-python-front-end.html",
+            "desc": "7 Python courses for Python front-end and back-end developer beginners.\n\nThread \ud83e\uddf5\ud83d\udc471. Learn Python - Full...",
+            "title": "python courses for python front end",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Python",
+                "Python Tutorial",
+                "beginners",
+                "Length",
+                "Beginners Learn Python"
+            ]
+        },
+        {
+            "url": "project-nft-preview-card-component-building.html",
+            "desc": "Project: NFT Preview Card Component\n\nBuilding Process \ud83e\uddf5\n\nAny suggestions on how I can improve are welcome!\n\n#FrontendMentor...",
+            "title": "project nft preview card component building",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Component Building Process",
+                "NFT Preview Card",
+                "Preview Card Component",
+                "Card Component Building",
+                "NFT Preview"
+            ]
+        },
+        {
+            "url": "how-to-center-a-div-using-flexbox.html",
+            "desc": "How to center a \"div\" using FlexBox?\n\nA Thread \ud83e\uddf5\ud83d\udc47\n\nHTML Code we would be working on:...",
+            "title": "how to center a div using flexbox",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "div",
+                "HTML Code",
+                "controls the movement",
+                "movement of elements",
+                "center"
+            ]
+        },
+        {
+            "url": "six-awesome-typescript-projects-make-your-job.html",
+            "desc": "Six Awesome TypeScript Projects, Make Your Job Easier \ud83d\ude0e #TypeScript #javascript \nThread \ud83e\uddf5 https://t.co/YG9OSJyZPEMoveable is...",
+            "title": "six awesome typescript projects make your job",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Awesome TypeScript Projects",
+                "Moveable is Draggable",
+                "source-available fair-code licensed",
+                "fair-code licensed workflow",
+                "licensed workflow automation"
+            ]
+        },
+        {
+            "url": "if-there-is-one-library-in-python.html",
+            "desc": "If there is one library in Python that can be the cornerstone for doing data...",
+            "title": "if there is one library in python",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Pandas",
+                "year ends",
+                "Python",
+                "free before year",
+                "data"
+            ]
+        },
+        {
+            "url": "several-techatbloomberg-engineers-wanted-to-contribute.html",
+            "desc": "\ud83d\udcbb Several @TechAtBloomberg engineers wanted to contribute to @typescript\n\nSo @mkubilayk @acutmore @TitianCernicova from our JavaScript...",
+            "title": "several techatbloomberg engineers wanted to contribute",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Guild Week internal",
+                "Week internal conference",
+                "JavaScript Guild ran",
+                "TechAtBloomberg engineers wanted",
+                "Guild Week"
+            ]
+        },
+        {
+            "url": "reactjs-libraries-you-must-use-before.html",
+            "desc": "10 #Reactjs Libraries You Must Use before 2023!\n\nA thread \ud83d\udc47\ud83c\udfff1. React Router\nhttps://t.co/rEStCeUkh7\n\nReact router offers declarative...",
+            "title": "reactjs libraries you must use before",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "React",
+                "React Hook Form",
+                "React Hot Toast",
+                "Reactjs Libraries",
+                "React Hook"
+            ]
+        },
+        {
+            "url": "building-programming-logic-takes-time-and-practice.html",
+            "desc": "Building programming logic takes time and practice.\n\nOne good way to improve programming logic is to...",
+            "title": "building programming logic takes time and practice",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Building programming logic",
+                "Building programming",
+                "programming logic",
+                "time and practice",
+                "improve programming logic"
+            ]
+        },
+        {
+            "url": "introduction-to-css-visually-explained-what.html",
+            "desc": "Introduction to CSS\n\nVisually Explained\ud83d\udcdd\n\nThread \ud83e\uddf5\ud83d\udc47\u27a1\ufe0f What is CSS?\n\n- CSS stands for 'Cascading Style Sheets'\n- CSS...",
+            "title": "introduction to css visually explained what",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "CSS Visually Explained",
+                "Visually Explained",
+                "Cascading Style Sheets'",
+                "CSS Visually",
+                "CSS"
+            ]
+        },
+        {
+            "url": "wts-nct-things-nct127-dream-wayv.html",
+            "desc": "\ud83d\udfe2 WTS NCT THINGS (NCT127, DREAM, WAYV)\ud83d\udfe2\n\u2727 ina \ud83c\uddee\ud83c\udde9 | | help rt \u2727\n\u274b check...",
+            "title": "wts nct things nct127 dream wayv",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "WTS NCT THINGS",
+                "https",
+                "t.co",
+                "card universe nct",
+                "scratch card concept"
+            ]
+        },
+        {
+            "url": "we-re-just-10-days-away.html",
+            "desc": "We\u2019re just 10 days away from #OCHC22! Have you registered yet? Don't miss your chance...",
+            "title": "we re just 10 days away",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Oracle Cerner",
+                "Oracle Cerner Health",
+                "Oracle Cerner product",
+                "Cerner Health Conference",
+                "Oracle Health products"
+            ]
+        },
+        {
+            "url": "here-17-acronym-you-must-know.html",
+            "desc": "\ud83e\uddf5\u00a0Here 17 Acronym you must know as developper!\n\nJSON \u2192 Javascript Object Notation\n\nPWA \u2192 Progressive Web...",
+            "title": "here 17 acronym you must know",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Progressive Web App",
+                "Web App CDN",
+                "Singe Page App",
+                "Javascript Object Notation",
+                "Object Notation PWA"
+            ]
+        },
+        {
+            "url": "best-cheat-sheet-for-java-developers.html",
+            "desc": "Best cheat sheet for Java developers by JRebels\nA thread \n\n1. Java Collections cheat sheet https://t.co/GvFNbLom3x2....",
+            "title": "best cheat sheet for java developers",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "developers by JRebels",
+                "cheat sheet",
+                "cheat",
+                "sheet",
+                "Java Collections cheat"
+            ]
+        },
+        {
+            "url": "in-this-email-i-ll-be.html",
+            "desc": "In this email thread I'll be sharing my learning path for this Machine Learning ZoomCamp...",
+            "title": "in this email i ll be",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Training linear regression",
+                "Linear Algebra Refresher",
+                "Machine Learning ZoomCamp",
+                "Churn prediction project",
+                "Model Selection Process"
+            ]
+        },
+        {
+            "url": "we-are-pleased-to-share-the-winners.html",
+            "desc": "We are pleased to share the winners in the first round of our Daisi Hackathon...",
+            "title": "we are pleased to share the winners",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Shipment Delivery Optimization",
+                "Python Serverless Functions",
+                "Daisi",
+                "Serverless Functions",
+                "pleased to share"
+            ]
+        },
+        {
+            "url": "python-tricks-hacktoberfest-edition-if-you.html",
+            "desc": "\ud83d\udc0d\u2699\ufe0f Python Tricks \u2014 Hacktoberfest Edition\n\nIf you want to start contributing to open source, then...",
+            "title": "python tricks hacktoberfest edition if you",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Python Tricks",
+                "Hacktoberfest Edition",
+                "Python",
+                "open source",
+                "Write documentation"
+            ]
+        },
+        {
+            "url": "plotting-aesthetic-figures-can-be-challenging.html",
+            "desc": "Plotting aesthetic figures can be challenging and/or time consuming. I have started a new #Python...",
+            "title": "plotting aesthetic figures can be challenging",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Plotting aesthetic figures",
+                "time consuming",
+                "aesthetic figures",
+                "Plotting aesthetic",
+                "facilitate biological plotting"
+            ]
+        },
+        {
+            "url": "the-worst-thing-about-perforce-to-me.html",
+            "desc": "The worst thing about perforce to me, is how you do an action such as...",
+            "title": "the worst thing about perforce to me",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "reconciling offline work",
+                "offline work",
+                "worst thing",
+                "thing about perforce",
+                "syncing or reconciling"
+            ]
+        },
+        {
+            "url": "the-eclipse-because-my-roommate-forced.html",
+            "desc": "Thread 'The Eclipse' because my roommate forced me to watch it with her and now...",
+            "title": "the eclipse because my roommate forced",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "puppy eyes everytime",
+                "roommate forced",
+                "puppy eyes",
+                "eyes everytime",
+                "Thread"
+            ]
+        },
+        {
+            "url": "current-cto-on-choosing-aws-what.html",
+            "desc": "Current CTO on choosing AWS: \n\n\"What I would also like to mention that AWS as...",
+            "title": "current cto on choosing aws what",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Current CTO",
+                "CTO on choosing",
+                "AWS",
+                "choosing AWS",
+                "cloud provider"
+            ]
+        },
+        {
+            "url": "using-javascript-react-provides-an-open.html",
+            "desc": "Using #JavaScript, React provides an open-source library for building front end web apps. Connecting to...",
+            "title": "using javascript react provides an open",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "end web apps",
+                "building front end",
+                "front end web",
+                "open-source library",
+                "library for building"
+            ]
+        },
+        {
+            "url": "when-working-with-linux-you-ll.html",
+            "desc": "When working with Linux, you'll often want to do things via a shell, e.g., bash,...",
+            "title": "when working with linux you ll",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "working with Linux",
+                "command",
+                "file",
+                "folder",
+                "Linux"
+            ]
+        },
+        {
+            "url": "first-thing-first.html",
+            "desc": "First thing first..\n\nWhat is GitHub and the need of GitHub?\n\nGitHub is a cloud-based code hosting...",
+            "title": "first thing first",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "version control",
+                "Version Control System",
+                "thing first.",
+                "control",
+                "GitHub"
+            ]
+        },
+        {
+            "url": "lovely-allergen-reading.html",
+            "desc": "Lovely Allergen reading thread.  Mute to avoid spoilers.\nTl: https://t.co/kIsIWhAm0C\nRaws: https://t.co/nedseG5vr8\nCarrd: https://t.co/IA6bNK1xkF https://t.co/YqGCAafCzX\ud83d\udc40 gege comes...",
+            "title": "lovely allergen reading",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Lovely Allergen reading",
+                "Allergen reading thread",
+                "Lovely Allergen",
+                "Allergen reading",
+                "reading thread"
+            ]
+        },
+        {
+            "url": "awesome-github-repositories-for-javascript-developers.html",
+            "desc": "7 Awesome GitHub Repositories for JavaScript developers.\n\nA Thread \ud83d\udc47\n\n#100DaysOfCode #coding #programming #web #webdev #javascript #github1\ufe0f\u20e3...",
+            "title": "awesome github repositories for javascript developers",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Awesome GitHub Repositories",
+                "GitHub Repositories",
+                "awesome JavaScript vanilla",
+                "Awesome GitHub",
+                "JavaScript"
+            ]
+        },
+        {
+            "url": "redux-in-8-lines-of-javascript.html",
+            "desc": "Redux in ~8 lines of JavaScript code using @preactjs signals. Look mom! no 'store.subscribe'\n\nA short...",
+            "title": "redux in 8 lines of javascript",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "lines of JavaScript",
+                "store",
+                "preactjs signals",
+                "effect",
+                "Redux"
+            ]
+        },
+        {
+            "url": "if-you-have-an-apple-m1.html",
+            "desc": "If you have an Apple M1 or M2 Mac and don\u2019t take advantage of its...",
+            "title": "if you have an apple m1",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Apple",
+                "Mac",
+                "Install",
+                "GPU",
+                "Install Homebrew form"
+            ]
+        },
+        {
+            "url": "developer-tip-of-the-week-react.html",
+            "desc": "Developer Tip of the week\n\nReact Hooks are in-built functions that allow React developers to use...",
+            "title": "developer tip of the week react",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Developer Tip",
+                "inside functional components",
+                "lifecycle methods inside",
+                "week React Hooks",
+                "React developers"
+            ]
+        },
+        {
+            "url": "mlb-wc-prediction.html",
+            "desc": "Mlb wc prediction thread (.@Herioc_Zebra)\n\ntampa bay vs cleveland\nboth teams agree to just simulate the outcome...",
+            "title": "mlb wc prediction",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "mlb wc prediction",
+                "prediction thread",
+                "tampa bay",
+                "teams agree",
+                "simulate the outcome"
+            ]
+        },
+        {
+            "url": "stabediffusion-some-madlad-hacked-novelai-and-downloaded.html",
+            "desc": "\ud83e\uddf5#StabeDiffusion Some madlad hacked NovelAI and downloaded their git repository for their proprietary models. ~50GB....",
+            "title": "stabediffusion some madlad hacked novelai and downloaded",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "madlad hacked NovelAI",
+                "StabeDiffusion Some madlad",
+                "madlad hacked",
+                "downloaded their git",
+                "git repository"
+            ]
+        },
+        {
+            "url": "some-shorthand-properties-of-css-css.html",
+            "desc": "Some Shorthand properties of CSS #css \ud83e\uddf5https://t.co/GiKO6A1195https://t.co/yBxU5v0zDRhttps://t.co/jSVP1BPzx6https://t.co/zIsMIZNWzB...",
+            "title": "some shorthand properties of css css",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Shorthand properties",
+                "https",
+                "t.co",
+                "properties of CSS",
+                "CSS"
+            ]
+        },
+        {
+            "url": "learn-to-make-scroll-to-top.html",
+            "desc": "\u26a1Learn to make \"Scroll to Top\" button using HTML, CSS &amp; JS\u26a1\n\nA Thread \ud83e\uddf5\ud83d\udc47 https://t.co/Pv26DKXoIf\u2192...",
+            "title": "learn to make scroll to top",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Github Link",
+                "explore the code",
+                "CSS Styling",
+                "Scroll",
+                "CSS"
+            ]
+        },
+        {
+            "url": "javascript-basic-events.html",
+            "desc": "\ud83d\udfe2 JavaScript Basic Events!\n\nA Thread....... \ud83e\uddf5\u274d What is an Event?\n\n\u279f JavaScript's interaction with HTML is...",
+            "title": "javascript basic events",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Mouse",
+                "Double Click",
+                "Event",
+                "JavaScript Basic Events",
+                "Mouse Enter"
+            ]
+        },
+        {
+            "url": "learn-javascript-by-playing-games.html",
+            "desc": "Learn JavaScript by playing games.\n\nA Thread \ud83d\udc47\n\n#100DaysOfCode #coding #programming #web #webdev #javacsript #games #codinggames #html...",
+            "title": "learn javascript by playing games",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Learn JavaScript",
+                "Saga Elevator Saga",
+                "https",
+                "t.co",
+                "Elevator Saga Elevator"
+            ]
+        },
+        {
+            "url": "have-a-wordpress-woocomm-website-like.html",
+            "desc": "Have a Wordpress WooComm website? Like to accept #Bitcoin Lightning\u26a1\ufe0f payments in less than 20mins?\n\n~...",
+            "title": "have a wordpress woocomm website like",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Bitcoin Lightning",
+                "Bitcoin",
+                "STEP",
+                "Wordpress",
+                "Lightning"
+            ]
+        },
+        {
+            "url": "reactjs-hooks-are-fantastic-they-are.html",
+            "desc": "#ReactJS hooks are fantastic! They are modular, cleaner and help organise code better. \n\nHowever, if...",
+            "title": "reactjs hooks are fantastic they are",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "ReactJS hooks",
+                "keyframes",
+                "hook",
+                "ReactJS",
+                "fantastic"
+            ]
+        },
+        {
+            "url": "i-ve-struggled-with-this-github.html",
+            "desc": "I\u2019ve struggled with this @GitHub \u201cissue\u201d (#lulz!) for years and feel no closer to a...",
+            "title": "i ve struggled with this github",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "GitHub",
+                "issues",
+                "years and feel",
+                "feel no closer",
+                "GitHub issues"
+            ]
+        },
+        {
+            "url": "next-week-is-ms-ignite.html",
+            "desc": "Next week is @MS_Ignite. All the @azureAD sessions, meet-up and round tables can be found...",
+            "title": "next week is ms ignite",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "PST",
+                "azureAD",
+                "Caleb",
+                "ems",
+                "clay"
+            ]
+        },
+        {
+            "url": "function-overloading-in-typescript-lets-you.html",
+            "desc": "Function overloading in @typescript lets you define functions that can be called in multiple ways...",
+            "title": "function overloading in typescript lets you",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Function overloading",
+                "place generic overload",
+                "define functions",
+                "generic overload signatures",
+                "multiple overload signatures"
+            ]
+        },
+        {
+            "url": "how-do-we-go-about-sending.html",
+            "desc": "How do we go about sending Gmail messages with #Python now?\n\n\ud83e\uddf5\ud83d\udc47To send messages with Python...",
+            "title": "how do we go about sending",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "sending Gmail messages",
+                "sending Gmail",
+                "Gmail messages",
+                "Python",
+                "Gmail"
+            ]
+        },
+        {
+            "url": "i-know-how-frustrating-and-complicated.html",
+            "desc": "I know how frustrating and complicated it can be to select the 'perfect' color palette...",
+            "title": "i know how frustrating and complicated",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "frustrating and complicated",
+                "color palette",
+                "color resources",
+                "color",
+                "perfect"
+            ]
+        },
+        {
+            "url": "webdev-utility-types-are-a-part-of-the-typescript.html",
+            "desc": "#webdev\n\nUtility types are a part of the TypeScript language and can be used to prevent...",
+            "title": "webdev utility types are a part of the typescript",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "webdev Utility types",
+                "webdev Utility",
+                "Utility types",
+                "code more readable",
+                "TypeScript language"
+            ]
+        },
+        {
+            "url": "top30-flutter-state-management-17-flutterdev.html",
+            "desc": "TOP30 #Flutter State Management #17\n#FlutterDev LIKES based order \ud83d\udc99\nTest coverage included if reported in Codecov...",
+            "title": "top30 flutter state management 17 flutterdev",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Flutter State Management",
+                "State Management",
+                "Flutter State",
+                "FlutterDev LIKES based",
+                "based order"
+            ]
+        },
+        {
+            "url": "i-m-loving-javascript.html",
+            "desc": "I\u2019m loving @JavaScript \ud83e\udd70\ud83e\udd70. Today I used @JavaScript to build a program such that once...",
+            "title": "i m loving javascript",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "hex color",
+                "background hex color",
+                "JavaScript",
+                "loving",
+                "button is clicked"
+            ]
+        },
+        {
+            "url": "ultimate-web-developer-roadmap-below-100daysofcode.html",
+            "desc": "ULTIMATE WEB DEVELOPER ROADMAP \ud83d\ude80\n\nThread below\ud83e\uddf5\n\n#100DaysOfCode #coding #programming #web #webdev #roadmap #tips #success #html #css...",
+            "title": "ultimate web developer roadmap below 100daysofcode",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "WEB DEVELOPER ROADMAP",
+                "ULTIMATE WEB DEVELOPER",
+                "WEB DEVELOPER",
+                "DEVELOPER ROADMAP",
+                "ULTIMATE WEB"
+            ]
+        },
+        {
+            "url": "simplest-mini-project-instagram-logo-using-html.html",
+            "desc": "Simplest mini project\nInstagram Logo using HTML &amp; CSS only \u2728\n\nFor results see this thread \ud83d\udc47...",
+            "title": "simplest mini project instagram logo using html",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Simplest mini project",
+                "Simplest mini",
+                "mini project",
+                "Simplest",
+                "Instagram Logo"
+            ]
+        },
+        {
+            "url": "all-the-rust-in-linux-hype.html",
+            "desc": "All the rust in Linux hype is making me want to try rust again... how...",
+            "title": "all the rust in linux hype",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "hype is making",
+                "rust",
+                "Linux hype",
+                "rust book",
+                "ADHD"
+            ]
+        },
+        {
+            "url": "less-articles-that-you-should-not-miss.html",
+            "desc": "6 LESS Articles That You Should Not Miss in October 2022 \ud83e\uddf5\nhttps://t.co/5QWn9kveSg\n\ud83d\udc47\n#technology #programming #git #lessAn...",
+            "title": "less articles that you should not miss",
+            "date": "2022-10-19 07:15:55.157966",
+            "tags": [
+                "Comparison To Sass",
+                "Comprehensive Guide",
+                "Make a Loops",
+                "Programming Articles",
+                "Interesting Technology"
+            ]
         }
     ]
 }

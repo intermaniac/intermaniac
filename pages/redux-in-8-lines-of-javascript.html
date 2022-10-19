@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="Redux in ~8 lines of JavaScript code using @preactjs signals. Look mom! no 'store.subscribe'
 
-🧵👇1. Database...">
+A short...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Redux in ~8 lines of javascript code using @preactjs signals....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Redux in ~8 lines of javascript code using @preactjs signals....</h2>
               </div>
             </div>
           </div>
@@ -99,44 +99,35 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>Redux in ~8 lines of javascript code using @preactjs signals....</span>
+                      <a href="#"><h4>Redux in ~8 lines of JavaScript code using @preactjs signals. Look mom! no 'store.subscribe'
 
-🧵👇1. Database...</h4></a>
+A short...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-19 07:15:55.157966</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>Redux in ~8 lines of JavaScript code using @preactjs signals. Look mom! no 'store.subscribe'
 
-🧵👇<br><br>1. Database Engineer at @OutplayHQ.
+A short thread 🪡
+TL'DR: <a href="<a href="https://t.co/c4d6ndQqt6">https://t.co/c4d6ndQqt6</a>"><a href="https://t.co/c4d6ndQqt6">https://t.co/c4d6ndQqt6</a></a> <a href="https://t.co/R7Cu8f4ynr">https://t.co/R7Cu8f4ynr</a><br><br>1/7 Multiple stores rather than nested reducers. Each handles different concerns of an application. <a href="https://t.co/L4NGHmwhn4">https://t.co/L4NGHmwhn4</a><br><br>2/7 Using 'dispatch' to update state. What is interesting is batching updates to multiple stores with signal's 'batch' function.
 
-A remote opportunity at a Wilmington-based Sequoia Capital-backed, fast-growing startup that received a Series-A round of funding in 2021.
+Using 'effect' to subscribe to store changes. In this particular example, there are 5 batched dispatched actions but 'effect' executes only once. <a href="https://t.co/sxcSkLnYs4">https://t.co/sxcSkLnYs4</a><br><br>3/7 What about the Redux time-travel thing that you most likely do not need in your _whole_ app?
 
-Check out the job at: <a href="https://t.co/Ynt7D7iQti">https://t.co/Ynt7D7iQti</a><br><br>2. GStreamer Developer at @Wobot_ai.
+Looks pretty time-travel-able to me. An 'effect' could use a computed 'snapshot' to store previous state of stores that should support undo/redo. (exercise: add 'store.setState') <a href="https://t.co/dTS4yDSq9w">https://t.co/dTS4yDSq9w</a><br><br>4/7 @preactjs signals have integration with Preact/React with zero weirdness. 
 
-A remote opportunity at a Foster City-based Sequoia Capital-backed, fast-growing startup that received a Seed round of funding in 2020.
-
-Check out the job at: <a href="https://t.co/LHE0IBBax0">https://t.co/LHE0IBBax0</a><br><br>3. Software Engineer at @openfintech.
-
-A remote opportunity at a New York-based ING Ventures-backed, fast-growing startup that has recently received a round of funding.
-
-Check out the job at: <a href="https://t.co/zpgTVQ9GAv">https://t.co/zpgTVQ9GAv</a><br><br>4. Software Engineer at @hypersonix_ai.
-
-A remote opportunity at a San Jose-based B Capital-backed, fast-growing startup that received a Series-B round of funding in 2021.
-
-Check out the job at: <a href="https://t.co/RDDnVcXkBq">https://t.co/RDDnVcXkBq</a></p>
+I bet this code just works without using selectors or wrapping components into other components: <a href="<a href="https://t.co/c4d6ndQqt6">https://t.co/c4d6ndQqt6</a>"><a href="https://t.co/c4d6ndQqt6">https://t.co/c4d6ndQqt6</a></a> <a href="https://t.co/jWvbe9yt6B">https://t.co/jWvbe9yt6B</a><br><br>5/7 The way how @preactjs signals work is very similar how hooks work but without the React/Preact part. It solves the 'how to subscribe to multiple stores' problem by using the same ideas from hooks to know which 'store/signal' is accessed within a 'computed' or 'effect'.<br><br>6/7 I personally don't think Redux is bad but I think the 'subscription to the store' part could be better if based on something like signals (+ remove the 'global store single source of truth' idea)<br><br>7/7 Maybe it's time to go back to our roots and fix Flux (remember it?) lol</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python</a></li>
-<li><a href="#">Python jobs</a></li>
-<li><a href="#">Wilmington-based Sequoia Capital-backed</a></li>
+								<li><a href="#">lines of JavaScript</a></li>
+<li><a href="#">store</a></li>
+<li><a href="#">preactjs signals</a></li>
+<li><a href="#">effect</a></li>
+<li><a href="#">Redux</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +289,7 @@ Check out the job at: <a href="https://t.co/RDDnVcXkBq">https://t.co/RDDnVcXkBq<
       }
     </script>
 
-<!--5268375173710348751-->
+<!--6714783395509748751-->
 
   </body>
 

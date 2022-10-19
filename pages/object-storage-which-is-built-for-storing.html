@@ -5,13 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+    <meta name="description" content="𝗔𝗪𝗦 𝗦𝟯 - 𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 🧵
 
-🧵👇1. Database...">
+object storage which is built for storing and recovering...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>𝗔𝗪𝗦 𝗦𝟯 - 𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 🧵
+
+object storage which is...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>𝗔𝗪𝗦 𝗦𝟯 - 𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 🧵
+
+object storage which is...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +103,56 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <span>𝗔𝗪𝗦 𝗦𝟯 - 𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 🧵
 
-🧵👇1. Database...</h4></a>
+object storage which is...</span>
+                      <a href="#"><h4>𝗔𝗪𝗦 𝗦𝟯 - 𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 🧵
+
+object storage which is built for storing and recovering...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-19 07:15:55.157966</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python jobs.
+                      <p>𝗔𝗪𝗦 𝗦𝟯 - 𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 🧵
 
-🧵👇<br><br>1. Database Engineer at @OutplayHQ.
+object storage which is built for storing and recovering any amount of information or data from anywhere over the internet.
+It is one of the main building blocks of AWS
+It’s advertised as ”infinitely scaling” storage <a href="https://t.co/fjrXiHnW4A">https://t.co/fjrXiHnW4A</a><br><br>We store objects (files) in "buckets".
 
-A remote opportunity at a Wilmington-based Sequoia Capital-backed, fast-growing startup that received a Series-A round of funding in 2021.
+Buckets must have a globally unique name, but they are defined at the regional level.
 
-Check out the job at: <a href="https://t.co/Ynt7D7iQti">https://t.co/Ynt7D7iQti</a><br><br>2. GStreamer Developer at @Wobot_ai.
+Bucket name must start with lowercase letter or number.
 
-A remote opportunity at a Foster City-based Sequoia Capital-backed, fast-growing startup that received a Seed round of funding in 2020.
+You can't have uppercase letters, underscore and must not be an IP.<br><br>Object (files) in the bucket have a key
 
-Check out the job at: <a href="https://t.co/LHE0IBBax0">https://t.co/LHE0IBBax0</a><br><br>3. Software Engineer at @openfintech.
+The key is basically the full path to object:
+s3://my-bucket/my_file.txt
 
-A remote opportunity at a New York-based ING Ventures-backed, fast-growing startup that has recently received a round of funding.
+The key is composed of prefix + object name
 
-Check out the job at: <a href="https://t.co/zpgTVQ9GAv">https://t.co/zpgTVQ9GAv</a><br><br>4. Software Engineer at @hypersonix_ai.
+Although the UI can trick you, but there is no concept of "directories" in buckets<br><br>Object values are the content of the body:
 
-A remote opportunity at a San Jose-based B Capital-backed, fast-growing startup that received a Series-B round of funding in 2021.
+Max object size is 5TB
 
-Check out the job at: <a href="https://t.co/RDDnVcXkBq">https://t.co/RDDnVcXkBq</a></p>
+If you are uploading more than 5GB, “multi-part upload  is used
+
+Metadata - list of text key / value pairs – can be system or user metadata<br><br>S3 Versioning:
+
+can version your files in Amazon S3
+It is enabled at the Bucket level
+It protects against unintended deletes (ability to restore a version)
+Easily roll back to previous version</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">featuring Python jobs</a></li>
-<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python</a></li>
-<li><a href="#">Python jobs</a></li>
-<li><a href="#">Wilmington-based Sequoia Capital-backed</a></li>
+								<li><a href="#">𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲</a></li>
+<li><a href="#">𝗦𝗶𝗺𝗽𝗹𝗲 𝗦𝘁𝗼𝗿𝗮𝗴𝗲</a></li>
+<li><a href="#">𝗦𝘁𝗼𝗿𝗮𝗴𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲</a></li>
+<li><a href="#">built for storing</a></li>
+<li><a href="#">storing and recovering</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +314,7 @@ Check out the job at: <a href="https://t.co/RDDnVcXkBq">https://t.co/RDDnVcXkBq<
       }
     </script>
 
-<!--5268375173710348751-->
+<!--2536724939433248751-->
 
   </body>
 
