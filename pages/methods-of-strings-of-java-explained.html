@@ -5,15 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn Python Programming by spending $0
+    <meta name="description" content="Methods of Strings of Java explained in 1 
 
-Here are the 5 top Python programming courses you can...">
+THREAD 🧵👇 -1. xyz.length(); = Returns length...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn python programming by spending $0
+    <title>Methods of strings of java explained in 1 
 
-here are the 5 top...</title>
+ 🧵👇...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@ here are the 5 top...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn python programming by spending $0
+                <h2>Methods of strings of java explained in 1 
 
-here are the 5 top...</h2>
+ 🧵👇...</h2>
               </div>
             </div>
           </div>
@@ -103,57 +103,69 @@ here are the 5 top...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn python programming by spending $0
+                      <span>Methods of strings of java explained in 1 
 
-here are the 5 top...</span>
-                      <a href="#"><h4>Learn Python Programming by spending $0
+ 🧵👇...</span>
+                      <a href="#"><h4>Methods of Strings of Java explained in 1 
 
-Here are the 5 top Python programming courses you can...</h4></a>
+THREAD 🧵👇 -1. xyz.length(); = Returns length...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-20 07:15:38.175722</a></li>
 
                       </ul>
-                      <p>Learn Python Programming by spending $0
+                      <p>Methods of Strings of Java explained in 1 
 
-Here are the 5 top Python programming courses you can learn for FREE
+THREAD 🧵👇 -<br><br>1. xyz.length(); = Returns length of the string named xyz.
 
-A Thread 🧵👇<br><br>1. Learn Python - Full Course for Beginners from 
-@freeCodeCamp 
+2. xyz.toLowerCase(); = changes case to lower case of all characters in the string.
 
-<a href="https://t.co/BNcD9nGfYA">https://t.co/BNcD9nGfYA</a><br><br>2. Introduction to Programming with Python also called CS50P
+3. xyz.toUpperCase(); = changes case to upper case of all characters in the string.<br><br>4. xyz.trim(); = Returns a string with no begining or ending spaces.
 
-The best course to learn programming with Python from Harvard 
+ex- if String xyz = "  Methods of String      "
+then... xyz.trim(); = Methods of String<br><br>5. xyz.subString(int start); = Reurns a cropped string starting from the number input to end.
 
-<a href="https://t.co/Ki8RHWf9dj">https://t.co/Ki8RHWf9dj</a><br><br>3. Crash Course on Python
+ex- if String xyz = "Aryan Karma" then... 
+xyz.subString(4); = n Karma
+(characters from 4 to end)<br><br>6. xyz.subString(int start, int end); = returns a string starting from int start to int end.
 
-This course is designed to teach you the foundations in order to write simple programs in Python using the most common structures. No previous exposure to programming is needed
+ex- if String xyz = "Aryan Karma" then... 
+xyz.subString(2,8); = yan Ka
+[characters starting from 2 to 8]<br><br>7. xyz.replace("ry","xyz") = Returns a new string after replacing "ry" to "xyz".
 
-<a href="https://t.co/LDuRflYbD8">https://t.co/LDuRflYbD8</a><br><br>4. Python Course from @kaggle
- 
-This course is designed keeping DS and ML in mind. It quickly covers all the concepts required to get started with ML.
+8. xyz.startsWith("Ary") = returns true if the string xyz starts with "Ary" otherwise returns false.
 
-<a href="https://t.co/v5EQCxfuQB">https://t.co/v5EQCxfuQB</a><br><br>5. Python for Data Science 
+9. xyz.endsWith("ma") = returns true if the string xyz ends with "ma" otherwise returns false.<br><br>10. xyz.charat(int) = returns the character at the given index position.
 
-This introduction to Python will kickstart your learning of Python for data science and general programming. This beginner-friendly Python course will take you from zero to programming in Python in a matter of hours
+note- the index of a string's first character is 0 , and the index of a string's last character is the length of the string minus 1.<br><br>11. xyz.indexOf("Ar")= returns the integer index of the given string in this case it is 0 cause in "Aryan Karma" "Ar" starts from index "0". and if the input string in not in xyz then it will return -1.<br><br>12. xyz.indexOf("a",5)= returns the integer index of the input character (a), (starts scanning from left to right after the given integer input) 
 
-<a href="https://t.co/yKjrQxpfh6">https://t.co/yKjrQxpfh6</a><br><br>That's all for today! 
+ex- String xyz = "aryan karma";
+System.out.println(xyz.indexOf("a",4));<br><br>(it will start scanning for a in 'n karma' and it will return the int index of first a which is at '7')
 
-Please follow me for more Python content. RT and Like the first tweet 💚
+13. xyz.lastIndexOf("a") = returns the int index of the character input by user.
 
-Let me know your favourite course in the comments. 
+ex- String xyz = "aryan karma";
+System.out.println(xyz.indexOf("a"));<br><br>here it will return -10
 
-<a href="https://t.co/QEygGa02Us">https://t.co/QEygGa02Us</a></p>
+Note- it scans string from right to left.
+
+14. xyz.lastIndexOf("a",5) = returns the int index of the last string before index 5.
+in the above example it'll be 3<br><br>15. xyz.equals("Ary")= returns true if string xyz equals the given input otherwise false. in this case its false
+
+16. xyz.equalsIgnoreCase("aRyan karRmA")= returns true if string xyz equals the given input (case doesn't matter) otherwise false. in this case its true.<br><br>We have covered the most used methods of string in our thread if you want to learn more about methods of strings here's the resource - 
+ <a href="https://t.co/Z9tsq5rnbC">https://t.co/Z9tsq5rnbC</a><br><br>That's a wrap! 
+
+Like ❤️ and Retweet 🔄 the 1st Tweet  if you find this thread useful. Follow @karmaaryan for more content.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE A Thread</a></li>
-<li><a href="#">Python</a></li>
-<li><a href="#">top Python programming</a></li>
-<li><a href="#">Learn Python Programming</a></li>
-<li><a href="#">Learn Python</a></li>
+								<li><a href="#">string</a></li>
+<li><a href="#">String xyz</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Aryan Karma</a></li>
+<li><a href="#">Java explained</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -315,7 +327,7 @@ Let me know your favourite course in the comments.
       }
     </script>
 
-<!--1211649503338278751-->
+<!--4439405278637678751-->
 
   </body>
 

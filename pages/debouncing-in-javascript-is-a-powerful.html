@@ -5,15 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn Python Programming by spending $0
+    <meta name="description" content="Debouncing in #Javascript is a powerful way to improve the performance of your site.
 
-Here are the 5 top Python programming courses you can...">
+It does...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn python programming by spending $0
-
-here are the 5 top...</title>
+    <title>Debouncing in #javascript is a powerful way to improve the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +77,7 @@ here are the 5 top...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn python programming by spending $0
-
-here are the 5 top...</h2>
+                <h2>Debouncing in #javascript is a powerful way to improve the...</h2>
               </div>
             </div>
           </div>
@@ -103,57 +99,41 @@ here are the 5 top...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn python programming by spending $0
+                      <span>Debouncing in #javascript is a powerful way to improve the...</span>
+                      <a href="#"><h4>Debouncing in #Javascript is a powerful way to improve the performance of your site.
 
-here are the 5 top...</span>
-                      <a href="#"><h4>Learn Python Programming by spending $0
-
-Here are the 5 top Python programming courses you can...</h4></a>
+It does...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-20 07:15:38.175722</a></li>
 
                       </ul>
-                      <p>Learn Python Programming by spending $0
+                      <p>Debouncing in #Javascript is a powerful way to improve the performance of your site.
 
-Here are the 5 top Python programming courses you can learn for FREE
+It does this by significantly reducing the amount of times a specific action is taken such as an API call, which is performance intensive.
 
-A Thread 🧵👇<br><br>1. Learn Python - Full Course for Beginners from 
-@freeCodeCamp 
-
-<a href="https://t.co/BNcD9nGfYA">https://t.co/BNcD9nGfYA</a><br><br>2. Introduction to Programming with Python also called CS50P
-
-The best course to learn programming with Python from Harvard 
-
-<a href="https://t.co/Ki8RHWf9dj">https://t.co/Ki8RHWf9dj</a><br><br>3. Crash Course on Python
-
-This course is designed to teach you the foundations in order to write simple programs in Python using the most common structures. No previous exposure to programming is needed
-
-<a href="https://t.co/LDuRflYbD8">https://t.co/LDuRflYbD8</a><br><br>4. Python Course from @kaggle
+Let's break this concept down 🧵<br><br>Let's use the example of a search bar on an e-commerce site. Say you want to use it to search for a particular product. The HTML for this search field may look like this. <a href="https://t.co/qbRDzdWCb3">https://t.co/qbRDzdWCb3</a><br><br>This input element has on onChange event handler which means that every time a user enters in a character to the search field it will execute the searchProduct function.<br><br>The searchProduct function may look something like this:
  
-This course is designed keeping DS and ML in mind. It quickly covers all the concepts required to get started with ML.
+Where we extract the new value within the input field and pass it as a parameter to a function (getSearchResults) that makes an API call to a database. <a href="https://t.co/Hl55EzviOS">https://t.co/Hl55EzviOS</a><br><br>This as it stands presents a problem where if a user were to enter a product name such as "Apple Airpods Max" then our searchProduct function would run a total 17 times. Once for every character inputted. This in turn makes 17 API calls or 17 database trips. A big no-no<br><br>No worries, we can optimize this by using debounce logic. We will create a debounce function that takes in our searchFunction as the first parameter and the time delay in ms that we want to wait between each character input as our second input. 
 
-<a href="https://t.co/v5EQCxfuQB">https://t.co/v5EQCxfuQB</a><br><br>5. Python for Data Science 
+Something like this: <a href="https://t.co/mwfUyCEiID">https://t.co/mwfUyCEiID</a><br><br>Let's break down what's going on here.
 
-This introduction to Python will kickstart your learning of Python for data science and general programming. This beginner-friendly Python course will take you from zero to programming in Python in a matter of hours
+🟢 We have a function that takes in a callback function and a delay. 
 
-<a href="https://t.co/yKjrQxpfh6">https://t.co/yKjrQxpfh6</a><br><br>That's all for today! 
+🟢This function declares a variable timeout which will hold the countdown for our callback function to execute.<br><br>🟢 We then return another function that is responsible for resetting our timeout variable
 
-Please follow me for more Python content. RT and Like the first tweet 💚
-
-Let me know your favourite course in the comments. 
-
-<a href="https://t.co/QEygGa02Us">https://t.co/QEygGa02Us</a></p>
+🟢It then reassigns it a new timeout<br><br>Essentially, we can now use this debounce function as our input elements event handler which will call our searchProduct function only and only when there is a delay between inputs that meets the threshold we defined.<br><br>The debounce function here is a closure. If you do not know what a closure is you can check out the thread I wrote about them here; 
+<a href="https://t.co/qm4MSWWayj">https://t.co/qm4MSWWayj</a><br><br>Once we have our debounce function in place we can now create a new function that calls it. We will then replace the onChange event handlers function to this one. Like this: <a href="https://t.co/8GPabA4Nnt">https://t.co/8GPabA4Nnt</a><br><br>The whole structure may look like this: <a href="https://t.co/PCBAPmpHUa">https://t.co/PCBAPmpHUa</a><br><br>And that's debouncing 🤠</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE A Thread</a></li>
-<li><a href="#">Python</a></li>
-<li><a href="#">top Python programming</a></li>
-<li><a href="#">Learn Python Programming</a></li>
-<li><a href="#">Learn Python</a></li>
+								<li><a href="#">function</a></li>
+<li><a href="#">debounce function</a></li>
+<li><a href="#">API call</a></li>
+<li><a href="#">Javascript</a></li>
+<li><a href="#">searchProduct function</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -315,7 +295,7 @@ Let me know your favourite course in the comments.
       }
     </script>
 
-<!--1211649503338278751-->
+<!--0084611218599278751-->
 
   </body>
 

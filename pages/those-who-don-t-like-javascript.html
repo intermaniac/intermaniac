@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn Python Programming by spending $0
-
-Here are the 5 top Python programming courses you can...">
+    <meta name="description" content="Those who don't like JavaScript and are sitting on the fence about using a reactive...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Learn python programming by spending $0
-
-here are the 5 top...</title>
+    <title>Those who don't like javascript and are sitting on the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +75,7 @@ here are the 5 top...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Learn python programming by spending $0
-
-here are the 5 top...</h2>
+                <h2>Those who don't like javascript and are sitting on the...</h2>
               </div>
             </div>
           </div>
@@ -103,57 +97,114 @@ here are the 5 top...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Learn python programming by spending $0
-
-here are the 5 top...</span>
-                      <a href="#"><h4>Learn Python Programming by spending $0
-
-Here are the 5 top Python programming courses you can...</h4></a>
+                      <span>Those who don't like javascript and are sitting on the...</span>
+                      <a href="#"><h4>Those who don't like JavaScript and are sitting on the fence about using a reactive...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-20 07:15:38.175722</a></li>
 
                       </ul>
-                      <p>Learn Python Programming by spending $0
+                      <p>Those who don't like JavaScript and are sitting on the fence about using a reactive framework, I took the bullet and tried Svelte for a Go Web Application.
 
-Here are the 5 top Python programming courses you can learn for FREE
+Here are some findings which can save you some frustration and help you decide better.
 
-A Thread 🧵👇<br><br>1. Learn Python - Full Course for Beginners from 
-@freeCodeCamp 
+\
 
-<a href="https://t.co/BNcD9nGfYA">https://t.co/BNcD9nGfYA</a><br><br>2. Introduction to Programming with Python also called CS50P
+🧵
 
-The best course to learn programming with Python from Harvard 
+#JavaScript #Svelte #Go<br><br>Even Wikimedia chose Vue.js over React for Wikipedia as they didn't want anything to do with Facebook/Meta even though its open-source.
 
-<a href="https://t.co/Ki8RHWf9dj">https://t.co/Ki8RHWf9dj</a><br><br>3. Crash Course on Python
+I had used Vue once because of that for my Purchasing Parity Calculator - <a href="https://t.co/qNaA5YjHcw">https://t.co/qNaA5YjHcw</a>
 
-This course is designed to teach you the foundations in order to write simple programs in Python using the most common structures. No previous exposure to programming is needed
+That was my only time with a reactive app.\<br><br>My goal with Svelte now is to create a dynamic form whose elements are based on nested array values, Update those values in real time from user action and plot a chart dynamically.
 
-<a href="https://t.co/LDuRflYbD8">https://t.co/LDuRflYbD8</a><br><br>4. Python Course from @kaggle
- 
-This course is designed keeping DS and ML in mind. It quickly covers all the concepts required to get started with ML.
+All these are to be done at the client and no data is sent to the server in real time(Cookie).
 
-<a href="https://t.co/v5EQCxfuQB">https://t.co/v5EQCxfuQB</a><br><br>5. Python for Data Science 
+\<br><br>Svelte has a good tutorial with REPL, I went through that quickly for what I'd be needing until it got bit tedious; Not particularly a fault on the tutorial, Likely my impatience to start building.
 
-This introduction to Python will kickstart your learning of Python for data science and general programming. This beginner-friendly Python course will take you from zero to programming in Python in a matter of hours
+I looked up couple of blogs on Go web application using Svelte front-end &amp;\<br><br>Almost all of them start with changing the `rollup.config.js` to add `customElement:true`.
 
-<a href="https://t.co/yKjrQxpfh6">https://t.co/yKjrQxpfh6</a><br><br>That's all for today! 
+This was needed to embed the svelte code as `web component` into Go template, Since Go has excellent template support most users would be using it and that's exactly what I wanted too.
 
-Please follow me for more Python content. RT and Like the first tweet 💚
+\<br><br>It felt bit weird that I didn't come across this during the Svelte tutorial, Then again I didn't go through the entire documentation either.
 
-Let me know your favourite course in the comments. 
+In order to bind inputs from a nested each (for loop in Svelte) I had to use separate .svelte files and nest them. 
 
-<a href="https://t.co/QEygGa02Us">https://t.co/QEygGa02Us</a></p>
+\<br><br>The child components complained that it didn't have `tag` (correlating with Go's html template) even though the parent .svelte had one, So I added a dummy tag.
+
+The styles are encapsulated in Svelte so I had to duplicate the styles for the form in my parent .svelte from my app\<br><br>CSS.
+
+But the inputs from the child .svelte didn't get those styles after rendering. I tried duplicating the styles (for 3rd time) in the child .svelte but it didn't work.
+
+I knew that there's a way we can use a Global CSS in svelte, So I decided to look at it later after I get\<br><br>the logic working.
+
+Getting the dynamic form logic done was a breeze, Thanks to earlier official tutorial and the state management using `Stores`  feature.
+
+Changing the form input values changes the stored variable data automatically, Deleting the form input renders new form\<br><br>reactively.
+
+Just what I wanted to do. I added a generic charting library to render a chart based on those form values dynamically; There were no hassle at Svelte end.
+
+The CSP in my application blocked `inline-styles` (as one should) and it was complaining about it. 
+
+\<br><br>But I had set in the rollup.config to generate a CSS file separately, It seems it wasn't working.
+
+Allowing inline-styles rendered styles from parent svelte component, So the CSS seems to be rendered via JS.
+
+I had to look up the Svelte documentation to get clues\<br><br>on why the CSS wasn't generating as a separate file and why nested svelte style were not working.
+
+I came across the official Custom Element API doc - <a href="https://t.co/tcF8jTPG11">https://t.co/tcF8jTPG11</a> and it mentions several shortcomings when using Custom Element, incl. those I face now.
+
+\<br><br>Namely,
+
+• No separate CSS file, It gets in-lined from JS.
+• No support for global.css file.
+
+Should've RTFM 😩
+
+But it doesn't say anything about why the styles of nested .svelte component doesn't get rendered when the parent .svelte component does?
+
+\<br><br>At this point, I noticed that when I remove a form element dynamically the first input field (type=number) of the form shows the validation tool-tip to enter a valid number since the values are in decimals.
+
+I must have ignored this from the start as I knew this was a simple fix\<br><br>of adding `step=any` and setting `min &amp; max` for the fields.
+
+But alas, When I set the step the page reloads when I remove the form element!
+
+I tried to debug this in vain and decided to set the step to expected decimal values i.e. 0.1, 0.001 and \<br><br>this brought back the input validation tool-tip again even though the values were perfect.
+
+This would confuse my users and is not acceptable.
+
+At this point I found the issue titled - 'The Svelte "customElement" feature is not production ready yet !' - <a href="https://t.co/Rh4O3EAWwK">https://t.co/Rh4O3EAWwK</a> 
+\<br><br>Sad trumpet noises.
+
+The issue particularly lists about several other 'Custom Element' issues incl. 'Nested child components lose their CSS when the parent is used as a custom element'.
+
+I went through the discussions and found a particularly alarming statement from a\<br><br>Svelte Member:
+
+"Nobody on the core maintainers team is particularly fond of Web Components, and thus there is limited desire to prioritise the issues which set out to provide support further than what currently exists."
+
+\<br><br>I went into the rabbit hole to find why and found this blog from Rich Harris himself - <a href="https://t.co/rRlN6GlkYK">https://t.co/rRlN6GlkYK</a> .
+
+Technical opinion aside, All this while I was using something which the developers themselves don't like to use?
+
+Why the support for it then?<br><br>I deleted the Svelte code and implemented my dynamic form routine in the Go template with fewer lines of code.
+
+Yeah, Reactivity is good to have but not at the expense of security and usability.
+
+\<br><br>Would I use Svelte again? Sure; Without `Custom Element` like embedding the generated html files directly in Go if the need ever arises.
+
+Also perhaps with the Svelte Kit (back-end/SSR framework) if it offers any significant advantage over my Go framework for some problem. 
+
+👋🏾</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE A Thread</a></li>
-<li><a href="#">Python</a></li>
-<li><a href="#">top Python programming</a></li>
-<li><a href="#">Learn Python Programming</a></li>
-<li><a href="#">Learn Python</a></li>
+								<li><a href="#">Svelte</a></li>
+<li><a href="#">Custom Element</a></li>
+<li><a href="#">svelte component</a></li>
+<li><a href="#">form</a></li>
+<li><a href="#">CSS</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -315,7 +366,7 @@ Let me know your favourite course in the comments.
       }
     </script>
 
-<!--1211649503338278751-->
+<!--2724941241455998751-->
 
   </body>
 
