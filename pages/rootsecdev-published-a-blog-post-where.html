@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hello Everyone. This project recommends targeting customer segments as a more effective approach to marketing...">
+    <meta name="description" content="1/ @rootsecdev published a blog post where common misconfigurations inside the Conditional Access Policies in...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Hello everyone. this project recommends targeting customer segments as a...</title>
+    <title>1/ @rootsecdev published a blog post where common misconfigurations inside...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Hello everyone. this project recommends targeting customer segments as a...</h2>
+                <h2>1/ @rootsecdev published a blog post where common misconfigurations inside...</h2>
               </div>
             </div>
           </div>
@@ -97,33 +97,41 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Hello everyone. this project recommends targeting customer segments as a...</span>
-                      <a href="#"><h4>Hello Everyone. This project recommends targeting customer segments as a more effective approach to marketing...</h4></a>
+                      <span>1/ @rootsecdev published a blog post where common misconfigurations inside...</span>
+                      <a href="#"><h4>1/ @rootsecdev published a blog post where common misconfigurations inside the Conditional Access Policies in...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-21 07:15:32.501449</a></li>
 
                       </ul>
-                      <p>Hello Everyone. This project recommends targeting customer segments as a more effective approach to marketing and identifies key customer segments using methods like RFM analysis. 
-Tools: Python, Power BI, @canva 
-Analysis &amp; Viz: @lax_ieee 
-Report: <a href="https://t.co/kE451XwRCU">https://t.co/kE451XwRCU</a>
-A 🧵 <a href="https://t.co/PI63irtf40">https://t.co/PI63irtf40</a><br><br>RFM analysis enables marketing teams to target customers based on their individual behaviors and relevance to the business. The RFM model was created with Python and eight unique segments were identified. Each customer's RFM score was mapped to a segment using regex. <a href="https://t.co/tc2HHG3345">https://t.co/tc2HHG3345</a><br><br>Another method/model used in customer segmentation is demographics. In this case, the location was used. It was important to me that location-specific behavioral patterns could be observed and that influenced the final outcome of this viz. 👇 <a href="https://t.co/k1JOpMrSR6">https://t.co/k1JOpMrSR6</a><br><br>Someone once said that data analysts spend 50% of their time thinking and I couldn't relate more than when I had to analyze the performance of the product and channel variables.<br><br>Each row in the dataset provided information against several features for a unique customer. The challenge here lay in the distribution of each category of the variables as individual columns in the original dataset.
-This screenshot displays one of the for loops used. <a href="https://t.co/wm2Y8ZgPTZ">https://t.co/wm2Y8ZgPTZ</a><br><br>A similar approach was used for the product variable and it was worth it because I was able to do this with my report. <a href="https://t.co/D35XHU5aeT">https://t.co/D35XHU5aeT</a><br><br>The python notebook used for data cleaning and preparation can be assessed here: <a href="https://t.co/khRbjrXr2a">https://t.co/khRbjrXr2a</a>
+                      <p>1/ @rootsecdev published a blog post where common misconfigurations inside the Conditional Access Policies in Azure are discussed.
 
-The dataset and business case were obtained from Maven Analytics at <a href="https://t.co/ps7Qqi4AXM">https://t.co/ps7Qqi4AXM</a>
+In an Azure Tenant from a customer, the following CA policy was implemented: Require MFA for administrative users.
 
-Read the full report here: <a href="https://t.co/Wdxkfz6gm9">https://t.co/Wdxkfz6gm9</a><br><br>cc @TheMaryamO, @jessica_xls, @DavidAbu_, @PauloDaguvnor, @tu_babs, @Yinkaoke, @saltypip</p>
+🧵 <a href="https://t.co/GqppjLaMB6">https://t.co/GqppjLaMB6</a><br><br>2/ However, within the Directory roles checkbox, not all the roles were selected (see the picture below).
+
+In Azure Assessments, I use, among others, the script Get-MsolRolesAndMembers.ps1 to find users which are part of such different roles. [2] <a href="https://t.co/UhYnklVUZO">https://t.co/UhYnklVUZO</a><br><br>3/ The users or roles found with the mentioned script must be cross-checked with the CA (the checked roles from the menu above) to find possible users which could log in without MFA, resulting in a security gap. 🔎<br><br>4/ "Blocking Linux operating systems used to not be available in Conditional Access. It's worth a review though because there have been times when I have gained unintended access simply by using a Linux operating system such as Ubuntu to log in." [1]<br><br>5/ Searching for MacOS and Linux operating systems in the User Agent strings is one of the hunts I regularly perform in IR cases or compromise assessments. 
+
+This simple search could find compromised accounts, mainly if the company only uses Windows systems.<br><br>6/ As you can see in the picture below, the user used a Windows operating system for the logins in the last weeks, but two logins were performed with a Linux (Android) system.
+
+This could be legitimate but needs to be clarified further (in our case, the login was not legitimate). <a href="https://t.co/wYT7Bv1ziF">https://t.co/wYT7Bv1ziF</a><br><br>7/ "By default, every user in your organization has access to Azure Active Directory. If an end-user is compromised with a weak password, then an attacker has access to all your email addresses and phone numbers." [1]<br><br>8/ In the Tenant from the first screenshot above, we also find the CA Policy below, which is precisely the same as outlined in the blog post and is another hurdle for attackers. 
+
+Implement as much such controls as you can. <a href="https://t.co/2kE3Nuk4SY">https://t.co/2kE3Nuk4SY</a><br><br>9/ Unfortunately, we see the additional recommendation "Restrict access to Azure AD administration portal" repeatedly not implemented in our assessments. 
+
+Restrict this access if you can (even if the Azure Active Directory data could still be read via PowerShell). <a href="https://t.co/Bft688TGGX">https://t.co/Bft688TGGX</a><br><br>10/ References:
+
+[1] <a href="https://t.co/Z8cct4cZm2">https://t.co/Z8cct4cZm2</a>
+[2] <a href="https://t.co/tAE6qC0XXB">https://t.co/tAE6qC0XXB</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">RFM analysis</a></li>
-<li><a href="#">RFM analysis enables</a></li>
-<li><a href="#">RFM</a></li>
-<li><a href="#">customer</a></li>
-<li><a href="#">customer RFM score</a></li>
+								<li><a href="#">Conditional Access Policies</a></li>
+<li><a href="#">common misconfigurations inside</a></li>
+<li><a href="#">Azure Active Directory</a></li>
+<li><a href="#">Access Policies</a></li>
+<li><a href="#">Linux operating systems</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -285,7 +293,7 @@ Read the full report here: <a href="https://t.co/Wdxkfz6gm9">https://t.co/Wdxkfz
       }
     </script>
 
-<!--2912592027170709751-->
+<!--0048177442097539751-->
 
   </body>
 
