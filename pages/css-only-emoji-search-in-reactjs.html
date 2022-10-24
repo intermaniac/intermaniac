@@ -5,13 +5,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🔥 Do you know how to add dark mode support in CSS?
-
-Small thread 👇 https://t.co/CMpwpuRy9h1...">
+    <meta name="description" content="#CSS only* emoji search in #ReactJS!
+(*#javascript used to apply the style)
+Working on a new version...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🔥 do you know how to add dark mode support...</title>
+    <title>#css only* emoji search in #reactjs!
+(*#javascript used to apply the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +78,8 @@ Small thread 👇 https://t.co/CMpwpuRy9h1...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🔥 do you know how to add dark mode support...</h2>
+                <h2>#css only* emoji search in #reactjs!
+(*#javascript used to apply the...</h2>
               </div>
             </div>
           </div>
@@ -99,28 +101,34 @@ Small thread 👇 https://t.co/CMpwpuRy9h1...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🔥 do you know how to add dark mode support...</span>
-                      <a href="#"><h4>🔥 Do you know how to add dark mode support in CSS?
-
-Small thread 👇 https://t.co/CMpwpuRy9h1...</h4></a>
+                      <span>#css only* emoji search in #reactjs!
+(*#javascript used to apply the...</span>
+                      <a href="#"><h4>#CSS only* emoji search in #ReactJS!
+(*#javascript used to apply the style)
+Working on a new version...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-24 07:15:37.147919</a></li>
 
                       </ul>
-                      <p>🔥 Do you know how to add dark mode support in CSS?
-
-Small thread 👇 <a href="https://t.co/CMpwpuRy9h">https://t.co/CMpwpuRy9h</a><br><br>1 <a href="https://t.co/j5ZI5VGNKg">https://t.co/j5ZI5VGNKg</a><br><br>2 <a href="https://t.co/2KcMIFO4jU">https://t.co/2KcMIFO4jU</a><br><br>3 <a href="https://t.co/WKFgmfI1rM">https://t.co/WKFgmfI1rM</a><br><br>4 <a href="https://t.co/o75TjKckGI">https://t.co/o75TjKckGI</a></p>
+                      <p>#CSS only* emoji search in #ReactJS!
+(*#javascript used to apply the style)
+Working on a new version of emoji-picker-react I noticed that filtering ~2k emojis with React state has noticeable lag (see video). I had to make it faster, so I came up with #css_only filter 🧵 <a href="https://t.co/Nv04KYO3K6">https://t.co/Nv04KYO3K6</a><br><br>First, I had to understand if this is even possible, and I it kind of isn't, because I can't access the input value just by CSS
+That's where I had to use some JS. So I created a basic CssSearch component that only renders a style tag if there's a search value <a href="https://t.co/7qDIf1mKC2">https://t.co/7qDIf1mKC2</a><br><br>But which selector would go in?
+Well. Just use each emoji's aria label as an attribute selector, with *= so that we make sure the value is a part of the label.
+With :not() - If an element doesn't match, it should hide itself. <a href="https://t.co/dRgHOvQxSL">https://t.co/dRgHOvQxSL</a><br><br>That's already much faster!
+But there's more to do. <a href="https://t.co/sWK7YlC88t">https://t.co/sWK7YlC88t</a><br><br>If you look closely, you'll see a slight lag before the empty categories disappear. That's because we still have to use state to render them null if they're empty. Or Do we?? 😈<br><br>One other trick we can use was is use the new :has() selector. If the category itself doesn't have any matching emojis, it should set itself to "display: none" <a href="https://t.co/neJUWgaMDG">https://t.co/neJUWgaMDG</a><br><br>Ohhhh Yess! <a href="https://t.co/l8jqOatolz">https://t.co/l8jqOatolz</a><br><br>And if you want to see the full non-simplified solution on #github, here's the full source:
+<a href="https://t.co/5eSGApPPU8">https://t.co/5eSGApPPU8</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">add dark mode</a></li>
-<li><a href="#">dark mode support</a></li>
-<li><a href="#">support in CSS</a></li>
-<li><a href="#">add dark</a></li>
-<li><a href="#">dark mode</a></li>
+								<li><a href="#">CSS</a></li>
+<li><a href="#">ReactJS</a></li>
+<li><a href="#">selector</a></li>
+<li><a href="#">React state</a></li>
+<li><a href="#">search</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -282,7 +290,7 @@ Small thread 👇 <a href="https://t.co/CMpwpuRy9h">https://t.co/CMpwpuRy9h</a><
       }
     </script>
 
-<!--6108515578966740851-->
+<!--9887321506445820851-->
 
   </body>
 

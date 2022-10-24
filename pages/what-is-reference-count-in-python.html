@@ -5,13 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🔥 Do you know how to add dark mode support in CSS?
+    <meta name="description" content="What is reference count in python ?
 
-Small thread 👇 https://t.co/CMpwpuRy9h1...">
+How does garbage collection happen in python?
+
+What is generational...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🔥 do you know how to add dark mode support...</title>
+    <title>What is reference count in python ?
+
+how does garbage collection...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +81,9 @@ Small thread 👇 https://t.co/CMpwpuRy9h1...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🔥 do you know how to add dark mode support...</h2>
+                <h2>What is reference count in python ?
+
+how does garbage collection...</h2>
               </div>
             </div>
           </div>
@@ -99,28 +105,68 @@ Small thread 👇 https://t.co/CMpwpuRy9h1...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🔥 do you know how to add dark mode support...</span>
-                      <a href="#"><h4>🔥 Do you know how to add dark mode support in CSS?
+                      <span>What is reference count in python ?
 
-Small thread 👇 https://t.co/CMpwpuRy9h1...</h4></a>
+how does garbage collection...</span>
+                      <a href="#"><h4>What is reference count in python ?
+
+How does garbage collection happen in python?
+
+What is generational...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-24 07:15:37.147919</a></li>
 
                       </ul>
-                      <p>🔥 Do you know how to add dark mode support in CSS?
+                      <p>What is reference count in python ?
 
-Small thread 👇 <a href="https://t.co/CMpwpuRy9h">https://t.co/CMpwpuRy9h</a><br><br>1 <a href="https://t.co/j5ZI5VGNKg">https://t.co/j5ZI5VGNKg</a><br><br>2 <a href="https://t.co/2KcMIFO4jU">https://t.co/2KcMIFO4jU</a><br><br>3 <a href="https://t.co/WKFgmfI1rM">https://t.co/WKFgmfI1rM</a><br><br>4 <a href="https://t.co/o75TjKckGI">https://t.co/o75TjKckGI</a></p>
+How does garbage collection happen in python?
+
+What is generational garbage collection? 
+A Thread 🧵👇
+
+#pythonprogramming #codingisfun #100daysofcoding #pythonlearning @python_spaces @realpython <a href="https://t.co/bY8yk13Cp8">https://t.co/bY8yk13Cp8</a><br><br>Do you understand this ? If you do , you know 50% of the stuffs what  am going to discuss. <a href="https://t.co/Wz022OsCHv">https://t.co/Wz022OsCHv</a><br><br>Let's first be clear on this .
+〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️
+In Python, a variable is not a label of a value as you may think. Instead, A variable references an object that holds a value. In other words, variables are references.
+〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️<br><br>When you assign 100 to counter variable what does happen internally?
+counter = 100 <a href="https://t.co/iqSWsIsO3I">https://t.co/iqSWsIsO3I</a><br><br>When you do these steps
+counter = 100
+max = counter
+max = 999
+counter = 1 <a href="https://t.co/2Z4oWlxtWm">https://t.co/2Z4oWlxtWm</a><br><br>Garbage collection!!
+There are different implementation of python being used.CPython is the most widely used.I will first talk in specific to this
+
+There are two aspects to memory management and garbage collection in CPython
+
+✅Reference counting
+✅Generational garbage collection<br><br>🔸🔸Reference counting in CPython🔸🔸
+
+At a very basic level, a Python object’s reference count is incremented whenever the object is referenced, and it’s decremented when an object is dereferenced. If an object’s reference count is 0, the memory for the object is deallocated<br><br>sys module can be used to check reference counts for a particular object.
+
+What does increase the reference count for an object
+
+- Assigning an object to a variable
+- Adding an object to a data structure,such as appending to a list or dict
+- Passing the object as an arg to a func<br><br>import sys
+a = 'my-string'
+# Make a list with a as an element.
+b = [a] 
+# Create a dictionary with a as one of the values.
+c = { 'key': a } 
+print(sys.getrefcount(a))
+result : 4 <a href="https://t.co/OUNeKRAQYo">https://t.co/OUNeKRAQYo</a><br><br>This will reinforce further your understanding of reference counting and garbage collection
+<a href="https://t.co/ju3WPJN2o9">https://t.co/ju3WPJN2o9</a>
+#medium #python @Param_eth @Kelvinparmar12 @hellojohnpaul</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">add dark mode</a></li>
-<li><a href="#">dark mode support</a></li>
-<li><a href="#">support in CSS</a></li>
-<li><a href="#">add dark</a></li>
-<li><a href="#">dark mode</a></li>
+								<li><a href="#">garbage collection</a></li>
+<li><a href="#">object</a></li>
+<li><a href="#">reference</a></li>
+<li><a href="#">reference count</a></li>
+<li><a href="#">python</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -282,7 +328,7 @@ Small thread 👇 <a href="https://t.co/CMpwpuRy9h">https://t.co/CMpwpuRy9h</a><
       }
     </script>
 
-<!--6108515578966740851-->
+<!--8003676003294620851-->
 
   </body>
 

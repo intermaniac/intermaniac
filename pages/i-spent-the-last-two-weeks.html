@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🔥 Do you know how to add dark mode support in CSS?
-
-Small thread 👇 https://t.co/CMpwpuRy9h1...">
+    <meta name="description" content="I spent the last two weeks browsing @nuxtjs 3 repository to find out if it...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🔥 do you know how to add dark mode support...</title>
+    <title>I spent the last two weeks browsing @nuxtjs 3 repository...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@ Small thread 👇 https://t.co/CMpwpuRy9h1...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🔥 do you know how to add dark mode support...</h2>
+                <h2>I spent the last two weeks browsing @nuxtjs 3 repository...</h2>
               </div>
             </div>
           </div>
@@ -99,28 +97,49 @@ Small thread 👇 https://t.co/CMpwpuRy9h1...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🔥 do you know how to add dark mode support...</span>
-                      <a href="#"><h4>🔥 Do you know how to add dark mode support in CSS?
-
-Small thread 👇 https://t.co/CMpwpuRy9h1...</h4></a>
+                      <span>I spent the last two weeks browsing @nuxtjs 3 repository...</span>
+                      <a href="#"><h4>I spent the last two weeks browsing @nuxtjs 3 repository to find out if it...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-24 07:15:37.147919</a></li>
 
                       </ul>
-                      <p>🔥 Do you know how to add dark mode support in CSS?
+                      <p>I spent the last two weeks browsing @nuxtjs 3 repository to find out if it helps to build faster websites
 
-Small thread 👇 <a href="https://t.co/CMpwpuRy9h">https://t.co/CMpwpuRy9h</a><br><br>1 <a href="https://t.co/j5ZI5VGNKg">https://t.co/j5ZI5VGNKg</a><br><br>2 <a href="https://t.co/2KcMIFO4jU">https://t.co/2KcMIFO4jU</a><br><br>3 <a href="https://t.co/WKFgmfI1rM">https://t.co/WKFgmfI1rM</a><br><br>4 <a href="https://t.co/o75TjKckGI">https://t.co/o75TjKckGI</a></p>
+One of the things that can not only slow down your website but also decrease the user experience are large stylesheets
+
+🧵 Does Nuxt 3 help with that?
+
+#javascript #webperf <a href="https://t.co/tpwP9QkIfx">https://t.co/tpwP9QkIfx</a><br><br>@nuxtjs CSS is render-blocking which means that until it is processed and applied to the DOM (in other words until CSSSOM is constructed) the browser won't render anything.
+
+It's safe to say that your website is as slow as your biggest stylesheet.<br><br>@nuxtjs It's important to keep our stylesheets as small as possible, but in real-world applications, you usually have hundreds (or thousands) of lines of CSS!
+
+Can we avoid waiting for the whole CSS file to be processed until the browser paints something on the screen?<br><br>@nuxtjs One option would be to load our CSS asynchronously.
+
+This method is risky, though, and can easily introduce the so-called Flash of Unstyled Content (FOUC) when the user has a slow internet connection. <a href="https://t.co/WWbxZJmLcM">https://t.co/WWbxZJmLcM</a><br><br>@nuxtjs FOUC happens when the DOM is already painted, but the CSS is not yet applied to it. For a moment, your website looks broken
+
+This is exactly the reason why CSS is render-blocking and synchronous by default, and we shouldn't change that behavior if we don't know what we're doing <a href="https://t.co/aEYS3qOKOw">https://t.co/aEYS3qOKOw</a><br><br>@nuxtjs To speed up rendering Nuxt 3 is inlining the CSS of global components and the current page.
+
+This way you don't have to wait for additional files to be downloaded and the page is rendered right after index.html is processed. <a href="https://t.co/XWY7cWJESZ">https://t.co/XWY7cWJESZ</a><br><br>@nuxtjs The problem is - it could be A LOT of CSS, and most of it is probably not needed right after the page is loaded and is below the fold.
+
+A perfect scenario would be when we could only download the CSS visible above the fold and the rest asynchronously.<br><br>@nuxtjs The above-the-fold CSS is called "critical CSS" because it's a part of the so-called critical rendering path - a minimal set of code that has to run to render the current view. <a href="https://t.co/S2R2CymWHv">https://t.co/S2R2CymWHv</a><br><br>@nuxtjs The Nuxt 3 module "@nuxtjs/critters" does exactly that!
+
+It automatically inlines the critical CSS for pre-rendered (static) sites and extracts the rest of the CSS into separate ones.
+
+It's up to you how you load them!
+
+<a href="https://t.co/rR6Vh93lYa">https://t.co/rR6Vh93lYa</a><br><br>@nuxtjs The module is based on Googles library Critters (which is extremely useful for almost any web application)
+<a href="https://t.co/RhwjqR1uoK">https://t.co/RhwjqR1uoK</a><br><br>@nuxtjs More discoveries from my @nuxt_js repository analysis soon!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">add dark mode</a></li>
-<li><a href="#">dark mode support</a></li>
-<li><a href="#">support in CSS</a></li>
-<li><a href="#">add dark</a></li>
-<li><a href="#">dark mode</a></li>
+								<li><a href="#">CSS</a></li>
+<li><a href="#">build faster websites</a></li>
+<li><a href="#">nuxtjs</a></li>
+<li><a href="#">nuxtjs CSS</a></li>
+<li><a href="#">critical CSS</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -282,7 +301,7 @@ Small thread 👇 <a href="https://t.co/CMpwpuRy9h">https://t.co/CMpwpuRy9h</a><
       }
     </script>
 
-<!--6108515578966740851-->
+<!--3340795024971510851-->
 
   </body>
 
