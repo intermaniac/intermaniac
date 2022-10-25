@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="GM! Here's the daily summary of trending projects on crypto GitHub. Curated by the greatest...">
+    <meta name="description" content="Understanding Linux File Permissions (easy-to-follow thread) 🐧↓Here are three types of file permissions that apply...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Gm! here's the daily summary of trending projects on crypto...</title>
+    <title>Understanding linux file permissions (easy-to-follow ) 🐧↓here are three types...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Gm! here's the daily summary of trending projects on crypto...</h2>
+                <h2>Understanding linux file permissions (easy-to-follow ) 🐧↓here are three types...</h2>
               </div>
             </div>
           </div>
@@ -97,76 +97,75 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Gm! here's the daily summary of trending projects on crypto...</span>
-                      <a href="#"><h4>GM! Here's the daily summary of trending projects on crypto GitHub. Curated by the greatest...</h4></a>
+                      <span>Understanding linux file permissions (easy-to-follow ) 🐧↓here are three types...</span>
+                      <a href="#"><h4>Understanding Linux File Permissions (easy-to-follow thread) 🐧↓Here are three types of file permissions that apply...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-25 07:15:36.789336</a></li>
 
                       </ul>
-                      <p>GM! Here's the daily summary of trending projects on crypto GitHub. Curated by the greatest web3 developers ⭐️.
+                      <p>Understanding Linux File Permissions (easy-to-follow thread) 🐧↓<br><br>Here are three types of file permissions that apply to each user class:
 
-Check the 13 projects in the thread below 🧵👇🏻 <a href="https://t.co/yuHGLQ4sCl">https://t.co/yuHGLQ4sCl</a><br><br>0xhatsume and 4 others starred repo ZeframLou/fee-distributor (9 ⭐️)
+• The read permission.
+• The write permission.
+• The execute permission.
 
-<a href="https://t.co/biL3DMuiQc">https://t.co/biL3DMuiQc</a><br><br>Dadybayo and 3 others starred repo hananbeer/zerem (8 ⭐️)
+Both files and directories have identical permission properties. However, they have different meanings.<br><br>[+] Read Permission (r)
 
-<a href="https://t.co/4CDYoajvI2">https://t.co/4CDYoajvI2</a><br><br>0xYYY and 3 others starred repo gakonst/humanize (38 ⭐️)
+• When the read permission is set, the file can be read; for example, the user can open the file in a text editor (nano, vim, and so on).
 
-Human readable descriptions for your Ethereum transactions
+• The contents of the directory can be viewed. The ls command allows the user to list files within a directory.<br><br>[+] Write Permission (w)
 
-<a href="https://t.co/QdoOlmEfAS">https://t.co/QdoOlmEfAS</a><br><br>kadenzipfel and 3 others starred repo iFrostizz/murph (8 ⭐️)
+• A file that has write permissions can be changed or modified.
 
-A Huff &lt;&gt; bytecode transpiler
+• If a directory has write permissions, its contents can be modified. The user can create new files, delete existing files, move files, rename files, etc.<br><br>[+] Execute permission (x)
 
-<a href="https://t.co/qoGtyXJQK4">https://t.co/qoGtyXJQK4</a><br><br>sebastiantf and 2 others starred repo 0xnogo/sandwich-scanner (10 ⭐️)
+• The file can be run, such as a bash script.
+• The directory can be entered using the cd command.<br><br>As I have mentioned, file permissions or attributes can be viewed using the ls command. Here is an example: <a href="https://t.co/5cuFSYSHcM">https://t.co/5cuFSYSHcM</a><br><br>A breakdown of the ls command output: <a href="https://t.co/5eEE0BhgDu">https://t.co/5eEE0BhgDu</a><br><br>The file type is indicated by the first character. It could be a normal file (-), a directory (d), a symbolic link (l), or any other form of file. The file permissions are represented by nine characters, three groups of three characters each.<br><br>The first group indicates the owner's permissions, the second group indicates group permissions, and the third is everyone else's permissions.<br><br>In the example above, (`-rwxr-xr-x`) means that the file owner has read, write and execute permissions (`rwx`), and the group and others have only read and execute permissions (`r-x`).<br><br>[+] File permissions numerical representations:
 
-Library to detect on-chain sandwich attacks
+File permissions can be represented numerically or symbolically. In this thread I will only concentrate on the numerical format.<br><br>The permission number might be three or four digits in length, ranging from 0 to 7.
 
-<a href="https://t.co/Ise44mPzuc">https://t.co/Ise44mPzuc</a><br><br>developerfred and 2 others starred repo Mrtenz/transaction-invoker (20 ⭐️)
+When a three-digit number is used, the first digit denotes the file's owner's permissions, the second the file's group, and the last all other users.<br><br>The following numbers represent the write, read, and execute permissions:
 
-EIP-3074 (Batch) transaction invoker, which can send multiple transactions in a singl...
-#eip-3074 #batch-transactions #ethereum
+• r (read) = 4
+• w  (write) = 2
+• x (execute) = 1
+• no permissions = 0<br><br>The permissions digit of a particular user class is the sum of the permissions values for that class.
 
-<a href="https://t.co/nI0EFm5oHO">https://t.co/nI0EFm5oHO</a><br><br>pcaversaccio and 2 others starred repo MantisClone/awesome-reputation-systems (12 ⭐️)
+Each digit of the permissions number can be an addition of 4, 2, 1, or 0:<br><br>• 0 (0+0+0) - There is no permission.
+• 1 (0+0+1) - Execute permission only.
+• 2 (0+2+0) - Only write access permissions.
+• 3 (0+2+1) - Permission to write and execute.<br><br>• 4 (4+0+0) - Read-only permission.
+• 5 (4+0+1) - Permission to read and execute.
+• 6 (4+2+0) - Read and write access permissions.
+• 7 (4+2+1) - Permission to read, write, and execute.<br><br>For example, if the permission number is set to 755 it means that the file’s owner has read, write and execute permission, file’s group has read and execute permissions, and other users have also read and execute permissions:<br><br>Owner: rwx=4+2+1=7
+Group: r-x=4+0+1=5
+Others: r-x=4+0+1=5<br><br>When using a four-digit number, the first digit has the following meaning:
 
-A curated list of reputation systems
-#awesome #awesome-list
+• setuid=4
+• setgid=2
+• sticky=1
+• no changes = 0<br><br>If you are having trouble calculating the permissions of your files, here is an online website that can assist you.
 
-<a href="https://t.co/Fm3aAl22jQ">https://t.co/Fm3aAl22jQ</a><br><br>developerfred and 2 others starred repo SocketDotTech/widget (16 ⭐️)
+Chmod Calculator:
+An awesome Chmod Calculator to convert Linux file permissions between different formats.
 
-Seamless bridging experience into a single fully customizable React Component
-#library #reactjs #widget-library #storybook
+<a href="https://t.co/pYHPgs9hpY">https://t.co/pYHPgs9hpY</a><br><br>That's all! Thank you for getting this far. I hope you find this thread useful.
 
-<a href="https://t.co/LLf1FHahGr">https://t.co/LLf1FHahGr</a><br><br>0xYYY and 2 others starred repo ncitron/optimizer-block-builder (8 ⭐️)
+If you found this thread helpful
 
-<a href="https://t.co/ILWXWJlFXV">https://t.co/ILWXWJlFXV</a><br><br>banteg and 3 others starred repo samczsun/ethereum-transaction-viewer-frontend (200 ⭐️)
-
-Frontend for <a href="https://t.co/Yz6WDYOWfK">https://t.co/Yz6WDYOWfK</a>
-
-<a href="https://t.co/Mn0fkbStgh">https://t.co/Mn0fkbStgh</a><br><br>0xYYY and 2 others starred repo sagiegurari/cargo-make (1678 ⭐️)
-
-Rust task runner and build tool.
-#build #build-tool #build-automation #task-runner #task #rust #cargo #cargo-subcommand #make #travis-ci
-
-<a href="https://t.co/ypc7Z5cm0y">https://t.co/ypc7Z5cm0y</a><br><br>0xbrito and 2 others starred repo Jeiwan/uniswapv3-book (156 ⭐️)
-
-Uniswap V3 Development Book
-#book #ethereum #solidity #uniswap #defi #foundry
-
-<a href="https://t.co/FUctv6dYTz">https://t.co/FUctv6dYTz</a><br><br>Check the top web3 devs database using the Google Sheet and submit any account missing via the Google Form.
-
-Web3 devs database 👉🏼 <a href="https://t.co/surIkkcjor">https://t.co/surIkkcjor</a>
-Form to submit new web3 devs 👇🏻 <a href="https://t.co/NyCWIjn3HC">https://t.co/NyCWIjn3HC</a></p>
+1. Toss us a follow for more daily threads on Linux, sysadmin, and DevOps→@linuxopsys
+2. Like and RT the first tweet so that other Linux users can find it as well.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">starred repo</a></li>
-<li><a href="#">starred</a></li>
-<li><a href="#">starred repo Mrtenz</a></li>
-<li><a href="#">starred repo Jeiwan</a></li>
-<li><a href="#">repo</a></li>
+								<li><a href="#">Understanding Linux File</a></li>
+<li><a href="#">Permissions</a></li>
+<li><a href="#">File Permissions</a></li>
+<li><a href="#">File</a></li>
+<li><a href="#">execute permissions</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -328,7 +327,7 @@ Form to submit new web3 devs 👇🏻 <a href="https://t.co/NyCWIjn3HC">https://
       }
     </script>
 
-<!--2519064513513650851-->
+<!--5057720614337860851-->
 
   </body>
 
