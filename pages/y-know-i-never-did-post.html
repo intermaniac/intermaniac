@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The Logical Operators are very powerful tools in JavaScript,  Which are highly misunderstood and...">
+    <meta name="description" content="Y'know, i never did post about the project i did for my final GIS course...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>The logical operators are very powerful tools in javascript,...</title>
+    <title>Y'know, i never did post about the project i did...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>The logical operators are very powerful tools in javascript,...</h2>
+                <h2>Y'know, i never did post about the project i did...</h2>
               </div>
             </div>
           </div>
@@ -97,41 +97,37 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>The logical operators are very powerful tools in javascript,...</span>
-                      <a href="#"><h4>The Logical Operators are very powerful tools in JavaScript,  Which are highly misunderstood and...</h4></a>
+                      <span>Y'know, i never did post about the project i did...</span>
+                      <a href="#"><h4>Y'know, i never did post about the project i did for my final GIS course...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-26 07:15:35.170175</a></li>
 
                       </ul>
-                      <p>The Logical Operators are very powerful tools in JavaScript,  Which are highly misunderstood and underrated.
+                      <p>Y'know, i never did post about the project i did for my final GIS course @ depaul, taught by @M_Stuhlmacher.
 
-Know The Full power of Logical Operators 
+so here goes, the most elaborate thing i've ever built out in javascript/google earth engine: an analysis of coastal tourism's impact on manmade land buildup in mexico.🧵 <a href="https://t.co/fg5wJnVbjW">https://t.co/fg5wJnVbjW</a><br><br>why did i pick this? no clue! it's overly complicated, i was swamped between FT work + FT class &amp; i didn't even manage to make the deadline for this project. (though i did churn out something i was proud of.) i think the main thing came down to what it always does: curiosity. :)<br><br>(to be honest, i think it was partially inspired by a conversation i overheard, while waiting for my iced *filthy* chai (extra shots) at the bean while running on absolute fumes, about someone's spring break/summer trip plans. and then, of course, mexico. 🇲🇽)<br><br>the assignment? build out the analysis in javascript, then create a corresponding web app/interface with a few interactive elements. 
 
-A Thread 🧵
-#100DaysOfCode #Javascript<br><br>Before We Begin, let's establish some terms
+the web app is simple. ish. check it for yourself. (don't worry if it takes a long time to load. it's the app, not you.)
+<a href="<a href="https://t.co/X9E0je4CEx">https://t.co/X9E0je4CEx</a>"><a href="https://t.co/X9E0je4CEx">https://t.co/X9E0je4CEx</a></a><br><br>i picked nine study areas for this assignment, spanning from 2000 to 2021/2022, with the ability for the user to toggle between the different regions through the ui. 
+(if you have a google earth engine acc, the code: <a href="https://t.co/GJ0BdF4JbQ">https://t.co/GJ0BdF4JbQ</a>
+if you don't: <a href="https://t.co/2ZYn7gq26c)">https://t.co/2ZYn7gq26c)</a><br><br>if you're not familiar with remote sensing, i'll get to the point: i wanted to measure manmade construction in different cities over time with the implication that more tourism =&gt; increased land buildup =&gt; less green space.
+(if this sounds cool, check out @M_Stuhlmacher's work)<br><br>to do this, i used machine learning (ooooo) and created a classifier to process built up vs. non built land based on bounds and ~250 hand-selected samples! it worked better for some cities than others (veracruz on the left/pink; tulum on the right/blue). 
+<a href="https://t.co/74wba54ZB4">https://t.co/74wba54ZB4</a> <a href="https://t.co/xtgx3stYva">https://t.co/xtgx3stYva</a><br><br>ultimately, because of how data works, it isn't just a visual comparison between years + regions, but a numeric one. i collected the area of shaded regions/pixels, which lead me to make this "conclusion" — that land use increased by 83% b/w 2000-2022.
 
-Falsy = undefined, 0, null and false
-Truthy = any values other than the above<br><br>1. The Logical AND (&amp;&amp;) Operator <a href="https://t.co/WBRb5C8VHb">https://t.co/WBRb5C8VHb</a><br><br>2. The Logical OR (| |) Operator <a href="https://t.co/2h1xObbjO8">https://t.co/2h1xObbjO8</a><br><br>A Practical Example of these Operators <a href="https://t.co/hcVAnjBHU5">https://t.co/hcVAnjBHU5</a><br><br>It is important to understand that Logical AND (&amp;&amp;) and Logical OR (| |) also consider 0 as a falsy value as well, hence if you have any value which can be 0, then you should use the Nullish coalescing operator (??)⬇️ instead of Logical OR (| |) operator<br><br>3. The Nullish coalescing operator (??) 
+<a href="<a href="https://t.co/fSY34ePraq">https://t.co/fSY34ePraq</a>"><a href="https://t.co/fSY34ePraq">https://t.co/fSY34ePraq</a></a> <a href="https://t.co/pwIC7Tvdew">https://t.co/pwIC7Tvdew</a><br><br>is this by any means a highly accurate and precise measurement of manmade land growth? NO. omfg. but it is very cool! (or at least i think so.) <a href="<a href="https://t.co/fSY34ePraq">https://t.co/fSY34ePraq</a>"><a href="https://t.co/fSY34ePraq">https://t.co/fSY34ePraq</a></a><br><br>this was by far the largest and hardest thing i've done in javascript. 642 lines of haphazard code later, and i've got a very cool project that i'm clearly still thinking about months after i worked on it. 🌴
 
-The Truthy Values in This Operator Also involve 0 <a href="https://t.co/yEzxdnOdSr">https://t.co/yEzxdnOdSr</a><br><br>That's a wrap!
-
-If you enjoyed this thread:
-
-1. Follow me @PragathR for more of these
-2. RT the tweet below to share this thread with folks following you 
-
-Thank you for reading all the way through. <a href="https://t.co/p0KpKK0hpt">https://t.co/p0KpKK0hpt</a></p>
+<a href="<a href="https://t.co/X9E0je4CEx">https://t.co/X9E0je4CEx</a>"><a href="https://t.co/X9E0je4CEx">https://t.co/X9E0je4CEx</a></a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Logical</a></li>
-<li><a href="#">Logical Operators</a></li>
-<li><a href="#">Nullish coalescing operator</a></li>
-<li><a href="#">Operator</a></li>
-<li><a href="#">misunderstood and underrated</a></li>
+								<li><a href="#">final GIS</a></li>
+<li><a href="#">GIS</a></li>
+<li><a href="#">land</a></li>
+<li><a href="#">google earth engine</a></li>
+<li><a href="#">manmade land</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -293,7 +289,7 @@ Thank you for reading all the way through. <a href="https://t.co/p0KpKK0hpt">htt
       }
     </script>
 
-<!--2914269953059911851-->
+<!--1888506354954001851-->
 
   </body>
 

@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The Logical Operators are very powerful tools in JavaScript,  Which are highly misunderstood and...">
+    <meta name="description" content="I was casually browsing the @nodejs https://t.co/QyUYmOW6mm website when I noticed this behavior:
+
+A thread 🧵...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>The logical operators are very powerful tools in javascript,...</title>
+    <title>I was casually browsing the @nodejs https://t.co/qyuymow6mm website when i...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>The logical operators are very powerful tools in javascript,...</h2>
+                <h2>I was casually browsing the @nodejs https://t.co/qyuymow6mm website when i...</h2>
               </div>
             </div>
           </div>
@@ -97,41 +99,48 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>The logical operators are very powerful tools in javascript,...</span>
-                      <a href="#"><h4>The Logical Operators are very powerful tools in JavaScript,  Which are highly misunderstood and...</h4></a>
+                      <span>I was casually browsing the @nodejs https://t.co/qyuymow6mm website when i...</span>
+                      <a href="#"><h4>I was casually browsing the @nodejs https://t.co/QyUYmOW6mm website when I noticed this behavior:
+
+A thread 🧵...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-26 07:15:35.170175</a></li>
 
                       </ul>
-                      <p>The Logical Operators are very powerful tools in JavaScript,  Which are highly misunderstood and underrated.
+                      <p>I was casually browsing the @nodejs <a href="https://t.co/QyUYmOW6mm">https://t.co/QyUYmOW6mm</a> website when I noticed this behavior:
 
-Know The Full power of Logical Operators 
+A thread 🧵 <a href="https://t.co/VaaSL9bcQZ">https://t.co/VaaSL9bcQZ</a><br><br>On further investigation, I noticed the script responsible for building the 'Edit on GitHub' link was adding <a href="https://t.co/tWI0Pl8rcJ">https://t.co/tWI0Pl8rcJ</a> to all pages even though some were pages like <a href="<a href="https://t.co/3H112WrD7s">https://t.co/3H112WrD7s</a>"><a href="https://t.co/3H112WrD7s">https://t.co/3H112WrD7s</a></a> <a href="https://t.co/o8wVAOn754">https://t.co/o8wVAOn754</a><br><br>I believe the culprit is in this githubLinks function. But right now I don't know what to do yet <a href="https://t.co/b42xZpqITI">https://t.co/b42xZpqITI</a><br><br>On further investigation, I noticed all path had a /index.html appended to them so that means when the paths are constructed for the GitHub links, <a href="<a href="https://t.co/3H112WrD7s">https://t.co/3H112WrD7s</a>"><a href="https://t.co/3H112WrD7s">https://t.co/3H112WrD7s</a></a> becomes code-and-learn/index.md
 
-A Thread 🧵
-#100DaysOfCode #Javascript<br><br>Before We Begin, let's establish some terms
+I decided to split the path and take a look. <a href="https://t.co/BlZG2LQVSX">https://t.co/BlZG2LQVSX</a><br><br>The pattern I noticed was for pages(after I split the path into an array) with length &lt;= 2, the path will work.
 
-Falsy = undefined, 0, null and false
-Truthy = any values other than the above<br><br>1. The Logical AND (&amp;&amp;) Operator <a href="https://t.co/WBRb5C8VHb">https://t.co/WBRb5C8VHb</a><br><br>2. The Logical OR (| |) Operator <a href="https://t.co/2h1xObbjO8">https://t.co/2h1xObbjO8</a><br><br>A Practical Example of these Operators <a href="https://t.co/hcVAnjBHU5">https://t.co/hcVAnjBHU5</a><br><br>It is important to understand that Logical AND (&amp;&amp;) and Logical OR (| |) also consider 0 as a falsy value as well, hence if you have any value which can be 0, then you should use the Nullish coalescing operator (??)⬇️ instead of Logical OR (| |) operator<br><br>3. The Nullish coalescing operator (??) 
+It won't however work for &gt;= 3 so I decided to pop the index.html for such pages <a href="https://t.co/Wv7eb6LU5P">https://t.co/Wv7eb6LU5P</a><br><br>The above worked but what happens when a nested page does have <a href="https://t.co/tWI0Pl8rcJ">https://t.co/tWI0Pl8rcJ</a>? Yeah you get it the algorithm above will throw that away so that ain't good.
 
-The Truthy Values in This Operator Also involve 0 <a href="https://t.co/yEzxdnOdSr">https://t.co/yEzxdnOdSr</a><br><br>That's a wrap!
+Back to the drawing board, it is... <a href="https://t.co/EDn8E5miD4">https://t.co/EDn8E5miD4</a><br><br>So after a couple of minutes of thinking the hard way to fix this, I had an epiphany: since the githubLinks function is a middleware, what if I can call it before whatever turns the .md files into .html files is called. <a href="https://t.co/PNfITPxN9R">https://t.co/PNfITPxN9R</a><br><br>So I moved the .use calling githubLinks to another spot in the chain of .use and it worked, the files where no longer being transformed and I don't need any manipulations in the githubLinks middleware to get the correct file for GitHub edits <a href="https://t.co/Y37H2Fw1xV">https://t.co/Y37H2Fw1xV</a><br><br>So the above solution was nearly perfect but the "Edit in GitHub" button disappeared and I should have predicted this because if you call the githubLinks middleware before layouts, we won't be able to inject the button since the footer is in the layout 🤦🏾‍♂️
 
-If you enjoyed this thread:
+I'm going to bed...<br><br>Okay fine, I couldn't sleep because of this fix so I ended up researching on my phone about metalsmith - which is the static site generator being used here.
 
-1. Follow me @PragathR for more of these
-2. RT the tweet below to share this thread with folks following you 
+It turns out it has a bunch of plugin and the one responsible for turning about.html into about/index.html is...<br><br>the permalink plugin <a href="https://t.co/JG7qtSsi7h">https://t.co/JG7qtSsi7h</a><br><br>All I needed to do was to move the middleware calling that plugin after the one for both layouts and githubLinks and that solved it. <a href="https://t.co/KDVV7al4zK">https://t.co/KDVV7al4zK</a><br><br>Here is the navigation after the fix. <a href="https://t.co/X4YkTOHELI">https://t.co/X4YkTOHELI</a><br><br>Submitting a PR to suggest this change.
 
-Thank you for reading all the way through. <a href="https://t.co/p0KpKK0hpt">https://t.co/p0KpKK0hpt</a></p>
+<a href="https://t.co/etkciy54rL">https://t.co/etkciy54rL</a><br><br>Lessons: it was fun trying to figure out what was going on even though I have never used metalsmith before.
+
+I might have saved time by studying the metalsmith plugins but going down the rabbit hold and experimenting until I found a fix was exciting.<br><br>So I ended up working some more on the PR because a few pages were broken.
+
+I went with an earlier implementation that was removed a while a go(client-side JavaScript was needed to make it work)
+
+But let's see.<br><br>I'm quite interested in seeing how this can work without the client-side JavaScript and not traversing the locales/ folder without metalsmith.
+
+Interesting stuff.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Logical</a></li>
-<li><a href="#">Logical Operators</a></li>
-<li><a href="#">Nullish coalescing operator</a></li>
-<li><a href="#">Operator</a></li>
-<li><a href="#">misunderstood and underrated</a></li>
+								<li><a href="#">casually browsing</a></li>
+<li><a href="#">noticed</a></li>
+<li><a href="#">GitHub links</a></li>
+<li><a href="#">split the path</a></li>
+<li><a href="#">pages</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -293,7 +302,7 @@ Thank you for reading all the way through. <a href="https://t.co/p0KpKK0hpt">htt
       }
     </script>
 
-<!--2914269953059911851-->
+<!--8446907135742401851-->
 
   </body>
 
