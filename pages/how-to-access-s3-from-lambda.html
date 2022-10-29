@@ -5,21 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Top 10 CSS Cheat Sheets -
+    <meta name="description" content="How to access S3 from lambda in a VPC:
 
-Thread 🧵👇1. Htmlcheatsheet
-🔗 https://t.co/8XMrvxyFzg2. Stanford
-🔗 https://t.co/whJJ7wqzcr3. WebsiteSetup
-🔗 https://t.co/tk4ufkhv8L4. Codecademy
-🔗 https://t.co/SGjyHUOmbG5....">
+When your lambda is in a private...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Top 10 css cheat sheets -
+    <title>How to access s3 from lambda in a vpc:
 
- 🧵👇1. htmlcheatsheet
-🔗 https://t.co/8xmrvxyfzg2. stanford
-🔗...</title>
+when your...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,11 +79,9 @@ Thread 🧵👇1. Htmlcheatsheet
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Top 10 css cheat sheets -
+                <h2>How to access s3 from lambda in a vpc:
 
- 🧵👇1. htmlcheatsheet
-🔗 https://t.co/8xmrvxyfzg2. stanford
-🔗...</h2>
+when your...</h2>
               </div>
             </div>
           </div>
@@ -111,60 +103,87 @@ Thread 🧵👇1. Htmlcheatsheet
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Top 10 css cheat sheets -
+                      <span>How to access s3 from lambda in a vpc:
 
- 🧵👇1. htmlcheatsheet
-🔗 https://t.co/8xmrvxyfzg2. stanford
-🔗...</span>
-                      <a href="#"><h4>Top 10 CSS Cheat Sheets -
+when your...</span>
+                      <a href="#"><h4>How to access S3 from lambda in a VPC:
 
-Thread 🧵👇1. Htmlcheatsheet
-🔗 https://t.co/8XMrvxyFzg2. Stanford
-🔗 https://t.co/whJJ7wqzcr3. WebsiteSetup
-🔗 https://t.co/tk4ufkhv8L4. Codecademy
-🔗 https://t.co/SGjyHUOmbG5....</h4></a>
+When your lambda is in a private...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-29 07:15:52.699072</a></li>
 
                       </ul>
-                      <p>Top 10 CSS Cheat Sheets -
+                      <p>How to access S3 from lambda in a VPC:
 
-Thread 🧵👇<br><br>1. Htmlcheatsheet
-🔗 <a href="https://t.co/8XMrvxyFzg">https://t.co/8XMrvxyFzg</a><br><br>2. Stanford
-🔗 <a href="https://t.co/whJJ7wqzcr">https://t.co/whJJ7wqzcr</a><br><br>3. WebsiteSetup
-🔗 <a href="https://t.co/tk4ufkhv8L">https://t.co/tk4ufkhv8L</a><br><br>4. Codecademy
-🔗 <a href="https://t.co/SGjyHUOmbG">https://t.co/SGjyHUOmbG</a><br><br>5. Hostinger
-🔗 <a href="https://t.co/LwGdAN4MuQ">https://t.co/LwGdAN4MuQ</a><br><br>6. Lesliefranke
-🔗 <a href="https://t.co/giYfo1nLXm">https://t.co/giYfo1nLXm</a><br><br>7. Devhints
-🔗 <a href="https://t.co/eSUdw9QLty">https://t.co/eSUdw9QLty</a><br><br>8. OverAPI
-🔗 <a href="https://t.co/HCYudG78mv">https://t.co/HCYudG78mv</a><br><br>9. Toptal's
+When your lambda is in a private subnet in a VPC, you'll not be having internet connectivity, by default.
 
-🔗 <a href="https://t.co/QU0CpqYhM2">https://t.co/QU0CpqYhM2</a><br><br>10. Lighthouselabs
-🔗 <a href="https://t.co/IUuKVCZAKB">https://t.co/IUuKVCZAKB</a><br><br>If you enjoyed reading this thread, please do the following: 
-1. Like the thread❤️
-2. Retweet the first tweet.🔃
-3. Follow me and enable notifications: ✅
-@CodeMarch
-Thank you for reading all the way through.<br><br>✨ JavaScript for Starters: The Complete Guide ✨
+When you try to connect to AWS S3, you'll not be able to connect from lambda.
 
-➱ JavaScript Roadmap 2022
-➱ JavaScript Fundamentals with Exp.
-➱ 50+ Programs to practice with Soln.
-➱ 50+ Project Ideas
-➱ 25+ Projects Code
+However, there are few ways to connect 🧵 👇 <a href="https://t.co/ZzypIdiuZi">https://t.co/ZzypIdiuZi</a><br><br>At high level, there are 3 ways to connect to AWS S3 service from  lambda(which is in private subnet)
 
-Grab it NOW. <a href="https://t.co/Ao0UaMFxHz">https://t.co/Ao0UaMFxHz</a></p>
+• Using NAT Gateway
+• Using Gateway Endpoint
+• Using Interface Endpoint
+
+Let's discuss each one of these options with pros and cons<br><br>𝐍𝐀𝐓 𝐆𝐚𝐭𝐞𝐰𝐚𝐲:
+
+NAT Gateway provides outbound internet access from your private subnet in a VPC through Internet Gateway. <a href="https://t.co/MjH7zW6iyx">https://t.co/MjH7zW6iyx</a><br><br>If you're using AWS CDK, you can use below code snippet to create VPC with NAT Gateway.
+
+We're creating 2 subnets - private ( `PRIVATE_WITH_EGRESS` means private subnet with access to NAT gateway) and public subnet <a href="https://t.co/HFDFg4jBXk">https://t.co/HFDFg4jBXk</a><br><br>When you're creating lambda, you need to mention the subnet in which our lambda will be hosted.
+
+In below code snippet, we're choosing subnet based on subnet type. <a href="https://t.co/QsBBOpGxDB">https://t.co/QsBBOpGxDB</a><br><br>Pros of using NAT Gateway:
+
+• Architecture is simple
+• If lambda accesses any other public APIs, you'll be able to do that too
+
+Cons:
+
+• Managed NAT Gateway is costlier. Pay for every hour.
+• NAT Gateway is resilient to availability zone - each AZ should have its own NAT GW.<br><br>𝐆𝐚𝐭𝐞𝐰𝐚𝐲 𝐄𝐧𝐝𝐩𝐨𝐢𝐧𝐭:
+
+Instead of NAT Gateway, we can use Gateway Endpoint to access S3 service.
+
+Gateway endpoint will update the `Route Table` of the subnet with prefix list so that VPC router can route to S3 service without going to the public internet. <a href="https://t.co/CPWuCRbpMg">https://t.co/CPWuCRbpMg</a><br><br>If you're using AWS CDK, you can create Gateway endpoint like this.
+
+We've created only 1 subnet - `PRIVATE_ISOLSATED` - which means no inbound or outbound public internet connectivity.
+
+And, you need to mention the private subnet, when creating lambda <a href="https://t.co/E6WoPKtu5g">https://t.co/E6WoPKtu5g</a><br><br>Pros of using Gateway endpoint:
+
+• No NAT Gateways and hence brings down the total cost
+• Gateway endpoints are free
+• Your network traffic remains with in AWS network
+
+Cons:
+
+• No public internet - can't access external public APIs
+• Doesn't allow from on premise network<br><br>𝐈𝐧𝐭𝐞𝐫𝐟𝐚𝐜𝐞 𝐄𝐧𝐝𝐩𝐨𝐢𝐧𝐭:
+
+Interface endpoint can also connect to AWS service(S3 in this case) without using NAT Gateway just like Gateway endpoint. But the way it is implemented is different.
+
+Internally, Interface endpoint uses PrivateLink.<br><br>The primary purpose of `private link` is to establish private connectivity between VPC and AWS services and it does so by creating tunnel.
+
+Below is the high level architecture diagram <a href="https://t.co/8mt1vCGWIb">https://t.co/8mt1vCGWIb</a><br><br>We create VPC with only 1 subnet as we did for Gateway Endpoint
+
+And, we create interface endpoint as below(using AWS CDK) <a href="https://t.co/IPhguTCK4P">https://t.co/IPhguTCK4P</a><br><br>Interface endpoints provide regional and zonal endpoint entries.
+
+The difference between regional and zonal dns endpoint is that zonal endpoint would have availability zone information too in addition to AWS region, VPC endpoint ID etc.. <a href="https://t.co/1nevpOE6qE">https://t.co/1nevpOE6qE</a><br><br>Below is the code for getting primary DNS name from DNS entries <a href="https://t.co/zRcN26AnuC">https://t.co/zRcN26AnuC</a><br><br>The primary DNS name that we got from previous step would look like `<a href=".vpce-1a2b3c4d-5e6f.s3.us-east-1.vpce.amazonaws.com">.vpce-1a2b3c4d-5e6f.s3.us-east-1.vpce.amazonaws.com</a>` . Just replace the `*` with the word `bucket`. This would be DNS endpoint for connecting to S3 using interface endpoint ( which in turn uses PrivateLink)<br><br>The important thing to note when writing lambda is that you need to use this endpoint when creating S3 client.
+
+Otherwise, your lambda task will be timed out after sometime as it wouldn't know how to connect to S3 service. <a href="https://t.co/sHlkBUNTka">https://t.co/sHlkBUNTka</a><br><br>If you like this thread, please follow me @MugilanRagu
+
+I've written detailed article on this same topic here. Please have a look.
+
+<a href="https://t.co/7MjrZVIEV6">https://t.co/7MjrZVIEV6</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">CSS Cheat Sheets</a></li>
-<li><a href="#">CSS Cheat</a></li>
-<li><a href="#">Cheat Sheets</a></li>
-<li><a href="#">Top</a></li>
-<li><a href="#">CSS</a></li>
+								<li><a href="#">NAT Gateway</a></li>
+<li><a href="#">Gateway</a></li>
+<li><a href="#">Gateway Endpoint</a></li>
+<li><a href="#">Managed NAT Gateway</a></li>
+<li><a href="#">NAT</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -326,7 +345,7 @@ Grab it NOW. <a href="https://t.co/Ao0UaMFxHz">https://t.co/Ao0UaMFxHz</a></p>
       }
     </script>
 
-<!--1217574326452422851-->
+<!--2538078203318212851-->
 
   </body>
 

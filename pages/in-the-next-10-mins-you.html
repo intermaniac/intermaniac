@@ -5,21 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Top 10 CSS Cheat Sheets -
+    <meta name="description" content="In the next 10 mins you'll learn/relearn Javascript prototypes.
 
-Thread 🧵👇1. Htmlcheatsheet
-🔗 https://t.co/8XMrvxyFzg2. Stanford
-🔗 https://t.co/whJJ7wqzcr3. WebsiteSetup
-🔗 https://t.co/tk4ufkhv8L4. Codecademy
-🔗 https://t.co/SGjyHUOmbG5....">
+-Thread-Also it may be obvious, but still,...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Top 10 css cheat sheets -
+    <title>In the next 10 mins you'll learn/relearn javascript prototypes.
 
- 🧵👇1. htmlcheatsheet
-🔗 https://t.co/8xmrvxyfzg2. stanford
-🔗...</title>
+--also it...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,11 +79,9 @@ Thread 🧵👇1. Htmlcheatsheet
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Top 10 css cheat sheets -
+                <h2>In the next 10 mins you'll learn/relearn javascript prototypes.
 
- 🧵👇1. htmlcheatsheet
-🔗 https://t.co/8xmrvxyfzg2. stanford
-🔗...</h2>
+--also it...</h2>
               </div>
             </div>
           </div>
@@ -111,60 +103,72 @@ Thread 🧵👇1. Htmlcheatsheet
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Top 10 css cheat sheets -
+                      <span>In the next 10 mins you'll learn/relearn javascript prototypes.
 
- 🧵👇1. htmlcheatsheet
-🔗 https://t.co/8xmrvxyfzg2. stanford
-🔗...</span>
-                      <a href="#"><h4>Top 10 CSS Cheat Sheets -
+--also it...</span>
+                      <a href="#"><h4>In the next 10 mins you'll learn/relearn Javascript prototypes.
 
-Thread 🧵👇1. Htmlcheatsheet
-🔗 https://t.co/8XMrvxyFzg2. Stanford
-🔗 https://t.co/whJJ7wqzcr3. WebsiteSetup
-🔗 https://t.co/tk4ufkhv8L4. Codecademy
-🔗 https://t.co/SGjyHUOmbG5....</h4></a>
+-Thread-Also it may be obvious, but still,...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-29 07:15:52.699072</a></li>
 
                       </ul>
-                      <p>Top 10 CSS Cheat Sheets -
+                      <p>In the next 10 mins you'll learn/relearn Javascript prototypes.
 
-Thread 🧵👇<br><br>1. Htmlcheatsheet
-🔗 <a href="https://t.co/8XMrvxyFzg">https://t.co/8XMrvxyFzg</a><br><br>2. Stanford
-🔗 <a href="https://t.co/whJJ7wqzcr">https://t.co/whJJ7wqzcr</a><br><br>3. WebsiteSetup
-🔗 <a href="https://t.co/tk4ufkhv8L">https://t.co/tk4ufkhv8L</a><br><br>4. Codecademy
-🔗 <a href="https://t.co/SGjyHUOmbG">https://t.co/SGjyHUOmbG</a><br><br>5. Hostinger
-🔗 <a href="https://t.co/LwGdAN4MuQ">https://t.co/LwGdAN4MuQ</a><br><br>6. Lesliefranke
-🔗 <a href="https://t.co/giYfo1nLXm">https://t.co/giYfo1nLXm</a><br><br>7. Devhints
-🔗 <a href="https://t.co/eSUdw9QLty">https://t.co/eSUdw9QLty</a><br><br>8. OverAPI
-🔗 <a href="https://t.co/HCYudG78mv">https://t.co/HCYudG78mv</a><br><br>9. Toptal's
+-Thread-<br><br>Also it may be obvious, but still, there can be only one [[Prototype]]. An object may not inherit from two others.
 
-🔗 <a href="https://t.co/QU0CpqYhM2">https://t.co/QU0CpqYhM2</a><br><br>10. Lighthouselabs
-🔗 <a href="https://t.co/IUuKVCZAKB">https://t.co/IUuKVCZAKB</a><br><br>If you enjoyed reading this thread, please do the following: 
-1. Like the thread❤️
-2. Retweet the first tweet.🔃
-3. Follow me and enable notifications: ✅
-@CodeMarch
-Thank you for reading all the way through.<br><br>✨ JavaScript for Starters: The Complete Guide ✨
+Please note that __proto__ is not the same as the internal [[Prototype]] property. 
 
-➱ JavaScript Roadmap 2022
-➱ JavaScript Fundamentals with Exp.
-➱ 50+ Programs to practice with Soln.
-➱ 50+ Project Ideas
-➱ 25+ Projects Code
+__proto__ just a getter/setter for [[Prototype]].<br><br>Now, [[Prototype]] works differently with functions.
 
-Grab it NOW. <a href="https://t.co/Ao0UaMFxHz">https://t.co/Ao0UaMFxHz</a></p>
+All functions in javascript comes with a default property attached with it, F.prototype. 
+
+This default ".prototype" property points to an object with the only property "constructor" which points back to the function itself. <a href="https://t.co/Et6xNiUYNt">https://t.co/Et6xNiUYNt</a><br><br>Remember, a new object can also be created using the constructor function, like new F().
+
+When you use the new keyword to create an object, the new operator uses this F.prototype to set [[Prototype]] for the new object. <a href="https://t.co/snPXhPhszy">https://t.co/snPXhPhszy</a><br><br>Note: In the case of Object, we used __proto__ to set the [[Prototype]]. 
+
+In case of functions, objects created using the new keywords use the F.prototype property of the constructor function to set its [[Prototype]] by default. <a href="https://t.co/cpsOEJtVrt">https://t.co/cpsOEJtVrt</a><br><br>It's needless to say that you can still uses the __proto__ to set the [[Prototype]] but with using the new keyword and the language default support to set the F.prototype to [[Prototype]] it becomes unnecessary. <a href="https://t.co/hJNpz5vxNM">https://t.co/hJNpz5vxNM</a><br><br>F.prototype property is only used when new F() is called.
+
+If, after the creation, F.prototype property changes (F.prototype = &lt;another object&gt;), then new objects created by new F will have another object as [[Prototype]], but already existing objects keep the old one. <a href="https://t.co/Zn5hNYhCfu">https://t.co/Zn5hNYhCfu</a><br><br>The most important thing about "constructor" is that Javascript itself does not ensure the right "constructor" value.
+
+Yes, it exists in the default "prototype" for functions, but that’s all. What happens with it later – is totally on us.<br><br>In particular, if we replace the default prototype as a whole, then there will be no "constructor" in it.
+
+For instance: <a href="https://t.co/0lCHvI8Rmj">https://t.co/0lCHvI8Rmj</a><br><br>So, to keep the right "constructor" we can choose to add/remove properties to the default "prototype" instead of overwriting it as a whole: <a href="https://t.co/9jJnzTeoV7">https://t.co/9jJnzTeoV7</a><br><br>Or, alternatively, recreate the constructor property manually: <a href="https://t.co/WDDUZcjvSh">https://t.co/WDDUZcjvSh</a><br><br>Native prototype
+
+The "prototype" property is widely used by the core of Javascript itself. 
+All built-in constructor functions use it.
+
+When  a new Object() is called or (object literal is used {...} to create a new object).<br><br>The hidden property [[Prototype]] of this newly created object is set to Object.prototype. <a href="https://t.co/nTUAzz9FZf">https://t.co/nTUAzz9FZf</a><br><br>Similar thing happens when you create a new array using the constructor function new Array or simply create a array like this (let arr = []).
+
+The newly created arr inherit from Array.prototype which in turn inherit from Object.prototype. <a href="https://t.co/hMLZamAuUR">https://t.co/hMLZamAuUR</a><br><br>All functions inherit from Function.prototype, which in turn again inherit from Object.prototype. 
+
+This is the reason you've access to .call, .bind etc for functions, and have access to .map, .reduce etc for arrays. <a href="https://t.co/I0skj2HRSM">https://t.co/I0skj2HRSM</a><br><br>Below is what happens when you create a custom object using the constructor function(using new F()) <a href="https://t.co/P8q5jh3yeF">https://t.co/P8q5jh3yeF</a><br><br>Here's an example of function inheritance in Javascript.
+This is what happens behind the scene <a href="https://t.co/ubJdtINzIK">https://t.co/ubJdtINzIK</a><br><br>Here's the default prototype chain provided by Javascript.
+Arrays, Functions, Strings, Numbers, and all the built in type inherit from Object.prototype, which in turn inherit from null at the top. <a href="https://t.co/R66DRhEu40">https://t.co/R66DRhEu40</a><br><br>To quickly recap:
+
+[[Prototype]] - a hidden reference to another object
+
+__proto__ - used to set/get  [[Prototype]] of an Object
+
+prototype - the actual object to which [[Prototype]] references, used for inheritance.<br><br>F.prototype - property with function, used to set prototype of objects created using the new keyword
+
+Native.prototype - builtin prototype object, widely used by the core of javascript itself<br><br>That's a wrap for now. 
+
+I hope you learned/revised something today. 
+
+Make sure to visit my profile and go over my other posts. 
+If you like what you see, don't hesitate to follow and retweet.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">CSS Cheat Sheets</a></li>
-<li><a href="#">CSS Cheat</a></li>
-<li><a href="#">Cheat Sheets</a></li>
-<li><a href="#">Top</a></li>
-<li><a href="#">CSS</a></li>
+								<li><a href="#">Prototype</a></li>
+<li><a href="#">object</a></li>
+<li><a href="#">F.prototype</a></li>
+<li><a href="#">relearn Javascript prototypes</a></li>
+<li><a href="#">constructor</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -326,7 +330,7 @@ Grab it NOW. <a href="https://t.co/Ao0UaMFxHz">https://t.co/Ao0UaMFxHz</a></p>
       }
     </script>
 
-<!--1217574326452422851-->
+<!--3137197263881522851-->
 
   </body>
 
