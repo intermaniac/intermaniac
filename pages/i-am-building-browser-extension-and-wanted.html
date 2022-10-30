@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="I am building browser extension and wanted to use #Svelte for that.
+
+But it turned out...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>I am building browser extension and wanted to use #svelte...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>I am building browser extension and wanted to use #svelte...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +99,64 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>I am building browser extension and wanted to use #svelte...</span>
+                      <a href="#"><h4>I am building browser extension and wanted to use #Svelte for that.
+
+But it turned out...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-30 07:15:34.910301</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>I am building browser extension and wanted to use #Svelte for that.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/aY87HUDCNQ">https://t.co/aY87HUDCNQ</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJEvHE">https://t.co/dgeRFJEvHE</a></p>
+But it turned out to be harder than I expected! 
+Chrome content scripts API doesn't allow using #JavaScript modules by default. 
+
+Here is how I made my extension to run (almost) completely with Svelte 🧵: <a href="https://t.co/XBweRSXG2o">https://t.co/XBweRSXG2o</a><br><br>Default Svelte setup produces set of JS modules.
+
+When building extension, they are trivial to use for most cases, except content scripts. For example for rendering inline popups. 
+
+Instead, you need to specify ALL JS files in advance in manifest.json property.<br><br>Here is solution that worked for me:
+Using dynamic import API together + Web Accessible Resources. 
+
+Dynamic imports allow you to fetch JS modules in runtime with Promise friendly API <a href="https://t.co/xkLariT5i0">https://t.co/xkLariT5i0</a>
+
+You just need to specify public URL of your module to import it.<br><br>Also, you will need to use:
+
+chrome.runtime.getURL(relative JS module path)
+
+which generates extension URL for JS files to import into the content script. <a href="https://t.co/twWNelq2lI">https://t.co/twWNelq2lI</a>
+
+It will produce URL in this format
+chrome-extension://extension id/relative path you specified<br><br>As next step you allow JS modules generated for Svelte app to be dynamically imported.
+
+We need to set web_accessible_resources manifest property to declare resources to be exposed. 
+By default, extension resources can't be accessed outside of extension.
+
+<a href="https://t.co/PYelNSUeJr">https://t.co/PYelNSUeJr</a><br><br>Now it's time to put things together. 
+In content scripts manifest property include JS file that will 
+
+const path = chrome.runtime.getURL("app.js");
+const app = await import(path);
+app. run();
+
+If exported in web_accessible_resources, app.js should evaluate and run 🎉<br><br>app.js JS modules should work as usual. 
+There you can import and use framework for your choice. 
+
+There is good article which covers this process in more details by .@PerAsperaEU (some config values need to be updated to match chrome API)
+
+<a href="https://t.co/9hAQCGZP7D">https://t.co/9hAQCGZP7D</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Svelte</a></li>
+<li><a href="#">extension</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Default Svelte setup</a></li>
+<li><a href="#">building browser extension</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +318,7 @@
       }
     </script>
 
-<!--2147509150212552851-->
+<!--0679070194730842851-->
 
   </body>
 
