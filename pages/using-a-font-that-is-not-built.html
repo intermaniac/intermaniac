@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python Developer jobs.
-
-🧵👇1....">
+    <meta name="description" content="Using a font that is not built into operating systems can cause layout shifts and...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Using a font that is not built into operating systems...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Using a font that is not built into operating systems...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +97,61 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python Developer jobs.
-
-🧵👇1....</h4></a>
+                      <span>Using a font that is not built into operating systems...</span>
+                      <a href="#"><h4>Using a font that is not built into operating systems can cause layout shifts and...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-31 07:15:33.238828</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python Developer jobs.
+                      <p>Using a font that is not built into operating systems can cause layout shifts and significantly decrease user experience.
 
-🧵👇<br><br>1. Senior DevOps Engineer at @labelbox.
+Luckily - it's something rather easy to fix!
 
-A remote opportunity at a San Francisco-based Softbank-backed, fast-growing startup that has recently received a Series-D round of funding.
+🧵 Let's break this problem down and see how to solve it!
 
-Check out the job at: <a href="https://t.co/UPwvlDoQnl">https://t.co/UPwvlDoQnl</a><br><br>2. Python Developer at @_frndapp.
+#webperf #javascript<br><br>When you use a font that is not available in the operating system the browser has to download it.
 
-An in-office opportunity at a Bengaluru-based Krafton-backed, fast-growing startup that received a Series-A round of funding in 2021.
+This leads to one of two ways how it's handling the time between the page load and the font load:
 
-Check out the job at: <a href="https://t.co/82ZC9k1c0c">https://t.co/82ZC9k1c0c</a><br><br>3. Senior Software Engineer, Python (Backend) at @AssemblyAI.
+- Flash of Invisible Text (FOIC)
+- Flash of Unstyled Text (FOUC)<br><br>Flash of Invisible Text (FOIT)
 
-A remote opportunity at a San Francisco-based Insight Partners-backed, fast-growing startup that has recently received a Series-B round of funding.
+As the name suggests, FOIT happens when the browser waits for the desired font to be downloaded until displaying any text.
 
-Check out the job at: <a href="https://t.co/PY14UNfg7R">https://t.co/PY14UNfg7R</a><br><br>4. Senior Software Engineer - Search at @BenchSci.
+This method significantly decreases user experience when the network is slow and generally should be avoided. <a href="https://t.co/o0C8Qu9N1B">https://t.co/o0C8Qu9N1B</a><br><br>Instead its much better to display fallback font that is already available immediately and swap it with the desired one once it is available.
 
-A remote opportunity at a Toronto-based Inovia Capital- backed, fast-growing startup that has recently received a Series-C round of funding.
+This delivers a much better experience because users can see the text as soon as the page loads.<br><br>To prevent FOIT and fallback to system fonts, you should use a "font-display" property. 
 
-Check out the job at: <a href="https://t.co/H0Slc0tV6k">https://t.co/H0Slc0tV6k</a></p>
+It tells the browser how to handle the time between the page load and font load if the desired font is unavailable.
+
+The recommended "font-display" value for best performance is "optional". <a href="https://t.co/iG8JOHbQGE">https://t.co/iG8JOHbQGE</a><br><br>This is not solving the whole problem, though!
+
+In many (almost every) cases, the fallback font occupies a different amount of space than the desired font.
+
+This is exactly what causes FOUT and increases your Cumulative Layout Shift, one of the key performance metrics!<br><br>To deal with FOUT we have to ensure that the fallback font occupies exactly the same space as the desired font. This will require us to play with a few CSS properties.
+
+Doing it with *just* CSS can be a nightmare tho.<br><br>A tool called Font Matcher from Google engineer Monica Dinculescucan can save you hours of unpleasant work, tears, and meltdowns.
+
+<a href="https://t.co/GbYkcqOWrU">https://t.co/GbYkcqOWrU</a> <a href="https://t.co/ImQ8RKs9aN">https://t.co/ImQ8RKs9aN</a><br><br>It can get even easier!
+
+You can automate the whole process of generating the font fallback and required CSS classes by using  the amazing package from @danielcroe called Fontaine
+
+<a href="https://t.co/pwBXJJDARC">https://t.co/pwBXJJDARC</a><br><br>And if you're using @nuxtjs there is a Nuxt module in the making: 
+
+<a href="https://t.co/xl9zRLM4iN">https://t.co/xl9zRLM4iN</a>
+
+If you end up using the package don't forget to say something nice to Daniel (or sponsor him)!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python Developer</a></li>
-<li><a href="#">San Francisco-based Softbank-backed</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Python Developer jobs</a></li>
+								<li><a href="#">font</a></li>
+<li><a href="#">desired font</a></li>
+<li><a href="#">Flash of Invisible</a></li>
+<li><a href="#">Invisible Text</a></li>
+<li><a href="#">fallback font</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +313,7 @@ Check out the job at: <a href="https://t.co/H0Slc0tV6k">https://t.co/H0Slc0tV6k<
       }
     </script>
 
-<!--4145078549138672851-->
+<!--6330701471651962851-->
 
   </body>
 

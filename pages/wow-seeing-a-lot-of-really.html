@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring Python Developer jobs.
+    <meta name="description" content="Wow seeing a lot of really flawed criticisms of css in js.
 
-🧵👇1....">
+Ok here goes... 🧵"You...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Wow seeing a lot of really flawed criticisms of css...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Wow seeing a lot of really flawed criticisms of css...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +99,46 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring Python Developer jobs.
+                      <span>Wow seeing a lot of really flawed criticisms of css...</span>
+                      <a href="#"><h4>Wow seeing a lot of really flawed criticisms of css in js.
 
-🧵👇1....</h4></a>
+Ok here goes... 🧵"You...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-10-31 07:15:33.238828</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring Python Developer jobs.
+                      <p>Wow seeing a lot of really flawed criticisms of css in js.
 
-🧵👇<br><br>1. Senior DevOps Engineer at @labelbox.
+Ok here goes... 🧵<br><br>"You have to recompute styles every render"
 
-A remote opportunity at a San Francisco-based Softbank-backed, fast-growing startup that has recently received a Series-D round of funding.
+No you don't, use tagged template literals, they cache on first render.  Control dynamic behaviour with css vars and class names.<br><br>"Your bundle will be bigger"
 
-Check out the job at: <a href="https://t.co/UPwvlDoQnl">https://t.co/UPwvlDoQnl</a><br><br>2. Python Developer at @_frndapp.
+By the exact amount that your css bundle would be bigger except you're guaranteed to only get the styles that were actually used with css in js.
 
-An in-office opportunity at a Bengaluru-based Krafton-backed, fast-growing startup that received a Series-A round of funding in 2021.
+Also say good by to post css transitive dependency hell and massive build times...<br><br>"Your bundle will be bigger"
 
-Check out the job at: <a href="https://t.co/82ZC9k1c0c">https://t.co/82ZC9k1c0c</a><br><br>3. Senior Software Engineer, Python (Backend) at @AssemblyAI.
+And you're way more likely to ship dead styles in external stylesheets because it's not immediately obvious if they are used.<br><br>"The styles have to be parsed at runtime"
 
-A remote opportunity at a San Francisco-based Insight Partners-backed, fast-growing startup that has recently received a Series-B round of funding.
+When do you think stylesheets get parsed?<br><br>"But the styles have to be parsed after the component renders"
 
-Check out the job at: <a href="https://t.co/PY14UNfg7R">https://t.co/PY14UNfg7R</a><br><br>4. Senior Software Engineer - Search at @BenchSci.
+Yeah, but you're also only parsing a tiny subset of styles that were actually used instead of a massive style.css<br><br>I think there's bad ways to use css in js and really great ways.  And tailwind can be used effectively but often isn't.  And BEM is pointless when you've got scoped styles via CSS modules.
 
-A remote opportunity at a Toronto-based Inovia Capital- backed, fast-growing startup that has recently received a Series-C round of funding.
+All of the approaches have trade offs, I don't know why css in js gets all the hate.<br><br>My approach for CSS in JS.
 
-Check out the job at: <a href="https://t.co/H0Slc0tV6k">https://t.co/H0Slc0tV6k</a></p>
+- No interpolation, template literal is static
+- Use class names and css vars to control dynamic styles
+- Only use tagged template literals as they are cached after first run by reference<br><br>Additionally if your CSS in JS is static (no interpolations) its easy to replace with a stylesheet at build time.  So you can make that call later.  With tailwind and BEM you can't go backwards, you're all in from day one.<br><br>I've maintained big apps, with external stylesheets, tailwind and BEM and they all had drawbacks.  For my money CSS in JS is still the best approach for a lot of situations, but every app is different.  But wow so much FUD.<br><br>goodbye*</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring Python Developer</a></li>
-<li><a href="#">San Francisco-based Softbank-backed</a></li>
-<li><a href="#">fast-growing startup</a></li>
-<li><a href="#">Python Developer jobs</a></li>
+								<li><a href="#">css</a></li>
+<li><a href="#">styles</a></li>
+<li><a href="#">flawed criticisms</a></li>
+<li><a href="#">css vars</a></li>
+<li><a href="#">BEM</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +300,7 @@ Check out the job at: <a href="https://t.co/H0Slc0tV6k">https://t.co/H0Slc0tV6k<
       }
     </script>
 
-<!--4145078549138672851-->
+<!--5621908303898392851-->
 
   </body>
 
