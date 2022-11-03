@@ -5,17 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🧵 Here 17 Acronym you must know as developper!
+    <meta name="description" content="My goal for this weekend is to create a fully automated tweet.
 
-JSON → Javascript Object Notation
-
-PWA → Progressive Web...">
+i'm starting with some...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🧵 here 17 acronym you must know as developper!
-
-json → javascript...</title>
+    <title>My goal for this weekend is to create a fully...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,9 +77,7 @@ json → javascript...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🧵 here 17 acronym you must know as developper!
-
-json → javascript...</h2>
+                <h2>My goal for this weekend is to create a fully...</h2>
               </div>
             </div>
           </div>
@@ -105,64 +99,44 @@ json → javascript...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🧵 here 17 acronym you must know as developper!
+                      <span>My goal for this weekend is to create a fully...</span>
+                      <a href="#"><h4>My goal for this weekend is to create a fully automated tweet.
 
-json → javascript...</span>
-                      <a href="#"><h4>🧵 Here 17 Acronym you must know as developper!
-
-JSON → Javascript Object Notation
-
-PWA → Progressive Web...</h4></a>
+i'm starting with some...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-03 07:15:35.361600</a></li>
 
                       </ul>
-                      <p>🧵 Here 17 Acronym you must know as developper!
+                      <p>My goal for this weekend is to create a fully automated tweet.
 
-JSON → Javascript Object Notation
+i'm starting with some python knowledge and a little experience with API requests, but i believe the hardest part for me will be tackling the automation of oAuth.  
 
-PWA → Progressive Web App
+follow along on my weekend project. 🧵<br><br>Once you have your Keys and Tokens, there are several paths to get started.  
+Since my goal is to send a Tweet, let's take a look at the documentation for managing Tweets:
+<a href="https://t.co/87dXljn0JM">https://t.co/87dXljn0JM</a> <a href="https://t.co/3hoLLvauvH">https://t.co/3hoLLvauvH</a><br><br>Twitter offers a Graphical User Interface (GUI) for their APIs via the the API Explorer or API Playground (Live Request).  These GUIs can help us understand the API flow before we start writing code. 
+I sent the attached Tweet using the API Playground
+<a href="https://t.co/8t6aON0hIn">https://t.co/8t6aON0hIn</a> <a href="https://t.co/TeHSERaMUu">https://t.co/TeHSERaMUu</a><br><br>There are three main parts to this example Tweet.
+1)  The Endpoint. They serve as the recipient of your request, and Twitter has separated theirs by function.  Since I want to upload a Tweet, I use POST /2/Tweets.
+Check out the other Endpoints: <a href="https://t.co/YkptQ4V3E1">https://t.co/YkptQ4V3E1</a><br><br>2) Request Body.  This is where I put the data that I want Twitter to act on.  The data is JSON formatted and for a simple Tweet, I only need to supply one key-value pair.  The key: "text" is what I am tweeting and the value "This tweet was sent ..." is the value.<br><br>3) Response.  This is how the Twitter API reacts to my request.  Usually the response will let you know if your request succeeded or failed and may provide some additional data.  In my example, an additional "id" key-value was given to me.  This is the unique id for my tweet.<br><br>Here is an example of getting an error due to formatting.  I removed the double quotes from the VALUE in the request.  Doing so and running the request will give the following error. <a href="https://t.co/jMrpfMg6Fx">https://t.co/jMrpfMg6Fx</a><br><br>Now that I know tweeting via API is possible, I want to create my own python script to do it.
+First, I'm going to try using the example code from Twitter on their GitHub page
+<a href="https://t.co/zNkjL81cpY">https://t.co/zNkjL81cpY</a><br><br>I put in my API key and secret, and set my tweet to "test #3".  I run the script, but instead of the tweet just going through... it wants me to further Authorize this request. <a href="https://t.co/qzk5RIRvob">https://t.co/qzk5RIRvob</a><br><br>I'm not very familiar with this process, but this is called oAuth and as stated in the beginning, this will be my biggest hurdle.  Remember, I want this to be fully automatic.  But this example script is wanting me to go to a site, get a PIN, and put it back in the terminal. Boo<br><br>when i go to the website, I have to manually click "authorize app" and then the PIN is revealed. <a href="https://t.co/DlU9LykGzG">https://t.co/DlU9LykGzG</a><br><br>I copy and paste the PIN into my terminal and magic happens and the Tweet gets posted.
+<a href="https://t.co/Fdmoi6VVXJ">https://t.co/Fdmoi6VVXJ</a> <a href="https://t.co/ldjwj8E19w">https://t.co/ldjwj8E19w</a><br><br>I need to solve two things at this point.
+1) Automate this process so I don't have to click on anything or copy/paste PINS
+2) Dive deeper into what is being done so I can understand what is going on.  (note, this should be a by-product of completing task #1)<br><br>There's a bunch of hoops my tweet has to jump through.  I may be able to automate these jumps, which may end up being janky code, but i don't mind.  I start by reverse-engineering the final call made and i add a line of code to output my 'access token' and 'access token secret' <a href="https://t.co/PwwQJp7rbe">https://t.co/PwwQJp7rbe</a><br><br>i copy and paste the 'access token' and 'access token secret' and comment out all of the code that was used to find them.  i then declare these variables directly and run my script.  it worked!
+<a href="https://t.co/3Sh2iUTEYM">https://t.co/3Sh2iUTEYM</a> <a href="https://t.co/TmblTC28cy">https://t.co/TmblTC28cy</a><br><br>it's likely possible to create a semi automated tweet now.  i've skipped jumping through all of the hoops, but i believe the 'access token' and 'access token secret' have a two hour expiration.  so, once they expire, i'll need to go through the manual process again.<br><br>Okay... I may have gotten lucky.  It appears the access tokens do not expire.  This makes sense because of all the steps involved in getting them.  I am going to proceed with a little bit more oAuth education, but will assume that I don't have to renew my tokens. <a href="https://t.co/rpYbIZPl8J">https://t.co/rpYbIZPl8J</a><br><br>Success!  My first fully automated tweet is attached below.  I thought it was going to take me longer to get to this step, and as long as my access token doesn't expire as Twitter says it shouldn't, then everything should be good to go.  
 
-CDN → Content Delivery network
-
-SPA → Singe Page App
-
-#100DaysOfCode #codenewbies<br><br>1/2
-DRY → Don’t Repeat Yourself
-
-API → Application Programming Interface
-
-GUI → Gaphical User Interface
-
-MVP → Minimum Viable Product
-
-MERN → MongoDB Express React NodeJS
-
-MEVN → MongoDB Express VueJS NodeJS
-
-MVC → Model View Controller<br><br>2/2
-IDE → Integrated Development Environment
-
-OOP → Object Oriented Programming
-
-SDK → Software Development Kit
-
-REGEX → Regular expression
-
-SRP → Single Responsibility Principle
-
-CRUD → Create Read Update Delete</p>
+<a href="https://t.co/9tTcR8zTuq">https://t.co/9tTcR8zTuq</a><br><br>this is the final code.  pretty simple, right?  i just need my API keys from my dashboard and the Access Tokens from my earlier authentication. I transferred this code to my Raspberry Pi and set it to automatically run via crontab.  I scheduled it to run 40 minutes after the hour <a href="https://t.co/WZF6PuTreH">https://t.co/WZF6PuTreH</a><br><br>now that i have basic tweeting working, I'll be looking at some of the other API functionality and working on a bot that will show availability for Flipper Zero products<br><br>this project was highly inspired by @rpilocator.  If you're looking to pick up a raspberry pi, follow that account, because it tweets when a unit becomes available!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Progressive Web App</a></li>
-<li><a href="#">Web App CDN</a></li>
-<li><a href="#">Singe Page App</a></li>
-<li><a href="#">Javascript Object Notation</a></li>
-<li><a href="#">Object Notation PWA</a></li>
+								<li><a href="#">access token</a></li>
+<li><a href="#">tweet</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">API Playground</a></li>
+<li><a href="#">access token secret</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -324,7 +298,7 @@ CRUD → Create Read Update Delete</p>
       }
     </script>
 
-<!--4600429448755383851-->
+<!--4640365089737283851-->
 
   </body>
 
