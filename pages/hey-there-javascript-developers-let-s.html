@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hey there, JavaScript Developers😉🔥
+    <meta name="description" content="Hey there JavaScript Developers 👋
 
-Let's talk about the powerful Map method in depth.
-
-A Thread👇
-
-#100DaysOfCode #coding #programming...">
+Let's deep dive into the concept of Optional Chaining in JavaScipt....">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Hey there, javascript developers😉🔥
+    <title>Hey there javascript developers 👋
 
-let's talk about the powerful map method...</title>
+let's deep dive into the concept...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,9 +79,9 @@ let's talk about the powerful map method...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Hey there, javascript developers😉🔥
+                <h2>Hey there javascript developers 👋
 
-let's talk about the powerful map method...</h2>
+let's deep dive into the concept...</h2>
               </div>
             </div>
           </div>
@@ -107,54 +103,54 @@ let's talk about the powerful map method...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Hey there, javascript developers😉🔥
+                      <span>Hey there javascript developers 👋
 
-let's talk about the powerful map method...</span>
-                      <a href="#"><h4>Hey there, JavaScript Developers😉🔥
+let's deep dive into the concept...</span>
+                      <a href="#"><h4>Hey there JavaScript Developers 👋
 
-Let's talk about the powerful Map method in depth.
-
-A Thread👇
-
-#100DaysOfCode #coding #programming...</h4></a>
+Let's deep dive into the concept of Optional Chaining in JavaScipt....</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-10-31 07:15:33.238828</a></li>
+                        <li><a href="#">2022-11-04 07:15:36.835852</a></li>
 
                       </ul>
-                      <p>Hey there, JavaScript Developers😉🔥
+                      <p>Hey there JavaScript Developers 👋
 
-Let's talk about the powerful Map method in depth.
+Let's deep dive into the concept of Optional Chaining in JavaScipt. 
 
-A Thread👇
+With optional chaining, we can check to see if something exists and handle an error gracefully.
 
-#100DaysOfCode #coding #programming #web #webdev #javascript #javascriptmethod #map #frontend #backend<br><br>What is a Map?
+A Thread 👇
 
-A Map is a data structure that we can use to map values to keys just like an object. Any value (both objects and primitive values) may be used as either a key or a value.
+#100DaysOfCode #coding #programming #web #webdev #javascript<br><br>What the heck is Optional chaining? 🥴
 
-The map() method calls the provided function once for each element in an array, in order. <a href="https://t.co/qsiWzIr2n5">https://t.co/qsiWzIr2n5</a><br><br>Example- Let's say the restaurant has two locations.
+The optional chaining  " ?."   is a recent addition to the language which is a secure way to access nested object properties, even if an intermediate property doesn’t exist.<br><br>Optional chaining in JavaScript is very useful - we can access values without checking if the parent object exists. Instead of returning an error, it will return null or undefined.<br><br>The optional chaining ?. syntax has three forms:
 
-And calling the set method like this doesn't only update the map that is called on but it also returns the map. We can use this way to even chain set methods. <a href="https://t.co/qn5MvHW0va">https://t.co/qn5MvHW0va</a><br><br>Methods and properties are as follows:
+obj?.prop – returns obj.prop if obj exists, otherwise undefined.
 
-1️⃣ map.get(key)
+obj?.[prop] – returns obj[prop] if obj exists, otherwise undefined.
 
-To read the data from the map we use the get method. <a href="https://t.co/1tF7sLuZNU">https://t.co/1tF7sLuZNU</a><br><br>2️⃣ map.has(key)
+obj.method?.() – calls obj.method() if obj.method exists, otherwise returns undefined<br><br>Here's an example of a restaurant object on which we will check if a certain property exists or not with the help of Optional Chaining. <a href="https://t.co/SrkxGOpULQ">https://t.co/SrkxGOpULQ</a><br><br>⚡To understand the concept better let's have a look at a few of the use cases.
 
-We use this method to check if a map contains a certain key or not. Returns true if the key exists, false otherwise. <a href="https://t.co/4plTUG02VY">https://t.co/4plTUG02VY</a><br><br>3️⃣ map.delete(key)
+Let's see what happens if we try to access a property that doesn't exist without the use of optional chaining.
 
-This method removes the value by the key. <a href="https://t.co/qBpgDfQ3ck">https://t.co/qBpgDfQ3ck</a><br><br>4️⃣ map.clear()
+We get an error. That’s the expected result. JavaScript works like this. <a href="https://t.co/Fd2Iic4pgW">https://t.co/Fd2Iic4pgW</a><br><br>As restaurant.closingHours is undefined, an attempt to get restaurant.closingHours.mon.close fails with an error.
 
-This method removes everything from the map. <a href="https://t.co/CfmOBFWa2o">https://t.co/CfmOBFWa2o</a></p>
+⚡To avoid this error, we first need to check if this property exists<br><br>The obvious solution would be to check the value using "if" or the conditional operator " ? " , before accessing its property.
+It works, there’s no error. But it makes our code more unreadable and messier. <a href="https://t.co/DFiH0rCT8f">https://t.co/DFiH0rCT8f</a><br><br>⚡Now, let's attempt to access the property by using optional chaining.
+We see the code is short and clean, there’s no duplication at all. <a href="https://t.co/BupahKC63Q">https://t.co/BupahKC63Q</a><br><br>Note: Only if the property that is before ?. that's "mon" here exists then this "close" property will be read and if not then immediately undefined will be returned.
+
+Something “exists” here means if it’s not null and not undefined.<br><br>That's all folks. If you like my content please follow me @asquare7 so that you don't miss out on any future posts! And retweet this thread if you found it useful <a href="https://t.co/EPQTNXPhMe">https://t.co/EPQTNXPhMe</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">JavaScript Developers</a></li>
-<li><a href="#">Map</a></li>
-<li><a href="#">powerful Map method</a></li>
-<li><a href="#">method</a></li>
-<li><a href="#">Hey</a></li>
+								<li><a href="#">Optional Chaining</a></li>
+<li><a href="#">Optional</a></li>
+<li><a href="#">Chaining</a></li>
+<li><a href="#">JavaScript Developers</a></li>
+<li><a href="#">exists</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -316,7 +312,7 @@ This method removes everything from the map. <a href="https://t.co/CfmOBFWa2o">h
       }
     </script>
 
-<!--2950173138050992851-->
+<!--6473684286686014851-->
 
   </body>
 

@@ -5,15 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Become a Google Certified Data Scientist by spending $0 
+    <meta name="description" content="Continuing the story about 𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀
 
-Free Certification Courses in Data Science...">
+I'll use SQL Server for the example because it's...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Become a google certified data scientist by spending $0 
+    <title>Continuing the story about 𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀
 
-free...</title>
+i'll use sql server...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@ free...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Become a google certified data scientist by spending $0 
+                <h2>Continuing the story about 𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀
 
-free...</h2>
+i'll use sql server...</h2>
               </div>
             </div>
           </div>
@@ -103,44 +103,77 @@ free...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Become a google certified data scientist by spending $0 
+                      <span>Continuing the story about 𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀
 
-free...</span>
-                      <a href="#"><h4>Become a Google Certified Data Scientist by spending $0 
+i'll use sql server...</span>
+                      <a href="#"><h4>Continuing the story about 𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀
 
-Free Certification Courses in Data Science...</h4></a>
+I'll use SQL Server for the example because it's...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-04 07:15:36.835852</a></li>
 
                       </ul>
-                      <p>Become a Google Certified Data Scientist by spending $0 
+                      <p>Continuing the story about 𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀
 
-Free Certification Courses in Data Science using Python from Google. 
+I'll use SQL Server for the example because it's specific for every database.
 
-A Thread 🧵👇<br><br>1. Learn Python basics for data analysis 
+Roughly speaking, the Query Optimizer takes a SQL query and produces a "good enough" execution plan.
 
-<a href="https://t.co/HR9Pansmrb">https://t.co/HR9Pansmrb</a><br><br>2. Data Science Foundations
+1/6 🧵<br><br>We'll talk about what "good enough" means in just a moment.
 
-<a href="https://t.co/5oAhoG1yAL">https://t.co/5oAhoG1yAL</a><br><br>3. Data Science with Python 
+There are a few optimization phases:
+• 𝗦𝗶𝗺𝗽𝗹𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻
+• 𝗧𝗿𝗶𝘃𝗶𝗮𝗹 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻
+• 𝗙𝘂𝗹𝗹 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻
 
-<a href="https://t.co/QGT9NqbuVc">https://t.co/QGT9NqbuVc</a><br><br>4. Machine Learning Crash Course 
+2/6 🧵<br><br>Simplification
 
-<a href="https://t.co/kpszquAJFe">https://t.co/kpszquAJFe</a><br><br>Finally, I would like to thank @Nilofer_tweets for sharing these resources.<br><br>That's a wrap! 
+The Query Optimizer will rewrite the SQL query into a simpler form.
 
-Follow me for more such content. 
+Here are a few examples:
+• Nested queries converted to JOINs
+• Redundant JOINs eliminated
+• WHERE statement rearranged to fit a covering index
+• Contradiction is removed
 
-RT this tweet to share with your friends.</p>
+3/6 🧵<br><br>Trivial Optimization
+
+The Query Optimization process is expensive, so it doesn't run for trivial SQL queries.
+
+For example:
+
+𝚂𝙴𝙻𝙴𝙲𝚃 * 𝙵𝚁𝙾𝙼 𝙿𝚘𝚜𝚝𝚜
+
+This query doesn't require full optimization, and an optimal execution plan can be found trivially.
+
+4/6 🧵<br><br>Full Optimization
+
+If the SQL query doesn't qualify for trivial optimization, we're out of luck.
+
+We have to run the full optimization process.
+
+The SQL Server query optimizer is a cost-based query optimizer.
+
+The Query Optimizer chooses the cheapest execution plan.
+
+5/6 🧵<br><br>This post is already getting too long, and I didn't even scratch the surface of the Full optimization process.
+
+I'll talk about the phases of the Full optimization process and how they work.
+
+Join me in a day or two for the next part of this series. 🔥
+
+6/6 🧵</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Google Certified Data</a></li>
-<li><a href="#">Certified Data Scientist</a></li>
-<li><a href="#">Free Certification</a></li>
-<li><a href="#">Google Certified</a></li>
-<li><a href="#">Scientist by spending</a></li>
+								<li><a href="#">𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀</a></li>
+<li><a href="#">𝗦𝗤𝗟 𝗤𝘂𝗲𝗿𝘆</a></li>
+<li><a href="#">𝗤𝘂𝗲𝗿𝘆 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿𝘀</a></li>
+<li><a href="#">Query Optimizer</a></li>
+<li><a href="#">Continuing the story</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -302,7 +335,7 @@ RT this tweet to share with your friends.</p>
       }
     </script>
 
-<!--3304049550786714851-->
+<!--6900096505502114851-->
 
   </body>
 

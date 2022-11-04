@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Become a Google Certified Data Scientist by spending $0 
-
-Free Certification Courses in Data Science...">
+    <meta name="description" content="At last I fixed/updated my Github action deploying my static blog to Github Pages. A...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Become a google certified data scientist by spending $0 
-
-free...</title>
+    <title>At last i fixed/updated my github action deploying my static...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +75,7 @@ free...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Become a google certified data scientist by spending $0 
-
-free...</h2>
+                <h2>At last i fixed/updated my github action deploying my static...</h2>
               </div>
             </div>
           </div>
@@ -103,44 +97,27 @@ free...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Become a google certified data scientist by spending $0 
-
-free...</span>
-                      <a href="#"><h4>Become a Google Certified Data Scientist by spending $0 
-
-Free Certification Courses in Data Science...</h4></a>
+                      <span>At last i fixed/updated my github action deploying my static...</span>
+                      <a href="#"><h4>At last I fixed/updated my Github action deploying my static blog to Github Pages. A...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-04 07:15:36.835852</a></li>
 
                       </ul>
-                      <p>Become a Google Certified Data Scientist by spending $0 
-
-Free Certification Courses in Data Science using Python from Google. 
-
-A Thread 🧵👇<br><br>1. Learn Python basics for data analysis 
-
-<a href="https://t.co/HR9Pansmrb">https://t.co/HR9Pansmrb</a><br><br>2. Data Science Foundations
-
-<a href="https://t.co/5oAhoG1yAL">https://t.co/5oAhoG1yAL</a><br><br>3. Data Science with Python 
-
-<a href="https://t.co/QGT9NqbuVc">https://t.co/QGT9NqbuVc</a><br><br>4. Machine Learning Crash Course 
-
-<a href="https://t.co/kpszquAJFe">https://t.co/kpszquAJFe</a><br><br>Finally, I would like to thank @Nilofer_tweets for sharing these resources.<br><br>That's a wrap! 
-
-Follow me for more such content. 
-
-RT this tweet to share with your friends.</p>
+                      <p>At last I fixed/updated my Github action deploying my static blog to Github Pages. A small thread 🧵to read if you wonder what is the pages-build-deployment (and are possibly annoyed by it) <a href="https://t.co/KpU6Gdyceh">https://t.co/KpU6Gdyceh</a><br><br>Originally (or at least when I started to use it), deploying a static website on Github pages consisted in pushing the HTML/CSS/JS on the gh-pages branch.<br><br>At first, I used Travis CI to build my Jekyll website and push it to the gh-pages branch because it was using some custom plugins, which was not supported in standard GH pages until Github Actions arrived.<br><br>Once Github Actions was there, I was able to build my Jekyll website with its custom plugins using docker. I moved from Travis because I wanted to add some Cloudflare cache reset and wanted to test GH actions <a href="https://t.co/QRm20lObQT">https://t.co/QRm20lObQT</a><br><br>Lately (well, a few months ago), I noticed a pages-build-deployment actions that was running once my own action finished. It was annoying because it was rebuilding my site and my cache cleaning was ineffective because done BEFORE actual deploy. <a href="https://t.co/tYjDCr2lCl">https://t.co/tYjDCr2lCl</a><br><br>I had no clue how to fixed that (and had other things to do than search for it 😅) but by chance, a few days ago I noticed a modification in the pages settings of my blog's Github repository that helped me solve my problem.<br><br>In the Pages settings of repository, you can choose between "Deploy from a branch" (that launches the pages-build-deployment action when there's a push on gh-pages branch) or (custom) Github Actions <a href="https://t.co/ysPHL1Sbgx">https://t.co/ysPHL1Sbgx</a><br><br>All I needed to do was to check "Github Actions" as deployment source and do in my custom action what is done the the pages-build-deployment action<br><br>As after enabling GH actions it shows a new one, I thought I had to set a specific Github action, but no. This mode just need that an action triggered when you want: when a push is done on may, on cron (schedule), or manually (workflow_dispatch) <a href="https://t.co/kC6dxMdGHE">https://t.co/kC6dxMdGHE</a><br><br>🚨 The GH pages documentation "Creating a custom GitHub Actions workflow to publish your site" is a good start BUT it's incomplete 🤦🏻‍♂️ <a href="https://t.co/TP4fyacOOw">https://t.co/TP4fyacOOw</a><br><br>Besides building the static websites there are 3 things to do when using Github Pages:
+📦 Packaging the build in a tar gz file 
+⬆️ Upload the package (artifact)
+🚀 Deploy it<br><br>📦Packaging and ⬆️ uploading the Github Pages artifact is quite simple if you use the upload-pages-artifact action <a href="https://t.co/7vX0x3fo8G">https://t.co/7vX0x3fo8G</a> <a href="https://t.co/0DF9eQSc2q">https://t.co/0DF9eQSc2q</a><br><br>To deploy, if you use the <a href="https://t.co/B7UADDQMNK">https://t.co/B7UADDQMNK</a> WITHOUT reading the full sample in the readme because you think you're smart you'll end with these errors about GITHUB_TOKEN and empty URL <a href="https://t.co/sHA0r6jytE">https://t.co/sHA0r6jytE</a><br><br>Don't forget to configure the github token and everything will be fine. <a href="https://t.co/Z7i6nm5juH">https://t.co/Z7i6nm5juH</a><br><br>You'll find sample actions in the starter workflow repo but ATTENTION: don't use the jekyll-ghpages.yaml ones, it's outdated <a href="https://t.co/mlMscbTTTi">https://t.co/mlMscbTTTi</a> <a href="https://t.co/3hqiP8T57U">https://t.co/3hqiP8T57U</a><br><br>If you want another example of a Github Action deploying to Github Pages, here's the one I use <a href="https://t.co/nheTq49AbU">https://t.co/nheTq49AbU</a><br><br>Edit: It's me 😅, I didn't fully read a README file of the deploy Github action <a href="https://t.co/4bj8JnLIwC">https://t.co/4bj8JnLIwC</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Google Certified Data</a></li>
-<li><a href="#">Certified Data Scientist</a></li>
-<li><a href="#">Free Certification</a></li>
-<li><a href="#">Google Certified</a></li>
-<li><a href="#">Scientist by spending</a></li>
+								<li><a href="#">Github action deploying</a></li>
+<li><a href="#">Github Pages</a></li>
+<li><a href="#">Github Actions</a></li>
+<li><a href="#">Github</a></li>
+<li><a href="#">deploy Github action</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -302,7 +279,7 @@ RT this tweet to share with your friends.</p>
       }
     </script>
 
-<!--3304049550786714851-->
+<!--8638377006480214851-->
 
   </body>
 
