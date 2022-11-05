@@ -5,12 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Time is an illusion, Unix time doubly so.
+
+A Twitter 🧵 coming live at you at...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Time is an illusion, unix time doubly so.
+
+a twitter 🧵...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +79,9 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Time is an illusion, unix time doubly so.
+
+a twitter 🧵...</h2>
               </div>
             </div>
           </div>
@@ -98,36 +103,85 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Time is an illusion, unix time doubly so.
+
+a twitter 🧵...</span>
+                      <a href="#"><h4>Time is an illusion, Unix time doubly so.
+
+A Twitter 🧵 coming live at you at...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-05 07:15:32.601112</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Time is an illusion, Unix time doubly so.
 
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/Jhyd7liXuY">https://t.co/Jhyd7liXuY</a>
+A Twitter 🧵 coming live at you at a palindromic 1666666661...<br><br>Btw, sometimes you see a tm_sec range going up to 11, I mean 61:
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>The Python Developer Essentials 2022 Immersive Bootcamp: 
-<a href="https://t.co/1UjEwdAN8Q">https://t.co/1UjEwdAN8Q</a><br><br>Learn Android Hacking For Beginners: 
-<a href="https://t.co/7Syp5FFjCv">https://t.co/7Syp5FFjCv</a><br><br>Climate Change explained: Causes, consequences and solutions: 
-<a href="https://t.co/zYbee8Iiur">https://t.co/zYbee8Iiur</a><br><br>CSS, JavaScript,PHP And Python Programming All in One Course: 
-<a href="https://t.co/9Kbwxkuh9z">https://t.co/9Kbwxkuh9z</a></p>
+int tm_sec; /* seconds after the minute [0-61] */
+
+In an early ISO C standard, the possibility of two leap seconds with a year was erroneously interpreted as a "double leap second". Alas, there's no such thing.<br><br>Oh, hey, looking at the struct tm fields and their ranges also reminds me of this fun little fact:
+
+POSIX explicitly says that values outside of those ranges are ok. Cool, cool, but what does that mean in practice? <a href="https://t.co/t8DlJo5ouQ">https://t.co/t8DlJo5ouQ</a><br><br>That's right: values are normalized, possibly cascading through:
+
+With tm_sec = 3785, (1h, 3m, 5s), we bump tm_min by 3, which bumps tm_hour by 1; 3600s bumps tm_hour once more and wraps to 00, bumps tm_mday to wrap to 01 with tm_year incrementing, yielding 2023-01-01T00:00:05.<br><br>Back to time_t: Now ignoring leap seconds, the 32-bit time_t allows for roughly 136 years starting in 1970.
+
+Except, time_t is a _signed_ 32-bit integer, so we only get 68 years in either direction, leaving us with what you all know as the "Year 2038 Problem". <a href="https://t.co/PbO7HRGjSe">https://t.co/PbO7HRGjSe</a><br><br>The fix is easy: use a 64-bit time_t, and you get a max epoch of 2^63 -1 = 9223372036854775807.
+
+People are fond of observing that this represents a date 292 billion years in the future, roughly 22 times the age of the universe, and thus officially Somebody Else's Problem.<br><br>But let's see what actually happens when we display and set dates like that.
+
+Here are dates shown at or around the epoch: <a href="https://t.co/Fsx1y5ZYxd">https://t.co/Fsx1y5ZYxd</a><br><br>Probing the Y2038 problem shows that NetBSD, FreeBSD, macOS, and Linux all have no problem, but e.g., OmniOS doesn't like epoch dates &gt; 2147483647: <a href="https://t.co/7KwlqTBxRt">https://t.co/7KwlqTBxRt</a><br><br>I wonder what happens when we set the date... <a href="https://t.co/5dRo29xCNy">https://t.co/5dRo29xCNy</a><br><br>What about our other systems?
+
+NetBSD has no problem setting the date _to_ the epoch, but can't set it to _before_ the epoch.  Makes sense so far. <a href="https://t.co/2ysz0C8zhs">https://t.co/2ysz0C8zhs</a><br><br>On Linux, we find out that we can't set the date to _before the current uptime_.
+
+settimeofday(2) will return EINVAL, because of guarantees made by its "CLOCK_MONOTONIC" clock that "time returned by consecutive calls will not go backwards"
+
+<a href="https://t.co/sa7s7BGTSz">https://t.co/sa7s7BGTSz</a> <a href="https://t.co/TNwm2pkP57">https://t.co/TNwm2pkP57</a><br><br>But so what is the largest date we can set our clock to on systems that use a 64-bit time_t?
+
+As noted above, we'd expect to be able to set it to epoch 2^63 - 1 = 9223372036854775807.
+
+Let's first try to display that timestamp: <a href="https://t.co/umxnrbRCjZ">https://t.co/umxnrbRCjZ</a><br><br>Even though we were promised a 64-bit time_t, we max out at 67768036191676799 in the year 2,147,485,547, because even though the time_t is 64-bit, the struct tm's tm_year is still a signed 32-bit, and can only represent at most 2^31 = 2147483648.<br><br>Fun fact: FreeBSD... has a different cutoff epoch at 67767976233532799 or year 2147483647, which is 1900 years before 2^31. Perhaps FreeBSD bases its tm_year on the year 0 instead of 1900?
+
+(I really don't know, so I filed a bug: <a href="https://t.co/BQZaWxmwGs)">https://t.co/BQZaWxmwGs)</a><br><br>Ok, now trying to _set_ the date, we find we can't even get anywhere near that year 2^31 anyway!
+
+NetBSD maxes out at epoch 68719476736 in the year 4147, because it hardcodes the maximum value of tv_sec at 2^36:
+
+<a href="https://t.co/OAXlhjTsLR">https://t.co/OAXlhjTsLR</a> <a href="https://t.co/SkIDTMGwoO">https://t.co/SkIDTMGwoO</a><br><br>Linux has a _different_ max value, set in 2232, trying to ensure that a system can run for at least 30 years before wrapping its value:
+
+<a href="https://t.co/iz5LRBqGDv">https://t.co/iz5LRBqGDv</a> <a href="https://t.co/e4DffWw933">https://t.co/e4DffWw933</a><br><br>Wait a second... that means Linux doesn't limit time to _seconds_ but to _nanoseconds_ since the epoch.
+
+That brings the theoretical max KTIME_SEC_MAX to a mere 9223372036 epoch seconds; the date 2262-04-23T11:47:16, a far cry from "22 times the estimated age of the universe"...<br><br>Finally, on FreeBSD setting the time to epoch &gt;= 49282253052249598, it spontaneously reboots three seconds later.
+
+If I set the date to 1 second earlier, the system won't reboot, even as the time progresses beyond the next value. Aren't computers great?
+
+<a href="https://t.co/QCbQLSnkoB">https://t.co/QCbQLSnkoB</a> <a href="https://t.co/HXz6uD42EB">https://t.co/HXz6uD42EB</a><br><br>Oh, and one more thing:
+
+We all love how macOS is a UNIX(tm), right?
+
+One of only 6 operating systems currently registered, the others being
+- AIX
+- EulerOS (a commercial Linux distribution made by Huawei)
+- HP-UX
+- Xinuos (previously UnixWare via SCO, Novell etc.), and
+- z/OS<br><br>But Apple's Core Foundation framework does not use the Unix epoch as its basis for time. Instead, it uses 2001-01-01T00:00:00 GMT as it's reference date, i.e., epoch.
+
+<a href="https://t.co/Tk59NyiiJ2:">https://t.co/Tk59NyiiJ2:</a>
+
+To convert those timestamps into Unix epoch, you need to add 978307200.<br><br>Now look at that, is that the time? It's already way past my bedtime of 1666669372 - gotta go. ⌛️
+
+And if you hate scrolling though Twitter, here's a blog post version of this thread:
+
+<a href="https://t.co/hYxj6GPKR4">https://t.co/hYxj6GPKR4</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">Time</a></li>
+<li><a href="#">epoch</a></li>
+<li><a href="#">year</a></li>
+<li><a href="#">date</a></li>
+<li><a href="#">Unix time doubly</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +343,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--4644520429057184851-->
+<!--9026258524590474851-->
 
   </body>
 
