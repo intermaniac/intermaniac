@@ -5,19 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="5 CSS Properties that you may not be using.
-
-A Thread 👇
-
-#100DaysOfCode #coding #programming #web #webdev...">
+    <meta name="description" content="Why Javascript date implementation is outdated hot garbage (and why we need Temporal), a thread...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>5 css properties that you may not be using.
-
- 👇
-
-#100daysofcode...</title>
+    <title>Why javascript date implementation is outdated hot garbage (and why...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +75,7 @@ A Thread 👇
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>5 css properties that you may not be using.
-
- 👇
-
-#100daysofcode...</h2>
+                <h2>Why javascript date implementation is outdated hot garbage (and why...</h2>
               </div>
             </div>
           </div>
@@ -109,52 +97,35 @@ A Thread 👇
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>5 css properties that you may not be using.
-
- 👇
-
-#100daysofcode...</span>
-                      <a href="#"><h4>5 CSS Properties that you may not be using.
-
-A Thread 👇
-
-#100DaysOfCode #coding #programming #web #webdev...</h4></a>
+                      <span>Why javascript date implementation is outdated hot garbage (and why...</span>
+                      <a href="#"><h4>Why Javascript date implementation is outdated hot garbage (and why we need Temporal), a thread...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-06 07:15:34.344428</a></li>
 
                       </ul>
-                      <p>5 CSS Properties that you may not be using.
+                      <p>Why Javascript date implementation is outdated hot garbage (and why we need Temporal), a thread 🧵
 
-A Thread 👇
+#javascript #NodeJS #rant <a href="https://t.co/80soxSQmdg">https://t.co/80soxSQmdg</a><br><br>1) It was written in 1995 and based on Java's implementation. Except all of these methods where replaced in Java 1.1 two years later; it was that awful. Javascript didn't get the memo... <a href="https://t.co/NUItoIpE6y">https://t.co/NUItoIpE6y</a><br><br>2) The date object is mutable. This has unforseen consequences in which creating a new date object with the old one can still mutate the former one.
 
-#100DaysOfCode #coding #programming #web #webdev #html #css #webdesign #design #ui #frontend<br><br>1️⃣ Caret color
+<a href="https://t.co/OQPZDZ08Ef">https://t.co/OQPZDZ08Ef</a><br><br>3) No first-class support for time zones except local and UTC or support for non-gregorian calendars. So working with timezones can be a frustration to behold.<br><br>4) The date parser is broken. A date string without time specified will be interpreted as UTC. This again, can lead to some strange bugs as one expect both strings to be seen as local time.<br><br>5) Changing the Date implementation could break the internet. Javascript has been around since the 90's. So any #ECMAScript changes need to be compatible with existing behavior.
 
-The caret-color property specifies the color of the cursor (​caret) in inputs, textareas, or any element that is editable. <a href="https://t.co/stYWBr17DN">https://t.co/stYWBr17DN</a><br><br>2️⃣ Backface visibility
+And that is where Temporal comes in:<br><br>Temporal is an attempt to start anew with an easy to use API with first-class support for all time zones and support for non-gregorian calendars. It is the hero we need and deserve 🙌🏿.
 
-This property defines whether or not the back face of an element should be visible when facing the user. <a href="https://t.co/C1tafCe4at">https://t.co/C1tafCe4at</a><br><br>3️⃣ Tab-size
-
-This property specifies the width of a tab character.
-
-The default value for the tab-size property is 8 space characters, and it can accept any positive integer value. <a href="https://t.co/5RV1iBcXja">https://t.co/5RV1iBcXja</a><br><br>4️⃣ Isolation
-
-The isolation property defines whether an element must create a new stacking content.
-
-Stacking content refers to how elements on a webpage appear to sit on top of other elements. <a href="https://t.co/wLf2wdNlJZ">https://t.co/wLf2wdNlJZ</a><br><br>5️⃣ Resize 
-
-The resize property defines if and how an element is resizable by the user.
-
-The property does not apply to inline elements or to block elements where overflow="visible". <a href="https://t.co/SVZA1xfc1i">https://t.co/SVZA1xfc1i</a><br><br>That's all folks. If you like my content please follow me @asquare7 so that you don't miss out on any future posts! And retweet this thread if you found it useful <a href="https://t.co/kA2ueS0Xax">https://t.co/kA2ueS0Xax</a></p>
+Proposal:
+<a href="https://t.co/by8qA0XpEc">https://t.co/by8qA0XpEc</a>
+<a href="https://t.co/XPSnVuMFOf">https://t.co/XPSnVuMFOf</a><br><br>Credits to @maggiepint and her blog
+<a href="https://t.co/gVBiRn0lbO">https://t.co/gVBiRn0lbO</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">CSS Properties</a></li>
-<li><a href="#">property</a></li>
-<li><a href="#">Properties</a></li>
-<li><a href="#">property defines</a></li>
-<li><a href="#">CSS</a></li>
+								<li><a href="#">outdated hot garbage</a></li>
+<li><a href="#">hot garbage</a></li>
+<li><a href="#">outdated hot</a></li>
+<li><a href="#">date</a></li>
+<li><a href="#">based on Java</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -316,7 +287,7 @@ The property does not apply to inline elements or to block elements where overfl
       }
     </script>
 
-<!--4661006086204915851-->
+<!--6104588862433994851-->
 
   </body>
 

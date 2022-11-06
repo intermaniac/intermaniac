@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="5 CSS Properties that you may not be using.
+    <meta name="description" content="10+1 things you should know to achieve Multithreading in Python 👇
 
-A Thread 👇
+A thread about threading 🧵
 
-#100DaysOfCode #coding #programming #web #webdev...">
+#pythonlearning...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>5 css properties that you may not be using.
-
- 👇
-
-#100daysofcode...</title>
+    <title>10+1 things you should know to achieve multiing in python...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +79,7 @@ A Thread 👇
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>5 css properties that you may not be using.
-
- 👇
-
-#100daysofcode...</h2>
+                <h2>10+1 things you should know to achieve multiing in python...</h2>
               </div>
             </div>
           </div>
@@ -109,52 +101,86 @@ A Thread 👇
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>5 css properties that you may not be using.
+                      <span>10+1 things you should know to achieve multiing in python...</span>
+                      <a href="#"><h4>10+1 things you should know to achieve Multithreading in Python 👇
 
- 👇
+A thread about threading 🧵
 
-#100daysofcode...</span>
-                      <a href="#"><h4>5 CSS Properties that you may not be using.
-
-A Thread 👇
-
-#100DaysOfCode #coding #programming #web #webdev...</h4></a>
+#pythonlearning...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-06 07:15:34.344428</a></li>
 
                       </ul>
-                      <p>5 CSS Properties that you may not be using.
+                      <p>10+1 things you should know to achieve Multithreading in Python 👇
 
-A Thread 👇
+A thread about threading 🧵
 
-#100DaysOfCode #coding #programming #web #webdev #html #css #webdesign #design #ui #frontend<br><br>1️⃣ Caret color
+#pythonlearning #pythondeveloper #100DaysOfCode #100daysofcodechallenge #indiehackers <a href="https://t.co/boEfKecwKO">https://t.co/boEfKecwKO</a><br><br>1. Differentiate the two types of operations performing in Python:
 
-The caret-color property specifies the color of the cursor (​caret) in inputs, textareas, or any element that is editable. <a href="https://t.co/stYWBr17DN">https://t.co/stYWBr17DN</a><br><br>2️⃣ Backface visibility
+👉 I/O Bound operations:
+Such as downloading and Importing data. 
+Those use Multithreading.
 
-This property defines whether or not the back face of an element should be visible when facing the user. <a href="https://t.co/C1tafCe4at">https://t.co/C1tafCe4at</a><br><br>3️⃣ Tab-size
+👉 CPU Bound operations
+CPU Heavy operations such as resizing an image, or math logic. 
+Those use Multiprocessing.<br><br>2. Multithreading Vs Multiprocessing 
 
-This property specifies the width of a tab character.
+When we say: "Running parallel CPU Bound operations", we're saying MultiProcessing.
 
-The default value for the tab-size property is 8 space characters, and it can accept any positive integer value. <a href="https://t.co/5RV1iBcXja">https://t.co/5RV1iBcXja</a><br><br>4️⃣ Isolation
+When we say: "Running parallel I/O Bound operations", we're saying MultiThreading
 
-The isolation property defines whether an element must create a new stacking content.
+CPU Bound -&gt; Multiprocessing
+I/O Bound -&gt; MultiThreading<br><br>3. Python GIL - The infamous feature
 
-Stacking content refers to how elements on a webpage appear to sit on top of other elements. <a href="https://t.co/wLf2wdNlJZ">https://t.co/wLf2wdNlJZ</a><br><br>5️⃣ Resize 
+By default, python uses a single thread ran under the Python Global Interpreter Lock (GIL).
 
-The resize property defines if and how an element is resizable by the user.
+The GIL allows only a thread to hold the control of the Python interpreter. Hence, only one thread can be in a state of execution, any point in time.<br><br>4. Python GIL - Functioning:
 
-The property does not apply to inline elements or to block elements where overflow="visible". <a href="https://t.co/SVZA1xfc1i">https://t.co/SVZA1xfc1i</a><br><br>That's all folks. If you like my content please follow me @asquare7 so that you don't miss out on any future posts! And retweet this thread if you found it useful <a href="https://t.co/kA2ueS0Xax">https://t.co/kA2ueS0Xax</a></p>
+The Global Interpreter Lock states the rule:
+
+"The execution of any Python bytecode requires acquiring the interpreter lock."
+
+By doing that we're solving deadlocks while locking the different reference count variables.<br><br>5. The cons of the GIL in Python:
+
+Bytecode needs the interpreter code to execute, making any logic single-threaded.
+
+BUT:
+I/O operations spend part of their time waiting, giving the ability to share the GIL. 
+
+CPU-bound operations don't, hence they can't share the GIL.<br><br>6. Implementing Python Multithreading - Resolution queue:
+
+Import the built-in threading library and create a new thread (see code in the picture).
+
+You'll notice that the main thread will finish before the newly created one. 
+
+We're effectively making both threads independent <a href="https://t.co/KpmD4lgwyB">https://t.co/KpmD4lgwyB</a><br><br>7. Join two Python threads using .join()
+
+By adding the join() statement to the thread, we're waiting for the thread to resolve before proceeding with resolving the main thread. <a href="https://t.co/bXwxjcBlLm">https://t.co/bXwxjcBlLm</a><br><br>8. The concurrent.futures module
+
+The threading library is not the only way to handle multithreading.
+
+Another way is the concurrent.futures module, usually used along with a context manager.
+
+It creates a thread and returns a future object accessed via the .result() method <a href="https://t.co/WWw5RjBK6s">https://t.co/WWw5RjBK6s</a><br><br>9. Reading return values from threads in Python (while resolving)
+
+We create a context manager to handle the ThreadPoolExecutor() to then bind it to a function using the .submit() method. 
+
+We can use the as_completed() method to print values as they return. <a href="https://t.co/8k0BDqb2vz">https://t.co/8k0BDqb2vz</a><br><br>10. Reading return values from threads in Python (once resolved)
+
+Using .map() we can wait for all the threads to complete before handling their return values.
+
+The first argument is the function we want to bind, the second one is an iterable that assess how many times/threads. <a href="https://t.co/lE8u5dDbnh">https://t.co/lE8u5dDbnh</a><br><br>That's all folks. If you like my content please follow me @asquare7 so that you don't miss out on any future posts! And retweet this thread if you found it useful <a href="https://t.co/5RDwpGVYbY">https://t.co/5RDwpGVYbY</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">CSS Properties</a></li>
-<li><a href="#">property</a></li>
-<li><a href="#">Properties</a></li>
-<li><a href="#">property defines</a></li>
-<li><a href="#">CSS</a></li>
+								<li><a href="#">CPU Bound operations</a></li>
+<li><a href="#">Python</a></li>
+<li><a href="#">CPU Bound</a></li>
+<li><a href="#">MultiThreading CPU Bound</a></li>
+<li><a href="#">Bound operations</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -316,7 +342,7 @@ The property does not apply to inline elements or to block elements where overfl
       }
     </script>
 
-<!--4661006086204915851-->
+<!--2555145558262684851-->
 
   </body>
 
