@@ -5,15 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Top 10 Github Repositories to Learn Python
+    <meta name="description" content="What are media queries in CSS?
 
-According to Stackoverflow, Python is the most preferred language...">
+Here is a thread crash course 🙂
+
+A thread🧵 https://t.co/2CFKSk4KzQA media...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Top 10 github repositories to learn python
+    <title>What are media queries in css?
 
-according to stackoverflow, python...</title>
+here is  crash course...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +81,9 @@ according to stackoverflow, python...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Top 10 github repositories to learn python
+                <h2>What are media queries in css?
 
-according to stackoverflow, python...</h2>
+here is  crash course...</h2>
               </div>
             </div>
           </div>
@@ -103,52 +105,72 @@ according to stackoverflow, python...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Top 10 github repositories to learn python
+                      <span>What are media queries in css?
 
-according to stackoverflow, python...</span>
-                      <a href="#"><h4>Top 10 Github Repositories to Learn Python
+here is  crash course...</span>
+                      <a href="#"><h4>What are media queries in CSS?
 
-According to Stackoverflow, Python is the most preferred language...</h4></a>
+Here is a thread crash course 🙂
+
+A thread🧵 https://t.co/2CFKSk4KzQA media...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-07 07:15:35.235745</a></li>
 
                       </ul>
-                      <p>Top 10 Github Repositories to Learn Python
+                      <p>What are media queries in CSS?
 
-According to Stackoverflow, Python is the most preferred language which means that the majority of developers use python.
+Here is a thread crash course 🙂
 
-⇩🧵<br><br>1. The Algorithms
+A thread🧵 <a href="https://t.co/2CFKSk4KzQ">https://t.co/2CFKSk4KzQ</a><br><br>A media query is mostly composed of an optional media type and a number of expressions called media query feature expressions.
 
-GitHub Repo: <a href="https://t.co/YkVVfPiuw3">https://t.co/YkVVfPiuw3</a><br><br>2. vinta/awesome-python
+These expressions can be combined via logical operators.
 
-<a href="https://t.co/VM3q4XoWZc">https://t.co/VM3q4XoWZc</a><br><br>3. tensorflow/tensorflow
+I introduced two things above 👆🏾
 
-<a href="https://t.co/ZGVIKm49Ql">https://t.co/ZGVIKm49Ql</a><br><br>4. Project-Based Learning
+✅ Media type
+✅ Media features
 
-<a href="https://t.co/JFOoFcBOc2">https://t.co/JFOoFcBOc2</a><br><br>5. Python-programming-exercises
+Let’s break them down<br><br>Media type 👉🏾 you use this to define the category of devices for which the media query you are authoring will apply.
 
-<a href="https://t.co/7goOlErv6s">https://t.co/7goOlErv6s</a><br><br>6. learn-python
+The types are mostly all, print, and screen.
 
-<a href="https://t.co/rUwzQXjqRl">https://t.co/rUwzQXjqRl</a><br><br>7. learn-python3
+You can omit the media type because it will default to all.<br><br>Media features 👉🏾 This is used to describe a specific characteristic of the user agent e.g the browser.
 
-<a href="https://t.co/Wgk4rUwLaL">https://t.co/Wgk4rUwLaL</a><br><br>8. full-speed-python
+Common examples of media features are device-height, device-width, prefers-color-scheme(think dark and light mode).<br><br>For example, the width feature allows a media query to test against whether the user-agent is of a particular width and apply some styles at that constraint.<br><br>Let's touch on Logical operators. Logical operators are used to composing complex media queries. These operators are: not, and, and only.
 
-<a href="https://t.co/xMBd9vKd4N">https://t.co/xMBd9vKd4N</a><br><br>9. python_reference
+P.S: You can combine multiple media queries in a single rule by using commas to separate them.<br><br>How does a media query evaluate?
 
-<a href="https://t.co/W5tgyzhYWQ">https://t.co/W5tgyzhYWQ</a><br><br>10. Fucking Awesome Python
+So when you set a media query and the media features expressions, the styles in the media query will only apply if the conditions set in the media features evaluate to true i.e a device is matched.<br><br>Okay let's see some code snippets. We will start with the basic form of media query 👇🏾 <a href="https://t.co/iTPLCXnTAQ">https://t.co/iTPLCXnTAQ</a><br><br>You can see we are specifying a media type of screen signaling that this media query is targeted at  screen devices.<br><br>We can also have multiple media types and separate them by commas. <a href="https://t.co/WJxxs39SUW">https://t.co/WJxxs39SUW</a><br><br>Okay, now that's out of the way, let's look at targeting media features.
 
-<a href="https://t.co/3PEPdzSums">https://t.co/3PEPdzSums</a></p>
+This might not be familiar but you can target devices that have a mouse cursor like widescreen monitors <a href="https://t.co/huQkPXSeYr">https://t.co/huQkPXSeYr</a><br><br>So let's look at range features. Oh, we didn't cover that? Let's do it now 👇🏾
+
+Range features are media features you can prefix with a "min-" or "max-". This lets you express "minimum condition" or "maximum condition" constraints.
+
+Let's see an example 👇🏾<br><br>This example will target and apply styles only if the browsers' viewport width is equal to or narrower than 689px. <a href="https://t.co/xX3VsMOXaj">https://t.co/xX3VsMOXaj</a><br><br>So those are simple queries right? Let's look at some examples of complex queries
+
+Ah you can see we've stepped it up a notch with the and logical operators and the orientation media features checking if the device is on landscape. <a href="https://t.co/ozjrXnFOPR">https://t.co/ozjrXnFOPR</a><br><br>So we've been applying the queries to all devices, let's limit them to screen devices. <a href="https://t.co/JCVTjtB5wa">https://t.co/JCVTjtB5wa</a><br><br>So let's wrap up on some new syntax for range features because I think you will be working with ranges more.
+
+In Media Queries Level 4, there is a specification that makes writing range features simpler so instead of this 👇🏾 <a href="https://t.co/vE89I3r0ri">https://t.co/vE89I3r0ri</a><br><br>You can do this 👇🏾 <a href="https://t.co/BOaVZeTJle">https://t.co/BOaVZeTJle</a><br><br>If you want to specify min and max pre Media Queries Level 4, you write it like this 👇🏾 <a href="https://t.co/F2d6LAYIqi">https://t.co/F2d6LAYIqi</a><br><br>But with Media Queries Level 4 👇🏾
+Shorter right?
+
+Note Media Queries Level 4 specification has reasonable support in modern browsers but check out the browser compatibility table
+
+<a href="https://t.co/5bJUjxD9Fr">https://t.co/5bJUjxD9Fr</a> <a href="https://t.co/2rqeSRtEFO">https://t.co/2rqeSRtEFO</a><br><br>Okay, this is where we draw the curtain folks. I hope this thread has made you understand CSS media queries a little bit better.<br><br>I hope you've found this thread helpful.
+
+Follow me @Dominus_Kelvin for more.
+
+Like/Retweet the first tweet below if you can: <a href="https://t.co/PwQ5ikAvs3">https://t.co/PwQ5ikAvs3</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Repositories to Learn</a></li>
-<li><a href="#">Github Repositories</a></li>
-<li><a href="#">Algorithms GitHub Repo</a></li>
-<li><a href="#">Learn Python</a></li>
-<li><a href="#">preferred language</a></li>
+								<li><a href="#">media</a></li>
+<li><a href="#">Media Queries Level</a></li>
+<li><a href="#">media queries</a></li>
+<li><a href="#">media query</a></li>
+<li><a href="#">Media features</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -310,7 +332,7 @@ GitHub Repo: <a href="https://t.co/YkVVfPiuw3">https://t.co/YkVVfPiuw3</a><br><b
       }
     </script>
 
-<!--3766195407495325851-->
+<!--0029790032871535851-->
 
   </body>
 

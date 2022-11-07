@@ -5,15 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Top 10 Github Repositories to Learn Python
+    <meta name="description" content="The second most common AWS service to invoke Lambda functions is SQS
 
-According to Stackoverflow, Python is the most preferred language...">
+Learn the fundamentals, quirks...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Top 10 github repositories to learn python
-
-according to stackoverflow, python...</title>
+    <title>The second most common aws service to invoke lambda functions...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +77,7 @@ according to stackoverflow, python...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Top 10 github repositories to learn python
-
-according to stackoverflow, python...</h2>
+                <h2>The second most common aws service to invoke lambda functions...</h2>
               </div>
             </div>
           </div>
@@ -103,52 +99,64 @@ according to stackoverflow, python...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Top 10 github repositories to learn python
+                      <span>The second most common aws service to invoke lambda functions...</span>
+                      <a href="#"><h4>The second most common AWS service to invoke Lambda functions is SQS
 
-according to stackoverflow, python...</span>
-                      <a href="#"><h4>Top 10 Github Repositories to Learn Python
-
-According to Stackoverflow, Python is the most preferred language...</h4></a>
+Learn the fundamentals, quirks...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-07 07:15:35.235745</a></li>
 
                       </ul>
-                      <p>Top 10 Github Repositories to Learn Python
+                      <p>The second most common AWS service to invoke Lambda functions is SQS
 
-According to Stackoverflow, Python is the most preferred language which means that the majority of developers use python.
+Learn the fundamentals, quirks and solutions
 
-⇩🧵<br><br>1. The Algorithms
+🧵 👇<br><br>𝗪𝗵𝘆 𝘄𝗼𝘂𝗹𝗱 𝘆𝗼𝘂 𝗦𝗤𝗦 𝘄𝗶𝘁𝗵 𝗟𝗮𝗺𝗯𝗱𝗮?
 
-GitHub Repo: <a href="https://t.co/YkVVfPiuw3">https://t.co/YkVVfPiuw3</a><br><br>2. vinta/awesome-python
+SQS queue acts as intermediary between producer(Service A) and consumer (B)
 
-<a href="https://t.co/VM3q4XoWZc">https://t.co/VM3q4XoWZc</a><br><br>3. tensorflow/tensorflow
+So, when consumer goes down - your messages will not get lost.
 
-<a href="https://t.co/ZGVIKm49Ql">https://t.co/ZGVIKm49Ql</a><br><br>4. Project-Based Learning
+When consumer comes back up again - it will pick all those messages in the queue <a href="https://t.co/0Mpkd2NBDI">https://t.co/0Mpkd2NBDI</a><br><br>𝗢𝗿𝗱𝗲𝗿 𝗼𝗳 𝗺𝗲𝘀𝘀𝗮𝗴𝗲𝘀:
 
-<a href="https://t.co/JFOoFcBOc2">https://t.co/JFOoFcBOc2</a><br><br>5. Python-programming-exercises
+If you're using standard sqs queue, the order of messages cannot be guaranteed.
 
-<a href="https://t.co/7goOlErv6s">https://t.co/7goOlErv6s</a><br><br>6. learn-python
+If you're sending messages 1,2,3 - you may be getting as 1,3,2 or some other order <a href="https://t.co/QXI1rdrdts">https://t.co/QXI1rdrdts</a><br><br>When `Service A` is producing lot of messages - then, lambda service(not your lambda function) will scale out `Service B` by making many replicas for `Service B` - many lambdas would be processing the messages, in our case <a href="https://t.co/7xQ4jC3FIM">https://t.co/7xQ4jC3FIM</a><br><br>This begs the question - if there are many replicas of `Service B`. 𝗪𝗼𝘂𝗹𝗱 𝗲𝗮𝗰𝗵 𝗿𝗲𝗽𝗹𝗶𝗰𝗮 𝗽𝗶𝗰𝗸 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝘁𝗼 𝗽𝗿𝗼𝗰𝗲𝘀𝘀?
 
-<a href="https://t.co/rUwzQXjqRl">https://t.co/rUwzQXjqRl</a><br><br>7. learn-python3
+`visibilityTimeout` property determines how long a message becomes invisible when it is delivered to a consumer.<br><br>If a consumer picks a message, the message would be invisible for specified number of seconds - as dictated by `visibilityTimeout` property. During this period all the other consumers would not be able to see that message (even though the message still exists in the queue)<br><br>How the consumer lambda receives message from SQS queue?
 
-<a href="https://t.co/Wgk4rUwLaL">https://t.co/Wgk4rUwLaL</a><br><br>8. full-speed-python
+When SQS is used with lambda, lambda service (not your lambda function) will poll SQS queue for every few seconds and if queue contains message - the message is delivered as part of event to the consuming lambda.<br><br>𝗛𝗼𝘄 𝗳𝗿𝗲𝗾𝘂𝗲𝗻𝘁𝗹𝘆 𝗱𝗼𝗲𝘀 𝘁𝗵𝗲 𝗹𝗮𝗺𝗯𝗱𝗮 𝗽𝗼𝗹𝗹 𝘁𝗵𝗲 𝗾𝘂𝗲𝘂𝗲?
 
-<a href="https://t.co/xMBd9vKd4N">https://t.co/xMBd9vKd4N</a><br><br>9. python_reference
+There are 2 types of polling - short polling and long polling.<br><br>In short polling, it will poll only subset of servers which may result in false positives - messages will be there in the queue but you might get empty response.
 
-<a href="https://t.co/W5tgyzhYWQ">https://t.co/W5tgyzhYWQ</a><br><br>10. Fucking Awesome Python
+It is always recommended to use long polling.<br><br>In long polling - you can specify the frequency (in terms number of seconds) with a maximum value of 20 seconds.
 
-<a href="https://t.co/3PEPdzSums">https://t.co/3PEPdzSums</a></p>
+For example, if you use long polling of 20 seconds, lambda service will poll your queue (all the servers for the queue) every 20 seconds to check for messages.<br><br>If you're using CDK, `receiveMessageWaitTime` property determines the polling frequency. If the value of this property is greater than 0 seconds, it is considered as long polling.<br><br>𝗪𝗵𝗼 𝗽𝗮𝘆𝘀 𝗳𝗼𝗿 𝘁𝗵𝗶𝘀 𝗹𝗮𝗺𝗯𝗱𝗮 𝗽𝗼𝗹𝗹𝗶𝗻𝗴 𝗶𝗻 𝗦𝗤𝗦 𝗾𝘂𝗲𝘂𝗲?
+
+You'll not be charged for polling . However, it is not free.
+
+Since polling involves calling SQS APIs, you'll be charged for calling SQS APIs but it is pretty cheap.<br><br>𝗛𝗼𝘄 𝗺𝗮𝗻𝘆 𝗺𝗲𝘀𝘀𝗮𝗴𝗲𝘀 𝗱𝗼𝗲𝘀 𝗹𝗮𝗺𝗯𝗱𝗮 𝗽𝗼𝗹𝗹 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗾𝘂𝗲𝘂𝗲?
+
+Lambda service will poll your queue in batches and each batch will contain specific number of messages as mentioned by the batch size (configurable).
+
+Default value is 10 messages. <a href="https://t.co/096kRu5fDK">https://t.co/096kRu5fDK</a><br><br>𝗗𝗲𝗹𝗲𝘁𝗶𝗼𝗻 𝗼𝗳 𝗺𝗲𝘀𝘀𝗮𝗴𝗲𝘀
+
+Another advantage of using Lambda with SQS is that as soon as the messages are successfully processed, the messages in that batch would be automatically deleted from the queue.
+
+You don't need to do this manually.<br><br>If you like this thread, please follow me at @MugilanRagu
+
+I've written a detailed guide on using SQS with AWS Lambda here at <a href="https://t.co/hluh3Kyr9M">https://t.co/hluh3Kyr9M</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Repositories to Learn</a></li>
-<li><a href="#">Github Repositories</a></li>
-<li><a href="#">Algorithms GitHub Repo</a></li>
-<li><a href="#">Learn Python</a></li>
-<li><a href="#">preferred language</a></li>
+								<li><a href="#">𝗪𝗵𝘆 𝘄𝗼𝘂𝗹𝗱 𝘆𝗼𝘂</a></li>
+<li><a href="#">𝗦𝗤𝗦 𝘄𝗶𝘁𝗵 𝗟𝗮𝗺𝗯𝗱𝗮</a></li>
+<li><a href="#">SQS Learn</a></li>
+<li><a href="#">Learn the fundamentals</a></li>
+<li><a href="#">𝗪𝗵𝘆 𝘄𝗼𝘂𝗹𝗱</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -310,7 +318,7 @@ GitHub Repo: <a href="https://t.co/YkVVfPiuw3">https://t.co/YkVVfPiuw3</a><br><b
       }
     </script>
 
-<!--3766195407495325851-->
+<!--6125459674797255851-->
 
   </body>
 

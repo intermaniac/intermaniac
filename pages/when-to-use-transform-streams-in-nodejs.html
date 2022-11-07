@@ -5,15 +5,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Top 10 Github Repositories to Learn Python
+    <meta name="description" content="When to use Transform Streams in @Nodejs - Uses cases in practice 🔥
 
-According to Stackoverflow, Python is the most preferred language...">
+🧵
+#nodejs #streams #highscale...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Top 10 github repositories to learn python
-
-according to stackoverflow, python...</title>
+    <title>When to use transform streams in @nodejs - uses cases...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +78,7 @@ according to stackoverflow, python...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Top 10 github repositories to learn python
-
-according to stackoverflow, python...</h2>
+                <h2>When to use transform streams in @nodejs - uses cases...</h2>
               </div>
             </div>
           </div>
@@ -103,52 +100,74 @@ according to stackoverflow, python...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Top 10 github repositories to learn python
+                      <span>When to use transform streams in @nodejs - uses cases...</span>
+                      <a href="#"><h4>When to use Transform Streams in @Nodejs - Uses cases in practice 🔥
 
-according to stackoverflow, python...</span>
-                      <a href="#"><h4>Top 10 Github Repositories to Learn Python
-
-According to Stackoverflow, Python is the most preferred language...</h4></a>
+🧵
+#nodejs #streams #highscale...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-07 07:15:35.235745</a></li>
 
                       </ul>
-                      <p>Top 10 Github Repositories to Learn Python
+                      <p>When to use Transform Streams in @Nodejs - Uses cases in practice 🔥
 
-According to Stackoverflow, Python is the most preferred language which means that the majority of developers use python.
+🧵
+#nodejs #streams #highscale #microservices #100daysofcode #javascript #ondemandprocessing /1 <a href="https://t.co/h1KIjmsNJZ">https://t.co/h1KIjmsNJZ</a><br><br>A while ago I was searching about Node.js Stream types and I had a hard time trying to understand them. 
 
-⇩🧵<br><br>1. The Algorithms
+/2<br><br>I've found some very generic concepts about Stream classes such as Transform, PassThrough, and Duplex streams as most examples were referring to HTTP Sockets and something such as "oh, a duplex stream can read and write data. That's it". 
 
-GitHub Repo: <a href="https://t.co/YkVVfPiuw3">https://t.co/YkVVfPiuw3</a><br><br>2. vinta/awesome-python
+/3<br><br>That's the main reason why I built the Mastering Node.js Streams training course: to understand how to use it in real-world problems.
 
-<a href="https://t.co/VM3q4XoWZc">https://t.co/VM3q4XoWZc</a><br><br>3. tensorflow/tensorflow
+Check it out later: <a href="<a href="https://t.co/THGo0EWcQL">https://t.co/THGo0EWcQL</a>"><a href="https://t.co/THGo0EWcQL">https://t.co/THGo0EWcQL</a></a> 
 
-<a href="https://t.co/ZGVIKm49Ql">https://t.co/ZGVIKm49Ql</a><br><br>4. Project-Based Learning
+/4<br><br>A bit of a concept.
 
-<a href="https://t.co/JFOoFcBOc2">https://t.co/JFOoFcBOc2</a><br><br>5. Python-programming-exercises
+- Readable Streams are used to input data (read a file, request an API, get database data)
+- Writable Streams are used to output data (write a file, print out results, send data to an API) 
 
-<a href="https://t.co/7goOlErv6s">https://t.co/7goOlErv6s</a><br><br>6. learn-python
+/5<br><br>- Transform Streams are used to receive data from a Readable Stream, parse/process data and push data to a Writable Stream (acts like a middleware).
 
-<a href="https://t.co/rUwzQXjqRl">https://t.co/rUwzQXjqRl</a><br><br>7. learn-python3
+/6<br><br>Imagine that you want to migrate data from a SQL database to a NoSQL Database.
 
-<a href="https://t.co/Wgk4rUwLaL">https://t.co/Wgk4rUwLaL</a><br><br>8. full-speed-python
+You'd read paginated data from the SQL database (readable), parse it to JSON (transform), and insert it into the NoSQL Database writable) 
 
-<a href="https://t.co/xMBd9vKd4N">https://t.co/xMBd9vKd4N</a><br><br>9. python_reference
+/7<br><br>The Transform Stream class inherits the Duplex Stream class, which means that it could read data from one channel and output it into another.
 
-<a href="https://t.co/W5tgyzhYWQ">https://t.co/W5tgyzhYWQ</a><br><br>10. Fucking Awesome Python
+In other words, parsing data to JSON means that the data coming from the readable stream will be piped into the Transform  
 
-<a href="https://t.co/3PEPdzSums">https://t.co/3PEPdzSums</a></p>
+/8<br><br>Streams' writable channel and there you'll perform all operations to parse data.
+
+An example of it would be:
+
+Readable.from(<a href="<a href="https://t.co/Oo68lkxj98()">https://t.co/Oo68lkxj98()</a>"><a href="https://t.co/Oo68lkxj98()">https://t.co/Oo68lkxj98()</a></a>)
+.pipe(parseToJSON)
+
+/9<br><br>Still, after parsing it you'd want to pipe data to a process that will insert that individual item on the NoSQL Server.
+
+As only a writable Stream consumes data from a Readable Stream, behind the scenes the transform stream will have to push data into its readable channel 
+
+/10<br><br>An example of it would be:
+
+Readable.from(<a href="<a href="https://t.co/Oo68lkxj98()">https://t.co/Oo68lkxj98()</a>"><a href="https://t.co/Oo68lkxj98()">https://t.co/Oo68lkxj98()</a></a>)
+.pipe(parseToJSON)
+.pipe(insertOnNoSQLDB)
+
+/11<br><br>Thankfully, we don't need to handle those channels ourselves. Node.js do all the Work behind the scenes and we just need to invoke the callback function as you can see in the image.
+
+Check it out for more deep-dive examples: <a href="<a href="https://t.co/THGo0EWcQL">https://t.co/THGo0EWcQL</a>"><a href="https://t.co/THGo0EWcQL">https://t.co/THGo0EWcQL</a></a>  
+
+/12</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Repositories to Learn</a></li>
-<li><a href="#">Github Repositories</a></li>
-<li><a href="#">Algorithms GitHub Repo</a></li>
-<li><a href="#">Learn Python</a></li>
-<li><a href="#">preferred language</a></li>
+								<li><a href="#">Stream</a></li>
+<li><a href="#">Node.js Stream types</a></li>
+<li><a href="#">Readable Stream</a></li>
+<li><a href="#">Mastering Node.js Streams</a></li>
+<li><a href="#">Transform Streams</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -310,7 +329,7 @@ GitHub Repo: <a href="https://t.co/YkVVfPiuw3">https://t.co/YkVVfPiuw3</a><br><b
       }
     </script>
 
-<!--3766195407495325851-->
+<!--7490711887464825851-->
 
   </body>
 
