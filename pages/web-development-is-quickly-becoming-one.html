@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...">
+    <meta name="description" content="Web development is quickly becoming one of the most attractive fields to work in.
+
+In this...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python 3.11 just released and one of the new features...</title>
+    <title>Web development is quickly becoming one of the most attractive...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python 3.11 just released and one of the new features...</h2>
+                <h2>Web development is quickly becoming one of the most attractive...</h2>
               </div>
             </div>
           </div>
@@ -97,32 +99,49 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python 3.11 just released and one of the new features...</span>
-                      <a href="#"><h4>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...</h4></a>
+                      <span>Web development is quickly becoming one of the most attractive...</span>
+                      <a href="#"><h4>Web development is quickly becoming one of the most attractive fields to work in.
+
+In this...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-08 07:15:34.791355</a></li>
 
                       </ul>
-                      <p>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups are slightly complicated, so lets do a deep dive into what it is and how it works
+                      <p>Web development is quickly becoming one of the most attractive fields to work in.
 
-Thread 🧵👇🏾<br><br>Exception Groups allow us to group multiple exceptions together and raise the whole group of exceptions. Why would we need to do that? Some reasons - When running tasks concurrently more than one might fail, or when retry logic is involved there may be multiple failures<br><br>You can create exception groups using the new ExceptionGroup class. It takes a message and a list of exceptions. We can raise the exception group, just like a normal exception. <a href="https://t.co/ozW7TIEOQp">https://t.co/ozW7TIEOQp</a><br><br>If we call the function above, we get a traceback like this. It shows each individual exception in the group. <a href="https://t.co/JXd18S53H8">https://t.co/JXd18S53H8</a><br><br>Normally, we use try ... except to handle exceptions. You can certainly use that, but 3.11 introduces a new except* syntax that matches exceptions within a group. 
+In this thread, I'm going to show you the routine of becoming a junior web developer in fourteen weeks. 
 
-Note: when you use "as" to assign to a variable, you get an exception group, NOT the individual exception. <a href="https://t.co/lnjtWbmXtl">https://t.co/lnjtWbmXtl</a><br><br>In the code below, "eg" is an ExceptionGroup. For the first except* block, eg will contain all the FileNotFoundErrors from the original exception group. In the second except*, eg will contain all the KeyErrors. Use the ".exceptions" attribute to access the individual exceptions <a href="https://t.co/Wkd04Fl4KO">https://t.co/Wkd04Fl4KO</a><br><br>Another important difference between except and except* is that you can match more than one exception block with except*. In this snippet, code in except* FileNotFoundError and except* KeyError will BOTH be executed because the exception group contains both types of exceptions. <a href="https://t.co/VcjkjKkmcH">https://t.co/VcjkjKkmcH</a><br><br>Here is a full fledged example of ExceptionGroup in action in python 3.11 <a href="https://t.co/ZsJ2EAJQVq">https://t.co/ZsJ2EAJQVq</a><br><br>Now for the complications. 
+✔ Thread...
 
-Exception groups can be used anywhere we use regular exceptions, which means you can have one exception group nested as a part of another exception group <a href="https://t.co/Qi5MuyD7c9">https://t.co/Qi5MuyD7c9</a><br><br>When using "except* ... as eg" to assign to a variable, then the variable will maintain the structure of the original exception group. Note that any empty branches will be removed from the structure <a href="https://t.co/pBDthjZbmn">https://t.co/pBDthjZbmn</a><br><br>In the case that any exceptions are unhandled, then an ExceptionGroup containing the unhandled exceptions will be propagated up the call chain. Since an ExceptionGroup is propagated, it has to be handled with except* up the call chain <a href="https://t.co/r7HIEqljH8">https://t.co/r7HIEqljH8</a><br><br>The ExceptionGroup class contains two methods, "subgroup" &amp; "split", to manually work with the exception tree. subgroup is used to select matching exceptions from the tree. You can pass a predicate function to subgroup and any exceptions that match the predicate will be selected. <a href="https://t.co/2pUUPFn95r">https://t.co/2pUUPFn95r</a><br><br>split is similar to subgroup, but it returns two trees: one containing the matches and another containing the remaining nodes. Note how they both maintain the structure of the original exception group <a href="https://t.co/KqbRttjamp">https://t.co/KqbRttjamp</a><br><br>For a more detailed explanation of exception groups, check out our article on the playfulpython site - <a href="https://t.co/LIwnW6KWOu">https://t.co/LIwnW6KWOu</a><br><br>If you enjoyed this thread, please follow @playfulpython for more on intermediate / advanced python. And don't forget to retweet the first tweet in the thread below.
+#webdevelopment #javascript #programming #react #nextjs<br><br>Week Five: 
+This week your job is to give the website a dynamic feel. Even if your warehouse is empty, another person's warehouse item is dragged with a thing called API and shown on the website.<br><br>It can be a JSON placeholder or any other API to bring data to the website to show the two or three related projects.
 
-<a href="https://t.co/lZ10DwUQdl">https://t.co/lZ10DwUQdl</a></p>
+Again, implement some functionality that can be used to search data on the website. A spinner will show when data is being loaded. That level will be fun.<br><br>Week Six: 
+First of all, there are some things called ES6 that need to be looked at. Especially let, const, arrow function, default parameter, three dots, destructuring, etc. Then whether you are a web developer or not. You need to know about the browser.<br><br>And if you want to be a web developer, then there is no question.
+
+So first you need to know about the console, source tab. Then you have to have an idea about the network, elements, and application tab. Then there's a thing called debug.<br><br>That is, if the website does not work properly, all the tigers and bears that are inside it will be hunted. That hunter must be at week number 6.<br><br>Week 7: 
+Everything you have learned in the last month and a half needs to be rubbed off. Will keep on revision.
+
+Otherwise, things will disappear from you. Especially things like JavaScript need to be rolled up. ES6 and JavaScript have some tricky concepts that will take time.<br><br>Week Eight: 
+Now will be the real game. A JavaScript framework or library needs to be entered. My recommendation here is to start with React. So, what is some fundamental concept like a component thing? How to write it or how to start a new project with the create react app.<br><br>And inside this project, you need to know a few things about how to send data to all the components you will be using or how to update the data dynamically. Of course, you need to know about some hooks of React. First, you have to create a single-page application.<br><br>How to load dynamic data with API. Those need to know.<br><br>Week Number Nine: 
+Week nine, React router (check if there is anything near the WiFi router) to use it.  You need to know the system of state sharing with multiple pages.  How to make a little chart.  Try to develop a dashboard even if it is small.<br><br>In addition to this, to manage the state a little more, you have to try a little how the Context API or useReducer type things work.<br><br>Week Ten: 
+At ten, you need to know how the Authentication system integrates into the React application with SOS.  You also need to know how to host the React application.<br><br>You also need to know how to log in with your website google, Facebook, Twitter, or Github.  There are some more useful packages.  handling form, etc.  You have to see them.<br><br>Week Eleven: 
+This time you have to lower it to the bottom of the stack. Here's how to put one together for use with your backend. Node in particular And with MongoDB, you have to learn CRUD operation. Plus how to secure an API with JWT tokens. That too must be known.<br><br>Week Number Twelve + Week Number Thirteen: 
+This time your job is to create a full-stack application. And to deploy it. You have to make at least two websites in these two weeks.<br><br>Week Fourteen: 
+As a developer or a programmer, you need to know some basic things about programming.  So even if it is something basic, you need to know some data structure and some basic algorithms.<br><br>In addition to this, you have to have a general idea about object-oriented programming.<br><br>What Are the Benefits of a Junior Web Developer Job
+
+There are several benefits to being a junior web developer.<br><br>Junior web developers often work at all stages of creating a new website, so they gain useful experience that can be easily transferred to different areas of the technology world.<br><br>Junior web developers benefit from a flexible schedule that often allows for remote work, access to fast-growing areas, and competitive pay. Junior web developers can also quickly move to more senior positions.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">exception group</a></li>
-<li><a href="#">Exception</a></li>
-<li><a href="#">exceptions</a></li>
-<li><a href="#">group</a></li>
-<li><a href="#">original exception group</a></li>
+								<li><a href="#">Junior web developers</a></li>
+<li><a href="#">junior web</a></li>
+<li><a href="#">Week</a></li>
+<li><a href="#">week number</a></li>
+<li><a href="#">web developer</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -284,7 +303,7 @@ Exception groups can be used anywhere we use regular exceptions, which means you
       }
     </script>
 
-<!--6144883796243095851-->
+<!--6490502983774855851-->
 
   </body>
 

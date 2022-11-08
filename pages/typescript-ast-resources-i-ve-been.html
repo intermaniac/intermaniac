@@ -5,11 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...">
+    <meta name="description" content="TypeScript AST Resources 🧵
+
+I've been doing a bunch of shit with TypeScript and ASTs (Abstract...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python 3.11 just released and one of the new features...</title>
+    <title>Typescript ast resources 🧵
+
+i've been doing a bunch of shit...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +79,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python 3.11 just released and one of the new features...</h2>
+                <h2>Typescript ast resources 🧵
+
+i've been doing a bunch of shit...</h2>
               </div>
             </div>
           </div>
@@ -97,32 +103,92 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python 3.11 just released and one of the new features...</span>
-                      <a href="#"><h4>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...</h4></a>
+                      <span>Typescript ast resources 🧵
+
+i've been doing a bunch of shit...</span>
+                      <a href="#"><h4>TypeScript AST Resources 🧵
+
+I've been doing a bunch of shit with TypeScript and ASTs (Abstract...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-08 07:15:34.791355</a></li>
 
                       </ul>
-                      <p>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups are slightly complicated, so lets do a deep dive into what it is and how it works
+                      <p>TypeScript AST Resources 🧵
 
-Thread 🧵👇🏾<br><br>Exception Groups allow us to group multiple exceptions together and raise the whole group of exceptions. Why would we need to do that? Some reasons - When running tasks concurrently more than one might fail, or when retry logic is involved there may be multiple failures<br><br>You can create exception groups using the new ExceptionGroup class. It takes a message and a list of exceptions. We can raise the exception group, just like a normal exception. <a href="https://t.co/ozW7TIEOQp">https://t.co/ozW7TIEOQp</a><br><br>If we call the function above, we get a traceback like this. It shows each individual exception in the group. <a href="https://t.co/JXd18S53H8">https://t.co/JXd18S53H8</a><br><br>Normally, we use try ... except to handle exceptions. You can certainly use that, but 3.11 introduces a new except* syntax that matches exceptions within a group. 
+I've been doing a bunch of shit with TypeScript and ASTs (Abstract Syntax Trees) for the past month or two
 
-Note: when you use "as" to assign to a variable, you get an exception group, NOT the individual exception. <a href="https://t.co/lnjtWbmXtl">https://t.co/lnjtWbmXtl</a><br><br>In the code below, "eg" is an ExceptionGroup. For the first except* block, eg will contain all the FileNotFoundErrors from the original exception group. In the second except*, eg will contain all the KeyErrors. Use the ".exceptions" attribute to access the individual exceptions <a href="https://t.co/Wkd04Fl4KO">https://t.co/Wkd04Fl4KO</a><br><br>Another important difference between except and except* is that you can match more than one exception block with except*. In this snippet, code in except* FileNotFoundError and except* KeyError will BOTH be executed because the exception group contains both types of exceptions. <a href="https://t.co/VcjkjKkmcH">https://t.co/VcjkjKkmcH</a><br><br>Here is a full fledged example of ExceptionGroup in action in python 3.11 <a href="https://t.co/ZsJ2EAJQVq">https://t.co/ZsJ2EAJQVq</a><br><br>Now for the complications. 
+Here's a collection of resources that have served as useful guides along the way, in a thread<br><br>I found that initially I was spending a lot of time in the TypeScript codebase, mostly looking at types and understanding how various node-related utils worked under the hood
 
-Exception groups can be used anywhere we use regular exceptions, which means you can have one exception group nested as a part of another exception group <a href="https://t.co/Qi5MuyD7c9">https://t.co/Qi5MuyD7c9</a><br><br>When using "except* ... as eg" to assign to a variable, then the variable will maintain the structure of the original exception group. Note that any empty branches will be removed from the structure <a href="https://t.co/pBDthjZbmn">https://t.co/pBDthjZbmn</a><br><br>In the case that any exceptions are unhandled, then an ExceptionGroup containing the unhandled exceptions will be propagated up the call chain. Since an ExceptionGroup is propagated, it has to be handled with except* up the call chain <a href="https://t.co/r7HIEqljH8">https://t.co/r7HIEqljH8</a><br><br>The ExceptionGroup class contains two methods, "subgroup" &amp; "split", to manually work with the exception tree. subgroup is used to select matching exceptions from the tree. You can pass a predicate function to subgroup and any exceptions that match the predicate will be selected. <a href="https://t.co/2pUUPFn95r">https://t.co/2pUUPFn95r</a><br><br>split is similar to subgroup, but it returns two trees: one containing the matches and another containing the remaining nodes. Note how they both maintain the structure of the original exception group <a href="https://t.co/KqbRttjamp">https://t.co/KqbRttjamp</a><br><br>For a more detailed explanation of exception groups, check out our article on the playfulpython site - <a href="https://t.co/LIwnW6KWOu">https://t.co/LIwnW6KWOu</a><br><br>If you enjoyed this thread, please follow @playfulpython for more on intermediate / advanced python. And don't forget to retweet the first tweet in the thread below.
+Here's the TypeScript repo itself
 
-<a href="https://t.co/lZ10DwUQdl">https://t.co/lZ10DwUQdl</a></p>
+<a href="https://t.co/6UgGMS0Rh6">https://t.co/6UgGMS0Rh6</a><br><br>And here are notes about the TypeScript compiler's various systems
+
+Also has a great video about the TS compiler by @orta which I highly recommend. Great for understanding the "big picture" of how the TypeScript compiler goes from text to program
+
+<a href="https://t.co/f0UBG2pWS1">https://t.co/f0UBG2pWS1</a><br><br>A great overview of the TypeScript compiler's major pieces. Also generally a solid resource for learning a lot about TypeScript and its type system 
+
+<a href="https://t.co/678txQ44Zb">https://t.co/678txQ44Zb</a><br><br>Similar to "Using the Compiler API" but with different scenarios and a few extra nuggets of information (see "Altering or creating code programmatically")
+
+<a href="https://t.co/RzFwKJIlN8">https://t.co/RzFwKJIlN8</a><br><br>`ts-morph` is a library I only recently started playing with, but it wraps the TS compiler and adds a bunch of extras for navigating + manipulating a TS AST
+
+<a href="https://t.co/y0AQoGB94I">https://t.co/y0AQoGB94I</a><br><br>`ts-ast-viewer` is an AST tool for TS ASTs. Type in some TypeScript code and then explore the resulting tree.
+
+SUPER helpful for making sense of things.
+
+<a href="https://t.co/7ICnchOt4k">https://t.co/7ICnchOt4k</a><br><br>Haven't used this yet but it seems to have a lot of deep-dive info about the TS compiler
+
+<a href="https://t.co/7tqj8gDTxb">https://t.co/7tqj8gDTxb</a><br><br>Contains some info about using the Language Service API
+
+<a href="https://t.co/Y5hJOzLink">https://t.co/Y5hJOzLink</a><br><br>@15lettermax I think a lot of it is like I don't even know what data structure(s) I need to build myself to accomplish the task, so it's exploring till I figure out what that looks like. Then from there it's pretty smooth sailing, easy to hook into other things and refactor<br><br>Let's get a little more generic for a bit because ASTs are super important and fun for way more than just ts!
+
+In case you don't know what ASTs are, they're the tree-shaped /data structure/ that the compiler turns your source code into
+
+That tree is what gives meaning to text<br><br>Let's look at an example real quick
+
+The attached gif shows how to use the TS AST Viewer. Type some code and then explore the nodes in the tree
+
+Clicking within the code selects the corresponding node
+
+The right panel shows metadata for the selected node
+
+<a href="https://t.co/3QGCnrF76T">https://t.co/3QGCnrF76T</a> <a href="https://t.co/wzEvsQuYii">https://t.co/wzEvsQuYii</a><br><br>It's this tree structure and metadata that gives meaning to our code!
+
+When the compiler parses that code into a syntax tree, it has all of the data it needs to understand that "greeting" is the Identifier of a const VariableDeclaration with a value of StringLiteral "'hello'"<br><br>Syntax trees are an important concept for developer experience (DX) because they're the basis for so much of the tooling that gives us a good DX
+
+Since it's code as data, tools can be built to analyze and modify that data to do different things<br><br>@tseslint parses code into an AST that it then uses to detect and report violations of the different linting rules we specify
+
+@babeljs parses code into an AST that it uses to support different features enabled by presets, plugins, transforms, etc.<br><br>The TypeScript Language Server utilizes the AST to power code actions, renaming utilities, refactor analysis, formatting, etc. 
+
+And then VSCode, neovim and other apps use the Language Server to attach those features to their interfaces<br><br>@unifiedjs is an entire ecosystem of ASTs and tooling for content-related languages like markdown and html that make it easy to customize the output content:
+
+- `unist` defines a UNIversal Syntax Tree spec that other syntax trees in the ecosystem follow
+
+<a href="https://t.co/kW5Lo7NEvA">https://t.co/kW5Lo7NEvA</a><br><br>- `mdast` is a specification for a MarkDown Abstract Syntax Tree
+
+- `hast` is a specification for an Html Abstract Syntax Tree
+
+- `remark` handles plugins that use `mdast` to manipulate markdown
+
+- `rehype` handles plugins that use `hast` to manipulate html<br><br>Thanks to @unifiedjs and the many ASTs it defines, we're able to do really cool shit like use MDX, turn static code blocks into interactive, type-aware interfaces, generate page metadata from frontmatter, etc.
+
+Just an awesome ecosystem
+
+<a href="https://t.co/Kqz2oo73Ti">https://t.co/Kqz2oo73Ti</a><br><br>If you're interested in exploring the many AST specs that exist for many different languages, be sure to check out @astexplorer which allows you to view live tree output of different languages and syntax tree specs
+
+Play around with it! Have fun! 🌼💜
+
+<a href="https://t.co/3zyjUKgusI">https://t.co/3zyjUKgusI</a><br><br>Which means that when the compiler later encounters a reference to the "greeting" Identifier in the same scope as that variable, the value of the reference is "hello"</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">exception group</a></li>
-<li><a href="#">Exception</a></li>
-<li><a href="#">exceptions</a></li>
-<li><a href="#">group</a></li>
-<li><a href="#">original exception group</a></li>
+								<li><a href="#">Abstract Syntax Tree</a></li>
+<li><a href="#">TypeScript AST Resources</a></li>
+<li><a href="#">syntax tree</a></li>
+<li><a href="#">node-related utils worked</a></li>
+<li><a href="#">TypeScript compiler</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -284,7 +350,7 @@ Exception groups can be used anywhere we use regular exceptions, which means you
       }
     </script>
 
-<!--6144883796243095851-->
+<!--1021185654671175851-->
 
   </body>
 

@@ -5,11 +5,25 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...">
+    <meta name="description" content="10 Javascript Animation Libraries You Should Know
+[Instant Bookmark]
+
+#100DaysOfCode
+
+a thread 🧵1/ AtroposJS
+
+Atropos is a lightweight, free...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python 3.11 just released and one of the new features...</title>
+    <title>10 javascript animation libraries you should know
+[instant bookmark]
+
+#100daysofcode
+
+ 🧵1/ atroposjs
+
+atropos...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +89,14 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python 3.11 just released and one of the new features...</h2>
+                <h2>10 javascript animation libraries you should know
+[instant bookmark]
+
+#100daysofcode
+
+ 🧵1/ atroposjs
+
+atropos...</h2>
               </div>
             </div>
           </div>
@@ -97,32 +118,91 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python 3.11 just released and one of the new features...</span>
-                      <a href="#"><h4>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...</h4></a>
+                      <span>10 javascript animation libraries you should know
+[instant bookmark]
+
+#100daysofcode
+
+ 🧵1/ atroposjs
+
+atropos...</span>
+                      <a href="#"><h4>10 Javascript Animation Libraries You Should Know
+[Instant Bookmark]
+
+#100DaysOfCode
+
+a thread 🧵1/ AtroposJS
+
+Atropos is a lightweight, free...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-08 07:15:34.791355</a></li>
 
                       </ul>
-                      <p>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups are slightly complicated, so lets do a deep dive into what it is and how it works
+                      <p>10 Javascript Animation Libraries You Should Know
+[Instant Bookmark]
 
-Thread 🧵👇🏾<br><br>Exception Groups allow us to group multiple exceptions together and raise the whole group of exceptions. Why would we need to do that? Some reasons - When running tasks concurrently more than one might fail, or when retry logic is involved there may be multiple failures<br><br>You can create exception groups using the new ExceptionGroup class. It takes a message and a list of exceptions. We can raise the exception group, just like a normal exception. <a href="https://t.co/ozW7TIEOQp">https://t.co/ozW7TIEOQp</a><br><br>If we call the function above, we get a traceback like this. It shows each individual exception in the group. <a href="https://t.co/JXd18S53H8">https://t.co/JXd18S53H8</a><br><br>Normally, we use try ... except to handle exceptions. You can certainly use that, but 3.11 introduces a new except* syntax that matches exceptions within a group. 
+#100DaysOfCode
 
-Note: when you use "as" to assign to a variable, you get an exception group, NOT the individual exception. <a href="https://t.co/lnjtWbmXtl">https://t.co/lnjtWbmXtl</a><br><br>In the code below, "eg" is an ExceptionGroup. For the first except* block, eg will contain all the FileNotFoundErrors from the original exception group. In the second except*, eg will contain all the KeyErrors. Use the ".exceptions" attribute to access the individual exceptions <a href="https://t.co/Wkd04Fl4KO">https://t.co/Wkd04Fl4KO</a><br><br>Another important difference between except and except* is that you can match more than one exception block with except*. In this snippet, code in except* FileNotFoundError and except* KeyError will BOTH be executed because the exception group contains both types of exceptions. <a href="https://t.co/VcjkjKkmcH">https://t.co/VcjkjKkmcH</a><br><br>Here is a full fledged example of ExceptionGroup in action in python 3.11 <a href="https://t.co/ZsJ2EAJQVq">https://t.co/ZsJ2EAJQVq</a><br><br>Now for the complications. 
+a thread 🧵<br><br>1/ AtroposJS
 
-Exception groups can be used anywhere we use regular exceptions, which means you can have one exception group nested as a part of another exception group <a href="https://t.co/Qi5MuyD7c9">https://t.co/Qi5MuyD7c9</a><br><br>When using "except* ... as eg" to assign to a variable, then the variable will maintain the structure of the original exception group. Note that any empty branches will be removed from the structure <a href="https://t.co/pBDthjZbmn">https://t.co/pBDthjZbmn</a><br><br>In the case that any exceptions are unhandled, then an ExceptionGroup containing the unhandled exceptions will be propagated up the call chain. Since an ExceptionGroup is propagated, it has to be handled with except* up the call chain <a href="https://t.co/r7HIEqljH8">https://t.co/r7HIEqljH8</a><br><br>The ExceptionGroup class contains two methods, "subgroup" &amp; "split", to manually work with the exception tree. subgroup is used to select matching exceptions from the tree. You can pass a predicate function to subgroup and any exceptions that match the predicate will be selected. <a href="https://t.co/2pUUPFn95r">https://t.co/2pUUPFn95r</a><br><br>split is similar to subgroup, but it returns two trees: one containing the matches and another containing the remaining nodes. Note how they both maintain the structure of the original exception group <a href="https://t.co/KqbRttjamp">https://t.co/KqbRttjamp</a><br><br>For a more detailed explanation of exception groups, check out our article on the playfulpython site - <a href="https://t.co/LIwnW6KWOu">https://t.co/LIwnW6KWOu</a><br><br>If you enjoyed this thread, please follow @playfulpython for more on intermediate / advanced python. And don't forget to retweet the first tweet in the thread below.
+Atropos is a lightweight, free and open-source JavaScript library to create stunning touch-friendly 3D parallax hover effects.
 
-<a href="https://t.co/lZ10DwUQdl">https://t.co/lZ10DwUQdl</a></p>
+Yes, you heard it right. Touch-Friendly!! 
+
+<a href="https://t.co/a3QOlUDUyH">https://t.co/a3QOlUDUyH</a> <a href="https://t.co/fjfjEoYqEF">https://t.co/fjfjEoYqEF</a><br><br>2/ ChocolatJS
+
+Light. Responsive. Powerful.
+
+<a href="https://t.co/m9D7vTRCkv">https://t.co/m9D7vTRCkv</a> <a href="https://t.co/HDwRNzy0t4">https://t.co/HDwRNzy0t4</a><br><br>3/ Particles
+
+A JS library to use particles. Works with literally any framework from code to no code to low code!!
+
+<a href="https://t.co/yW2zsJNHQP">https://t.co/yW2zsJNHQP</a> <a href="https://t.co/A3U5XnvG7M">https://t.co/A3U5XnvG7M</a><br><br>4/ BarbaJS
+
+Create fluid and smooth transitions between your website’s pages.
+
+<a href="https://t.co/DEAjJnpCtD">https://t.co/DEAjJnpCtD</a> <a href="https://t.co/vcye0lA9T5">https://t.co/vcye0lA9T5</a><br><br>5/ Locomotive Scroll
+
+A simple scroll library that provides detection of elements in viewport &amp; smooth scrolling with parallax.
+
+Scroll like there's no tomorrow!! Smoothest Ever.
+
+<a href="https://t.co/xgpmF0lQ9g">https://t.co/xgpmF0lQ9g</a> <a href="https://t.co/leWjgZy3zH">https://t.co/leWjgZy3zH</a><br><br>6/ SplideJS
+
+Splide is a lightweight, flexible and accessible slider/carousel written in TypeScript. 
+No dependencies, no Lighthouse errors.
+
+<a href="https://t.co/P4fGrpSfMs">https://t.co/P4fGrpSfMs</a> <a href="https://t.co/4PmhDsQaMt">https://t.co/4PmhDsQaMt</a><br><br>7/ Simple Parallax
+
+The easiest way to get a parallax effect with javascript.
+
+<a href="https://t.co/Cy2CvdBD5z">https://t.co/Cy2CvdBD5z</a> <a href="https://t.co/4bX8coBY3W">https://t.co/4bX8coBY3W</a><br><br>8/ MidnightJS
+
+Midnight.js lets you switch fixed headers on the fly.
+Amazing library with scroll animation! 
+
+Check out the link below to scroll!
+
+<a href="https://t.co/oV0UMlNWmV">https://t.co/oV0UMlNWmV</a> <a href="https://t.co/tS5rAoxoAt">https://t.co/tS5rAoxoAt</a><br><br>9/ Nice Waves
+
+Beautiful animated waves✨
+
+<a href="https://t.co/2JNnNs6aST">https://t.co/2JNnNs6aST</a> <a href="https://t.co/VN4jsCjcMv">https://t.co/VN4jsCjcMv</a><br><br>10/ VantaJS
+
+Animated website backgrounds in a few lines of code with lots of effects. Check out now!
+
+<a href="https://t.co/wFVkNCs1Ro">https://t.co/wFVkNCs1Ro</a> <a href="https://t.co/8o3jQLJRyC">https://t.co/8o3jQLJRyC</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">exception group</a></li>
-<li><a href="#">Exception</a></li>
-<li><a href="#">exceptions</a></li>
-<li><a href="#">group</a></li>
-<li><a href="#">original exception group</a></li>
+								<li><a href="#">Instant Bookmark</a></li>
+<li><a href="#">AtroposJS Atropos</a></li>
+<li><a href="#">Javascript Animation Libraries</a></li>
+<li><a href="#">create stunning touch-friendly</a></li>
+<li><a href="#">Animation Libraries</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -284,7 +364,7 @@ Exception groups can be used anywhere we use regular exceptions, which means you
       }
     </script>
 
-<!--6144883796243095851-->
+<!--8404321720572955851-->
 
   </body>
 

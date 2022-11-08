@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...">
+    <meta name="description" content="More than 97% of candidates fail to answer this question in a Java interview
+
+What's the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python 3.11 just released and one of the new features...</title>
+    <title>More than 97% of candidates fail to answer this question...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python 3.11 just released and one of the new features...</h2>
+                <h2>More than 97% of candidates fail to answer this question...</h2>
               </div>
             </div>
           </div>
@@ -97,32 +99,87 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python 3.11 just released and one of the new features...</span>
-                      <a href="#"><h4>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups...</h4></a>
+                      <span>More than 97% of candidates fail to answer this question...</span>
+                      <a href="#"><h4>More than 97% of candidates fail to answer this question in a Java interview
+
+What's the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-08 07:15:34.791355</a></li>
 
                       </ul>
-                      <p>Python 3.11 just released and one of the new features is Exception Groups. Exception Groups are slightly complicated, so lets do a deep dive into what it is and how it works
+                      <p>More than 97% of candidates fail to answer this question in a Java interview
 
-Thread 🧵👇🏾<br><br>Exception Groups allow us to group multiple exceptions together and raise the whole group of exceptions. Why would we need to do that? Some reasons - When running tasks concurrently more than one might fail, or when retry logic is involved there may be multiple failures<br><br>You can create exception groups using the new ExceptionGroup class. It takes a message and a list of exceptions. We can raise the exception group, just like a normal exception. <a href="https://t.co/ozW7TIEOQp">https://t.co/ozW7TIEOQp</a><br><br>If we call the function above, we get a traceback like this. It shows each individual exception in the group. <a href="https://t.co/JXd18S53H8">https://t.co/JXd18S53H8</a><br><br>Normally, we use try ... except to handle exceptions. You can certainly use that, but 3.11 introduces a new except* syntax that matches exceptions within a group. 
+What's the logic of using public getter/setter methods to access private fields in Java POJO?
 
-Note: when you use "as" to assign to a variable, you get an exception group, NOT the individual exception. <a href="https://t.co/lnjtWbmXtl">https://t.co/lnjtWbmXtl</a><br><br>In the code below, "eg" is an ExceptionGroup. For the first except* block, eg will contain all the FileNotFoundErrors from the original exception group. In the second except*, eg will contain all the KeyErrors. Use the ".exceptions" attribute to access the individual exceptions <a href="https://t.co/Wkd04Fl4KO">https://t.co/Wkd04Fl4KO</a><br><br>Another important difference between except and except* is that you can match more than one exception block with except*. In this snippet, code in except* FileNotFoundError and except* KeyError will BOTH be executed because the exception group contains both types of exceptions. <a href="https://t.co/VcjkjKkmcH">https://t.co/VcjkjKkmcH</a><br><br>Here is a full fledged example of ExceptionGroup in action in python 3.11 <a href="https://t.co/ZsJ2EAJQVq">https://t.co/ZsJ2EAJQVq</a><br><br>Now for the complications. 
+Can't we remove getter/setter methods by making fields public?
 
-Exception groups can be used anywhere we use regular exceptions, which means you can have one exception group nested as a part of another exception group <a href="https://t.co/Qi5MuyD7c9">https://t.co/Qi5MuyD7c9</a><br><br>When using "except* ... as eg" to assign to a variable, then the variable will maintain the structure of the original exception group. Note that any empty branches will be removed from the structure <a href="https://t.co/pBDthjZbmn">https://t.co/pBDthjZbmn</a><br><br>In the case that any exceptions are unhandled, then an ExceptionGroup containing the unhandled exceptions will be propagated up the call chain. Since an ExceptionGroup is propagated, it has to be handled with except* up the call chain <a href="https://t.co/r7HIEqljH8">https://t.co/r7HIEqljH8</a><br><br>The ExceptionGroup class contains two methods, "subgroup" &amp; "split", to manually work with the exception tree. subgroup is used to select matching exceptions from the tree. You can pass a predicate function to subgroup and any exceptions that match the predicate will be selected. <a href="https://t.co/2pUUPFn95r">https://t.co/2pUUPFn95r</a><br><br>split is similar to subgroup, but it returns two trees: one containing the matches and another containing the remaining nodes. Note how they both maintain the structure of the original exception group <a href="https://t.co/KqbRttjamp">https://t.co/KqbRttjamp</a><br><br>For a more detailed explanation of exception groups, check out our article on the playfulpython site - <a href="https://t.co/LIwnW6KWOu">https://t.co/LIwnW6KWOu</a><br><br>If you enjoyed this thread, please follow @playfulpython for more on intermediate / advanced python. And don't forget to retweet the first tweet in the thread below.
+Here's the best way to answer this:🧵👇<br><br>1. Understand the Trick Behind
 
-<a href="https://t.co/lZ10DwUQdl">https://t.co/lZ10DwUQdl</a></p>
+- There's no logic(from a security point of view) in accessing private fields via the public getter/setter method
+
+- Here, the interview wants to know the significance of using the getter and setter method in a Java POJO Class<br><br>2. Use this Example
+
+- A POJO Class called Account, with two fields:
+
+1) accountName (to show name)
+2) accountBalance (to show the remaining balance in the account)
+
+- As usual, both fields are private &amp; the public getter and setter method are being defined to access them
+
+Eg: <a href="https://t.co/6AUj0eNKfN">https://t.co/6AUj0eNKfN</a><br><br>3. Why not remove getters &amp; setters and make the field private?
+
+- If we do this, then we will lose control over who reads or writes our field
+
+- In such cases, anyone can do anything which can lead to unavoidable bugs<br><br>- By having the getters &amp; setters, we will have a single door to access our fields
+
+- Hence we can write any important business logic inside it to avoid unnecessary access, updates to our field
+
+- Let's see various use cases of using getter/setter methods<br><br>4. Validation Logic
+
+- Write validation logic inside the setter method to prevent it from having invalid data
+
+Eg: <a href="https://t.co/w37LObkWDU">https://t.co/w37LObkWDU</a><br><br>5. Security Logic
+
+- You can also add any security-related code (inside the getter and setter) to secure the data
+
+- For eg:
+Check if a user has access to the field based on any complex security logic and then allow the user to either read or update the value<br><br>6. ReadOnly or WriteOnly Fields
+
+- To allow only write permission, we can only keep setter methods
+
+- To allow only read permission to fields, we can remove the setter method and only keep the getter method as shown below
+
+Eg: <a href="https://t.co/AnpuY9IWkW">https://t.co/AnpuY9IWkW</a><br><br>7. Create an Immutable Class
+
+- By only keeping the getter method we can also create an Immutability class if required
+
+- In getter methods, we can return a new copy instead of returning the original object to protect it from getting modified <a href="https://t.co/wmpVDNkav0">https://t.co/wmpVDNkav0</a><br><br>8. Final Conclusion
+
+- In all the above cases, we've encapsulated the fields in a POJO at different levels
+
+- This is why many times while explaining encapsulation in Java we use POJO and getters/setter method examples<br><br>That's a wrap!
+
+Every Mon, Wed &amp; Friday - I tweet a thread on Java &amp; Backend Development.
+
+Follow me @vikasrajputin to read all my future threads.<br><br>Before you go, do you know?
+
+I've already started writing on LinkedIn
+
+I share some exclusive content there, which I never share here.
+
+Follow me on Linkedin to stay updated with Backend content:
+<a href="https://t.co/yNa1qc1dnf">https://t.co/yNa1qc1dnf</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">exception group</a></li>
-<li><a href="#">Exception</a></li>
-<li><a href="#">exceptions</a></li>
-<li><a href="#">group</a></li>
-<li><a href="#">original exception group</a></li>
+								<li><a href="#">setter method</a></li>
+<li><a href="#">Java POJO Class</a></li>
+<li><a href="#">setter</a></li>
+<li><a href="#">Java POJO</a></li>
+<li><a href="#">getter</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -284,7 +341,7 @@ Exception groups can be used anywhere we use regular exceptions, which means you
       }
     </script>
 
-<!--6144883796243095851-->
+<!--8043517459809485851-->
 
   </body>
 
