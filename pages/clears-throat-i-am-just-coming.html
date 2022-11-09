@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring HTML jobs.
-
-🧵👇1. Frontend...">
+    <meta name="description" content="*Clears throat, I am just coming back from the market and my 5-years old neighbor...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>*clears throat, i am just coming back from the market...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>*clears throat, i am just coming back from the market...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +97,79 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring HTML jobs.
-
-🧵👇1. Frontend...</h4></a>
+                      <span>*clears throat, i am just coming back from the market...</span>
+                      <a href="#"><h4>*Clears throat, I am just coming back from the market and my 5-years old neighbor...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-09 07:15:36.615681</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring HTML jobs.
+                      <p>*Clears throat, I am just coming back from the market and my 5-years old neighbor saw React useState, useEffect &amp; useEffect Hook while going through my sticky note so now I have to explain to him🫠
 
-🧵👇<br><br>1. Frontend Developer at @legistify.
+Here is how I explained it to him👇
 
-An in-office opportunity at a Gurugram-based YCombinator-backed, fast-growing startup that received a Seed round in 2021.
+A Thread for my React JavaScript tech pple🧵<br><br>I told him put an empty pot on the gas (my initial state) &amp; get a book &amp; pen (import {useState} from “react”), anytime I you put an sunstance(event function in this case let’s work with onChange), you put it inside the pot and write it in the jotter (set new state).<br><br>Ok let’s try this now, our empty point would be representing an input field.
 
-Check out the job at: <a href="https://t.co/yVFWsNMrrt">https://t.co/yVFWsNMrrt</a><br><br>2. Senior Full Stack Developer at @gather_ai.
+//empty pot means empty jotter
+const [pot, setPot]=useState({
+first_substance: “”, // empty string
+second_substance: “”,
+third_substance: “”
+})
 
-A remote opportunity at a Pittsburgh-based Tribeca Venture Partners-backed, fast-growing startup that has recently received a Series-A round.
+when you put your substance (onChange function)<br><br>Const onChange = ()=&gt;{
 
-Check out the job at: <a href="https://t.co/DBxH9tdWqD">https://t.co/DBxH9tdWqD</a><br><br>3. Frontend Developer at @ScanTrust.
+setPot({
+first_substance: “water”,
+second_substance: “rice”,
+third_substance: “salt”
+}) //do note that e.g “water” is the <a href="https://t.co/az4D4BmgAt.value">https://t.co/az4D4BmgAt.value</a> for the name I had to cut that part off. 
 
-A remote opportunity at a Lausanne-based SOSV-backed, fast-growing startup that received a Series-B round of funding in 2021.
+}
+//Now check your jotter which would be same thing as<br><br>what’s in your pot
+console.log(pot)
 
-Check out the job at: <a href="https://t.co/Y8FE2YutSs">https://t.co/Y8FE2YutSs</a><br><br>4. Web Developer at @frontpage_app.
+Unto the next one now useEffect. This a bit tricky.
+I told him he should recite what is in the pot.
 
-An in-office at a Bengaluru-based YCombinator-backed, fast-growing startup that received a Seed round of funding in 2021.
+const recite = ()=&gt;{
+console.log(pot)
+}
+ but I didn’t tell him when to recite this 🫠, my bad miscommunication. So here I am telling him that<br><br>when ever I put the pot on the gas please recite what is there meaning onLoad he should recite.
 
-Check out the job at: <a href="https://t.co/Qq06hZL2X6">https://t.co/Qq06hZL2X6</a></p>
+useEffect (()=&gt;{
+recite()
+}
+but if my guy does this he would have uncaught annoying errors oo 😂😂 so he has to add a condition that if pot is not empty ehen please recite.<br><br>So here we have
+
+useEffect (()=&gt;{
+pot !== ‘’ &amp;&amp; recite()
+} 
+
+Eyy my guy only recited only water after that he went to rest, so I told him won’t you recite rice &amp; salt??? he said how am I supposed to know you added rice &amp; salt so I understood I have to pass a dependency that when<br><br>pot states changes please recite 
+
+useEffect (()=&gt;{
+pot !== ‘’ &amp;&amp; recite()
+},[pot]
+
+Yay my guy is singing now like a parrot 🥹😂💔
+
+I am getting tired oo but let me quickly explain contextAPI as the rice is soft &amp; dry.<br><br>I told him to go serve his dad the food, but before then imagine if we had cooked the rice in the kitchen?  Before he can serve his dad in the dining he has to pass the first room to the sitting room and then dining, but now that our kitchen is central to all rooms meaning we<br><br>can go from the kitchen to “anywhere” we want to we can call our function &amp; variables from the kitchen which is our context, where we cook our food.
+
+Hurrayyyyy 😻 I know I would explain contexApi to him and you guys deeply but for now let’s enjoy our meal. If you enjoyed reading<br><br>please retweet, tag, like and share 💕
+
+Thank you all for staying till the end ❤️
+@EniolaCodes @ubah_484 @codedByPedro @eo_eboh @QueenAkpan_<br><br>My previous episode. <a href="https://t.co/EHksr0sjBa">https://t.co/EHksr0sjBa</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">featuring HTML jobs</a></li>
-<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring HTML</a></li>
-<li><a href="#">HTML jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
+								<li><a href="#">React JavaScript tech</a></li>
+<li><a href="#">JavaScript tech pple</a></li>
+<li><a href="#">React useState</a></li>
+<li><a href="#">Clears throat</a></li>
+<li><a href="#">React JavaScript</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +331,7 @@ Check out the job at: <a href="https://t.co/Qq06hZL2X6">https://t.co/Qq06hZL2X6<
       }
     </script>
 
-<!--5665055514161206851-->
+<!--4838655928363416851-->
 
   </body>
 

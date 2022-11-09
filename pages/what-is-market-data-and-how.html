@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring HTML jobs.
+    <meta name="description" content="What is market data and how to generate it with #Python
 
-🧵👇1. Frontend...">
+A 🧵 https://t.co/Uc79CXvI1RBut we can...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>What is market data and how to generate it with...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>What is market data and how to generate it with...</h2>
               </div>
             </div>
           </div>
@@ -99,44 +99,39 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring HTML jobs.
+                      <span>What is market data and how to generate it with...</span>
+                      <a href="#"><h4>What is market data and how to generate it with #Python
 
-🧵👇1. Frontend...</h4></a>
+A 🧵 https://t.co/Uc79CXvI1RBut we can...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-09 07:15:36.615681</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring HTML jobs.
+                      <p>What is market data and how to generate it with #Python
 
-🧵👇<br><br>1. Frontend Developer at @legistify.
+A 🧵 <a href="https://t.co/Uc79CXvI1R">https://t.co/Uc79CXvI1R</a><br><br>But we can also gather a vast amount of data to further build analytical models, train ML algorithms, prepare reports, and more.<br><br>Market data is often gathered from data providers, exchanges, and other sources. We will learn how to generate synthetic market data. Later we will receive data from external providers, and we will build a data storage system ourselves for educational purposes.<br><br>What is market data
 
-An in-office opportunity at a Gurugram-based YCombinator-backed, fast-growing startup that received a Seed round in 2021.
+Market data means prices in general. It consists of facts about an occurred trade: name of exchange, name of the asset, price, quantity, trade timestamp, and more. Now we will talk about the two most common types of market data: ohlcv and ticks.<br><br>OHLCV
 
-Check out the job at: <a href="https://t.co/yVFWsNMrrt">https://t.co/yVFWsNMrrt</a><br><br>2. Senior Full Stack Developer at @gather_ai.
+First of all, some definitions. OHLCV is market data combined into a block, it’s not really precise, but it gives traders a general understanding of what happened in the market.<br><br>OHLCV corresponds to Open, High, Low, Close, Volume – this is information about trades closed during a period of time(e.g., 1 minute, 15 minutes, 1 hour, 1 day, etc.).<br><br>For example, let us say we talk about BTC/USDT market; OHLCV data was gathered for one day period. During such a period, thousands of trades can be processed on large exchanges like @binance.<br><br>OHLCV gives us only general information: first trade was at a price 19123$(O), the highest price during this period was 19347$(H), the lowest price was 18900$(L), the last price was 19041$(C ), and the sum of all trades during the period was 223500(V). <a href="https://t.co/1rPTf4jPlS">https://t.co/1rPTf4jPlS</a><br><br>And, of course, our data is marked with timestamps so we can easily understand when those trades were executed. In our example, data was gathered from October 22, 2021, to October 20, 2022.<br><br>Ticks
 
-A remote opportunity at a Pittsburgh-based Tribeca Venture Partners-backed, fast-growing startup that has recently received a Series-A round.
+Tick data is information about each separate trade that happened in an exchange. Those who need more details about the market prefer tick data.<br><br>In this example, we connected to @dYdX  decentralized exchange via WebSocket. Our tick data consists of a timestamp of each trade, symbol(e.g., BTC/USD), side(BUY or SELL) and amount(in BTC). <a href="https://t.co/bi9jop6xX2">https://t.co/bi9jop6xX2</a><br><br>As our goal is to understand the pros and cons of different data consumption, storage, and manipulation approaches, we will need a lot of data. We will use synthetic data generation as it’s pretty easy to generate 10 or 10 million data samples with the same function.<br><br>First of all, let’s define some basic data classes to work with. <a href="https://t.co/DgOFNoGifR">https://t.co/DgOFNoGifR</a><br><br>Now we will create one more class, DataSample. It will be used to generate synthetic data. We will implement 3 methods for now:   
+- generate() to generate a single data sample  
+- build() to generate datasets using generate function  
+- plot() to visualize our data <a href="https://t.co/JJcLsFJNT2">https://t.co/JJcLsFJNT2</a><br><br>Now we will build 2 more classes – DataSampleOHLCV and DataSampleTicks. They both will have implemented methods generate, build and plot.<br><br>Generate function will use Random library so our prices will look more natural. Each next generated price will be slightly different from the previous one.<br><br>DataSampleOHLCV and DataSampleTicks code is available in my GitHub repo <a href="https://t.co/GXjHkcTC9H">https://t.co/GXjHkcTC9H</a><br><br>And, finally, one more thing – DataGenerator. It will utilize both DataSampleOHLCV and DataSampleTicks classes and will work as a single interface to generate synthetic data. <a href="https://t.co/vOMMMi554z">https://t.co/vOMMMi554z</a><br><br>Now lets run the #code and see what happens!
 
-Check out the job at: <a href="https://t.co/DBxH9tdWqD">https://t.co/DBxH9tdWqD</a><br><br>3. Frontend Developer at @ScanTrust.
-
-A remote opportunity at a Lausanne-based SOSV-backed, fast-growing startup that received a Series-B round of funding in 2021.
-
-Check out the job at: <a href="https://t.co/Y8FE2YutSs">https://t.co/Y8FE2YutSs</a><br><br>4. Web Developer at @frontpage_app.
-
-An in-office at a Bengaluru-based YCombinator-backed, fast-growing startup that received a Seed round of funding in 2021.
-
-Check out the job at: <a href="https://t.co/Qq06hZL2X6">https://t.co/Qq06hZL2X6</a></p>
+Generated OHLCV, 1k samples. <a href="https://t.co/OfeUH3yohR">https://t.co/OfeUH3yohR</a><br><br>Generated tick data, 10k samples. <a href="https://t.co/x6dpqX9Vcc">https://t.co/x6dpqX9Vcc</a><br><br>The code is available in my [GitHub](<a href="https://t.co/GXjHkcC0L7">https://t.co/GXjHkcC0L7</a>) repo.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">featuring HTML jobs</a></li>
-<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring HTML</a></li>
-<li><a href="#">HTML jobs</a></li>
-<li><a href="#">fast-growing startup</a></li>
+								<li><a href="#">market data</a></li>
+<li><a href="#">data</a></li>
+<li><a href="#">market data Market</a></li>
+<li><a href="#">market</a></li>
+<li><a href="#">generate</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +293,7 @@ Check out the job at: <a href="https://t.co/Qq06hZL2X6">https://t.co/Qq06hZL2X6<
       }
     </script>
 
-<!--5665055514161206851-->
+<!--8421833211251495851-->
 
   </body>
 
