@@ -5,23 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Master Python for Free.
-
-Thread: 🧵1. Programming with Mosh
-
-🔗 https://t.co/R1g0HaT2VY2. Complete Playlist by Telusko.
-
-🔗 https://t.co/fYSmfHaTDK3. FreeCodeCamp
-
-🔗...">
+    <meta name="description" content="For a while I couldn't publish new slide decks on https://t.co/54Z1QInoEh because... well, all these...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Master python for free.
-
-: 🧵1. programming with mosh
-
-🔗 https://t.co/r1g0hat2vy2. complete...</title>
+    <title>For a while i couldn't publish new slide decks on...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,11 +75,7 @@ Thread: 🧵1. Programming with Mosh
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Master python for free.
-
-: 🧵1. programming with mosh
-
-🔗 https://t.co/r1g0hat2vy2. complete...</h2>
+                <h2>For a while i couldn't publish new slide decks on...</h2>
               </div>
             </div>
           </div>
@@ -113,62 +97,91 @@ Thread: 🧵1. Programming with Mosh
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Master python for free.
-
-: 🧵1. programming with mosh
-
-🔗 https://t.co/r1g0hat2vy2. complete...</span>
-                      <a href="#"><h4>Master Python for Free.
-
-Thread: 🧵1. Programming with Mosh
-
-🔗 https://t.co/R1g0HaT2VY2. Complete Playlist by Telusko.
-
-🔗 https://t.co/fYSmfHaTDK3. FreeCodeCamp
-
-🔗...</h4></a>
+                      <span>For a while i couldn't publish new slide decks on...</span>
+                      <a href="#"><h4>For a while I couldn't publish new slide decks on https://t.co/54Z1QInoEh because... well, all these...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-10 07:15:41.790568</a></li>
 
                       </ul>
-                      <p>Master Python for Free.
+                      <p>For a while I couldn't publish new slide decks on <a href="https://t.co/54Z1QInoEh">https://t.co/54Z1QInoEh</a> because... well, all these were involved:
 
-Thread: 🧵<br><br>1. Programming with Mosh
+* stupid duplications
+* a 4.5GB TAR file
+* GitHub Action timeouts
 
-🔗 <a href="https://t.co/R1g0HaT2VY">https://t.co/R1g0HaT2VY</a><br><br>2. Complete Playlist by Telusko.
+Here's what happened. 🧵 (overly long)<br><br>Background: Each of my slide decks is a little website that is generated from Asciidoc files and displayed/animated with reveal.js and highlight.js. Everything is text-based and very amenable to version control, scripting, etc.
 
-🔗 <a href="https://t.co/fYSmfHaTDK">https://t.co/fYSmfHaTDK</a><br><br>3. FreeCodeCamp
+I can only recommend that!<br><br>Btw, here's the repo: <a href="https://t.co/ujkKzka6Go">https://t.co/ujkKzka6Go</a> Take everything!
 
-🔗 <a href="https://t.co/YhtMR8VV6I">https://t.co/YhtMR8VV6I</a><br><br>4. Edureka
+The presentations themselves (i.e. .adoc and .html files) are under CC BY-NC 4.0 but this tweet licenses my source code (.js files in root folder) under WTFPL. Go crazy!<br><br>Back to the topic: Slides, images, theme, even reveal.js and highlight.js evolve over time but for every presentation I give, I want to have a permalink that conserves the slides exactly as they were.
 
-🔗 <a href="https://t.co/O4e2xDJBb5">https://t.co/O4e2xDJBb5</a><br><br>5. Hitesh Choudhary.
+What's the simplest way to do that? Just create a self-contained copy!<br><br>So that would be the presentation itself (an HTML file), the images it contains as well as reveal.js and highlight.js.
 
-🔗 <a href="https://t.co/zyGm4fYKll">https://t.co/zyGm4fYKll</a><br><br>6. Traversy Media
+Apparently that averages 33 MB per copy. Multiply by 155 talks/presentations and I end up with 5.1 GB. 😳 That turned out to be an issue. <a href="https://t.co/DEsSTdcjdJ">https://t.co/DEsSTdcjdJ</a><br><br>Because GitHub Pages' deployment didn't like that. It goes like this:
 
-🔗 <a href="https://t.co/DL6J42SQp4">https://t.co/DL6J42SQp4</a><br><br>If you found this thread helpful,
+1. checks out the repo (the 5.1 GB)
+2. creates a TAR (~4.5 GB)
+3. sends it over the network
+4. unpacks it on the web server
 
-1. Do Retweet the first tweet.
-2. Follow me on Twitter and turn on notifications: 
-@mdjunaidap<br><br>🔥 700+ Tools &amp; Resources for Developers, Designers, and Creators. 
+1.-3. took about 40 min. 4. times out at 10 min. 😭
 
-Learn. 
-Build. 
-Sell. 
+<a href="https://t.co/8w1cdYuP9q">https://t.co/8w1cdYuP9q</a> <a href="https://t.co/prT0BiQqLh">https://t.co/prT0BiQqLh</a><br><br>So there you go, no more publication of changes to these talks or of past presentations. For two years, I was waiting for this to happen and of course it did at a time when I was under water and couldn't fix it. 🤬
 
-I've Curated incredible tools and learning resources for developers, designers &amp; content creators.
+Still, it motivated me to tackle it ASAP, which was this week.<br><br>The obvious issue is that images and reveal.js/highlight.js versions rarely change between presentations and are thus identical copies in many folders.
 
-<a href="https://t.co/2XaQR6Al8Y">https://t.co/2XaQR6Al8Y</a></p>
+Solution: Just put them in a shared place and reference them there. <a href="https://t.co/FBhcVezRAY">https://t.co/FBhcVezRAY</a><br><br>Side note: This works so well because while Git stores the entire repo history, it only stores each file once. So the duplication is not present in .git, just in the checked-out folder. Fix it there and it's all good.<br><br>But images can change while keeping their name or have the same name in different talks in the first place. And likewise reveal.js/highlight.js evolve. So it's not quite as simple as copying to a shared folder.
+
+The (obvious) solution is to append a file/folder hash to each name.<br><br>Hashing a file is simple enough in JS:
+
+const f = require(`fs-extra`).readFileSync(file)
+const hash = require('crypto').createHash('sha256')
+hash.update(f)
+return hash.digest('hex')
+
+That takes care of the images, but what about hashing the reveal.js/highlight.js folders?<br><br>Some NPM packages can do that but I rely on Git anyway, so why not use it? A quick search shows how to hash a folder:
+
+git ls-files -s | git hash-object --stdin
+
+Neat! I ❤️ Git!<br><br>The results is a folder structure like this:
+
+_slides
+├─ _highlight.js
+│  ├─ 376a7e15
+│  ├─ 8fbb4352
+│  └─ head
+├─ _images
+├─ _reveal.js
+│  ├─ 05e6ee1a
+│  ├─ c7ffc242
+│  └─ head
+├─ _images
+├─ # talk folders
+└─ # other files<br><br>Now some search and replace in the generated HTML file to update paths to images and folders!
+
+I ended up calling `replaceAll` once for each changed path, which is mildly annoying because it appears wasteful. But it doesn't really matter in practice, so I won't optimize it.<br><br>And the result?
+
+* site size down from 5.1 GB to 380 MB
+* build times down from 40 minutes to 4 <a href="https://t.co/3AjXlbhMKK">https://t.co/3AjXlbhMKK</a>
+* giving an unchanged talk only adds a single HTML file
+
+🙌🏾
+
+Oh, and a commit that's too much for GitHub to handle.
+<a href="https://t.co/V1vAumUbF5">https://t.co/V1vAumUbF5</a> 😁
+
+🏁</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Master Python</a></li>
-<li><a href="#">Python for Free</a></li>
-<li><a href="#">Master</a></li>
-<li><a href="#">Free</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">file</a></li>
+<li><a href="#">images</a></li>
+<li><a href="#">HTML file</a></li>
+<li><a href="#">highlight.js</a></li>
+<li><a href="#">reveal.js</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -330,7 +343,7 @@ I've Curated incredible tools and learning resources for developers, designers &
       }
     </script>
 
-<!--4817763403173956851-->
+<!--5498334891330836851-->
 
   </body>
 
