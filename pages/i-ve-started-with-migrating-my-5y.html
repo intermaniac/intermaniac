@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="5 Websites that will Hook You Towards CSS!🚀
-A Thread📌1- Transitions and Transform: This website is...">
+    <meta name="description" content="I've started with migrating my 5y old @springboot mono-repo with 30+ microservices to Spring Boot...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>5 websites that will hook you towards css!🚀
-📌1- transitions and...</title>
+    <title>I've started with migrating my 5y old @springboot mono-repo with...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,8 +75,7 @@ A Thread📌1- Transitions and Transform: This website is...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>5 websites that will hook you towards css!🚀
-📌1- transitions and...</h2>
+                <h2>I've started with migrating my 5y old @springboot mono-repo with...</h2>
               </div>
             </div>
           </div>
@@ -100,33 +97,36 @@ A Thread📌1- Transitions and Transform: This website is...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>5 websites that will hook you towards css!🚀
-📌1- transitions and...</span>
-                      <a href="#"><h4>5 Websites that will Hook You Towards CSS!🚀
-A Thread📌1- Transitions and Transform: This website is...</h4></a>
+                      <span>I've started with migrating my 5y old @springboot mono-repo with...</span>
+                      <a href="#"><h4>I've started with migrating my 5y old @springboot mono-repo with 30+ microservices to Spring Boot...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-12 07:15:34.783266</a></li>
 
                       </ul>
-                      <p>5 Websites that will Hook You Towards CSS!🚀
-A Thread📌<br><br>1- Transitions and Transform: This website is similar to MDN Docs but with better examples and animations to understand. It has HTML &amp; CSS code snippets along with animated outputs.
-
-🔗https://t.co/eNWJHkFMnb<br><br>2-Complete Guide to Flexbox: This website has made it simple to understand flexbox. It is filled with colors and images that speak out the syntax of that particular type of flex property.
-🔗https://t.co/CLuq7khYIg<br><br>3-CSS Selectors Cheat-Sheet: A CSS selector allows you to select the element you want to style. This website has everything about selectors in detail along with code snippets.
-🔗https://t.co/Y7ca7N2Fjr<br><br>4-The Lengths of CSS:  What are all the accepted "length" properties in CSS? There are quite a few. This website will help you understand each of them easily.
-🔗https://t.co/C1iUMJPv9D<br><br>5-Complete Guide to CSS Grid: This website resides from the same website as that of flexbox, well explained and animated images good enough to make things clear for a 5-year-old as well.
-🔗https://t.co/OiUtOib8dy</p>
+                      <p>I've started with migrating my 5y old @springboot mono-repo with 30+ microservices to Spring Boot 3 to get a feel for what that would take to complete.
+Here are some initial findings: 🧵<br><br>Some time ago I already migrated all my autoconfiguration to the new setup: <a href="https://t.co/t3ZQJGgnXW">https://t.co/t3ZQJGgnXW</a>
+Note that when you use the new @AutoConfiguration, it does NOT proxy bean methods, so stop calling them directly while expecting singleton behavior!<br><br>Before that I already rewrote my @SpringSecurity configuration to use the new component-based setup: <a href="https://t.co/SQpn2dYBkF">https://t.co/SQpn2dYBkF</a>
+I blogged about the result: based on the comments I now use a SecurityConfigurer <a href="https://t.co/wuRQ5pBdst">https://t.co/wuRQ5pBdst</a><br><br>There was one more thing: we're using the @oas_generator project to generate Java code from OpenAPI specs. We were on an older version (5.2.0). The generated code uses annotations defined in javax packages, which needs to change to jakarta for 
+@springframework 6 / Spring Boot 3.<br><br>I therefore updated to the latest 6.2.0 version. The "spring" module there has a "useSpringBoot3" property that will trigger the generation of @JakartaEE annotations, e.g. for bean validation. Note that the "java" module still does not provide such a feature!<br><br>I was already on Java 17, a recent @gradle and the latest Boot 2, so with that I started!
+While Boot's managed dependencies help, I had to change quite some dependencies to their new Jakarta counterparts. Then it's just a search &amp; replace for the javax imports. All of them them?<br><br>No, you have to keep using javax.xml.transform, javax.xml.namespace, javax.xml.namespace, javax.crypto, <a href="https://t.co/YzJf6eoLkW.ssl">https://t.co/YzJf6eoLkW.ssl</a> etc. which are all shipped with the JVM. You do need to use jakarta.xml.bind for JAXB, though, which I updated from 2.3.2 to 3.0.1.<br><br>Speaking of JAXB: if you have jaxb-bindings.xjb files, the XML namespace needs to change to <a href="https://t.co/H2EcrzRVHX.">https://t.co/H2EcrzRVHX.</a> If you combine that with xjc, that stays <a href="https://t.co/XbRvXFcgaC">https://t.co/XbRvXFcgaC</a> though, apparently🤷‍♂️<br><br>For Spring Security I noticed that the mvcMatchers method has been replaced with a requestMatchers method, which uses an mvc-matcher if available. I also have a callback interface that services can use to contribute those to my shared auto-configuration. I had to update that:<br><br>"extends Consumer&lt;AuthorizeHttpRequestsConfigurer.AuthorizationManagerRequestMatcherRegistry&gt;" became Consumer&lt;AuthorizeHttpRequestsConfigurer&lt;HttpSecurity&gt;.AuthorizationManagerRequestMatcherRegistry&gt;, without that methods would start to return Object.<br><br>The RestTemplate's support for the Apache HTTP Client now requires version 5.1 or up: <a href="https://t.co/npngQ6Ll2x">https://t.co/npngQ6Ll2x</a>
+I had to rewrite quite some code b/o this, but it's straightforward: <a href="https://t.co/g5QIWlbvJZ">https://t.co/g5QIWlbvJZ</a>
+It's also a dependency with new Maven coordinates!<br><br>If you extend the template's DefaultResponseErrorHandler to override its handleError(ClientHttpResponse, HttpStatus) method, that second param is now a HttpStatusCode so you must update your override. It's a new sealed interface, and HttpStatus implements it for well-known codes.<br><br>We use Spring Cloud AWS for integration with SQS and the Parameter Store. They've released a 3.0 M3 recently that's compatible with Boot 3: <a href="https://t.co/57hZeMeQI9">https://t.co/57hZeMeQI9</a>
+Note that the coordinates of the starters have changed!<br><br>I updated, but found that the support for an SQS messaging template isn't there yet. The listener support is, and it's much improved thanks to @tomazfernandes_: <a href="https://t.co/gxzc3vChTx">https://t.co/gxzc3vChTx</a>
+3.0 is also based on AWS SDK version 2, so I will to update all code that interacts with that.<br><br>I've implemented custom message dispatching to allow for mixed-type messages on a single SQS queue. This is now provided out of the box, so I can probably remove a bunch of code.
+Awesome work by the Spring Cloud AWS team there!
+Did I also mention auto-reload of changed config? 🙌<br><br>I also wrote my own integration with @springcloud Sleuth for Spring Cloud AWS's SQS support. Depending on whether 3.0 will provide this out of the box or not (haven't checked yet), I'll have to rewrite that to use the new @micrometerio Observability APIs I think.<br><br>That sums it up for now! A lot of work, but most of it is quite straightforward or just consists of waiting for other people to provide me with free updates 🙏
+I'll probably finish this early next year, but it was nice to already spend some time investigating!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Transitions and Transform</a></li>
-<li><a href="#">MDN Docs</a></li>
-<li><a href="#">CSS</a></li>
-<li><a href="#">https</a></li>
-<li><a href="#">t.co</a></li>
+								<li><a href="#">Spring Cloud AWS</a></li>
+<li><a href="#">Spring Cloud</a></li>
+<li><a href="#">Spring Boot</a></li>
+<li><a href="#">Spring</a></li>
+<li><a href="#">springboot mono-repo</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -288,7 +288,7 @@ A Thread📌<br><br>1- Transitions and Transform: This website is similar to MDN
       }
     </script>
 
-<!--5669868823582337851-->
+<!--6992989367558027851-->
 
   </body>
 
