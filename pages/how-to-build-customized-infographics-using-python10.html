@@ -5,13 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="If you want to learn Python, check out these FREE courses by Google 
+    <meta name="description" content="A thread on how to build customized infographics using Python10. 
 
-Google Sponsored...">
+THE CODE
+
+The first thing we...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>If you want to learn python, check out these free...</title>
+    <title>How to build customized infographics using python10. 
+
+the code
+
+the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +83,11 @@ Google Sponsored...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>If you want to learn python, check out these free...</h2>
+                <h2>How to build customized infographics using python10. 
+
+the code
+
+the...</h2>
               </div>
             </div>
           </div>
@@ -99,46 +109,136 @@ Google Sponsored...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>If you want to learn python, check out these free...</span>
-                      <a href="#"><h4>If you want to learn Python, check out these FREE courses by Google 
+                      <span>How to build customized infographics using python10. 
 
-Google Sponsored...</h4></a>
+the code
+
+the...</span>
+                      <a href="#"><h4>A thread on how to build customized infographics using Python10. 
+
+THE CODE
+
+The first thing we...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-13 07:15:34.480137</a></li>
 
                       </ul>
-                      <p>If you want to learn Python, check out these FREE courses by Google 
+                      <p>A thread on how to build customized infographics using Python<br><br>10. 
 
-Google Sponsored Python Courses for Beginners 
+THE CODE
 
-A Thread 🧵👇<br><br>1. Introduction to Python Programming
+The first thing we need to do is import the Python libraries that we will use
 
-<a href="https://t.co/zY28h3HgJ3">https://t.co/zY28h3HgJ3</a><br><br>2.  Programming for Everybody (Getting Started with Python)
+import pandas as pd
+import matplotlib.pyplot as plt
 
-<a href="https://t.co/oGmowlvgPs">https://t.co/oGmowlvgPs</a><br><br>3.  Python Basics 
+We will create Pandas dataframes from the OWID data and use both Pandas and Matplotlib to create the charts and other visuals<br><br>11.
 
-<a href="https://t.co/5Taw0kFLWi">https://t.co/5Taw0kFLWi</a><br><br>I hope you like this content!
+GET THE DATA
 
-I create content around Python, NLP and ML. 
+The first dataset that we will use includes various climate indicators for a number of countries and regions (entities) 
 
-Follow me at @itsafiz, if you don't want to miss anything. 
+We will be using the CO2 Concentrations data for the World as a whole so we will filter the data accordingly<br><br>12.
 
-RT 🔁 and Like ❤️ the first tweet for better reach! 
+First, we read the data into the dataframe co2 and this will, of course, contain all of the data
 
-Cheers 🎉
+Next, we filter the data by only considering it where the Entity name is ‘World’ and store it in the dataframe co2world<br><br>13.
 
-<a href="https://t.co/UqS5btWXGy">https://t.co/UqS5btWXGy</a></p>
+# original source: 
+
+# <a href="https://t.co/7KVEGz7lHK">https://t.co/7KVEGz7lHK</a>
+
+co2 = <a href="https://t.co/kUBTx4lElU_csv('data/climate-change.csv')">https://t.co/kUBTx4lElU_csv('data/climate-change.csv')</a>
+
+co2world = co2[co2['Entity']=='World']
+
+co2world <a href="https://t.co/APhTNAaG8B">https://t.co/APhTNAaG8B</a><br><br>14.
+
+There are several other columns in the data but we are only interested in the CO2 concentrations data
+
+We can plot this data like this:
+
+co2world.plot(y = "CO2 concentrations", 
+              x = 'Year', 
+              grid = True, 
+              figsize = (20,10)) <a href="https://t.co/17JUrJOSpW">https://t.co/17JUrJOSpW</a><br><br>15.
+
+The result is a fairly shocking graph that shows that, for the last 800,000 years, the CO2 concentrations in the Earth’s atmosphere have been below 300 ppm (parts per million) but that over the last few decades it has shot up to over 400 ppm<br><br>16.
+
+However, unless you are familiar with the data, it’s not very easy to interpret the graph
+
+So let’s do our readers a favor and make it a little more obvious what we are looking at<br><br>17.
+
+The x-axis represents time but most of the years are negative values
+
+These values are relative to the beginning of the Common Era and so, for example, -800,000 means 800,000 BC, 0 is where we start counting centuries in our current system and the final year is 2022<br><br>18.
+
+We’ll set the ticks and labels so that it is more readable and, because the labels are quite long, we’ll rotate them so they don’t overlap<br><br>19.
+
+plt.xticks([-800000, -600000, -400000, -200000, 0], 
+           ['800,000 BCE', '600,000 BCE', '400,000 BCE',
+            '200,000 BCE','0'],
+             rotation=20)<br><br>20.
+
+We also define the x- and y-axis labels remove the legend (it’s redundant) and add a title
+
+plt.ylabel("carbon dioxide level (parts per million)")
+
+plt.xlabel("years before today (0 = 1950)")
+
+plt.legend("")
+
+plt.title("CO2 Concentrations")<br><br>21.
+
+Then we save the resulting figure as an image
+
+plt.savefig('images/co2world.png')<br><br>22.
+
+Here is a screenshot of the complete code: <a href="https://t.co/r1NS04K40F">https://t.co/r1NS04K40F</a><br><br>23.
+
+Here is the resulting figure
+
+What we have here is a readable chart but it does not contain all the information from the NASA chart, above <a href="https://t.co/7Db2OArFQC">https://t.co/7Db2OArFQC</a><br><br>24. 
+
+caption = "For millennia, atmospheric carbon has never been above this line"
+plt.text(-790000,320, caption,
+        verticalalignment='top', horizontalalignment='left',
+        fontsize=fontsize, color = color)<br><br>25.
+
+plt.plot([-800000,0],[305,305], linestyle = 'dashed', 
+          color='red', linewidth = 2)
+
+In the code above we define the caption as a string and then add it to the chart at x/y position -790000,320 and then plot a horizontal dashed line from -800000,0<br><br>26.
+
+Next, we add the annotations — the labels and arrows that point to the years 1950 and 2022
+
+plt.annotate("1950",xy = (0,312), xytext = (70000,306),
+              arrowprops=dict(facecolor= color, shrink=0.1), 
+              fontsize=fontsize, color = color)<br><br>27.
+
+plt.annotate("2022",xy = (0,417), xytext = (70000,411),
+              arrowprops=dict(facecolor= color, shrink=0.1),
+              fontsize = fontsize, color = color)<br><br>28.
+
+The final thing to do is to remove the spines
+
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)<br><br>29. 
+
+The resulting image: <a href="https://t.co/N40bgMbYOa">https://t.co/N40bgMbYOa</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Google Google Sponsored</a></li>
-<li><a href="#">Google Sponsored Python</a></li>
-<li><a href="#">Beginners A Thread</a></li>
-<li><a href="#">Google Google</a></li>
-<li><a href="#">Google Sponsored</a></li>
+								<li><a href="#">build customized infographics</a></li>
+<li><a href="#">data</a></li>
+<li><a href="#">Concentrations data</a></li>
+<li><a href="#">create Pandas dataframes</a></li>
+<li><a href="#">color</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -300,7 +400,7 @@ Cheers 🎉
       }
     </script>
 
-<!--6129679452915447851-->
+<!--9022017090266357851-->
 
   </body>
 

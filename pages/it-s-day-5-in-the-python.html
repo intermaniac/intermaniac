@@ -5,13 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="If you want to learn Python, check out these FREE courses by Google 
+    <meta name="description" content="It's Day 5 in the Python functions series. It's time for, drum roll…
 
-Google Sponsored...">
+**kwargs
+
+If you've not...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>If you want to learn python, check out these free...</title>
+    <title>It's day 5 in the python functions series. it's time...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +79,7 @@ Google Sponsored...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>If you want to learn python, check out these free...</h2>
+                <h2>It's day 5 in the python functions series. it's time...</h2>
               </div>
             </div>
           </div>
@@ -99,46 +101,70 @@ Google Sponsored...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>If you want to learn python, check out these free...</span>
-                      <a href="#"><h4>If you want to learn Python, check out these FREE courses by Google 
+                      <span>It's day 5 in the python functions series. it's time...</span>
+                      <a href="#"><h4>It's Day 5 in the Python functions series. It's time for, drum roll…
 
-Google Sponsored...</h4></a>
+**kwargs
+
+If you've not...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-13 07:15:34.480137</a></li>
 
                       </ul>
-                      <p>If you want to learn Python, check out these FREE courses by Google 
+                      <p>It's Day 5 in the Python functions series. It's time for, drum roll…
 
-Google Sponsored Python Courses for Beginners 
+**kwargs
 
-A Thread 🧵👇<br><br>1. Introduction to Python Programming
+If you've not read yesterday's thread on *args, you may want to start there!
 
-<a href="https://t.co/zY28h3HgJ3">https://t.co/zY28h3HgJ3</a><br><br>2.  Programming for Everybody (Getting Started with Python)
+Let's look at today's example to discuss **kwargs
 
-<a href="https://t.co/oGmowlvgPs">https://t.co/oGmowlvgPs</a><br><br>3.  Python Basics 
+&lt;code in ALT text&gt;
 
-<a href="https://t.co/5Taw0kFLWi">https://t.co/5Taw0kFLWi</a><br><br>I hope you like this content!
+/1 <a href="https://t.co/0Nx5w5Xyi6">https://t.co/0Nx5w5Xyi6</a><br><br>As was the case with *args, there's nothing special about the name `kwargs`. What makes a kwargs a kwargs (!) is the double asterisk before the parameter name, so you can use a more descriptive parameter name
 
-I create content around Python, NLP and ML. 
+/2<br><br>In this example, I use `people` as the parameter name and it's preceded by the double asterisk ** in the function signature
 
-Follow me at @itsafiz, if you don't want to miss anything. 
+/3<br><br>Let's see what `people` is in this case by printing it out and printing out what data type it is, too
 
-RT 🔁 and Like ❤️ the first tweet for better reach! 
+/4 <a href="https://t.co/gzSlLipHX2">https://t.co/gzSlLipHX2</a><br><br>`people` is a dictionary
 
-Cheers 🎉
+When you call the function, you've used named arguments or keyword arguments in the function call, not positional arguments
 
-<a href="https://t.co/UqS5btWXGy">https://t.co/UqS5btWXGy</a></p>
+/5<br><br>You can see an earlier thread in the series to refresh your memory about positional and named arguments:
+
+/6 <a href="https://t.co/ofDCCGk2vx">https://t.co/ofDCCGk2vx</a><br><br>The keyword in the named argument becomes the key in the dictionary
+
+The argument becomes the value in the dictionary associated with that key
+
+/7<br><br>You can include as many keyword arguments as you wish when you call a function which has **kwargs
+
+And incidentally, you may have guessed already, kwargs stands for KeyWord ARGumentS
+
+/8<br><br>We can now return to the original code and show its output, too
+
+/9 <a href="https://t.co/bN5PebY0bl">https://t.co/bN5PebY0bl</a><br><br>As `people` is a dictionary, you can loop through it using the dictionary method `items()`
+
+The last call, which has no arguments, doesn't print anything out since the dictionary is empty
+
+/10<br><br>In summary, you can add a **kwargs parameter when defining a function which allows you to add as many keyword arguments as you want when you call the function
+
+These keyword arguments will be collected in a dictionary. The keyword becomes the key and the argument the value
+
+/11<br><br>Tomorrow, we'll have a look at an example which uses both *args and **kwargs as well as other parameters
+
+/12</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Google Google Sponsored</a></li>
-<li><a href="#">Google Sponsored Python</a></li>
-<li><a href="#">Beginners A Thread</a></li>
-<li><a href="#">Google Google</a></li>
-<li><a href="#">Google Sponsored</a></li>
+								<li><a href="#">Python functions series</a></li>
+<li><a href="#">Python functions</a></li>
+<li><a href="#">keyword arguments</a></li>
+<li><a href="#">kwargs</a></li>
+<li><a href="#">arguments</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -300,7 +326,7 @@ Cheers 🎉
       }
     </script>
 
-<!--6129679452915447851-->
+<!--8843201613343947851-->
 
   </body>
 

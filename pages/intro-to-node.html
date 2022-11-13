@@ -5,13 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="If you want to learn Python, check out these FREE courses by Google 
+    <meta name="description" content="Intro to Node.JS  🧵 
 
-Google Sponsored...">
+A complete explanation for beginners.
+
+A mind-blowing thread 🤯👇🏼Definition from https://t.co/bjZQwz89tm...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>If you want to learn python, check out these free...</title>
+    <title>Intro to node.js  🧵 
+
+a complete explanation for beginners.
+
+a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +83,11 @@ Google Sponsored...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>If you want to learn python, check out these free...</h2>
+                <h2>Intro to node.js  🧵 
+
+a complete explanation for beginners.
+
+a...</h2>
               </div>
             </div>
           </div>
@@ -99,46 +109,108 @@ Google Sponsored...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>If you want to learn python, check out these free...</span>
-                      <a href="#"><h4>If you want to learn Python, check out these FREE courses by Google 
+                      <span>Intro to node.js  🧵 
 
-Google Sponsored...</h4></a>
+a complete explanation for beginners.
+
+a...</span>
+                      <a href="#"><h4>Intro to Node.JS  🧵 
+
+A complete explanation for beginners.
+
+A mind-blowing thread 🤯👇🏼Definition from https://t.co/bjZQwz89tm...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-13 07:15:34.480137</a></li>
 
                       </ul>
-                      <p>If you want to learn Python, check out these FREE courses by Google 
+                      <p>Intro to Node.JS  🧵 
 
-Google Sponsored Python Courses for Beginners 
+A complete explanation for beginners.
 
-A Thread 🧵👇<br><br>1. Introduction to Python Programming
+A mind-blowing thread 🤯👇🏼<br><br>Definition from <a href="https://t.co/bjZQwz89tm">https://t.co/bjZQwz89tm</a> 👇 
 
-<a href="https://t.co/zY28h3HgJ3">https://t.co/zY28h3HgJ3</a><br><br>2.  Programming for Everybody (Getting Started with Python)
+"Node.js® is a JavaScript *runtime* built on Chrome's V8 JavaScript engine." (We will revisit this definition)
 
-<a href="https://t.co/oGmowlvgPs">https://t.co/oGmowlvgPs</a><br><br>3.  Python Basics 
+So vague definition, right?
 
-<a href="https://t.co/5Taw0kFLWi">https://t.co/5Taw0kFLWi</a><br><br>I hope you like this content!
+Notice the words "runtime" &amp; "JavaScript engine",we will look into the details of these two.<br><br>Now, look at the code,
 
-I create content around Python, NLP and ML. 
+var num = 10;
 
-Follow me at @itsafiz, if you don't want to miss anything. 
+What does this code do?  
 
-RT 🔁 and Like ❤️ the first tweet for better reach! 
+It stores 10 at a memory location and gives that a name 'num', right?
 
-Cheers 🎉
+But, It's u who knows what that code does. Computers don't, cause they don't recognize it. They only know 0's and 1's, the machine code.
+👇🏼<br><br>So, When a language is created, we need to create software that can actually understand the syntax, translate it in 0 and 1 &amp; execute it to perform the actual task.
 
-<a href="https://t.co/UqS5btWXGy">https://t.co/UqS5btWXGy</a></p>
+This is what *JS Engine* does.
+
+It takes the JS code &amp; translates it into machine-readable code and executes it.<br><br>This is how JS code is executed and the desired task is performed.
+
+Traditionally, we have been executing JS code inside browsers.
+
+Every browser has a JS engine, For eg. Chrome has V8, Safari has Chakra, etc.
+
+These engines r responsible for executing JS code inside browsers.<br><br>Now you understand the job of a JavaScript Engine. Great 🔥
+
+Now, Let's focus on understanding what actually a *Runtime* is.
+
+JavaScript is great, indeed, but just declaring objects, arrays, doing the addition of vars is not what we want from JS.
+
+Think about why JS was created.<br><br>JavaScript was created to make the web interactive and dynamic. 
+
+Therefore running JavaScript in isolation is not that useful. We need to run it in some *context*. 
+
+What do I mean by context?
+
+👇🏼<br><br>When JavaScript runs in a browser, there are many built-in things like Window object, the document(web page), LocalStorage, etc. are provided by the browser to work with.
+
+We access and manipulate this built-in stuff using JS to make the web better, more interactive, &amp; dynamic. <a href="https://t.co/5WNV9u21UJ">https://t.co/5WNV9u21UJ</a><br><br>For eg. When a user clicks a button on a web page, we can write JavaScript to access the web page and maybe change the color of the page or maybe, pop up a window.
+
+This way we r actually able to do what JavaScript was originally intended to do.
+
+So, JS + Browser's Context = 🔥<br><br>It is quite useful. Awesome, but here is another thing.
+
+When you're running JavaScript in the context of a browser, you can only access things like DOM, BOM, LocalStorage, Timers, etc. but you can not access Operating System and stuff like File System, memory, CPU, etc.<br><br>Thus, we can say that the context is kind of limiting the usefulness of JavaScript.
+
+Think about If we can access OS stuff somehow using JavaScript then we can do a lot more useful tasks like reading/writing files, creating servers, talking to databases, &amp; handling HTTP requests<br><br>This is where Node.JS comes into the picture.
+
+The creator of Node.JS, Ryan Dahl, came up with an idea to take a JS Engine (As we know It is required to run JS) and provide a richer context to it.
+
+So he took Chrome's V8 engine and embedded it in a C++ program named it Node.JS.<br><br>So what he did differently was that he provided a different context, i.e. a different runtime, a different set of built-in stuff like FS module, HTTP module, OS module, and many more. 
+
+This new runtime called Node.JS is installable on various machines like Windows, Macs, Linux.<br><br>So, now You can run JS code on whatever machine Node.JS can be installed cause Node has a V8 engine inside it. If you can install Node on a coffee machine you can run JS there too. 
+
+you don't need a browser to run your JavaSript code anymore.<br><br>Because Node.JS comes with a richer and different context we can use JavaScript to access those built-in modules and create servers, read/write files, and can do all the stuff that can be done using a programming language like Python or Java.<br><br>This made JavaScript not limited to browser only but now we can run JS on a server. This made JavaScript powerful. 
+
+Using this one language we can create Full-Stack applications.
+
+Let's revisit the definition of Node.JS.<br><br>Node.js® is a JavaScript runtime built on Chrome's V8 JS engine.
+
+Now you should be able to break this definition.
+
+" Node.JS is JS runtime that let's execute JS code outside of a browser, that is on a server, a local machine. It uses Chrome's V8 engine to actually execute JS".<br><br>This is all for this thread, folks. 
+
+Share your feedback or ask your doubts in the comments if any.
+
+If you find it useful, please consider retweeting the first tweet and make it reach others.
+
+Follow me @faheem_khan_dev
+ for more content like this.
+
+Thank you ❤️</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Google Google Sponsored</a></li>
-<li><a href="#">Google Sponsored Python</a></li>
-<li><a href="#">Beginners A Thread</a></li>
-<li><a href="#">Google Google</a></li>
-<li><a href="#">Google Sponsored</a></li>
+								<li><a href="#">JavaScript</a></li>
+<li><a href="#">code</a></li>
+<li><a href="#">engine</a></li>
+<li><a href="#">Node.JS</a></li>
+<li><a href="#">browser</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -300,7 +372,7 @@ Cheers 🎉
       }
     </script>
 
-<!--6129679452915447851-->
+<!--8463425455769147851-->
 
   </body>
 
