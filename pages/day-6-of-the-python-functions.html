@@ -5,23 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🧵 This Week In React
+    <meta name="description" content="Day 6 of the Python functions series:
 
-👉 Next.js 13
-👉 Turbopack
-👉 Remixing Shopify
-👉 React-Three-Fiber Journey
-👉 Gatsby Valhalla
-👉 Full...">
+• more on *args &amp; **kwargs
+
+In this thread, we'll...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🧵 this week in react
+    <title>Day 6 of the python functions series:
 
-👉 next.js 13
-👉 turbopack
-👉 remixing shopify
-👉...</title>
+• more on *args...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,12 +81,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🧵 this week in react
+                <h2>Day 6 of the python functions series:
 
-👉 next.js 13
-👉 turbopack
-👉 remixing shopify
-👉...</h2>
+• more on *args...</h2>
               </div>
             </div>
           </div>
@@ -114,204 +105,110 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🧵 this week in react
+                      <span>Day 6 of the python functions series:
 
-👉 next.js 13
-👉 turbopack
-👉 remixing shopify
-👉...</span>
-                      <a href="#"><h4>🧵 This Week In React
+• more on *args...</span>
+                      <a href="#"><h4>Day 6 of the Python functions series:
 
-👉 Next.js 13
-👉 Turbopack
-👉 Remixing Shopify
-👉 React-Three-Fiber Journey
-👉 Gatsby Valhalla
-👉 Full...</h4></a>
+• more on *args &amp; **kwargs
+
+In this thread, we'll...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-14 07:15:33.204204</a></li>
 
                       </ul>
-                      <p>🧵 This Week In React
+                      <p>Day 6 of the Python functions series:
 
-👉 Next.js 13
-👉 Turbopack
-👉 Remixing Shopify
-👉 React-Three-Fiber Journey
-👉 Gatsby Valhalla
-👉 Full Stack Comps
-👉 Rive
-👉 Storybook
-👉 React-Query
-👉 Docusaurus
-👉 Asta
-👉 Expo 47
-👉 TypeScript 4.9
-👉 stc
+• more on *args &amp; **kwargs
 
-... more by email ✉️
+In this thread, we'll look at functions with some combination of "normal" positional arguments, *args, and **kwargs
 
-🧵 Details 👇 <a href="https://t.co/3outs8hPSj">https://t.co/3outs8hPSj</a><br><br>🧵 Turbopack - @wSokra @jaredpalmer @alexkirsz
+Let's start with this example
 
-Alpha version of Rust-based successor to Webpack (from same creator)
+–&gt; What do you think the output will be?
 
-Focus on DX
+&lt;code in ALT text&gt;
 
-700x faster than Webpack - 20x faster than Vite
+/1 <a href="https://t.co/dnFxHTYCCu">https://t.co/dnFxHTYCCu</a><br><br>The function definition has two parameters. The second one is a **kwargs as it has the double asterisk in front of it
 
-Turbo: Rust memoisation framework, cache independent function calls
+As we've seen in yesterday's thread, this means you can pass any number of keyword arguments which will be assigned to this parameter name
 
-<a href="https://t.co/IQ6BNZqZuJ">https://t.co/IQ6BNZqZuJ</a> <a href="https://t.co/aoS63repUZ">https://t.co/aoS63repUZ</a><br><br>🧵 More details about Turbopack in the email newsletter
+/3<br><br>The function call has one positional argument, `red_team`, and three keyword arguments. You can have as many keyword arguments as you wish after the first required one
 
-<a href="<a href="<a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a>"><a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a></a>"><a href="<a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a>"><a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a></a></a>
+/4<br><br>In the function body, `people` is a dictionary and therefore you can loop through it using the `items()` method
 
-The community question some of the benchmarks. 
-Vercel published a dedicated page:
-<a href="https://t.co/iNwiGxQxVu">https://t.co/iNwiGxQxVu</a> <a href="https://t.co/wA1jWxQ4XE">https://t.co/wA1jWxQ4XE</a><br><br>🧵 Remix Joins Shopify to Push the Web Forward - @dalmaer @ryanflorence @mjackson
+`person` is a string containing the keyword you used in the function call
 
-Shopify acqui-hire Remix
+/5<br><br>In this case it will be `"Stephen"` in the first iteration, `"Kate"` in the second, and `"Sharon"` in the third
 
-Their e-commerce framework Hydrogen was an early adopter of React Server Components in v1
+`points` will be the argument you pass which matches the keyword, so in this case it will be `10`, `8`, and `12` in the three iterations of the `for` loop
 
-They will use Remix for Hydrogen v2 - not using RSC
+/6<br><br>Here's the code with the output also displayed this time
 
-<a href="https://t.co/q0qEgKu6a8">https://t.co/q0qEgKu6a8</a><br><br>🧵 More details about the Remix acquisition in the email newsletter
+/7 <a href="https://t.co/l7oZiA2H05">https://t.co/l7oZiA2H05</a><br><br>If you've been following the threads in this series, you'll know that at some stage I'll talk about "the rules" on how you can and cannot order the various types of parameters in function definitions.
 
-<a href="<a href="<a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a>"><a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a></a>"><a href="<a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a>"><a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a></a></a>
+Here's and example which breaks these rules:
 
-@remix_run will remain independent, open-source, decoupled from e-commerce
+/8 <a href="https://t.co/FcIsaQkGKg">https://t.co/FcIsaQkGKg</a><br><br>The error message, new in Python 3.11, makes it clear what's wrong in this case
 
-They may re-introduce RSC later
+The variable keyword parameter, that's the **kwargs, must come after the "normal" parameters
 
-See also the Remix team announcement:
-<a href="https://t.co/hpoeTq0vuF">https://t.co/hpoeTq0vuF</a> <a href="https://t.co/aRciCHrh0N">https://t.co/aRciCHrh0N</a><br><br>🧵 React-Three-Fiber Journey - @bruno_simon
+/9<br><br>We can even improve the function a bit by checking whether the name is already in the team and only adding it if it's not already there
 
-The famous course goes React
+Notice how `"Stephen"` is already in the dictionary with a value of `4`, so it's not updated by the function
 
-Update: +24h video based on React-Three-Fiber
+/10 <a href="https://t.co/vvnKoUvU7j">https://t.co/vvnKoUvU7j</a><br><br>Of course, whether you want to do this or not depends on the context of your program
 
-Now: the best time to get into 3D creative dev
+/11<br><br>Let's add another team and change the function so that you can add members to more than one team in a single function call
 
--30% for TWIR readers: <a href="https://t.co/GT6COwaFk6">https://t.co/GT6COwaFk6</a>
-Not sponsored, I just really like it
+/12 <a href="https://t.co/GPf1SrkQXy">https://t.co/GPf1SrkQXy</a><br><br>You're now using both *args and **kwargs in this function
 
-<a href="https://t.co/6GzoGhltUR">https://t.co/6GzoGhltUR</a> <a href="https://t.co/vH9B5W7lTR">https://t.co/vH9B5W7lTR</a><br><br>🧵 Thread pause 😏
+When you call the function you can first use any number of arguments with no keyword followed by any number of keyword arguments
 
-⏱ Are you still losing your time scrolling on Twitter? 😆
+/13<br><br>• The non-keyword arguments are assigned to the tuple `teams`
 
-✉️ Subscribe by email!
+• The keyword arguments are assigned to the dictionary `people`
 
-👌 Much more links and weak signals, better comments 🙌
+/14<br><br>Look at the outputs carefully and you'll note that Stephen, Kate, and Sharon are in both the red team and the blue team; Mary and Trevor are in the red and green teams; Ishaan is just in the blue team
 
-<a href="<a href="https://t.co/0ICuohByKE">https://t.co/0ICuohByKE</a>"><a href="https://t.co/0ICuohByKE">https://t.co/0ICuohByKE</a></a><br><br>🧵 Full Stack Components - @kentcdodds
+/15<br><br>Back to the rules of what you can and cannot do – note the function call which is different from the example above
 
-Remix allows to create truly full-stack components
+/16 <a href="https://t.co/oYW2TbO1yC">https://t.co/oYW2TbO1yC</a><br><br>You cannot place the keyword arguments before the non-keyword (positional) arguments when you call the function
 
-Encapsulate frontend+backend code in a single file
+This makes sense since `*teams` is before `**people` in the function definition
 
-Not limited to routing!
+/17<br><br>But can you swap the *args and **kwargs around in the function signature?
 
-Also for micro-interactions (like button, autocomplete) via the useFetcher hook
+Let's find out…
 
-<a href="https://t.co/CpTtHWrif2">https://t.co/CpTtHWrif2</a> <a href="https://t.co/MtvORZuTX1">https://t.co/MtvORZuTX1</a><br><br>🧵 The Gatsby Slice API: High Precision Incremental Builds - @0xJ05H
+/18 <a href="https://t.co/aXKb68ZCvy">https://t.co/aXKb68ZCvy</a><br><br>No, you cannot
 
-API to improve build perf when layout component (footer) is updated: comps are cut from output HTML, then re-stitched
+Notice that the error is raised by the function definition and not the function call (there is no function call in this example!)
 
-Gatsby will release Valhallah soon: agnostic data-layer! 
+*args must come before **kwargs in both the function signature and the function call
 
-<a href="https://t.co/qe1u2qFyrK">https://t.co/qe1u2qFyrK</a><br><br>🧵 Optimization techniques for Rive animations in React apps - @alex_barashkov
+/19<br><br>In summary, in this thread you've seen a few examples of functions with "normal" arguments, *args, and **kwargs
 
-@rive_app is a more efficient alternative to Lottie
+There are more combinations of parameter types you could use
 
-Shows how to optimize even more the usage of Rive animations in Next.js+Gatsby
+/20<br><br>We now move on from *args and **kwargs
 
-Self-hosting, preloading, lazy loading
+Earlier in the series, you've seen how when you call a function with "normal" parameters (not *args or **kwargs), you have the choice of using positional arguments or keyword arguments when you call the function.
 
-<a href="https://t.co/ZyCPxGOe7j">https://t.co/ZyCPxGOe7j</a><br><br>🧵 Code coverage with Storybook test runner - @yannbf
+/21<br><br>In the next two days we'll see how you can force the user who's calling a function to use only positional arguments and not keyword arguments, and the other way around, too
 
-Good overview of all the @storybookjs test features
-
-Now has code coverage support, thanks to Istanbul instrumentation
-
-Reporting format is configurable
-
-<a href="https://t.co/tD4w88vlM6">https://t.co/tD4w88vlM6</a><br><br>🧵 Seeding the Query Cache - @TkDodo
-
-Describes a possible waterfall problem with React-Query + Suspense
-
-Can use prefetchQuery before component mount to optimize loading as much as possible
-
-Gives an idea of future of RQ regarding React innovations
-
-<a href="https://t.co/A2jCD3RQbX">https://t.co/A2jCD3RQbX</a> <a href="https://t.co/Rk5StBP0kz">https://t.co/Rk5StBP0kz</a><br><br>🧵 Docusaurus 2.2
-
-Includes first-class support for Mermaid diagrams (including light/dark mode)
-
-Just use ```mermaid code blocks
-Exactly like the new GitHub support
-
-Also various improvements to DX, accessibility, and translations
-
-<a href="https://t.co/6FkNgp9MKU">https://t.co/6FkNgp9MKU</a> <a href="https://t.co/OOvYGsOqG5">https://t.co/OOvYGsOqG5</a><br><br>🧵 Thread pause 😏
-
-⏱ Are you still losing your time scrolling on Twitter? 😆
-
-✉️ Subscribe by email!
-
-👌 Much more links and weak signals, better comments 🙌
-
-<a href="<a href="https://t.co/0ICuohByKE">https://t.co/0ICuohByKE</a>"><a href="https://t.co/0ICuohByKE">https://t.co/0ICuohByKE</a></a><br><br>🧵 Asta - Resumable SSR framework - @_goujuan
-
-New framework to take a look at, inspired by Qwik and Marko with a React-like JSX syntax
-
-<a href="https://t.co/VM8wulFS8N">https://t.co/VM8wulFS8N</a> <a href="https://t.co/4QGDM3aJ1W">https://t.co/4QGDM3aJ1W</a><br><br>🧵 Expo SDK 47 beta - @notbrent
-
-Promising new version!
-
-- RN 0.70.4 - React 18.1
-- Hermes in Expo Go iOS - default in 48
-- Fabric in Expo modules
-- Expo Modules API 1.0: easy to create native Fabric modules in Swift/Kotlin!
-- Filesystem routing in beta!
-
-<a href="https://t.co/UL82YCDMig">https://t.co/UL82YCDMig</a> <a href="https://t.co/ieUBWmscmN">https://t.co/ieUBWmscmN</a><br><br>🧵 Other React-Native links in the newsletter
-
-Particularly excited to see React-Native Server Components being "officially" on the table
-
-<a href="<a href="<a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a>"><a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a></a>"><a href="<a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a>"><a href="https://t.co/JlfS5Wf7zT">https://t.co/JlfS5Wf7zT</a></a></a> <a href="https://t.co/URYjEUyXAm">https://t.co/URYjEUyXAm</a><br><br>🧵 @typescript 4.9 - including "satisfies" keyword 🤗
-
-Now in RC:
-<a href="https://t.co/7rRoBfmZxg">https://t.co/7rRoBfmZxg</a>
-
-Also supported by @babeljs 7.20:
-<a href="https://t.co/Pm12dwS5WX">https://t.co/Pm12dwS5WX</a><br><br>🧵 Open-sourcing the new TypeScript type checker - @kdy1dev
-
-Author of swc (used by Vercel/Next.js/Turbopack) published source of Speedy TypeScript type checker (stc)
-
-Explains why it will be in Rust instead of Go
-
-<a href="https://t.co/xE1Q9aOvE1">https://t.co/xE1Q9aOvE1</a> <a href="https://t.co/TMyGsTTntx">https://t.co/TMyGsTTntx</a><br><br>🎬 THREAD END! 🧵
-
-🙏 Support me
-
-✉️ Subscribe by email: <a href="https://t.co/PmP1W2o7RB">https://t.co/PmP1W2o7RB</a> 
-👌 More content, better comments
-
-🐦 Retweet this thread 👇
-<a href="https://t.co/wZ6CiLityI">https://t.co/wZ6CiLityI</a><br><br>🤭 Fun this week
-
-<a href="https://t.co/ZB7uJXbzuD">https://t.co/ZB7uJXbzuD</a></p>
+/22</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Remix Joins Shopify</a></li>
-<li><a href="#">Remixing Shopify</a></li>
-<li><a href="#">Full Stack Components</a></li>
-<li><a href="#">Gatsby Valhalla</a></li>
-<li><a href="#">Shopify acqui-hire Remix</a></li>
+								<li><a href="#">function call</a></li>
+<li><a href="#">function</a></li>
+<li><a href="#">keyword arguments</a></li>
+<li><a href="#">arguments</a></li>
+<li><a href="#">Python functions series</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -473,7 +370,7 @@ Explains why it will be in Rust instead of Go
       }
     </script>
 
-<!--5051818288902477851-->
+<!--2703211280285587851-->
 
   </body>
 
