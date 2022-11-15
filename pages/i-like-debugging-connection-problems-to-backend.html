@@ -5,17 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Do you need fake datasets for practice?
- A thread 🧵
-
-Here are some resources where you...">
+    <meta name="description" content="I like debugging connection problems to backend applications and databases. I ran into an interesting...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Do you need fake datasets for practice?
-  🧵
-
-here are...</title>
+    <title>I like debugging connection problems to backend applications and databases....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +75,7 @@ here are...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Do you need fake datasets for practice?
-  🧵
-
-here are...</h2>
+                <h2>I like debugging connection problems to backend applications and databases....</h2>
               </div>
             </div>
           </div>
@@ -106,43 +97,24 @@ here are...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Do you need fake datasets for practice?
-  🧵
-
-here are...</span>
-                      <a href="#"><h4>Do you need fake datasets for practice?
- A thread 🧵
-
-Here are some resources where you...</h4></a>
+                      <span>I like debugging connection problems to backend applications and databases....</span>
+                      <a href="#"><h4>I like debugging connection problems to backend applications and databases. I ran into an interesting...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-15 07:15:36.689519</a></li>
 
                       </ul>
-                      <p>Do you need fake datasets for practice?
- A thread 🧵
-
-Here are some resources where you can create and download datasets to hone your Excel, SQL, Power Bi, etc., skills.
-
-1-https://t.co/8ddjfKKsQv
-
-2-https://t.co/optIQYsTdi
-
-3-https://t.co/pv9PS1sbJ5
-
-4-https://t.co/hwZAZpFGhY<br><br>5-https://t.co/2ysPSG0zaq
-
-#datasets #database #freedatasets #datavisualization #dataanalytics #datascience #businessintelligence  #tableau #qliksense #powerbi #python #r #sql</p>
+                      <p>I like debugging connection problems to backend applications and databases. I ran into an interesting one with SQL Server on aws and thought I’ll share it here (thread)<br><br>Had two security groups one has the database replicas (sgDB) and the other has the backend applications (sgBK) added a rule so   Port 1433 is allowed from sgBK to sgDB.<br><br>But I still could not connect! From the same SS DB machine I could connect just fine using ipv4 loopback localhost and also I can connect using the hostname.<br><br>I checked SS configuration manager and its there we are listening on all interfaces, so TCP/IP is enabled.<br><br>So why is it that I can use the hostname on the same machine and it works but can’t use the hostname from a remote machine?<br><br>Then I said ok, let us use the IPv4 of the machine instead to connect, and I could NOT connect! Even from the same machine.<br><br>So this immediately tells me that of course this IP is not in among listening addresses, so I checked SS config again and I saw SS is listening on a different IPv4!<br><br>Then I remembered that this SQL server instance was restored from an imaged EC2 SS. Which just of course mirrored whatever IP addresses on that machine.<br><br>So I deleted those entries and listened to the actual IP address and there it is! It works<br><br>The hostname worked locally because DNS resolved it to loopback when in the same machine but it resolved it to the IPv4 address when not in the same machine.<br><br>Ok this isn’t as exciting as I thought it would be in a tweet but hey I learned something and wanted to share it 😅</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">t.co</a></li>
-<li><a href="#">fake datasets</a></li>
-<li><a href="#">SQL</a></li>
-<li><a href="#">hone your Excel</a></li>
-<li><a href="#">datasets</a></li>
+								<li><a href="#">debugging connection problems</a></li>
+<li><a href="#">backend applications</a></li>
+<li><a href="#">SQL Server</a></li>
+<li><a href="#">debugging connection</a></li>
+<li><a href="#">connection problems</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -304,7 +276,7 @@ Here are some resources where you can create and download datasets to hone your 
       }
     </script>
 
-<!--7505043283814028851-->
+<!--4604645483676128851-->
 
   </body>
 
