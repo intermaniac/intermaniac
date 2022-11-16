@@ -5,17 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="🔥✨ 30 Days CodeCamp✨ 🔥 
+    <meta name="description" content="5 software engineering skills that every Shiny Developer should know:
 
-Learn HTML, CSS, Tailwind &amp; Git.
-
-Thread 🧵 https://t.co/IpQLPk99cZPrevious Batch review👇...">
+1) Testing
+2) System design
+3) Writing robust...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>🔥✨ 30 days codecamp✨ 🔥 
+    <title>5 software engineering skills that every shiny developer should know:
 
-learn html, css, tailwind &amp;...</title>
+1)...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,9 +81,9 @@ learn html, css, tailwind &amp;...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>🔥✨ 30 days codecamp✨ 🔥 
+                <h2>5 software engineering skills that every shiny developer should know:
 
-learn html, css, tailwind &amp;...</h2>
+1)...</h2>
               </div>
             </div>
           </div>
@@ -105,57 +105,101 @@ learn html, css, tailwind &amp;...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>🔥✨ 30 days codecamp✨ 🔥 
+                      <span>5 software engineering skills that every shiny developer should know:
 
-learn html, css, tailwind &amp;...</span>
-                      <a href="#"><h4>🔥✨ 30 Days CodeCamp✨ 🔥 
+1)...</span>
+                      <a href="#"><h4>5 software engineering skills that every Shiny Developer should know:
 
-Learn HTML, CSS, Tailwind &amp; Git.
-
-Thread 🧵 https://t.co/IpQLPk99cZPrevious Batch review👇...</h4></a>
+1) Testing
+2) System design
+3) Writing robust...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-16 07:15:35.546025</a></li>
 
                       </ul>
-                      <p>🔥✨ 30 Days CodeCamp✨ 🔥 
+                      <p>5 software engineering skills that every Shiny Developer should know:
 
-Learn HTML, CSS, Tailwind &amp; Git.
+1) Testing
+2) System design
+3) Writing robust and reproducible code
+4) Using Sass and JavaScript
+5) Consistency
 
-Thread 🧵 <a href="https://t.co/IpQLPk99cZ">https://t.co/IpQLPk99cZ</a><br><br>Previous Batch review👇 <a href="https://t.co/tPpAlO2Q8o">https://t.co/tPpAlO2Q8o</a><br><br>Checkout our Students work here👉 #30daysofcodecamp<br><br>What will you get in these 30 Days😍?
+// 🧵<br><br>1) Testing: 
+Coding is not just about pumping out new features.
 
-🔶Daily 2hrs Of Mentorship
+Ensuring the code is correct and resilient is crucial for production.
 
-🔶Daily Live Quiz
+Automated tests are perhaps the most important way to achieve that.<br><br>Typical blocker? Setting up a testing framework and ensuring tests are regularly run.
 
-🔶Daily Assignments
+👉That's why🦏 {rhino} (<a href="https://t.co/DlOLl8eOWR">https://t.co/DlOLl8eOWR</a>) comes with a complete setup:
 
-🔶Build 10+ Projects
+1. Unit tests with testthat
+2. E2E tests with Cypress
+3. All run on CI via GitHub Actions<br><br>2) System design
 
-🔶Freelancing Guide
+Large app requires thoughtful design or developer productivity will plummet.
 
-🔶Content Creation Guide
+Separation of concerns: organize code into modules with well-defined purpose and clear interface.<br><br>Typically languages support modularization at various levels.
 
-🔶A certificate Will be Provided.<br><br>Here are 30 Days Study Map🚀: <a href="https://t.co/kUo6T1xrFb">https://t.co/kUo6T1xrFb</a><br><br>Here's how Day 2 Looks😎: <a href="https://t.co/HZIcLjbXSk">https://t.co/HZIcLjbXSk</a><br><br>Day - 2 Study Materials <a href="https://t.co/op8MOZNVky">https://t.co/op8MOZNVky</a><br><br>Here's how Day 10 Looks🤩: <a href="https://t.co/RZC3sxN1W8">https://t.co/RZC3sxN1W8</a><br><br>Here are some more basic assignments examples: <a href="https://t.co/LuuKb91XsS">https://t.co/LuuKb91XsS</a><br><br>and you will build 2 Complete HTML &amp; CSS Projects &amp; 2 Complete Tailwind Projects.
+Example: Sass and JavaScript. 
 
-A Glimpse of HTML &amp; CSS Projects👇 <a href="https://t.co/qVymc6QPQS">https://t.co/qVymc6QPQS</a><br><br>Project 2👇 <a href="https://t.co/lG8NQuxmPO">https://t.co/lG8NQuxmPO</a><br><br>The program starts on 1st December 2022 😊
+Vanilla R is a bit lacking in this regard.<br><br>👉 {rhino} supports using:
 
-Thankyou😍
+1. {box} modules for encapsulation
+2. Logic and View separation: Logic can be expressed without Shiny, View defines the UI and wires its elements together with reactivity.
+3. Shiny modules: ease of understanding, avoid ID clashes<br><br>3) Writing robust and reproducible code
+In R it is common to use library() call to import all names from a package into the global namespace.
+It is great for interactive use and quick prototyping.
+While tempting, this relaxed attitude towards dependencies has serious drawbacks:<br><br>1. Brittleness: update to your dependencies can change break your code
+2. Lack of isolation: You cannot use different package versions in different projects
+3. Name clashes and namespace pollution.
+Can be especially severe in long-lived projects with multiple collaborators.<br><br>{rhino} addresses these issues by bringing explicit dependency management to R:
 
-Let's learn &amp; Build 🚀
+At project level: renv with its lockfile.
 
-Grab your seats Now. 
-Link: <a href="https://t.co/hGRO1L7a2m">https://t.co/hGRO1L7a2m</a> <a href="https://t.co/yks1Asdy3v">https://t.co/yks1Asdy3v</a></p>
+At file level: box with its explicit imports/exports.<br><br>4) Using Sass and JavaScript
+
+Amazing things can be done with just R and its packages.
+
+Still, you’ll face situations where they are not flexible enough to meet your needs.
+
+With JavaScript and Sass you get complete control over your application.<br><br>Rhino comes with project setup for JS and Sass out of the box.
+
+Both are compiled and minified to offer you the latest features and maximum performance.<br><br>5) Consistency
+
+Everybody has their preferences, but it is important to keep code style consistent across the project:
+
+1. Makes the code easier to read.
+2. Spend less time on code styling issues during code reviews.
+
+You should have a style guide, but you need to enforce it.<br><br>The best way to enforce style consistency is automation.
+
+Rhino comes with linters and formatters for R, JavaScript and Sass.
+
+They can automatically detect improperly formatted code and in many cases fix it.
+
+{rhino} lints all your code automatically via GitHub Actions.<br><br>Software engineering skills that every Shiny Developer should have:
+
+1) Testing: correctness is crucial
+2) System design: design for maintability
+3) Robust code: use explicit dependency management
+4) Sass and JavaScript: leverage full control over UI
+5) Consistency: use linters<br><br>That's a wrap! 🙏
+
+I based this thread on the amazing article by Kamil Żyła, if you'd like to learn more definitely check it out! ⬇️
+<a href="https://t.co/UlizZl3vdW">https://t.co/UlizZl3vdW</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Complete Tailwind Projects</a></li>
-<li><a href="#">Days Study Map</a></li>
-<li><a href="#">CSS Projects</a></li>
-<li><a href="#">Daily Live Quiz</a></li>
-<li><a href="#">Content Creation Guide</a></li>
+								<li><a href="#">Sass</a></li>
+<li><a href="#">code</a></li>
+<li><a href="#">System design</a></li>
+<li><a href="#">Shiny Developer</a></li>
+<li><a href="#">rhino</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -317,7 +361,7 @@ Link: <a href="https://t.co/hGRO1L7a2m">https://t.co/hGRO1L7a2m</a> <a href="htt
       }
     </script>
 
-<!--5684823107568088851-->
+<!--6319542807650268851-->
 
   </body>
 
