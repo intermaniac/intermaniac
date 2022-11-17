@@ -5,15 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Tutorial for beginners in Open source for free:
+    <meta name="description" content="#Linux pipeline commands.
 
-Thread 4: Basics: What is GitHub &amp; what...">
+A thread.By using commands or CLI, one can work way more faster then...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Tutorial for beginners in open source for free:
+    <title>#linux pipeline commands.
 
- 4: basics:...</title>
+.by using commands or cli, one can work...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@ Thread 4: Basics: What is GitHub &amp; what...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Tutorial for beginners in open source for free:
+                <h2>#linux pipeline commands.
 
- 4: basics:...</h2>
+.by using commands or cli, one can work...</h2>
               </div>
             </div>
           </div>
@@ -103,63 +103,58 @@ Thread 4: Basics: What is GitHub &amp; what...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Tutorial for beginners in open source for free:
+                      <span>#linux pipeline commands.
 
- 4: basics:...</span>
-                      <a href="#"><h4>Tutorial for beginners in Open source for free:
+.by using commands or cli, one can work...</span>
+                      <a href="#"><h4>#Linux pipeline commands.
 
-Thread 4: Basics: What is GitHub &amp; what...</h4></a>
+A thread.By using commands or CLI, one can work way more faster then...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-17 07:15:32.044691</a></li>
 
                       </ul>
-                      <p>Tutorial for beginners in Open source for free:
+                      <p>#Linux pipeline commands.
 
-Thread 4: Basics: What is GitHub &amp; what is the difference between Git, GitHub<br><br>What is GitHub?
+A thread.<br><br>By using commands or CLI, one can work way more faster then using GUI in terms of manipulating file(s) on file system.
 
-- It is a Platform used for open source. 
+Like creating/deleting/editing files etc.<br><br>Every command you enter on CLI is standard input of stdin for Linux and the output it gives is the standard output or stdout from Linux to user
 
-If you are new to open source, please check my thread: <a href="https://t.co/WrPsOWwhz7">https://t.co/WrPsOWwhz7</a> <a href="https://t.co/qxKiVgjHdT">https://t.co/qxKiVgjHdT</a><br><br>- You can find source codes in many different languages and use the command-line interface, Git, to make and keep track of any changes. 
+Eg: "cat /" will print the files and dirs present in root directory so it's a stdin while the output it gives on the CLI is the stdout<br><br>You can use two commands so that the stdout of first command would be stdin for second command by using "|" or pipe.
 
-So, GitHub is a Git hosting service (that means it has all features of Git+ its own features).
+Eg: cat / | less
 
-The attached screenshot shows how GitHub looks <a href="https://t.co/Ed0qpqQ1Bh">https://t.co/Ed0qpqQ1Bh</a><br><br>- If you are not aware of Git, please check my thread on Git: <a href="https://t.co/IQzqG1q4Oi">https://t.co/IQzqG1q4Oi</a>
+This stdout of "cat /" would be stdin for less command and thus it would print output on single page as the less command does.<br><br>You can | for various commands and that can give you the output at a very micro level when the data is big and you're interested to get specific data.<br><br>Take this as an example.
 
-- GitHub is a GUI/ a platform used for collaboration with like-minded people.<br><br>- We can push code/project on this platform: Eg: If you have any project on your local machine (laptop/PC), you can push that on GitHub &amp; make it publicly accessible.<br><br>- You can just copy/paste anyone’s code from GitHub which will help you in your project as well as people can also use your code to make their work easier. 
+I want to count number of dirs present in /user/lib directory. How?
 
-So, GitHub is just a platform for interaction. You can even discuss the problems that you are facing in your project.<br><br>- Also, note, GitHub is not just for coding, you can also push your notes/videos/images/documents on GitHub &amp; can also use other’s content as well. 
-So, in short, GitHub is for collaboration.<br><br>Features of GitHub:
+Is there a command for this? No. But you can use pipeline commands to get that.<br><br>Here is the how:
 
-1. Easy project management: One of the main features of Git is that different developers can work on different tasks at the same time with the help of branches. 
+Command 1: ls -l /usr/lib
+Command 2: cut -c1
+Command 3: grep d
+Command 4: wc -l
 
-When each of the developer completes their task, their branch/work is merged into the server. <a href="https://t.co/WTl5q6QZR5">https://t.co/WTl5q6QZR5</a><br><br>This makes a project to be managed easily.
+#1 will print the list of files/dirs
+#2 will display first character (d for dirs)
+#3 will display only d's
+#4 will simply count them
 
-As GitHub is just a hosting service/platform for Git, it has the functionality of Git also, so GitHub also has easy project management.<br><br>2. Effective team management: Everyone in the team can work at same time.
+ls -l /usr/lib | cut -c1 | grep d | wc -l<br><br>That's how you can use pipe to perform variety of actions in Linux and make things easier for ourself.
 
-3. Improved code: As GitHub is just for collaboration, many people interact with each other as well as check the code made by each other &amp; anyone can find any bug/error or can add a new feature.<br><br>For Eg: This is one of my projects that I have on GitHub, if anyone wants the code, they can just copy the code from here, also they can go through the code, if they want anything to be changed, such as any styling changes then they can suggest me. <a href="https://t.co/EXp5cyRlwf">https://t.co/EXp5cyRlwf</a><br><br>4. Easy code hosting: If you want to publish your project/website on Internet, you can use GitHub for hosting your project.
+Source: Efficient Linux at the command line book by O'reilly.
 
-5. Backup of project: Whatever projects you have on your system (laptop/PC) can be deleted some day but if you push those to GitHub, it acts as backup.<br><br>Difference between Git, GitHub: 
-
-• The main difference is Git uses commands (i.e. it is a command-line tool) whereas to host Git projects/repositories, you use GitHub which is a GUI. GitHub has features of Git+some of its own features as well. <a href="https://t.co/828jvQdI9c">https://t.co/828jvQdI9c</a><br><br>• Git is a software, therefore it can be installed locally on your system whereas GitHub is hosted on web, you can directly just go to <a href="https://t.co/ExZx47InPm.">https://t.co/ExZx47InPm.</a>
-
-• Git is a Version control system that is used to track changes in code whereas GitHub is a platform used for hosting<br><br>Conclusion:
-
-• Git &amp; GitHub both go hand in hand. 
-
-• In simple terms, Git is like the management staff of a restaurant. It keeps track of everything happening with the project &amp; GitHub is like the interiors of a restaurant that allows one to see the progress of the project.<br><br>• In simple terms, If Git is the root, GitHub is the stem that extends into one beautiful plant. <a href="https://t.co/6Ioi9jDDDE">https://t.co/6Ioi9jDDDE</a><br><br>That's a wrap for this thread.
-
-Thanks for reading !!</p>
+Hope this helps!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Git</a></li>
-<li><a href="#">GitHub</a></li>
-<li><a href="#">Tutorial for beginners</a></li>
-<li><a href="#">Open source</a></li>
-<li><a href="#">project</a></li>
+								<li><a href="#">command</a></li>
+<li><a href="#">Linux</a></li>
+<li><a href="#">CLI</a></li>
+<li><a href="#">output</a></li>
+<li><a href="#">commands</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -321,7 +316,7 @@ Thanks for reading !!</p>
       }
     </script>
 
-<!--2918692130576009851-->
+<!--4836980501054519851-->
 
   </body>
 
