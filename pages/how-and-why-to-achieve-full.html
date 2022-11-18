@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to build a website using WordPress
-
-If you are new to building a website here...">
+    <meta name="description" content="How and why to achieve full-stack type safety in your web application, from the database...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>How to build a website using wordpress
-
-if you are new...</title>
+    <title>How and why to achieve full-stack type safety in your...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +75,7 @@ if you are new...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>How to build a website using wordpress
-
-if you are new...</h2>
+                <h2>How and why to achieve full-stack type safety in your...</h2>
               </div>
             </div>
           </div>
@@ -103,67 +97,30 @@ if you are new...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>How to build a website using wordpress
-
-if you are new...</span>
-                      <a href="#"><h4>How to build a website using WordPress
-
-If you are new to building a website here...</h4></a>
+                      <span>How and why to achieve full-stack type safety in your...</span>
+                      <a href="#"><h4>How and why to achieve full-stack type safety in your web application, from the database...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-18 07:15:33.906233</a></li>
 
                       </ul>
-                      <p>How to build a website using WordPress
-
-If you are new to building a website here is what you need:
-
-• Hosting Provider
-• Hosting Plan
-• Pick a domain name
-• Create website
-
-🧵 A quick thread on how to do this...<br><br>1/6 Hosting Provider
-
-This company provides the physical hardware you website runs on.
-
-Plus all the software tools you need to host, maintain and monitor your website.
-
-They also provider customer support to help you with any issues you are having.<br><br>2/6 Hosting Plan
-
-Depending on your expected traffic you can choose different plans.
-
-Starter plans will have modest servers and will limit the number of monthly visitors you can receive.
-
-Don't worry though, you can always upgrade your plan later.<br><br>3/6 Domain name
-
-This is the name of your website. It will need to be not taken already.
-
-You may have to try several alternatives before you find one that is available.
-
-Cost for a domain name is usually less than $20 per year.<br><br>4/6 Create a website
-
-This step varies depending on your hosting provider.
-
-Simple wizards to guide you through the steps will usually be provided.<br><br>5/6 I wrote a longer article on this topic with screenshots showing all the steps above.
-
-You can check it out here:
-
-<a href="https://t.co/90194IoaeV">https://t.co/90194IoaeV</a><br><br>6/6 I hope you've found this thread helpful.
-
-Follow me @LtoRankYourSite for more.
-
-Like/Retweet the first tweet below if you can: <a href="https://t.co/sX7hrRyTPF">https://t.co/sX7hrRyTPF</a></p>
+                      <p>How and why to achieve full-stack type safety in your web application, from the database through the API to the frontend. A thread on the beauty of #TypeScript 🧵 (1/13)<br><br>TypeScript has been the most crucial tool to increase productivity within our agency. Combined with tools like IntelliSense, TypeScript allows us to skip many journeys to the documentation of OSS libraries and detect simple but harmful bugs before they're ever deployed. (2/13)<br><br>For a long time, type safety stopped at the borders between the backend, database, and REST API. To improvise on the latter, we often used private NPM packages containing shared type definitions for the API layer. However, maintaining them has always been a burden. (3/13)<br><br>That's why we've designed a new standard stack for our web and mobile apps using great open-source projects like Nx, Prisma, and OpenAPI. Here's our fresh set-up, engineered for maximum productivity and type safety. (4/13)<br><br>(1) Nx: Nx monorepos have been our #1 productivity accelerator, right after TypeScript. Remember the private NPM package which was used for shared API types? (5/13)<br><br>Deploying a new version of the package with every minor change to every app in order to ensure everything still adhered to the types had been a significant bottleneck. With Nx, we can create a shared lib within the repo without the overhead that comes with an NPM package. (6/13)<br><br>(2) OpenAPI: Writing and updating those types by hand after designing an API still didn't feel right, however. The great tool "openapi-typescript" allows us to design our API in a central OpenAPI spec and automatically generate type definitions from it after every change. (7/13)<br><br>Both the API server on the backend as well as the API client (again a shared library for every frontend app within the monorepo to use) directly make use of those generated interfaces. When there's a breaking change on either end, we immediately notice. (8/13)<br><br>(3) Prisma: Previously, most of our projects included some kind of hand-written SQL statements as model definitions. Not only has this felt like a hindrance in scalability, but also introduced a lot of bugs due to the entirely missing type safety and linting. (9/13)<br><br>We've always had an eye on Prisma, an open-source ORM, and felt like it had finally reached the point of being production-ready this year. With Prisma, we define our database models and enums directly in a schema file which then gets converted to TypeScript interfaces. (10/13)<br><br>We can then use a Prisma instance to communicate with the database. To sync the types between Prisma and the OpenAPI generator, we've written a small, handy tool that replaces some of the interfaces generated from the API spec with their Prisma counterpart. (11/13)<br><br>The outcome of all this? Much less boilerplate and maintenance work resulting in much more time available for actual productive work. (12/13)<br><br>That's a wrap. Link collection for anyone looking to learn more:
+<a href="https://t.co/26on2EEG2f">https://t.co/26on2EEG2f</a>
+<a href="https://t.co/kQFADbkSNf">https://t.co/kQFADbkSNf</a>
+<a href="https://t.co/40VfigHgUb">https://t.co/40VfigHgUb</a>
+<a href="https://t.co/jmLHFgiTyA">https://t.co/jmLHFgiTyA</a>
+<a href="https://t.co/NC9a9h5iZi">https://t.co/NC9a9h5iZi</a>
+(13/13)</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Hosting Provider</a></li>
-<li><a href="#">Hosting Plan Depending</a></li>
-<li><a href="#">Hosting Plan</a></li>
-<li><a href="#">Pick a domain</a></li>
-<li><a href="#">Hosting</a></li>
+								<li><a href="#">achieve full-stack type</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">full-stack type safety</a></li>
+<li><a href="#">type safety</a></li>
+<li><a href="#">Prisma</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -325,7 +282,7 @@ Like/Retweet the first tweet below if you can: <a href="https://t.co/sX7hrRyTPF"
       }
     </script>
 
-<!--4156357504030849851-->
+<!--2133902416244139851-->
 
   </body>
 

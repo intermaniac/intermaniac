@@ -5,15 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to build a website using WordPress
+    <meta name="description" content="🧵 So a bit of a longer one here...
 
-If you are new to building a website here...">
+TL;DR
+A user on GitHub (https://t.co/abc4yfCWer) is creating...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>How to build a website using wordpress
+    <title>🧵 so a bit of a longer one here...
 
-if you are new...</title>
+tl;dr
+a user...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +81,10 @@ if you are new...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>How to build a website using wordpress
+                <h2>🧵 so a bit of a longer one here...
 
-if you are new...</h2>
+tl;dr
+a user...</h2>
               </div>
             </div>
           </div>
@@ -103,67 +106,86 @@ if you are new...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>How to build a website using wordpress
+                      <span>🧵 so a bit of a longer one here...
 
-if you are new...</span>
-                      <a href="#"><h4>How to build a website using WordPress
+tl;dr
+a user...</span>
+                      <a href="#"><h4>🧵 So a bit of a longer one here...
 
-If you are new to building a website here...</h4></a>
+TL;DR
+A user on GitHub (https://t.co/abc4yfCWer) is creating...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-18 07:15:33.906233</a></li>
 
                       </ul>
-                      <p>How to build a website using WordPress
+                      <p>🧵 So a bit of a longer one here...
 
-If you are new to building a website here is what you need:
+TL;DR
+A user on GitHub (<a href="https://t.co/abc4yfCWer">https://t.co/abc4yfCWer</a>) is creating tools with embedded reverse shells.
 
-• Hosting Provider
-• Hosting Plan
-• Pick a domain name
-• Create website
+IOC's and so on, in the last tweet ;)
 
-🧵 A quick thread on how to do this...<br><br>1/6 Hosting Provider
+(also first thread so constructive criticism accepted)
 
-This company provides the physical hardware you website runs on.
+1/16
+#cybersecurity<br><br>Last night I came across this tweet about a tool to spoof SMS messages. Seeing as I had just added that functionality to my personal discord bot, I was curious as to how this person did it.
 
-Plus all the software tools you need to host, maintain and monitor your website.
+2/16 <a href="https://t.co/6mnEUjZAMs">https://t.co/6mnEUjZAMs</a><br><br>One of the replies on the tweet was saying that they Reverse Engineered it, and that it was malware. Unfortunately these things happen from time to time, but I was curious so I decided I wanted to do some digging myself.
 
-They also provider customer support to help you with any issues you are having.<br><br>2/6 Hosting Plan
+3/16 <a href="https://t.co/usudw3Vjkf">https://t.co/usudw3Vjkf</a><br><br>Sadly I did not have any luck downloading it anywhere else, so I all I had to go off of, was an image posted in the replies from @MacJu89. This already gave two different malicious URL's that we can take a look at.
 
-Depending on your expected traffic you can choose different plans.
+4/16 <a href="https://t.co/zxUk9qpmQ0">https://t.co/zxUk9qpmQ0</a><br><br>First thing to do from here is obviously download the files, cause ain't no way I am reversing anything without looking at it.
 
-Starter plans will have modest servers and will limit the number of monthly visitors you can receive.
+Unfortunately I no longer have a version of the <a href="<a href="https://t.co/0qN7MUZWQ1">https://t.co/0qN7MUZWQ1</a>"><a href="https://t.co/0qN7MUZWQ1">https://t.co/0qN7MUZWQ1</a></a> that I downloaded last night due to me fucking around too much.
 
-Don't worry though, you can always upgrade your plan later.<br><br>3/6 Domain name
+5/16<br><br>The same is the case for the <a href="<a href="https://t.co/wndDMqAvx7">https://t.co/wndDMqAvx7</a>"><a href="https://t.co/wndDMqAvx7">https://t.co/wndDMqAvx7</a></a> file, and both files when downloading them now (at the time of writing) contain a version of the following:
+Anyhow back to the actual stuff.
 
-This is the name of your website. It will need to be not taken already.
+6/16 <a href="https://t.co/wBmifSlZSD">https://t.co/wBmifSlZSD</a><br><br>In general all of the python scripts I have looked at (more on that later) all follow the same de/obfuscation steps:
+* Base64
+* from cryptography.fernet import Fernet
+* Hex
+* GZIP
+* String concat
 
-You may have to try several alternatives before you find one that is available.
+All of which can be shown if doing 's/exec/print/'
 
-Cost for a domain name is usually less than $20 per year.<br><br>4/6 Create a website
+7/16<br><br>Although I do not have the original <a href="<a href="https://t.co/0qN7MUZWQ1">https://t.co/0qN7MUZWQ1</a>"><a href="https://t.co/0qN7MUZWQ1">https://t.co/0qN7MUZWQ1</a></a> and <a href="<a href="https://t.co/wndDMqAvx7">https://t.co/wndDMqAvx7</a>"><a href="https://t.co/wndDMqAvx7">https://t.co/wndDMqAvx7</a></a> files, do not be discouraged, cause I have a solution. What if we just take a look at @whoami4041's other GitHub repos? ;)
 
-This step varies depending on your hosting provider.
+8/16<br><br>I decided to take a look at one of their other repos zipcrack (<a href="https://t.co/TTzMyLkgNA">https://t.co/TTzMyLkgNA</a>). And to little surprise, his <a href="<a href="https://t.co/0J1pKFkCo2">https://t.co/0J1pKFkCo2</a>"><a href="https://t.co/0J1pKFkCo2">https://t.co/0J1pKFkCo2</a></a> tool was obfuscated in the same way as the revshells from his fake-sms tool.
 
-Simple wizards to guide you through the steps will usually be provided.<br><br>5/6 I wrote a longer article on this topic with screenshots showing all the steps above.
+9/16<br><br>Inside the source of the <a href="<a href="https://t.co/0J1pKFkCo2">https://t.co/0J1pKFkCo2</a>"><a href="https://t.co/0J1pKFkCo2">https://t.co/0J1pKFkCo2</a></a> script, there is a function called waste, which:
+1. checks if a path exists, if not it creates it.
+2. downloads a file in there called <a href="<a href="<a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a>"><a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a></a>"><a href="<a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a>"><a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a></a></a>
+3. runs that file.
 
-You can check it out here:
+10/16 <a href="https://t.co/VIqb2zcdHr">https://t.co/VIqb2zcdHr</a><br><br>Thankfully @whoami4041 has not yet taken down the <a href="<a href="<a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a>"><a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a></a>"><a href="<a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a>"><a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a></a></a> file, so it still has the original content instead of "print('fuck you bitch!')".
 
-<a href="https://t.co/90194IoaeV">https://t.co/90194IoaeV</a><br><br>6/6 I hope you've found this thread helpful.
+The <a href="<a href="<a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a>"><a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a></a>"><a href="<a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a>"><a href="https://t.co/21IRnmdIXd">https://t.co/21IRnmdIXd</a></a></a> file looks like this, once again just basic obfuscation. "s/eval/echo/"
 
-Follow me @LtoRankYourSite for more.
+11/16 <a href="https://t.co/3J0L7DwVNN">https://t.co/3J0L7DwVNN</a><br><br>The resulting code from running it with echo instead of eval is what can be seen in the image here. We can then see that the code will try to download another file called <a href="<a href="https://t.co/qk3MQgCERC">https://t.co/qk3MQgCERC</a>"><a href="https://t.co/qk3MQgCERC">https://t.co/qk3MQgCERC</a></a> from the users website.
 
-Like/Retweet the first tweet below if you can: <a href="https://t.co/sX7hrRyTPF">https://t.co/sX7hrRyTPF</a></p>
+12/16 <a href="https://t.co/iBIoxig8GF">https://t.co/iBIoxig8GF</a><br><br>The <a href="<a href="https://t.co/qk3MQgCERC">https://t.co/qk3MQgCERC</a>"><a href="https://t.co/qk3MQgCERC">https://t.co/qk3MQgCERC</a></a> file contains a the same kind of obfuscation described in post #7, and deobfuscating it results in the reverse shell that machine1337 is using. This is the same style of shell seen in fake-sms.
+
+13/16 <a href="https://t.co/VssdTqMuaj">https://t.co/VssdTqMuaj</a><br><br>This is basically all there is to it for now. Might write more about it later, but as far as I can tell, quite a few repos from this guy are quite sketchy, so stay away.
+
+14/16<br><br>It also appears that as soon as anyone found out about anything he did, he deleted his <a href="https://t.co/k6ScQsjrLw">https://t.co/k6ScQsjrLw</a> website, whilst maybe forgetting that GitHub still saves all your commits.
+
+15/16 <a href="https://t.co/Ldm46iiiDF">https://t.co/Ldm46iiiDF</a><br><br>IOC's:
+<a href="https://t.co/IVgahBYR9K">https://t.co/IVgahBYR9K</a>
+
+16/16</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Hosting Provider</a></li>
-<li><a href="#">Hosting Plan Depending</a></li>
-<li><a href="#">Hosting Plan</a></li>
-<li><a href="#">Pick a domain</a></li>
-<li><a href="#">Hosting</a></li>
+								<li><a href="#">file</a></li>
+<li><a href="#">reverse</a></li>
+<li><a href="#">tool</a></li>
+<li><a href="#">Reverse Engineered</a></li>
+<li><a href="#">files</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -325,7 +347,7 @@ Like/Retweet the first tweet below if you can: <a href="https://t.co/sX7hrRyTPF"
       }
     </script>
 
-<!--4156357504030849851-->
+<!--8841530249832039851-->
 
   </body>
 

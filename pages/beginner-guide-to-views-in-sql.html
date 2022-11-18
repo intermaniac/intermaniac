@@ -5,15 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How to build a website using WordPress
+    <meta name="description" content="Beginner Guide to Views in SQL: 🧵👇1. Definition
 
-If you are new to building a website here...">
+- View contains a subset of records from...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>How to build a website using wordpress
+    <title>Beginner guide to views in sql: 🧵👇1. definition
 
-if you are new...</title>
+- view contains...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@ if you are new...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>How to build a website using wordpress
+                <h2>Beginner guide to views in sql: 🧵👇1. definition
 
-if you are new...</h2>
+- view contains...</h2>
               </div>
             </div>
           </div>
@@ -103,67 +103,84 @@ if you are new...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>How to build a website using wordpress
+                      <span>Beginner guide to views in sql: 🧵👇1. definition
 
-if you are new...</span>
-                      <a href="#"><h4>How to build a website using WordPress
+- view contains...</span>
+                      <a href="#"><h4>Beginner Guide to Views in SQL: 🧵👇1. Definition
 
-If you are new to building a website here...</h4></a>
+- View contains a subset of records from...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-18 07:15:33.906233</a></li>
 
                       </ul>
-                      <p>How to build a website using WordPress
+                      <p>Beginner Guide to Views in SQL: 🧵👇<br><br>1. Definition
 
-If you are new to building a website here is what you need:
+- View contains a subset of records from a table based on given conditions
 
-• Hosting Provider
-• Hosting Plan
-• Pick a domain name
-• Create website
+- Consider View as a Virtual table with restricted data, it is not a physical table<br><br>2. Usecases
 
-🧵 A quick thread on how to do this...<br><br>1/6 Hosting Provider
+- Consider a situation where we don't want to give full access to  the base table
 
-This company provides the physical hardware you website runs on.
+- In such case, we can create a view which can have limited rows and columns from the base table
 
-Plus all the software tools you need to host, maintain and monitor your website.
+- Later, View can be used as a table in all DQL statements<br><br>3. How to Create a View?
 
-They also provider customer support to help you with any issues you are having.<br><br>2/6 Hosting Plan
+- Syntax:
+CREATE VIEW &lt;view-name&gt; AS &lt;query&gt;;
 
-Depending on your expected traffic you can choose different plans.
+- Using the above syntax, we can create views
 
-Starter plans will have modest servers and will limit the number of monthly visitors you can receive.
+- View always needs a select query in which we can mention the columns that need to be shown and the condition to filter the records<br><br>4. Example
 
-Don't worry though, you can always upgrade your plan later.<br><br>3/6 Domain name
+- Let's create a View to see only employees living in Mexico and Hide the salary column in a view
 
-This is the name of your website. It will need to be not taken already.
+- As shown in the above syntax, let's add a query with selected columns and filter conditions as shown below
 
-You may have to try several alternatives before you find one that is available.
+Eg: <a href="https://t.co/Pf9eu74LyZ">https://t.co/Pf9eu74LyZ</a><br><br>- Here, EMPLOYEE_TABLE containing all records of employees including the salary of all employees and the city they live in, as shown below
 
-Cost for a domain name is usually less than $20 per year.<br><br>4/6 Create a website
+- And, also see the records in View as a normal table via a Select query
 
-This step varies depending on your hosting provider.
+Eg: <a href="https://t.co/Ky015axDLD">https://t.co/Ky015axDLD</a><br><br>5. Edit and Delete a View
 
-Simple wizards to guide you through the steps will usually be provided.<br><br>5/6 I wrote a longer article on this topic with screenshots showing all the steps above.
+Edit:
+- CREATE OR REPLACE &lt;view&gt; from &lt;query&gt;
 
-You can check it out here:
+Delete:
+- DROP VIEW &lt;view-name&gt;<br><br>6. Advantages
 
-<a href="https://t.co/90194IoaeV">https://t.co/90194IoaeV</a><br><br>6/6 I hope you've found this thread helpful.
+- Easily hide the complexity of the query and the user can directly interact with a view like a table
 
-Follow me @LtoRankYourSite for more.
+- Hide raw data and show aggregated data
 
-Like/Retweet the first tweet below if you can: <a href="https://t.co/sX7hrRyTPF">https://t.co/sX7hrRyTPF</a></p>
+- Apply row/column level security<br><br>7. Disadvantages
+
+- View cannot be created on temporary tables
+
+- It cannot have parameters
+
+- Cannot update records in view if the underlying query contains aggregate functions, Distinct, group by, union, etc
+
+- Depending on the DB vendor it can have many more limitations<br><br>That's a wrap!
+
+If you find this helpful, then you'll also like reading my previous thread on SQL Indexing:
+<a href="https://t.co/uWYggBen5v">https://t.co/uWYggBen5v</a><br><br>Thank you for Reading!
+
+I help people get started with Backend Development.
+
+Follow me @vikasrajputin for more.
+
+If you find this thread helpful then Like/Retweet the first tweet below: <a href="https://t.co/PQY85He3hv">https://t.co/PQY85He3hv</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Hosting Provider</a></li>
-<li><a href="#">Hosting Plan Depending</a></li>
-<li><a href="#">Hosting Plan</a></li>
-<li><a href="#">Pick a domain</a></li>
-<li><a href="#">Hosting</a></li>
+								<li><a href="#">Beginner Guide</a></li>
+<li><a href="#">View</a></li>
+<li><a href="#">table</a></li>
+<li><a href="#">create</a></li>
+<li><a href="#">Beginner</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -325,7 +342,7 @@ Like/Retweet the first tweet below if you can: <a href="https://t.co/sX7hrRyTPF"
       }
     </script>
 
-<!--4156357504030849851-->
+<!--5228851297895749851-->
 
   </body>
 
