@@ -5,14 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="13 TRANSLATIONS Articles That You Should Not Miss in November 2022 🧵
-https://t.co/hTJUwUYO6U
-👇
-#technology #programming #git #translationsAngular...">
+    <meta name="description" content="What is @TimeswapLabs and does it create an oracle-free permissionless lending protocol?
+
+A  🧵 providing...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>13 translations articles that you should not miss in november...</title>
+    <title>What is @timeswaplabs and does it create an oracle-free permissionless...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +77,7 @@ https://t.co/hTJUwUYO6U
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>13 translations articles that you should not miss in november...</h2>
+                <h2>What is @timeswaplabs and does it create an oracle-free permissionless...</h2>
               </div>
             </div>
           </div>
@@ -100,35 +99,166 @@ https://t.co/hTJUwUYO6U
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>13 translations articles that you should not miss in november...</span>
-                      <a href="#"><h4>13 TRANSLATIONS Articles That You Should Not Miss in November 2022 🧵
-https://t.co/hTJUwUYO6U
-👇
-#technology #programming #git #translationsAngular...</h4></a>
+                      <span>What is @timeswaplabs and does it create an oracle-free permissionless...</span>
+                      <a href="#"><h4>What is @TimeswapLabs and does it create an oracle-free permissionless lending protocol?
+
+A  🧵 providing...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-19 07:15:32.358482</a></li>
 
                       </ul>
-                      <p>13 TRANSLATIONS Articles That You Should Not Miss in November 2022 🧵
-<a href="https://t.co/hTJUwUYO6U">https://t.co/hTJUwUYO6U</a>
-👇
-#technology #programming #git #translations<br><br>Angular and i18n - Angular i18n guide.
-<a href="https://t.co/f3S83NH0r5">https://t.co/f3S83NH0r5</a><br><br>Debian manuals - Chapter 8: i18n and l10n.
-<a href="https://t.co/Iq6a32tZND">https://t.co/Iq6a32tZND</a><br><br>Developer Chrome i18n - Internationalizing your app.
-<a href="https://t.co/z3GZAlScwH">https://t.co/z3GZAlScwH</a><br><br>Software Globalization, <a href="https://t.co/H6vuaiKwGp">https://t.co/H6vuaiKwGp</a> - slides - "Software globalization and adding languages on computers and mobile devices" by Craig Cummings (slides).
-<a href="https://t.co/1vU6EuXB1s">https://t.co/1vU6EuXB1s</a><br><br>Stack Overflow Q&amp;A-1 - Localization and internationalization, what's the difference?
-<a href="https://t.co/Lq7YaVxPGL">https://t.co/Lq7YaVxPGL</a></p>
+                      <p>What is @TimeswapLabs and does it create an oracle-free permissionless lending protocol?
+
+A  🧵 providing all you need to know about @TimeswapLabs (incl. 3 variable AMM, Timeswap V2 basics and my thoughts)
+
+(AIP-8)
+
+Diving in! (1/29)<br><br>Default case.
+
+By rationality, borrowers will only default when their locked collateral is worth less than value borrowed on expiry.
+
+Defaults can only happen upon expiry, none pre-expiry.
+
+Similar OTM call options, they would just let it expire.<br><br>Native tokens.
+
+Comparable to @AaveAave 's AToken and DebtToken.
+
+Simply, they represent (share of pool) rights to claim:
+BPT - assets lent
+BIT - interest owed upon maturity
+IPT - 'lost' assets in a default case
+IIT - 'lost' interest in a default case
+LT - supplied liquidity <a href="https://t.co/jzxaaIOggc">https://t.co/jzxaaIOggc</a><br><br>CDT (ERC721) - stores info. about debt issued and collateral stored
+
+IPT and IIT holders claim their 'lost' assets/interests from the collateral. Only activated when there is a default in BPT and BIT.
+
+i.e., upon default, locked collateral is distributed b/w IPT &amp; IIT holders.<br><br>Customizable.
+
+As you lend/borrow assets, you could select the parameters (interest rate and collateral ratio; Y and Z) that best fits your risk profile.
+
+Though this will be depreciated in Timeswap V2 due to lack of use.<br><br>Distribution.
+
+The higher the collateral ratio you lend in, the more IPT and IIT you get.
+
+i.e., if you select to lend with a higher collateral ratio (lower interest rate; lower risk profile), you will be given "higher" insurance (more protected).<br><br>To thicken liquidity, we need LPs.
+
+LPs borrow and lend at the same time.
+
+They are last in line to claim assets (i.e., junior tranche).
+
+They can earn/lose based on the spread b/w (borrow &amp; lending interest rates) and/or (total lent &amp; borrowed)
+
+i.e., divergence spread.
+
+(cont.)<br><br>(cont.)
+
+"If the total value borrowed by borrowers exceed the total value provided by lenders (excl. LPs), the interest goes purely to LPs."
+
+For their risk exposure, they are additionally rewarded with a 1.25% (of @TimeswapLabs 1.5%'s) fee from both borrowers and lenders.<br><br>Self-sufficiency.
+
+By removing the need for oracles and liquidators, @TimeswapLabs reduced counterparty risks and unpredictability.
+
+An isolated system (no oracle attacks) in itself.
+
+<a href="https://t.co/ajZW83tRxD">https://t.co/ajZW83tRxD</a><br><br>Arbitrageurs.
+
+Arbitrageurs are incentivized to normalize interest rates and collateral ratios between pools (internally) and between protocols (externally).
+
+Thus making market rates on par.<br><br>Permissionless.
+
+Anyone is allowed to setup a lending/borrowing pool b/w 2 ERC20 tokens.
+
+Though this functionality (for now) can only be accessed via Polygonscan.<br><br>Timeswap V2.
+
+Significant quality of life improvements.
+
+1. Lenders can exit pool prematurely (for a fee)
+2. Repaid debt can be re-loaned out and no longer incur interests
+3. Bidirectional pools, lend and borrow both tokens in a single pool
+
+(cont.)<br><br>(cont.)
+
+4. Native tokens from ERC20/721 into ERC1155
+5. Removal of customizable interest rate / collateral ratio for lenders (default is max interest rate for both sides, safer for collateral ratio)
+
+Timeswap V2 dedicated post coming!
+
+More details:
+<a href="<a href="https://t.co/KNHTuCX4C9">https://t.co/KNHTuCX4C9</a>"><a href="https://t.co/KNHTuCX4C9">https://t.co/KNHTuCX4C9</a></a><br><br>Now that you're amazed by how intuitive @TimeswapLabs is.
+
+Here's some of my thoughts and updates:
+
+1) An option, not a replacement
+2) What investors care
+3) Cross-chain
+4) @3xcalibur69 adoption<br><br>1) An option, not a replacement
+
+More time and volume is needed to test out their model.
+
+But for now, all I can say is, innovation is good.
+
+In fact, they're building to coexist with existing protocols, as they rely on arbitrageurs.<br><br>2) What investors care
+
+Their V2 is one of the best things to prove to an investor.
+
+Literally.
+
+"Here's what we did, what we've learnt, what we're gonna do to improve our product"
+
+Sadly, no tokens confirmed yet.<br><br>3) V2 launch and cross-chain
+
+V2 is expected to go live on Polygon in December 2022.
+
+With plans to expand to Arbitrum, Ethereum and Optimism.<br><br>4) @3xcalibur69 adoption
+
+3xcalibur is a combination of @solidlyexchange (swaps) and @TimeswapLabs V1 (lending/borrowing), currently live on @arbitrum.
+
+Their lending market is still not open tho.
+
+"Imitation is the highest form of flattery"<br><br>That's it for now. Looking forward to further discussions.
+
+Feel free to DM me any protocols you're interested in!
+
+Unrolled version:
+<a href="https://t.co/VSgX5xgVBc">https://t.co/VSgX5xgVBc</a>
+
+If you liked the thread, follow for more 👀👀👀!<br><br>Useful resources:
+
+<a href="https://t.co/59vz7yZGYW">https://t.co/59vz7yZGYW</a>
+<a href="https://t.co/GDwFJxfIiZ">https://t.co/GDwFJxfIiZ</a>
+<a href="https://t.co/ayqhx7MH8C">https://t.co/ayqhx7MH8C</a>
+<a href="<a href="https://t.co/KNHTuCX4C9">https://t.co/KNHTuCX4C9</a>"><a href="https://t.co/KNHTuCX4C9">https://t.co/KNHTuCX4C9</a></a>
+<a href="https://t.co/lrGSL6deCy">https://t.co/lrGSL6deCy</a>
+<a href="https://t.co/74AaEpldiE">https://t.co/74AaEpldiE</a><br><br>Thanks a lot for your help ser @faithoormanvin1.
+
+Tagging for visibility:
+
+@DAdvisoor
+@DegenCamp
+@thedailydegenhq
+@dennis_qian
+@timeswapintern
+@lemiscate
+@cryptoian
+@crypto_condom
+@TaikiMaeda2
+@kindahangry
+@rektdiomedes
+@sandeepnailwal
+@thetanmay
+@0xthade
+@LadyofCrypto1</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Miss in November</a></li>
-<li><a href="#">TRANSLATIONS Articles</a></li>
-<li><a href="#">Angular</a></li>
-<li><a href="#">TRANSLATIONS</a></li>
-<li><a href="#">Software Globalization</a></li>
+								<li><a href="#">collateral ratio</a></li>
+<li><a href="#">collateral</a></li>
+<li><a href="#">interest</a></li>
+<li><a href="#">interest rate</a></li>
+<li><a href="#">Default</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +420,7 @@ https://t.co/hTJUwUYO6U
       }
     </script>
 
-<!--2291698580281079851-->
+<!--4897586011889979851-->
 
   </body>
 

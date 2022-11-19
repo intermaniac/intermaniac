@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="13 TRANSLATIONS Articles That You Should Not Miss in November 2022 🧵
-https://t.co/hTJUwUYO6U
-👇
-#technology #programming #git #translationsAngular...">
+    <meta name="description" content="As security researchers, we don’t often discuss failed research projects. While it may be a...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>13 translations articles that you should not miss in november...</title>
+    <title>As security researchers, we don’t often discuss failed research projects....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +75,7 @@ https://t.co/hTJUwUYO6U
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>13 translations articles that you should not miss in november...</h2>
+                <h2>As security researchers, we don’t often discuss failed research projects....</h2>
               </div>
             </div>
           </div>
@@ -100,35 +97,24 @@ https://t.co/hTJUwUYO6U
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>13 translations articles that you should not miss in november...</span>
-                      <a href="#"><h4>13 TRANSLATIONS Articles That You Should Not Miss in November 2022 🧵
-https://t.co/hTJUwUYO6U
-👇
-#technology #programming #git #translationsAngular...</h4></a>
+                      <span>As security researchers, we don’t often discuss failed research projects....</span>
+                      <a href="#"><h4>As security researchers, we don’t often discuss failed research projects. While it may be a...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-19 07:15:32.358482</a></li>
 
                       </ul>
-                      <p>13 TRANSLATIONS Articles That You Should Not Miss in November 2022 🧵
-<a href="https://t.co/hTJUwUYO6U">https://t.co/hTJUwUYO6U</a>
-👇
-#technology #programming #git #translations<br><br>Angular and i18n - Angular i18n guide.
-<a href="https://t.co/f3S83NH0r5">https://t.co/f3S83NH0r5</a><br><br>Debian manuals - Chapter 8: i18n and l10n.
-<a href="https://t.co/Iq6a32tZND">https://t.co/Iq6a32tZND</a><br><br>Developer Chrome i18n - Internationalizing your app.
-<a href="https://t.co/z3GZAlScwH">https://t.co/z3GZAlScwH</a><br><br>Software Globalization, <a href="https://t.co/H6vuaiKwGp">https://t.co/H6vuaiKwGp</a> - slides - "Software globalization and adding languages on computers and mobile devices" by Craig Cummings (slides).
-<a href="https://t.co/1vU6EuXB1s">https://t.co/1vU6EuXB1s</a><br><br>Stack Overflow Q&amp;A-1 - Localization and internationalization, what's the difference?
-<a href="https://t.co/Lq7YaVxPGL">https://t.co/Lq7YaVxPGL</a></p>
+                      <p>As security researchers, we don’t often discuss failed research projects. While it may be a bit embarrassing to not succeed, there are still lessons learned from the project. In this thread, I’d like to share research I’ve been doing on-and-off on identifying AWS honeytokens. 🧵<br><br>With Data events, we can safely invoke API calls without the risk of them showing up in CloudTrail. This is why I personally use sns:Publish to identify credentials, rather than sts:GetCallerIdentity. <a href="https://t.co/7NtbKGDbSM">https://t.co/7NtbKGDbSM</a><br><br>Now, the second part is, “How do we know what these keys are for?” Again, this is simple to answer. As a part of the AWS API, when you try to invoke an API call you do not have permission for you will usually (though not always) get an error message such as the following: <a href="https://t.co/ykJquHpkVg">https://t.co/ykJquHpkVg</a><br><br>In the error message we can see the name of the user and can make a determination based on this if these credentials are honey tokens. For example, here is the name of Thinkst Canary AWS tokens: <a href="https://t.co/KenQh2SSwR">https://t.co/KenQh2SSwR</a><br><br>Okay, this all sounds great! What’s the problem? Why is this a “failed” research project? Well, the reason is that this is no longer the gold standard for how honeytokens work.<br><br>Earlier this year, Thinkst Canary put out a blog post on a new methodology for triggering honeytokens. <a href="https://t.co/4Nck16j25k">https://t.co/4Nck16j25k</a><br><br>This new technique was no longer solely reliant on CloudTrail (something we could bypass easily). Instead it also made use of the IAM Credential Report. I am loosely categorizing this class of honeytoken as “advanced”. <a href="https://t.co/htNZm3POKQ">https://t.co/htNZm3POKQ</a><br><br>An IAM Credential report is a CSV file that AWS can generate for you every 4 hours. This report details a number of things, including a list of all IAM users, if they have passwords set, if they have MFA enabled, how many access keys they have, etc.<br><br>The problem lies in the fact that this report will also include the last time the credentials were used. This is the problematic piece. There does not appear to be a way to bypass this specific constraint. It appears to be an integral part of the AWS API.<br><br>Now, to give you some idea, I’m no stranger to doing weird things to the AWS API. Previous research in this area has revealed the ability to enumerate permissions without logging to CloudTrail. <a href="https://t.co/YQrnf4DNV7">https://t.co/YQrnf4DNV7</a><br><br>Similar attempts failed here. They either did not give me an error with the name of the user, or they showed up in the credential report.<br><br>You might be wondering if undocumented APIs show up here, and indeed they do. I scoured the AWS Console for undocumented APIs and attempted to use them all manually. They show up in the credential report (this actually resulted in me finding a 0day in the AWS API. Stay tuned!).<br><br>There is one option I’m aware of to defeat these, but it is brittle at best. You can query the AWS API to tell you the account ID an access key belongs to (very useful in a multi-account environment).<br><br>Doing this will tell you that the free keys Thinkst Canary gives out belong to the account 595918472158. <a href="https://t.co/zczs8q1pkB">https://t.co/zczs8q1pkB</a> <a href="https://t.co/4lsxQcMsuF">https://t.co/4lsxQcMsuF</a><br><br>Anecdotally, I think this is the same AWS account that has vended honeytokens for the past several months. If you’re on an assessment and see that account ID I would stay away.<br><br>However, it’s worth noting that this is from their free offering. I presume that paid subscribers get access to credentials from other AWS accounts that we do not know the account IDs of.<br><br>In theory, you could use subscriber access to generate a large number of honeytokens and try to identify all of these AWS accounts, but again, this is brittle at best.<br><br>And that is where the research stops. So long as we cannot find an AWS API call that does not generate an entry in the IAM credential report, we cannot identify honeytokens perfectly.<br><br>I think this is a testament to their effectiveness and I would encourage you to use them in your environment if you are a defender.<br><br>Over the long term, I am somewhat confident that we will find something that can be used. Likely something external.<br><br>I.E you would use your own AWS account to invoke a call on the keys to see their name, rather than using the keys directly (Similar to sts:GetAccessKeyInfo), but if something like that exists, I’m not aware of it.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Miss in November</a></li>
-<li><a href="#">TRANSLATIONS Articles</a></li>
-<li><a href="#">Angular</a></li>
-<li><a href="#">TRANSLATIONS</a></li>
-<li><a href="#">Software Globalization</a></li>
+								<li><a href="#">AWS API</a></li>
+<li><a href="#">AWS</a></li>
+<li><a href="#">IAM Credential Report</a></li>
+<li><a href="#">Thinkst Canary AWS</a></li>
+<li><a href="#">AWS API call</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +276,7 @@ https://t.co/hTJUwUYO6U
       }
     </script>
 
-<!--2291698580281079851-->
+<!--2534612957507369851-->
 
   </body>
 
