@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python 3.12 will add support for the Linux perf profiler! 🔥🔥 Perf is one of...">
+    <meta name="description" content="Python 3.11 comes with a new tomllib package in the standard library. It allows us...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python 3.12 will add support for the linux perf profiler!...</title>
+    <title>Python 3.11 comes with a new tomllib package in the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python 3.12 will add support for the linux perf profiler!...</h2>
+                <h2>Python 3.11 comes with a new tomllib package in the...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,37 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python 3.12 will add support for the linux perf profiler!...</span>
-                      <a href="#"><h4>Python 3.12 will add support for the Linux perf profiler! 🔥🔥 Perf is one of...</h4></a>
+                      <span>Python 3.11 comes with a new tomllib package in the...</span>
+                      <a href="#"><h4>Python 3.11 comes with a new tomllib package in the standard library. It allows us...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-11-12 07:15:34.783266</a></li>
+                        <li><a href="#">2022-11-20 07:15:31.783174</a></li>
 
                       </ul>
-                      <p>Python 3.12 will add support for the Linux perf profiler! 🔥🔥 Perf is one of the most powerful and performant profilers for Linux that allows getting a ridiculous amount of information such as CPU counters, cache misses, context switching and much more. 🧵👇<br><br>This means that since Python 3.12, perf will be able to "see" python calls and show them in the stack. This allows you to generate very easily these kinds of flame graphs that have both C/C++/Rust code and Python code. <a href="https://t.co/KedGN3jgzt">https://t.co/KedGN3jgzt</a><br><br>This is super powerful because there are **a lot** of Python libraries that call native code 👾(C/C++/rust...) underneath and this will allow you to see how much time is spent on actual Python and how much in native code.🐍<br><br>This will help you solve questions like "should I improve my Python code or should I change the way I am using numpy or pandas?"🤔 or "How much time is being spent in TensorFlow and how much time is being spent on code preparing the model and marshalling the results back?"<br><br>Not only that but you can also correlate that with all the things perf exposes to answer things like "how cache efficient is this numpy code?", "how much is the GIL hurting my code here?", "how many context switches are happening in this region over here" ...<br><br>Of course, perf allows other outputs and many libraries know how to display results that come from perf. For instance, this is a tree-like output that perf can generate: <a href="https://t.co/LRHhqHqtpu">https://t.co/LRHhqHqtpu</a><br><br>And if you are not interested in native code, you can just filter it and use it as a pure Python profiler. For instance, here is a pure-python flame graph: <a href="https://t.co/IafEYobEqk">https://t.co/IafEYobEqk</a><br><br>Perf not only is a ridiculously fast profiler (especially when it unwinds from kernel space) but also allows attaching to processes, profiling ALL processes in a machine, gathering hardware counters, seeing into kernel space and much more. Is the ultimate profiler for Linux! 🤯<br><br>You can read more here:
+                      <p>Python 3.11 comes with a new tomllib package in the standard library. It allows us to read toml configuration files. 
 
-<a href="https://t.co/UuMugzq6An">https://t.co/UuMugzq6An</a></p>
+Never heard of toml? Then lets dive into it
+
+Thread 🧵👇🏾 <a href="https://t.co/zcPCpwzoBR">https://t.co/zcPCpwzoBR</a><br><br>TOML stands for Tom's Obvious Minimal Language. Its a format for (mainly) writing configuration files. You might think why we need another configuration format. Whats wrong with using xml, json or yaml? or even python itself?
+<a href="<a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a>"><a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a></a><br><br>The issue with XML is that it is simply too verbose. You have to type so much for simple configurations. You have to match open and close tags. Empty tags with no children have a weird syntax. It's really easy to mess it up. <a href="https://t.co/q7WC8Ywy6f">https://t.co/q7WC8Ywy6f</a><br><br>Unlike XML, JSON has a clean and minimal structure. It is easy to read a JSON file. Unfortunately, JSON has limitations. You can't add comments. JSON is very strict and will fail if you use single quotes instead of double quotes, or leave a trailing comma at the end of an array. <a href="https://t.co/hgzqxo2nQU">https://t.co/hgzqxo2nQU</a><br><br>That brings us to YAML😶 At first it seems to be easy enough to read and write YAML. But YAML is really, really complex with huge amount of bloat. Did you know that there are NINE different ways to write multi-line strings in YAML? It's a mess. Avoid.
+
+<a href="https://t.co/DEhvfy1LZB">https://t.co/DEhvfy1LZB</a><br><br>One approach that is taken is to put all the config into a python file. That way you can use the full power of the language. While it sounds good at first, it has one serious problem: it allows one to write and run arbitrary and potentially dangerous code in the config file.<br><br>And that's where TOML comes in. TOML has been designed to be simple to read and write. It supports things like comments and multi-line strings. It is minimal, having learnt the lesson from YAML. Still, it can easily represent complex nested structures that are used in app configs<br><br>Here is a toml file. We can define sections in square brackets like [build-system]. When parsed, they will become python dictionaries.  Sections can have subsections separated using . Below we have one section tool.poetry and a subsection tool.poetry.dependencies. <a href="https://t.co/O6YI1eYav2">https://t.co/O6YI1eYav2</a><br><br>Each section has key = value pairs. Values can be strings (4 types), numbers, arrays, objects and a few more. The configuration file is easy to read and modify by hand. There is no verbosity or deep indentation. Check out more examples in the spec
+
+<a href="<a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a>"><a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a></a><br><br>Python now uses pyparsing.toml for configuration, and use of toml is increasing so it makes sense to add tomllib to the std lib. tomllib works similar to the json module, only thing you need open the file in "rb" mode. <a href="https://t.co/ZSZ3EIdPaq">https://t.co/ZSZ3EIdPaq</a><br><br>You will get this output after parsing <a href="https://t.co/an4Wg70AoB">https://t.co/an4Wg70AoB</a><br><br>One gotcha - tomllib can only read and parse toml files, it can't write them out. If you need to write toml output, check out tomli-w
+
+<a href="https://t.co/EzgvQn35w2">https://t.co/EzgvQn35w2</a><br><br>For a deeper dive into toml, check out the article below on the site. And if you are interested in intermediate level python, then be sure to follow @playfulpython 
+
+<a href="https://t.co/yY2FfjwYyW">https://t.co/yY2FfjwYyW</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Python</a></li>
-<li><a href="#">Linux perf profiler</a></li>
-<li><a href="#">perf</a></li>
-<li><a href="#">add support</a></li>
-<li><a href="#">Linux</a></li>
+								<li><a href="#">toml</a></li>
+<li><a href="#">standard library</a></li>
+<li><a href="#">json</a></li>
+<li><a href="#">yaml</a></li>
+<li><a href="#">read</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +289,7 @@
       }
     </script>
 
-<!--6008083058446417851-->
+<!--2308898568756220951-->
 
   </body>
 
