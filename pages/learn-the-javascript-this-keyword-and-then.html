@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Learn the javascript "this" keyword, and then resist the urge to follow me. 
+
+-Thread- https://t.co/Z6aQfxAZ8DWhen...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Learn the javascript "this" keyword, and then resist the urge...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +77,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Learn the javascript "this" keyword, and then resist the urge...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +99,94 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Learn the javascript "this" keyword, and then resist the urge...</span>
+                      <a href="#"><h4>Learn the javascript "this" keyword, and then resist the urge to follow me. 
+
+-Thread- https://t.co/Z6aQfxAZ8DWhen...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-21 07:15:32.265990</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Learn the javascript "this" keyword, and then resist the urge to follow me. 
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/AAyf3wpubo">https://t.co/AAyf3wpubo</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+-Thread- <a href="https://t.co/Z6aQfxAZ8D">https://t.co/Z6aQfxAZ8D</a><br><br>When you execute a piece of code you want to know who invoked the code(who triggered the code execution)
+
+It is called invocation context.
+
+Why is it important ?<br><br>It's important because:
+
+- First, how else would you get the stack trace ?  Knowing who invoked the code, helps in identifying what caused the error.
+
+- 2nd, It help in designing reusable code. A piece of code that can be invoked from multiple contexts can be reused. <a href="https://t.co/RYtBHgAFfR">https://t.co/RYtBHgAFfR</a><br><br>Now, how does javascript maintain the invocation context ?
+
+It maintain it using a special object know as  "this" keyword.
+
+In javascript, "this" object refers to the object that invoked the function. <a href="https://t.co/Y9lwE6rvqg">https://t.co/Y9lwE6rvqg</a><br><br>In most cases "this" simply is the object on the left side of the dot(.) operator. 
+
+In few cases it refers to the GLOBAL/WINDOW object. 
+
+And in other few it refers to the parent's lexical scope(read arrow functions).
+
+And a few other cases it refers to event.currentTarget. <a href="https://t.co/FAg850t5xY">https://t.co/FAg850t5xY</a><br><br>And in a few other cases, you can explicitly override "this" usingW .apply/.call/.bind. 
+
+Well, that's a lot of fews. I'll teach you all.
+
+You'll learn four contexts where a function can be invoked from:
+1- Global context
+2- Object method
+3- Constructor function (new keyword)<br><br>4- In a DOM event handler
+
+You'll also learn about how "this" can be explicitly overridden using .apply/.call/.bind
+
+I'll talk about arrow functions and .apply/.call/bind a separate post.<br><br>Before you hit the follow @happydecoder, let's first understand "this" in detail. 
+
+First, "this" in global context:
+
+- here, 'this' refers to the window obj. in browser, and global obj. in node environment.
+- however, under strict-mode, 'this' is undefined in global context. <a href="https://t.co/HO6OQL5mu4">https://t.co/HO6OQL5mu4</a><br><br>Why "this" is undefined in global execution context under strict-mode ? <a href="https://t.co/Uxsyf4yDR1">https://t.co/Uxsyf4yDR1</a><br><br>"this" in Object method context:
+
+Remember, when I told you 'this' mostly always refers to the left side of the dot(.) operator. Object method context is the simplest way to understand that. <a href="https://t.co/iW5za7n8EY">https://t.co/iW5za7n8EY</a><br><br>What happens if you access the function using the dot(.) operator but not invoke it ? <a href="https://t.co/MLzDtqxRbZ">https://t.co/MLzDtqxRbZ</a><br><br>In the above case, we are simply accessing the function not invoking it. 
+
+Later, when we execute the function, it behaves just like another global function.
+In other words, it gets executed in the global context. 
+Therefore, the "this" here refers to the window object. <a href="https://t.co/a9HTpJM09q">https://t.co/a9HTpJM09q</a><br><br>Let's add .who property on the window object and validate it.
+
+logThis() is equivalent to window.logThis() in browser environment.
+logThis() is equivalent to global.logThis() in node environment. <a href="https://t.co/iRKqX7MW34">https://t.co/iRKqX7MW34</a><br><br>Often times, you would want to reuse the function defined on one object on another object. <a href="https://t.co/YEuPVVXoi7">https://t.co/YEuPVVXoi7</a><br><br>In such cases, you can use .apply/.call/.bind to explicitly specify the value of "this" keyword.
+
+ .apply, .call, and .bind is mostly used to share the function across different objects. <a href="https://t.co/81awdF43YF">https://t.co/81awdF43YF</a><br><br>We'll learn about .apply/.call/.bind in detail in a separate post, for now simply understand that the first argument 
+in each of these function is the new "this" object that you want to explicitly use. <a href="https://t.co/gd22neMYZ0">https://t.co/gd22neMYZ0</a><br><br>Now, lets understand "this" in constructor: 
+
+Let's understand how "this" behaves with the new keyword.
+
+When you invoke a function using the new keyword, the following things happen:
+
+1- An empty object is created and referenced by "this" variable<br><br>2- Properties/methods are added to the object referenced by "this".
+
+3- The newly created object referenced by "this" is returned at the end implicitly (if no other object was returned explicitly). <a href="https://t.co/FdPtN5p5tY">https://t.co/FdPtN5p5tY</a><br><br>"this"  inside event handler: 
+
+"this" will refer to event.currentTarget. More often than not, developers will simply use <a href="https://t.co/ev1sRRsrAu">https://t.co/ev1sRRsrAu</a>  as needed to access elements in the DOM, but since the this reference changes in this context, it is important to know. <a href="https://t.co/kPqcqUIj3W">https://t.co/kPqcqUIj3W</a><br><br>One last thing, note that "this" behavior is not at all affected by how or where the function was defined. 
+In the example below, we defined the function inline(as a member of obj). 
+
+However, we could have just as easily defined the function first and later attached it to obj. <a href="https://t.co/oc9x5PaWZm">https://t.co/oc9x5PaWZm</a><br><br>That's a wrap for today.
+
+I'll be updating this post with further details/examples to solidifies your understanding on "this" keyword. 
+
+I'll be covering important javascript concepts for the next few weeks. 
+
+Visit @happydecoder, if you like my other posts. 
+Follow and retweet.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">object</a></li>
+<li><a href="#">function</a></li>
+<li><a href="#">context</a></li>
+<li><a href="#">GLOBAL</a></li>
+<li><a href="#">Global context</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +348,7 @@
       }
     </script>
 
-<!--2177838743564250951-->
+<!--2300492519816850951-->
 
   </body>
 

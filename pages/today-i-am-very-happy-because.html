@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Today I am very happy, because we have reached an important milestone in a project...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Today i am very happy, because we have reached an...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Today i am very happy, because we have reached an...</h2>
               </div>
             </div>
           </div>
@@ -97,26 +97,67 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Today i am very happy, because we have reached an...</span>
+                      <a href="#"><h4>Today I am very happy, because we have reached an important milestone in a project...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-21 07:15:32.265990</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Today I am very happy, because we have reached an important milestone in a project for which I have a special affection.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/AAyf3wpubo">https://t.co/AAyf3wpubo</a><br><br>Learn these skills for free   <a href="https://t.co/dgeRFJmUQ6">https://t.co/dgeRFJmUQ6</a></p>
+Today we introduce *Inflation*, a Python library for classical and quantum causal compatibility
+
+<a href="https://t.co/dDwIcOiGJx">https://t.co/dDwIcOiGJx</a>
+
+Want to know what it is about? 🧵👇<br><br>First, big shoutout to @ecboghiu (@ICFOnians) and @eliewolfe (@Perimeter). They are great, ambitious researchers and they have only moved our initial ideas in positive directions. As you'll see later, this project is not over, and I feel lucky of continuing to work with them. <a href="https://t.co/SgHNBEBXy5">https://t.co/SgHNBEBXy5</a><br><br>Now, let's get to the 🥩.
+
+Knowing the causal structure underlying some observations is hard. In fact, in general, it is very hard.
+
+Much research has been done, and yet causality is a central topic of research in many programs, including epidemiology, economics, ML...
+
+2/n <a href="https://t.co/lit8ynBn6n">https://t.co/lit8ynBn6n</a><br><br>Some time ago @eliewolfe and collaborators developed a general technique that relaxed the question "Can I produce these observations in this causal structure?" into a hierarchy of questions that were easier to answer. This was called Inflation.
+
+<a href="https://t.co/qDt4yvirV1">https://t.co/qDt4yvirV1</a>
+
+3/n<br><br>Inflation techniques had (and has) a huge impact in quantum information theory: they have powered the field of network nonlocality, and, for instance, allowed to demonstrate that genuinely multipartite correlations exist in nature!
+
+<a href="https://t.co/EJWnW3AptX">https://t.co/EJWnW3AptX</a>
+
+4/n<br><br>Soon we developed inflation-based ways of characterizing correlations in *quantum* causal scenarios. This is the technique of quantum inflation, about which I wrote some time ago
+
+<a href="https://t.co/L0bJYftWh8">https://t.co/L0bJYftWh8</a>
+
+5/n<br><br>Despite all the success, inflation techniques are difficult to implement in practice: you have to write large linear or semidefinite programs (and, before that, know what linear and semidefinite programming are), that differ for every causal scenario you want to study.
+
+6/n <a href="https://t.co/kP8lzAo0Tw">https://t.co/kP8lzAo0Tw</a><br><br>This is what our library solves. Inflation is a library for using inflation methods without needing to care about the details! In its simplest form, you define your causal structure, your distribution, and Inflation returns whether they are compatible or not
+
+7/n <a href="https://t.co/PfBBa1qFQG">https://t.co/PfBBa1qFQG</a><br><br>We put special care in making very easy to do feasibility problems and extracting certificates of infeasibility (a.k.a. Bell-like inequalities), but also optimizing functionals and finding critical parameter values (like visibilities)
+
+8/n <a href="https://t.co/YDmuFC7mla">https://t.co/YDmuFC7mla</a><br><br>Version 1.0.0 "only" implements method for quantum inflation, but you can use Inflation to run many other problems of interest in quantum information theory. For instance, you can characterize classical correlations with a simple turn of a flag.
+
+9/n <a href="https://t.co/DLcuOyFPVd">https://t.co/DLcuOyFPVd</a><br><br>Or run the standard Navascués-Pironio-Acín hierarchy for characterizing quantum correlations. And, for instance, you can combine the both above to implement @baccari_flavio's SDP hierarchies for classical correlations of
+<a href="https://t.co/tOFpRON9o7">https://t.co/tOFpRON9o7</a>
+
+10/n <a href="https://t.co/4tN2NsOnB2">https://t.co/4tN2NsOnB2</a><br><br>You don't even need probability distributions: you can assess whether any distribution with a particular *support* can be generated in a classical or quantum causal structure. This is, you can find Hardy-type arguments of compatibility.
+
+11/n <a href="https://t.co/pIskRu92EA">https://t.co/pIskRu92EA</a><br><br>And, although most of the people will be interested in analyzing correlations in networks, Inflation can also handle more general causal scenarios. For instance, the instrumental scenario.
+
+12/n <a href="https://t.co/SsmhLMl6sM">https://t.co/SsmhLMl6sM</a><br><br>We are all very excited about this project, and we will keep maintaining and updating the library. Future plans include implementing inflation based on Linear Programming and the ability to consider scenarios where the sources send physical systems of different type.
+
+13/n <a href="https://t.co/i6XV1bUrYN">https://t.co/i6XV1bUrYN</a><br><br>And this is where we need you 🫵. We want this library to be useful. Download Inflation from <a href="https://t.co/btgyABisev,">https://t.co/btgyABisev,</a> use it, break it, let us know what you are missing, and how we could make it help in your research!
+
+14/n, n=14</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Inflation</a></li>
+<li><a href="#">causal</a></li>
+<li><a href="#">reached an important</a></li>
+<li><a href="#">important milestone</a></li>
+<li><a href="#">quantum</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -278,7 +319,7 @@
       }
     </script>
 
-<!--2177838743564250951-->
+<!--9212194865089060951-->
 
   </body>
 
