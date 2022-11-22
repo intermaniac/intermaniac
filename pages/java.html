@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-https://t.co/dVKNqKkCK9
-👇
-#technology #programming #git #vehiclesecurityandcarhackingHow...">
+    <meta name="description" content="`java.util.Optional` was added in #Java 8. Enhanced later. Goal was to solve the existence of...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>15 vehicle-security-and-car-hacking articles that you should not miss in november...</title>
+    <title>`java.util.optional` was added in #java 8. enhanced later. goal was...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +75,7 @@ https://t.co/dVKNqKkCK9
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>15 vehicle-security-and-car-hacking articles that you should not miss in november...</h2>
+                <h2>`java.util.optional` was added in #java 8. enhanced later. goal was...</h2>
               </div>
             </div>
           </div>
@@ -100,35 +97,57 @@ https://t.co/dVKNqKkCK9
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>15 vehicle-security-and-car-hacking articles that you should not miss in november...</span>
-                      <a href="#"><h4>15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-https://t.co/dVKNqKkCK9
-👇
-#technology #programming #git #vehiclesecurityandcarhackingHow...</h4></a>
+                      <span>`java.util.optional` was added in #java 8. enhanced later. goal was...</span>
+                      <a href="#"><h4>`java.util.Optional` was added in #Java 8. Enhanced later. Goal was to solve the existence of...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-22 07:15:35.738411</a></li>
 
                       </ul>
-                      <p>15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-<a href="https://t.co/dVKNqKkCK9">https://t.co/dVKNqKkCK9</a>
-👇
-#technology #programming #git #vehiclesecurityandcarhacking<br><br>How to hack a car — a quick crash-course - Car enthusiast Kenny Kuchera illustrates just enough information to get you up and running. An excellent resource for first timers!
-<a href="https://t.co/obJJb6Y4ni">https://t.co/obJJb6Y4ni</a><br><br>Stopping a Jeep Cherokee on the Highway Remotely - Chris Valasek's and Charlie Miller's pivotal research on hacking into Jeep's presented at DEFCON in 2015.
-<a href="https://t.co/hLpnLUl207">https://t.co/hLpnLUl207</a><br><br>Troy Hunt on Controlling Nissans - Troy Hunt goes into controlling Nissan vehicles.
-<a href="https://t.co/HeMXZAbIfX">https://t.co/HeMXZAbIfX</a><br><br>Tesla hackers explain how they did it at Defcon - Overview of DEFCON 23 presentation on hacking into Tesla cars.
-<a href="https://t.co/ZsTeTXUEYF">https://t.co/ZsTeTXUEYF</a><br><br>Anatomy of the Rolljam Wireless Car Hack - Overview of the RollJam rolling code exploitation device.
-<a href="https://t.co/VMcdi12KEj">https://t.co/VMcdi12KEj</a></p>
+                      <p>`java.util.Optional` was added in #Java 8. Enhanced later. Goal was to solve the existence of "NULL" aka the Worst Mistake in Computer Science. However, the misuse of Optional brought us a new level of problems. Here are some peculiarities I learned during 8 years of usage: 🧵⬇️<br><br>1⃣. "null" should not be used with "Optional". ❌Never do the following:
+Optional&lt;Object&gt; o = getOptional();
+  if (optional != null)
+or
+Optional&lt;Object&gt; o = null; 
+Optional replaces null, and when in use, there should never be a question of returning or receiving null from a call<br><br>2⃣. Never use "Optional" for parameters:
+❌public String method(Optional&lt;Object&gt; o)
+
+Optional was intended for use only as a return type, as a way to convey that a method may or may not return a value.<br><br>3⃣. Optional value should always be accessed after checking for presence by calling isPresent().
+Optional&lt;Object&gt; o = ...
+❌Object value = value.get();
+✅if (o.isPresent()) {
+  Object value = o.get();
+}
+
+Alternative ways of accessing the value of optional in the next tweet.<br><br>4⃣. orElse(), orElseGet(), or orElseThrow() - methods allowing access to value providing a fallback for the absence of value. Only the last 2 are lazy. Prefer lazy ones if your fallback involves executions:
+❌o.orElse(getDefault())
+✅o.orElseGet(() -&gt; this::getDefault())<br><br>5⃣. When working with primitives int, long, and double don't use their wrapper classes with Optional; use dedicated classed instead to avoid extra boxing/unboxing:
+❌Optional&lt;Integer&gt;
+❌Optional&lt;Long&gt;
+❌Optional&lt;Double&gt;
+✅OptionalInt
+✅OptionalLong
+✅OptionalDouble<br><br>6⃣. Never wrap collections into Optional:
+❌Optional&lt;List&lt;String&gt;&gt;
+
+Collections are already wrappers themselves and to indicate the absence of elements it can be just an empty collection.<br><br>7⃣. Don't use Optional as a DTO member:
+❌private Optional&lt;Object&gt; o;
+
+This point can be questionable, but here are my arguments against it:
+ - Optional is intentionally not Serializable
+ - it adds an unnecessary pointer
+ - some mapping and other frameworks may not work correctly<br><br>Hope you've learned smth new, if yes then feel free to like and RT the first tweet:
+<a href="https://t.co/m9Xons1W1x">https://t.co/m9Xons1W1x</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">enthusiast Kenny Kuchera</a></li>
-<li><a href="#">Kenny Kuchera illustrates</a></li>
-<li><a href="#">Miss in November</a></li>
-<li><a href="#">Kenny Kuchera</a></li>
-<li><a href="#">Car enthusiast Kenny</a></li>
+								<li><a href="#">Optional</a></li>
+<li><a href="#">Object</a></li>
+<li><a href="#">Java</a></li>
+<li><a href="#">NULL</a></li>
+<li><a href="#">Computer Science</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +309,7 @@ https://t.co/dVKNqKkCK9
       }
     </script>
 
-<!--4621775042209870951-->
+<!--4264193160037280951-->
 
   </body>
 

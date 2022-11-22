@@ -5,14 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-https://t.co/dVKNqKkCK9
-👇
-#technology #programming #git #vehiclesecurityandcarhackingHow...">
+    <meta name="description" content="You can run Machine Learning models serverless, directly with AWS Lambda.
+
+I built and productionized such...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>15 vehicle-security-and-car-hacking articles that you should not miss in november...</title>
+    <title>You can run machine learning models serverless, directly with aws...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +77,7 @@ https://t.co/dVKNqKkCK9
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>15 vehicle-security-and-car-hacking articles that you should not miss in november...</h2>
+                <h2>You can run machine learning models serverless, directly with aws...</h2>
               </div>
             </div>
           </div>
@@ -100,35 +99,75 @@ https://t.co/dVKNqKkCK9
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>15 vehicle-security-and-car-hacking articles that you should not miss in november...</span>
-                      <a href="#"><h4>15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-https://t.co/dVKNqKkCK9
-👇
-#technology #programming #git #vehiclesecurityandcarhackingHow...</h4></a>
+                      <span>You can run machine learning models serverless, directly with aws...</span>
+                      <a href="#"><h4>You can run Machine Learning models serverless, directly with AWS Lambda.
+
+I built and productionized such...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-22 07:15:35.738411</a></li>
 
                       </ul>
-                      <p>15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-<a href="https://t.co/dVKNqKkCK9">https://t.co/dVKNqKkCK9</a>
-👇
-#technology #programming #git #vehiclesecurityandcarhacking<br><br>How to hack a car — a quick crash-course - Car enthusiast Kenny Kuchera illustrates just enough information to get you up and running. An excellent resource for first timers!
-<a href="https://t.co/obJJb6Y4ni">https://t.co/obJJb6Y4ni</a><br><br>Stopping a Jeep Cherokee on the Highway Remotely - Chris Valasek's and Charlie Miller's pivotal research on hacking into Jeep's presented at DEFCON in 2015.
-<a href="https://t.co/hLpnLUl207">https://t.co/hLpnLUl207</a><br><br>Troy Hunt on Controlling Nissans - Troy Hunt goes into controlling Nissan vehicles.
-<a href="https://t.co/HeMXZAbIfX">https://t.co/HeMXZAbIfX</a><br><br>Tesla hackers explain how they did it at Defcon - Overview of DEFCON 23 presentation on hacking into Tesla cars.
-<a href="https://t.co/ZsTeTXUEYF">https://t.co/ZsTeTXUEYF</a><br><br>Anatomy of the Rolljam Wireless Car Hack - Overview of the RollJam rolling code exploitation device.
-<a href="https://t.co/VMcdi12KEj">https://t.co/VMcdi12KEj</a></p>
+                      <p>You can run Machine Learning models serverless, directly with AWS Lambda.
+
+I built and productionized such solutions.
+
+This is an in-depth tutorial summarizing my learnings and experience.
+
+A post and a thread 🧵👇
+<a href="<a href="https://t.co/BGVS3caouj">https://t.co/BGVS3caouj</a>"><a href="https://t.co/BGVS3caouj">https://t.co/BGVS3caouj</a></a><br><br>There are plenty of ML libraries and pre-trained models. Nothing easier than creating a Lambda function using them.
+
+But there are two main problems when you try to run an ML model on AWS Lambda:
+- the size of the dependencies
+- latency, especially with the cold starts<br><br>ML = Python
+Python + ML = huge libraries (1 GB+)
+ML models = huge binaries (1 GB+)
+
+The math is clear - when you bundle your function with libs and model, you are far over the 250 MB Lambda deployment package limit.
+
+Solution? Docker image. Lambda limit for Docker image is 10 GB.<br><br>(Why not Lambda Layers or EFS? Check out the full blog post 😉)<br><br>In Dockerfile, you add the ML model, Python dependencies, and your code. In this order!
+
+First image build and deployment will take few minutes. Consecutive - few seconds thanks to image layers caching, as you will be only changing your code (last layer).<br><br>Extra points for using a multi-stage Dockerfile to not include tools you don't need in the Lambda runtime environment.<br><br>When you have a Dockerfile for the Lambda function, the CDK or Serverless Framework can build and deploy the image.<br><br>Now latency. ML is compute-expensive. Since Lambda does not have GPU, it will run on the CPU.
+
+More CPU power = faster the function will work
+
+How to add CPU to Lambda? Add memory (up to max 10 GB). Explanation 👇
+<a href="https://t.co/twfcIAZUns">https://t.co/twfcIAZUns</a><br><br>Furthermore, ML libraries require initialization - loading the pre-trained models into memory. It takes several seconds.
+
+It's critical we don't do this on every function invocation, but only once per runtime environment.
+
+How? By doing it outside the handler function. <a href="https://t.co/WAHjjQ1nfz">https://t.co/WAHjjQ1nfz</a><br><br>But we still have those long initialization - the Lambda cold starts everyone's so afraid of! 🥶
+
+What to do with them? There are 2 options.<br><br>Option 1: nothing.
+
+If our ML Lambda is part of an event-driven system, cold starts can affect even less than 0.1% of invocations. They are really not a problem, even if they take 10 seconds or more.<br><br>Option 2: using provisioned concurrency
+
+This is costly, but the best option for client-facing ML Lambdas where we cannot allow 10+ secs of cold start.
+
+The number of provisioned runtimes must be set correctly, or users in peak usage will still get cold starts!<br><br>There is also another aspect of cold starts. With disproportionally huge cold starts in ML Lambdas, if we submit workload in batches, we over-provision the runtimes.
+
+Sometimes it's worth limiting the max number of function runtimes with reserved concurrency. <a href="https://t.co/gGau3lQ9zm">https://t.co/gGau3lQ9zm</a><br><br>In the blog post, I create an ML pipeline that auto-generates captions for images uploaded to the S3 bucket.
+
+All the above is explained there in detail.
+
+And in 120 lines of code total, I show the Docker image, Lambda function, and CDK infrastructure. 👇
+<a href="<a href="https://t.co/BGVS3caouj">https://t.co/BGVS3caouj</a>"><a href="https://t.co/BGVS3caouj">https://t.co/BGVS3caouj</a></a><br><br>If you found it useful:
+
+0. Visit the post above - it goes into more details
+1. Please ❤️ and 🔁 the 1st tweet above to share
+2. Follow me @radzikowski_m for more like this
+
+Thank you!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">enthusiast Kenny Kuchera</a></li>
-<li><a href="#">Kenny Kuchera illustrates</a></li>
-<li><a href="#">Miss in November</a></li>
-<li><a href="#">Kenny Kuchera</a></li>
-<li><a href="#">Car enthusiast Kenny</a></li>
+								<li><a href="#">Machine Learning models</a></li>
+<li><a href="#">run Machine Learning</a></li>
+<li><a href="#">Lambda</a></li>
+<li><a href="#">Machine Learning</a></li>
+<li><a href="#">AWS Lambda</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +329,7 @@ https://t.co/dVKNqKkCK9
       }
     </script>
 
-<!--4621775042209870951-->
+<!--6102206183639670951-->
 
   </body>
 

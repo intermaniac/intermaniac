@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-https://t.co/dVKNqKkCK9
-👇
-#technology #programming #git #vehiclesecurityandcarhackingHow...">
+    <meta name="description" content="Last month I helped a client scale their WordPress membership site to handle thousands of...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>15 vehicle-security-and-car-hacking articles that you should not miss in november...</title>
+    <title>Last month i helped a client scale their wordpress membership...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +75,7 @@ https://t.co/dVKNqKkCK9
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>15 vehicle-security-and-car-hacking articles that you should not miss in november...</h2>
+                <h2>Last month i helped a client scale their wordpress membership...</h2>
               </div>
             </div>
           </div>
@@ -100,35 +97,87 @@ https://t.co/dVKNqKkCK9
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>15 vehicle-security-and-car-hacking articles that you should not miss in november...</span>
-                      <a href="#"><h4>15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-https://t.co/dVKNqKkCK9
-👇
-#technology #programming #git #vehiclesecurityandcarhackingHow...</h4></a>
+                      <span>Last month i helped a client scale their wordpress membership...</span>
+                      <a href="#"><h4>Last month I helped a client scale their WordPress membership site to handle thousands of...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-22 07:15:35.738411</a></li>
 
                       </ul>
-                      <p>15 VEHICLE-SECURITY-AND-CAR-HACKING Articles That You Should Not Miss in November 2022 🧵
-<a href="https://t.co/dVKNqKkCK9">https://t.co/dVKNqKkCK9</a>
-👇
-#technology #programming #git #vehiclesecurityandcarhacking<br><br>How to hack a car — a quick crash-course - Car enthusiast Kenny Kuchera illustrates just enough information to get you up and running. An excellent resource for first timers!
-<a href="https://t.co/obJJb6Y4ni">https://t.co/obJJb6Y4ni</a><br><br>Stopping a Jeep Cherokee on the Highway Remotely - Chris Valasek's and Charlie Miller's pivotal research on hacking into Jeep's presented at DEFCON in 2015.
-<a href="https://t.co/hLpnLUl207">https://t.co/hLpnLUl207</a><br><br>Troy Hunt on Controlling Nissans - Troy Hunt goes into controlling Nissan vehicles.
-<a href="https://t.co/HeMXZAbIfX">https://t.co/HeMXZAbIfX</a><br><br>Tesla hackers explain how they did it at Defcon - Overview of DEFCON 23 presentation on hacking into Tesla cars.
-<a href="https://t.co/ZsTeTXUEYF">https://t.co/ZsTeTXUEYF</a><br><br>Anatomy of the Rolljam Wireless Car Hack - Overview of the RollJam rolling code exploitation device.
-<a href="https://t.co/VMcdi12KEj">https://t.co/VMcdi12KEj</a></p>
+                      <p>Last month I helped a client scale their WordPress membership site to handle thousands of simultaneous logged-in users.
+
+The tricky part here is "logged-in users," because you can't use a typical caching plugin the way you would with a read-only site.
+
+Here's how I did it.  🧵<br><br>Some background:
+
+The client runs a *very* successful membership site using WordPress and Wishlist Member. 
+
+And their latest membership drive was even more successful than past ones.
+
+Nothing but good news — until the live welcome call, when the site crumpled under the load.<br><br>So now we needed a fix — and fast. 
+
+Not only was there another member call in a couple of days, but we needed to keep downtime to an absolute minimum during any upgrades.
+
+I began by reviewing the current hosting setup.<br><br>They were already running on solid hosting — a server from @digitalocean with 8 CPU cores and 16GB of RAM.
+
+The setup was optimized for WP with @serverpilot.
+
+And they were serving cached pages to non members (the public homepage / sales page).
+
+All good, but not enough.<br><br>The first change I made was upgrading the server, spinning up a new one with 32 CPU cores and 64GB of RAM. 
+
+As far as hardware goes, this is a BEAST.
+
+Then I ran a load test with @loaderio.  
+
+Better, but still not enough.  
+
+I am undeterred.<br><br>Next I took a look at the database using some tools built into @wpcli.
+
+DBs tend to get cranky as they age and cruft accrues and best practices change.
+
+And sure enough, I saw that this DB was still using MyISAM as the storage engine on some tables. 
+
+I converted these to InnoDB.<br><br>I also ran MySQLTuner on the server, and implemented all the database configuration changes that it suggested.
+
+Then I ran another load test.
+
+Again, not enough. In fact, no discernible difference.
+
+Time for Redis.<br><br>Redis is special kind of cache that keeps common DB queries in memory, so the server doesn't have fetch the same info from the disk over and over again.
+
+I worried this might cause problems, because logged-in users have to be served unique page info, but it worked just fine.<br><br>With Redis I finally saw a significant improvement in the load test, but it *still* wasn't enough.
+
+Fortunately I wasn't out of tricks yet.<br><br>Two final steps got me over the finish line:
+
+1. Splitting the WP database off onto a server of its own. This was simple using @digitalocean and its preconfigured MySQL image. 
+
+2. Installing @wprocket and implementing it's specialized cache for logged-in users.<br><br>At the beginning of this thread I mentioned that most page caching systems cause problems for membership sites, because each user needs to be served some degree of unique info.
+
+But WP Rocket provides an option to create an individual cache for each logged-in user.<br><br>This means that each member is still being served unique info, but each page they visit is also cached specifically for them.
+
+It doesn't reduce server load as much as a single cache for all users, but it does help when members visit a page more than once per session.<br><br>The final load test passed with flying colors. The CPU never got above 12%. 
+
+And later that night I migrated the live site to the new setup with only 15 minutes of downtime.
+
+Sweet, sweet victory.<br><br>That's a wrap!
+
+I'm taking new WordPress clients this month. 
+
+If you need a hosting change, or just someone to track down that issue that's been driving you crazy, hit me up.
+
+And if you'd like to try WP Rocket out, here's my aff link:
+<a href="https://t.co/zmO6XbrpB7">https://t.co/zmO6XbrpB7</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">enthusiast Kenny Kuchera</a></li>
-<li><a href="#">Kenny Kuchera illustrates</a></li>
-<li><a href="#">Miss in November</a></li>
-<li><a href="#">Kenny Kuchera</a></li>
-<li><a href="#">Car enthusiast Kenny</a></li>
+								<li><a href="#">handle thousands</a></li>
+<li><a href="#">thousands of simultaneous</a></li>
+<li><a href="#">membership site</a></li>
+<li><a href="#">site</a></li>
+<li><a href="#">WordPress membership site</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +339,7 @@ https://t.co/dVKNqKkCK9
       }
     </script>
 
-<!--4621775042209870951-->
+<!--2764043390407970951-->
 
   </body>
 
