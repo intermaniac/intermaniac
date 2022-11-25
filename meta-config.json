@@ -72503,6 +72503,604 @@
                 "December an existing",
                 "WordPress bundle"
             ]
+        },
+        {
+            "url": "three-things-that-excited-me-at.html",
+            "desc": "Three things that excited me at @github universe 2022 \ud83d\ude0a\n\n-  \"Hey GitHub\" - https://t.co/tquT8THU06\n-...",
+            "title": "three things that excited me at",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Hey GitHub",
+                "Hey",
+                "github",
+                "github universe",
+                "OSS"
+            ]
+        },
+        {
+            "url": "javascript-array-methods.html",
+            "desc": "JavaScript Array Methods\u26a1\n\nA Thread\u2193 https://t.co/y4R2St5GPK\u26a1 push ( ) https://t.co/o3CUrVqE4p\u26a1 pop( ) https://t.co/G6RlW8pU1A\u26a1 shift( ) https://t.co/cVN8gqeuPC\u26a1...",
+            "title": "javascript array methods",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "JavaScript Array Methods",
+                "Array Methods Cheatsheet",
+                "Array Methods",
+                "JavaScript Array",
+                "Methods Cheatsheet"
+            ]
+        },
+        {
+            "url": "learn-html-canvas-amp-emoji.html",
+            "desc": "Learn HTML Canvas &amp; Emoji.\n\nVisually Explained\ud83d\udcdd\n\nThread \ud83e\uddf5 https://t.co/225zheymm2\ud83d\udc49 What is HTML Canvas?\n\n\ud83d\udd39The HTML\u00a0`&lt;canvas&gt;`\u00a0element is used...",
+            "title": "learn html canvas amp emoji",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Learn HTML Canvas",
+                "Learn HTML",
+                "HTML Canvas",
+                "Canvas",
+                "HTML"
+            ]
+        },
+        {
+            "url": "my-santa-s-angular-list-1.html",
+            "desc": "My Santa's #Angular list!\n\n\ud83e\uddf5 1/101. Make it truly reactive! Make ChangeDetection.OnPush not necessary to improve...",
+            "title": "my santa s angular list 1",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Make",
+                "Santa",
+                "Angular list",
+                "Jest",
+                "testing"
+            ]
+        },
+        {
+            "url": "best-of-search-twitter-oct-13.html",
+            "desc": "BEST of SEARCH Twitter (Oct 13\u2013Nov 13): Thread!\n\n- Github Code Search!\n- Metaphor: Generative LLM Search\n-...",
+            "title": "best of search twitter oct 13",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Github Code Search",
+                "SEARCH",
+                "Github Code",
+                "Generative LLM Search",
+                "Code Search"
+            ]
+        },
+        {
+            "url": "returning-function-in-javascript-a.html",
+            "desc": "Returning Function in JavaScript!\n\nA  thread...\u21e9\u2751 JavaScript return!\n\n\u279f When a Return statement is used in...",
+            "title": "returning function in javascript a",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Returning Function",
+                "Returning",
+                "return",
+                "Function",
+                "Return statement"
+            ]
+        },
+        {
+            "url": "am-making-a-number-of-tech.html",
+            "desc": "Am making a number of tech life changes, ready for 2023:\n\n\ud83e\udd2f Quit my dayjob!\n\ud83c\udf1f PHP...",
+            "title": "am making a number of tech",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Quit my dayjob",
+                "making a number",
+                "Quit",
+                "SecDev Content Manager",
+                "Content Manager role"
+            ]
+        },
+        {
+            "url": "understand-package.html",
+            "desc": "Understand package.json vs package-lock.json \u2764\ufe0fA thread #100Devs #DataScience #MachineLearning  #Analytics #AI #ML #Tech #IIoT...",
+            "title": "understand package",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Understand package.json",
+                "https",
+                "t.co",
+                "Java",
+                "Analytics"
+            ]
+        },
+        {
+            "url": "thinking-about-learning-python-for-data.html",
+            "desc": "\ud83d\udce2Thinking \ud83e\udd14about learning Python for Data Science \ud83e\uddd1\u200d\ud83d\udcbb\ud83d\udcca\n\n\ud83d\udd25Here are some free resources for learning in...",
+            "title": "thinking about learning python for data",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Data Science Tutorial",
+                "Data Science Full",
+                "Data Science",
+                "Python for Data",
+                "Science Tutorial"
+            ]
+        },
+        {
+            "url": "solve-a-quadratic-equation-using-javascript.html",
+            "desc": "Solve a Quadratic Equation using JavaScript :\n\n\ud83d\udc47\ud83e\uddf5Don't forget Bookmarked it for future reference.. \n\nResource used...",
+            "title": "solve a quadratic equation using javascript",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Problem Computes roots",
+                "Quadratic Equation",
+                "forget Bookmarked",
+                "Enter",
+                "roots"
+            ]
+        },
+        {
+            "url": "i-recently-wrote-a-twitter-bot.html",
+            "desc": "I recently wrote a @twitter bot. I'm amazed at how easy it was to get...",
+            "title": "i recently wrote a twitter bot",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "github",
+                "twitter",
+                "github actions",
+                "bot",
+                "script"
+            ]
+        },
+        {
+            "url": "how-to-take-inputs-for-interview.html",
+            "desc": "How to Take Inputs for Interview Coding Questions in Python?\nI had often seen friends struggling...",
+            "title": "how to take inputs for interview",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Interview Coding Questions",
+                "Interview Coding",
+                "Coding Questions",
+                "var",
+                "input"
+            ]
+        },
+        {
+            "url": "python-cheatsheets-cheat-sheets-come-in-handy.html",
+            "desc": "Python Cheatsheets: \n\nCheat sheets come in handy when you are coding, irrespective of whether you...",
+            "title": "python cheatsheets cheat sheets come in handy",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Python cheat sheets",
+                "Cheat sheets",
+                "Python",
+                "IoT",
+                "Python cheat"
+            ]
+        },
+        {
+            "url": "python-cheatsheets-cheat-sheets-come-in-handy.html",
+            "desc": "Python Cheatsheets: \n\nCheat sheets come in handy when you are coding, irrespective of whether you...",
+            "title": "python cheatsheets cheat sheets come in handy",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Python cheat sheets",
+                "Cheat sheets",
+                "Python cheat",
+                "junior developer",
+                "senior developer"
+            ]
+        },
+        {
+            "url": "javascript-developers-do-you-like-css.html",
+            "desc": "\u274c JavaScript Developers, do you like CSS ?\n\nTailwind Css is very popular, let's see more...",
+            "title": "javascript developers do you like css",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Tailwind Css",
+                "Linkedin Navbar Responsive",
+                "JavaScript Developers",
+                "VIDEO Background Tutorial",
+                "Gym Landing page"
+            ]
+        },
+        {
+            "url": "hey-dev-want-to-learn-javascript.html",
+            "desc": "Hey dev, Want to learn JavaScript I'm going to post about JavaScript from scratch.\n\n\ud83e\uddf5 1/4...",
+            "title": "hey dev want to learn javascript",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Hey dev",
+                "Hey",
+                "Ryan Dahl",
+                "JavaScript",
+                "make website interactive"
+            ]
+        },
+        {
+            "url": "learn-html-semantic-elements-visually-explained.html",
+            "desc": "Learn HTML\u00a0Semantic Elements\n\nVisually Explained\ud83d\udcdd\n\nThread \ud83e\uddf5 https://t.co/FCuG6hHXVs\ud83d\udc49Before Semantic Elements\n\n Example - https://t.co/1DS216C2P9\ud83d\udc49 After Semantic Elements \n\nExample...",
+            "title": "learn html semantic elements visually explained",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Semantic Elements Visually",
+                "Elements Visually Explained",
+                "Semantic Elements",
+                "HTML Semantic Elements",
+                "Learn HTML Semantic"
+            ]
+        },
+        {
+            "url": "16-best-wordpress-plugins-for-developers.html",
+            "desc": "\ud83d\udc49 16+ Best WordPress Plugins for Developers!\n\nThread\ud83d\udc47\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb https://t.co/4dS0Ie9JUw\u25b6\ufe0f 01. LambdaTest Screenshots\n\nLambdaTest allows checking your product\u2019s...",
+            "title": "16 best wordpress plugins for developers",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Developers",
+                "Plugins for Developers",
+                "Usersnap Feedback Collector",
+                "Feedback Collector Usersnap",
+                "LambdaTest Screenshots LambdaTest"
+            ]
+        },
+        {
+            "url": "have-you-ever-thought-about-staying.html",
+            "desc": "Have you ever thought about staying anonymous on the Internet?\n@Whonix allows you to route \ud835\udc82\ud835\udc8d\ud835\udc8d...",
+            "title": "have you ever thought about staying",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "thought about staying",
+                "staying anonymous",
+                "Internet",
+                "privacy",
+                "dataprotection"
+            ]
+        },
+        {
+            "url": "open-this-if-you-want-to-learn.html",
+            "desc": "Open this thread if you want to Learn JavaScript For Free\ud83d\ude4c\ud83c\udffb \n\nTop 7+ Websites:\n\nThread \ud83e\uddf51....",
+            "title": "open this if you want to learn",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Learn JavaScript",
+                "JavaScript For Free",
+                "Open this thread",
+                "Top",
+                "Websites"
+            ]
+        },
+        {
+            "url": "libraries-in-python-with-code-snippets.html",
+            "desc": "Libraries in Python (with code snippets) \n\nThread \ud83e\uddf5\ud83d\udc47In daily life, libraries are where many pre-written...",
+            "title": "libraries in python with code snippets",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Python Standard Library",
+                "Python Standard",
+                "Standard Library",
+                "Python",
+                "code snippets"
+            ]
+        },
+        {
+            "url": "as-a-python-programmer-there-are.html",
+            "desc": "As a #Python programmer, there are several tools that have helped play a part in...",
+            "title": "as a python programmer there are",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "helped play",
+                "play a part",
+                "Python",
+                "Python programmer",
+                "function"
+            ]
+        },
+        {
+            "url": "javascript-strings-challenge-newbies-this-is.html",
+            "desc": "\ud83d\udca1JavaScript Strings Challenge\ud83d\udca1\n\nNewbies, this is for you! \ud83e\udd13\n\nLet\u2019s say you have a string, but you...",
+            "title": "javascript strings challenge newbies this is",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "JavaScript Strings Challenge",
+                "Strings Challenge",
+                "return false",
+                "return",
+                "Newbies"
+            ]
+        },
+        {
+            "url": "daysofcode-day-28-today-i-studied.html",
+            "desc": "#100DaysOfCode Day 28\n\nToday I studied my SQL Database basic navigation commands. This was a practical...",
+            "title": "daysofcode day 28 today i studied",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "SQL Database basic",
+                "Today I studied",
+                "studied my SQL",
+                "SQL Database",
+                "Database basic navigation"
+            ]
+        },
+        {
+            "url": "python-code-to-help-with-answering.html",
+            "desc": "#python code to help with answering questions on the topics of: #GenerativeAI #generativeart; and, arriving...",
+            "title": "python code to help with answering",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "arriving at objective",
+                "artist style",
+                "answering questions",
+                "objective definitions",
+                "python code"
+            ]
+        },
+        {
+            "url": "python-cheatsheets-cheat-sheets-come-in-handy.html",
+            "desc": "Python Cheatsheets: \n\nCheat sheets come in handy when you are coding, irrespective of whether you...",
+            "title": "python cheatsheets cheat sheets come in handy",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Python cheat sheets",
+                "Cheat sheets",
+                "Python cheat",
+                "Python",
+                "https"
+            ]
+        },
+        {
+            "url": "javascript-project-ideas-for-beginners-open.html",
+            "desc": "10 JavaScript project ideas for beginners\n(open this thread \ud83e\uddf5):Calculator:\nhttps://t.co/WISJudFn5LAnimated Day and Night Toggle Switch\nhttps://t.co/RwhDlFaZTnContact Form...",
+            "title": "javascript project ideas for beginners open",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Night Toggle Switch",
+                "JavaScript project ideas",
+                "Contact Form",
+                "Form Validator",
+                "Image Slider"
+            ]
+        },
+        {
+            "url": "everything-required-to-get-into-data.html",
+            "desc": "Everything required to get into data space is available online for FREE. All you require...",
+            "title": "everything required to get into data",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Machine Learning",
+                "Machine Learning concepts",
+                "Learning",
+                "data",
+                "Data Science"
+            ]
+        },
+        {
+            "url": "i-get-a-lot-of-tweets.html",
+            "desc": "I get a lot of tweets every now n then from people that used to...",
+            "title": "i get a lot of tweets",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "play hive java",
+                "lot of tweets",
+                "hive java",
+                "play hive",
+                "dead server"
+            ]
+        },
+        {
+            "url": "so-as-y-all-may-know.html",
+            "desc": "So as y'all may know, I have a design/JavaScript background and have recently stepped into...",
+            "title": "so as y all may know",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Swift world partially",
+                "JavaScript background",
+                "recently stepped",
+                "world partially",
+                "Swift world"
+            ]
+        },
+        {
+            "url": "some-facts-1.html",
+            "desc": "Some facts:\n1. The operating system we now commonly refer to as Linux is actually the...",
+            "title": "some facts 1",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Linux",
+                "Linux Enterprise Server",
+                "SUSE Linux Enterprise",
+                "GNU operating system",
+                "Linux kernel"
+            ]
+        },
+        {
+            "url": "here-are-the-top-5-api.html",
+            "desc": "\ud83e\uddf5 Here are the top 5 #API dev frameworks in #Python :#Django Rest Framework (#DRF)...",
+            "title": "here are the top 5 api",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Django Rest Framework",
+                "API dev frameworks",
+                "building Web APIs",
+                "building REST APIs",
+                "Django Rest"
+            ]
+        },
+        {
+            "url": "looking-to-get-a-job-as.html",
+            "desc": "Looking to get a #Job as a #NLP Natural Language Processing #Engineer? \n\nIn computer science,...",
+            "title": "looking to get a job as",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Natural Language Processing",
+                "Language Processing",
+                "NLP Natural Language",
+                "NLP Engineer",
+                "NLP"
+            ]
+        },
+        {
+            "url": "learn-javascript-by-spending-0-online.html",
+            "desc": "Learn JavaScript by spending $0 online\n\nHere are 20 Places To Learn JavaScript \u2728\n\nThread \ud83e\uddf5 https://t.co/KWIQyKgmJD2....",
+            "title": "learn javascript by spending 0 online",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "JavaScript",
+                "Network Javascript Guide",
+                "Developer Network Javascript",
+                "Learn JavaScript",
+                "Places To Learn"
+            ]
+        },
+        {
+            "url": "my-data-analytics-learning-journey.html",
+            "desc": "MY DATA ANALYTICS LEARNING JOURNEY\n\nA thread...\n\nData File Types\nData can basically be store as 5 types\n\nTXT...",
+            "title": "my data analytics learning journey",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "ANALYTICS LEARNING JOURNEY",
+                "DATA ANALYTICS LEARNING",
+                "ANALYTICS LEARNING",
+                "LEARNING JOURNEY",
+                "JOURNEY A thread"
+            ]
+        },
+        {
+            "url": "daysofcode-day-29-today-i-completed.html",
+            "desc": "#100DaysOfCode Day 29\n\nToday I completed a SQL Database and PHP script on my server that...",
+            "title": "daysofcode day 29 today i completed",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Responsive Web Development",
+                "SQL Database",
+                "Database and PHP",
+                "Responsive Web",
+                "Web Development"
+            ]
+        },
+        {
+            "url": "berserk-the-final-eclipse-crops-below.html",
+            "desc": "BERSERK - The Final Eclipse \ud83e\uddf5 (crops below)\n\nI finally got around to drawing some headcanon...",
+            "title": "berserk the final eclipse crops below",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "headcanon Berserk fan",
+                "Berserk fan art",
+                "drawing some headcanon",
+                "Final Eclipse",
+                "fan art"
+            ]
+        },
+        {
+            "url": "create-coffee-mug-with-css-animation.html",
+            "desc": "Create coffee mug with CSS animation \ud83e\uddf5\ud83d\udc47\nWhat's your coding fuel ? https://t.co/m6tbalzfizAdded Animated coffee mug...",
+            "title": "create coffee mug with css animation",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Create coffee mug",
+                "CSS animation",
+                "Added Animated coffee",
+                "Create coffee",
+                "Animated coffee mug"
+            ]
+        },
+        {
+            "url": "best-free-tailwind-css-component-libraries.html",
+            "desc": "Best Free Tailwind CSS Component Libraries\n\nA Thread \ud83e\uddf5\ud83d\udc471. https://t.co/nnv3s3Chcj\n\nThe most popular, free and open-source\nTailwind CSS...",
+            "title": "best free tailwind css component libraries",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "CSS Component Libraries",
+                "Tailwind CSS",
+                "Tailwind CSS Component",
+                "Free Tailwind CSS",
+                "Component Libraries"
+            ]
+        },
+        {
+            "url": "git-learning-resources-1.html",
+            "desc": "Git learning resources\n\n\ud83e\uddf5 \ud83d\udc471. Git Tutorial for Beginners: Learn Git in 1 Hour\n\nhttps://t.co/l1M6eMW5Aj2. Git and...",
+            "title": "git learning resources 1",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Git learning resources",
+                "Git",
+                "Tutorial for Beginners",
+                "Git Tutorial",
+                "Git Tutorial Java"
+            ]
+        },
+        {
+            "url": "if-you-need-wordpress-services-checkout.html",
+            "desc": "If you need wordpress services checkout my freelance profiles below\nthere's some examples of my works...",
+            "title": "if you need wordpress services checkout",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Arabic speakers Khamsat",
+                "English speakers Fiverr",
+                "wordpress services checkout",
+                "speakers Khamsat",
+                "speakers Fiverr"
+            ]
+        },
+        {
+            "url": "this-week-i-m-starting-the-pyquantnews.html",
+            "desc": "This week I'm starting the @pyquantnews  finance course. I'll be writing a bit on...",
+            "title": "this week i m starting the pyquantnews",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "week I starting",
+                "pyquantnews finance",
+                "Building in public",
+                "pyquantnews",
+                "python"
+            ]
+        },
+        {
+            "url": "best-plugins-for-wordpress-blogger-and-affiliate.html",
+            "desc": "7 Best plugins for WordPress Blogger and Affiliate Marketer\n\nMust install them\n\nA thread \ud83e\uddf51. Site Kit...",
+            "title": "best plugins for wordpress blogger and affiliate",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Marketer Must install",
+                "Google Search Console",
+                "Affiliate Marketer",
+                "WordPress Blogger",
+                "Search Console"
+            ]
+        },
+        {
+            "url": "ayo-bois-it-s-finally-time.html",
+            "desc": "\ud83d\udd34AYO BOIS IT'S FINALLY TIME TO PLAY AZURE STRIKER GUNVOLT 3!\ud83d\udd34\n\nThis game series is pretty...",
+            "title": "ayo bois it s finally time",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "AZURE STRIKER GUNVOLT",
+                "PLAY AZURE STRIKER",
+                "cyborg today ngl",
+                "AYO BOIS",
+                "STRIKER GUNVOLT"
+            ]
+        },
+        {
+            "url": "new-devops-tools-to-watch-in-2023.html",
+            "desc": "\u27285 New #DevOps Tools to Watch in 2023\u2728\n\nWith less than two months left in 2022,...",
+            "title": "new devops tools to watch in 2023",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "Tools to Watch",
+                "months left",
+                "boost your productivity",
+                "Watch",
+                "tools to boost"
+            ]
+        },
+        {
+            "url": "aws-always-releases-many-features-sometimes.html",
+            "desc": "AWS always releases many features, sometimes every day or at least once a week. My...",
+            "title": "aws always releases many features sometimes",
+            "date": "2022-11-25 07:15:32.735374",
+            "tags": [
+                "free tier limit",
+                "releases many features",
+                "free tier",
+                "Current Model",
+                "AWS"
+            ]
         }
     ]
 }
