@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...">
+    <meta name="description" content="Not sure if Twitter is for useful things any more, or just shitposting, but hey...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Interesting technology and programming articles that you should not miss...</title>
+    <title>Not sure if twitter is for useful things any more,...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +87,7 @@ https://t.co/i99madqbkt
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Interesting technology and programming articles that you should not miss...</h2>
+                <h2>Not sure if twitter is for useful things any more,...</h2>
               </div>
             </div>
           </div>
@@ -112,31 +109,33 @@ https://t.co/i99madqbkt
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Interesting technology and programming articles that you should not miss...</span>
-                      <a href="#"><h4>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...</h4></a>
+                      <span>Not sure if twitter is for useful things any more,...</span>
+                      <a href="#"><h4>Not sure if Twitter is for useful things any more, or just shitposting, but hey...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-26 07:15:26.345255</a></li>
 
                       </ul>
-                      <p>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-<a href="https://t.co/i99madqbkt">https://t.co/i99madqbkt</a>
-👇
-#technology #programming #git<br><br>GitPiper is the worlds biggest repository of programming and technology resources. There is nothing you can't find at GitPiper in 2022.
- <a href="https://t.co/yrzImSHMLV">https://t.co/yrzImSHMLV</a></p>
+                      <p>Not sure if Twitter is for useful things any more, or just shitposting, but hey why not.
+
+Here are 3 big lessons I learned while migrating 13 very large #MySQL databases last week. 🧵
+
+(This is not a "Big Data" post. My data isn't large enough to consider "Big Data".)<br><br>UP FRONT: I'm not a DBA. I'm just some schmuck who works on a small team where everyone wears all the hats (including DBA). This is probably all common knowledge to pro DBA's. But hey, these are lessons I had to learn the hard way last week.<br><br>Lesson #1: Disable constraints when doing bulk inserts. When importing 20mm rows, and you know the FK values exist b/c the FK's enforced integrity before you exported the data, the constraints are wasting a ton of time and cpu on import.<br><br>set foreign_key_checks = 0;
+/* import data here */
+set foreign_key_checks = 1;<br><br>Lesson #2: Add multiple indexes with a single alter statement. Every alter causes a full table copy, then alters the copy, then drops the original and renames the copy. Don't repeat that on a 20mm row table for each of 5 indexes, add all 5 in one alter.<br><br>alter table Fubar
+add key 'ixFoo' ('foo'),
+add key 'ixBar' ('bar'),
+add key 'ixBaz' ('baz');<br><br>Lesson #3: mysqldump is not the only tool available to you for export. We're on AWS Aurora MySQL, which means we can use "select ... into outfile s3 's3://bucket/file.csv'" and then "load data from s3" to import into the new DB.<br><br>mysqldump is still great for handling all of the smaller tables. But for anything over 1gb we found it significantly faster (and worth the effort) to export to s3, create the table (with no indexes!), bulk import, then add the indexes.<br><br>BONUS TIP: if you have the ability, consider importing only a subset of the data at first. The export to S3 approach automatically splits the CSV's into 6gb files, so it was easy for us to import only the most recent data first.<br><br>This allowed us to get the app back online faster, and we simply posted a message to users that old data was still being loaded but that they could continue to use the app in the meantime. Then we queued up all of the old data imports and went to bed.<br><br>It was so pleasant to wake up to a notification that the import was complete and all was right with the world. Such a vast difference to the way the week started, working until 3am several nights to fight the data into the DB.<br><br>That's all of the tips I have for you, but if you want more details, notes on the things you need to be careful not to screw up, links to relevant docs, and more of the back story, then here's my article that has all of the above and more. <a href="https://t.co/bdA36uRXDA">https://t.co/bdA36uRXDA</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">worlds biggest repository</a></li>
-<li><a href="#">Interesting Technology</a></li>
-<li><a href="#">Programming Articles</a></li>
-<li><a href="#">technology resources</a></li>
-<li><a href="#">gitpiper in November</a></li>
+								<li><a href="#">Big Data</a></li>
+<li><a href="#">Data</a></li>
+<li><a href="#">add key</a></li>
+<li><a href="#">big lessons</a></li>
+<li><a href="#">Add</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +297,7 @@ https://t.co/i99madqbkt
       }
     </script>
 
-<!--2574911837458322951-->
+<!--5074075802324512951-->
 
   </body>
 

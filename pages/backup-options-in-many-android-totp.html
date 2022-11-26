@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...">
+    <meta name="description" content="Backup options in many Android #TOTP #2FA apps share personal info w/ 3rd parties, have...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Interesting technology and programming articles that you should not miss...</title>
+    <title>Backup options in many android #totp #2fa apps share personal...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +87,7 @@ https://t.co/i99madqbkt
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Interesting technology and programming articles that you should not miss...</h2>
+                <h2>Backup options in many android #totp #2fa apps share personal...</h2>
               </div>
             </div>
           </div>
@@ -112,31 +109,127 @@ https://t.co/i99madqbkt
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Interesting technology and programming articles that you should not miss...</span>
-                      <a href="#"><h4>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...</h4></a>
+                      <span>Backup options in many android #totp #2fa apps share personal...</span>
+                      <a href="#"><h4>Backup options in many Android #TOTP #2FA apps share personal info w/ 3rd parties, have...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-26 07:15:26.345255</a></li>
 
                       </ul>
-                      <p>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-<a href="https://t.co/i99madqbkt">https://t.co/i99madqbkt</a>
-👇
-#technology #programming #git<br><br>GitPiper is the worlds biggest repository of programming and technology resources. There is nothing you can't find at GitPiper in 2022.
- <a href="https://t.co/yrzImSHMLV">https://t.co/yrzImSHMLV</a></p>
+                      <p>Backup options in many Android #TOTP #2FA apps share personal info w/ 3rd parties, have serious crypto flaws, and/or allow app devs to access TOTP secrets 😱
+
+A 🧵 on our @USENIXSecurity '23 📜 "Security and Privacy Failures in Popular 2FA Apps"
+
+<a href="https://t.co/KehOVknjut">https://t.co/KehOVknjut</a>
+
+#infosec<br><br>@USENIXSecurity Background reading on the Time-Based One-Time Password (TOTP) algorithm if you are unfamiliar:
+
+<a href="https://t.co/bZi7wdSr3k">https://t.co/bZi7wdSr3k</a>
+
+Key points:
+ 
+1) Losing the TOTP secret could lead to account lockout
+
+2) Anyone with the TOTP secret can generate valid OTPs for your account<br><br>@USENIXSecurity Lose TOTP secret ↔️ phone lost/stolen, new phone, uninstall app, etc.
+
+No TOTP secret? No OTPs to log in! 😱
+
+TOTP apps have backup mechanisms to help users recover from device loss! 🥳
+
+How do these features impact my security &amp; privacy? 🤔
+
+Understudied, so we found out! 🧑‍💻<br><br>@USENIXSecurity 🧐 Research Questions 🧐
+
+RQ1) What personal info, if any, is leaked when using TOTP backups?
+
+RQ2) What is the risk of an attacker obtaining a TOTP backup?
+
+RQ3) What is the risk of an attacker compromising the TOTP secret(s) stored within an obtained TOTP backup?<br><br>👩‍🔬 Methods 👨‍🔬
+
+We found 22 Android TOTP apps with 100k+ installs &amp; a backup mechanism.
+
+For each:
+
+1) Recorded plaintext traffic while using, backing up, &amp; recovering
+
+2) Performed cryptanalysis to determine which crypto primitives, if any, were used and how they were configured<br><br>Key Finding 🔑🔎
+
+TOTP 2FA is often promoted as more secure than SMS 2FA, but we found that most TOTP backup strategies end up placing trust in the same technologies that TOTP 2FA is meant to supersede: passwords, SMS, and email.<br><br>Key Finding 🔑🔎
+
+4 of 22 apps relied *only* on SMS to authenticate the user during recovery.
+
+An attacker w/ control of a victim's phone number can access the TOTP backup!
+
+- @saaspass (plaintext backups)
+
+- @Authy, @yandexcom, and @salesforce (encrypted backups) <a href="https://t.co/niQYB5olV9">https://t.co/niQYB5olV9</a><br><br>Key Finding 🔑🔎
+
+15 of 22 apps supported encrypted backups. Most had serious cryptographic flaws, making ciphertexts vulnerable to trivial offline attacks.
+
+14 apps derive a key from a password. Most had severely inadequate pwd policies, used weak KDFs, and/or weak KDF configs. <a href="https://t.co/3v9Cf35akF">https://t.co/3v9Cf35akF</a><br><br>Key Finding 🔑🔎
+
+Some apps *only* encrypted the TOTP secret.
+
+Users of @Authy and @Zoho OneAuth who enable cloud backups are unknowingly sending those companies the names of the websites/services they use and the usernames for their accounts on those platforms.<br><br>Finding 🔎
+
+2 apps required users to provide PII to the app developer in order to use the app at all, even if the backup mechanism was not enabled. 
+
+@Authy required email address and phone #.
+
+@Telefonica's Latch required email address.<br><br>@Authy @Telefonica Finding 🔎
+
+Cloud backups required PII to authenticate users during recovery.
+
+Common PII collected was email (8), phone # (5), and name (4).
+
+@Microsoft Authenticator cloud backups required most PII of any app that we analyzed: phone #, email, name, and date of birth.<br><br>Finding 🔎
+
+12 of 22 apps supported plaintext TOTP backups.
+
+- 10 supported the Android sharing menu (e.g., email, SMS, etc.), copying to the clipboard, and/or exporting to file
+- 3 supported plaintext cloud sync
+- Few warned about the risk of plaintext backups<br><br>Finding 🔎
+
+7 of 22 apps used QR codes to manually transfer TOTP secrets between devices.
+
+Several bury this feature below multiple menu layers, decreasing the odds that users will find the feature unless specifically looking for it.<br><br>⭐️ Recommendation ⭐️
+
+TOTP apps should consider *not* supporting plaintext backups. If they are supported, then users should be clearly warned about the associated risks.<br><br>⭐️ Recommendation ⭐️
+
+TOTP apps should encrypt *all* TOTP fields, including the secret, issuer (website name), and label (username).
+
+Including any TOTP fields in backups as plaintext violates user privacy.<br><br>⭐️ Recommendation ⭐️
+
+TOTP apps that rely on remote key servers to generate/store random keys should choose different entities for storage of keys and ciphertext; if both are stored with a single entity, then they can decrypt the TOTP backups.<br><br>⭐️ Recommendation ⭐️
+
+For apps that derive keys from passwords:
+
+1) Encourage strong pwds
+2) *NEVER* allow the backup pwd to leave the app
+3) Once key is derived, wipe pwd from memory, and store key using Android Key Store
+4) Use Argon2 &amp; make it *expensive* (e.g., ~30 seconds)<br><br>⭐️ Recommendation ⭐️
+
+TOTP apps should only ever perform key derivation two times:
+
+1) when the user enables the backup mechanism
+
+2) when the user recovers
+
+Dynamically calculate the Argon2 KDF config to make it take 30+ seconds. Explain delay &amp; show familiar countdown UX.<br><br>Huge thanks to my co-authors Fuzail Shakir, @Noura_7N, and @v0max!
+
+In an effort to make our work fully verifiable and reproducible, there are numerous supplementary materials available online:
+
+<a href="https://t.co/eMCXsR0FtO">https://t.co/eMCXsR0FtO</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">worlds biggest repository</a></li>
-<li><a href="#">Interesting Technology</a></li>
-<li><a href="#">Programming Articles</a></li>
-<li><a href="#">technology resources</a></li>
-<li><a href="#">gitpiper in November</a></li>
+								<li><a href="#">USENIXSecurity Lose TOTP</a></li>
+<li><a href="#">Lose TOTP secret</a></li>
+<li><a href="#">TOTP</a></li>
+<li><a href="#">Failures in Popular</a></li>
+<li><a href="#">TOTP apps</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +391,7 @@ https://t.co/i99madqbkt
       }
     </script>
 
-<!--2574911837458322951-->
+<!--6353194771813222951-->
 
   </body>
 

@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Monday's Tip for Oracle APEX:
-As Oracle APEX developers, we all regularly enable debugging using the...">
+In almost every application, we need to set up an authorization...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
     <title>Monday's tip for oracle apex:
-as oracle apex developers, we all...</title>
+in almost every application, we need...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,18 @@ as oracle apex developers, we all...</title>
     <link rel="stylesheet" href="../assets/css/owl.css">
 
   </head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BWRY8HGLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5BWRY8HGLE');
+</script>
+
 
   <body>
 
@@ -78,7 +90,7 @@ as oracle apex developers, we all...</title>
             <div class="col-lg-12">
               <div class="text-content">
                 <h2>Monday's tip for oracle apex:
-as oracle apex developers, we all...</h2>
+in almost every application, we need...</h2>
               </div>
             </div>
           </div>
@@ -101,43 +113,49 @@ as oracle apex developers, we all...</h2>
                     </div>
                     <div class="down-content">
                       <span>Monday's tip for oracle apex:
-as oracle apex developers, we all...</span>
+in almost every application, we need...</span>
                       <a href="#"><h4>Monday's Tip for Oracle APEX:
-As Oracle APEX developers, we all regularly enable debugging using the...</h4></a>
+In almost every application, we need to set up an authorization...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-11-19 07:15:32.358482</a></li>
+                        <li><a href="#">2022-11-26 07:15:26.345255</a></li>
 
                       </ul>
                       <p>Monday's Tip for Oracle APEX:
-As Oracle APEX developers, we all regularly enable debugging using the developer toolbar, right? But did you know that you can enable it for another session and look at the logs?
-
-Here's how to do it 🧵
+In almost every application, we need to set up an authorization scheme to manage access to pages, buttons, processes, etc...
+But did you know that you can make it dynamic?
+Here's how to do it  🧵
 
 #orclAPEX
-1/4<br><br>1) Log in to the APEX builder and click on the user/wrench icon next to your username and choose Monitor Activity from the menu.
-2) Click on the Sessions \ Active Sessions link
-3) Find the session you are interested in and click on the link
+1/7<br><br>In the creation wizard, you probably noticed that there is a Validate Authorization Scheme field under Evaluation Point.
+But did you know that for the last two options, the APEX engine exposes three additional bind variables to you?
 
-2/4 <a href="https://t.co/Y8nIttLkDU">https://t.co/Y8nIttLkDU</a><br><br>4) Under Session Attributes, change the Debug Level and click on Apply Changes
-5) Under Page Views, click on a Debug Id link to see the logs
-6) Don't forget to disable debugging by setting Debug Level to Disabled when you are done
+2/7 <a href="https://t.co/QekBk8E0A6">https://t.co/QekBk8E0A6</a><br><br>But why is this useful and what can we do with these additional values?
+Let's create a new "Demo Dynamic Security" authorization scheme of type PL/SQL Function returning Boolean. Make sure to set the evaluation point to Always (No Caching).
 
-3/4 <a href="https://t.co/09HyPNVS1Q">https://t.co/09HyPNVS1Q</a><br><br>This tip has helped me more than once to understand a user's problem, so I hope it can help you too one day.
+3/7<br><br>In the PL/SQL Function Body field, add the code displayed in the following screenshot.
 
-If you are interested in more content like this, please like, retweet, comment and follow🙏
+4/7 <a href="https://t.co/HrdVXqypKJ">https://t.co/HrdVXqypKJ</a><br><br>In a new application, add a new region and assign this new authorization scheme, then run the page after enabling debugging.
+The additional binding variables give us the component type, id and name (see screenshot)
 
-4/4</p>
+5/7 <a href="https://t.co/C0LN8Lkzok">https://t.co/C0LN8Lkzok</a><br><br>Now all you have to is
+1) Store the component static values
+2) Link it to a role
+3) Query the right APEX metadata views, like APEX_APPLICATION_PAGE_REGIONS to see if the user can access it
+
+6/7<br><br>If you are interested in more content like this, please like, retweet, comment and follow🙏
+
+7/7</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Oracle APEX developers</a></li>
+								<li><a href="#">Monday Tip</a></li>
+<li><a href="#">Tip for Oracle</a></li>
 <li><a href="#">Oracle APEX</a></li>
-<li><a href="#">Monday Tip</a></li>
-<li><a href="#">Debug Level</a></li>
-<li><a href="#">click</a></li>
+<li><a href="#">authorization scheme</a></li>
+<li><a href="#">Validate Authorization Scheme</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -299,7 +317,7 @@ If you are interested in more content like this, please like, retweet, comment a
       }
     </script>
 
-<!--5224004547138069851-->
+<!--9252856410161512951-->
 
   </body>
 

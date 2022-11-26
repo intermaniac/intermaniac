@@ -5,14 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...">
+    <meta name="description" content="Improve your Javascript performance using these 10 simple performance tips.
+
+-Thread- https://t.co/4MEPJnmzF21. Reduce activity loop
+
+Each statement...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Interesting technology and programming articles that you should not miss...</title>
+    <title>Improve your javascript performance using these 10 simple performance tips.
+
+--...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +93,9 @@ https://t.co/i99madqbkt
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Interesting technology and programming articles that you should not miss...</h2>
+                <h2>Improve your javascript performance using these 10 simple performance tips.
+
+--...</h2>
               </div>
             </div>
           </div>
@@ -112,31 +117,86 @@ https://t.co/i99madqbkt
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Interesting technology and programming articles that you should not miss...</span>
-                      <a href="#"><h4>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...</h4></a>
+                      <span>Improve your javascript performance using these 10 simple performance tips.
+
+--...</span>
+                      <a href="#"><h4>Improve your Javascript performance using these 10 simple performance tips.
+
+-Thread- https://t.co/4MEPJnmzF21. Reduce activity loop
+
+Each statement...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-26 07:15:26.345255</a></li>
 
                       </ul>
-                      <p>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-<a href="https://t.co/i99madqbkt">https://t.co/i99madqbkt</a>
-👇
-#technology #programming #git<br><br>GitPiper is the worlds biggest repository of programming and technology resources. There is nothing you can't find at GitPiper in 2022.
- <a href="https://t.co/yrzImSHMLV">https://t.co/yrzImSHMLV</a></p>
+                      <p>Improve your Javascript performance using these 10 simple performance tips.
+
+-Thread- <a href="https://t.co/4MEPJnmzF2">https://t.co/4MEPJnmzF2</a><br><br>1. Reduce activity loop
+
+Each statement in a loop, including the for statement, is executed for each iteration of the loop. <a href="https://t.co/dAlIBb8PGc">https://t.co/dAlIBb8PGc</a><br><br>2. Reduce DOM access
+
+Accessing the HTML DOM is very slow, compared to other JavaScript statements.
+
+If you expect to access a DOM element several times, access it once, and use it as a local variable: <a href="https://t.co/sor6zmv63g">https://t.co/sor6zmv63g</a><br><br>3. Prefer async and defer
+
+Javascript is parser blocking. It blocks DOM construction when browser encounter the script tag. 
+
+async and defer are strategies to tell the browser that a script is not render blocking. <a href="https://t.co/txmHCZFFOh">https://t.co/txmHCZFFOh</a><br><br>3.1 Adding "async" attribute to the script tag. 
+
+Async attribute makes sure the script does not block the CRP(critical rendering path).
+
+It tells the browser to not block the DOM construction. As a result the browser dispatches the fetch request and continues parsing the DOM.<br><br>3.2 "defer" attribute to the script tag.
+
+defer attribute is similar to async. 
+
+The difference is, with defer the script will wait to execute until after the document has been parsed.
+
+Whereas the async let the script execute in the background while the document is being parsed.<br><br>4. Implement Event Delegation
+
+If we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
+
+You use <a href="https://t.co/ev1sRRsrAu">https://t.co/ev1sRRsrAu</a> to see where the event actually happened and handle it. <a href="https://t.co/PBqNf2EeEG">https://t.co/PBqNf2EeEG</a><br><br>5. Use local variables
+
+When we declare a global variable, it remains in memory throughout its lifecycle.
+
+However, if we declare variables in a local context, a block scope is applied, and the variables are removed from memory after the block executes. <a href="https://t.co/ovVzFDp4UH">https://t.co/ovVzFDp4UH</a><br><br>6. Defining class methods
+
+When using the function constructor  to create a class, make sure to move the class methods to the prototype object. 
+
+The methods inside the constructor, gets created each time an instance of the class is constructed. <a href="https://t.co/EXMGivL5Xk">https://t.co/EXMGivL5Xk</a><br><br>7. Avoiding pitfalls with closures:
+
+Closures are powerful and useful features of javascript; however, they have several drawbacks including:
+
+7.1 - They are the most common source of memory leaks.<br><br>7.2 - Creating a closure is significantly slower than creating an inner function without a closure and much slower that reusing a static function. <a href="https://t.co/sR40eDupno">https://t.co/sR40eDupno</a><br><br>7.3 - They add a level to the scope chain. 
+When the browser resolves properties, each level of the scope chain must be checked. 
+
+In the following example:
+When f is invoked, referencing a is slower than referencing b, which is slower than referencing c. <a href="https://t.co/nf1U9W90AC">https://t.co/nf1U9W90AC</a><br><br>8. Use browser cache
+
+<a href="https://t.co/0GXNRuwVdE">https://t.co/0GXNRuwVdE</a><br><br>9. arr.length = 0 to clear an array
+
+Assigning [] is often used to clear an array, you should keep in mind that it also creates a new array and garbages the old one. 
+
+Instead, use arr.length = 0
+It has the same effect, but reuses the same array object instead of creating new one <a href="https://t.co/CMzYaC8QQd">https://t.co/CMzYaC8QQd</a><br><br>10. Avoid Unnecessary Variables <a href="https://t.co/RJ2rmC4qC8">https://t.co/RJ2rmC4qC8</a><br><br>It's time you pat yourself on the back. 
+You've learned a lot so far. 
+
+Well, before you go on to watch yet another cat video. Don't forget to visit my profile, see if you like my other posts. 
+
+If you learned something today, follow @happydecoder and retweet.
+
+Happy to help</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">worlds biggest repository</a></li>
-<li><a href="#">Interesting Technology</a></li>
-<li><a href="#">Programming Articles</a></li>
-<li><a href="#">technology resources</a></li>
-<li><a href="#">gitpiper in November</a></li>
+								<li><a href="#">simple performance tips</a></li>
+<li><a href="#">simple performance</a></li>
+<li><a href="#">performance tips</a></li>
+<li><a href="#">Javascript performance</a></li>
+<li><a href="#">DOM</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +358,7 @@ https://t.co/i99madqbkt
       }
     </script>
 
-<!--2574911837458322951-->
+<!--8488191548923142951-->
 
   </body>
 

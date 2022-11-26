@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...">
+    <meta name="description" content="How to calculate prime numbers using the Sieve of Eratosthenes in ONE line of Python...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Interesting technology and programming articles that you should not miss...</title>
+    <title>How to calculate prime numbers using the sieve of eratosthenes...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +87,7 @@ https://t.co/i99madqbkt
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Interesting technology and programming articles that you should not miss...</h2>
+                <h2>How to calculate prime numbers using the sieve of eratosthenes...</h2>
               </div>
             </div>
           </div>
@@ -112,31 +109,107 @@ https://t.co/i99madqbkt
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Interesting technology and programming articles that you should not miss...</span>
-                      <a href="#"><h4>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99madqbkt
-👇
-#technology...</h4></a>
+                      <span>How to calculate prime numbers using the sieve of eratosthenes...</span>
+                      <a href="#"><h4>How to calculate prime numbers using the Sieve of Eratosthenes in ONE line of Python...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-26 07:15:26.345255</a></li>
 
                       </ul>
-                      <p>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-<a href="https://t.co/i99madqbkt">https://t.co/i99madqbkt</a>
-👇
-#technology #programming #git<br><br>GitPiper is the worlds biggest repository of programming and technology resources. There is nothing you can't find at GitPiper in 2022.
- <a href="https://t.co/yrzImSHMLV">https://t.co/yrzImSHMLV</a></p>
+                      <p>How to calculate prime numbers using the Sieve of Eratosthenes in ONE line of Python code 🧵
+
+Here's the code:
+
+reduce((lambda r, x: r-set(range(x**2,n+1,x)) if (x in r) else r), range(2, int(n**0.5)+1), set(range(2,n+1)))
+
+/1 <a href="https://t.co/gS6zLykGmc">https://t.co/gS6zLykGmc</a><br><br>Say we want to compute all primes from 2 through 10 (n=10). The sq root of 10 is 3.16, so we only consider 2 and 3.
+
+We start with 2 and eliminate all its multiples (but not itself)
+
+We get 2 3 5 7 9
+
+Then we consider 3 and eliminate all its &gt;1X multiples, so we have 2 3 5 7
+
+/5<br><br>And 2 3 5 and 7 are indeed all the primes from 2 to 10. So let’s move on to how the code works. /6<br><br>Let’s cover what each Python function does, so we can follow along.
+
+range(0,n) produces an iterable collection (think of this as a list you can go over one at a time) of numbers from 0 through n-1 e.g. (0,1,2) if n=3
+
+/7<br><br>set() transforms any list or iterable collection into a set with only unique elements (2,2,3) becomes {2,3}
+
+/8<br><br>int() converts a number with a decimal point into an integer. e.g. int(3.2) will return 3.
+
+/9<br><br>The keyword “in” checks set membership. In other words, is an element part of a set or not? 2 in {2,3,4} will return true. 9 in {5,6,7} will return false.
+
+/10<br><br>Given the descriptions above, we can figure that range(x**2,n+1,x) will give us an iterable that includes all the multiples of x from x**2 to n. For example, if n = 10, and x = 2, then this would return 4, 6, 8 &amp; 10.
+
+/11<br><br>Also, if n=10, then range(2, int(n**0.5)+1) will simply return all the numbers from 2 to the square root of 10, plus 1. Why plus 1? Because if the square root is a fraction, we want to round up to the next number. So, this range evaluates to 2,3,4.
+
+/12<br><br>lambda is a quick way of writing a short unnamed function. In Python, you can write a regular function like so:
+
+def add(x,y):
+    return(x+y)
+
+But you can also just say:
+
+lambda x,y: x+y
+
+/13<br><br>You don’t need to use return, and you don’t need to name the function. Lambda functions should only be used for very short tasks and are a convenience that is best not overused.
+
+/14<br><br>Ok, so now let’s talk about reduce(). This function can take three inputs.
+
+The first input to reduce is a function to apply.
+The second is an "iterable" on which to apply the function.
+The third is an optional "initializer", sent as the first argument to the function.
+
+/15<br><br>reduce() applies a function repeatedly to get to a single output. It does this by passing successive elements of an iterable to a function, and then in each subsequent evaluation, the return value of the first function execution, along with the next iterable element.
+
+/16<br><br>For example, if the iterable = [2,3,4,5] and the function is add(), then you could imagine the evaluation to be:
+
+add(add(add(2,3),4),5)
+
+2+3 = 5
+5 + 4 = 9
+9 + 5 = 14
+
+And that would be the answer produced when reduce() completes. /17<br><br>With all this behind us, we now have all the knowledge we need to understand the Sieve as implemented in one line of Python.
+
+/18<br><br>The first time reduce runs our lambda function, it sends the initializer iterable (i.e. all the numbers from 2 to n, as the argument "r"), and the first number from range(2,int(n**0.5)+1) (i.e. 2 from 2,3,4 in the case that n = 10)
+
+/19<br><br>Since the first number is 2, then all the &gt;1X multiples of 2 up to 10 will be subtracted from the initializer. We have:
+
+{2,3,4,5,6,7,8,9,10} - {4,6,8,10} = {2,3,5,7,9}
+
+reduce() will then process this set plus the next number from the iterable 2,3,4 (i.e. 3).
+
+/20<br><br>The same process repeats, but this time with the &gt;1X multiples of 3. We have:
+
+{2,3,5,7,9}-{6,9}={2,3,5,7}
+
+Since 4 isn't in the final list, the "x in r" check fails when reduce() sends in the last element of the iterable (i.e. 4). Our lambda func then just returns [2,3,5,7]
+
+/21<br><br>Et voila!
+
+That is the correct set of all primes from 2 through 10!
+
+/22<br><br>Why get into this level of detail to explain a single line of code?
+
+Because the expressive power of computer languages is enthralling. Constructs like lambda functions, map()/reduce(), list comprehensions &amp; set operations are elegant, powerful and worth knowing.
+
+/23<br><br>I hope you found this tour of the Sieve of Eratosthenes fun. I certainly had a good time writing about it.
+
+And I hope we will travel together on other similar journeys!
+
+/24</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">worlds biggest repository</a></li>
-<li><a href="#">Interesting Technology</a></li>
-<li><a href="#">Programming Articles</a></li>
-<li><a href="#">technology resources</a></li>
-<li><a href="#">gitpiper in November</a></li>
+								<li><a href="#">function</a></li>
+<li><a href="#">iterable</a></li>
+<li><a href="#">set</a></li>
+<li><a href="#">reduce</a></li>
+<li><a href="#">return</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +371,7 @@ https://t.co/i99madqbkt
       }
     </script>
 
-<!--2574911837458322951-->
+<!--0679285536387022951-->
 
   </body>
 
