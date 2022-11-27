@@ -5,14 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99mad8zVT
-👇
-#technology...">
+    <meta name="description" content="I rewrote aspects of our rendering engine last week, here is why!
+
+Our engine uses Lambda...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Interesting technology and programming articles that you should not miss...</title>
+    <title>I rewrote aspects of our rendering engine last week, here...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +89,7 @@ https://t.co/i99mad8zVT
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Interesting technology and programming articles that you should not miss...</h2>
+                <h2>I rewrote aspects of our rendering engine last week, here...</h2>
               </div>
             </div>
           </div>
@@ -112,31 +111,46 @@ https://t.co/i99mad8zVT
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Interesting technology and programming articles that you should not miss...</span>
-                      <a href="#"><h4>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-https://t.co/i99mad8zVT
-👇
-#technology...</h4></a>
+                      <span>I rewrote aspects of our rendering engine last week, here...</span>
+                      <a href="#"><h4>I rewrote aspects of our rendering engine last week, here is why!
+
+Our engine uses Lambda...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-27 07:15:26.940126</a></li>
 
                       </ul>
-                      <p>Interesting Technology And Programming Articles That You Should Not Miss @gitpiper in November 2022 🧵
-<a href="https://t.co/i99mad8zVT">https://t.co/i99mad8zVT</a>
-👇
-#technology #programming #git<br><br>GitPiper is the worlds biggest repository of programming and technology resources. There is nothing you can't find at GitPiper in 2022.
- <a href="https://t.co/yrzImSHMLV">https://t.co/yrzImSHMLV</a></p>
+                      <p>I rewrote aspects of our rendering engine last week, here is why!
+
+Our engine uses Lambda and Chromium in headless, we break each frame down and paint it using HTML/JS
+
+A major problem painting video in Chromium is the "seeked" method doesn't always work - it's💩
+
+So instead 🧵👇<br><br>After tinkering with different ideas, I decided that it would be best to avoid using Chromium to decode videos
+
+A better approach is to use FFMPEG to extract the video into images, then to use Chromium to paint it as an image<br><br>We spawn hundreds of Lambda functions that each are responsible for rendering a chunk of the video
+
+All of these functions run in parallel with an average time of 30s per function, this is why we are able to render long videos super fast<br><br>As another optimization coming soon! ⚡️
+
+Instead of relying on the Puppeteer screenshot function which takes 300ms - 500ms to simply get an image of the frame (thank god we have parallel rendering)
+
+I had an idea to build a pure canvas oriented engine that draws the frame<br><br>Then uses .toBlob() which will store the frame as a blob in memory which from my benchmarks only takes &lt;10ms
+
+Once the blob is in memory it's easy to pass into FFMPEG immediately
+
+With this update, our engine will be 30x more efficient than it already is!<br><br>I find great pleasure in building this type of technology, and with @JoseLuisRoqueni in the marketing seat I'm excited to get this out to the world and accomplish our mission in democratizing video creation<br><br>@JoseLuisRoqueni It's still in beta <a href="https://t.co/JAmm4ZphFS">https://t.co/JAmm4ZphFS</a> but I am offloading our rendering engine into it's own SDK so that other developers can use it to render videos programmatically
+
+If this interests you lets hop on the DMs, I can explain how it works</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">worlds biggest repository</a></li>
-<li><a href="#">Interesting Technology</a></li>
-<li><a href="#">Programming Articles</a></li>
-<li><a href="#">technology resources</a></li>
-<li><a href="#">gitpiper in November</a></li>
+								<li><a href="#">rewrote aspects</a></li>
+<li><a href="#">rendering engine</a></li>
+<li><a href="#">Chromium</a></li>
+<li><a href="#">render long videos</a></li>
+<li><a href="#">engine</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +312,7 @@ https://t.co/i99mad8zVT
       }
     </script>
 
-<!--2760473255890062951-->
+<!--7313809642070262951-->
 
   </body>
 
