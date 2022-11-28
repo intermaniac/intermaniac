@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Let's get a bit technical and see how you can build your own automation for...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Let's get a bit technical and see how you can...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -88,7 +87,7 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Let's get a bit technical and see how you can...</h2>
               </div>
             </div>
           </div>
@@ -110,33 +109,76 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Let's get a bit technical and see how you can...</span>
+                      <a href="#"><h4>Let's get a bit technical and see how you can build your own automation for...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-28 07:15:31.751213</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
+                      <p>Let's get a bit technical and see how you can build your own automation for your trading system. 👇
 
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/F4ubycC00k">https://t.co/F4ubycC00k</a>
+I am not a "native" coder, I've learned what I needed to build automations that I needed.
 
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Become a Six-Figure WordPress Freelancer &amp; Get Clients: 
-<a href="https://t.co/IZBqHDai8F">https://t.co/IZBqHDai8F</a></p>
+In this thread I'll show come code blocks to achieve some automation with Python.
+
+(1/x)<br><br>First you must start by fetching data. 
+
+I prefer to use the data from the platform where I am trading at, in this case @binance .
+
+To fetch data you must connect to the API using your API keys which can be found/created under your user and then "API Management".
+
+(2/x) <a href="https://t.co/zZ3z57G8Ew">https://t.co/zZ3z57G8Ew</a><br><br>In order to streamline the way we connect to exchanges we'll be using the @ccxt_official library which helps to connect to all the exchanges with equal code.
+
+Each exchange has its own way to fetch data, send data, etc, but with CCXT you can connect with equal code.
+
+(3/x)<br><br>After we've created our API keys we need to connect to our exchanges. 
+
+This function bellow connects to the client using your API keys. You need this function to be able to send and extract information from the exchange.
+
+(4/x) <a href="https://t.co/vHCYS2adtZ">https://t.co/vHCYS2adtZ</a><br><br>After you've connected to the exchange we need to extract the data necessary for the system.
+
+We do this by calling the client function we built above and using the function "fetch_ohlcv". 
+
+This will fetch the data from Binance, clean it, and store it in pandas dataframe.
+
+(5/x) <a href="https://t.co/JqcgWw7EFg">https://t.co/JqcgWw7EFg</a><br><br>Clean the data means that you receive the data in an unworkable format and you change it to be easier to work with.
+
+A Pandas Dataframe is a 2-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet.
+
+(6/x)<br><br>Now that we have the data and cleaned we need to calculate the criteria for the system.
+
+Below there's the module where I calculate deviations from moving averages.
+
+It is calculating that if we have a good enough deviation from common SMA's we get a valid entry trigger.
+
+(7/x) <a href="https://t.co/IQyTX4X30X">https://t.co/IQyTX4X30X</a><br><br>In the tweet above I am not showing all the variables of the indicators because this is one of my systems and I won't share it's specifics.
+
+But the point is that you need to calculate if your entry is valid on the code and get a "valid entry" signal from that.
+
+(8/x)<br><br>After you have a valid trigger from your data you send it to the exchange via a "create_order".
+
+The way it works is:
+
+client.create_order("ASSET", "MARKET/LIMIT/STOP", "BUY/SELL", "QUANTITY).
+
+You press that code and the order is sent.
+
+(9/x) <a href="https://t.co/961hGhc55U">https://t.co/961hGhc55U</a><br><br>I hope you liked this brief simple thread on how to start thinking about automation of your system.
+
+If you lack ideas for your own trading there's a free congress in 5 days with tons of content around trading and investing 👇
+
+<a href="https://t.co/AfACEGc2kI">https://t.co/AfACEGc2kI</a> <a href="https://t.co/0vN7N66STk">https://t.co/0vN7N66STk</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">data</a></li>
+<li><a href="#">API keys</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">bit technical</a></li>
+<li><a href="#">connect</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +340,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--6794775786230313951-->
+<!--6961629742831192951-->
 
   </body>
 

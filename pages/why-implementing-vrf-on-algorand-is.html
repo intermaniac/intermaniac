@@ -5,12 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...">
+    <meta name="description" content="Thread on why implementing VRF on Algorand is complicated:
+The first complication is that the suggestion...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>He encontrado nuevos cursos con 100% de descuento, echales un...</title>
+    <title>Why implementing vrf on algorand is complicated:
+the first complication...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -88,7 +89,8 @@ Here are some new 100%...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>He encontrado nuevos cursos con 100% de descuento, echales un...</h2>
+                <h2>Why implementing vrf on algorand is complicated:
+the first complication...</h2>
               </div>
             </div>
           </div>
@@ -110,33 +112,29 @@ Here are some new 100%...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>He encontrado nuevos cursos con 100% de descuento, echales un...</span>
-                      <a href="#"><h4>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100%...</h4></a>
+                      <span>Why implementing vrf on algorand is complicated:
+the first complication...</span>
+                      <a href="#"><h4>Thread on why implementing VRF on Algorand is complicated:
+The first complication is that the suggestion...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-28 07:15:31.751213</a></li>
 
                       </ul>
-                      <p>He encontrado nuevos cursos con 100% de descuento, echales un vistazo!
-Here are some new 100% off courses!
-
-Python And Django Framework For Beginners Complete Course: 
-<a href="https://t.co/F4ubycC00k">https://t.co/F4ubycC00k</a>
-
-🧵...
- #udemyfree #udemygratis #udemy<br><br>Become a Six-Figure WordPress Freelancer &amp; Get Clients: 
-<a href="https://t.co/IZBqHDai8F">https://t.co/IZBqHDai8F</a></p>
+                      <p>Thread on why implementing VRF on Algorand is complicated:
+The first complication is that the suggestion in the articles for using the VRF stuff is to build a continuously running Oracle. If you try to do that, it can add up to quite a lot of money.<br><br>Because the vrf_opcode opcode costs 5700 so if you keep doing it like twice a minute it could be around 0.02 ALGO per minute which adds up to ~ 864 ALGO per month. Just to get the 5700 available you need several dummy transactions in the group, maybe 10 txns + each time.<br><br>Then if you don't want to pay that you need something like an on-demand random function. You want it to call the random stuff if it is in use, but only call it once, not multiple times for every customer
+So to handle that you need a state machine on the server.<br><br>It will manage whether the random numbers have already been generated and when to record people buying in and make sure that things happen in the right order etc. The other aspect of this is that before you can call the vrf_verify in the contract,<br><br>you need to generate something to verify on your server, and that uses functions from the Algorand Go code. I pulled them out and put them in a command line program.
+That part of it has to use the exact same data and work exactly like the stuff in the contract, or<br><br>the vrf_verify will not verify. One tricky part of this is that you may need to marshal the binary data between different representations multiple times. If at any stage you don't properly translate the to the binary data then your verification won't work.<br><br>So that stuff is one reason you are probably better off using the VRF oracle built by the Inc. team. (It came out after I had finished most of my VRF shuffle.)</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">nuevos cursos con</a></li>
-<li><a href="#">encontrado nuevos cursos</a></li>
-<li><a href="#">echales un vistazo</a></li>
-<li><a href="#">cursos con</a></li>
-<li><a href="#">encontrado nuevos</a></li>
+								<li><a href="#">VRF</a></li>
+<li><a href="#">implementing VRF</a></li>
+<li><a href="#">Thread</a></li>
+<li><a href="#">VRF oracle built</a></li>
+<li><a href="#">VRF oracle</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -298,7 +296,7 @@ Python And Django Framework For Beginners Complete Course:
       }
     </script>
 
-<!--6794775786230313951-->
+<!--6589293689883103951-->
 
   </body>
 
