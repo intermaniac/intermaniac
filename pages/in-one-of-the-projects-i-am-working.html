@@ -5,14 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="13 YEW Articles That You Should Not Miss in November 2022 🧵
-https://t.co/MclEpjXo29
-👇
-#technology #programming #git #yewLet's...">
+    <meta name="description" content="In one of the projects I am working on, I found a very interesting thing...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>13 yew articles that you should not miss in november...</title>
+    <title>In one of the projects i am working on, i...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +87,7 @@ https://t.co/MclEpjXo29
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>13 yew articles that you should not miss in november...</h2>
+                <h2>In one of the projects i am working on, i...</h2>
               </div>
             </div>
           </div>
@@ -112,37 +109,64 @@ https://t.co/MclEpjXo29
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>13 yew articles that you should not miss in november...</span>
-                      <a href="#"><h4>13 YEW Articles That You Should Not Miss in November 2022 🧵
-https://t.co/MclEpjXo29
-👇
-#technology #programming #git #yewLet's...</h4></a>
+                      <span>In one of the projects i am working on, i...</span>
+                      <a href="#"><h4>In one of the projects I am working on, I found a very interesting thing...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-29 07:15:30.035269</a></li>
 
                       </ul>
-                      <p>13 YEW Articles That You Should Not Miss in November 2022 🧵
-<a href="https://t.co/MclEpjXo29">https://t.co/MclEpjXo29</a>
-👇
-#technology #programming #git #yew<br><br>Let's Build a Rust Frontend with Yew
-<a href="https://t.co/gmpQzHU5It">https://t.co/gmpQzHU5It</a><br><br>How to use Rust Yew
-<a href="https://t.co/SqSiQkzFOk">https://t.co/SqSiQkzFOk</a><br><br>How to use a modal in Rust
-<a href="https://t.co/X57VZSABnb">https://t.co/X57VZSABnb</a><br><br>How to use routers in Rust Frontend
-<a href="https://t.co/c76ErJCxKI">https://t.co/c76ErJCxKI</a><br><br>How to modulize your Rust Frontend
-<a href="https://t.co/PT7iPuMlDd">https://t.co/PT7iPuMlDd</a><br><br>How to use NPM packages with Rust Frontend
-<a href="https://t.co/11LZk4TADk">https://t.co/11LZk4TADk</a><br><br>How to use markdown with Rust Frontend
-<a href="https://t.co/c7SkQsAE97">https://t.co/c7SkQsAE97</a></p>
+                      <p>In one of the projects I am working on, I found a very interesting thing /bug about safari browsers on iOS and iPadOS.
+
+I'll share the whole story.
+
+A Thread 🧵 
+
+#web #javascript #FrontEnd #webdevelopment #mdn #iOS #bug #softwaredevelopment<br><br>So, I am building this app called Task Manager which is inspired by the Jira board. The app is simple, you can create a few projects, and inside projects, we can create tasks. 
+
+Thread (1/n)<br><br>And you can interact with the task by choosing if it's in todo, in progress, in development, in review
+or completed, and also an option to delete the task.
+
+So projects are the parent container and tasks are the child containers of it.
+
+Thread (2/n)<br><br>So, since tasks are created dynamically, and there can be many child tasks created, it's not advised to have event listeners on each and every child task, and what is advised is to use event delegation.
+
+Thread (3/n)<br><br>In brief, event delegation is a technique to handle event listeners for similar elements effectively, what we do here is, add an event listener to the parent element instead of adding it to all similar elements. 
+
+Thread (4/n)<br><br>And this is all possible because of capturing and bubbling of events in javascript. 
+
+After building the app to a certain phase, I checked on my iPhone and realized that events are not triggered and there is no action happening.
+
+On diving into this 👇
+
+Thread (5/n)<br><br>I found out that Safari Mobile 7.0+ suffers from a bug where click events aren't fired on elements that aren't typically interactive (e.g. &lt;div&gt;) and which also don't have event listeners directly attached to the elements themselves (i.e. event delegation).
+
+Thread (6/n)<br><br>As of now, the know workarounds are :
+- Set cursor: pointer; on the element or any of its ancestors.
+- Add a dummy onclick="void(0)" attribute to the element or any of its ancestors up to but not including &lt;body&gt;.
+
+Thread (7/n)<br><br>- Use a typically interactive element (e.g., &lt;a&gt;) instead of one that isn't typically interactive (e.g., &lt;div&gt;).
+- Stop using click event delegation.
+
+Thread (8/n)<br><br>I am attaching a link to MDN docs where the above are listed.
+
+Also, do let me know if you have faced this situation and how did you try to solve this issue.
+
+Thread (9/n)<br><br>MDN Article: <a href="https://t.co/2h3FiVz3jU">https://t.co/2h3FiVz3jU</a> 
+
+GitHub: <a href="https://t.co/ehcE7z6h5c">https://t.co/ehcE7z6h5c</a> 
+
+Live: <a href="https://t.co/UeyB6SWfiC">https://t.co/UeyB6SWfiC</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Rust Frontend</a></li>
-<li><a href="#">Miss in November</a></li>
-<li><a href="#">Rust Yew</a></li>
-<li><a href="#">YEW Articles</a></li>
-<li><a href="#">NPM packages</a></li>
+								<li><a href="#">Thread</a></li>
+<li><a href="#">event</a></li>
+<li><a href="#">event delegation</a></li>
+<li><a href="#">interesting thing</a></li>
+<li><a href="#">event listeners</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -304,7 +328,7 @@ https://t.co/MclEpjXo29
       }
     </script>
 
-<!--5487629761075233951-->
+<!--2701561988322743951-->
 
   </body>
 
