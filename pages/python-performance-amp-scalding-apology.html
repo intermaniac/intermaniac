@@ -5,16 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...">
+    <meta name="description" content="Python performance &amp; Scalding apology 🧵. Back in the days during one of the hackathon,...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Python performance &amp; scalding apology 🧵. back in the days...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +87,7 @@ A THREAD 🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Python performance &amp; scalding apology 🧵. back in the days...</h2>
               </div>
             </div>
           </div>
@@ -114,38 +109,60 @@ A THREAD 🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...</h4></a>
+                      <span>Python performance &amp; scalding apology 🧵. back in the days...</span>
+                      <a href="#"><h4>Python performance &amp; Scalding apology 🧵. Back in the days during one of the hackathon,...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-30 07:15:32.771439</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>Python performance &amp; Scalding apology 🧵. Back in the days during one of the hackathon, marketed our project with #MakePythonGreatAgain and #KillScalding. It gave few good giggles but after 3+ years, realizing that I was dead wrong. 
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+First apology. 1/n<br><br>@_ttim @apanasenko @fbrasisil and Ben were there to teach me Scala &amp; Scalding but I took a short cut Seriously regretting the decision.
+I learnt eventually but never reached the level where I can comfortably write code in Scala. Apology to you 4, you were right. 2/n<br><br>Here comes the GIL: I like Python for small ETL jobs &amp; recently made a service from Python around MLFlow.
+But I was this year old when @rahuliyer95 walked in and taught me that ThreadPoolExecutor doesn't do the job. I am still utilizing single CPU bcoz Global Interpreter Lock
+3/n<br><br>Python threads will yield(even for pure compute related task bcos they are OS threads underneath) but if K8s POD has 4 CPUs, your Python code with ThreadPoolExecutor(max_workers=4) will only use 1 CPU ,bcos of a GIL (Assume HT is enabled so num_workers == CPU Requests) 4/n<br><br>This forces you to have ProcessPoolExecutor at top and within each process you can have ThreadPoolExecutor to better interact with IO.
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+Problem solved, right ?
+No 
+5/n<br><br>If using Python for ETL, you have 2 options.
+1. PySpark
+   *: @rahuliyer95 pointed out that PySpark spin up 1 interpreter/CPU on executor.
+2. Custom code with Pandas DF for aggregation
+   *: ProcessPoolExecutor /multiprocessing.Pool abstraction
+ Both have some IPC cost 
+6/n<br><br>What about it?
+You wait on the future from ProcessPool, your callback either have to pickle the data --or-- materialize data on disk and your MainProcess (MainThread) will re-read from the disk.
+Latter is efficient but still a huge cost if you have big DF
+7/n<br><br>This is a clear side-effect of using ProcessPool. Materializing to disk or pickling doesn't happen in ThreadPool.
+We did have saveToDisk in Scalding but it was for very different reasons.
+8/n<br><br>JVM based languages (or C++, rust) doesn't suffer from this bcos they don't have to deal with GIL.
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+Story doesn't end here.
 
-#programming #Coding #CodeNewbie #100DaysOfCode #30Daysofcode #javascript #layoffs #Python #ReactJS #technology</p>
+Airflow makes everything complicated:
+9/n<br><br>In Airflow, if you are using PythonVirtualEnv operator then using ProcessPool will yield in a guaranteed deadlock.
+I have a hunch that, Airflow internal is forking and redirecting PIPE.
+All of my child-processes goes into futex_wait state and never comes out.
+10/n<br><br>There is a workaround kids. Again @rahuliyer95 comes to the rescue. 
+You use BashOperator and create a wheel (or PEX), install it inside BashOperator and call your entry point.
+
+There are still issues i.e. if one of the child procs, experienced OOM you are in deadlock
+11/n<br><br>TL;DR
+1.Use JVM based language for ETL if your job requires efficiency
+2.If you can't then Python will require lot more tooling to achieve reasonable performance
+cc @vboykis @normconf.Hope #Normconf attendees will see this thread and make a right decision for their ETL
+12/12</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">Python</a></li>
+<li><a href="#">ETL</a></li>
+<li><a href="#">CPU</a></li>
+<li><a href="#">Scalding</a></li>
+<li><a href="#">GIL</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -307,7 +324,7 @@ A THREAD 🧵
       }
     </script>
 
-<!--8794927460238453951-->
+<!--8463429006266363951-->
 
   </body>
 

@@ -5,16 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
+    <meta name="description" content="Now that we understand:
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...">
+1.  What realms in #javascript are;
+2.  Why they can so...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Now that we understand:
+
+1.  what realms in #javascript are;
+2....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +93,10 @@ A THREAD 🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Now that we understand:
+
+1.  what realms in #javascript are;
+2....</h2>
               </div>
             </div>
           </div>
@@ -114,38 +118,43 @@ A THREAD 🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <span>Now that we understand:
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+1.  what realms in #javascript are;
+2....</span>
+                      <a href="#"><h4>Now that we understand:
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...</h4></a>
+1.  What realms in #javascript are;
+2.  Why they can so...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-30 07:15:32.771439</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>Now that we understand:
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+1.  What realms in #javascript are;
+2.  Why they can so easily be maliciously utilized against #browser #javascript supply chain protections,
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+🧵 We can finally talk about the security field that doesn't get the attention it deserves - realms #security:<br><br>But first, if you missed (1) what realms in javascript are, I recommend reading <a href="https://t.co/akErgzGZlg">https://t.co/akErgzGZlg</a><br><br>And if you don't understand (2) why realms are such a security concern to in-browser supply chain security, I recommend going back to my previous tweet on that.
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+All set? Let's begin👇🏻 <a href="https://t.co/eaxoFriYJx">https://t.co/eaxoFriYJx</a><br><br>Back in the days, when building web apps was not massively relying on a never ending list of dependencies, in-browser web apps builders were mostly concerned about XSS attacks for client side security.<br><br>Since those are syntax based type of vulnerabilities that are exploitable via user input, defending against those required developers to become aware of them, and make sure the code they’re deploying isn’t vulnerable to such attacks by properly sanitizing user input.<br><br>But since then things have changed dramatically, and user input is no longer the only exploitable surface for executing unwanted code in web apps.<br><br>Nowadays, the number one way of achieving that is by breaching dependencies that such web apps rely on - and it is far more complicated to defend against than user input sanitation.<br><br>It’s so complicated, that there is more than just one approach on how to do so, and a very popular one which is taken by various companies is by defending javascript in real time in the browser.<br><br>You get what I’m saying? Unlike XSS attacks, it is now so hard to prevent unwanted code execution due to supply chain attacks, that a popular solution is to just wait for it to happen and defend against it live!<br><br>In my previous thread I give a very straightforward explanation on how such solutions look like, but generally the idea is to redefine the behavior of javascript and by that protect it against potentially malicious usage (doesn't click? go back to this 👉🏻 <a href="https://t.co/eaxoFriYJx">https://t.co/eaxoFriYJx</a>)<br><br>But what I also talk about there, is how such defense when only applied to the main realm (top window) is basically useless, because any protection that is applied to only one realm does not apply automatically to another - and that's a part most solutions fail to protect against<br><br>To put simply, if for example my biggest fear is that an attacker successfully accesses “document.cookie” API so I delete access to it completely, I’m still screwed - the attacker can always regain that access by creating a new iframe and grabbing its unique “document.cookie” API<br><br>That is how good old realms in javascript can be maliciously abused due to how browser javascript attacks evolved.
 
-#programming #Coding #CodeNewbie #100DaysOfCode #30Daysofcode #javascript #layoffs #Python #ReactJS #technology</p>
+And that’s how the need for “realm security” was born - it’s the effort around securing realms so that attackers won’t be able to leverage them maliciously.<br><br>This is an abstract definition, because currently this is a very abstract concept - we only now start to understand the role of realms in the changing in-browser security ecosystem and that realms even require security due to how browser javascript security shapes up.<br><br>That is a security field I wish to define and further explore to eventually be able to improve the security of the web apps we use daily.
+
+Realms security is a field I have been researching for months now, and Snow JS ❄️ is the first significant fruit of my long term research.<br><br>Super excited to introduce Snow in the next thread 😊
+
+To follow my realms security research journey, best place would be <a href="https://t.co/p4TGgyUoGH">https://t.co/p4TGgyUoGH</a> where I cover everything there is to know about realms and {offensive/defensive} security of realms including best tools and practices</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">security</a></li>
+<li><a href="#">realms</a></li>
+<li><a href="#">javascript</a></li>
+<li><a href="#">web apps</a></li>
+<li><a href="#">Realms security</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -307,7 +316,7 @@ A THREAD 🧵
       }
     </script>
 
-<!--8794927460238453951-->
+<!--3574708296099783951-->
 
   </body>
 

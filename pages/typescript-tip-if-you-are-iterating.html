@@ -5,16 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...">
+    <meta name="description" content="Typescript tip: if you are iterating over a constrained set of values in a switch...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Typescript tip: if you are iterating over a constrained set...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +87,7 @@ A THREAD 🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Typescript tip: if you are iterating over a constrained set...</h2>
               </div>
             </div>
           </div>
@@ -114,38 +109,43 @@ A THREAD 🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...</h4></a>
+                      <span>Typescript tip: if you are iterating over a constrained set...</span>
+                      <a href="#"><h4>Typescript tip: if you are iterating over a constrained set of values in a switch...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-30 07:15:32.771439</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>Typescript tip: if you are iterating over a constrained set of values in a switch statement, you can guarantee you exhaust all possibilities by asserting in the default block that the variable you are iterating over is never 🧵<br><br>Here is a simple illustrative example
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+  switch (oneOrTwo) {
+    case 1:
+      return 'foo'
+    case 2:
+      return 'bar'
+  default:
+    // we should never get here
+    const nothing: never = oneOrTwo<br><br>As we iterate over the possibilities typescript keeps narrowing down the type.  After case 1 the type is 2.   After case 2 we exhausted all cases so type is never<br><br>Should we fail to exhaust all the cases, the type will not be never and we want a typescript error<br><br>What I like to do is create my own error type.   
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+class TypesafeUnreachableCodeError extends Error {
+   constructor(value: never, message = 'this code path should be unreachable') {
+      super(message)
+   }
+}<br><br>Then in the default case we can throw
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+throw new TypesafeUnreachableCodeError(oneOrTwo)
 
-#programming #Coding #CodeNewbie #100DaysOfCode #30Daysofcode #javascript #layoffs #Python #ReactJS #technology</p>
+This will throw an error at runtime and at compile time if we fail to handle all possibilities<br><br>Why is this important?   Because oftentimes we have enums that get added to over time.   By making code handling enums typesafe in terms of being exhausted, we guarantee that devs will not forget to update any code that needs to be updated when they add a new enum possibility<br><br>Another alternative is to turn on no-implicit-return and do not include a default block.   This accomplishes the same thing but doesn't give you the additional runtime safety that TypesafeUnreachableCodeError gives you</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">switch statement</a></li>
+<li><a href="#">constrained set</a></li>
+<li><a href="#">simple illustrative</a></li>
+<li><a href="#">Typescript tip</a></li>
+<li><a href="#">type</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -307,7 +307,7 @@ A THREAD 🧵
       }
     </script>
 
-<!--8794927460238453951-->
+<!--8678849961978263951-->
 
   </body>
 

@@ -5,16 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...">
+    <meta name="description" content="Inspired by a @dimensionmedia tweet, I'm going to build a WordPress plugin (and associated service)...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Inspired by a @dimensionmedia tweet, i'm going to build a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +87,7 @@ A THREAD 🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Inspired by a @dimensionmedia tweet, i'm going to build a...</h2>
               </div>
             </div>
           </div>
@@ -114,38 +109,41 @@ A THREAD 🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...</h4></a>
+                      <span>Inspired by a @dimensionmedia tweet, i'm going to build a...</span>
+                      <a href="#"><h4>Inspired by a @dimensionmedia tweet, I'm going to build a WordPress plugin (and associated service)...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-11-30 07:15:32.771439</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>Inspired by a @dimensionmedia tweet, I'm going to build a WordPress plugin (and associated service) that can take an entire site and transform all the Twitter Embeds into screenshots.
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+A 🧵 that I'll keep updated as I try to have the whole thing launched by Monday morning 👇<br><br>I'm thinking we need a few things:
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+  - WP plugin to provide the various WP functionality pieces
+  - External service to actually take the screenshots
+  - Communication between these two
+  - Landing page/billing (one-time, not recurring because this won't be a forever thing)<br><br>WP Plugin needs to :
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs<br><br>read now <a href="<a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>"><a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a></a>
+  - Search through all posts for existing Twitter embeds
+  - Pass each embed, along with the post URL to the screenshot service
+  - Listen for the screenshot service to be ready to pass an image back
+  - Import the image into WP and save it into the post<br><br>External screenshot service needs to:
 
-#programming #Coding #CodeNewbie #100DaysOfCode #30Daysofcode #javascript #layoffs #Python #ReactJS #technology</p>
+  - Listen for incoming screenshot requests
+  - Spin up a headless browser and actually take the screenshot
+  - Grab the text of the tweet so images can have alt text
+  - Pass both the screenshot and the alt text back to WP<br><br>Going to start with the WP plugin side of things! Setting up a basic settings page where you can also monitor the progress of your embed -&gt; screenshot process, as this will be a long-running job for sites with any meaningful number of tweets embedded.<br><br>As far as local environment goes, I'm going to use the fantastically-helpful wp-env (<a href="https://t.co/pbRYXUXUtn">https://t.co/pbRYXUXUtn</a>). Makes it nice and easy to get an environment spun up.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">External screenshot service</a></li>
+<li><a href="#">existing Twitter embeds</a></li>
+<li><a href="#">screenshot service</a></li>
+<li><a href="#">Twitter Embeds</a></li>
+<li><a href="#">WordPress plugin</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -307,7 +305,7 @@ A THREAD 🧵
       }
     </script>
 
-<!--8794927460238453951-->
+<!--0481109596871573951-->
 
   </body>
 
