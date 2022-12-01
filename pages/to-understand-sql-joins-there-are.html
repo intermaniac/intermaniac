@@ -5,23 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How To Add CSS
+    <meta name="description" content="To understand SQL JOINS there are 4 prerequisite things I believe you must know
 
-Visually Explained📝
-
-Thread 🧵 https://t.co/miSkOGJx9zHow To Add CSS
-
-There are three ways of inserting...">
+1) Structured...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</title>
+    <title>To understand sql joins there are 4 prerequisite things i...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -99,13 +89,7 @@ there...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</h2>
+                <h2>To understand sql joins there are 4 prerequisite things i...</h2>
               </div>
             </div>
           </div>
@@ -127,64 +111,67 @@ there...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>How to add css
+                      <span>To understand sql joins there are 4 prerequisite things i...</span>
+                      <a href="#"><h4>To understand SQL JOINS there are 4 prerequisite things I believe you must know
 
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</span>
-                      <a href="#"><h4>How To Add CSS
-
-Visually Explained📝
-
-Thread 🧵 https://t.co/miSkOGJx9zHow To Add CSS
-
-There are three ways of inserting...</h4></a>
+1) Structured...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-01 07:15:30.867358</a></li>
 
                       </ul>
-                      <p>How To Add CSS
+                      <p>To understand SQL JOINS there are 4 prerequisite things I believe you must know
 
-Visually Explained📝
+1) Structured Data
+2) Tables
+3) Rows and Columns
+4) Primary Keys and Foreign Keys. 
 
-Thread 🧵 <a href="https://t.co/miSkOGJx9z">https://t.co/miSkOGJx9z</a><br><br>How To Add CSS
+A thread 🧵 <a href="https://t.co/gLuSPdJE1G">https://t.co/gLuSPdJE1G</a><br><br>📍 Structured Data
+The simplest way to put this is that It is generally tabular with column and rows that clearly define its attributes. <a href="https://t.co/J9N1GcslgS">https://t.co/J9N1GcslgS</a><br><br>📍Table
+A table is an arrangement of information or data, typically in rows and columns, or possibly in a more complex structure. Basically, a database table is an example of a Structured Data. <a href="https://t.co/aqXh8Rok4A">https://t.co/aqXh8Rok4A</a><br><br>📍Rows and Columns
+✅Rows: this is a simple structured data item in a table. It captures the information of one entity i.e show all information about a particular Customer (Name, Age, Salary etc).
+On the Excel shit below, the numeric part is the ROW. <a href="https://t.co/5OljkQ57Wb">https://t.co/5OljkQ57Wb</a><br><br>✅ Columns: is a set of Data values, all of a single type on a Table. It is a vertical group of cells within a Table i.e Column Customer_Name, which will contain the names of all Customers. 
+On the Excel shit below, the alphabetical part is the Column. <a href="https://t.co/ZFRK64zd2l">https://t.co/ZFRK64zd2l</a><br><br>📍Primary keys and Foreign Keys
 
-There are three ways of inserting a style sheet:
+✅Primary key: A column that uniquely identify each row on it own table. Such column would not have duplicate value. É.g Table Customer would have a PK called Cust_ID or Cust_No, Transaction (Sales) Table could have Trans_Ref_ID. <a href="https://t.co/Wd7HPT8JLe">https://t.co/Wd7HPT8JLe</a><br><br>Foreign Key: a column on a table that contains the Primary Keys of another table &amp; provides a link between the 2 tables. Here the Foreign key might be duplicated. Eg Cust_ID on the Trans Table, we know that the Cust_ID will appear on the Trans Table based on customer transaction <a href="https://t.co/PPn2xL7NId">https://t.co/PPn2xL7NId</a><br><br>TYPES OF JOINS
+While there are numerous types of joins, there are 4 types that are most commonly used across all flavours of SQL. 
+A Join seek to allow a developer to return columns from two or more Tables. 
 
-- External CSS
-- Internal CSS
-- Inline CSS<br><br>🔶External CSS
+1) INNER JOIN
+2) LEFT  JOIN
+3) RIGHT JOIN
+4) FULL JOIN <a href="https://t.co/sbMj3Hhsog">https://t.co/sbMj3Hhsog</a><br><br>✅INNER JOIN: This is a type of join that returns the data that is common between two tables based on the relationship of the Primary Key and the Foreign Key.
 
-👉 With an external style sheet, you can change the look of an entire website by changing just one file!
+Select Cust_ID, Name, DOB, Revenue
+From Customer A
+Inner join Transaction B
+On A.Cust_id = B.Cust_id <a href="https://t.co/KAShQw2Tcn">https://t.co/KAShQw2Tcn</a><br><br>This is going to return details for only Cust_IDs that exist on both the Customer and the Transaction Tables as seen below. <a href="https://t.co/qBvSw6tJzr">https://t.co/qBvSw6tJzr</a><br><br>✅LEFT JOIN: a join that favours the first table mentioned (Which is the Left Table). It returns all the IDs in the Left table and only what's common in the Right Table.
+ 
+Select Cust_ID, Name, DOB, B.Revenue
+From Customer A
+Left join Transaction B
+On A.Cust_id = B.Cust_id <a href="https://t.co/sXdNcyPNBD">https://t.co/sXdNcyPNBD</a><br><br>This is going to return details for all Cust_IDs in Customer Table and Revenue for only Customer that appear on the Transaction Tables as seen below. <a href="https://t.co/Utk55b4MG8">https://t.co/Utk55b4MG8</a><br><br>RIGHT JOIN: type of join that favours the last table mentioned (Which is the Right Table). It returns all the IDs in the Right table and only what's common in the Left Table.
 
-👉 External styles are defined within the &lt;link&gt; element. <a href="https://t.co/tJX4CUICt0">https://t.co/tJX4CUICt0</a><br><br>🔶Internal CSS
+Select Cust_ID, Name, DOB, B.Revenue
+From Customer A
+Right Join Transaction B
+On A.Cust_id = B.Cust_id <a href="https://t.co/fItR40OlZx">https://t.co/fItR40OlZx</a><br><br>This is going to return details for all Cust_IDs in Transaction Table and Cust_ID, Name and Age from Customer Table as seen below. <a href="https://t.co/mntApfmqfb">https://t.co/mntApfmqfb</a><br><br>FULL JOIN: this does not favours the any of the table. It returns data for all the IDs in both the Right table &amp; left table, while filling whatever isn't available with "null". 
 
-The internal style is defined inside the &lt;style&gt; element, inside the head section. <a href="https://t.co/ahOvjBnsKP">https://t.co/ahOvjBnsKP</a><br><br>🔶Inline CSS
-
-An inline style may be used to apply a unique style for a single element. <a href="https://t.co/ZzZYaR3tgw">https://t.co/ZzZYaR3tgw</a><br><br>Priority of CSS:
-
-Inline CSS has the highest priority, then comes Internal followed by External CSS which has the least priority.
-
-Multiple style sheets can be defined on one page <a href="https://t.co/MD3U8rlBgr">https://t.co/MD3U8rlBgr</a><br><br>If you enjoyed reading this thread, please do the following: 
-1. Like the thread❤️
-2. Retweet the first tweet.🔃
-3. Follow me and enable notifications: ✅
-@CodeMarch
-
-And also look at our E-book (HTML &amp; CSS Visual Treat!)👇https://t.co/rHyWX42AWW</p>
+Select Cust_ID, Name, DOB, B.Revenue
+From Customer A
+Full Join Transaction B
+On A.Cust_id = B.Cust_id <a href="https://t.co/9TTCln2yYg">https://t.co/9TTCln2yYg</a><br><br>This is going to return details for all IDs as it exist on both tables join as seen below. <a href="https://t.co/ZUWuf8bZQG">https://t.co/ZUWuf8bZQG</a><br><br>Who noticed all the scripts returned the same value ????</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Add CSS Visually</a></li>
-<li><a href="#">CSS Visually Explained</a></li>
-<li><a href="#">Visually Explained</a></li>
-<li><a href="#">Add CSS</a></li>
-<li><a href="#">External CSS</a></li>
+								<li><a href="#">Table</a></li>
+<li><a href="#">Join</a></li>
+<li><a href="#">Cust</a></li>
+<li><a href="#">join Transaction</a></li>
+<li><a href="#">Customer</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -346,7 +333,7 @@ And also look at our E-book (HTML &amp; CSS Visual Treat!)👇https://t.co/rHyWX
       }
     </script>
 
-<!--6370206157008693951-->
+<!--6161384509729304951-->
 
   </body>
 

@@ -5,23 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How To Add CSS
-
-Visually Explained📝
-
-Thread 🧵 https://t.co/miSkOGJx9zHow To Add CSS
-
-There are three ways of inserting...">
+    <meta name="description" content="Does performance of your Java application depend on the underlying OS? Until few days ago,...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</title>
+    <title>Does performance of your java application depend on the underlying...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -99,13 +87,7 @@ there...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</h2>
+                <h2>Does performance of your java application depend on the underlying...</h2>
               </div>
             </div>
           </div>
@@ -127,64 +109,54 @@ there...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</span>
-                      <a href="#"><h4>How To Add CSS
-
-Visually Explained📝
-
-Thread 🧵 https://t.co/miSkOGJx9zHow To Add CSS
-
-There are three ways of inserting...</h4></a>
+                      <span>Does performance of your java application depend on the underlying...</span>
+                      <a href="#"><h4>Does performance of your Java application depend on the underlying OS? Until few days ago,...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-01 07:15:30.867358</a></li>
 
                       </ul>
-                      <p>How To Add CSS
+                      <p>Does performance of your Java application depend on the underlying OS? Until few days ago, I would answer "yes, of course" without thinking. I took it as a fact. You must test it.
 
-Visually Explained📝
+But recently, I thought about it. "Yes, but why?". This thread describes my journey. 🧵<br><br>TL;DR - I'll get down to the fact the C implementations of native methods might be different, thus having different performance. 
 
-Thread 🧵 <a href="https://t.co/miSkOGJx9z">https://t.co/miSkOGJx9z</a><br><br>How To Add CSS
+I'm not going to talk about "obvious" differences like #JIT compiler producing different code (e.g. because some OS does't provide specific methods).<br><br>You'll read about how to debug the native code of the #OpenJDK, how to see what happens and we'll end with what C implementation really is.<br><br>Journey begins with our dev team discussing support of  @AzulSystems Prime for @alpinelinux . 
 
-There are three ways of inserting a style sheet:
+They said that it's not that easy because Alpine doesn't (by default) include #glibc, but #musl libc. As a @java  programmer, I had no idea what that means. For me, C was just C.<br><br>I learned that C language is just a specification. Then you have implementations via various standard libraries - most known might be glibc. Another examples - klibc, dietlibc, ... and musl. Analogy - Java language specification and various implementations by #JVM providers.<br><br>Each has its pros and cons, e.g. musl explicitly states that they prefer compact and simple implementation over performance. Fine, makes sense.
 
-- External CSS
-- Internal CSS
-- Inline CSS<br><br>🔶External CSS
+What happens is that the OS providers actually choose which libc they include. Ok, I see where this is going.<br><br>Although C language specification describes how the implementations should behave, you know how it is - some behavior is different. Just like Java and JVMs.<br><br>What happens is Java code calls native methods (e.g. the Java class libraries), they call another basic methods in the standard library but which, it depends on which library is provided. 
 
-👉 With an external style sheet, you can change the look of an entire website by changing just one file!
+You get different implementation -&gt; different performance. Boom, it's clear.<br><br>Do you want to see it hands on? I did. Here I continue how you debug native methods using @jetbrains  #IntellIJ IDEA and #CLion.<br><br>I wrote a super simple program with <a href="https://t.co/IyxWOtgkl1.Deflater">https://t.co/IyxWOtgkl1.Deflater</a> compressing a string. You can easily see in OpenJDK source code that Deflater calls a native methods: <a href="https://t.co/40R9g1Z9Gq">https://t.co/40R9g1Z9Gq</a><br><br>I ran the program, put break points, went step by step. At the native method, you can't go inside. Surprise, surprise. 
 
-👉 External styles are defined within the &lt;link&gt; element. <a href="https://t.co/tJX4CUICt0">https://t.co/tJX4CUICt0</a><br><br>🔶Internal CSS
+The idea is you debug Java parts in IDEA and C code in CLion by attaching the debugger to the Java process.<br><br>Next try - open OpenJDK in CLion, start debugging in IDEA, put breakpoints, In CLion "Run" -&gt; "Attach to process" (process ID via e.g. jps -l) and ... CLion is saying there's no executable code where I put breakpoints. 
 
-The internal style is defined inside the &lt;style&gt; element, inside the head section. <a href="https://t.co/ahOvjBnsKP">https://t.co/ahOvjBnsKP</a><br><br>🔶Inline CSS
+Clearly non-sense. A bit of googling and I have a clue.<br><br>If you want to debug the internal JDK native methods, you must OpenJDK with debug symbols. Refer to the OpenJDK docs how to build it but here's the command: 
 
-An inline style may be used to apply a unique style for a single element. <a href="https://t.co/ZzZYaR3tgw">https://t.co/ZzZYaR3tgw</a><br><br>Priority of CSS:
+bash ./configure --with-debug-level=slowdebug --disable-warnings-as-errors --with-native-debug-symbols=internal<br><br>Next round - start in IDEA, attach to process in CLion ... and 🎉  
 
-Inline CSS has the highest priority, then comes Internal followed by External CSS which has the least priority.
+Break points are working and I can move through the C code. But there's something still annoying me.<br><br>When trying to go inside `deflate` method (<a href="https://t.co/8gvumvLL6L">https://t.co/8gvumvLL6L</a>), CLion says "No declaration to go to"
 
-Multiple style sheets can be defined on one page <a href="https://t.co/MD3U8rlBgr">https://t.co/MD3U8rlBgr</a><br><br>If you enjoyed reading this thread, please do the following: 
-1. Like the thread❤️
-2. Retweet the first tweet.🔃
-3. Follow me and enable notifications: ✅
-@CodeMarch
+After digging a bit, you find out it should go to <a href="https://t.co/d9Wg2Mcu26">https://t.co/d9Wg2Mcu26</a> .
 
-And also look at our E-book (HTML &amp; CSS Visual Treat!)👇https://t.co/rHyWX42AWW</p>
+Why can't CLion find it?<br><br>I know very little about C, but apparently the problem is CLion can't make sense of the fact that the zlib library is actually embedded in OpenJDK project itself. How can we tell it?
+
+It's time to use something called compilation database. <a href="https://t.co/yWiAV1PCGl">https://t.co/yWiAV1PCGl</a><br><br>Long story short - you build OpenJDK using #bear (<a href="https://t.co/XZN1mLNWYA">https://t.co/XZN1mLNWYA</a>). Just prepend `bear --` in front of the OpenJDK build commands. 
+
+Then compile_commands.json is generated. When opening in CLion, it now asks whether to open it as using compilation database.<br><br>And finally! Everything works nicely! 🎉
+
+As I'm writing this novel, I realized that it became less about the C implementations and more about the debugging. But I hope it wasn't boring.<br><br>To connect the dots - when you find a call to a method from standard C lib (e.g. sqrt) during the debuging, the trick is the impl of the standard library can be completely different. 
+
+That's where you get another source of "performance can differ on various OS". 🚧🔚</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Add CSS Visually</a></li>
-<li><a href="#">CSS Visually Explained</a></li>
-<li><a href="#">Visually Explained</a></li>
-<li><a href="#">Add CSS</a></li>
-<li><a href="#">External CSS</a></li>
+								<li><a href="#">Java</a></li>
+<li><a href="#">native methods</a></li>
+<li><a href="#">CLion</a></li>
+<li><a href="#">Java application depend</a></li>
+<li><a href="#">idea</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -346,7 +318,7 @@ And also look at our E-book (HTML &amp; CSS Visual Treat!)👇https://t.co/rHyWX
       }
     </script>
 
-<!--6370206157008693951-->
+<!--6566633641381793951-->
 
   </body>
 

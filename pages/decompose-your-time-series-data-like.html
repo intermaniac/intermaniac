@@ -5,23 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="How To Add CSS
+    <meta name="description" content="Decompose your Time Series data like this in #Python 👇👇 📷
 
-Visually Explained📝
-
-Thread 🧵 https://t.co/miSkOGJx9zHow To Add CSS
-
-There are three ways of inserting...">
+Check an example (check the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</title>
+    <title>Decompose your time series data like this in #python 👇👇...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -99,13 +89,7 @@ there...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>How to add css
-
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</h2>
+                <h2>Decompose your time series data like this in #python 👇👇...</h2>
               </div>
             </div>
           </div>
@@ -127,64 +111,54 @@ there...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>How to add css
+                      <span>Decompose your time series data like this in #python 👇👇...</span>
+                      <a href="#"><h4>Decompose your Time Series data like this in #Python 👇👇 📷
 
-visually explained📝
-
- 🧵 https://t.co/miskogjx9zhow to add css
-
-there...</span>
-                      <a href="#"><h4>How To Add CSS
-
-Visually Explained📝
-
-Thread 🧵 https://t.co/miSkOGJx9zHow To Add CSS
-
-There are three ways of inserting...</h4></a>
+Check an example (check the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-01 07:15:30.867358</a></li>
 
                       </ul>
-                      <p>How To Add CSS
+                      <p>Decompose your Time Series data like this in #Python 👇👇 📷
 
-Visually Explained📝
+Check an example (check the notebook at the end 👨‍💻) in this 🧵
 
-Thread 🧵 <a href="https://t.co/miSkOGJx9z">https://t.co/miSkOGJx9z</a><br><br>How To Add CSS
+#DataScience #MachineLearning #timeseries <a href="https://t.co/pYKaXMmYkS">https://t.co/pYKaXMmYkS</a><br><br>We can decompose a Time Series using seasonal_decompose from the "statsmodels" library in #Python.
 
-There are three ways of inserting a style sheet:
+I will show the process with a dataset that includes daily temperatures in London.<br><br>First, remember that there are two kinds of relationships between the elements of the time series:
 
-- External CSS
-- Internal CSS
-- Inline CSS<br><br>🔶External CSS
+1️⃣ Additive:
+y(t) = Trend + Seasonality + Residual
 
-👉 With an external style sheet, you can change the look of an entire website by changing just one file!
+2️⃣ Multiplicative:
+y(t) = Trend x Seasonality x Residual <a href="https://t.co/jyrSXNNyZc">https://t.co/jyrSXNNyZc</a><br><br>We can see that in a multiplicative model the seasonal variation increases over time.
 
-👉 External styles are defined within the &lt;link&gt; element. <a href="https://t.co/tJX4CUICt0">https://t.co/tJX4CUICt0</a><br><br>🔶Internal CSS
+In our case, this doesn't happen, so it must follow an additive model. <a href="https://t.co/MjuQENqIxR">https://t.co/MjuQENqIxR</a><br><br>Also, we need to select the period of the seasonal element.
 
-The internal style is defined inside the &lt;style&gt; element, inside the head section. <a href="https://t.co/ahOvjBnsKP">https://t.co/ahOvjBnsKP</a><br><br>🔶Inline CSS
+We are dealing with daily data that extends for several years, we can argue that the seasonal component repeats every 365 days, so we will set the period to 365.<br><br>Once we have it decomposed we need to verify that this is correct:
 
-An inline style may be used to apply a unique style for a single element. <a href="https://t.co/ZzZYaR3tgw">https://t.co/ZzZYaR3tgw</a><br><br>Priority of CSS:
+• Do we have any trend or seasonality in our residuals?
 
-Inline CSS has the highest priority, then comes Internal followed by External CSS which has the least priority.
+• Do the residuals look stationary? Like white noise? <a href="https://t.co/nZo7MMZUGx">https://t.co/nZo7MMZUGx</a><br><br>We can perform an Augmented Dickey-Fuller Test to verify this.
 
-Multiple style sheets can be defined on one page <a href="https://t.co/MD3U8rlBgr">https://t.co/MD3U8rlBgr</a><br><br>If you enjoyed reading this thread, please do the following: 
-1. Like the thread❤️
-2. Retweet the first tweet.🔃
-3. Follow me and enable notifications: ✅
-@CodeMarch
+If we get a p-value lower than 0.05 (our confidence level), then we can say that we did a good job and our residuals are just noise.<br><br>Here you have a notebook I prepared to show you how to decompose time series data 👇👇👨‍💻
 
-And also look at our E-book (HTML &amp; CSS Visual Treat!)👇https://t.co/rHyWX42AWW</p>
+<a href="https://t.co/KnECaHdJUT">https://t.co/KnECaHdJUT</a><br><br>Remember to 🔁Retweet and 🔔Follow me if you like my content.
+
+Thanks! 😀
+
+Check my previous thread on this if you missed it! <a href="https://t.co/MUHlSEAfKP">https://t.co/MUHlSEAfKP</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Add CSS Visually</a></li>
-<li><a href="#">CSS Visually Explained</a></li>
-<li><a href="#">Visually Explained</a></li>
-<li><a href="#">Add CSS</a></li>
-<li><a href="#">External CSS</a></li>
+								<li><a href="#">Time Series</a></li>
+<li><a href="#">Time Series data</a></li>
+<li><a href="#">decompose time series</a></li>
+<li><a href="#">Python</a></li>
+<li><a href="#">Time</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -346,7 +320,7 @@ And also look at our E-book (HTML &amp; CSS Visual Treat!)👇https://t.co/rHyWX
       }
     </script>
 
-<!--6370206157008693951-->
+<!--2194561591702293951-->
 
   </body>
 
