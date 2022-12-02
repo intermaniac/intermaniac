@@ -77651,6 +77651,448 @@
                 "flex items",
                 "Flexbox Items"
             ]
+        },
+        {
+            "url": "i-ve-been-in-the-web.html",
+            "desc": "\ud83d\udccc I've been in the web dev space for over 2 years and these are...",
+            "title": "i ve been in the web",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Github repos",
+                "Javascript",
+                "Github",
+                "Javascript developer",
+                "repo"
+            ]
+        },
+        {
+            "url": "two-terms-that-you-ll-frequently.html",
+            "desc": "Two terms that you'll frequently encounter in your web development journey, are MPA (Multi-page apps)...",
+            "title": "two terms that you ll frequently",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "HTML page",
+                "web development journey",
+                "Multi-page apps",
+                "Single-page apps",
+                "HTML pages"
+            ]
+        },
+        {
+            "url": "python-has-a-pow-function-built.html",
+            "desc": "#Python has a `pow()` function built-in. This function isn't about power though. Instead, it's about...",
+            "title": "python has a pow function built",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "pow",
+                "Python",
+                "exp",
+                "function",
+                "function built-in"
+            ]
+        },
+        {
+            "url": "play-with-javascript-with-these-simple.html",
+            "desc": "Play with JavaScript\n\nWith these simple Tricks \ud83c\udfa9\n\nThread \ud83e\uddf5 \u2193\n\n#100DaysOfCode1. Mask a private number with padStart...",
+            "title": "play with javascript with these simple",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Play with JavaScript",
+                "simple Tricks",
+                "Thread",
+                "Play",
+                "Tricks"
+            ]
+        },
+        {
+            "url": "quick-on-what-it-actually-takes.html",
+            "desc": "A quick \ud83e\uddf5 on what it actually takes to convert petro tools in Python....\n1) Find...",
+            "title": "quick on what it actually takes",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "convert petro tools",
+                "convert petro",
+                "Python",
+                "tools in Python",
+                "petro tools"
+            ]
+        },
+        {
+            "url": "javascript-tip-algorithm-5-fizzbuzz-algorithm.html",
+            "desc": "Javascript tip \ud83d\udca1 \nAlgorithm 5\nFizzBuzz algorithm\u26a1\n\nWrite a program that console logs the number from 1...",
+            "title": "javascript tip algorithm 5 fizzbuzz algorithm",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Javascript tip",
+                "Javascript",
+                "print",
+                "Write a program",
+                "Algorithm"
+            ]
+        },
+        {
+            "url": "as-a-programmer-we-should-always.html",
+            "desc": "As a programmer we should always look for ways to make coding easier. \nPersonally, I...",
+            "title": "as a programmer we should always",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "make coding easier",
+                "coding easier",
+                "make coding",
+                "result",
+                "easier"
+            ]
+        },
+        {
+            "url": "how-i-helped-a-software-company.html",
+            "desc": "How I Helped A Software Company Modernize Their Application Streaming Service With AWS AppStream 2.0\n\n[thread]AWS...",
+            "title": "how i helped a software company",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Application Streaming Service",
+                "Software Company Modernize",
+                "application streaming infrastructure.",
+                "managed application streaming",
+                "legacy application streaming"
+            ]
+        },
+        {
+            "url": "reasons-why-i-want-to-move.html",
+            "desc": "3 reasons why I want to move our Java projects CI from Bitbucket Pipelines to...",
+            "title": "reasons why i want to move",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "GitHub Actions",
+                "AWS CodeBuild",
+                "move our Java",
+                "Java projects",
+                "Bitbucket Pipelines"
+            ]
+        },
+        {
+            "url": "great-courses-to-learn-time-series.html",
+            "desc": "5 great courses to learn Time Series Analysis and Forecasting in #Python\n\n\ud83e\uddf5\ud83d\udc47\ud83d\udc47\ud83d\udc47\n\n#DataScience #MachineLearning1\ufe0f\u20e3 Time Series...",
+            "title": "great courses to learn time series",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Time Series Analysis",
+                "Time Series",
+                "learn Time Series",
+                "Series Analysis",
+                "Survival Analysis"
+            ]
+        },
+        {
+            "url": "want-to-improve-your-javascript-skills.html",
+            "desc": "Want to improve your JavaScript Skills?\n\nBuild these 30 JavaScript Projects.\n\nOpen this thread:\ud83e\uddf5\u21931.  Change Background...",
+            "title": "want to improve your javascript skills",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Background Color Project",
+                "JavaScript Skills",
+                "Change Background Color",
+                "Color Project",
+                "Project"
+            ]
+        },
+        {
+            "url": "python-has-many-different-gui-toolkits.html",
+            "desc": "#Python has many different GUI Toolkits. In this mini-thread, I'm going to show you how...",
+            "title": "python has many different gui toolkits",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "GUI Toolkits",
+                "Toolkits",
+                "GUI frameworks",
+                "GUI",
+                "Python"
+            ]
+        },
+        {
+            "url": "angular-tip-4-use-a-functional.html",
+            "desc": "Angular tip #4: use a functional guard to check on the user role  to...",
+            "title": "angular tip 4 use a functional",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Angular tip",
+                "user role",
+                "guard",
+                "functional guard",
+                "Angular"
+            ]
+        },
+        {
+            "url": "energy-update-11-20-2022-11.html",
+            "desc": "\ud83d\udc0d ENERGY UPDATE \u2022 11/20/2022 \u2013 11/23/2022 \u2022 ECLIPSE TRIGGER PORTAL (LIBRA): Align, Transform, and...",
+            "title": "energy update 11 20 2022 11",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Moon in Anuradha",
+                "sidereal Scorpio season",
+                "ENERGY UPDATE",
+                "ECLIPSE TRIGGER PORTAL",
+                "sidereal Scorpio"
+            ]
+        },
+        {
+            "url": "learn-css-colors-visually-explained-meg.html",
+            "desc": "Learn CSS\u00a0Colors \n\nVisually Explained\ud83d\udcdd\n\nMega Thread \ud83e\uddf5 https://t.co/aCXKP6ISVUCSS\u00a0Colors\n\nIn CSS Colors are specified using\ud83d\udc47 https://t.co/EFHhPIz9Be1. Predefined color...",
+            "title": "learn css colors visually explained meg",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Colors Visually Explained",
+                "Learn CSS Colors",
+                "CSS Colors Visually",
+                "Visually Explained",
+                "Learn CSS"
+            ]
+        },
+        {
+            "url": "what-is-node.html",
+            "desc": "[Thread] What is Node.js and what is it used for?Node.js is an open-source runtime environment...",
+            "title": "what is node",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "open-source runtime environment",
+                "Node.js",
+                "JavaScript engine",
+                "open-source runtime",
+                "runtime environment"
+            ]
+        },
+        {
+            "url": "lambda-functions-in-python-with-code.html",
+            "desc": "Lambda Functions in Python (with code snippets)\n\nThread \ud83e\uddf5\ud83d\udc47Python Lambda Functions are anonymous function means that...",
+            "title": "lambda functions in python with code",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Python Lambda Functions",
+                "Lambda Functions",
+                "Python Lambda",
+                "Lambda",
+                "Python"
+            ]
+        },
+        {
+            "url": "dev-i-am-a-normal-developer.html",
+            "desc": "Dev:\n\n\"I am a normal developer; my tech stack is not fit for blockchain development\"\n\nAgoric:\n\n\"Wrong, say...",
+            "title": "dev i am a normal developer",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Agoric",
+                "blockchain",
+                "tech stack",
+                "Dev",
+                "Wrong"
+            ]
+        },
+        {
+            "url": "excited-to-share-an-open-source.html",
+            "desc": "1- Excited to share an open-source project I\u2019ve been working on, made possible by @pymc_devs...",
+            "title": "excited to share an open source",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Bayesian data analysis",
+                "Excited to share",
+                "Bayesian Statistics Toolbox",
+                "Bayesian",
+                "Bayesian data"
+            ]
+        },
+        {
+            "url": "gave-github-copilot-a-shot-on.html",
+            "desc": "Gave Github Copilot a shot on an example repository. I used it with Typescript +...",
+            "title": "gave github copilot a shot on",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Gave Github Copilot",
+                "Gave Github",
+                "Github Copilot",
+                "Gave",
+                "Github"
+            ]
+        },
+        {
+            "url": "want-to-master-git-and-github.html",
+            "desc": "Want to master Git and GitHub for free?\n\nOpen this thread:\ud83e\uddf5\u2193 https://t.co/HvsLrnGhWn1. Git and GitHub for...",
+            "title": "want to master git and github",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Git",
+                "GitHub Mdn Docs",
+                "Git and GitHub",
+                "Git Tutorial",
+                "master Git"
+            ]
+        },
+        {
+            "url": "hi-guys-i-have-made-a-newsapp.html",
+            "desc": "Hi Guys! I have made a newsapp called NewsDeck using @reactjs  and NewsAPI. This...",
+            "title": "hi guys i have made a newsapp",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Implemented Top Loading",
+                "Implemented Infinite Scroll",
+                "Guys",
+                "Top Loading Bar",
+                "Infinite Scroll Features"
+            ]
+        },
+        {
+            "url": "javascript-one-liners-for-beginners.html",
+            "desc": "JavaScript One Liners For Beginners \u2728\n\nThread \ud83e\uddf5 https://t.co/V8JMC99b9J1. Generate Random String https://t.co/WI9VyRqUzN2. Detect Dark Mode...",
+            "title": "javascript one liners for beginners",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Liners For Beginners",
+                "Generate Random String",
+                "Detect Dark Mode",
+                "Random String",
+                "Tips and Tricks"
+            ]
+        },
+        {
+            "url": "popular-12-react-ui-packages-for-your-next.html",
+            "desc": "Popular 12 #React UI packages for your next project \ud83d\ude80\n#webdevelopment #reactjs \n\n1/12 https://t.co/PCJmxbvCJj\nHamburger menu icons...",
+            "title": "popular 12 react ui packages for your next",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "React",
+                "React Component",
+                "ready React Component",
+                "react button component",
+                "component"
+            ]
+        },
+        {
+            "url": "did-you-know-that-data-apps.html",
+            "desc": "Did you know that data apps can bring your data or models to the end...",
+            "title": "did you know that data apps",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "end user",
+                "data",
+                "data apps",
+                "data app",
+                "user"
+            ]
+        },
+        {
+            "url": "i-learned-python-for-free-and-you.html",
+            "desc": "I learned Python for FREE, and you can also learn it without paying a penny.\n\nMaster...",
+            "title": "i learned python for free and you",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Python for FREE",
+                "paying a penny",
+                "Python",
+                "FREE",
+                "learned Python"
+            ]
+        },
+        {
+            "url": "i-am-going-to-spend-december.html",
+            "desc": "I am going to spend December learning #Python3 so I have a solid foundation before...",
+            "title": "i am going to spend december",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "spend December learning",
+                "starting grad school",
+                "December learning",
+                "spend December",
+                "school next fall"
+            ]
+        },
+        {
+            "url": "channel-backup-v1.html",
+            "desc": "Channel-backup v1.2.0 was released yesterday, bundling it's long awaited thread support.\nhttps://t.co/m5yqgyF1Zv\n#github #discord #programmingturbo-eureka was also...",
+            "title": "channel backup v1",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "awaited thread support",
+                "long awaited thread",
+                "released yesterday",
+                "bundling it long",
+                "thread support"
+            ]
+        },
+        {
+            "url": "how-to-master-javascript-in-one.html",
+            "desc": "How to master JavaScript in one day \ud83d\ude80\n\n\ud83d\udc47\ud83e\uddf5Just forget about it u can't \ud83d\ude23...",
+            "title": "how to master javascript in one",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "master JavaScript",
+                "day",
+                "master",
+                "JavaScript",
+                "forget"
+            ]
+        },
+        {
+            "url": "you-don-t-have-to-learn.html",
+            "desc": "\ud83c\udf08You Don't have To Learn So Much Topics...",
+            "title": "you don t have to learn",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Master CSS",
+                "CSS",
+                "Topics To Master",
+                "CSS Cascade",
+                "element"
+            ]
+        },
+        {
+            "url": "hey-so.html",
+            "desc": "Hey, so. If you want to know where else you can find CBLT stuff, you...",
+            "title": "hey so",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "find CBLT stuff",
+                "Hey",
+                "Itch",
+                "Wordpress",
+                "find CBLT"
+            ]
+        },
+        {
+            "url": "15-things-you-can-do-in-one.html",
+            "desc": "\ud83d\ude80 15 Things you can do in One Line of Python code\n\n\ud83d\udc47\ud83e\uddf51\ufe0f\u20e3 Swap two variables\n\na,...",
+            "title": "15 things you can do in one",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "numbers import random",
+                "Find the square",
+                "Find the cube",
+                "lines lines",
+                "Python code"
+            ]
+        },
+        {
+            "url": "java-concurrency-in-practice-chapter-1.html",
+            "desc": "Java Concurrency in Practice Chapter 1 Summary \ud83e\uddf5 https://t.co/IiVlQuqUElHistory of concurrency \ud83d\udcbe\n\nComputers used to not...",
+            "title": "java concurrency in practice chapter 1",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "Java Concurrency",
+                "History of concurrency",
+                "Concurrency in Practice",
+                "asynchronous programming",
+                "Practice Chapter"
+            ]
+        },
+        {
+            "url": "are-you-new-to-javascript-or.html",
+            "desc": "Are you new to #javascript or coding some times?\n\nI have list of projects curated in...",
+            "title": "are you new to javascript or",
+            "date": "2022-12-02 07:15:32.950063",
+            "tags": [
+                "JavaScript Task",
+                "Task",
+                "App",
+                "javascript",
+                "users"
+            ]
         }
     ]
 }
