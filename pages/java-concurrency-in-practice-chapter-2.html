@@ -5,19 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Want to master Python for free?
+    <meta name="description" content="Java Concurrency in Practice Chapter 2 Summary 🧵 https://t.co/XbKFt5xWOGThread safety ⚠️
 
-Open this thread:🧵↓ https://t.co/zLRl5wQsa01. Google's Python Class
-
- https://t.co/cbn6AUX8es2. w3schools
-
-https://t.co/rCJ0ynQbh43....">
+If multiple threads access the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Want to master python for free?
-
-open this :🧵↓ https://t.co/zlrl5wqsa01. google's...</title>
+    <title>Java concurrency in practice chapter 2 summary 🧵 https://t.co/xbkft5xwog safety...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -95,9 +89,7 @@ open this :🧵↓ https://t.co/zlrl5wqsa01. google's...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Want to master python for free?
-
-open this :🧵↓ https://t.co/zlrl5wqsa01. google's...</h2>
+                <h2>Java concurrency in practice chapter 2 summary 🧵 https://t.co/xbkft5xwog safety...</h2>
               </div>
             </div>
           </div>
@@ -119,53 +111,43 @@ open this :🧵↓ https://t.co/zlrl5wqsa01. google's...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Want to master python for free?
+                      <span>Java concurrency in practice chapter 2 summary 🧵 https://t.co/xbkft5xwog safety...</span>
+                      <a href="#"><h4>Java Concurrency in Practice Chapter 2 Summary 🧵 https://t.co/XbKFt5xWOGThread safety ⚠️
 
-open this :🧵↓ https://t.co/zlrl5wqsa01. google's...</span>
-                      <a href="#"><h4>Want to master Python for free?
-
-Open this thread:🧵↓ https://t.co/zLRl5wQsa01. Google's Python Class
-
- https://t.co/cbn6AUX8es2. w3schools
-
-https://t.co/rCJ0ynQbh43....</h4></a>
+If multiple threads access the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-03 07:15:30.308130</a></li>
 
                       </ul>
-                      <p>Want to master Python for free?
+                      <p>Java Concurrency in Practice Chapter 2 Summary 🧵 <a href="https://t.co/XbKFt5xWOG">https://t.co/XbKFt5xWOG</a><br><br>Thread safety ⚠️
 
-Open this thread:🧵↓ <a href="https://t.co/zLRl5wQsa0">https://t.co/zLRl5wQsa0</a><br><br>1. Google's Python Class
+If multiple threads access the same mutable state without synchronization your program broken is broken (even if you don’t know it yet).<br><br>Three ways to guarantee thread safety are:
+👉 Don’t share state across threads
+👉 Make state variables immutable
+👉 Synchronize how threads access the shared mutable state<br><br>Thread safe classes 🛟
 
- <a href="https://t.co/cbn6AUX8es">https://t.co/cbn6AUX8es</a><br><br>2. w3schools
+A class is thread-safe if it behaves correctly when accessed by multiple threads, regardless of how the threads are scheduled on the CPU, and if it requires no effort on the caller’s behalf to maintain its thread safety.<br><br>Thread-safe classes encapsulate any necessary synchronization so that callers do not need to provide their own.<br><br>Atomicity ⚛️
 
-<a href="https://t.co/rCJ0ynQbh4">https://t.co/rCJ0ynQbh4</a><br><br>3.  Kaggle( @kaggle)
+Atomic operations are operations that execute as single, indivisible operations. Some operations, like incrementing a count, (i.e. count++) appear atomic but are not.<br><br>Incrementing a count is an example of read-modify-write which requires three operations: reading the value, modifying the value, and writing the value. As we saw in the Chapter 1 Summary, this can lead to undesirable behavior from “race conditions”.<br><br>Race conditions 🏇
 
-<a href="https://t.co/spWtkwbKNb">https://t.co/spWtkwbKNb</a><br><br>4.  Geeksforgeeks (@geeksforgeeks )
+A race condition occurs when the correctness of a program depends on the ideal scheduling or interleaving of multiple threads by the runtime aka, lucky time.<br><br>The book gives an example of making plans to meet your friend at a coffee shop at noon; however, what you didn’t realize is there are two coffee shops with the same name near one another.<br><br>You stand at coffee shop A at noon wondering where your friend is and by 12:10 you decide to see if they’re at coffee shop B. But at this time, it’s possible your friend either arrives at coffee shop A or leaves coffee shop B to go to coffee shop A using the same reasoning...<br><br>as you (i.e. YOU went to the wrong coffee shop). The point is, you meeting your friend relies on the correct relative timing of events.<br><br>Preventing race conditions 🙅‍♂️
 
-<a href="https://t.co/J14ga2Wl9R">https://t.co/J14ga2Wl9R</a><br><br>5. FreeCodeCamp
+To prevent race conditions we need operations like read-write-modify or finding our friends at the correct coffee shops to be atomic. To ensure groups of operations are atomic, we can leverage “locks”.<br><br>Locks 🔒
 
-<a href="https://t.co/JUeWJ8iE2I">https://t.co/JUeWJ8iE2I</a><br><br>That's all for now.
+Locks are tools that can ensure only a single thread can access a block of code at any given time. A thread can request the necessary lock, receive it, and release it once the final line of code in the block is executed.<br><br>Each unique lock can only be held by at most one thread at any given time. If thread A holds lock X and thread B requests lock X it will have to wait until thread A releases lock X.<br><br>To prevent unwanted behavior in your multi-threaded programs, mutable state should be guarded by locks in order to correctly synchronize behavior between threads.<br><br>Performance of locks 🚀
 
-If you enjoyed reading this thread, please :
-
-✔ Like the thread❤️
-✔ Retweet the first tweet.
-✔  Follow me @Damn_Coder for more such content.<br><br>If you liked this, you will love my newsletter.
-
-Subscribe below:
-<a href="https://t.co/FBSpGQ9f7a">https://t.co/FBSpGQ9f7a</a></p>
+While locks are important to ensure the correctness of programs they come with additional overhead such as threads now needing to acquire and release locks.<br><br>It’s best to “synchronize” (i.e. protect with a lock) only operations that truly require synchronization otherwise you risk degrading the performance of your application. Pay close attention to code that is protected with locks and how long that code takes to execute.<br><br>Threads holding locks for too long, especially to execute long-running operations, can lead to performance problems<br><br>I hope it goes without saying, but all credit for this information goes to the authors of this book. I’m simply trying to summarize my reading to help others learn. If you found this helpful, please let me know and I’ll see you all in chapter 3. 👋📚<br><br>@gillygilstrap don't worry i won't give away any spoilers with what happens to the trains tho</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Google Python Class</a></li>
-<li><a href="#">master Python</a></li>
-<li><a href="#">Python Class</a></li>
-<li><a href="#">Python for free</a></li>
-<li><a href="#">Google Python</a></li>
+								<li><a href="#">Thread-safe classes encapsulate</a></li>
+<li><a href="#">Java Concurrency</a></li>
+<li><a href="#">Concurrency in Practice</a></li>
+<li><a href="#">Make state variables</a></li>
+<li><a href="#">coffee shop</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -327,7 +309,7 @@ Subscribe below:
       }
     </script>
 
-<!--2515623725932294951-->
+<!--4872662963024684951-->
 
   </body>
 
