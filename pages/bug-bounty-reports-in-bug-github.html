@@ -5,13 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know you can create mobile applications with #Python and @kivyframework?
+    <meta name="description" content="Bug Bounty Reports in Thread 🧵
 
-You can! I wrote...">
+Bug : GitHub For Bypassing Filtration 
+oF HTML tags [...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know you can create mobile applications with #python...</title>
+    <title>Bug bounty reports in  🧵
+
+bug : github for bypassing...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +92,9 @@ You can! I wrote...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know you can create mobile applications with #python...</h2>
+                <h2>Bug bounty reports in  🧵
+
+bug : github for bypassing...</h2>
               </div>
             </div>
           </div>
@@ -111,42 +116,73 @@ You can! I wrote...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know you can create mobile applications with #python...</span>
-                      <a href="#"><h4>Did you know you can create mobile applications with #Python and @kivyframework?
+                      <span>Bug bounty reports in  🧵
 
-You can! I wrote...</h4></a>
+bug : github for bypassing...</span>
+                      <a href="#"><h4>Bug Bounty Reports in Thread 🧵
+
+Bug : GitHub For Bypassing Filtration 
+oF HTML tags [...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-04 07:15:31.332360</a></li>
 
                       </ul>
-                      <p>Did you know you can create mobile applications with #Python and @kivyframework?
+                      <p>Bug Bounty Reports in Thread 🧵
 
-You can! I wrote an article about the process @realpython
+Bug : GitHub For Bypassing Filtration 
+oF HTML tags [ Part - 1 ]
+#bugbounty #infosec
 
-<a href="https://t.co/BJVy2oksvQ">https://t.co/BJVy2oksvQ</a>
+Bounty : $10000
 
-Let's look at a few examples from the article!
+Thread 🧵:👇<br><br>The Tweet was regarding GitHub’s new feature that gives the ability to render or display Mathematical expressions(TeX and LaTeX style syntax) in Markdown through the MathJax library.
 
-🧵🐍👇<br><br>This is a "Hello World" type example using the @kivyframework in #Python
+🧵:👇
 
-It basically creates a window with a label on it: <a href="https://t.co/0GVGFx6gSa">https://t.co/0GVGFx6gSa</a><br><br>Labels are useful, but a picture is worth a thousand labels!
+<a href="https://t.co/rSytWZOiVA">https://t.co/rSytWZOiVA</a><br><br>What is MathJax?
 
-In this code snippet, you add a picture to your Kivy application instead of a label! 🐍🔥 <a href="https://t.co/U97qrXMng3">https://t.co/U97qrXMng3</a><br><br>When it comes to adding multiple widgets to your GUI in @kivyframework, you will want to use a Layout.
+MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers, with built-in support for assistive technology like screen readers.
 
-This allows you to use relative positioning and relative sizes to expand your widgets to fill the screen.
+🧵:👇<br><br>“GitHub is now using MathJax library to display Mathematical expressions in Markdown files”. So, The first thing he tried was to find any previous or known bugs in the MathJax library. And mainly, he was looking to find any previous XSS or HTML injection CVEs.
 
-Here's an example: <a href="https://t.co/g7twc983b4">https://t.co/g7twc983b4</a><br><br>Thanks for taking this mini-tour of Kivy with me. Check out @kivyframework if you'd like to learn more about creating mobile applications in #Python</p>
+🧵:👇<br><br>Luckily, He found the known XSS issue in the MathJax library which affects versions &lt;2.7.4 . And, The Payload should be in a Unicode form to work.
+
+\unicode{} <a href="https://t.co/UQdRnx1cL3">https://t.co/UQdRnx1cL3</a><br><br>He created a markdown file in my test repository. And, he started my testing. So, he entered 👇 this payload in a file: <a href="https://t.co/UPn4M4vazp">https://t.co/UPn4M4vazp</a><br><br>But That Not Worked 😢
+“The CVE was only vulnerable for version &lt;2.7.4 meanwhile the GitHub is using a newer version”.
+
+“he had to find a bypass by myself to successfully exploit the attack and If somehow he is able to render basic HTML tags like: &lt;b&gt;,&lt;i&gt;,&lt;u&gt;.”<br><br>You may be wondering why he said only basic HTML tags? Coz, Most of the time websites use WAFs, different kinds of filters, and restrictions to prevent the use of advanced tags but they don’t do the same thing for basic and common tags.<br><br>So, The first thing he did “To find any interesting behavior which can be very useful for render basic tags using math expressions”. 
+
+For this, He tried different-different types of methods (like Unicode, URL encoding, and etc). And again, This also does not work for me.<br><br>But, Somehow He was able to find a way that is helpful for rendering the basic tags using math expressions. He noticed “when he used basic tags after the \ then that time the tag gets render without any error or without being filtered”.
+
+And, 
+The payload is $$\&lt;u&gt;HELLO&lt;/u&gt;{}$$<br><br>So, He quickly replaced the &lt;u&gt; tag with other advance tags(like &lt;script&gt;,&lt;iframe&gt;, &lt;style&gt;) in order to know “Is the website using more filters to prevent the use of the advance tags?”. 
+
+👇<br><br>The answer is 😃, The GitHub markdown files are using some more filters in which “they simply filtered any advance tags except &lt;style&gt; tags”.
+
+👇<br><br>Then after testing this mathjax integration, 
+
+he found that it’s possible to add &lt;style&gt; tags on using a backslash(\) before it (like: \&lt;style&gt;{property:value}&lt;/style&gt;). 
+
+So for customizing the CSS, he used these below payloads in my <a href="https://t.co/gXOAyVsIGA">https://t.co/gXOAyVsIGA</a> files: <a href="https://t.co/vi8kkuLhYI">https://t.co/vi8kkuLhYI</a><br><br>Hence, I noticed that now I am able to change the CSS of the whole page .😀 <a href="https://t.co/WHEl39iP9Y">https://t.co/WHEl39iP9Y</a><br><br>Hence, The Part 1 is ended Now, 
+
+Part - 2 include another method of exploiting the same bug.
+
+Thanks For Reading This Amazing Thread on 
+Bug Report : GitHub For Bypassing Filtration 
+oF HTML tags [ Part - 1 ]
+
+Credit Goes to @saajanbhujel To Find This Amazing Bug</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Python</a></li>
-<li><a href="#">kivyframework</a></li>
-<li><a href="#">mobile applications</a></li>
-<li><a href="#">Kivy</a></li>
-<li><a href="#">create mobile applications</a></li>
+								<li><a href="#">Bug Bounty Reports</a></li>
+<li><a href="#">infosec Bounty</a></li>
+<li><a href="#">Bug Bounty</a></li>
+<li><a href="#">Bounty Reports</a></li>
+<li><a href="#">HTML tags</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -308,7 +344,7 @@ Here's an example: <a href="https://t.co/g7twc983b4">https://t.co/g7twc983b4</a>
       }
     </script>
 
-<!--2308288591437425951-->
+<!--4954925404797105951-->
 
   </body>
 

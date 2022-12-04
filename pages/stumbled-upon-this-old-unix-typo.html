@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know you can create mobile applications with #Python and @kivyframework?
-
-You can! I wrote...">
+    <meta name="description" content="Stumbled upon this old Unix 'typo' code, written in the 1970s, on @rob_pike's github: https://t.co/MpBMNb3drv...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know you can create mobile applications with #python...</title>
+    <title>Stumbled upon this old unix 'typo' code, written in the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +87,7 @@ You can! I wrote...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know you can create mobile applications with #python...</h2>
+                <h2>Stumbled upon this old unix 'typo' code, written in the...</h2>
               </div>
             </div>
           </div>
@@ -111,42 +109,24 @@ You can! I wrote...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know you can create mobile applications with #python...</span>
-                      <a href="#"><h4>Did you know you can create mobile applications with #Python and @kivyframework?
-
-You can! I wrote...</h4></a>
+                      <span>Stumbled upon this old unix 'typo' code, written in the...</span>
+                      <a href="#"><h4>Stumbled upon this old Unix 'typo' code, written in the 1970s, on @rob_pike's github: https://t.co/MpBMNb3drv...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-04 07:15:31.332360</a></li>
 
                       </ul>
-                      <p>Did you know you can create mobile applications with #Python and @kivyframework?
-
-You can! I wrote an article about the process @realpython
-
-<a href="https://t.co/BJVy2oksvQ">https://t.co/BJVy2oksvQ</a>
-
-Let's look at a few examples from the article!
-
-🧵🐍👇<br><br>This is a "Hello World" type example using the @kivyframework in #Python
-
-It basically creates a window with a label on it: <a href="https://t.co/0GVGFx6gSa">https://t.co/0GVGFx6gSa</a><br><br>Labels are useful, but a picture is worth a thousand labels!
-
-In this code snippet, you add a picture to your Kivy application instead of a label! 🐍🔥 <a href="https://t.co/U97qrXMng3">https://t.co/U97qrXMng3</a><br><br>When it comes to adding multiple widgets to your GUI in @kivyframework, you will want to use a Layout.
-
-This allows you to use relative positioning and relative sizes to expand your widgets to fill the screen.
-
-Here's an example: <a href="https://t.co/g7twc983b4">https://t.co/g7twc983b4</a><br><br>Thanks for taking this mini-tour of Kivy with me. Check out @kivyframework if you'd like to learn more about creating mobile applications in #Python</p>
+                      <p>Stumbled upon this old Unix 'typo' code, written in the 1970s, on @rob_pike's github: <a href="https://t.co/MpBMNb3drv">https://t.co/MpBMNb3drv</a> (also at <a href="https://t.co/FmOwsNf3pt,">https://t.co/FmOwsNf3pt,</a> man page at <a href="https://t.co/EHqbkpwCtX).">https://t.co/EHqbkpwCtX).</a> This is the program where the first streaming algorithm, the "Morris Counter", was invented. 🧵 1/<br><br>We covered randomized algorithms in my class last+this week, so I projected a portion of the code today to show students a randomized algorithm in action. Morris wrote a language-independent spellchecker, which counts bigrams and trigrams in words (see lines 100-105). 2/<br><br>His trigram array 'tab3' has size 19,684 =~ 27^3, and apparently his machine at the time could only afford 8 bits per array entry for such an array size. But some #'s needed &gt; 8 bits! Thus when incrementing count x, he did so w/ probability ~ .968^x (line 40). Why .968? Well.. 3/<br><br>Incrementing with prob. 1.0^x is just a regular counter (no variance, high memory). 0.5^x would give low mem (loglog N bits for value N), but high variance. Natural question: what about (1-a)^x for a small. Can we smoothly trade off mem for variance? This is what typo did! 4/<br><br>Morris wasn't creating clever randomized algorithms just for the heck of it; he was doing it out of necessity. An example of great engineering! And what's more, his idea still lives on. Yes computers these days can afford log N bits to store a number N for any reasonable N. 5/<br><br>But even in the 70s, Morris didn't need to store just 1 counter, but ~20k ctrs. Then (bits per counter) is a multiplicative overhead on (# counters), which is big, so best to keep it small. That use case still exists today in Redis, a popular in-mem DB often used as a cache. 6/<br><br>A cache needs a cache replacement policy, and one implemented in Redis is "Least Frequently Used", which needs a counter for each key. So if the DB has many keys, that's many counters. These counters are maintained using a variant of the Morris Counter: <a href="https://t.co/jvHJlclSYt">https://t.co/jvHJlclSYt</a> 7/<br><br>This algorithm is close to my heart; Huacheng Yu noticed a gap in the literature for upper vs. lower bounds ~2 yrs ago. He told me about it, and we worked on it. The conventional analysis was that if you want 1+t approximation with confidence 1-p, Morris' solution would need 8/<br><br>O(loglog N + log(1/p) + log(1/t)) bits for counter value N. We showed throwing a heuristic on top of Morris (which happens to already be implemented in Redis!) can improve the log(1/p) to loglog(1/p), and furthermore this is optimal for any algorithm. The heuristic is natural: 9/<br><br>use a deterministic counter up to a certain point, then switch to being probabilistic (realized in Redis by only doing probabilistic increment if counter &gt;= LFU_INIT_VAL). But this doesn't quite address the situations of both Morris and Redis (as pointed out by Greg Valiant). 10/<br><br>Morris/Redis want to not just maintain one counter, but M of them (e.g. M=27^3). Maybe there's a more clever amortized solution than storing M independent Morris counters?!?! With @AdenIshaq, @yanjun_han, and Huacheng, we show no such solution exists <a href="https://t.co/Wmotxq2WtF.">https://t.co/Wmotxq2WtF.</a> 11/<br><br>There's still a small gap; our impossibility thm holds for *almost* all settings of parameters, but needing the restriction t &lt; 1/lglg(1/p). So, there's still a narrow range of t (basically, the regime of constant approximation) still open.  Maybe one of you will resolve it! 12/</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Python</a></li>
-<li><a href="#">kivyframework</a></li>
-<li><a href="#">mobile applications</a></li>
-<li><a href="#">Kivy</a></li>
-<li><a href="#">create mobile applications</a></li>
+								<li><a href="#">Morris</a></li>
+<li><a href="#">Counter</a></li>
+<li><a href="#">pike github</a></li>
+<li><a href="#">Redis</a></li>
+<li><a href="#">man page</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -308,7 +288,7 @@ Here's an example: <a href="https://t.co/g7twc983b4">https://t.co/g7twc983b4</a>
       }
     </script>
 
-<!--2308288591437425951-->
+<!--6585641066231425951-->
 
   </body>
 

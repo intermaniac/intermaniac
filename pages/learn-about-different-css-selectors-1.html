@@ -5,13 +5,20 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know you can create mobile applications with #Python and @kivyframework?
+    <meta name="description" content="Learn about different CSS Selectors?
 
-You can! I wrote...">
+1) Element Selectors
+2) Id Selectors
+3) Class Selectors
+4) Universal Selectors (asterisk symbol...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know you can create mobile applications with #python...</title>
+    <title>Learn about different css selectors?
+
+1) element selectors
+2) id selectors
+3) class...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +96,11 @@ You can! I wrote...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know you can create mobile applications with #python...</h2>
+                <h2>Learn about different css selectors?
+
+1) element selectors
+2) id selectors
+3) class...</h2>
               </div>
             </div>
           </div>
@@ -111,42 +122,97 @@ You can! I wrote...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know you can create mobile applications with #python...</span>
-                      <a href="#"><h4>Did you know you can create mobile applications with #Python and @kivyframework?
+                      <span>Learn about different css selectors?
 
-You can! I wrote...</h4></a>
+1) element selectors
+2) id selectors
+3) class...</span>
+                      <a href="#"><h4>Learn about different CSS Selectors?
+
+1) Element Selectors
+2) Id Selectors
+3) Class Selectors
+4) Universal Selectors (asterisk symbol...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-04 07:15:31.332360</a></li>
 
                       </ul>
-                      <p>Did you know you can create mobile applications with #Python and @kivyframework?
+                      <p>Learn about different CSS Selectors?
 
-You can! I wrote an article about the process @realpython
+1) Element Selectors
+2) Id Selectors
+3) Class Selectors
+4) Universal Selectors (asterisk symbol *)
+5) Group Selectors
+6) Descendant Combinator Selectors
+7) Child Combinator Selectors
+8) Pseudo Class Selectors
 
-<a href="https://t.co/BJVy2oksvQ">https://t.co/BJVy2oksvQ</a>
+Thread:<br><br>Selectors are used to instructing browsers to behave in a certain way. It is important that it is used in the correct way.<br><br>The element selector is a way to select all the elements with a given tag name in a document, and apply the same styles to each element with the tag name.
 
-Let's look at a few examples from the article!
+e.g
+body {
+     background-color: green;
+    }
 
-🧵🐍👇<br><br>This is a "Hello World" type example using the @kivyframework in #Python
+See the example from Khan Academy: <a href="https://t.co/2q2KqEaD9s">https://t.co/2q2KqEaD9s</a><br><br>The id selector is a way to select only the element with the specified id, and apply styles to that element. 
+The selector must start with a pound sign (#) and then the value of the id attribute.
 
-It basically creates a window with a label on it: <a href="https://t.co/0GVGFx6gSa">https://t.co/0GVGFx6gSa</a><br><br>Labels are useful, but a picture is worth a thousand labels!
+<a href="https://t.co/tfi5r67WVo.">https://t.co/tfi5r67WVo.</a><br><br>"In CSS, a class selector is formatted as a period (.) character followed by the name of the class. It selects all elements with that class attribute.
 
-In this code snippet, you add a picture to your Kivy application instead of a label! 🐍🔥 <a href="https://t.co/U97qrXMng3">https://t.co/U97qrXMng3</a><br><br>When it comes to adding multiple widgets to your GUI in @kivyframework, you will want to use a Layout.
+<a href="https://t.co/qj4XKCn6XT.">https://t.co/qj4XKCn6XT.</a><br><br>These are three simple CSS selectors and the most popular choice of developers.
 
-This allows you to use relative positioning and relative sizes to expand your widgets to fill the screen.
+Remember:
 
-Here's an example: <a href="https://t.co/g7twc983b4">https://t.co/g7twc983b4</a><br><br>Thanks for taking this mini-tour of Kivy with me. Check out @kivyframework if you'd like to learn more about creating mobile applications in #Python</p>
+element selectors &gt; id selectors  &gt; class selector<br><br>Universal Selectors
+- used to target all elements.
+
+    * {
+        color: red;
+    }
+
+<a href="https://t.co/1V0FK3xT3J">https://t.co/1V0FK3xT3J</a><br><br>Group Selector:
+
+The CSS grouping selector is used to select multiple elements and style them together. This reduces the code and extra effort to declare common styles for each element. To group selectors, each selector is separated by a space.
+
+<a href="https://t.co/XzUbAh4w60">https://t.co/XzUbAh4w60</a><br><br>Descendant Combinator Selector:
+- combines two or more selectors.
+ &lt;div id="first"&gt;
+      &lt;div class="second"&gt; childe of first &lt;/div&gt;
+&lt;/div&gt;
+
+Now apply CSS:
+
+#first .second {
+    color: green;
+    }
+
+<a href="https://t.co/i2zpLw4enz">https://t.co/i2zpLw4enz</a><br><br>Child Combinator Selector:
+
+- Combines two or more selectors like a descendant
+- It only targets immediate child.
+
+&lt;div id="first"&gt;
+      &lt;div class="second"&gt; childe of first &lt;/div&gt;
+&lt;/div&gt;
+
+Now apply CSS
+ #first&gt;.second {
+     color: green;
+  }
+
+<a href="https://t.co/M1uBAdHALe">https://t.co/M1uBAdHALe</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Python</a></li>
-<li><a href="#">kivyframework</a></li>
-<li><a href="#">mobile applications</a></li>
-<li><a href="#">Kivy</a></li>
-<li><a href="#">create mobile applications</a></li>
+								<li><a href="#">Selectors</a></li>
+<li><a href="#">Pseudo Class Selectors</a></li>
+<li><a href="#">Class Selectors Thread</a></li>
+<li><a href="#">selector</a></li>
+<li><a href="#">CSS Selectors</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -308,7 +374,7 @@ Here's an example: <a href="https://t.co/g7twc983b4">https://t.co/g7twc983b4</a>
       }
     </script>
 
-<!--2308288591437425951-->
+<!--2342692652746335951-->
 
   </body>
 
