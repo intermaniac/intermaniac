@@ -5,11 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Node.js is an application framework that has made large-scale application development easier.🧵According to StackOverflow’s 2021...">
+    <meta name="description" content="Smol thread on @avalancheavax cross-subnet communication. But before that some background
+
+1. We all know about...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Node.js is an application framework that has made large-scale application...</title>
+    <title>Smol  @avalancheavax cross-subnet communication. but before that some background
+
+1....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +91,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Node.js is an application framework that has made large-scale application...</h2>
+                <h2>Smol  @avalancheavax cross-subnet communication. but before that some background
+
+1....</h2>
               </div>
             </div>
           </div>
@@ -109,27 +115,32 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Node.js is an application framework that has made large-scale application...</span>
-                      <a href="#"><h4>Node.js is an application framework that has made large-scale application development easier.🧵According to StackOverflow’s 2021...</h4></a>
+                      <span>Smol  @avalancheavax cross-subnet communication. but before that some background
+
+1....</span>
+                      <a href="#"><h4>Smol thread on @avalancheavax cross-subnet communication. But before that some background
+
+1. We all know about...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-05 07:15:28.103396</a></li>
 
                       </ul>
-                      <p>Node.js is an application framework that has made large-scale application development easier.🧵<br><br>According to StackOverflow’s 2021 Developer Survey, Node.js is the 6th most popular technology for backend development.<br><br>According to a user survey report by Node.js, backend developers prefer this technology as it results in a 68% increase in developer productivity, boosts application performance by 48%, and results in a 13% increase in customer satisfaction.<br><br>We can safely say a career as a Node.js developer will be a long-term venture.
+                      <p>Smol thread on @avalancheavax cross-subnet communication. But before that some background
 
-Here's all you need to know about the Node.js developer career landscape.👇
-<a href="https://t.co/LxArTAkThl">https://t.co/LxArTAkThl</a></p>
+1. We all know about the oracle problem - we know it’s hard but let’s think about it from a lower-level perspective.<br><br>2. Let’s take a problem statement: We want to build a blockchain that natively provides the price feeds for some assets i.e. push the latest price feed at the beginning of a block and the application layer (EVM or otherwise) can access these feeds.<br><br>3. When blocks are being produced/validated, a miner/validator takes state at block n-1, replays transactions in block n, and verifies the overall contract/VM state via merkle proofs to determine whether a block is valid.<br><br>4. Now for the sake of the argument, say coingecko is our data source, so a validator while producing a block will make an API call to coingecko to get the feeds and push them before performing step 2 above. However, this becomes a problem at the time of validating blocks.<br><br>When a new validator is downloading and verifying old blocks, they’d need to make a call to coingecko to get the price feed but now you see the problem - they would only get the latest price.<br><br>5. This can be easily solved by choosing a data source that returns timestamped data and then you’d query the historical feed at the time the block was produced, but it’s clear that this chain will only be as decentralized as this independent data source.<br><br>For these reasons, getting any external data to the chain natively is impossible and oracles can only be built at the application layer, never at the VM layer.<br><br>So then bootstrapping a new subnet is hard because there’s no sufficiently decentralized way to get price feeds. But there’s an interesting way I think this can be solved.<br><br>6. Since a validator who is running a subnet is also running a c-chain node on the same machine, we can simply make a local RPC call to query data from the c-chain chainlink contract *during* the block production at the VM layer of the subnet.<br><br>7. So while this may seem like an external call but it is at least as decentralized as the subnet itself because by definition a subnet validator is a validator on the main chain too.<br><br>8. Alternatively, once you have this, you could expose getting price feeds natively on a subnet by introducing a pre-compile that queries the c-chain chainlink contract at a historical block and returns the price to the application requesting it.
+
+<a href="https://t.co/wDIKHKQxg0">https://t.co/wDIKHKQxg0</a><br><br>Lemme know what you think and stay tuned for more subnet dev alpha 😊</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">user survey report</a></li>
-<li><a href="#">application development easier.</a></li>
-<li><a href="#">boosts application performance</a></li>
-<li><a href="#">made large-scale application</a></li>
-<li><a href="#">large-scale application development</a></li>
+								<li><a href="#">avalancheavax cross-subnet communication</a></li>
+<li><a href="#">block</a></li>
+<li><a href="#">price feeds</a></li>
+<li><a href="#">smol thread</a></li>
+<li><a href="#">avalancheavax cross-subnet</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +302,7 @@ Here's all you need to know about the Node.js developer career landscape.👇
       }
     </script>
 
-<!--5285066021431935951-->
+<!--1042877048384265951-->
 
   </body>
 
