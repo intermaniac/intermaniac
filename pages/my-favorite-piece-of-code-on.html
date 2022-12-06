@@ -5,16 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...">
+    <meta name="description" content="My favorite piece of code on GitHub belongs to the WebKit engine. It’s a function...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>My favorite piece of code on github belongs to the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +87,7 @@ A THREAD 🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>My favorite piece of code on github belongs to the...</h2>
               </div>
             </div>
           </div>
@@ -114,36 +109,30 @@ A THREAD 🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...</h4></a>
+                      <span>My favorite piece of code on github belongs to the...</span>
+                      <a href="#"><h4>My favorite piece of code on GitHub belongs to the WebKit engine. It’s a function...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-06 07:15:30.267979</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>My favorite piece of code on GitHub belongs to the WebKit engine. It’s a function that tries real hard to figure out whether something should be exposed as a table to the accessibility tree.
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+It’s 140 lines, so here’s a short thread on what it does. 🔥
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>
+<a href="https://t.co/47joG1YY9n">https://t.co/47joG1YY9n</a><br><br>It starts by checking whether the element has an ARIA role (typically defined with the `role` attribute). It it does, it doesn’t consider it as a data table because semantics have already been defined.<br><br>Then it checks whether it belongs to an ancestor with the `contenteditable` attribute. If it does, it considers the table to be a data table otherwise users may not be able to work with rich text editors that allow creating and editing tables.<br><br>Then it checks if it’s a &lt;table&gt; element and if it is, whether it is used for layout purposes (big 90s throwback). If it contains a &lt;thead&gt;, &lt;tfoot&gt;, &lt;caption&gt;, &lt;summary&gt;, &lt;col&gt; or &lt;colgroup&gt; element, it’s a real table. Same if it has the `rules` attribute.<br><br>Then it checks whether it has a valid non-0 `aria-colcount` or `aria-rowcount` attribute, in which case it assumes the author knows what they’re doing and treats it as a proper data table.<br><br>Then it checks the amount of rows. If it has at least *check notes* 20 rows, it considers it to be a proper data table. I assume that historically, layouts using &lt;table&gt; elements typically didn’t use that many rows. 20 rows it is!<br><br>Then it checks the first row and the first column, and if any of them is made exclusively of &lt;th&gt; elements, it considers it a proper data table. Layouts don’t use table headers (hopefully).<br><br>Then it goes through all the cells from the data table to try to figure out whether this is legitimate tabular data. If a cell has a `headers`, `abbr`, `axis` or `scope` attribute, it’s good enough for tabular data.<br><br>So far so good, right? You’re like “well that seems like pretty sensible checks and all is good with the world.” Well, hold on to your butts because things are about to be much much wilder.<br><br>Now it checks whether the table is a “zebra table” by comparing the background color of the cells/rows with the one from the table itself. If it manages to figure out that rows are in fact zebra, it treats it as a data table. The check is wild though.<br><br>Then it keeps track of all the borders from all the cells to count “good cells” (I quote). The rational is that most cells have borders, it’s probably a data table because table layouts would typically remove borders. That check is also bonkers.<br><br>There are more subtle checks but we went through most of the big ones. It’s worth mentioning that James Craig says these heuristics, as wacky as they seem, are actually super robust.
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs</p>
+<a href="https://t.co/mQ4bGsMjfr">https://t.co/mQ4bGsMjfr</a><br><br>I highly recommend you read that thread from @cookiecrook from which the previous tweet is taken from. It’s a great explanation of why WebKit has the list heuristics it has.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">data table</a></li>
+<li><a href="#">table</a></li>
+<li><a href="#">proper data table</a></li>
+<li><a href="#">data</a></li>
+<li><a href="#">checks</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -305,7 +294,7 @@ A THREAD 🧵
       }
     </script>
 
-<!--0084868245205606951-->
+<!--8674431640006775951-->
 
   </body>
 

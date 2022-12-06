@@ -5,16 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
+    <meta name="description" content="Master SQL JOINS:🧵👇1. Introduction
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+Join is used to fetch results from related database tables.
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...">
+Tables are related...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Master sql joins:🧵👇1. introduction
+
+join is used to fetch results from...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +93,9 @@ A THREAD 🧵
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Master sql joins:🧵👇1. introduction
+
+join is used to fetch results from...</h2>
               </div>
             </div>
           </div>
@@ -114,36 +117,102 @@ A THREAD 🧵
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <span>Master sql joins:🧵👇1. introduction
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+join is used to fetch results from...</span>
+                      <a href="#"><h4>Master SQL JOINS:🧵👇1. Introduction
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python...</h4></a>
+Join is used to fetch results from related database tables.
+
+Tables are related...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-06 07:15:30.267979</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>Master SQL JOINS:🧵👇<br><br>1. Introduction
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+Join is used to fetch results from related database tables.
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>
+Tables are related to each other using a key i.e. Primary, Foreign key, etc.
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs</p>
+There’re 4 common types of Join:
+
+- Inner Join
+- Left Join
+- Right Join
+- Full Join<br><br>1.1. Inner Join
+
+Only matching data from both tables will be fetched in this join.
+
+1.2. Left Join:
+
+Matching data from both tables and all unmatched records from the Left side table will be fetched.<br><br>1.3. Right Join
+
+Matching data from both tables and all unmatched records from the Right side table will be fetched in this join.
+
+1.4. Full Join:
+
+Matching data and all unmatched data from both tables will be fetched.
+
+Classic Join Diagram: <a href="https://t.co/HkPApPkprP">https://t.co/HkPApPkprP</a><br><br>2. Example
+
+To understand Join, let's consider below example:
+
+DEPARTMENT_TABLE:
+
+Contains department information, here dep_id is the primary key.
+
+EMPLOYEE_TABLE:
+
+Contains employee information, here emp_id is the primary key and dept_id is a foreign key. <a href="https://t.co/SwXhld5yC7">https://t.co/SwXhld5yC7</a><br><br>3. Inner Join
+
+Syntax:
+"SELECT * FROM &lt;T1&gt; 𝗜𝗡𝗡𝗘𝗥 𝐉𝐎𝐈𝐍 &lt;T2&gt; ON &lt;T1&gt;.COL1=&lt;T2&gt;.COL1;"
+
+Eg:
+When we query Department and Employee table, then only matching records from both tables are fetched as shown below. <a href="https://t.co/ZRf2ideiso">https://t.co/ZRf2ideiso</a><br><br>4. Left Join
+
+Syntax:
+"SELECT * FROM &lt;T1&gt; 𝐋𝐄𝐅𝐓 𝐉𝐎𝐈𝐍 &lt;T2&gt; ON &lt;T1&gt;.COL1=&lt;T2&gt;.COL1;"
+
+Eg:
+This time, Matching records from both tables are fetched along with all unmatched records of the left table(DEPARTMENT_TABLE). <a href="https://t.co/gilFzmx204">https://t.co/gilFzmx204</a><br><br>5. Right Join
+
+Syntax:
+"SELECT * FROM &lt;T1&gt; 𝐑𝐈𝐆𝐇𝐓 𝐉𝐎𝐈𝐍 &lt;T2&gt; ON &lt;T1&gt;.COL1=&lt;T2&gt;.COL1;"
+
+Eg:
+This time, Matching records from both tables are fetched along with all unmatched records of the Right table(EMPLOYEE_TABLE). <a href="https://t.co/QWnGH7POiE">https://t.co/QWnGH7POiE</a><br><br>6. Full Join
+
+Syntax:
+"SELECT * FROM &lt;T1&gt; 𝐅𝐔𝐋𝐋 𝐉𝐎𝐈𝐍 &lt;T2&gt; ON &lt;T1&gt;.COL1=&lt;T2&gt;.COL1;"
+
+Eg:
+This time, Matching records from both tables are fetched along with all unmatched records from the Left(DEPARTMENT_TABLE) and Right table(EMPLOYEE_TABLE). <a href="https://t.co/pejZ2Z2iuI">https://t.co/pejZ2Z2iuI</a><br><br>That's a wrap!
+
+I help people get started with Backend Development.
+
+Follow me @vikasrajputin for more.
+
+If you find this thread helpful then Like/Retweet the first tweet below: <a href="https://t.co/GWsRmKizxE">https://t.co/GWsRmKizxE</a><br><br>Before you go, do you know?
+
+I've already started writing on LinkedIn
+
+I share some exclusive content there, which I never share here.
+
+Follow me on Linkedin to stay updated with Backend content:
+<a href="https://t.co/yNa1qc1dnf">https://t.co/yNa1qc1dnf</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">Master SQL JOINS</a></li>
+<li><a href="#">Master SQL</a></li>
+<li><a href="#">Join</a></li>
+<li><a href="#">SQL JOINS</a></li>
+<li><a href="#">Join Syntax</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -305,7 +374,7 @@ A THREAD 🧵
       }
     </script>
 
-<!--0084868245205606951-->
+<!--7520443999547995951-->
 
   </body>
 
