@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring SQL developer jobs.
-
-🧵👇1....">
+    <meta name="description" content="Proper management of accounts in Linux enables the system admin to monitor or control users...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>Proper management of accounts in linux enables the system admin...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +87,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>Proper management of accounts in linux enables the system admin...</h2>
               </div>
             </div>
           </div>
@@ -111,44 +109,58 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring SQL developer jobs.
-
-🧵👇1....</h4></a>
+                      <span>Proper management of accounts in linux enables the system admin...</span>
+                      <a href="#"><h4>Proper management of accounts in Linux enables the system admin to monitor or control users...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-07 07:15:36.275932</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring SQL developer jobs.
+                      <p>Proper management of accounts in Linux enables the system admin to monitor or control users on the system
 
-🧵👇<br><br>1. Senior Software Engineer, Platform at @tapcart_app.
+In this thread, I will walk you through how  to create and manage basic users and groups in Linux <a href="https://t.co/WCCGMErRDt">https://t.co/WCCGMErRDt</a><br><br>Creating users on Linux
 
-A remote opportunity at a Santa Monica-based Left Lane Capital-backed, fast-growing startup that received a Series-B round of funding in 2021.
+To create a user, we use the adduser or useradd command.
 
-Check out the job at: <a href="https://t.co/c4Uvh7i4va">https://t.co/c4Uvh7i4va</a><br><br>2. Senior Backend Engineer at @5C_Network.
+For this example, we will use the adduser command. <a href="https://t.co/qZvqHbEJXl">https://t.co/qZvqHbEJXl</a><br><br>To check if the user was added successfully, we use the cat command to read the  /etc/passwd file
 
-An in-office opportunity at a Bengaluru-based Celesta Capital-backed, fast-growing startup that has recently received a Series-A round of funding.
+At the bottom of the file, you can see the newbie user was added successfully. <a href="https://t.co/RnQJVp35FN">https://t.co/RnQJVp35FN</a><br><br>Adding a user to the sudo group
 
-Check out the job at: <a href="https://t.co/EeA82qbF6a">https://t.co/EeA82qbF6a</a><br><br>3. Software Engineer - Infrastructure at @ModernTreasury.
+Edit the sudoers file to add the new user to the group
 
-A remote opportunity at a San Francisco-based Altimeter Capital-backed, fast-growing startup that has recently received a Series-C round of funding.
+For our case, we will give the user full permission. <a href="https://t.co/DeXs0ekRBE">https://t.co/DeXs0ekRBE</a><br><br>Delete user
 
-Check out the job at: <a href="https://t.co/mVJvr2hib8">https://t.co/mVJvr2hib8</a><br><br>4. Senior Backend Engineer at @nftport_xyz.
+To delete a user we use the userdel command <a href="https://t.co/9sN6VpwRYB">https://t.co/9sN6VpwRYB</a><br><br>Creating a group in Linux
 
-A remote opportunity at a Tallinn-based Atomico-backed, fast-growing startup that has recently received a Series-A round of funding.
+To create a group, we use sudo addgroup command <a href="https://t.co/l8XmfuTmE2">https://t.co/l8XmfuTmE2</a><br><br>To check if the group was added successfully, we use the cat command to read the /etc/group file
 
-Check out the job at: <a href="https://t.co/3WgHiqaxrs">https://t.co/3WgHiqaxrs</a></p>
+You will notice that in the file, we also have the newbie group; it was created automatically after the user was created. <a href="https://t.co/m3tS01FheF">https://t.co/m3tS01FheF</a><br><br>Adding group to the sudo group
+
+It is the same process as adding the user to the sudoers file. <a href="https://t.co/dwYyPrQzJK">https://t.co/dwYyPrQzJK</a><br><br>Adding a user to a group
+
+The benefit of adding users to a group/creating a group is to simplify permissions management.
+
+To add a user to a group, we use "sudo usermod -aG name of the group  name of the user" <a href="https://t.co/hO4LrBcjnb">https://t.co/hO4LrBcjnb</a><br><br>In the above example, we created a new user and added a password to the user then we added the user to the testgroup
+
+Adding a user to a group. The user inherits all the privileges of the group.
+
+For example, permission to add a new user, etc. <a href="https://t.co/lQV3RCkHF5">https://t.co/lQV3RCkHF5</a><br><br>Deleting a user from the group
+
+To delete a user, we use sudo gpasswd user-name group-name <a href="https://t.co/x3Vddo7h8M">https://t.co/x3Vddo7h8M</a><br><br>Deleting a group
+
+To delete a group, we use sudo groupdel group <a href="https://t.co/Z0DYWqTQvb">https://t.co/Z0DYWqTQvb</a><br><br>To read more about managing users and groups on Linux, Check out these resources by RedHat <a href="https://t.co/cKryY8MfE6">https://t.co/cKryY8MfE6</a>
+
+Happy Coding!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">featuring SQL developer</a></li>
-<li><a href="#">SQL developer jobs</a></li>
-<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring SQL</a></li>
-<li><a href="#">SQL developer</a></li>
+								<li><a href="#">user</a></li>
+<li><a href="#">group</a></li>
+<li><a href="#">manage basic users</a></li>
+<li><a href="#">Linux</a></li>
+<li><a href="#">Proper management</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -310,7 +322,7 @@ Check out the job at: <a href="https://t.co/3WgHiqaxrs">https://t.co/3WgHiqaxrs<
       }
     </script>
 
-<!--0884155153841616951-->
+<!--7969871282288536951-->
 
   </body>
 

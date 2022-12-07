@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bringing you today's Jobs of the Day in which we are featuring SQL developer jobs.
+    <meta name="description" content="1/ Introducing @warp_protocol, now open-source and live on Terra testnet! ☄️ 
 
-🧵👇1....">
+Full details in announcement...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Bringing you today's jobs of the day in which we...</title>
+    <title>1/ introducing @warp_protocol, now open-source and live on terra testnet!...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +89,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Bringing you today's jobs of the day in which we...</h2>
+                <h2>1/ introducing @warp_protocol, now open-source and live on terra testnet!...</h2>
               </div>
             </div>
           </div>
@@ -111,44 +111,89 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Bringing you today's jobs of the day in which we...</span>
-                      <a href="#"><h4>Bringing you today's Jobs of the Day in which we are featuring SQL developer jobs.
+                      <span>1/ introducing @warp_protocol, now open-source and live on terra testnet!...</span>
+                      <a href="#"><h4>1/ Introducing @warp_protocol, now open-source and live on Terra testnet! ☄️ 
 
-🧵👇1....</h4></a>
+Full details in announcement...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-07 07:15:36.275932</a></li>
 
                       </ul>
-                      <p>Bringing you today's Jobs of the Day in which we are featuring SQL developer jobs.
+                      <p>1/ Introducing @warp_protocol, now open-source and live on Terra testnet! ☄️ 
 
-🧵👇<br><br>1. Senior Software Engineer, Platform at @tapcart_app.
+Full details in announcement 👇
 
-A remote opportunity at a Santa Monica-based Left Lane Capital-backed, fast-growing startup that received a Series-B round of funding in 2021.
+<a href="https://t.co/q6qDpLcS5x">https://t.co/q6qDpLcS5x</a>
 
-Check out the job at: <a href="https://t.co/c4Uvh7i4va">https://t.co/c4Uvh7i4va</a><br><br>2. Senior Backend Engineer at @5C_Network.
+Try Warp 👉 <a href="https://t.co/2ufCsEbSIz">https://t.co/2ufCsEbSIz</a> 
+GitHub 👉 <a href="https://t.co/Fyv7FFfbpf">https://t.co/Fyv7FFfbpf</a>
 
-An in-office opportunity at a Bengaluru-based Celesta Capital-backed, fast-growing startup that has recently received a Series-A round of funding.
+A breakdown 🧵👇<br><br>2/ The problem: 
 
-Check out the job at: <a href="https://t.co/EeA82qbF6a">https://t.co/EeA82qbF6a</a><br><br>3. Software Engineer - Infrastructure at @ModernTreasury.
+Many blockchain transactions are responses to changes on-chain. Protocols and users have a need to sign transactions when certain blockchain data meets their needs (e.g., swap two tokens when the price hits a desired level).<br><br>3/ Problem cont'd:
 
-A remote opportunity at a San Francisco-based Altimeter Capital-backed, fast-growing startup that has recently received a Series-C round of funding.
+Today, two solutions are available.
 
-Check out the job at: <a href="https://t.co/mVJvr2hib8">https://t.co/mVJvr2hib8</a><br><br>4. Senior Backend Engineer at @nftport_xyz.
+1️⃣ Monitoring on-chain data and manually signing transactions 
 
-A remote opportunity at a Tallinn-based Atomico-backed, fast-growing startup that has recently received a Series-A round of funding.
+2️⃣ Setting up a server paired with bots to scan the chain for changes and execute transactions when conditions are met 
 
-Check out the job at: <a href="https://t.co/3WgHiqaxrs">https://t.co/3WgHiqaxrs</a></p>
+Both are resource-intensive.<br><br>4/ Enter Warp, a decentralized and generalizable event handler ☄️
+
+With Warp, any protocol or user can queue transactions to be executed in the future, without the need for centralized bots.<br><br>5/ To enable decentralized automation, Warp allows a set of “keepers” to execute the queued transactions, called “jobs”, when the conditions for doing so are met.<br><br>6/ Let’s look at an example from a job creators perspective:
+
+Goal: buy $LUNA once price hits 1.5 USDC per unit
+
+1️⃣ Creates an account &amp; deposits USDC
+
+2️⃣ Creates a job with swap parameters, such as price per unit and how much USDC they’re willing to spend (in this case 15 USDC)<br><br>7/ Job creator example cont’d:
+
+3️⃣ Sets a condition to execute once the 15 USDC can buy 10 LUNA (i.e., 1.5 USDC per unit)
+
+4️⃣ Submits a job, which includes the transaction, condition, and reward they’re willing to pay a keeper to execute it<br><br>8/ Example cont’d, but this time from the keepers perspective:
+
+1️⃣ Scans the tx pool to see which txs have conditions that resolve to true
+
+2️⃣ $LUNA price hits 1.5 USDC
+
+3️⃣ Keeper executes the swap transaction to earn the preset reward, resulting in $LUNA in the creators wallet<br><br>9/ Key protocol features:
+
+✅ Generic conditions
+✅ Generic messages
+✅ Permissionless execution
+✅ Attractive incentives
+✅ Decentralization<br><br>10/ ✅ Generic conditions and messages:
+
+Warp aims to be generalizable, so users can compare -any- value on-chain with an expected result and submit -any- possible Cosmos Message type as a transaction. <a href="https://t.co/oPrSwNEYpb">https://t.co/oPrSwNEYpb</a><br><br>11/ ✅ Generic conditions and messages cont’d:
+
+In effect, this means that Warp can be used to execute virtually -any- transaction a protocol or user might want to complete, based on -anything- occurring on-chain. <a href="https://t.co/3Nljsm14x5">https://t.co/3Nljsm14x5</a><br><br>12/ ✅ Permissionless execution and attractive incentives:
+
+As long as the conditions specified in a given job are satisfied, anyone can execute the job, earning the associated reward specified by the job creator for doing so. <a href="https://t.co/yY2k9E4WYr">https://t.co/yY2k9E4WYr</a><br><br>13/ ✅ Permissionless execution and attractive incentives cont’d:
+
+In the beta stage of Warp, all rewards paid to keepers will come in the form of $LUNA. Upon the main release, a $WARP token will be introduced.<br><br>14/ ✅ Decentralization:
+
+Warp exists entirely on-chain in a permissionless fashion, eliminating the need for centralized off-chain keeper bots ❌<br><br>15/ Retroactive $WARP airdrop 🪂
+
+For both Warp’s testnet and mainnet beta releases, the protocol will run a retroactive airdrop for creators of jobs and the keepers that execute them 👀
+
+Stay tuned. More details to come 🔜, frens<br><br>16/ When using Warp on testnet, please do keep in mind that Warp is in beta, so updates to improve the protocol may come quickly and on a whim.
+
+To provide feedback to the Warp team, simply click the chat button at the bottom left-hand side of the app, as seen below 👇 <a href="https://t.co/ilTL7Yvywg">https://t.co/ilTL7Yvywg</a><br><br>17/ This is only the beginning for Warp…
+
+☄️ Follow @warp_protocol on Twitter to stay up-to-date with the latest developments ☄️<br><br>18/ To learn more about the ins and outs of Warp, check out the docs 
+
+<a href="https://t.co/HP0f4SHe0b">https://t.co/HP0f4SHe0b</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">featuring SQL developer</a></li>
-<li><a href="#">SQL developer jobs</a></li>
-<li><a href="#">Bringing you today</a></li>
-<li><a href="#">featuring SQL</a></li>
-<li><a href="#">SQL developer</a></li>
+								<li><a href="#">warp</a></li>
+<li><a href="#">live on Terra</a></li>
+<li><a href="#">Generic conditions</a></li>
+<li><a href="#">USDC</a></li>
+<li><a href="#">Terra testnet</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -310,7 +355,7 @@ Check out the job at: <a href="https://t.co/3WgHiqaxrs">https://t.co/3WgHiqaxrs<
       }
     </script>
 
-<!--0884155153841616951-->
+<!--0698230494236916951-->
 
   </body>
 
