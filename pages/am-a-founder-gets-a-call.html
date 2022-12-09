@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) https://t.co/znBOG1sw9hContinuing from last...">
+    <meta name="description" content="6:52 am, a founder gets a call: they have a $65k AWS bill (their normal...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Javascript string methods, simplified explanation (open this  🧵) (part...</title>
+    <title>6:52 am, a founder gets a call: they have a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +87,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Javascript string methods, simplified explanation (open this  🧵) (part...</h2>
+                <h2>6:52 am, a founder gets a call: they have a...</h2>
               </div>
             </div>
           </div>
@@ -109,54 +109,42 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Javascript string methods, simplified explanation (open this  🧵) (part...</span>
-                      <a href="#"><h4>JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) https://t.co/znBOG1sw9hContinuing from last...</h4></a>
+                      <span>6:52 am, a founder gets a call: they have a...</span>
+                      <a href="#"><h4>6:52 am, a founder gets a call: they have a $65k AWS bill (their normal...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-09 07:15:29.247630</a></li>
 
                       </ul>
-                      <p>JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) <a href="https://t.co/znBOG1sw9h">https://t.co/znBOG1sw9h</a><br><br>Continuing from last thread....................
-<a href="https://t.co/bEBBLo0u4L">https://t.co/bEBBLo0u4L</a><br><br>localeCompare():
+                      <p>6:52 am, a founder gets a call: they have a $65k AWS bill (their normal is $10k).
 
-Two strings are compared in the current locale using the localeCompare() function.
- If str1 is sorted before str2, it returns -1.  two strings are equivalent, returns 0. If str1 is sorted before str2, returns 1.
-example : <a href="https://t.co/noWwlPMU4m">https://t.co/noWwlPMU4m</a><br><br>repeat():
-The repeat() method returns a new string that contains a specified number of copies of the original string.
+What's the lesson here? (spoiler: it wasn't a hack)
 
-example : <a href="https://t.co/evRqbCCz1J">https://t.co/evRqbCCz1J</a><br><br>startsWith():
-The startsWith() method checks whether a string starts with the characters of a given string.
+🧵<br><br>From a non-tech perspective, the lesson is that it's not game over. Things happen all the time, and you just deal with it, like it or not.<br><br>In this case the founder talked to AWS and they reduced the bill to $26k. They also helped the founder fix the issue, bringing the next bill down to their regular $10k.<br><br>From a tech perspective there's a different lesson.
 
-example : <a href="https://t.co/q6msN2vij8">https://t.co/q6msN2vij8</a><br><br>replace():
- The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+You can't expect your software and infrastructure to work all the time. You need to:
+- understand how it fails
+- know when (not if) it's failing
 
-example: <a href="https://t.co/OUHXOsJQYu">https://t.co/OUHXOsJQYu</a><br><br>search():
- The search() method searches a string for a specified value, and returns the position of the match
+You need visibility, and you need alerts.<br><br>This situation happened because a scaling process threw an error and didn't clean up. Alerts on that error could have prevented this. Also, an AWS Budget could have alerted the founder about unusual costs.<br><br>They did have alerts! But not for that error. Who would expect an error on a scaling process? That's why you need to understand how things fail.
 
-example: <a href="https://t.co/A5K2uXU8rO">https://t.co/A5K2uXU8rO</a><br><br>slice():
- The slice() method extracts parts of a string and returns the extracted parts in a new string.
+If you don't understand how it can fail, you don't know what to monitor.<br><br>Security is another example (even though this wasn't a hack). You can (and definitely should!) apply all the best security practices, such as MFA. But you're not invulnerable, and if something happens, you need to know.<br><br>Security folks call it:
+- Preventive controls: Strengthen the system against incidents.
+- Detective controls: Detect and react<br><br>Wait, can testing help me catch this? Yes, but no.
 
-example: <a href="https://t.co/F2XiTsntkr">https://t.co/F2XiTsntkr</a><br><br>split():
- The split() method is used to split a string into an array of substrings, and returns the new array.
-
-example: <a href="https://t.co/b9c4p5CreU">https://t.co/b9c4p5CreU</a><br><br>That's it for now, Thanks for checking the thread.
-
-reference / credits: MDN docs, w3schools .com
-
-quires / connect: DMs open
-
-If you find it helpful, please like this first tweet follow
-@devJoeHere for more</p>
+Testing specifies behavior for known data, monitoring confirms behavior in the face of unknown data. You need to do both.<br><br>(Recap) Lessons learned:
+- Non-tech: It's not game over. Deal with the problems.
+- Tech: Understand how things fail, and monitor for failure (set up alerts).<br><br>Good monitoring is hard. Google's SRE book has a lot to say about it. But the basic stuff like billing alerts is super easy.<br><br>PS: Setting up billing alerts in AWS takes 15 minutes. Let me know if you need help with that.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">String</a></li>
-<li><a href="#">returns</a></li>
-<li><a href="#">simplified explanation</a></li>
-<li><a href="#">Continuing</a></li>
-<li><a href="#">JavaScript String methods</a></li>
+								<li><a href="#">AWS</a></li>
+<li><a href="#">founder</a></li>
+<li><a href="#">Alerts</a></li>
+<li><a href="#">understand</a></li>
+<li><a href="#">lesson</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -318,7 +306,7 @@ If you find it helpful, please like this first tweet follow
       }
     </script>
 
-<!--4874527873772117951-->
+<!--4287307989048396951-->
 
   </body>
 

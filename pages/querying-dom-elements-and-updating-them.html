@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) https://t.co/znBOG1sw9hContinuing from last...">
+    <meta name="description" content="Querying DOM elements and updating them are light and fast operations. However, the DOM changes...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Javascript string methods, simplified explanation (open this  🧵) (part...</title>
+    <title>Querying dom elements and updating them are light and fast...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +87,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Javascript string methods, simplified explanation (open this  🧵) (part...</h2>
+                <h2>Querying dom elements and updating them are light and fast...</h2>
               </div>
             </div>
           </div>
@@ -109,54 +109,51 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Javascript string methods, simplified explanation (open this  🧵) (part...</span>
-                      <a href="#"><h4>JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) https://t.co/znBOG1sw9hContinuing from last...</h4></a>
+                      <span>Querying dom elements and updating them are light and fast...</span>
+                      <a href="#"><h4>Querying DOM elements and updating them are light and fast operations. However, the DOM changes...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-09 07:15:29.247630</a></li>
 
                       </ul>
-                      <p>JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) <a href="https://t.co/znBOG1sw9h">https://t.co/znBOG1sw9h</a><br><br>Continuing from last thread....................
-<a href="https://t.co/bEBBLo0u4L">https://t.co/bEBBLo0u4L</a><br><br>localeCompare():
+                      <p>Querying DOM elements and updating them are light and fast operations. However, the DOM changes will reflect on the web page only after a re-render.
 
-Two strings are compared in the current locale using the localeCompare() function.
- If str1 is sorted before str2, it returns -1.  two strings are equivalent, returns 0. If str1 is sorted before str2, returns 1.
-example : <a href="https://t.co/noWwlPMU4m">https://t.co/noWwlPMU4m</a><br><br>repeat():
-The repeat() method returns a new string that contains a specified number of copies of the original string.
+Here are the steps taken by the browser to re-render a web page when the DOM is updated. 
 
-example : <a href="https://t.co/evRqbCCz1J">https://t.co/evRqbCCz1J</a><br><br>startsWith():
-The startsWith() method checks whether a string starts with the characters of a given string.
+#javascript #Developers 
 
-example : <a href="https://t.co/q6msN2vij8">https://t.co/q6msN2vij8</a><br><br>replace():
- The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+🧵👇<br><br>1) Javascript
+Browser is notified of the changes done to the DOM by Javascript.
 
-example: <a href="https://t.co/OUHXOsJQYu">https://t.co/OUHXOsJQYu</a><br><br>search():
- The search() method searches a string for a specified value, and returns the position of the match
+Changes to the DOM can be triggered by event handlers, or altering the properties of the DOM elements.<br><br>2) Style Calculations
 
-example: <a href="https://t.co/A5K2uXU8rO">https://t.co/A5K2uXU8rO</a><br><br>slice():
- The slice() method extracts parts of a string and returns the extracted parts in a new string.
+Browser evaluates the changes required to update the existing HTML page, then the style attributes for each HTML element is calculated for the new changes.<br><br>3) Layout
 
-example: <a href="https://t.co/F2XiTsntkr">https://t.co/F2XiTsntkr</a><br><br>split():
- The split() method is used to split a string into an array of substrings, and returns the new array.
+Changes to the position of HTML elements and addition or deletion of HTML elements is handled.
 
-example: <a href="https://t.co/b9c4p5CreU">https://t.co/b9c4p5CreU</a><br><br>That's it for now, Thanks for checking the thread.
+These changes will require reconstruction of the HTML page with the updated layout for each element. Finally, the finished layout with the updated changes is calculated.<br><br>4) Paint
 
-reference / credits: MDN docs, w3schools .com
+Browser starts filling the pixel with the updated DOM. This includes text, colors, vectors, shadows, etc.
 
-quires / connect: DMs open
+Painting stage is done onto multiple surfaces called layers.<br><br>5) Compositing
 
-If you find it helpful, please like this first tweet follow
-@devJoeHere for more</p>
+Since the painting phase includes multiple layers, the browser has to render the entire page in correct order according to the layout.
+
+Mistakes in this order might cause broken user interface especially in overlapping HTML elements.<br><br>This process is handled by the browser every time a DOM update is triggered. 
+Each browser has implemented some methods to optimize this as much as possible to avoid redundant updates. 
+
+Check out my article to understand DOM better.
+<a href="https://t.co/2Whaj54sZc">https://t.co/2Whaj54sZc</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">String</a></li>
-<li><a href="#">returns</a></li>
-<li><a href="#">simplified explanation</a></li>
-<li><a href="#">Continuing</a></li>
-<li><a href="#">JavaScript String methods</a></li>
+								<li><a href="#">Querying DOM elements</a></li>
+<li><a href="#">Querying DOM</a></li>
+<li><a href="#">DOM</a></li>
+<li><a href="#">HTML</a></li>
+<li><a href="#">HTML elements</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -318,7 +315,7 @@ If you find it helpful, please like this first tweet follow
       }
     </script>
 
-<!--4874527873772117951-->
+<!--4606525717893386951-->
 
   </body>
 

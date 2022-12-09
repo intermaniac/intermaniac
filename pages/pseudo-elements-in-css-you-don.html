@@ -5,11 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) https://t.co/znBOG1sw9hContinuing from last...">
+    <meta name="description" content="Pseudo-elements in CSS
+
+You don't wanna miss this Thread  🧵A CSS Pseudo-element is a keyword...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Javascript string methods, simplified explanation (open this  🧵) (part...</title>
+    <title>Pseudo-elements in css
+
+you don't wanna miss this   🧵a...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +91,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Javascript string methods, simplified explanation (open this  🧵) (part...</h2>
+                <h2>Pseudo-elements in css
+
+you don't wanna miss this   🧵a...</h2>
               </div>
             </div>
           </div>
@@ -109,54 +115,83 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Javascript string methods, simplified explanation (open this  🧵) (part...</span>
-                      <a href="#"><h4>JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) https://t.co/znBOG1sw9hContinuing from last...</h4></a>
+                      <span>Pseudo-elements in css
+
+you don't wanna miss this   🧵a...</span>
+                      <a href="#"><h4>Pseudo-elements in CSS
+
+You don't wanna miss this Thread  🧵A CSS Pseudo-element is a keyword...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-09 07:15:29.247630</a></li>
 
                       </ul>
-                      <p>JavaScript String methods, simplified explanation (open this thread 🧵) (part - 2) <a href="https://t.co/znBOG1sw9h">https://t.co/znBOG1sw9h</a><br><br>Continuing from last thread....................
-<a href="https://t.co/bEBBLo0u4L">https://t.co/bEBBLo0u4L</a><br><br>localeCompare():
+                      <p>Pseudo-elements in CSS
 
-Two strings are compared in the current locale using the localeCompare() function.
- If str1 is sorted before str2, it returns -1.  two strings are equivalent, returns 0. If str1 is sorted before str2, returns 1.
-example : <a href="https://t.co/noWwlPMU4m">https://t.co/noWwlPMU4m</a><br><br>repeat():
-The repeat() method returns a new string that contains a specified number of copies of the original string.
+You don't wanna miss this Thread  🧵<br><br>A CSS Pseudo-element is a keyword added to a selector to be able to  style a specific part of that selected element 
 
-example : <a href="https://t.co/evRqbCCz1J">https://t.co/evRqbCCz1J</a><br><br>startsWith():
-The startsWith() method checks whether a string starts with the characters of a given string.
+What even is a CSS selector? and how do we add a pseudo-element to it? let's dive in 👇<br><br>a CSS selector is a pattern that is used to select a CSS element(s), and have the chance to give it a set of CSS rules to style it.
 
-example : <a href="https://t.co/q6msN2vij8">https://t.co/q6msN2vij8</a><br><br>replace():
- The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+the common CSS selectors are type selector, class selector, and id selector as follows <a href="https://t.co/hIe6OuYNEd">https://t.co/hIe6OuYNEd</a><br><br>From the above code snippet 
 
-example: <a href="https://t.co/OUHXOsJQYu">https://t.co/OUHXOsJQYu</a><br><br>search():
- The search() method searches a string for a specified value, and returns the position of the match
+✅ p is the type selector and selects all p element(s).
 
-example: <a href="https://t.co/A5K2uXU8rO">https://t.co/A5K2uXU8rO</a><br><br>slice():
- The slice() method extracts parts of a string and returns the extracted parts in a new string.
+✅ #my-id is the id selector and it selects an HTML tag with id="my-id".
 
-example: <a href="https://t.co/F2XiTsntkr">https://t.co/F2XiTsntkr</a><br><br>split():
- The split() method is used to split a string into an array of substrings, and returns the new array.
+✅ .my-class is the class selector and it selects all HTML tags(s) with class="my-class".
 
-example: <a href="https://t.co/b9c4p5CreU">https://t.co/b9c4p5CreU</a><br><br>That's it for now, Thanks for checking the thread.
+then it applies the styles<br><br>So, now we understand what a CSS selector is, now let's get familiar with how to add a pseudo-element to them 
 
-reference / credits: MDN docs, w3schools .com
+To add a pseudo-element we just write a normal CSS ruleset with two colons "::"  and the pseudo-element in front of a selector as follows <a href="https://t.co/X1q47vz17J">https://t.co/X1q47vz17J</a><br><br>The code snippet above is exactly what I need, there are tons of pseudo-elements out there
 
-quires / connect: DMs open
+But here are good handpicked ones, let's see how they work 
+✅ ::first-letter
+✅ ::first-line 
+✅ ::file-selector-button
+✅ ::placeholder
+✅ ::selection<br><br>✅ ::first-letter 
+applies the style to the first letter of the first line of the selected element(s), but make sure it's not an image or table 
 
-If you find it helpful, please like this first tweet follow
-@devJoeHere for more</p>
+let's say we have a let's style the first letter of each paragraph as follows: <a href="https://t.co/HUd2kmXw26">https://t.co/HUd2kmXw26</a><br><br>From the code above every first letter in the first line of every p tag in our HTML will look something like this<br><br><a href="https://t.co/CY8hJmT814">https://t.co/CY8hJmT814</a><br><br>All the first letters of the paragraph are brown, bold, and 1.5rem in size
+
+✅ ::first-line 
+applies a style to the first line of the selected element(s)
+
+let's try this pseudo-element with paragraph <a href="https://t.co/vOAc6q08Jn">https://t.co/vOAc6q08Jn</a><br><br>as you may expect, the above code will find all paragraphs in our HTML, make the font size 1.2 rem, bold, and underlined 
+
+if that is the case you are correct, here is what the output will ike <a href="https://t.co/SCOzwwBnhz">https://t.co/SCOzwwBnhz</a><br><br>✅ ::file-selector-button
+applies style to the button of an &lt;input type="file"&gt;
+
+let's use apply this CSS and see the output <a href="https://t.co/9UNKCzOJPB">https://t.co/9UNKCzOJPB</a><br><br>from the above snippet, every file input button in our HTML will be, red-colored, text-bold, thin solid, and grey border + the rest of the style 
+
+here is the output <a href="https://t.co/QWefVZ51bE">https://t.co/QWefVZ51bE</a><br><br>✅ ::placeholder
+
+applies a style to the placeholder of any &lt;input/&gt; tag if selected
+
+let's say we have a phone number field in our HTML, that has a placeholder text "it must be 9 digits" 
+
+the output will look like this <a href="https://t.co/rEVMyrwlZB">https://t.co/rEVMyrwlZB</a><br><br>let's say we wanna change the placeholder color to red, and bold, then : placeholder pseudo-element is a good candidate
+
+here's the CSS snppet to do just that <a href="https://t.co/3EySjcXE5c">https://t.co/3EySjcXE5c</a><br><br>As expected the output will look like this <a href="https://t.co/EXY6bKxXVm">https://t.co/EXY6bKxXVm</a><br><br>✅ ::selection 
+applies a style to the highlighting behavior of the  selected element(s)
+
+if you don't get here is the default behavior of a highlighted text <a href="https://t.co/fQPEeUiom6">https://t.co/fQPEeUiom6</a><br><br>Highlighted in blue and the text color remains unchanged
+
+but what if  we want to change the color of the highlighted paragraph text to red, and the highlight color to yellow
+
+then using ::selection pseudo-element is the way to go
+
+here's the code <a href="https://t.co/iZMG37tOrC">https://t.co/iZMG37tOrC</a><br><br>and here is the output <a href="https://t.co/XtF2TCpmdP">https://t.co/XtF2TCpmdP</a><br><br>as you can see when I highlight the paragraph, the text turns to red and the highlight color to yellow.<br><br>That's it thank you for reading to the end! there are cool CSS pseudo-elements and pseudo-classes that ill be writing about in the coming days, so don't forget to give me a follow, pls also like, and retweet for more reach and comment 💝</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">String</a></li>
-<li><a href="#">returns</a></li>
-<li><a href="#">simplified explanation</a></li>
-<li><a href="#">Continuing</a></li>
-<li><a href="#">JavaScript String methods</a></li>
+								<li><a href="#">CSS selector</a></li>
+<li><a href="#">CSS</a></li>
+<li><a href="#">common CSS selectors</a></li>
+<li><a href="#">miss this Thread</a></li>
+<li><a href="#">selected element</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -318,7 +353,7 @@ If you find it helpful, please like this first tweet follow
       }
     </script>
 
-<!--4874527873772117951-->
+<!--5099548575004186951-->
 
   </body>
 
