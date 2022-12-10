@@ -5,18 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
+    <meta name="description" content="MySQL Binary logs. Or how did I dropped 2 years news archive without any backups
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-retweet now
-
-#100DaysOfdata #100daysofcloud #100daysofhacking...">
+Heartbreaking...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Mysql binary logs. or how did i dropped 2 years...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +89,7 @@ retweet now
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Mysql binary logs. or how did i dropped 2 years...</h2>
               </div>
             </div>
           </div>
@@ -116,40 +111,89 @@ retweet now
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <span>Mysql binary logs. or how did i dropped 2 years...</span>
+                      <a href="#"><h4>MySQL Binary logs. Or how did I dropped 2 years news archive without any backups
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-retweet now
-
-#100DaysOfdata #100daysofcloud #100daysofhacking...</h4></a>
+Heartbreaking...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-10 07:15:29.557779</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>MySQL Binary logs. Or how did I dropped 2 years news archive without any backups
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+Heartbreaking Thread 👇<br><br>Probably it doesn't sound way too much professionally, but it's pure TRUE.
 
-retweet now
+Many years ago, at the very beginning of my developer's career, I was working at local TV channel as a PHP dev. 
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>
+Actually it was my first full-time job at webdev. It was 2008 or something like this<br><br>When I have just started there was Joomla.
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs</p>
+Site had main domain with news and many more and also some static subdomains for TV shows. I am not even sure how it all worked
+
+But we decided to switch to WordPress. It was my very first big project<br><br>During development of WordPress migration, we received another requirement - create some page for journalists to simplify adding of news for them.
+
+We understood, that very soon we'll have more convenient WordPress, but we should have deliver this function much faster<br><br>OK, it was something like Tuesday evening or something like this.
+
+I investigated where it all is stored in Joomla database and was playing already with inserting posts into that table.
+
+On PROD. Remember, it's really urgent<br><br>Obviously, post has some status and I was adding all testing posts with draft status or something like this.
+
+So it didn't affect actually prod.
+
+You will probably ask why junior dev had an access to PROD? I don't know :) We was a small department and previously all was well ;)<br><br>I was adding post after post, tuning up "admin" page to add more and more fields and keep it simple.
+
+Then was going to PHPMyAdmin to remove last 10-20 posts I have added.
+
+More and more. Hour after hour. I understood that it will be a long evening, because I need more features<br><br>... let's say images, formatting, so on.
+
+But on another iteration I am selecting last 10 posts and pressing DROP... Not remove.
+
+Table is actually DROPPED. Site is down. Hello :)<br><br>I am running to my manager (senior dev) to report we are down and where backups are.
+
+He asks something like "You did it at prod? Why not at localhost? Why I gave you this fucking access... We don't have backups". Tadam.<br><br>"Please be quiet, let's restore it" he says.
+
+It was something around 9PM already and office was almost empty. We enabled some maintenance page and said to another manager we are going to release, so it's temporary... 🤫🤫🤫
+
+And started to look for backups.<br><br>After few hours I understood it's not a joke. We don't have neither backups nor news for 2 last years. Few months before site was migrated to new server, backups was on previous, but new regular backup is not configured YET<br><br>I started to realise it's probably last day at my first fulltime dev job.
+
+But my colleague said something like "Don't worry, we will try to solve it somehow". We started to google, check MySQL server configs and so on.
+
+And finally found Binary Logs.<br><br>I even didn't know about this feature. Honestly, I didn't know a lot on that stage :)
+
+Usually this function is enabled to prevent garbage at the disk. 
+
+But remember, it's new server which wasn't fully configured YET :)<br><br>And we started to restore.
+
+After 5-6 hours and 3-4 attempts we finally restored the table with posts except something like 7-10 entries, which I restored from docs manually.
+
+We finished at smth like 3AM
+
+It was much stressful... But funny :) I owed much beers to my colleague<br><br>Next day I have finished that tricky page, and honestly no one used it after release :)
+
+Only migration to WordPress months after helped to involve content creators into admin.
+
+But we'd got a lot of lessons that night...<br><br>Finally, lessons:
+1. Backups. Always. ASAP at new server. Check it time-to-time
+2. Don't edit at prod. Spend time on local/staging enviro
+3. It's better to check Junior's code via PRs (to be honest, I am even not sure that GitHub existed that days)<br><br>It was so long time ago, that to setup local enviro we used Compact Disc 😂😂😂
+
+But lessons are still relevant.
+
+Take care, guys! Have a nice development week :) Don't be like Denis, check your backup and approve code to prod via Pull Request :)
+
+Cheers :)<br><br>Meant DISABLED here: <a href="https://t.co/gYacV6PKwM">https://t.co/gYacV6PKwM</a>
+
+Bin Logs are usually disabled, just because it stores every write request to huuuge log file which grows pretty fast. But was enabled by default on that server.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">backups Heartbreaking Thread</a></li>
+<li><a href="#">Heartbreaking Thread</a></li>
+<li><a href="#">PROD</a></li>
+<li><a href="#">backups</a></li>
+<li><a href="#">posts</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +355,7 @@ retweet now
       }
     </script>
 
-<!--7140686765749447951-->
+<!--1616155966248717951-->
 
   </body>
 

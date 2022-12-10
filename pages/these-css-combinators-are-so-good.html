@@ -5,18 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-retweet now
-
-#100DaysOfdata #100daysofcloud #100daysofhacking...">
+    <meta name="description" content="These CSS combinators are so good, it's not even fair that we are not using...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>These css combinators are so good, it's not even fair...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +87,7 @@ retweet now
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>These css combinators are so good, it's not even fair...</h2>
               </div>
             </div>
           </div>
@@ -116,40 +109,76 @@ retweet now
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
-
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-retweet now
-
-#100DaysOfdata #100daysofcloud #100daysofhacking...</h4></a>
+                      <span>These css combinators are so good, it's not even fair...</span>
+                      <a href="#"><h4>These CSS combinators are so good, it's not even fair that we are not using...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-10 07:15:29.557779</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>These CSS combinators are so good, it's not even fair that we are not using them regularly
+A Thread 🧵<br><br>Before we dive right in let understand what are even CSS combinators?
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+CSS combinators are notations used to combine two CSS selectors to target a specific element(s)
 
-retweet now
+if it sounds confusing, let's see an example, hopefully, you'll get it 👇<br><br>The CSS combinator that is commonly used is the Descendant combinator which is a space and it appears in a ruleset like this <a href="https://t.co/uIGcuTUvca">https://t.co/uIGcuTUvca</a><br><br>combines two selectors, such that the element(s) matched by the second selector, are selected if they have a parent element matching the first  selector
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>
+simply from the code snippet above, all li element(s) with parent that have a class="my-bullet" will be selected<br><br>Hopefully, we understand what combinators are, the following combinators are so good, let's understand them
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs</p>
+✅ Adjacent sibling combinator ( + )
+✅ Child combinator ( &gt; )
+✅ General sibling combinator ( ~ )
+✅ Selector list ( , )<br><br>✅ Adjacent sibling combinator ( + ) 
+
+Selects the second selector, if only it immediately follows the first selector and both are children of the same parent 
+
+example:
+
+let's say we have HTML that looks like this <a href="https://t.co/pwo09tdDL7">https://t.co/pwo09tdDL7</a><br><br>and the CSS style looks like this <a href="https://t.co/3UDVK3foRU">https://t.co/3UDVK3foRU</a><br><br>the output will look something like this <a href="https://t.co/AXdtzy5UMB">https://t.co/AXdtzy5UMB</a><br><br>let me explain our selectors are span and p combined with + as span + p, therefore every p element that is next span element will be seleted
+
+As far as they have the same parent, in our case we have &lt;p&gt; that is next to &lt;span&gt; and with one parent &lt;div&gt;
+
+that is why it's now red<br><br>✅ Child combinator ( &gt; )
+
+The child combinator (&gt;) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first selector
+
+example 
+
+let's say we have an HTML that looks like this <a href="https://t.co/JQVsBBJ6Uu">https://t.co/JQVsBBJ6Uu</a><br><br>as you can see from the above code snippet the div has only two direct children &lt;span&gt; and &lt;p&gt;, although &lt;p&gt; has &lt;span&gt; as a child but it's not a direct &lt;div&gt; child
+
+if we apply this style <a href="https://t.co/J6oD0Sl2z4">https://t.co/J6oD0Sl2z4</a><br><br>the above style will only apply to any &lt;span&gt; that is a direct child to &lt;div&gt;, in our case this is the output <a href="https://t.co/AfpZDGPeg5">https://t.co/AfpZDGPeg5</a><br><br>✅ General sibling combinator ( ~ )
+
+general sibling combinator ( ~ ) is placed between two selectors and what it does is, it selects every second selector where it gets preceded by the first selector not immediately
+
+and must be from the same parent
+
+example
+
+our HTML is this <a href="https://t.co/txEvQ5VMGw">https://t.co/txEvQ5VMGw</a><br><br>if we apply this style <a href="https://t.co/6sdtPauNHj">https://t.co/6sdtPauNHj</a><br><br>all span element(s) that have p before them immediately or not will be colored red 
+
+the output <a href="https://t.co/vgn33riFt3">https://t.co/vgn33riFt3</a><br><br>as you can see although the first element is span it is not red because there is not any &lt;p&gt; element before it
+
+but the rest of the &lt;span&gt; that have &lt;p&gt; element them are all red<br><br>✅ Selector list ( , )
+
+this one is pretty straightforward, it is used to style 2 or more selectors with the same ruleset at the same time
+
+example
+
+let's say our HTML looks like this <a href="https://t.co/L35rqLk7Is">https://t.co/L35rqLk7Is</a><br><br>and we want to color all code, and h1 blue, easy we just target the selectors with coma-separated values as follows <a href="https://t.co/SJmBFwuw1h">https://t.co/SJmBFwuw1h</a><br><br>which means all code element(s), and h1 element(s) will be colored blue 
+
+the output <a href="https://t.co/r9Q95UQESG">https://t.co/r9Q95UQESG</a><br><br>That's it ! thank you for reading to the end of the Thread, pls like, comment and retweet for more reach
+
+if you are into HTML, CSS,  JavaScript, or Python don't forget to follow me I share amazing things I know about them 💕</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">General sibling combinator</a></li>
+<li><a href="#">CSS combinators</a></li>
+<li><a href="#">Adjacent sibling combinator</a></li>
+<li><a href="#">sibling combinator</a></li>
+<li><a href="#">CSS selectors</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +340,7 @@ retweet now
       }
     </script>
 
-<!--7140686765749447951-->
+<!--9045496153172727951-->
 
   </body>
 

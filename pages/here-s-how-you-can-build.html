@@ -5,18 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="FREE Data Science, Infosec,  Cloud Certification Resources  
+    <meta name="description" content="Here's how you can build an Image Format Converter Tool with Python in 5 minutes:
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-retweet now
-
-#100DaysOfdata #100daysofcloud #100daysofhacking...">
+A...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Free data science, infosec,  cloud certification resources...</title>
+    <title>Here's how you can build an image format converter tool...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +89,7 @@ retweet now
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Free data science, infosec,  cloud certification resources...</h2>
+                <h2>Here's how you can build an image format converter tool...</h2>
               </div>
             </div>
           </div>
@@ -116,40 +111,52 @@ retweet now
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Free data science, infosec,  cloud certification resources...</span>
-                      <a href="#"><h4>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <span>Here's how you can build an image format converter tool...</span>
+                      <a href="#"><h4>Here's how you can build an Image Format Converter Tool with Python in 5 minutes:
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
-
-retweet now
-
-#100DaysOfdata #100daysofcloud #100daysofhacking...</h4></a>
+A...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-10 07:15:29.557779</a></li>
 
                       </ul>
-                      <p>FREE Data Science, Infosec,  Cloud Certification Resources  
+                      <p>Here's how you can build an Image Format Converter Tool with Python in 5 minutes:
 
-A THREAD 🧵
-👇🏽👇🏽👇🏽👇🏽
+A Thread 🧵<br><br>The Python Modules you need:
 
-retweet now
+'sys': For fetching terminal arguments
+'os': For creating and accessing files &amp; folders
+'Image' tool from 'PIL': For converting the image format<br><br>STEP 1: Import the above-mentioned modules <a href="https://t.co/e08ObLoEwO">https://t.co/e08ObLoEwO</a><br><br>STEP 2: Grab the folder name arguments from the terminal command
 
-#100DaysOfdata #100daysofcloud #100daysofhacking #Python #Linux #Flutter #100DaysOfHomeLab #100dayschallenge  #100DaysofCode #30Daysofcode #datascience #layoffs #Techjobs #JobSeekers<br><br>read now <a href="https://t.co/fpgSUARdjc">https://t.co/fpgSUARdjc</a>
+The way this tool works is, the user writes the source folder name (that contains JPG files) and the destination folder name (where PNG files will be stored) in the terminal. To fetch them, we use sys.argv<br><br>sys module stores the terminal command as List items such as for "python3 JPGtoPNGconverter JPG PNG", JPGtoPNGconverter will be list item [0], JPG will be list item [1], and PNG will be list item [2].
+JPG and PNG are the folder names of the source &amp; destination we need to fetch <a href="https://t.co/nE9hEguWRI">https://t.co/nE9hEguWRI</a><br><br>STEP 3: Create a Destination Folder in case it does not exist
 
-#100DaysOfdata #365daysofcode #Python #Linux #Flutter #100DaysofCode #30Daysofcode  #100DaysOfcloud #oracle #100daysofcodingchallenge  #30DaysOfcloud #aws #azure #jobseekers #newjob #ITJobs #30DaysOfDataScience #365daysofcode #layoffs</p>
+There may be a chance that the user did not create a folder to save PNG files. So we will create one with the same name he wrote in the terminal.<br><br>We will check if it exists in the same folder where the command was run by using os.path.exists(&lt;destination folder name&gt;) which will give us a boolean
+
+and if it gives us false, we will create one by using os.makedirs(&lt;destination folder name&gt;) <a href="https://t.co/RoEnVQtxfZ">https://t.co/RoEnVQtxfZ</a><br><br>STEP 4: Iterate through source folder, access image files, convert and save in destination folder
+
+STEP 4.1: We cannot simply write the source folder name as the for loop will iterate through the name itself instead of its file content. We need os.listdir(&lt;source folder name&gt;) <a href="https://t.co/GtVdcwctLV">https://t.co/GtVdcwctLV</a><br><br>STEP 4.2: Now inside the loop, we access the image file by using the Image tool's "open()" method and pass the path to the image file as a string. <a href="https://t.co/azlgMlAVhB">https://t.co/azlgMlAVhB</a><br><br>Now we can use the "save()" method of Image tool to convert and save the image files in destination folder BUT it will show the name of the saved files as penguin.jpg.png instead of penguin.png because we are passing image names with .jpg extension<br><br>STEP 4.3: Fetch the name of the image and remove .jpg from filename
+
+For this we again need to use 'os' module.
+"os.path.splitext(imgFile)" method will turn the name into a list where, penguin.jpg will become ["penguin", "jpg"]. We only need the first item ( [0] ) of such a list <a href="https://t.co/F6lahi7KG9">https://t.co/F6lahi7KG9</a><br><br>STEP 4.4: Finally convert to desired format and save the image in destination folder
+
+For this we use the "save" method of Image tool where we pass the image path along with image name with .png extension as a string. And the second argument is  "png". <a href="https://t.co/BGdY8m1JbE">https://t.co/BGdY8m1JbE</a><br><br>It's done. Now all you need to do is pass the command and run the file in the terminal.
+
+Make sure that the name of Source Folder that consists JPG files is correct and that it exists in the same folder where you are running the converter .py file with python3 command. <a href="https://t.co/IbwUhZjEa3">https://t.co/IbwUhZjEa3</a><br><br>If you found this thread useful, please like and retweet it so others can find it as well. Thanks for reading folks :)
+Follow @gaurangcodes for more such content
+
+<a href="https://t.co/keCJcdqCfA">https://t.co/keCJcdqCfA</a><br><br>Complete code below
+and the Github repository link <a href="https://t.co/0tV5xkBUYs">https://t.co/0tV5xkBUYs</a> <a href="https://t.co/GAS2TgokOT">https://t.co/GAS2TgokOT</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">FREE Data Science</a></li>
-<li><a href="#">Cloud Certification Resources</a></li>
-<li><a href="#">FREE Data</a></li>
-<li><a href="#">Data Science</a></li>
-<li><a href="#">Cloud Certification</a></li>
+								<li><a href="#">destination folder</a></li>
+<li><a href="#">destination folder STEP</a></li>
+<li><a href="#">source folder</a></li>
+<li><a href="#">folder</a></li>
+<li><a href="#">Image</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -311,7 +318,7 @@ retweet now
       }
     </script>
 
-<!--7140686765749447951-->
+<!--0485304450308817951-->
 
   </body>
 
