@@ -5,19 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Want to improve your JavaScript Skills?
+    <meta name="description" content="What Happens When You Publish a Container's Port? 🧵
 
-Build these 30 JavaScript Projects.
-
-Open this thread:🧵↓1.  Change Background...">
+"Port publishing" seems to be a term...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Want to improve your javascript skills?
+    <title>What happens when you publish a container's port? 🧵
 
-build these 30 javascript projects.
-
-open...</title>
+"port publishing"...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -95,11 +91,9 @@ open...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Want to improve your javascript skills?
+                <h2>What happens when you publish a container's port? 🧵
 
-build these 30 javascript projects.
-
-open...</h2>
+"port publishing"...</h2>
               </div>
             </div>
           </div>
@@ -121,95 +115,67 @@ open...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Want to improve your javascript skills?
+                      <span>What happens when you publish a container's port? 🧵
 
-build these 30 javascript projects.
+"port publishing"...</span>
+                      <a href="#"><h4>What Happens When You Publish a Container's Port? 🧵
 
-open...</span>
-                      <a href="#"><h4>Want to improve your JavaScript Skills?
-
-Build these 30 JavaScript Projects.
-
-Open this thread:🧵↓1.  Change Background...</h4></a>
+"Port publishing" seems to be a term...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-11 07:15:30.244273</a></li>
 
                       </ul>
-                      <p>Want to improve your JavaScript Skills?
+                      <p>What Happens When You Publish a Container's Port? 🧵
 
-Build these 30 JavaScript Projects.
+"Port publishing" seems to be a term coined by Docker.
 
-Open this thread:🧵↓<br><br>1.  Change Background Color Project
+But "port forwarding" aka "port mapping - as a form of socket redirection - was a well-known trick well before the invention of containers.
 
-2.  Hex Change Background Color Project
+How are the two different? <a href="https://t.co/CNHwjhWhoh">https://t.co/CNHwjhWhoh</a><br><br>First, a little bit of computer networking theory 🤓
 
-3.  Pass the Message Project
+There are two main ways to "redirect sockets":
 
-4.  Random Quotes Project
+- With a two-sided proxy forwarding payload data only
+- With an L3 packet modification (dest address change)
 
-5.  Counter Project
+Port forwarding can be implemented in user- and kernel space. <a href="https://t.co/BRnQso6cg0">https://t.co/BRnQso6cg0</a><br><br>Back to Docker and containers 🤠
 
-6.  Background Image Slider Project<br><br>7.  Page Transition
+Typically, every container has its own IP address. In Docker Engine, this IP is even directly routable from the host. But it may be changing!
 
-8.  Modal_Popup
+Hence, `docker run` offers the `--publish` flag to map a fixed host's address to a container's address. <a href="https://t.co/pVu0aaWqye">https://t.co/pVu0aaWqye</a><br><br>The Docker Engine's Port Publishing looks pretty much like good old kernel-based port forwarding.
 
-9.  Countdown JavaScript
+However, Docker Desktop's networking is different!
 
-10.  To do List App
+Container IPs aren't routable from the host system (macOS or Windows).
 
-11.  Vowels Counter
+However, you still can "publish" a port using a proxy 👇 <a href="https://t.co/xNahbNDhgX">https://t.co/xNahbNDhgX</a><br><br>What about other container runtimes?
 
-12.  BirthDay Lucky<br><br>13.  PassWord Generator
+- containerd: no port forwarding support out of the box
 
-14.  Digital Clock
+- nerdctl: docker-like iptables-based port forwarding using the CNI "portmap" plugin
 
-15.  Percentage Calculator
+- Lima: pretty much like Docker Desktop but with SSH tunnels instead of (magical) VPNKit. <a href="https://t.co/RwvYPpVIxe">https://t.co/RwvYPpVIxe</a><br><br>Traditionally, a longer-form article with more details and a bunch of practical exercises:
 
-16.  Quiz App
+What Actually Happens When You Publish a Container Port 👇
 
-17.  Number Guessing Game
+<a href="https://t.co/8IUzFmggJR">https://t.co/8IUzFmggJR</a><br><br>Another traditional reminder...
 
-18.  Words Counting Game<br><br>19.  Client Side Login
+You can get my writing on Containers, Kubernetes, Linux, Networking, and Programming directly into your inbox.
 
-20.  Exchange Rate calculator
+Includes the exclusive monthly "Containers Tools, Tips, and Tricks" series 👇
 
-21.  Dice Roll Game
-
-22.  Weather App
-
-23.  Music Player App
-
-24.  Rock Paper Scissor Game<br><br>25.  Search Box
-
-26.  color switch background
-
-27.  Drum kit
-
-28.  Expense Tracker App
-
-29.  Google keep projects
-
-30.  Palindrome-Checker<br><br>That's all for now.
-
-If you enjoyed reading this thread, please :
-
-✔ Like the thread❤️
-✔ Retweet the first tweet.
-✔  Follow me @Damn_Coder for more such content.<br><br>If you liked this, you will love my newsletter.
-
-Subscribe below:
-<a href="https://t.co/FBSpGQ9f7a">https://t.co/FBSpGQ9f7a</a></p>
+<a href="https://t.co/Fne4AenfxU">https://t.co/Fne4AenfxU</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Background Color Project</a></li>
-<li><a href="#">JavaScript Skills</a></li>
-<li><a href="#">Change Background Color</a></li>
-<li><a href="#">Color Project</a></li>
-<li><a href="#">Project</a></li>
+								<li><a href="#">Port</a></li>
+<li><a href="#">port forwarding</a></li>
+<li><a href="#">Docker</a></li>
+<li><a href="#">Docker Engine Port</a></li>
+<li><a href="#">Docker Engine</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -371,7 +337,7 @@ Subscribe below:
       }
     </script>
 
-<!--8250911744971287951-->
+<!--4433535926621857951-->
 
   </body>
 

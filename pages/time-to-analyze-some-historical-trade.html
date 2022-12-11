@@ -5,19 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Want to improve your JavaScript Skills?
-
-Build these 30 JavaScript Projects.
-
-Open this thread:🧵↓1.  Change Background...">
+    <meta name="description" content="Time to analyze some historical trade data which can be used for dashboards, apps, and...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Want to improve your javascript skills?
-
-build these 30 javascript projects.
-
-open...</title>
+    <title>Time to analyze some historical trade data which can be...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -95,11 +87,7 @@ open...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Want to improve your javascript skills?
-
-build these 30 javascript projects.
-
-open...</h2>
+                <h2>Time to analyze some historical trade data which can be...</h2>
               </div>
             </div>
           </div>
@@ -121,95 +109,149 @@ open...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Want to improve your javascript skills?
-
-build these 30 javascript projects.
-
-open...</span>
-                      <a href="#"><h4>Want to improve your JavaScript Skills?
-
-Build these 30 JavaScript Projects.
-
-Open this thread:🧵↓1.  Change Background...</h4></a>
+                      <span>Time to analyze some historical trade data which can be...</span>
+                      <a href="#"><h4>Time to analyze some historical trade data which can be used for dashboards, apps, and...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-11 07:15:30.244273</a></li>
 
                       </ul>
-                      <p>Want to improve your JavaScript Skills?
+                      <p>Time to analyze some historical trade data which can be used for dashboards, apps, and general analysis. 
 
-Build these 30 JavaScript Projects.
+From beginning to end I'll walk through how to perform basic analysis and visualize the data in a histogram.
 
-Open this thread:🧵↓<br><br>1.  Change Background Color Project
+This will be done in Jupyter using Python. 
 
-2.  Hex Change Background Color Project
+A thread 🧵👇 <a href="https://t.co/0rUGmeQqxh">https://t.co/0rUGmeQqxh</a><br><br>Firstly this is for educational purposes, trading is risky, I'm not an expert, and not a Python expert. I'm a student role, sharing what I know.
 
-3.  Pass the Message Project
+Thread breakdown:
+- Get setup to analyze data
+- Analyze and visualize data
+- Ideas for results
 
-4.  Random Quotes Project
+/2<br><br>Start by downloading each of these:
+- Visual Studio Code (it's Free, or use something else)
+- Pandas
+- Python
+- Matplotlib
 
-5.  Counter Project
+Refer this this excellent tutorial if needed: 
+<a href="https://t.co/IqvWaqs1oY">https://t.co/IqvWaqs1oY</a>
+/3<br><br>Next, we'll create a blank folder for our project. Create a blank folder on your computer. 
 
-6.  Background Image Slider Project<br><br>7.  Page Transition
+- Right click in C drive &gt; New &gt; Folder
+- Give it name
+- Open VSCode
+- Title Bar: File &gt; Open Folder
+- Select by clicking the folder we just created
+- Press Select Folder to open
 
-8.  Modal_Popup
+/4 <a href="https://t.co/yGpbIv274T">https://t.co/yGpbIv274T</a><br><br>(Optional)
+- Title bar &gt; Terminal &gt; New Terminal
+- in the consol type: python -m venv venv
+- Title Bar &gt; View &gt; Command Palette
+- Python: Select Interpreter
+- Click the Python int containing VENV
+- Title Bar: Terminal &gt; New Terminal 
 
-9.  Countdown JavaScript
+/5 <a href="https://t.co/kN613COwbv">https://t.co/kN613COwbv</a><br><br>Within VSCode, time to add a New File.
 
-10.  To do List App
+- At the top left hand corner, hover mouse over the name of the project, and hit the New File button (pictured below) 
+- Name the file stat_import.ipynb
 
-11.  Vowels Counter
+It MUST end in IPYNB extension. Now we can use a Jupyter notebook in VSCode. Cool.
 
-12.  BirthDay Lucky<br><br>13.  PassWord Generator
+/6 <a href="https://t.co/Domx65dR1M">https://t.co/Domx65dR1M</a><br><br>We'll come back to that file. 
 
-14.  Digital Clock
+Prep trade data:
 
-15.  Percentage Calculator
+- I have intraday OHLC + range values in text file
+- Save trade data in CSV format: simply Save As and select CSV as the type. Name 'data_export.csv'
+- Move the CSV file to the newly created project folder we recently created 
 
-16.  Quiz App
+/7 <a href="https://t.co/tagXbJURNR">https://t.co/tagXbJURNR</a><br><br>Back to stat_import file within VSCode:
+- In the first code cell paste: 
+from datetime import datetime
+import time
+import pandas as pd
+import matplotlib.pyplot as plt
+import os 
 
-17.  Number Guessing Game
+If missing any of these, google how to install them. It should look like the picture:
 
-18.  Words Counting Game<br><br>19.  Client Side Login
+/8 <a href="https://t.co/AEp8QpmtlO">https://t.co/AEp8QpmtlO</a><br><br>When building the project, I prefer to have multiple code cells which can be run individually. 
 
-20.  Exchange Rate calculator
+- I'll hover the bottom of a code cell and press + Code to add new cell
 
-21.  Dice Roll Game
+Time to read the CSV file within our Jupyter notebook. In the new code cell type the code from image below
 
-22.  Weather App
+/9 <a href="https://t.co/i5r669H8r3">https://t.co/i5r669H8r3</a><br><br>(Optional, in a new Code Cell)
 
-23.  Music Player App
+A couple design changes. I happened to have an extra space in my header titles, so I replaced them, pictured below.
 
-24.  Rock Paper Scissor Game<br><br>25.  Search Box
+I'll also double check my header titles:
+- In a new code cell type:
+- list(df) 
+- Press Run All 
 
-26.  color switch background
+/10 <a href="https://t.co/IpCZb7baQF">https://t.co/IpCZb7baQF</a><br><br>Let's step back. Grab a coffee. 
 
-27.  Drum kit
+We have a project folder containing a Jupyter IPYNB file and a saved CSV file with trade data. We've created a dataframe (called DF) which we can now freely use. 
 
-28.  Expense Tracker App
+Next it's time to analyze the data, focusing on the trading range. 👇
 
-29.  Google keep projects
+/11 <a href="https://t.co/0OBqXt8VQ4">https://t.co/0OBqXt8VQ4</a><br><br>In any code cell, we can analyze the data. 
 
-30.  Palindrome-Checker<br><br>That's all for now.
+What are the 12 biggest ranges:
+df['Range'].nlargest(n=12,)
 
-If you enjoyed reading this thread, please :
+What's the biggest range?
+df['Range'].max()
 
-✔ Like the thread❤️
-✔ Retweet the first tweet.
-✔  Follow me @Damn_Coder for more such content.<br><br>If you liked this, you will love my newsletter.
+What's the mean of ranges?
+mean=df['Range'].mean()
+mean 
 
-Subscribe below:
-<a href="https://t.co/FBSpGQ9f7a">https://t.co/FBSpGQ9f7a</a></p>
+/12 <a href="https://t.co/qnrqSLF3Bu">https://t.co/qnrqSLF3Bu</a><br><br>Cool. Next time to make a histogram.
+
+In new code cell:
+plt.hist(df['Range'],30)
+
+The 30, represents bin size. Range, is the Range column of our trade data. DF is our dataframe we created. Hist is historgram.
+
+Press Run All (or execute cell).
+
+/13 <a href="https://t.co/SR3XCuEwZZ">https://t.co/SR3XCuEwZZ</a><br><br>There it is. All sorts of chart types, data points, and filters can be used. What to do with data?
+- dashboard
+- finance app
+- statistic report
+- analysis
+
+Charts and data points could be used in an interactive dashboard or for automating statistics. 
+
+More on that soon.
+
+/14 <a href="https://t.co/hmyQ3a2sSS">https://t.co/hmyQ3a2sSS</a><br><br>Did you follow along? Get stuck? Should I make more threads like this? Would love to hear.
+
+Huge thanks for reading through this thread. 
+
+Make sure to check out my store, I've got some Free goodies there: 
+
+<a href="https://t.co/mz0NEeUQxW">https://t.co/mz0NEeUQxW</a>
+
+☮️
+
+/15<br><br>Oof. Meant to include Jupyter on that list. It's in the video link. I forgot to add it though 😔</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Background Color Project</a></li>
-<li><a href="#">JavaScript Skills</a></li>
-<li><a href="#">Change Background Color</a></li>
-<li><a href="#">Color Project</a></li>
-<li><a href="#">Project</a></li>
+								<li><a href="#">code cell</a></li>
+<li><a href="#">Title Bar</a></li>
+<li><a href="#">Code</a></li>
+<li><a href="#">data</a></li>
+<li><a href="#">File</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -371,7 +413,7 @@ Subscribe below:
       }
     </script>
 
-<!--8250911744971287951-->
+<!--8003446637085177951-->
 
   </body>
 
