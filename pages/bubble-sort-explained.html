@@ -5,18 +5,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Solidity programming language influences
-
-Solidity is a programming language
-- proposed in 2014 by @gavofyork 
-- developed...">
+    <meta name="description" content="Bubble Sort explained. A thread👇🧵
+Topic:
+What is the approach?
+A naive version of Bubble Sort?
+The actual version...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Solidity programming language influences
-
-solidity is a programming language
-- proposed in...</title>
+    <title>Bubble sort explained. 👇🧵
+topic:
+what is the approach?
+a naive version of...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,10 +94,10 @@ solidity is a programming language
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Solidity programming language influences
-
-solidity is a programming language
-- proposed in...</h2>
+                <h2>Bubble sort explained. 👇🧵
+topic:
+what is the approach?
+a naive version of...</h2>
               </div>
             </div>
           </div>
@@ -119,63 +119,61 @@ solidity is a programming language
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Solidity programming language influences
-
-solidity is a programming language
-- proposed in...</span>
-                      <a href="#"><h4>Solidity programming language influences
-
-Solidity is a programming language
-- proposed in 2014 by @gavofyork 
-- developed...</h4></a>
+                      <span>Bubble sort explained. 👇🧵
+topic:
+what is the approach?
+a naive version of...</span>
+                      <a href="#"><h4>Bubble Sort explained. A thread👇🧵
+Topic:
+What is the approach?
+A naive version of Bubble Sort?
+The actual version...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-12 07:15:32.225608</a></li>
 
                       </ul>
-                      <p>Solidity programming language influences
+                      <p>Bubble Sort explained. A thread👇🧵
+Topic:
+What is the approach?
+A naive version of Bubble Sort?
+The actual version of Bubble Sort?
+The optimized version of Bubble Sort?
+Time Complexity and other stuff.
 
-Solidity is a programming language
-- proposed in 2014 by @gavofyork 
-- developed by the Solidity team, led by @ethchris
+#javascript #CSS #Java #code #golang #ml #100DaysOfCode #DSA #bubbleSort<br><br>Why is it called Bubble Sort?
 
-A thread of the main languages which influenced Solidity: 
-- C++
-- JavaScript
-- Python <a href="https://t.co/F5DobkxwiM">https://t.co/F5DobkxwiM</a><br><br>Solidity is a "curly language"
+We call it bubble sort because in this the largest element bubbles up to the end and in the further passes we only consider the remaining elements.<br><br>What is actually happening in bubble sort?
+We compare the first element to its very next element and check whether it is greater or less if it is greater then we swap those two numbers then again we do the same with the other elements of the array. We understand it more, further.<br><br>What should be the approach?
+As we know we must check every element of the array, which means there is a loop running from 0 to the length of the given array. There are also sub-passes in one pass, which means there is an inner loop also.<br><br>First, let's talk about swapping:
+There are many ways to swap two numbers, but I use the ES2015 version(JavaScript): <a href="https://t.co/d7HseiBfnM">https://t.co/d7HseiBfnM</a><br><br>Now, the question is from where should the inner start running and where to stop?
+In a naive version, let's say the inner loop starts from 0 and runs till the length of the array.
+Let's see the solution: <a href="https://t.co/htyufLjlsp">https://t.co/htyufLjlsp</a><br><br>This naive solution gives us the desired result but the problem is, why do we compare the last element in the second pass when we know that all we do in the first pass is putting the largest element at the end because it is its correct place.<br><br>So a better approach can be, to start the outer loop from i =  arr[length] - 1 and end at 0 and start the inner loop from j = 0 and runs till j &lt; i - 1 and now inside the inner loop compare if the arr[j] &gt; arr[j+1], swap them.
+Let's see the solution: <a href="https://t.co/2oHu2J7HSe">https://t.co/2oHu2J7HSe</a><br><br>Is there any optimization that we can do?
+Yes, in a partially sorted array bubble sort should take a very less amount of time to sort the array and in our solution, we haven't done anything specific for the partially sorted array.<br><br>Let's understand it with an example:
+Consider the array is [5, 1, 2, 3, 4].
+Now, we know that after one pass 5 will be placed at the end position and the array is sorted but in our solution, the inner loop will keep comparing elements for 4 more passes.<br><br>What we can do is, check that if there is no swap happening in one complete pass of the outer loop then we break the loop and return the array.
+Let's see the solution: <a href="https://t.co/ShOJKeuLUt">https://t.co/ShOJKeuLUt</a><br><br>Time Complexity:
 
-a Curly language, or better a Curly-bracket language, is a programming language that has a syntax that defines statement blocks using the curly brackets { }.
+The time complexity will be BigO(n^2) because the number of iterations increases with the number of inputs.<br><br>I am attaching a website link for you guys to understand bubble sort by visualizing it.
+-&gt; Visual Algo:
+<a href="https://t.co/hdMeDUFuVT">https://t.co/hdMeDUFuVT</a><br><br>In my next tweet, I will explain Selection Sort. Till then, keep learning, keep exploring, and happy coding. 
 
-Example: <a href="https://t.co/tsY97UTzS8">https://t.co/tsY97UTzS8</a><br><br>C++ influences
+Let's connect on Linked In:
+<a href="https://t.co/Z3plqZkKCJ">https://t.co/Z3plqZkKCJ</a>
 
-Here are the C++ influences  on Solidity:
-- implicit/explicit type conversions.
-- variable declarations.
-- function overloading. 
-- for loops.<br><br>JavaScript Influence
-
-- general look and initially inspired by the ECMAScript.
-- functions are defined using the keyword function. 
-- import syntax and semantics that are similar to those available in JavaScript. 
-
-The JS influence has been reduced lately.<br><br>Python influence
-
-- modifiers are inspired by Python decorators.
-- multiple inheritance.
-- C3 linearization.
-- general assignment/copy semantics of value/reference types.<br><br>If you want to know more about Solidity, check the GitHub repository:
-<a href="https://t.co/bRZcF6XODS">https://t.co/bRZcF6XODS</a><br><br>if this thread has been useful, follow @FrancescoCiull4 and retweet the tweet below. Thank you
-<a href="https://t.co/lqAZ10OlFq">https://t.co/lqAZ10OlFq</a></p>
+Varun,
+Thanks for reading.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Solidity programming language</a></li>
-<li><a href="#">programming language</a></li>
-<li><a href="#">curly language</a></li>
-<li><a href="#">programming language influences</a></li>
-<li><a href="#">Curly-bracket language</a></li>
+								<li><a href="#">Bubble Sort</a></li>
+<li><a href="#">Bubble Sort explained</a></li>
+<li><a href="#">Sort</a></li>
+<li><a href="#">array bubble sort</a></li>
+<li><a href="#">Bubble</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -337,7 +335,7 @@ The JS influence has been reduced lately.<br><br>Python influence
       }
     </script>
 
-<!--6902962259060208951-->
+<!--8442360383696887951-->
 
   </body>
 

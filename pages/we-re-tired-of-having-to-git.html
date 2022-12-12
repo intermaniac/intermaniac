@@ -5,18 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Solidity programming language influences
+    <meta name="description" content="We're tired of having to git push to test CI workflows too.
 
-Solidity is a programming language
-- proposed in 2014 by @gavofyork 
-- developed...">
+What about debugging workflows...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Solidity programming language influences
-
-solidity is a programming language
-- proposed in...</title>
+    <title>We're tired of having to git push to test ci...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,10 +89,7 @@ solidity is a programming language
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Solidity programming language influences
-
-solidity is a programming language
-- proposed in...</h2>
+                <h2>We're tired of having to git push to test ci...</h2>
               </div>
             </div>
           </div>
@@ -119,63 +111,86 @@ solidity is a programming language
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Solidity programming language influences
+                      <span>We're tired of having to git push to test ci...</span>
+                      <a href="#"><h4>We're tired of having to git push to test CI workflows too.
 
-solidity is a programming language
-- proposed in...</span>
-                      <a href="#"><h4>Solidity programming language influences
-
-Solidity is a programming language
-- proposed in 2014 by @gavofyork 
-- developed...</h4></a>
+What about debugging workflows...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-12 07:15:32.225608</a></li>
 
                       </ul>
-                      <p>Solidity programming language influences
+                      <p>We're tired of having to git push to test CI workflows too.
 
-Solidity is a programming language
-- proposed in 2014 by @gavofyork 
-- developed by the Solidity team, led by @ethchris
+What about debugging workflows when things go south? That takes a while too.
 
-A thread of the main languages which influenced Solidity: 
-- C++
-- JavaScript
-- Python <a href="https://t.co/F5DobkxwiM">https://t.co/F5DobkxwiM</a><br><br>Solidity is a "curly language"
+At Ergomake, we believe CI should be reproducible and as easy as "make".
 
-a Curly language, or better a Curly-bracket language, is a programming language that has a syntax that defines statement blocks using the curly brackets { }.
+Here's how we're creating a new CI (in Rust, from the terminal) 🧵 <a href="https://t.co/dnYZ0WkHH0">https://t.co/dnYZ0WkHH0</a><br><br>Before we start:
 
-Example: <a href="https://t.co/tsY97UTzS8">https://t.co/tsY97UTzS8</a><br><br>C++ influences
+➡️ You can head to <a href="<a href="https://t.co/FxGQHuMx1L">https://t.co/FxGQHuMx1L</a>"><a href="https://t.co/FxGQHuMx1L">https://t.co/FxGQHuMx1L</a></a> to sign-up for the waitlist.<br><br>🦀 1. CI should take seconds to set up
 
-Here are the C++ influences  on Solidity:
-- implicit/explicit type conversions.
-- variable declarations.
-- function overloading. 
-- for loops.<br><br>JavaScript Influence
+We like writing code, not configuration files. Especially when they're written using YAML, and we have to battle indentation to make things work.
 
-- general look and initially inspired by the ECMAScript.
-- functions are defined using the keyword function. 
-- import syntax and semantics that are similar to those available in JavaScript. 
+At Ergo, you set up CI in seconds because we generate configs using your own build scripts. <a href="https://t.co/SlYjYtQbaD">https://t.co/SlYjYtQbaD</a><br><br>🦀 2. Users should have fast feedback and not have to do a thousand git pushes
 
-The JS influence has been reduced lately.<br><br>Python influence
+The biggest problem with CI is how long it takes for engineers to receive feedback.
 
-- modifiers are inspired by Python decorators.
-- multiple inheritance.
-- C3 linearization.
-- general assignment/copy semantics of value/reference types.<br><br>If you want to know more about Solidity, check the GitHub repository:
-<a href="https://t.co/bRZcF6XODS">https://t.co/bRZcF6XODS</a><br><br>if this thread has been useful, follow @FrancescoCiull4 and retweet the tweet below. Thank you
-<a href="https://t.co/lqAZ10OlFq">https://t.co/lqAZ10OlFq</a></p>
+With Ergomake, we allow you to run your builds on containers in your machine or trigger remote builds on the cloud. <a href="https://t.co/A3wKbdRxww">https://t.co/A3wKbdRxww</a><br><br>Think of Ergomake as "make on steroids".
+
+We make it easy for you to write reproducible workflows, and it just happens that they can run locally or on the cloud and integrate with your GitHub PRs.<br><br>🦀 3. Debugging workflows should be as easy as debugging local commands
+
+Every workflow is containerized, so we can put you straight into a container when something goes wrong.
+
+There, the shell is yours to debug.
+
+Once you're done, we give you the files back, ready to commit. <a href="https://t.co/n1GMX1BV6L">https://t.co/n1GMX1BV6L</a><br><br>🦀 4. Setting up services for integration and end-to-end tests should be easy both locally and on the cloud
+
+With ErgoModules, you can set up databases and other pieces of software for your tests to use.
+
+We take care of spinning their containers up and making them accessible.<br><br>ErgoModules also come straight from GitHub, meaning you can publish yours and reuse others'.
+
+Ergomake is your default integration test tool, and it just happens that you can reuse the same configs on CI.<br><br>🦀 5. Generate TOML, not YAML
+
+At Ergomake, we want you to manage all your workflows through the CLI.
+
+However, we do see value in committing your CI configs to your repo.
+
+That's why Ergomake generates TOML, not YAML. <a href="https://t.co/h42YZr81yV">https://t.co/h42YZr81yV</a><br><br>We do that because indentation is not a great way to convey semantics (we're sorry, Pythonists).
+
+Although YAML is a clean configuration format, TOML is simply cleaner, more readable, and doesn't depend on indentation.
+
+Also, we're Rustaceans, aren't we?<br><br>➡️ We're also currently working on a few more goodies before our public beta starts.
+
+🦀 Setup self-hosted agents with one command
+🦀 Better GitHub and Slack integrations
+🦀 A terminal-based UI for managing CI on the cloud.<br><br>As a reminder, Ergomake is:
+
+⭐ Written in rust
+
+And will soon be:
+
+⭐ Open-source
+⭐ Free for non-profit open-source projects
+⭐ Free for self-hosted users
+
+➡️ Sounds good? Then sign-up for the waitlist at: <a href="<a href="https://t.co/FxGQHuMx1L">https://t.co/FxGQHuMx1L</a>"><a href="https://t.co/FxGQHuMx1L">https://t.co/FxGQHuMx1L</a></a><br><br>We'll be inviting the people who sign-up for user interviews and enabling gradual access to some customers.
+
+Your input is critical for us to build a better product.
+
+If you have questions, send us a DM or email us at contact@getergomake.com.<br><br>Twitter didn't like our waitlist link, so here it is again!
+
+➡️ Sign-up for the waitlist at: <a href="https://t.co/WlvnMPZ6qL">https://t.co/WlvnMPZ6qL</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Solidity programming language</a></li>
-<li><a href="#">programming language</a></li>
-<li><a href="#">curly language</a></li>
-<li><a href="#">programming language influences</a></li>
-<li><a href="#">Curly-bracket language</a></li>
+								<li><a href="#">Ergomake</a></li>
+<li><a href="#">YAML</a></li>
+<li><a href="#">workflows</a></li>
+<li><a href="#">Ergomake generates TOML</a></li>
+<li><a href="#">sign-up</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -337,7 +352,7 @@ The JS influence has been reduced lately.<br><br>Python influence
       }
     </script>
 
-<!--6902962259060208951-->
+<!--0863269133880497951-->
 
   </body>
 
