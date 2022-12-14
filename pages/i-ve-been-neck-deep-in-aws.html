@@ -5,15 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="7 Things Every  Newbie Web Developers Should Know👀 
-
-#webdev #100DaysOfCode #FrontEnd #Backend #30DaysOfCode #javascript...">
+    <meta name="description" content="I've been neck-deep in AWS billing data all day and all the technical debt AWS...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>7 things every  newbie web developers should know👀 
-
-#webdev...</title>
+    <title>I've been neck-deep in aws billing data all day and...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,9 +87,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>7 things every  newbie web developers should know👀 
-
-#webdev...</h2>
+                <h2>I've been neck-deep in aws billing data all day and...</h2>
               </div>
             </div>
           </div>
@@ -115,44 +109,50 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>7 things every  newbie web developers should know👀 
-
-#webdev...</span>
-                      <a href="#"><h4>7 Things Every  Newbie Web Developers Should Know👀 
-
-#webdev #100DaysOfCode #FrontEnd #Backend #30DaysOfCode #javascript...</h4></a>
+                      <span>I've been neck-deep in aws billing data all day and...</span>
+                      <a href="#"><h4>I've been neck-deep in AWS billing data all day and all the technical debt AWS...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-14 07:15:32.512795</a></li>
 
                       </ul>
-                      <p>7 Things Every  Newbie Web Developers Should Know👀 
+                      <p>I've been neck-deep in AWS billing data all day and all the technical debt AWS has here is somewhat amusing.
 
-#webdev #100DaysOfCode #FrontEnd #Backend #30DaysOfCode #javascript #Python #CodeNewbie #100DaysOfHacking #SoftwareEngineer 
+And, also, I feel for them so hard.
 
-Open Thread 🧵<br><br>1.Vs Code Editor
+Some things that stand out 🧵<br><br>UsageTypes have regional prefixes (eg, USW2-EBS:VolumeUsage.gp2 for gp2 EBS volume in us-west-2).
 
-This code editor offers you a large variety of programming languages , you can write code in HTML , CSS , JavaScript ,C++, python and many more.<br><br>2.  Git &amp; GitHub
+Except us-east-1, which has no regional prefix, so the UsageType is VolumeUsage.gp2.
 
-This helps you to manage your all code projects at one place basically its like storage for all your web dev projects and not only that but you can share your project with your friends or with your team member.<br><br>3. JavaScript ES6+
+This is true of every UsageType for every service in us-east-1.<br><br>Speaking of EBS, every volume type has a code associated: VolumeUsage.gp2, VolumeUsage.io2, etc.
 
-JavaScript is the brain of any website which makes a website functional and it is one of the most popular programming languages for web development.  Now, JavaScript ES6+ also called high order JavaScript function is a very important part of JavaScript.<br><br>4. CSS Framework
+Except magnetic volumes, which are simply VolumeUsage.
 
-If you want to become a Frontend developer then it’s a must for you. Nowadays most web developers are shifting towards classy CSS Frameworks which helps them to create beautiful UI(user interface) without writing a lot of code.<br><br>5. Chrome Dev Tools
+Likewise, io1 is VolumeUsage.piops while io2 and VolumeUsage.io2, thanks to io1 previously being called Provisioned IOPS.<br><br>The EC2-Other service is a catch-all of stuff: inter-AZ data transfer, EBS volumes, VPC Peering, Elastic IPs
 
-The biggest nightmare of every web developer is to debug their code. Sometimes there is a small bug or error in your code and you are not able to find it, so in that case, there comes the need of Chrome Dev Tools.<br><br>6. Refactoring of Code
+Basically none of which belongs there but one can imagine when AWS was young, this made sense.
 
-Refactoring means shortening your code and avoiding unnecessary code which is not used in your project. It also helps to make your code clean and understandable by others so that they can understand what the user is trying to say through their code.<br><br>Read Full Article:- <a href="https://t.co/6AvnRVcz56">https://t.co/6AvnRVcz56</a></p>
+Managed NAT Gateway is also here, presumably for lack of a better place<br><br>Interestingly, data transfer charges are under a separate AWSDataTransfer product code in the raw data but not in Cost Explorer. Maybe we'll see that reflected in Cost Explorer one day.<br><br>S3 storage likewise has UsageTypes: TimedStorage-GIR for Glacier Instant Retrieval, TimedStorage-INT-FA for Intelligent Tiering Frequent Access, TimedStorage-SIA for Standard Infrequent Access.
+
+Standard, however, is simply TimedStorage.<br><br>Even the name 'Standard Infrequent Access' seems to me to be a bit of technical debt, considering how many other tiers there are now. SIA's main difference is one nine less availability than Standard.<br><br>Some RI-covered instances show up as UsageType 'HeavyUsage' instead of InstanceUsage (RDS) or BoxUsage (EC2).
+
+This is an anacronism dating back over ten years now, when AWS had light, medium, and heavy RIs that came with different discount levels
+
+<a href="https://t.co/ad1h7LiQV6">https://t.co/ad1h7LiQV6</a><br><br>Some services will bill for out-of-cycle billing charges, typically to cover overages or unmet commits from private pricing. They're typically grouped with the service incurring the fee.
+
+Cloudfront, though, bills these through its own top-level service 'OCBCloudfront'.<br><br>Speaking of OCB, Enterprise Support is called Premium Support in the bill and also gets charged under a top-level service OCBPremiumSupport.
+
+Cost Explorer shows this one as simply Premium Support, without the OCB bit (unlike Cloudfront).<br><br>And that's all for now. Back to the depths of hell for me now!</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">SoftwareEngineer Open Thread</a></li>
-<li><a href="#">Things Every Newbie</a></li>
-<li><a href="#">Open Thread</a></li>
-<li><a href="#">code editor offers</a></li>
-<li><a href="#">Newbie Web Developers</a></li>
+								<li><a href="#">Cost Explorer</a></li>
+<li><a href="#">Standard Infrequent Access</a></li>
+<li><a href="#">Standard Infrequent</a></li>
+<li><a href="#">AWS</a></li>
+<li><a href="#">Premium Support</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -314,7 +314,7 @@ Refactoring means shortening your code and avoiding unnecessary code which is no
       }
     </script>
 
-<!--7916333297519268951-->
+<!--2918888126193298951-->
 
   </body>
 
