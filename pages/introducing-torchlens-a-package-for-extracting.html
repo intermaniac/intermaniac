@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="🧵 Introducing Torchlens, a package for extracting &amp; mapping the results of every intermediate step...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>🧵 introducing torchlens, a package for extracting &amp; mapping the...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +87,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>🧵 introducing torchlens, a package for extracting &amp; mapping the...</h2>
               </div>
             </div>
           </div>
@@ -109,26 +109,38 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>🧵 introducing torchlens, a package for extracting &amp; mapping the...</span>
+                      <a href="#"><h4>🧵 Introducing Torchlens, a package for extracting &amp; mapping the results of every intermediate step...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-15 07:15:33.088048</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>🧵 Introducing Torchlens, a package for extracting &amp; mapping the results of every intermediate step in any PyTorch model in 1 line of code ("every" &amp; "1" mean just that; "any model" is the goal 🤞) 1/
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/sSs70xyQ58">https://t.co/sSs70xyQ58</a><br><br>Learn these skills today   <a href="https://t.co/gnSAVCjJjc">https://t.co/gnSAVCjJjc</a></p>
+GitHub:
+
+<a href="https://t.co/VxSKFGyd8X">https://t.co/VxSKFGyd8X</a>
+
+CoLab Demo: 
+
+<a href="<a href="https://t.co/vDEU1hrgxG">https://t.co/vDEU1hrgxG</a>"><a href="https://t.co/vDEU1hrgxG">https://t.co/vDEU1hrgxG</a></a> <a href="https://t.co/B8Bl0dhRym">https://t.co/B8Bl0dhRym</a><br><br>It also handles branching networks with no problem... 6/ <a href="https://t.co/86CMnV7KZO">https://t.co/86CMnV7KZO</a><br><br>...as well as networks with tensors that are generated internally rather than from the network's input (e.g., from torch.rand or torch.ones; indicated in the visual with dashed lines) 7/ <a href="https://t.co/54r7nXn7DP">https://t.co/54r7nXn7DP</a><br><br>If the computations in the model depend on the value of the input (a stumbling block for some approaches to PyTorch feature extraction), it simply dynamically traces what actually happens in the forward pass for that input. 8/ <a href="https://t.co/3t2X38a60p">https://t.co/3t2X38a60p</a><br><br>Torchlens traces the results of every tensor operation regardless of how the model programmer chose to structure the modules in the model (a question of code style, not computation). However, any hierarchical module structure in the model is kept to help visualize the model... 9/ <a href="https://t.co/5jioeMHSZr">https://t.co/5jioeMHSZr</a><br><br>...and as a further way of selecting layers for convenience. You can also index layers by their ordinal position in the model, like a list. 10/ <a href="https://t.co/nzgb0tM9I3">https://t.co/nzgb0tM9I3</a><br><br>In case you don't want to save *every* activation (to save memory), you can use this same flexible indexing system to pick which layers you want to save. You can also specify a kind of layer you want to save (e.g. "conv") and it'll just grab all layers of that type for you. 11/ <a href="https://t.co/j63CwjX6IR">https://t.co/j63CwjX6IR</a><br><br>Torchlens should work in principle even for very large and complex models—for instance, shown below is the visualization of just one chunk of CORNet_S (in rolled-up form, since the network is recurrent). 12/ <a href="https://t.co/BwKEiiFsSw">https://t.co/BwKEiiFsSw</a><br><br>It has been tested on a variety of feedforward and recurrent models (not transformers yet; coming soon). But how can you be fully confident it's working properly for your own bespoke model? After all, silent errors are the worst kind. 13/<br><br>To address this, Torchlens has a built-in procedure to check the accuracy of saved activations: it re-runs the model's forward pass starting from each intermediate step using the saved activations, and checks that the resulting output matches the ground truth output. 14/<br><br>As a further sanity check, this procedure also verifies that swapping out these saved activations for random nonsense activations and re-running the forward pass yields the wrong final output. 15/<br><br>(Please let me know if Torchlens fails for your model with this test—that is, if validate_saved_activations ever returns False—and I'll update Torchlens to fix the bug, which will help other users too if their models have similar quirks) 16/<br><br>Torchlens works with any torch version past 1.8.0, and should work whether the model is on the cpu or gpu. One current limit is that I can't guarantee it'll work if you run your model with parallel computing, so I would avoid doing this for now. 17/<br><br>Torchlens is a work in progress and I want it to help as many people as possible, so I would love for folks to give me any "wish list" items they might have (either here, via DMs, or on GitHub), and to send me any questions/comments/grievances you have about it. 18/<br><br>If you want to poke around with Torchlens, here is a Google CoLab notebook that walks through the key features: 19/
+
+<a href="<a href="https://t.co/vDEU1hrgxG">https://t.co/vDEU1hrgxG</a>"><a href="https://t.co/vDEU1hrgxG">https://t.co/vDEU1hrgxG</a></a><br><br>Some planned future features:
+
+- Improve cluttered visuals for big models (e.g., giving an option to only show higher-level modules instead of every last step)
+- A function to return a pandas array with all the layer metadata
+- Transformer compatibility 20/<br><br>Finally, note that Torchlens is not meant to replace existing (fantastic) packages like ThingsVision, surgeon-pytorch, or torchvision's feature_extraction module, all of which were an inspiration for Torchlens. 21/<br><br>These packages have additional functionality for loading models and analyzing activations that Torchlens lacks, whereas Torchlens is solely designed to extract the activations and reconstruct/visualize the model's computational graph—see it as just one tool in your toolbox. 22/<br><br>I hope that Torchlens can be useful not just for research, but also for teaching, by providing a way of quickly understanding what's going on in a neural network model (translating code to concepts) /23<br><br>Many thanks to everyone who gave valuable input in the development of Torchlens: I have especially benefitted from discussion with @TalGolanNeuro, @grez72, @alfcnz, members of the @KriegeskorteLab, and @NKriegeskorte for his guidance throughout. /24<br><br>This thread will continue with further updates as Torchlens develops. The dream is to remove all arbitrary barriers to understanding what's going on inside artificial neural network models, and I hope it helps you out. 25/</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Torchlens</a></li>
+<li><a href="#">Introducing Torchlens</a></li>
+<li><a href="#">model</a></li>
+<li><a href="#">handles branching networks</a></li>
+<li><a href="#">CoLab Demo</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +302,7 @@
       }
     </script>
 
-<!--1922587838896719951-->
+<!--6549716552938129951-->
 
   </body>
 

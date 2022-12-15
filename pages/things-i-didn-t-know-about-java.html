@@ -5,11 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Things I didn't know about #Java:
+
+The qualified superclass constructor invocation.
+
+I will explain it in this...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Things i didn't know about #java:
+
+the qualified superclass constructor invocation.
+
+i...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +95,11 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Things i didn't know about #java:
+
+the qualified superclass constructor invocation.
+
+i...</h2>
               </div>
             </div>
           </div>
@@ -109,26 +121,82 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Things i didn't know about #java:
+
+the qualified superclass constructor invocation.
+
+i...</span>
+                      <a href="#"><h4>Things I didn't know about #Java:
+
+The qualified superclass constructor invocation.
+
+I will explain it in this...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-15 07:15:33.088048</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Things I didn't know about #Java:
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/sSs70xyQ58">https://t.co/sSs70xyQ58</a><br><br>Learn these skills today   <a href="https://t.co/gnSAVCjJjc">https://t.co/gnSAVCjJjc</a></p>
+The qualified superclass constructor invocation.
+
+I will explain it in this thread 🧵👇 <a href="https://t.co/ta1b6CJvtZ">https://t.co/ta1b6CJvtZ</a><br><br>First, what is an inner class?
+
+An inner class is a nested class that is non-static.
+
+In the picture, `NotInnerClass` is *not* an inner class because, even though it is nested (i.e. declared inside `Outer`), it is declared with the `static` modifier. <a href="https://t.co/tWYATwW6Aq">https://t.co/tWYATwW6Aq</a><br><br>An inner class instance *must* be associated to an instance of its enclosing class.
+
+In other words, to create an instance of an inner class, we must first have an instance of the outer class.
+
+To illustrate, let's declare the Outer/Inner duo in a jshell session. <a href="https://t.co/eJ3ejXjdpr">https://t.co/eJ3ejXjdpr</a><br><br>Next, let's try to create an `Inner` instance as if it were a static nested class.
+
+We can't. The error message says we must provide an instance of the `Outer` class. <a href="https://t.co/QRI1az6a5m">https://t.co/QRI1az6a5m</a><br><br>So let's do that.
+
+First we create an instance of `Outer`.
+
+And from the outer instance, we create an instance of `Inner`.
+
+Notice the syntax to create the `Inner` instance. <a href="https://t.co/F9prAFi6O2">https://t.co/F9prAFi6O2</a><br><br>We could have also written it in a one-liner, like in the picture.
+
+The takeaway here is:
+
+- in order to have an instance of `Inner` we must start with an existing instance of `Outer`. <a href="https://t.co/vhrU1GOyqX">https://t.co/vhrU1GOyqX</a><br><br>What if we need to create a subclass of `Inner`?
+
+Say we need a class `InnerChild` that extends `Inner`.
+
+An initial (and wrong) attempt would be to do like in the picture. <a href="https://t.co/I5eEtAeQ7W">https://t.co/I5eEtAeQ7W</a><br><br>An instance of `InnerChild` is also an instance of `Inner`. Therefore, an instance of `InnerChild` must be associated to an instance of `Outer`.
+
+That's why the previous example failed to compile: it needs an instance of `Outer`.
+
+One way to fix is illustrated in the picture. <a href="https://t.co/UQPJLoPzBm">https://t.co/UQPJLoPzBm</a><br><br>The previous is an example of 'Qualified Superclass Construction Invocation'.
+
+Note that `InnerChild` is a top-level 'static' class. In other words, we can instantiate it directly.
+
+In its constructor, a new `Outer` is created and the `Inner` constructor is immediately invoked. <a href="https://t.co/1UliIwQFRl">https://t.co/1UliIwQFRl</a><br><br>An alternative form of the qualified superclass constructor invocation is shown in the picture.
+
+In this form an instance of `Outer` is directly passed to the `InnerChild` constructor.
+
+The superclass constructor, i.e `Inner`, is then immediately invoked. <a href="https://t.co/jqe63ltU4W">https://t.co/jqe63ltU4W</a><br><br>To better understand both forms of the qualified superclass constructor invocation, let's redefine our classes. <a href="https://t.co/NnzBY3PtwE">https://t.co/NnzBY3PtwE</a><br><br>Let's see them in action. 
+
+The first form: <a href="https://t.co/CGT31AjZR6">https://t.co/CGT31AjZR6</a><br><br>Finally, here's the second form in action. <a href="https://t.co/JyZA10nPAX">https://t.co/JyZA10nPAX</a><br><br>You should definitely check out the Java Language Specification (JLS) where this is all defined: 
+
+<a href="https://t.co/xTe3Z76QEu">https://t.co/xTe3Z76QEu</a><br><br>And that's it!
+
+If you enjoyed this and wish for more #Java related content, follow me: @marcioendo
+
+RT the first tweet in this thread to share it with your audience. 🙏
+
+I have also written about this topic in this blog post: <a href="https://t.co/7b5Y5bq5i2">https://t.co/7b5Y5bq5i2</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">instance</a></li>
+<li><a href="#">Outer</a></li>
+<li><a href="#">class</a></li>
+<li><a href="#">Things</a></li>
+<li><a href="#">constructor</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +358,7 @@
       }
     </script>
 
-<!--1922587838896719951-->
+<!--6503946310491809951-->
 
   </body>
 
