@@ -5,15 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="💙 Are you a Flutter Developer? 💙
-
-A list of useful VS Code Extensions for Flutter...">
+    <meta name="description" content="LINUX COMMAND LINE
+I was going through some old files and came across a bunch tutorials...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>💙 are you a flutter developer? 💙
-
-a list of useful...</title>
+    <title>Linux command line
+i was going through some old files and...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,9 +89,8 @@ a list of useful...</title>
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>💙 are you a flutter developer? 💙
-
-a list of useful...</h2>
+                <h2>Linux command line
+i was going through some old files and...</h2>
               </div>
             </div>
           </div>
@@ -115,114 +112,66 @@ a list of useful...</h2>
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>💙 are you a flutter developer? 💙
-
-a list of useful...</span>
-                      <a href="#"><h4>💙 Are you a Flutter Developer? 💙
-
-A list of useful VS Code Extensions for Flutter...</h4></a>
+                      <span>Linux command line
+i was going through some old files and...</span>
+                      <a href="#"><h4>LINUX COMMAND LINE
+I was going through some old files and came across a bunch tutorials...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2022-12-18 07:15:29.499306</a></li>
 
                       </ul>
-                      <p>💙 Are you a Flutter Developer? 💙
+                      <p>LINUX COMMAND LINE
+I was going through some old files and came across a bunch tutorials I created a few years back. I'm not sure Twitter is best medium for this kind of stuff so let's see how this thread goes before getting into the real fun of command line tools.
+1/
+Part One: 🧵<br><br>For example, if we wanted list all files in the current directory we could type ls -a or its equivalent long version ls --all.
+19/ <a href="https://t.co/Zu27CCXBqr">https://t.co/Zu27CCXBqr</a><br><br>Flags can be used in conjunction with one another, either by separately passing the flags, such as, ls -l -s, or by combining, ls -ls. It is more common to see the latter version as it is more condensed, and hence, less keystrokes are required.
+20/ <a href="https://t.co/TQLzW7SSqf">https://t.co/TQLzW7SSqf</a><br><br>WHY THE SHELL?
+Interacting with the operating system via command line gives the user more fine-grained control than what can typically be achieved using a Graphical User Interface (GUI).
+So instead of a GUI we have what is called a Command Line Interface (CLI).
+21/<br><br>Given the composite nature of the CLI, programs can interact with each other in ways that are not possible with GUIs.
+Another advantage of a CLI over a GUI is the ability to automate actions.
+What can be typed at the CLI can also be made into programs via scripting.
+22/<br><br>There are many different shells available to work in and depending on the particular *nix operating system will determine the default shell. 
+23/<br><br>The most ubiquitous shell in modern Linux operating systems is Bash which stands for the "Bourne Again SHell" and is a play on words as it incorporated, updated and extended the original Bourne Shell developed in the 1970s.
+24/<br><br>IT IS ABSOLUTELY RELATIVE TO WHERE YOU ARE
+*nix operating systems use a hierarchal directory structure which means that files are contained in a tree-like structure. Directories can contain files and/or other directories.
+25/<br><br>The root directory is, well, the root of the “tree”, all other directories are relative to the root directory.
+root directory is symbolized in file system by a forward slash /
+Note: This is not same as root user, root user is user with system privileges to run any command.
+26/ <a href="https://t.co/FmKm9um7ul">https://t.co/FmKm9um7ul</a><br><br>There are many system directories in a *nix operating system and depending on which distribution you are using will determine the directory structure, however, suffice it to say that the two most common you will come in contact with are the home and bin directories.
+27/<br><br>When navigating around the filesystem we move between directories. We move between these directories by typing commands. If we type the directory path using the forward slash then we are using absolute paths, i.e., absolute from the root directory.
+28/<br><br>If we leave out the forward slash when moving between directories then we are accessing the directory via a relative path, i.e., it is relative to where we currently are located in the file system.
+29/<br><br>Note: There is a lot more than can be said on this topic but for now this will suffice and should make more sense in the coming threads.
+30/<br><br>ERR, WHAT IS STANDARD INPUT, OUTPUT AND ERROR?
+Every time you type a command at command line terminal, you're sending an input stream to shell which interprets this input and does something.
+That something is sent out as output stream to a special file called standard output.
+31/<br><br>And if something goes wrong in processing the command then there is an error stream displaying the error.
+32/<br><br>* Standard Input provides input to command, is called stdin and has a file descriptor 0
+* Standard Output provides output of command, is called stdout and has a file descriptor 1
+* Standard Error displays error on command, is called stderr and has a file descriptor 2
+33/<br><br>The default for stdout and stderr is the terminal screen but they can be sent to file on disk for long term storage or re-use.
+34/<br><br>For now, don’t worry too much about this information as it will be explained in more detail in upcoming threads on scripting, for now, in simple terms, it means we can redirect streams from one command to another and that has very important implications which we'll see later.
+35/<br><br>OKAY, ENOUGH WITH THE THEORY! 
+Who am I? Where am I?
+whoami command prints username associated with the current effective user ID.
+pwd prints the name of present working directory.
+Here you can see my username is EponymouslyAnonymous and I am in the root directory.
+37/ <a href="https://t.co/lQ8ix9tIRN">https://t.co/lQ8ix9tIRN</a><br><br>Okay, I think that's enough for now. While this thread might have been heavy on words and light on commands, this thread is required to make what comes next more meaningful and hopefully more interesting.
+38/<br><br>As I said at the start, I'm not sure if Twitter is the right medium for this type of content but if there are enough Likes I will continue.
 
-A list of useful VS Code Extensions for Flutter Developers
-
-🤩🔥🚀
-1/n
-🧵 👇
-
- #Flutter #VSCode<br><br>🎯 Dart: Extends VS Code with support for the Dart programming language
-
-<a href="https://t.co/aks851UQ9x">https://t.co/aks851UQ9x</a>
-
-2/n
-🧵 👇<br><br>💙 Flutter: Adds support for effectively editing, refactoring, running, and reloading Flutter apps
-
-<a href="https://t.co/8mbatQqhGv">https://t.co/8mbatQqhGv</a>
-
-3/n
-🧵 👇<br><br>🛢️ Dart Barrel Export File Generator: create barrel file that exports the files in the current directory.
-
-<a href="https://t.co/5FD9vhucyk">https://t.co/5FD9vhucyk</a>
-
-4/n
-🧵 👇<br><br>🛠️  bloc: provides tools for effectively creating Blocs and Cubits 
-
-<a href="https://t.co/8Jczu6wvx1">https://t.co/8Jczu6wvx1</a>
-
-5/n
-🧵 👇<br><br>📻 Flutter Riverpod Snippets to enhance the way you use Riverpod
-
-<a href="https://t.co/Mg3EBpmCtn">https://t.co/Mg3EBpmCtn</a>
-
-6/n
-🧵 👇<br><br>🏁 Code Spell Checker: A basic spell checker that works well with camelCase code.
-
-<a href="https://t.co/YJpaNepRm0">https://t.co/YJpaNepRm0</a>
-
-7/n
-🧵 👇<br><br>🔍 GitLens: helps you to visualize code authorship at a glance via Git blame annotations and CodeLens,
-
-<a href="https://t.co/ezA8cxzgtd">https://t.co/ezA8cxzgtd</a>
-
-8/n
-🧵 👇<br><br>🚦 Path Intellisense: autocompletes filenames
-
-<a href="https://t.co/nidUneZ74l">https://t.co/nidUneZ74l</a>
-
-9/n
-🧵 👇<br><br>🔆 vscode-icons: Bring icons to your IDE
-
-<a href="https://t.co/t8C1NpELKT">https://t.co/t8C1NpELKT</a>
-
-10/n
-🧵 👇<br><br>🔍 Pubspec Assist: This extension allows you to search for packages without having to leave the editor and then adds them to the pubspec.yaml file
-
-<a href="https://t.co/RAiac9IWIy">https://t.co/RAiac9IWIy</a>
-
-11/n
-🧵 👇<br><br>🎉 Awesome Flutter Snippets: This extension is a collection of commonly used Flutter classes and methods. 
-
-<a href="https://t.co/jrfWOLSs58">https://t.co/jrfWOLSs58</a>
-
-12/n
-🧵 👇<br><br>📂 Flutter Stylizer: This extension organizes your Flutter classes in an opinionated and consistent manner.
-
-<a href="https://t.co/zc9elo2mkt">https://t.co/zc9elo2mkt</a>
-
-13/n
-🧵 👇<br><br>🌟 Better Comments: This extension will help you create more human-friendly comments in your code.
-
-<a href="https://t.co/H4HV7h4r3K">https://t.co/H4HV7h4r3K</a>
-
-14/n
-🧵 👇<br><br>🚨 Error Lens: This extension highlights the error lines in the code and appends the error details at the end of the line
-
-<a href="https://t.co/YP4AVCUH9V">https://t.co/YP4AVCUH9V</a>
-
-15/n
-🧵 👇<br><br>Thanks for checking this out! 
-
-1. Follow @_Mo_Malaka_ for more such threads.
-
-2. Retweet the first tweet to spread awareness.
-
-3. Subscribe to my @YouTube channel <a href="https://t.co/tu00HrHOXG">https://t.co/tu00HrHOXG</a>
-
-<a href="https://t.co/KP8dkar0MR">https://t.co/KP8dkar0MR</a></p>
+But do note that the command line is very powerful if you know some of the basics so might be worth sticking with.
+39/39</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Flutter Riverpod Snippets</a></li>
-<li><a href="#">Dart Barrel Export</a></li>
-<li><a href="#">Awesome Flutter Snippets</a></li>
-<li><a href="#">Export File Generator</a></li>
-<li><a href="#">Flutter Developer</a></li>
+								<li><a href="#">COMMAND LINE</a></li>
+<li><a href="#">COMMAND</a></li>
+<li><a href="#">directory</a></li>
+<li><a href="#">root directory</a></li>
+<li><a href="#">root</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -384,7 +333,7 @@ A list of useful VS Code Extensions for Flutter Developers
       }
     </script>
 
-<!--9062926914813230061-->
+<!--8617675259310310061-->
 
   </body>
 
