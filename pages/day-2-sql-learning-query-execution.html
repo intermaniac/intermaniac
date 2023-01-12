@@ -5,11 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="Day 2: SQL Learning
+
+✅Query Execution Engine in SQL?
+✅Phases of Query Evaluation?
+
+A Thread 🧵When we run...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>Day 2: sql learning
+
+✅query execution engine in sql?
+✅phases of query...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +95,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>Day 2: sql learning
+
+✅query execution engine in sql?
+✅phases of query...</h2>
               </div>
             </div>
           </div>
@@ -109,26 +120,82 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>Day 2: sql learning
+
+✅query execution engine in sql?
+✅phases of query...</span>
+                      <a href="#"><h4>Day 2: SQL Learning
+
+✅Query Execution Engine in SQL?
+✅Phases of Query Evaluation?
+
+A Thread 🧵When we run...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-12 07:15:32.341477</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>Day 2: SQL Learning
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/uE1frUOeQS">https://t.co/uE1frUOeQS</a><br><br>Learn these skills today   <a href="https://t.co/gnSAVCjJjc">https://t.co/gnSAVCjJjc</a></p>
+✅Query Execution Engine in SQL?
+✅Phases of Query Evaluation?
+
+A Thread 🧵<br><br>When we run any query to fetch the data from the database then at the same time many things happen simultaneously to get the desired results.
+Let’s discuss what happens when we submit a query in brief and then we will discuss all phases of query execution.<br><br>When a query comes how does the database actually answer it? So the first thing that the database system does is to parse the SQL query and figure out what the query is trying to do then it evaluates different expressions that are equivalent to the given SQL query.<br><br>The SQL query is broken down into relational algebra.
+For example, consider a query: 
+Query:
+
+Select * from account
+Where balance&gt;1000;
+
+The aim of this query is to find out the details of all accounts where the balance is &gt;1000.<br><br>Once we write this query, this is equivalent to the following relational algebra expression.
+
+πbalance( δbalance&gt;1000(account) ) 
+
+The above SQL query is also equivalent to the below given relational algebra expression.
+
+δbalance&gt;1000( πbalance(account) )<br><br>Both of the query expressions are the same. When a query is parsed then generally 2 things happen:
+
+·All the equivalent action plans are generated
+·And for each of generated equivalent action plans a query order tree is created.
+
+And then query order tree is evaluated.<br><br>➡️Phases of Query Evaluation?
+
+Parser/Translator
+Optimizer
+Execution Plan
+Query Execution Engine
+Phases of query evaluation<br><br>1. Parser/Translator: When we submit any query to run the task of the parser is to checks the syntax and verify the query. It checks whether query syntax is correct or not. It also checks for query semantics.<br><br>Our SQL command is a high-level language so we need to convert it to low-level language. The translator converts SQL query to relational algebra expression i.e from high-level language to low-level language.<br><br>2.Optimizer: when we submit any query then it is converted into various relational algebra expressions. We have many relational algebra expressions for the given query. Optimizer selects the query which is having a low cost. For this optimizer uses the statistics about the data.<br><br>3. Execution Plan: In this phase, the database decides the order of execution of given query instructions.
+
+Below is a template for writing query.<br><br>SELECT DISTINCT column, AGG_FUNC(column_or_expression), …
+FROM mytable
+    JOIN another_table
+      ON mytable.column = another_table.column
+    WHERE expression
+    GROUP BY column
+    HAVING expression
+    ORDER BY column ASC/DESC
+    LIMIT count OFFSET COUNT;<br><br>Order of Query Execution:
+
+From(Join)-&gt;Where-&gt;Group By-&gt;Having-&gt;Select-&gt;Distinct-&gt;Order By-&gt;Limit/Offset
+
+Every query doesn't have all the parts we listed above,  it is used according to the requirement.<br><br>4. Query Execution Engine: The execution engine will perform operations by fetching data from the database. The query execution engine will take a query evaluation plan then executes that plan and return the answers to the query.<br><br>Examples of query engines are Apache Spark, Apache Drill, Presto, etc. So basically query execution engine interprets SQL command and access data from the database and then finally returns the answer of the given SQL query.<br><br>Many functions are performed by the query execution, some of them are:
+
+It acts as a dispatcher for all commands in the execution plan. It iterates through all the commands in the plan until the batch is complete.<br><br>And it interacts with the storage engine to retrieve and update data from tables and indexes.<br><br>That's it for this thread. Hope you find it helpful and have enjoyed while reading!🙌
+
+If you liked it, then you can follow me @thisisdeepak07 for more such content.
+
+Thank you everyone for the support.💙</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Query</a></li>
+<li><a href="#">Query Execution Engine</a></li>
+<li><a href="#">Query Execution</a></li>
+<li><a href="#">SQL query</a></li>
+<li><a href="#">SQL Learning</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +357,7 @@
       }
     </script>
 
-<!--0579700392288639061-->
+<!--7794961264811749061-->
 
   </body>
 

@@ -5,11 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="I'm a web developer, and a lover of anagrams.
+
+Here's how I create animated #anagrams for...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>I'm a web developer, and a lover of anagrams.
+
+here's how...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +91,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>I'm a web developer, and a lover of anagrams.
+
+here's how...</h2>
               </div>
             </div>
           </div>
@@ -109,26 +115,86 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>I'm a web developer, and a lover of anagrams.
+
+here's how...</span>
+                      <a href="#"><h4>I'm a web developer, and a lover of anagrams.
+
+Here's how I create animated #anagrams for...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-12 07:15:32.341477</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>I'm a web developer, and a lover of anagrams.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/uE1frUOeQS">https://t.co/uE1frUOeQS</a><br><br>Learn these skills today   <a href="https://t.co/gnSAVCjJjc">https://t.co/gnSAVCjJjc</a></p>
+Here's how I create animated #anagrams for the @AnagramPost. (LONG THREAD 🧵)
+
+#webdev #html #css #javascript #php #thread <a href="https://t.co/2SXyuMTYCU">https://t.co/2SXyuMTYCU</a><br><br>To create the actual animation takes quite a few steps.
+
+1. Set the GIF dimensions
+2. Turn each phrase into a list of letters with X/Y positions
+3. Create a smooth path between each matching letter
+4. Render frames of letters following their paths
+5. Turn the frames into a GIF!<br><br>Step 1 is the easiest.
+
+I just have to inject both phrases, and set the width and height of the text container to the highest values they took. Then, the GIF dimensions are the dimensions of the container for the entire layout. <a href="https://t.co/URAuwWdE5q">https://t.co/URAuwWdE5q</a><br><br>Step 2 is also very manageable.
+
+As it turns out, a Range object can contain a fragment of a document (such as a single character of a text node), and getBoundingClientRect can get the X/Y position of that range. <a href="https://t.co/gAshmpsGFq">https://t.co/gAshmpsGFq</a><br><br>Step 3...let's just say, it took some work.
+
+There are multiple parts to this step.
+
+3a. Partition each phrase into 1-or-more-letter segments, which can be rearranged into each other
+3b. Match each segment in both phrases
+3c. Create Bezier curves between their letters' positions<br><br>Step 3a ensures repeated words/fragments move together, and effectively act as one letter.
+
+To do this, I can find a Minimum Common Substring Partition (MCSP).
+
+Partition = breaking up into segments
+Common Substring = repeated words/fragments
+Minimum = as few segments as possible<br><br>As it turns out, MCSP is an NP-hard problem (read: slow).
+
+But if I don't require the partition to be *minimal*, there are good-enough greedy algorithms that run in polynomial time (read: fast).
+
+Getting one to work was simple enough. Here's an example of such a string partition. <a href="https://t.co/LojzMrB66i">https://t.co/LojzMrB66i</a><br><br>In Step 3b, I turn phrases A and B into partitions, and for each segment in partition A, its letters' destinations are set to those of a matching segment in partition B.
+
+I'm not proud of my solution for finding the matching segments, but hey, it works. <a href="https://t.co/89GidqGZw1">https://t.co/89GidqGZw1</a><br><br>Step 3c took much inspiration from @FreyaHolmer's fantastic video on Bezier curves. Without it, I would've been lost. <a href="https://t.co/ZqH09VbWyh">https://t.co/ZqH09VbWyh</a>
+
+Basically, Bezier curves are a type of spline — a smooth curve used to join points together — and they can define continuous paths.<br><br>Each path followed by the letters is a cubic Bezier curve, with 4 control points.
+
+For simplicity, I decided to place the middle control points like this. They're placed some amount upwards (or downwards) based on the X distance the letter has to travel. <a href="https://t.co/mTSxqgXZrf">https://t.co/mTSxqgXZrf</a><br><br>But in cases where such an arcing path would look awkward, I place the middle control points in between the Y positions of the first and last control points.
+
+I have a formula for deciding when to switch to this path shape. Don't ask me how it works. 😅 <a href="https://t.co/VezWcdkwxw">https://t.co/VezWcdkwxw</a><br><br>With that out of the way, we can almost move on to step 4 (rendering frames). But that step has its own complicated parts.
+
+4a: Convert each image (including Twitter emojis!) to a data URL
+4b: Render a background plate without the letters
+4c: Render frames with letters one by one<br><br>Step 4a needs to be done because a pesky problem having to do with Cross-Origin Resource Sharing (CORS).
+
+Basically, if you draw onto a &lt;canvas&gt; an image from another source without CORS approval, that canvas becomes "tainted", and its data can't be read. <a href="https://t.co/yRSY7OMkTF">https://t.co/yRSY7OMkTF</a><br><br>However, we can get around this entirely by converting the images to data URLs.
+
+Data URLs are URLs that represent files. When you visit one in a browser, instead of fetching the file from an external resource, it decodes the data from the URL itself. <a href="https://t.co/HcyrONRDv0">https://t.co/HcyrONRDv0</a><br><br>Even though I have almost no experience in PHP, I was able to whip up a small PHP script that would request a URL (cURL is a lifesaver!) and convert it to a base64-encoded data URL.
+
+My JavaScript code calls this PHP script on each &lt;img&gt;'s src and replaces it with the data URL. <a href="https://t.co/LwEHyu6ZQw">https://t.co/LwEHyu6ZQw</a><br><br>This conversion is done for profile pictures, embedded media, and (perhaps surprisingly) emojis!
+
+All the way back in step 1, I used a function called twemoji.parse() to convert emojis to emoji images, which are called "Twemoji" and provided by Twitter. <a href="https://t.co/d5HWkt5snv">https://t.co/d5HWkt5snv</a><br><br>(Relatedly, I also used a function called addTwitterLinks(). This also uses a resource provided by Twitter, but annoyingly, it parses Twitter usernames like @&lt;a&gt;TwitterDev&lt;/a&gt; instead of &lt;a&gt;@TwitterDev&lt;/a&gt;. Simple to fix, but again, this is annoying.) <a href="https://t.co/DHC5ag48XU">https://t.co/DHC5ag48XU</a> <a href="https://t.co/Plgs0nPvZv">https://t.co/Plgs0nPvZv</a><br><br>Step 4b requires me to convert an HTML element to an image using JavaScript...somehow.
+
+This would be completely infeasible without the immensely helpful dom-to-image library. Ever since I first heard of it in late 2019, it's been an invaluable resource. <a href="https://t.co/79PTNtsZsP">https://t.co/79PTNtsZsP</a><br><br>With that, we can convert our layout container to an image in one line of code!
+
+(Note: for whatever reason, it seems to put a weird offset on the image if there is a margin on the element, so I pass an option to remove the margin. We don't need it anyways.) <a href="https://t.co/SkkAzoMXae">https://t.co/SkkAzoMXae</a><br><br>Step 4c (actually rendering the frames) is easy, and it's a breath of fresh air after the sheer complexity of the previous steps.
+
+(glyph.update() and glyph.draw() are custom functions that set the letter's position and draw it to the canvas context.) <a href="https://t.co/3q3COIsWUg">https://t.co/3q3COIsWUg</a><br><br>Finally, at step 5, we can turn these frames into a GIF. To render my GIFs, I use gif.js from @almost_digital. <a href="https://t.co/AQHcuhP4o0">https://t.co/AQHcuhP4o0</a>
+
+It requires me to store the file locally because it uses Web Workers, but that's a small price to pay.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Step</a></li>
+<li><a href="#">Partition</a></li>
+<li><a href="#">data URL</a></li>
+<li><a href="#">URL</a></li>
+<li><a href="#">GIF</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +356,7 @@
       }
     </script>
 
-<!--0579700392288639061-->
+<!--5228226471745849061-->
 
   </body>
 

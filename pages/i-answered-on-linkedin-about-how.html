@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Look at my tweets, I made with my custom software in #python...">
+    <meta name="description" content="I answered on LinkedIn about how transaction log, redo log, and WAL are the same.
+
+In...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Look at my tweets, i made with my custom software...</title>
+    <title>I answered on linkedin about how transaction log, redo log,...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +89,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Look at my tweets, i made with my custom software...</h2>
+                <h2>I answered on linkedin about how transaction log, redo log,...</h2>
               </div>
             </div>
           </div>
@@ -109,26 +111,36 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Look at my tweets, i made with my custom software...</span>
-                      <a href="#"><h4>Look at my tweets, I made with my custom software in #python...</h4></a>
+                      <span>I answered on linkedin about how transaction log, redo log,...</span>
+                      <a href="#"><h4>I answered on LinkedIn about how transaction log, redo log, and WAL are the same.
+
+In...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-12 07:15:32.341477</a></li>
 
                       </ul>
-                      <p>Look at my tweets, I made with my custom software in #python 
+                      <p>I answered on LinkedIn about how transaction log, redo log, and WAL are the same.
 
-   //THREAD//<br><br>You could be tweeting like this and  growing your audience. Look how many followers I have <a href="https://t.co/uE1frUOeQS">https://t.co/uE1frUOeQS</a><br><br>Learn these skills today   <a href="https://t.co/gnSAVCjJjc">https://t.co/gnSAVCjJjc</a></p>
+In practice MSSQL transaction log ~= Oracle redo log ~ PostgreSQL WAL
+but with more details: 🧵👇🏻<br><br>1. A transaction log must include:
+- undo log
+- redo log
+- transaction boundaries
+for A,C,I properties of ACID
+
+It can be in memory but must be synced to disk at commit (#LogForceAtCommit) for the D property of ACID<br><br>2. For performance, writing data buffers to disk is deferred and reordered because random writes are slow. The changes lost after a crash can be rolled forward from the redo log to recover the on-disk state<br><br>3. The state on disk can have incomplete or uncommitted transactions. This is why the transaction log (with undo) must be written to disk before, with #WriteAheadLogging, to be able to rollback uncommitted transactions after a crash<br><br>There are some implementation variations. For example, Oracle redo log indirectly includes undo log (as the redo of the rollback segment). Similarly, PostgreSQL undo log is the redo log of xmin/xmax changes.<br><br>Oracle can bypass the buffer cache  for some operations (direct-path load) and then does #WriteBehindLogging for it.
+@Yugabyte writes provisional records so that there are no incomplete transactions in regularDB so WAL is lighter and rollbacks faster<br><br><a href="https://t.co/XC9p1xQd37">https://t.co/XC9p1xQd37</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">growing your audience</a></li>
-<li><a href="#">custom software</a></li>
-<li><a href="#">THREAD</a></li>
-<li><a href="#">Learn these skills</a></li>
-<li><a href="#">python</a></li>
+								<li><a href="#">Oracle redo log</a></li>
+<li><a href="#">redo log</a></li>
+<li><a href="#">log</a></li>
+<li><a href="#">redo</a></li>
+<li><a href="#">Oracle redo</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -290,7 +302,7 @@
       }
     </script>
 
-<!--0579700392288639061-->
+<!--2171141364902019061-->
 
   </body>
 
