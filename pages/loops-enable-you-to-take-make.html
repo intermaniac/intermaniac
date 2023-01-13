@@ -5,11 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know that you can use the FileSystem.newFileSystem method to create a new FileSystem...">
+    <meta name="description" content="Loops enable you to take make the computer do repetitive tasks.
+
+Loops are very commonly used...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know that you can use the filesystem.newfilesystem method...</title>
+    <title>Loops enable you to take make the computer do repetitive...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +89,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know that you can use the filesystem.newfilesystem method...</h2>
+                <h2>Loops enable you to take make the computer do repetitive...</h2>
               </div>
             </div>
           </div>
@@ -109,27 +111,128 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know that you can use the filesystem.newfilesystem method...</span>
-                      <a href="#"><h4>Did you know that you can use the FileSystem.newFileSystem method to create a new FileSystem...</h4></a>
+                      <span>Loops enable you to take make the computer do repetitive...</span>
+                      <a href="#"><h4>Loops enable you to take make the computer do repetitive tasks.
+
+Loops are very commonly used...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-13 07:15:32.299512</a></li>
 
                       </ul>
-                      <p>Did you know that you can use the FileSystem.newFileSystem method to create a new FileSystem instance in #Java 13? 🧵<br><br>This method is useful when you want to access a file system in a different environment, e.g. a different operating system / network.
-To use FileSystem.newFileSystem, we need to pass in a URI that identifies the file system we want to connect to, and a Map of environment variables<br><br>For example, you can use the following code to create a FileSystem object that is connected to a jar file: <a href="https://t.co/XJsx1Q6dpF">https://t.co/XJsx1Q6dpF</a><br><br>The env map specifies that the jar file should be created if it doesn't already exist.
-You can then use the FileSystem object to perform various operations on the jar file, such as reading and writing files.<br><br>Have you used FileSystem.newFileSystem method in your #JAVA code ?
-#JAVApoll #coding #codinglife<br><br>CC : @java @JavaCodeDaily @GuidesJava @geeksforgeeks @javacodegeeks</p>
+                      <p>Loops enable you to take make the computer do repetitive tasks.
+
+Loops are very commonly used in #python, and it pays to know them well.
+
+Let us take a closer look at the handy `for` loop in this thread.
+
+👇<br><br>for loop enables you to loop over every item inside a sequence, and then perform some task.
+
+Let's look at this in more detail.
+
+The basic structure of a for loop is
+
+for loop_var in my_seq:
+    &lt;indented block of operations&gt;
+
+As we can see, the main components are,
+
++<br><br>my_seq, the iterable of the loop
+loop_var, the loop variable, and
+the block of operations, aka the "body of the loop"
+
+The first thing to understand is my_seq, the iterable of the loop.
+
+This is a sequence or a container. This could be a list, set, tuple, dictionary, or any
+
++<br><br>other object that supports iteration.
+
+Leaving aside the technical details of iterators, let us for now take my_seq to be either a list or a range.
+
+for loop_var in my_seq:
+    &lt;indented block of operations&gt;
+
+Does the following:
+
++<br><br>1⃣ Evaluate my_seq. This happens EXACTLY ONCE.
+2⃣ Try to extract an element from my_seq (more on extraction later). This happens at THE START OF ITERATION.
+3⃣ The extracted element is put in the loop variable loop_var.
+4⃣ The code in the loop body is executed
+5⃣ Go to Step2⃣
+
++<br><br>Details of extraction:
+
+If the sequence has exhausted, the loop ends: Proceed to the code after the loop body.
+Else, extract the next element from my_seq.
+
+Let us see all this in action now
+
++<br><br>for num in [1,2,3]:
+   print('Hi', num, num**2)
+print('Done!')
+
+What is the loop iteratable? It's [1,2,3].
+What is the loop variable? It's num.
+What is the loop body? It's print('Hi', num, num**2)
+
+Let us apply the steps and analyze this code.
+
++<br><br>1⃣ The iterable is evaluated. The result is [1,2,3]. This will not happen again in this loop.
+2⃣ An item is extracted from the iterable. The item 1 gets extracted first.
+3⃣ num gets the value 1 for this iteration
+4⃣ The loop body is executed. This prints
+Hi 1 1
+
+Back to 2⃣
+
++<br><br>2⃣ The iterable is not exhausted. The next item extracted from the iterable is 2.
+3⃣ num gets the value 2 for this iteration.
+4⃣ The loop body is executed. This prints
+Hi 2 4
+
+Back to 2⃣
+
++<br><br>The next iteration proceeds similarly.
+
+2⃣ The iterable is not exhausted. The next item extracted from the iterable is 3.
+3⃣ num gets the value 3 for this iteration.
+4⃣ The loop body is executed. This prints
+Hi 3 9
+
+Back to 2⃣. This time things are different at 2⃣
+
++<br><br>2⃣The iterable has exhausted. It has no more elements to supply.
+
+Thus, the loop ends here. Now the code beyond the body of the loop is executed.
+
+print('Done!')
+prints
+Done!
+
+Hence, the net output is
+
++<br><br>Hi 1 1
+Hi 2 4
+Hi 3 9
+Done!
+
+Notice how we were able to run the code in the loop body 3 times, even though we wrote in just once.
+
+Also notice that the code printed different things depending on the value of loop variable num in the iteration.
+
+Here in the example we had a list
+
++</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">jar file</a></li>
-<li><a href="#">FileSystem.newFileSystem method</a></li>
-<li><a href="#">file system</a></li>
-<li><a href="#">file</a></li>
-<li><a href="#">FileSystem instance</a></li>
+								<li><a href="#">loop</a></li>
+<li><a href="#">loop body</a></li>
+<li><a href="#">num</a></li>
+<li><a href="#">iterable</a></li>
+<li><a href="#">body</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -291,7 +394,7 @@ You can then use the FileSystem object to perform various operations on the jar 
       }
     </script>
 
-<!--4872835550414959061-->
+<!--7621731760219979061-->
 
   </body>
 

@@ -96212,6 +96212,981 @@
                 "Learning SQL",
                 "Query Language"
             ]
+        },
+        {
+            "url": "this-is-about-docker-networking.html",
+            "desc": "This thread is about docker networking.\n\n#docker #containers #programming #networkingDocker containers communicate with each other if...",
+            "title": "this is about docker networking",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "programming",
+                "networking",
+                "docker",
+                "containers",
+                "traffic"
+            ]
+        },
+        {
+            "url": "python-tip-contrary-to-a-widespread.html",
+            "desc": "Python tip: \n\nContrary to a widespread opinion, \"list_1 += list_2\" and \"list_1 = list_1 +...",
+            "title": "python tip contrary to a widespread",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "list",
+                "Python tip",
+                "widespread opinion",
+                "Python",
+                "Contrary"
+            ]
+        },
+        {
+            "url": "best-free-blogging-sites-to-build.html",
+            "desc": "10 Best Free Blogging Sites to Build Your Blog for Free in 2023\n\n1. Wix @Wix...",
+            "title": "best free blogging sites to build",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Free Blogging Sites",
+                "Blogging Sites",
+                "LinkedIn",
+                "Ghost",
+                "Blogger"
+            ]
+        },
+        {
+            "url": "here-s-11-unique-html-input.html",
+            "desc": "Here's a thread on 11 Unique HTML input types used in HTML forms.\n\nCheck them out:\ud83d\udc471/11...",
+            "title": "here s 11 unique html input",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Unique HTML input",
+                "Unique HTML",
+                "HTML forms",
+                "users to select",
+                "HTML input types"
+            ]
+        },
+        {
+            "url": "new-to-css-check-out-this.html",
+            "desc": "New to CSS?\n \nCheck out this thread \ud83d\udc47 for helpful tips and resources to get...",
+            "title": "new to css check out this",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "CSS",
+                "Learn",
+                "CSS features",
+                "Practice",
+                "styles"
+            ]
+        },
+        {
+            "url": "let-s-see-what-is-computer.html",
+            "desc": "Let\u2019s see What is Computer Vision &amp; its Applications\n\n\ud83d\udcbb\ud83d\udcf7\ud83d\udc40\n\nA thread \ud83e\uddf5\n\nResource - Get started with...",
+            "title": "let s see what is computer",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Artificial Intelligence",
+                "Computer Vision",
+                "computer vision tasks",
+                "common computer vision",
+                "field of Artificial"
+            ]
+        },
+        {
+            "url": "is-data-manipulation-important-datascience-dataanalytics.html",
+            "desc": "Is data manipulation important?!\n\n#DataScience #DataAnalytics #Google  #DataVisualization #programming #data #googleprofessionalcertification #DataScientists  #dataanalysis #Python...",
+            "title": "is data manipulation important datascience dataanalytics",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "data",
+                "data manipulation important",
+                "data manipulation",
+                "manipulation important",
+                "manipulation"
+            ]
+        },
+        {
+            "url": "javascript-assignment-operator-100daysofcodejavascript-assignment-operators.html",
+            "desc": "JavaScript assignment operator a thread \ud83e\uddf5\n#100DaysOfCodeJavaScript assignment operators\n\n- JavaScript assignment operator assigns value to its...",
+            "title": "javascript assignment operator 100daysofcodejavascript assignment operators",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "assignment",
+                "JavaScript assignment operator",
+                "assignment operator",
+                "JavaScript assignment",
+                "assignment operator assigns"
+            ]
+        },
+        {
+            "url": "sql-is-the-backbone-of-your-data.html",
+            "desc": "SQL is the backbone of your data career.\n\nWriting good SQL scripts is an art.\n\nHere's how...",
+            "title": "sql is the backbone of your data",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Writing good SQL",
+                "good SQL scripts",
+                "SQL",
+                "Table",
+                "good SQL"
+            ]
+        },
+        {
+            "url": "pointers-to-derived-classes-in-c.html",
+            "desc": "Pointers to Derived Classes in C++ (thread) \n\nIn C++ you can point a pointer to...",
+            "title": "pointers to derived classes in c",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "base class pointer",
+                "base class",
+                "class data member",
+                "Displaying Base Class",
+                "derived class data"
+            ]
+        },
+        {
+            "url": "python-random-allows-you-to-generate.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python random allows you to generate pseudo-random numbers which are derived from a mathematical...",
+            "title": "python random allows you to generate",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "generate pseudo-random numbers",
+                "Python random",
+                "pseudo-random numbers",
+                "generate pseudo-random",
+                "Python"
+            ]
+        },
+        {
+            "url": "i-thought-i-would-start-the-new.html",
+            "desc": "I thought I would start the new year with a Serval Tracker status thread.\n \nSome...",
+            "title": "i thought i would start the new",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Tracker status thread",
+                "Serval Tracker status",
+                "Tracker status",
+                "Serval Tracker",
+                "status thread"
+            ]
+        },
+        {
+            "url": "the-oracle-architecture-in-defi-part-1.html",
+            "desc": "The Oracle Architecture in DeFi\nPART 1\n\nA follow-up on smart contract\nA simple thread \ud83e\uddf5In today's thread,...",
+            "title": "the oracle architecture in defi part 1",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Oracle Architecture",
+                "Decentralized Oracle Nodes",
+                "Oracle Nodes Decentralized",
+                "Nodes Decentralized Oracle",
+                "Data feeds"
+            ]
+        },
+        {
+            "url": "python-numeric-types-there-are-three.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python Numeric Types: There are three main numeric types in Python, int (integers), float...",
+            "title": "python numeric types there are three",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "floating point numbers",
+                "floating point",
+                "main numeric types",
+                "Python Numeric Types",
+                "Numeric Types"
+            ]
+        },
+        {
+            "url": "python-termios-is-a-library-module.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python termios is a library module for POSIX (Portable Operating System Interface) style tty...",
+            "title": "python termios is a library module",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Portable Operating System",
+                "Operating System Interface",
+                "Portable Operating",
+                "System Interface",
+                "Operating System"
+            ]
+        },
+        {
+            "url": "how-to-get-started-with-cloud.html",
+            "desc": "How to get started with cloud computing?\n\nThere are many ways to get started with cloud...",
+            "title": "how to get started with cloud",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "cloud",
+                "cloud computing",
+                "cloud providers",
+                "Research cloud providers",
+                "computing"
+            ]
+        },
+        {
+            "url": "confused-on-what-method-to-use.html",
+            "desc": "Confused on what method to use to merge dictionaries? Here's a list of almost all...",
+            "title": "confused on what method to use",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "https",
+                "t.co",
+                "merge dictionaries",
+                "Confused",
+                "dictionaries"
+            ]
+        },
+        {
+            "url": "some-cool-github-projects-such-as.html",
+            "desc": "Some cool #github projects, such as https://t.co/54eFmfFlXb, analyze your #ZSH history.\n\nHave you ever wondered what...",
+            "title": "some cool github projects such as",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "history file",
+                "github projects",
+                "history",
+                "ZSH",
+                "ZSH history"
+            ]
+        },
+        {
+            "url": "day-72-i-started-reading-the-linux.html",
+            "desc": "Day 72\n\nI started reading the Linux Basics For Hackers today, and here are some concept...",
+            "title": "day 72 i started reading the linux",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Basics For Hackers",
+                "Hackers today",
+                "Linux Basics",
+                "operating system",
+                "Linux"
+            ]
+        },
+        {
+            "url": "guide-to-javascript-es6-a-complete.html",
+            "desc": "\u26a1\ufe0f Guide to JavaScript Es6\u26a1\ufe0f \n\nA Complete Thread \ud83e\uddf5\ud83d\udc47\n\n#webdevelopment #javascript #es6 https://t.co/ROK4pXEgmt1. Var Keywords\n\n- Variables...",
+            "title": "guide to javascript es6 a complete",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Complete Thread",
+                "Guide to JavaScript",
+                "Guide",
+                "Thread",
+                "Arrow"
+            ]
+        },
+        {
+            "url": "according-to-bird-sql-by-perplexity.html",
+            "desc": "According to Bird SQL by @perplexity_ai, these are the most liked tweets for different AIs...",
+            "title": "according to bird sql by perplexity",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Bird SQL",
+                "Stable Diffusion",
+                "Midjourney",
+                "Bird",
+                "SQL"
+            ]
+        },
+        {
+            "url": "there-are-a-few-articles-out.html",
+            "desc": "There are a few articles out there that go in-depth about the anatomy of the...",
+            "title": "there are a few articles out",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "shadow DOM",
+                "shadow",
+                "shadow root",
+                "DOM",
+                "root"
+            ]
+        },
+        {
+            "url": "day26-of-100daysofcoding-100daysofprogramming-100daysofcodechallenge-bash.html",
+            "desc": "#Day26 of #100DaysOfCoding #100DaysOfProgramming #100daysofcodechallenge\n\nBASH SHELL\n\nIn Preparation for the alx software engineering programme, I decided...",
+            "title": "day26 of 100daysofcoding 100daysofprogramming 100daysofcodechallenge bash",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Linux Bash Shell",
+                "Bash Shell commands",
+                "BASH SHELL",
+                "Linux Bash",
+                "visit the Linux"
+            ]
+        },
+        {
+            "url": "if-you-re-just-getting-started.html",
+            "desc": "If you're just getting started with React, here are some topics in JavaScript that you...",
+            "title": "if you re just getting started",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "React",
+                "Arrow functions",
+                "Functions",
+                "JavaScript",
+                "topics in JavaScript"
+            ]
+        },
+        {
+            "url": "javascript-projects-for-beginners-in-2023.html",
+            "desc": "JavaScript Projects For Beginners In 2023 \u2728\n\nThread \ud83e\uddf5 https://t.co/505cNODW511. Color Changer\n2. Calculator\n3. Digital clock\n4. Word...",
+            "title": "javascript projects for beginners in 2023",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "App",
+                "Color Changer",
+                "Tips and Tricks",
+                "Projects",
+                "Projects For Beginners"
+            ]
+        },
+        {
+            "url": "python-statistics-is-a-programming-language.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python statistics is a programming language that allows users to perform mathematical operations &amp;...",
+            "title": "python statistics is a programming language",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "perform mathematical operations",
+                "Python statistical functions",
+                "Python",
+                "Python statistics",
+                "mathematical operations"
+            ]
+        },
+        {
+            "url": "cracking-coding-interviews-for-data-science.html",
+            "desc": "Cracking coding interviews for data science requires a good hold on python and SQL programming...",
+            "title": "cracking coding interviews for data science",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "SQL programming languages",
+                "SQL programming lang",
+                "Cracking coding interviews",
+                "data science interview",
+                "data science requires"
+            ]
+        },
+        {
+            "url": "here-are-some-tips-and-tricks.html",
+            "desc": "Here are some tips and tricks in CSS that every beginner should know.\n\nA thread \ud83e\uddf5\ud83d\udc47...",
+            "title": "here are some tips and tricks",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "CSS",
+                "tips and tricks",
+                "styles",
+                "CSS styles",
+                "CSS reset"
+            ]
+        },
+        {
+            "url": "storytime-so-i-remember-my-was.html",
+            "desc": "Storytime: so i remember my\ud83e\udd77 was in \u26d3 and he gave me his IG pw...",
+            "title": "storytime so i remember my was",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "textin next thread",
+                "shit was funny.",
+                "text his sister",
+                "resort css",
+                "css his friends"
+            ]
+        },
+        {
+            "url": "loops-enable-you-to-take-make.html",
+            "desc": "Loops enable you to take make the computer do repetitive tasks.\n\nLoops are very commonly used...",
+            "title": "loops enable you to take make",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "loop",
+                "loop body",
+                "num",
+                "iterable",
+                "body"
+            ]
+        },
+        {
+            "url": "python-email-is-an-email-amp.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python email is an email &amp; MIME handling package which helps users to create...",
+            "title": "python email is an email amp",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "MIME handling package",
+                "Python email",
+                "MIME message",
+                "MIME",
+                "Python"
+            ]
+        },
+        {
+            "url": "attention-all-javascript-developers-in-this.html",
+            "desc": "\ud83d\udea8 Attention all #JavaScript developers \ud83d\udcbb! In this thread, we'll dive into the differences between...",
+            "title": "attention all javascript developers in this",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "const",
+                "var",
+                "reassigned",
+                "scope",
+                "block scope"
+            ]
+        },
+        {
+            "url": "difference-between-git-and-github-git.html",
+            "desc": "Difference between Git and GitHub \ud83e\uddf5\ud83d\udc47\ud83d\udc47\ud83d\udcceGit is a version control system that manages and keeps...",
+            "title": "difference between git and github git",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "version control system",
+                "version control",
+                "control system",
+                "Git",
+                "Difference between Git"
+            ]
+        },
+        {
+            "url": "python-test-regression-tests-package-for-python.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python test - Regression tests package for Python is a package that consists of...",
+            "title": "python test regression tests package for python",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "includes functions",
+                "debugging Python programs",
+                "Regression tests package",
+                "Python",
+                "includes"
+            ]
+        },
+        {
+            "url": "in-this-we-would-explore-the-structure.html",
+            "desc": "In this thread \ud83e\uddf5, we would explore the structure of statements in a C Sharp...",
+            "title": "in this we would explore the structure",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "https",
+                "t.co",
+                "explore the structure",
+                "structure of statements",
+                "Sharp"
+            ]
+        },
+        {
+            "url": "hey-there-here-are-7-free.html",
+            "desc": "Hey there, \n\nHere are 7 Free resources for you to master CSS in no time...",
+            "title": "hey there here are 7 free",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "CSS",
+                "web development",
+                "web development languages",
+                "https",
+                "t.co"
+            ]
+        },
+        {
+            "url": "how-to-select-an-ideal-operating.html",
+            "desc": "How to select an ideal operating system for your usage? \ud83d\udcda \ud83e\uddf5 \n\n\u2705 Compatibility\n\nMake sure...",
+            "title": "how to select an ideal operating",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "operating system",
+                "operating",
+                "system",
+                "Compatibility Make",
+                "ideal operating system"
+            ]
+        },
+        {
+            "url": "have-you-ever-been-curious-about-the-inner.html",
+            "desc": "Have you ever been curious about the inner workings of \n#ReactJS virtual DOM?\n\ud83d\udc47 \ud83e\uddf5The virtual...",
+            "title": "have you ever been curious about the inner",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "ReactJS virtual DOM",
+                "virtual DOM tree",
+                "virtual DOM",
+                "DOM",
+                "DOM tree"
+            ]
+        },
+        {
+            "url": "happy-new-year-all.html",
+            "desc": "Happy new year all \ud83c\udf7e. \n\nBeen working on a HOW TO TEST your @PANEL_ORG #dataap...",
+            "title": "happy new year all",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Happy new year",
+                "Happy",
+                "LOAD TESTING",
+                "load",
+                "playwrightweb"
+            ]
+        },
+        {
+            "url": "the-borussia-dortmund-striker-karim-adeyemi.html",
+            "desc": "The Borussia Dortmund Striker Karim Adeyemi has been chosen by oracle as the next Alafin...",
+            "title": "the borussia dortmund striker karim adeyemi",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Borussia Dortmund Striker",
+                "Dortmund Striker Karim",
+                "Striker Karim Adeyemi",
+                "International Karim Adeyemi",
+                "German International Karim"
+            ]
+        },
+        {
+            "url": "you-want-to-reach-an-intermediate.html",
+            "desc": "\u25b6\ufe0fYou want to reach an intermediate SQL level inside a week \ud83d\udd25\n\n\ud83d\udcaf I have the...",
+            "title": "you want to reach an intermediate",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "intermediate SQL level",
+                "SQL level inside",
+                "Sidharth Kriplani Sir",
+                "Pharmacy Analytics Part",
+                "inside a week"
+            ]
+        },
+        {
+            "url": "one-of-the-most-imp-concepts.html",
+            "desc": "\ud83d\udccdA thread on one of the most imp concepts in #JavaScript  -&gt; functions\ud83d\udc471. A...",
+            "title": "one of the most imp concepts",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "imp concepts",
+                "functions",
+                "JavaScript",
+                "function",
+                "imp"
+            ]
+        },
+        {
+            "url": "achievements-1.html",
+            "desc": "2022 Achievements \n1. Learned Java.\n2.Started Learning C.\n3.Started DSA.\n4. Read 8 Productive Books.\n5.Planned to explore the...",
+            "title": "achievements 1",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Achievements",
+                "Learned Java",
+                "Productive Books",
+                "Resolutions Ahead",
+                "Java"
+            ]
+        },
+        {
+            "url": "python-ssl-is-a-security-protocol.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python SSL is a security protocol used to help protect a web server &amp;...",
+            "title": "python ssl is a security protocol",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Python SSL",
+                "Transport Layer Security",
+                "SSL",
+                "security protocol",
+                "security"
+            ]
+        },
+        {
+            "url": "how-to-convert-minutes-into-hours.html",
+            "desc": "How to convert minutes into hours and minutes in JavaScript \ud83d\ude01\n\nThread \ud83e\uddf5 \ud83d\udc47Method 1: \nCreate...",
+            "title": "how to convert minutes into hours",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "minutes",
+                "Thread",
+                "total minutes",
+                "Create a function",
+                "Method"
+            ]
+        },
+        {
+            "url": "want-highly-performant-javascript-apps-use.html",
+            "desc": "Want highly performant javascript apps, use the following libraries:\n(\ud83e\uddf5) \u2193 https://t.co/CfFqAmwyYn\u27f9 Lodash\nProvides utility and helpers...",
+            "title": "want highly performant javascript apps use",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "performant javascript apps",
+                "highly performant javascript",
+                "highly performant",
+                "Lodash",
+                "javascript apps"
+            ]
+        },
+        {
+            "url": "if-you-are-thinking-to-switch.html",
+            "desc": "If you are thinking to switch from R to Python as a Data Scientist, don't...",
+            "title": "if you are thinking to switch",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "machine learning",
+                "Data Scientist",
+                "Python",
+                "learning",
+                "thinking to switch"
+            ]
+        },
+        {
+            "url": "algofam-governors-and-potential-xgovs.html",
+            "desc": "1/ #algofam governors and potential xGovs. I am requesting feedback on some thoughts I am...",
+            "title": "algofam governors and potential xgovs",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "xGov",
+                "General Governance",
+                "algo",
+                "governance",
+                "General Governance stake"
+            ]
+        },
+        {
+            "url": "started-learning-python-in-2023-or.html",
+            "desc": "Started learning Python in 2023 or Want to be better at Python? \nKeep close to...",
+            "title": "started learning python in 2023 or",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Started learning Python",
+                "Started learning",
+                "Python",
+                "Started",
+                "Object Oriented Concepts"
+            ]
+        },
+        {
+            "url": "new-way-of-creating-array-javascript.html",
+            "desc": "A new way of creating Array \u2b50\n\nJavaScript Set\n\nThread \u21931.  What is a Set in...",
+            "title": "new way of creating array javascript",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "JavaScript Set Thread",
+                "Set",
+                "Set Thread",
+                "Array",
+                "Thread"
+            ]
+        },
+        {
+            "url": "how-to-go-from-0-coding.html",
+            "desc": "How to go from 0 coding experience to employed front-end developer in 2023:\n\n1. Pick up...",
+            "title": "how to go from 0 coding",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "employed front-end developer",
+                "coding experience",
+                "experience to employed",
+                "employed front-end",
+                "basic HTML skills"
+            ]
+        },
+        {
+            "url": "python-dbm-is-a-module-that.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022Python dbm is a module that provides an interface to \u201cdatabases\u201d that are commonly used...",
+            "title": "python dbm is a module that",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Python dbm",
+                "UNIX systems",
+                "Python",
+                "databases",
+                "database"
+            ]
+        },
+        {
+            "url": "amazing-it-courses-free-agile-project.html",
+            "desc": "Amazing IT courses! Free?\ud83d\ude32\ud83d\ude32\ud83d\ude32\n\n\ud83e\uddf5 \n\nAgile Project Management\n\ud83d\udd17https://t.co/N7e1owpd7Q\n\nProject Execution: Running the Project\n\ud83d\udd17https://t.co/RbVeRRIobV\n\nFoundations of Project Management\n\ud83d\udd17https://t.co/SJJN0SVF5m\n\nPython Basics...",
+            "title": "amazing it courses free agile project",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Google Cloud Computing",
+                "Cloud Computing Foundations",
+                "Google Cloud",
+                "Advanced Google Analytics",
+                "Data Science Foundations"
+            ]
+        },
+        {
+            "url": "how-learn-javascript-in-less-than.html",
+            "desc": "How learn JavaScript in less than a month.\nThread \ud83d\udc47\u2b07\ufe0fThere is no such thing on earth...",
+            "title": "how learn javascript in less than",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "learn JavaScript",
+                "month",
+                "thing on earth",
+                "learn",
+                "JavaScript"
+            ]
+        },
+        {
+            "url": "javascript-is-a-versatile-and-widely.html",
+            "desc": "JavaScript is a versatile and widely-used programming language that is essential for any developer to...",
+            "title": "javascript is a versatile and widely",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "learn",
+                "versatile and widely-used",
+                "code",
+                "work",
+                "JavaScript"
+            ]
+        },
+        {
+            "url": "happy-new-year-i-m-jon.html",
+            "desc": "Happy New Year! \ud83e\udd19\ud83c\udffe \ud83c\udf89 \ud83c\udf19 \n\nI\u2019m Jon, and I designed a Lunar Calendar for...",
+            "title": "happy new year i m jon",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Lunar Calendar",
+                "Calendar",
+                "Happy New Year",
+                "Happy",
+                "Lunar"
+            ]
+        },
+        {
+            "url": "sun-moon-and-eclipse-vtuber-assets.html",
+            "desc": "Sun, moon, and eclipse VTuber assets are out!\n\nthere's some pins and ribbons.\n\ncheck thread if they...",
+            "title": "sun moon and eclipse vtuber assets",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "eclipse VTuber assets",
+                "sun",
+                "moon",
+                "eclipse VTuber",
+                "VTuber assets"
+            ]
+        },
+        {
+            "url": "python-configparser-module-is-a-built.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python ConfigParser module is a built-in library that provides a way to read, write,...",
+            "title": "python configparser module is a built",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "write configuration files",
+                "configuration files",
+                "organize configuration files",
+                "Python ConfigParser module",
+                "files"
+            ]
+        },
+        {
+            "url": "learn-python-for-free-see-8.html",
+            "desc": "\ud83d\ude0a Learn Python for FREE\n\nSee \ud83e\uddf5\ud83d\udc478 Hour FREE Python Course\n\nhttps://t.co/u7AH9Crpqw\n\nContinue \ud83e\uddf5\ud83d\udc47FREE eBook to Learn Python\n\nhttps://t.co/u7AH9Crpqw\n\nContinue...",
+            "title": "learn python for free see 8",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Hour FREE Python",
+                "Learn Python",
+                "Hour FREE",
+                "FREE Python",
+                "FREE eBook"
+            ]
+        },
+        {
+            "url": "things-to-know-about-prop-drilling.html",
+            "desc": "5 things to know about Prop Drilling in ReactJS. \ud83e\uddf5 https://t.co/gLmbGVWKIx1/ Prop drilling, also known...",
+            "title": "things to know about prop drilling",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Prop Drilling",
+                "Prop",
+                "avoid prop drilling",
+                "Drilling",
+                "component"
+            ]
+        },
+        {
+            "url": "learn-for-free-html.html",
+            "desc": "Learn for Free;\n\nHTML\u2192 https://t.co/bHmRFD1MgM\nJava \u2192 https://t.co/n4WYi13cyX\nMongoDB \u2192 https://t.co/p3PdSPSRZz\nRust \u2192 https://t.co/91XmIuY1M3\nTailwind CSS \u2192 https://t.co/jHVcJPiMnN\nVue JS \u2192...",
+            "title": "learn for free html",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Learn for Free",
+                "HTML",
+                "Learn",
+                "Free",
+                "CSS"
+            ]
+        },
+        {
+            "url": "basic-server-using-nodejs-first-install.html",
+            "desc": "Basic server using nodejs \n\ud83e\uddf5\n\ud83d\udc47First, install Node.js for your platform.\nIn this example we'll create an...",
+            "title": "basic server using nodejs first install",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Basic server",
+                "install Node.js",
+                "HTTP server",
+                "HTTP",
+                "HTTP server listening"
+            ]
+        },
+        {
+            "url": "bounty-2k-usd-of-spark-for-a-designer.html",
+            "desc": "BOUNTY - 2K USD of #SPARK for a designer to kick off a design system...",
+            "title": "bounty 2k usd of spark for a designer",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "design system",
+                "guide consistent design",
+                "USD",
+                "CSS lib",
+                "consistent design"
+            ]
+        },
+        {
+            "url": "with-css-there-are-3-main.html",
+            "desc": "With CSS there are 3 main ways to hide an element on a page:\n\n\u25aa display:...",
+            "title": "with css there are 3 main",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "element",
+                "element completely transparent",
+                "layout",
+                "hidden",
+                "element completely"
+            ]
+        },
+        {
+            "url": "event-handling-in-javascript-don-t.html",
+            "desc": "Event Handling in Javascript \ud83d\ude80\n\n\ud83e\uddf5\ud83d\udc47Don't forget to bookmarked it for future reference...\u2726 In JavaScript, an...",
+            "title": "event handling in javascript don t",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Event",
+                "Event Handling",
+                "Event listener",
+                "Javascript",
+                "Handling in Javascript"
+            ]
+        },
+        {
+            "url": "are-you-looking-to-add-python.html",
+            "desc": "Are you looking to add Python to your skillset? \nHere's why it's a great choice:\nA...",
+            "title": "are you looking to add python",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Python",
+                "add Python",
+                "learning Python",
+                "projects",
+                "learn Python"
+            ]
+        },
+        {
+            "url": "h1b-using-oracle-discrimination-issues-again.html",
+            "desc": "#H1B using #Oracle #Discrimination issues - again! #NoAmericansNeedApply @USDOL @DHSgov @CommerceGov? (thread)\n\nLawsuit claims Oracle fired...",
+            "title": "h1b using oracle discrimination issues again",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Discrimination issues",
+                "Discrimination",
+                "Lawsuit claims Oracle",
+                "fired Bay Area",
+                "Bay Area man"
+            ]
+        },
+        {
+            "url": "summary-of-java-8-9-10.html",
+            "desc": "Summary of #Java 8,9,10,11,12,13,14,15,16,17,18,19 features.\nAll features in a single tweet. #retweet #share #like #follow #bookmark...",
+            "title": "summary of java 8 9 10",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Java API Doc",
+                "Pattern Matching",
+                "API",
+                "Long Term Support",
+                "features"
+            ]
+        },
+        {
+            "url": "chatgpt-prompt-generate-a-detailed-and-comprehensive.html",
+            "desc": "#ChatGPT PROMPT: Generate a detailed and comprehensive hypothetical math formula for the #accounting equation in...",
+            "title": "chatgpt prompt generate a detailed and comprehensive",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "comprehensive hypothetical math",
+                "hypothetical math formula",
+                "liabilities",
+                "ChatGPT PROMPT",
+                "Generate a detailed"
+            ]
+        },
+        {
+            "url": "hello-everyone-here-s-a-tutorial.html",
+            "desc": "Hello everyone, here's a tutorial in short words on using #JAVA Spring Boot with RabbitMQ!...",
+            "title": "hello everyone here s a tutorial",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "JAVA Spring Boot",
+                "Spring Boot",
+                "Message Queuing Protocol",
+                "Advanced Message Queuing",
+                "Spring Boot makes"
+            ]
+        },
+        {
+            "url": "today-is-my-first-day-studying.html",
+            "desc": "Today is my first day studying for the AWS Solutions Architect Associate (SAA) Certification. \n\nIn...",
+            "title": "today is my first day studying",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Solutions Architect Associate",
+                "AWS Solutions Architect",
+                "Architect Associate",
+                "Solutions Architect",
+                "AWS Solutions"
+            ]
+        },
+        {
+            "url": "you-might-know-what-is-use.html",
+            "desc": "You might know what is \"use strict\" in JavaScript but here why it exists in...",
+            "title": "you might know what is use",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "making it vastly",
+                "undergone significant",
+                "strict",
+                "Strict mode",
+                "previous versions"
+            ]
+        },
+        {
+            "url": "what-are-the-main-features-of-python.html",
+            "desc": "[Thread] What are the main features of Python?\n\nPython has become one of the most eminent...",
+            "title": "what are the main features of python",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Python",
+                "Thread",
+                "language",
+                "programming",
+                "Python Virtual Machine"
+            ]
+        },
+        {
+            "url": "python-select-function-allows-for-multiplexing.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python select() function: Allows for multiplexing of I/O operations, &amp; is used to wait...",
+            "title": "python select function allows for multiplexing",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "Python select",
+                "select",
+                "function",
+                "write operations",
+                "ready for read"
+            ]
+        },
+        {
+            "url": "day-on-facebook-sql-questions-series.html",
+            "desc": "Day -\ud83d\udd1f on @facebook SQL Questions Series \ud83d\ude80\ud83c\udfaf\n\n&amp; Extremely sorry guys\ud83d\ude4f from last 2 days...",
+            "title": "day on facebook sql questions series",
+            "date": "2023-01-13 07:15:32.299512",
+            "tags": [
+                "SQL Questions Series",
+                "facebook SQL Questions",
+                "Questions Series",
+                "Extremely sorry guys",
+                "Continue these series"
+            ]
         }
     ]
 }
