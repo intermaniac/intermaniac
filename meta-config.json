@@ -98318,6 +98318,1475 @@
                 "remote job",
                 "Remote"
             ]
+        },
+        {
+            "url": "tips-for-scaling-a-python-web.html",
+            "desc": "Tips for scaling a Python web server to handle thousands of requests per second:\n\n\ud83e\uddf51. Use...",
+            "title": "tips for scaling a python web",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Tips for scaling",
+                "Python web server",
+                "requests",
+                "Tips",
+                "Python"
+            ]
+        },
+        {
+            "url": "it-my-first-javascript-project-for-the-year.html",
+            "desc": "It my first javascript project for the year and its a game application\n\nlink to play:-...",
+            "title": "it my first javascript project for the year",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "game application link",
+                "link to play",
+                "check thread",
+                "javascript project",
+                "application link"
+            ]
+        },
+        {
+            "url": "use-cases-of-memcached-aws-cloud.html",
+            "desc": "Use cases of MemCached\n\nA thread \ud83d\udc47 \n\n#aws #cloud #tech #memcached #devops\n\n1/4Caching\n\nIt uses a high-performance in-memory...",
+            "title": "use cases of memcached aws cloud",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "high-performance in-memory cache",
+                "data access delay",
+                "decrease data access",
+                "access delay",
+                "back-end system"
+            ]
+        },
+        {
+            "url": "python-marshal-is-an-internal-python.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python marshal is an internal Python object serialization module that is used to convert...",
+            "title": "python marshal is an internal python",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python objects",
+                "Python",
+                "in-memory Python objects",
+                "arbitrary Python objects",
+                "serializing Python objects"
+            ]
+        },
+        {
+            "url": "way-to-handle-jest-and-vanillextract.html",
+            "desc": "A way to handle Jest and Vanilla-extract css where you have some plain CSS imports...",
+            "title": "way to handle jest and vanillextract",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Jest and Vanilla-extract",
+                "handle Jest",
+                "Vanilla-extract css",
+                "plain CSS imports",
+                "css.ts files mocked"
+            ]
+        },
+        {
+            "url": "in-2023-marketing-analytics-learn-the-basics.html",
+            "desc": "In 2023, Marketing + Analytics = $$$\n\nLearn the Basics of Python for Marketing Analytics for...",
+            "title": "in 2023 marketing analytics learn the basics",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Marketing Analytics",
+                "Data Camp",
+                "Learn the Basics",
+                "Python for Marketing",
+                "Marketing"
+            ]
+        },
+        {
+            "url": "sql-interview-questions.html",
+            "desc": "SQL interview Questions\n\n(A Thread)\n\ud83e\uddf5\ud83d\udc47 https://t.co/5vbsTZvLse1. What is the difference between \u201cStored Procedure\u201d and \u201cFunction\u201d?\n\n2.What is...",
+            "title": "sql interview questions",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "SQL interview Questions",
+                "Local Temporary Table",
+                "Primary Key",
+                "Temporary Table",
+                "Unique Key"
+            ]
+        },
+        {
+            "url": "the-html-structure-is-hard-but.html",
+            "desc": "The HTML structure is hard, but not anymore!\n\nGet the ReactJS repo link and deployed link...",
+            "title": "the html structure is hard but",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "HTML structure",
+                "structure is hard",
+                "HTML",
+                "deployed link",
+                "link"
+            ]
+        },
+        {
+            "url": "python-fcntl-or-the-fcntl-amp.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python fcntl, or the fcntl &amp; ioctl system calls, are two sets of functions...",
+            "title": "python fcntl or the fcntl amp",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python Standard Library",
+                "ioctl system calls",
+                "send special commands",
+                "fcntl system call",
+                "perform file control"
+            ]
+        },
+        {
+            "url": "how-can-you-use-javascript-to-add.html",
+            "desc": "How can you use JavaScript to add validation to input [type=\"text\"]?\n\nFollow this thread \ud83e\uddf5\n#HTML #CSS...",
+            "title": "how can you use javascript to add",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "CSS CODE",
+                "JavaScript Validation Code",
+                "add validation",
+                "CSS",
+                "HTML CODE"
+            ]
+        },
+        {
+            "url": "using-chatgpt-i-created-a-random.html",
+            "desc": "Using ChatGPT, I created a random D&amp;D Character generator and storage system from Python. Having...",
+            "title": "using chatgpt i created a random",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Character generator",
+                "Wizards",
+                "created a random",
+                "generator and storage",
+                "system from Python"
+            ]
+        },
+        {
+            "url": "i-started-learning-java-for-a-new.html",
+            "desc": "I started learning #Java for a new project I am working on. Here are some...",
+            "title": "i started learning java for a new",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Java",
+                "Oak",
+                "James Gosling",
+                "Sun Microsystems",
+                "programming"
+            ]
+        },
+        {
+            "url": "1-2-have-you-heard-of-aws.html",
+            "desc": "\ud83e\uddf5 1/2 Have you heard of AWS Cloud Quest? Did you know you can earn...",
+            "title": "1 2 have you heard of aws",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "AWS Cloud Quest",
+                "heard of AWS",
+                "Cloud Quest",
+                "AWS Cloud",
+                "Quest"
+            ]
+        },
+        {
+            "url": "this-morning-a-space-station-special.html",
+            "desc": "This morning a space station special event... both, the International Space Station ISS and China's...",
+            "title": "this morning a space station special",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "station special event",
+                "space station special",
+                "International Space Station",
+                "Tiangong Space Station",
+                "space station"
+            ]
+        },
+        {
+            "url": "starting-a-new-my-favorite-visual.html",
+            "desc": "Starting a new thread on my favorite Visual Studio Code extensions! First up: #1) Auto...",
+            "title": "starting a new my favorite visual",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "favorite Visual Studio",
+                "Visual Studio Code",
+                "Visual Studio",
+                "Auto Close Tag",
+                "Studio Code extensions"
+            ]
+        },
+        {
+            "url": "becoming-a-front-end-developer-requires.html",
+            "desc": "Becoming a front-end developer requires a strong foundation in HTML CSS &amp; JavaScript, as well...",
+            "title": "becoming a front end developer requires",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Practice practice practice",
+                "Practice practice",
+                "Introduction",
+                "front-end developer requires",
+                "responsive design"
+            ]
+        },
+        {
+            "url": "it-can-be-used-to-convert.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 It can be used to convert between different time formats &amp; perform time calculations.\n\u2022...",
+            "title": "it can be used to convert",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "perform time calculations",
+                "Python time module",
+                "time",
+                "Python time",
+                "time module"
+            ]
+        },
+        {
+            "url": "so-i-bought-rogue-legacy-2.html",
+            "desc": "Thread: So I bought Rogue Legacy 2 some days ago on @EpicGames because it was...",
+            "title": "so i bought rogue legacy 2",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "bought Rogue Legacy",
+                "Rogue Legacy",
+                "Linux gamers time",
+                "EpicGames purposefully ignores",
+                "AMD drivers."
+            ]
+        },
+        {
+            "url": "lets-understand-react-hooks-i-try.html",
+            "desc": "Lets understand  React Hooks \ud83d\udc47\n\nI try to explain in detail\n\n Hope you enjoy learn...",
+            "title": "lets understand react hooks i try",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "React",
+                "React Hooks",
+                "detail Hope",
+                "Hope you enjoy",
+                "understand React Hooks"
+            ]
+        },
+        {
+            "url": "roadmap-to-becoming-a-java-backend.html",
+            "desc": "Roadmap to Becoming a Java Backend Developer\n\n#Java #SoftwareEngineer #webdevelopment #backend #100DaysOfCode #javascript #Python #CodeNewbie #developer...",
+            "title": "roadmap to becoming a java backend",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "programming Open Thread",
+                "Java Backend Developer",
+                "Open Thread",
+                "Backend Developer",
+                "programming Open"
+            ]
+        },
+        {
+            "url": "upskill-from-frontend-developer-to-fullstack.html",
+            "desc": "Upskill from Frontend developer to Fullstack \n\nA thread \ud83e\uddf5\n\nDecide your stack: \nIt's essential to get...",
+            "title": "upskill from frontend developer to fullstack",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "beginner tutorial video",
+                "Upskill from Frontend",
+                "Tutorial Videos",
+                "People familiar",
+                "Explore resources"
+            ]
+        },
+        {
+            "url": "sql-tip-i-feel-many-people.html",
+            "desc": "\ud83d\udca1 SQL tip\nI feel many people know CTEs exist but don't actually use them. Here's...",
+            "title": "sql tip i feel many people",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Common Table Expression",
+                "CTEs",
+                "CTE",
+                "Table Expression",
+                "Common Table"
+            ]
+        },
+        {
+            "url": "python-copyreg-copy-reg-is-a-module.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python copyreg (copy_reg) is a module that allows customizing pickles, the Python serialization format...",
+            "title": "python copyreg copy reg is a module",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python serialization format",
+                "pickle support functions",
+                "pickle support",
+                "custom pickle support",
+                "support functions"
+            ]
+        },
+        {
+            "url": "javascript-one-liner-code-you-must.html",
+            "desc": "A #javascript one liner code you must know\ud83d\udc47\ud83c\udffe\nA #Thread\ud83d\udccd\n#programmers #developers #arrays \n  #webdevelopment...",
+            "title": "javascript one liner code you must",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "liner code",
+                "arrays",
+                "firstArray",
+                "const",
+                "array"
+            ]
+        },
+        {
+            "url": "why-semantic-html-semantic-html-refers.html",
+            "desc": "Why Semantic Html? \n\nSemantic HTML refers to the use of HTML tags that are semantically...",
+            "title": "why semantic html semantic html refers",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Semantic Html",
+                "semantic HTML tags.",
+                "Html",
+                "Semantic",
+                "Semantic HTML refers"
+            ]
+        },
+        {
+            "url": "array-methods-in-javascript-part-2.html",
+            "desc": "\u2728 Array Methods in Javascript Part 2 \u2728\n\nA thread \ud83e\uddf5 https://t.co/vBM4lMib6Rhttps://t.co/8cCdXHZclQhttps://t.co/KiyDoQxIbShttps://t.co/UAIRCupaHZhttps://t.co/RLdDH0sTmLhttps://t.co/GIRaoRmOCihttps://t.co/LPFMkC27taWell that's a wrap\n\nIf you...",
+            "title": "array methods in javascript part 2",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Web development content",
+                "Array Methods",
+                "Javascript Part",
+                "Methods in Javascript",
+                "https"
+            ]
+        },
+        {
+            "url": "hello-developers-i-have-written-a-blog.html",
+            "desc": "Hello Developers, I have written a blog on the topic Destructuring in JavaScript.\nDo give it...",
+            "title": "hello developers i have written a blog",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Developers",
+                "topic Destructuring",
+                "Destructuring",
+                "Nested Destructuring",
+                "Arrays and Objects"
+            ]
+        },
+        {
+            "url": "day-2-of-open-source-how.html",
+            "desc": "\ud83e\uddf5 Day 2 of open source: How to find a project. \n\n\u27a1\ufe0f Explored a bunch...",
+            "title": "day 2 of open source how",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "open source",
+                "Day",
+                "Explored a bunch",
+                "Searched projects",
+                "source"
+            ]
+        },
+        {
+            "url": "here-s-a-brief-new-animal.html",
+            "desc": "Here's a brief thread on new animal figures I just received from #CollectA. They're not...",
+            "title": "here s a brief new animal",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "African Bush elephant",
+                "African Bush",
+                "Melbourne Museum version",
+                "Green tree python",
+                "animal figures"
+            ]
+        },
+        {
+            "url": "hi-everyone-i-am-finally-back.html",
+            "desc": "Hi everyone! I am finally back from the break! \ud83d\ude00\n\nEnvironments in #Python are essential for...",
+            "title": "hi everyone i am finally back",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python",
+                "Check",
+                "articles",
+                "Check this article",
+                "Linux"
+            ]
+        },
+        {
+            "url": "a-year-in-wordpress-core-phew.html",
+            "desc": "2022 \u2014 A Year in #WordPress Core\u00a0\u2665\ufe0f\n\nPhew, took me some hours to put together this\ud83d\ude05\n\nRead...",
+            "title": "a year in wordpress core phew",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Core Committers",
+                "Core team shipped",
+                "Core",
+                "United States",
+                "WordPress Core"
+            ]
+        },
+        {
+            "url": "all-about-javascript-console.html",
+            "desc": "All about  \"JavaScript console.log() / write ()\"\n\nopen this \ud83e\uddf5 for a quick glance\ud83d\udc47\ud83c\udffb\ud83d\udd36 JavaScript...",
+            "title": "all about javascript console",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "quick glance",
+                "method writes",
+                "method",
+                "console.log",
+                "log"
+            ]
+        },
+        {
+            "url": "if-you-are-in-tech-or.html",
+            "desc": "If you are in Tech or plan to start a Tech Career this year then...",
+            "title": "if you are in tech or",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Tech Career",
+                "HTML templates",
+                "earning with HTML",
+                "HTML",
+                "Career this year"
+            ]
+        },
+        {
+            "url": "what-is-html-let-s-learn.html",
+            "desc": "What is HTML? Let's learn about it in a short Thread.\n\nHTML, or Hypertext Markup Language,...",
+            "title": "what is html let s learn",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Hypertext Markup Language",
+                "HTML",
+                "Markup Language",
+                "Hypertext Markup",
+                "Learning HTML"
+            ]
+        },
+        {
+            "url": "day-4-learning-html-what-i-learned.html",
+            "desc": "\ud83d\udcc5 Day 4 | Learning HTML\n\n\ud83d\udcaa What I Learned:\n\n\u2705 The Role of HTML\n\u2705 The Role...",
+            "title": "day 4 learning html what i learned",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Role of CSS",
+                "Learning HTML",
+                "Role of JavaScript",
+                "HTML Curious",
+                "Role"
+            ]
+        },
+        {
+            "url": "javascript-quiz.html",
+            "desc": "JavaScript Quiz Thread. \ud83e\uddf5\n\n#jskQuiz #18\nconst obj = {\n  name: 'JavaScript kingdom',\n  a: function()...",
+            "title": "javascript quiz",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "JavaScript Quiz Thread",
+                "Quiz Thread",
+                "JavaScript kingdom",
+                "JavaScript Quiz",
+                "const obj"
+            ]
+        },
+        {
+            "url": "css-oneliners-you-must-make-sure.html",
+            "desc": "3 CSS Oneliners you must make sure to use while starting a new project \ud83d\udc47\ud83c\udffb\n\nFollow...",
+            "title": "css oneliners you must make sure",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "CSS Oneliners",
+                "informative content",
+                "CSS",
+                "Thread",
+                "Webdesign"
+            ]
+        },
+        {
+            "url": "github-has-more-than-2-million.html",
+            "desc": "GitHub has more than 2 million repositories.\n\nHere are the 10 best repositories for JavaScript developers.\n\nThread...",
+            "title": "github has more than 2 million",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "https",
+                "t.co",
+                "JavaScript",
+                "million repositories",
+                "Numerous JavaScript MCQs"
+            ]
+        },
+        {
+            "url": "tale-from-indis-first-war-of-independence.html",
+            "desc": "A tale from India's first war of independence. India's future was eclipsed in the shadow...",
+            "title": "tale from indis first war of independence",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Bahadur Shah Zafar",
+                "Freedom fighters",
+                "Bahadur Shah",
+                "Shah Zafar",
+                "Delhi"
+            ]
+        },
+        {
+            "url": "in-october-2022-i-was-curious.html",
+            "desc": "In October, 2022, I was curious to know what quant trading feels like. That was...",
+            "title": "in october 2022 i was curious",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "quant trading feels",
+                "quant trading",
+                "trading feels",
+                "witnessed John perform",
+                "October"
+            ]
+        },
+        {
+            "url": "top-15-best-tools-for-front.html",
+            "desc": "Top 15 Best Tools for Front-end Web Development\n\ud83e\uddf5\n\n#javascript #Python #codinglife #programming #github #HTML #vscode #TypeScript...",
+            "title": "top 15 best tools for front",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Front-end Web Development",
+                "Web Development",
+                "Tools for Front-end",
+                "Front-end Web",
+                "Development"
+            ]
+        },
+        {
+            "url": "speak-html-love-html-live-html.html",
+            "desc": "Speak HTML, love HTML, live HTML \u2013 it's the language of the web and your...",
+            "title": "speak html love html live html",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Speak HTML",
+                "HTML",
+                "start learning HTML",
+                "live HTML",
+                "learning HTML"
+            ]
+        },
+        {
+            "url": "ten-things-you-likely-don-t.html",
+            "desc": "Ten Things You Likely Don\u2019t Know About WordPress - A Thread: See How Many You...",
+            "title": "ten things you likely don t",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Ten Things",
+                "WordPress",
+                "Ten",
+                "Thread",
+                "Things"
+            ]
+        },
+        {
+            "url": "day-32-of-100daysofcode-today-i-learned.html",
+            "desc": "Day 32 of #100DaysOfCode Today I learned - \n\u2705Docker Architecture\n\nDocker uses client server architecure for...",
+            "title": "day 32 of 100daysofcode today i learned",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Docker Architecture Docker",
+                "Docker",
+                "client server architecure",
+                "Today I learned",
+                "Docker Daemon"
+            ]
+        },
+        {
+            "url": "this-long-weekend-had-fun-learning.html",
+            "desc": "This long weekend had fun learning new things. First time cooked panner tikka and built...",
+            "title": "this long weekend had fun learning",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "learning new things",
+                "long weekend",
+                "weekend had fun",
+                "fun learning",
+                "Trap Nation YouTube"
+            ]
+        },
+        {
+            "url": "aws-certifications-as-a-junior-developer.html",
+            "desc": "AWS certifications as a junior developer are pretty useless\n\nIf your goal for 2023 is to...",
+            "title": "aws certifications as a junior developer",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "certified AWS developers",
+                "Qualified Companies",
+                "certifications Certified",
+                "AWS developers complaining",
+                "certified AWS"
+            ]
+        },
+        {
+            "url": "on-ahead-of-time-aot-compiled.html",
+            "desc": "A \ud83e\uddf5 on Ahead-of-time (AOT) compiled language( Rust, C/C++) vs Just-in-time (JIT) compiled language(Solidity, Java)....",
+            "title": "on ahead of time aot compiled",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "compiled language",
+                "JIT language",
+                "AOT",
+                "machine",
+                "virtual machine"
+            ]
+        },
+        {
+            "url": "as-a-university-student-you-can.html",
+            "desc": "As a university student, you can access many paid tools for free through the GitHub...",
+            "title": "as a university student you can",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Student Developer Pack",
+                "GitHub Student Developer",
+                "Developer Pack",
+                "Student Developer",
+                "Azure credits Sign"
+            ]
+        },
+        {
+            "url": "python-pwd-is-a-library-for-securely.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python pwd is a library for securely storing &amp; retrieving passwords in a secure...",
+            "title": "python pwd is a library for securely",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python pwd",
+                "securely storing",
+                "retrieving passwords",
+                "secure",
+                "Python"
+            ]
+        },
+        {
+            "url": "javascript-logical-assignment-operators-100daysofcodejavascript-logical.html",
+            "desc": "JavaScript logical Assignment Operators\nA Thread \ud83e\uddf5\n#100DaysOfCodeJavaScript logical Assignment Operators\n\n- JavaScript logical assignment operators were introduced...",
+            "title": "javascript logical assignment operators 100daysofcodejavascript logical",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "JavaScript logical Assignment",
+                "logical Assignment Operators",
+                "assignment operator",
+                "logical Assignment",
+                "JavaScript logical"
+            ]
+        },
+        {
+            "url": "top-10-python-of-2022-free.html",
+            "desc": "Top 10 Python thread of 2022 \n\ud83e\uddf5:Free Artificial intelligence Books \n\ud83e\uddf5:\nhttps://t.co/tfgr3B5YkY15 Useful Snippets to Code...",
+            "title": "top 10 python of 2022 free",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Free Machine Learning",
+                "Machine Learning pdf",
+                "Artificial intelligence Books",
+                "Free Artificial intelligence",
+                "Snippets to Code"
+            ]
+        },
+        {
+            "url": "build-your-own-mini-chatgpt-using-openai.html",
+            "desc": "Build Your own mini ChatGPT using OpenAI and Gradio\n\nWhy wait in the queue, when you...",
+            "title": "build your own mini chatgpt using openai",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "steps using Python",
+                "OpenAI and Gradio",
+                "Gradio Why wait",
+                "mini ChatGPT",
+                "ChatGPT bot"
+            ]
+        },
+        {
+            "url": "github-repos-to-learn-amp-master.html",
+            "desc": "GitHub Repos to Learn &amp; master Javascript \n\nA Thread \ud83e\uddf5\u2764\ufe0f\n\n#javascriptYou Don\u2019t Know JS: This is...",
+            "title": "github repos to learn amp master",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Clean Code concepts",
+                "Code concepts adapted",
+                "Repos to Learn",
+                "Clean Code",
+                "GitHub Repos"
+            ]
+        },
+        {
+            "url": "day-4-sql-learning-various-syntax.html",
+            "desc": "Day 4: SQL Learning\n\n\u2705Various Syntax in SQL\n\nA Thread \ud83e\uddf5\u2935\ufe0fSQL SELECT Statement\n\nSELECT column1, column2....columnN\nFROM...",
+            "title": "day 4 sql learning various syntax",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Clause SELECT",
+                "table",
+                "ALTER TABLE table",
+                "SQL",
+                "TABLE table"
+            ]
+        },
+        {
+            "url": "top-3-javascript-libraries-for-developing.html",
+            "desc": "Top 3 JavaScript libraries for developing PWA user interfaces.\n\nWith constant technology upgradation, there are many...",
+            "title": "top 3 javascript libraries for developing",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "PWA user interfaces",
+                "\ud835\udc1f\ud835\udc28\ud835\udc2b \ud835\udc0f\ud835\udc16\ud835\udc00 \ud835\udc1d\ud835\udc1e\ud835\udc2f\ud835\udc1e\ud835\udc25\ud835\udc28\ud835\udc29\ud835\udc26\ud835\udc1e\ud835\udc27\ud835\udc2d",
+                "developing PWA user",
+                "\ud835\udc0f\ud835\udc16\ud835\udc00 \ud835\udc1d\ud835\udc1e\ud835\udc2f\ud835\udc1e\ud835\udc25\ud835\udc28\ud835\udc29\ud835\udc26\ud835\udc1e\ud835\udc27\ud835\udc2d",
+                "\ud835\udc00\ud835\udc27\ud835\udc20\ud835\udc2e\ud835\udc25\ud835\udc1a\ud835\udc2b \ud835\udc1f\ud835\udc28\ud835\udc2b \ud835\udc0f\ud835\udc16\ud835\udc00"
+            ]
+        },
+        {
+            "url": "what-you-need-to-know-about-comments.html",
+            "desc": "What you need to know about comments in #Python. #100DaysOfCode \n\nThread\ud83d\udc47 \n\n1. Comments are used...",
+            "title": "what you need to know about comments",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "comments",
+                "Python",
+                "line",
+                "comment",
+                "World"
+            ]
+        },
+        {
+            "url": "of-witty-career-jokes-i-have.html",
+            "desc": "A THREAD OF WITTY CAREER JOKES\n\nI have an electrical joke but it is shocking\n\nI have...",
+            "title": "of witty career jokes i have",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "WITTY CAREER JOKES",
+                "THREAD OF WITTY",
+                "WITTY CAREER",
+                "joke",
+                "CAREER JOKES"
+            ]
+        },
+        {
+            "url": "it-is-possible-to-route-postgresql.html",
+            "desc": "It is possible to route #PostgreSQL traffic to multiple backend servers through a single load...",
+            "title": "it is possible to route postgresql",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "TLS",
+                "multiple backend servers",
+                "SNI",
+                "multiple backend",
+                "decrypt HTTPS traffic"
+            ]
+        },
+        {
+            "url": "some-most-important-git-commands-every.html",
+            "desc": "Some most important Git commands every developer should know:\n\n\ud83d\udcccYou may save this thread for future...",
+            "title": "some most important git commands every",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Git",
+                "important Git commands",
+                "future reference",
+                "thread for future",
+                "remote"
+            ]
+        },
+        {
+            "url": "here-is-a-quick-explanation-of-data.html",
+            "desc": "Here is a quick explanation of data types in JavaScript. \n\nData types can be divided...",
+            "title": "here is a quick explanation of data",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "data types",
+                "primitive data types",
+                "represent",
+                "data",
+                "types"
+            ]
+        },
+        {
+            "url": "captured-moment-my-first-open-edition.html",
+            "desc": "\"Captured Moment\"\nmy first Open Edition\n\nDROPPING\n@niftygateway\nJan. 5, 8PM UTC\n$99 \n\nALSO SHOWING \n@MecenateFineArt \nJan. 24 &amp; 25\nRome,...",
+            "title": "captured moment my first open edition",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Open Edition DROPPING",
+                "Edition DROPPING",
+                "Open Edition",
+                "Captured Moment",
+                "DROPPING"
+            ]
+        },
+        {
+            "url": "did-you-know-that-java-15.html",
+            "desc": "Did you know that Java 15 introduces sealed classes and hidden classes? \ud83e\uddf5\ud83d\udc47\n#Java #programmer #programmingSealed...",
+            "title": "did you know that java 15",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "introduces sealed classes",
+                "sealed classes",
+                "introduces sealed",
+                "hidden classes",
+                "classes"
+            ]
+        },
+        {
+            "url": "check-out-this-the-spread-and-rest.html",
+            "desc": "Check out this thread on the spread and rest operators - we'll cover what they...",
+            "title": "check out this the spread and rest",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Spread operator",
+                "Rest operator",
+                "operator",
+                "spread",
+                "rest"
+            ]
+        },
+        {
+            "url": "reasons-why-keys-are-crucial-in-reactjs.html",
+            "desc": "5 reasons why Keys are crucial in ReactJS. \ud83e\uddf5 https://t.co/95dgtJhU1p1/ #Keys in #ReactJS are important...",
+            "title": "reasons why keys are crucial in reactjs",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Keys",
+                "rendering dynamic children",
+                "causing slower performance.",
+                "React identify",
+                "reasons why Keys"
+            ]
+        },
+        {
+            "url": "popular-python-libraries-for-data-science.html",
+            "desc": "Popular Python libraries for Data science (a thread \ud83e\uddf5)\n\nPython libraries assists in sub-domains like \n-...",
+            "title": "popular python libraries for data science",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Data",
+                "Data Mining",
+                "categorization based explanation",
+                "Python",
+                "Data Processing"
+            ]
+        },
+        {
+            "url": "interesting-facts-about-the-javascript-proxy.html",
+            "desc": "10 interesting facts about the JavaScript Proxy API \ud83e\uddf5 \ud83d\udc47\ud83c\udffe1. The JavaScript Proxy API is...",
+            "title": "interesting facts about the javascript proxy",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Proxy class",
+                "JavaScript Proxy API",
+                "Proxy",
+                "Proxy API",
+                "proxy object"
+            ]
+        },
+        {
+            "url": "guys-are-you-learning-css-and-you.html",
+            "desc": "Guys, are you learning CSS and you don't know if you're ready to make projects?\n\nHere...",
+            "title": "guys are you learning css and you",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Guys",
+                "CSS",
+                "make",
+                "make projects",
+                "concepts"
+            ]
+        },
+        {
+            "url": "python-pathlib-is-an-object-oriented.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python Pathlib is an object-oriented filesystem path library that enables a user to work...",
+            "title": "python pathlib is an object oriented",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "filesystem path library",
+                "Pathlib",
+                "library that enables",
+                "enables a user",
+                "user to work"
+            ]
+        },
+        {
+            "url": "it-took-me-months-to-find.html",
+            "desc": "It took me months to find simple steps, and you are getting it in 5...",
+            "title": "it took me months to find",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "find simple steps",
+                "GOLDEN easy steps",
+                "Profile",
+                "months to find",
+                "find simple"
+            ]
+        },
+        {
+            "url": "daysofcode-day-13-been-working-on.html",
+            "desc": "#100DaysOfCode , day 13!!\n\nBeen working on my to-do list app, still a lot to be...",
+            "title": "daysofcode day 13 been working on",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Dynamic Bubble Background",
+                "https",
+                "t.co",
+                "Bubble Background",
+                "Bubble background Source"
+            ]
+        },
+        {
+            "url": "once-upon-a-time-in-the-dark.html",
+            "desc": "Once upon a time, in the dark ages of the internet, websites were hosted on...",
+            "title": "once upon a time in the dark",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "LAMP stack",
+                "bucket of PHP",
+                "Internal Server Error",
+                "dark ages",
+                "dedicated servers running"
+            ]
+        },
+        {
+            "url": "new-resource-is-now-available-for-the-multiversxbuilders.html",
+            "desc": "1/3\nA new \ud83d\ude0e resource is now available for the #MultiversXBuilders \u26a1\ufe0f\n\n@goChargeHQ has open-sourced their erdjs-vue...",
+            "title": "new resource is now available for the multiversxbuilders",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "vuejs Vue",
+                "erdjs-vue plugin",
+                "build",
+                "Vue",
+                "goChargeHQ"
+            ]
+        },
+        {
+            "url": "python-difflib-is-a-library-of-algorithms.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python difflib is a library of algorithms &amp; functions that allow users to compare...",
+            "title": "python difflib is a library of algorithms",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python difflib",
+                "including strings",
+                "users to compare",
+                "dynamic programming algorithm",
+                "function"
+            ]
+        },
+        {
+            "url": "python-getpass-is-a-portable-password.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 Python getpass is a portable password input library that enables users to securely type...",
+            "title": "python getpass is a portable password",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "portable password input",
+                "shoulder surfing",
+                "malicious surveillance",
+                "echoed back",
+                "protect from shoulder"
+            ]
+        },
+        {
+            "url": "i-made-1-190-code-contributions.html",
+            "desc": "I made 1,190 code contributions last year on Git Hub. \n\nMost people have made lesser...",
+            "title": "i made 1 190 code contributions",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Git Hub",
+                "year on Git",
+                "code contributions",
+                "contributions last year",
+                "Hub"
+            ]
+        },
+        {
+            "url": "av2023-spotlight-latin-for-beginners-tutor.html",
+            "desc": "AV2023 SPOTLIGHT: Latin for Beginners\n\n(Tutor: Dr Sarah Wolstencroft)\n(Wednesdays: 18.00-20.00)\n\nWhether you want to try Latin for...",
+            "title": "av2023 spotlight latin for beginners tutor",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Monty Python joke",
+                "Monty Python",
+                "Sarah Wolstencroft",
+                "Python joke",
+                "scrape the rust"
+            ]
+        },
+        {
+            "url": "the-global-work-from-anywhere-revolution.html",
+            "desc": "The global \"work from anywhere\" revolution is here.\n\nBut you need the skills and mindset to...",
+            "title": "the global work from anywhere revolution",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Set SMART goals",
+                "work",
+                "Set",
+                "Efficient remote work",
+                "working remotely"
+            ]
+        },
+        {
+            "url": "amidst-all-data-analyst-skills-critical.html",
+            "desc": "Amidst all data analyst skills, critical thinking is the most underrated. Don't get me wrong...",
+            "title": "amidst all data analyst skills critical",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "data",
+                "data analyst skills",
+                "Amidst",
+                "data analyst",
+                "wrong SQL"
+            ]
+        },
+        {
+            "url": "web3-is-a-decentralised-network-of-services.html",
+            "desc": "Web3 is a decentralised network of services that provide the internet. It encompasses a range...",
+            "title": "web3 is a decentralised network of services",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "decentralised",
+                "JavaScript and CSS",
+                "decentralised internet",
+                "decentralised network",
+                "services"
+            ]
+        },
+        {
+            "url": "day-12-on-jpmorgan-sql-questions.html",
+            "desc": "Day -12 on #JPMorgan SQL Questions Series \n\n\ud83e\uddf5\ud83d\udc47Q12) Write a query that outputs the name...",
+            "title": "day 12 on jpmorgan sql questions",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "SQL Questions Series",
+                "JPMorgan SQL Questions",
+                "Questions Series",
+                "Data Science Learners",
+                "cards issued"
+            ]
+        },
+        {
+            "url": "the-essentials-you-need-to-know.html",
+            "desc": "The Essentials you need to know about Meta Tags in HTML\n\nA Thread \ud83e\uddf5 \ud83d\udc47\ud83c\udffb https://t.co/JLsv4KxVbxIf...",
+            "title": "the essentials you need to know",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Responsive Web Design",
+                "HTML Head Tags",
+                "learned about Responsive",
+                "Web Design",
+                "Responsive Web"
+            ]
+        },
+        {
+            "url": "there-are-many-great-github-repositories.html",
+            "desc": "There are many great GitHub repositories for React developers. Here are a few that I...",
+            "title": "there are many great github repositories",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "great GitHub repositories",
+                "great GitHub",
+                "GitHub repositories",
+                "React",
+                "React Boilerplate"
+            ]
+        },
+        {
+            "url": "if-you-are-coming-from-a-javascript.html",
+            "desc": "If you are coming from a JavaScript background and are planning to learn @rustlang, I...",
+            "title": "if you are coming from a javascript",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Rust",
+                "TypeScript",
+                "type system",
+                "learning rust",
+                "type"
+            ]
+        },
+        {
+            "url": "1-2-excited-to-share-that.html",
+            "desc": "\ud83e\uddf5 1/2 Excited to share that I've been putting in some work to update and...",
+            "title": "1 2 excited to share that",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "dotnet SDK",
+                "Excited to share",
+                "AzureCosmosDB repository-pattern",
+                "NET",
+                "Excited"
+            ]
+        },
+        {
+            "url": "here-are-15-methods-you-should.html",
+            "desc": "Here are 15 methods you should know about JavaScript array Manipulation: [A Thread \ud83e\uddf5]1. push():...",
+            "title": "here are 15 methods you should",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "array",
+                "JavaScript array Manipulation",
+                "returns",
+                "array Manipulation",
+                "element"
+            ]
+        },
+        {
+            "url": "python-tip-default-arguments-in-functions.html",
+            "desc": "Python tip;\n\nDefault arguments in functions.\n\n\ud83e\uddf5short thread.\n\nDefault arguments allow one to set default values for parameters,...",
+            "title": "python tip default arguments in functions",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python tip",
+                "Default",
+                "Python",
+                "Default arguments",
+                "greet"
+            ]
+        },
+        {
+            "url": "item-2-consider-a-builder-when.html",
+            "desc": "Item 2: Consider a builder when faced with many constructor parameters \n\n\ud83e\uddf5\u2b07\ufe0f\n\n#Java #Programming #JavaDeveloper #CodingStatic...",
+            "title": "item 2 consider a builder when",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "avoids directly making",
+                "Pattern avoids directly",
+                "Builder Pattern avoids",
+                "Static factories",
+                "optional parameters"
+            ]
+        },
+        {
+            "url": "events-in-react-a-events-in-react.html",
+            "desc": "Events in React \nA \ud83e\uddf5\n\nEvents in react are  just like events in JavaScript. The...",
+            "title": "events in react a events in react",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Event Handler",
+                "event",
+                "Passing Event handler",
+                "function",
+                "Event Handler Attribute"
+            ]
+        },
+        {
+            "url": "some-interesting-facts-about-data-analytics.html",
+            "desc": "Some interesting facts about Data Analytics.\n\n#Thread #DataAnalytics #rstats #PythonData analytics can be used to uncover...",
+            "title": "some interesting facts about data analytics",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Data",
+                "Data Analytics",
+                "Data analysts",
+                "Python",
+                "Thread"
+            ]
+        },
+        {
+            "url": "on-computer-programming-concepts.html",
+            "desc": "A thread \ud83e\uddf5 on Computer Programming Concepts.\n#AspNetCore #csharp #Azure #Microsoft #computer #programming #dotnet #IamOlasupo #rytesoftng...",
+            "title": "on computer programming concepts",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Computer Programming Concepts",
+                "Programming Concepts",
+                "Computer Programming",
+                "Concepts",
+                "https"
+            ]
+        },
+        {
+            "url": "hey-coding-community-are-you-new.html",
+            "desc": "Hey #coding community!\n\nAre you new to web development? HTML is the perfect place to start!...",
+            "title": "hey coding community are you new",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "HTML",
+                "web",
+                "coding community",
+                "Hey",
+                "web development"
+            ]
+        },
+        {
+            "url": "angularin2min-angular-100daysofcode-100daysofcodechallenge-coding-decorators.html",
+            "desc": "#AngularIn2Min #Angular #100DaysOfCode #100daysofcodechallenge #coding \nDecorators\ud83d\udd25 one of the core concepts of Angular:\nLets Understand it...",
+            "title": "angularin2min angular 100daysofcode 100daysofcodechallenge coding decorators",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Decorators",
+                "coding Decorators",
+                "Angular",
+                "Method Decorators",
+                "class"
+            ]
+        },
+        {
+            "url": "dream-life-by-erittage-hits-1k.html",
+            "desc": "DREAM LIFE by ERITTAGE hits 1k streams on Spotify.\n\nA thread \u2b07\ufe0f https://t.co/eYmbY6hcSShttps://t.co/tH9VktgpLhOn the 19 July,...",
+            "title": "dream life by erittage hits 1k",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "DREAM LIFE",
+                "ERITTAGE hits",
+                "featuring MERCIEY CUTIEY",
+                "streams on Spotify",
+                "Nigerian Fast rising"
+            ]
+        },
+        {
+            "url": "making-changes-to-a-wordpress-site.html",
+            "desc": "Making changes to a #WordPress site without testing them out can lead to a DISASTER...",
+            "title": "making changes to a wordpress site",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "site CREATE",
+                "staging site",
+                "Making",
+                "CREATE a staging",
+                "site"
+            ]
+        },
+        {
+            "url": "module-3-working-with-dom-document.html",
+            "desc": "Module 3: Working with DOM\n(Document Object Model)\n\nThread \ud83e\uddf5\nHello there, happy new year once again, hope...",
+            "title": "module 3 working with dom document",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Document Object Model",
+                "Object Model",
+                "Document Object",
+                "element",
+                "Document"
+            ]
+        },
+        {
+            "url": "python-s-standard-library-provides-various.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\nPython\u2019s standard library provides various modules for implementing various types of protocols such as HTTP,...",
+            "title": "python s standard library provides various",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python \u2019s standard",
+                "Python",
+                "standard library",
+                "standard",
+                "module"
+            ]
+        },
+        {
+            "url": "tailwind-css-component-libraries-for-frontend.html",
+            "desc": "Tailwind CSS Component Libraries for Frontend developers \ud83e\uddf5\ud83d\udc471. daisyUI\nhttps://t.co/m626CoythN2. Tailwindcomponents\nhttps://t.co/Mjkgyd5zI03. Float UI { @float_ui }\nhttps://t.co/v2ePdwscXO4....",
+            "title": "tailwind css component libraries for frontend",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "CSS Component Libraries",
+                "Tailwind CSS Component",
+                "CSS Component",
+                "Component Libraries",
+                "Libraries for Frontend"
+            ]
+        },
+        {
+            "url": "of-100daysofcode-with-python-learnt-about-the-finally.html",
+            "desc": "#37 of #100DaysOfCode with #Python\n\nLearnt about the finally clause.\nIt can be paired with try-except block,...",
+            "title": "of 100daysofcode with python learnt about the finally",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python Learnt",
+                "Python",
+                "Learnt",
+                "finally block",
+                "finally"
+            ]
+        },
+        {
+            "url": "javascript-project-ideas-for-beginners-with-source.html",
+            "desc": "JavaScript Project Ideas for beginners with source code &amp; links \ud83d\udc47\ud83e\uddf5 https://t.co/aEfeYlzdgYTemperature Conversion:\nhttps://t.co/6Pw71S7ysuCalculator\nhttps://t.co/gUiJI7fVz0Tic Tac Toe\nhttps://t.co/YrzpcEB9MyTo...",
+            "title": "javascript project ideas for beginners with source",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Tic Tac Toe",
+                "Random Password Generator",
+                "Snake Ladder Game",
+                "JavaScript Project Ideas",
+                "Temperature Conversion"
+            ]
+        },
+        {
+            "url": "on-day-2-30-of-the-backend.html",
+            "desc": "On Day 2/30 of the Backend development challenge, let's understand NodeJS in 5 Tweets \ud83e\uddf51/5:...",
+            "title": "on day 2 30 of the backend",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Popular Tech companies",
+                "Backend development challenge",
+                "Popular Tech",
+                "understand NodeJS",
+                "Backend development"
+            ]
+        },
+        {
+            "url": "oop-in-python-repr-method-in-python.html",
+            "desc": "\ud83d\udc0d OOP in Python\n\n\u2757 __repr__ method in Python class is meant for developers &amp; should...",
+            "title": "oop in python repr method in python",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Object oriented programming",
+                "video on Object",
+                "Object oriented",
+                "OOP in Python",
+                "Full time Software"
+            ]
+        },
+        {
+            "url": "i-ve-worked-on-11-mobile.html",
+            "desc": "I've worked on 11+ Mobile app projects as an engineer for half a decade and...",
+            "title": "i ve worked on 11 mobile",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "React Native",
+                "Native",
+                "React",
+                "React Native strong",
+                "engineer for half"
+            ]
+        },
+        {
+            "url": "when-we-need-to-repeat-actions.html",
+            "desc": "When we need to repeat actions, loops can be very useful.\n\nHere's a brief overview on...",
+            "title": "when we need to repeat actions",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "loop",
+                "repeat actions",
+                "condition",
+                "loops",
+                "executed"
+            ]
+        },
+        {
+            "url": "arrays-are-an-essential-data-type.html",
+            "desc": "Arrays are an essential data type in any programming language, and JavaScript is no exception.\n\nTypes...",
+            "title": "arrays are an essential data type",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Arrays",
+                "Simple arrays",
+                "Sparse arrays",
+                "Multidimensional arrays",
+                "Associative arrays"
+            ]
+        },
+        {
+            "url": "there-are-more-than-19-web.html",
+            "desc": "There are more than 19 web frameworks in python.\n\nBut 99% of data scientists are overlooking...",
+            "title": "there are more than 19 web",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "python",
+                "Shiny",
+                "Shiny python app",
+                "Shiny python",
+                "Shiny for Python"
+            ]
+        },
+        {
+            "url": "did-you-know-chrome-firefox-and-safari.html",
+            "desc": "Did you know: Chrome, Firefox and Safari all disagree on how important certain types of...",
+            "title": "did you know chrome firefox and safari",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Safari",
+                "Chrome",
+                "Firefox",
+                "HTTP Request header",
+                "HTTP"
+            ]
+        },
+        {
+            "url": "the-top-10-python-libraries-you.html",
+            "desc": "The Top 10 Python Libraries You Need to Master Data Science! \ud83e\udd29\n\n\u2b50\ufe0fTensorFlow\n\u2b50\ufe0fNumPy\n\u2b50\ufe0fSciPy \n\u2b50\ufe0fPandas\n\u2b50\ufe0fMatplotlib \n\u2b50\ufe0fKeras\n\u2b50\ufe0fSciKit-Learn\n\u2b50\ufe0fPyTorch\n\u2b50\ufe0fScrapy\n\u2b50\ufe0fBeautifulSoup\n\nMore Libraries...",
+            "title": "the top 10 python libraries you",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Master Data Science",
+                "Data Science",
+                "Master Data",
+                "Python Libraries",
+                "BONUS"
+            ]
+        },
+        {
+            "url": "here-is-a-html-tip-you.html",
+            "desc": "\u2666\ufe0f Here is a HTML tip you probably didn't know before. \ud83d\udc47\ud83e\uddf5\n\nYou can use the...",
+            "title": "here is a html tip you",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "HTML tip",
+                "DOM multiple times",
+                "HTML",
+                "template element",
+                "template"
+            ]
+        },
+        {
+            "url": "the-sony-psx-dvr-uses-similar.html",
+            "desc": "The Sony PSX DVR uses similar hdd keying techiques as the Konami Python 2 arcade...",
+            "title": "the sony psx dvr uses similar",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Sony PSX DVR",
+                "Sony PSX",
+                "PSX DVR",
+                "similar hdd keying",
+                "hdd keying techiques"
+            ]
+        },
+        {
+            "url": "pydbg-is-a-debugging-framework-for-python.html",
+            "desc": "\ud83d\udc0d\ud83e\uddf5\n\u2022 PyDBG is a debugging framework for Python applications.\n\u2022 It enables developers to debug their...",
+            "title": "pydbg is a debugging framework for python",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Python applications",
+                "debugging framework",
+                "framework for Python",
+                "code",
+                "Python"
+            ]
+        },
+        {
+            "url": "some-steps-i-followed-to-start.html",
+            "desc": "Some steps I followed to start with ReactJs projects.\n\nA thread \ud83e\uddf51. When I started creating...",
+            "title": "some steps i followed to start",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "creating apps",
+                "learn Redux",
+                "Redux",
+                "ReactJs projects",
+                "React projects make"
+            ]
+        },
+        {
+            "url": "turborepo-vs-nx-i-just-moved.html",
+            "desc": "Turborepo VS NX\nI just moved most of our repositories to a mono-repo. \n\nFirst, I tried...",
+            "title": "turborepo vs nx i just moved",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Turborepo",
+                "docker",
+                "moved",
+                "repositories",
+                "hours"
+            ]
+        },
+        {
+            "url": "stop-using-console-log-in-javascript.html",
+            "desc": "\u2b50\ufe0f Stop Using Console Log() In JavaScript !\u2b50\ufe0f\nWhy?\n\nFollow the below steps to know why we...",
+            "title": "stop using console log in javascript",
+            "date": "2023-01-15 07:15:31.088327",
+            "tags": [
+                "Console Log",
+                "Stop Using Console",
+                "Log",
+                "Console",
+                "Stop"
+            ]
         }
     ]
 }
