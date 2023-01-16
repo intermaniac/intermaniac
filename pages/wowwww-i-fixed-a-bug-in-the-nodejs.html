@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Wowwww I fixed a bug in the @Nodejs core that allows you now mock static...">
+    <meta name="author" content="Team intermaniac">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Wowwww i fixed a bug in the @nodejs core that...</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+  </head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BWRY8HGLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5BWRY8HGLE');
+</script>
+
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><h2>Technology Blog<em>.</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">Blog Entries</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link d-none" href="../post-details.html">Post Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h2>Wowwww i fixed a bug in the @nodejs core that...</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section class="blog-posts grid-system">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="all-blog-posts">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="blog-post">
+                    <div class="blog-thumb d-none">
+                      <img src="../assets/images/blog-post-02.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                      <span>Wowwww i fixed a bug in the @nodejs core that...</span>
+                      <a href="#"><h4>Wowwww I fixed a bug in the @Nodejs core that allows you now mock static...</h4></a>
+                      <ul class="post-info">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">2023-01-16 07:15:32.223468</a></li>
+
+                      </ul>
+                      <p>Wowwww I fixed a bug in the @Nodejs core that allows you now mock static and instance methods in JS classes 🤯🤩
+
+🧵/1
+
+#nodejs #javascript #nodejscore #developer #opensource #bugfix #100daysofcode #devlife #Metaprogramming <a href="https://t.co/p2Ay95vQEv">https://t.co/p2Ay95vQEv</a><br><br>I don't know if you're following the Node.js test module but it's been wild! 🔥
+
+In the last few months, many new features came to the module such as watch mode, custom reports, and improvements for mocking, stubbing, and spying functions.
+
+/2<br><br>Not only new features but many bug fixes are being released as it's still in the Experimental stage
+
+/3<br><br>The bug fixes I most liked were related to the tap output that was almost rewritten and the --watch mode that was enabled to work with tests allowing us to only rerun tests that were changed 🤯
+
+/4<br><br>Likely sinon, Node.js now has a Mock class that allows us to stub, spy, and mock object instances
+
+/5<br><br>I was doing a live stream on my youtube channel about the Node.js test runner and noticed that object instances were working fine but when I was trying to use class instances it was throwing some errors.
+
+/6<br><br>That's how I noticed this might be a bug and I'd fix it as soon as I could 🥳
+
+/7<br><br>In summary, this fix took me almost a month from the first version I delivered to finally pass through all reviewers and finally get merged into the main Node.js branch.
+
+/8<br><br>If you take a look at the files changed you'll notice that there are more tests than changes to make it work 😍
+
+/9<br><br>That's because class instances may have inheritance thus I'd recursively iterate in the whole instance tree to check whether the function was properly mocked or not 😬
+
+/10<br><br>Fixing this bug, I learned a lot about #Metaprogramming in JavaScript especially because I had to make sure that the new implementation wouldn't break what was already working and add this complex new rule for classes.
+
+/11<br><br>Take a look at the files changed I think you also may learn a lot from there 🤩
+
+👉🏻https://t.co/iSMUo4ddSf
+
+/12</p>
+                      <div class="post-options">
+                        <div class="row">
+                          <div class="col-12">
+                            <ul class="post-tags">
+                              <li><i class="fa fa-tags"></i></li>
+								<li><a href="#">Node.js test module</a></li>
+<li><a href="#">Nodejs core</a></li>
+<li><a href="#">Node.js test</a></li>
+<li><a href="#">mock object instances</a></li>
+<li><a href="#">Node.js test runner</a></li>
+                            </ul>
+                          </div>
+                          <!--<div class="col-6">
+                            <ul class="post-share">
+                              <li><i class="fa fa-share-alt"></i></li>
+                              <li><a href="#">Facebook</a>,</li>
+                              <li><a href="#"> Twitter</a></li>
+                            </ul>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item comments">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+                      <ul>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item submit-comment">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sidebar-item search">
+                    <form id="search_form" name="gs" method="GET" action="#">
+                      <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item recent-posts d-none">
+                    <div class="sidebar-heading">
+                      <h2>Recent Posts</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="post-details.html">
+                          <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
+                          <span>May 31, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
+                          <span>May 28, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
+                          <span>May 14, 2020</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item categories d-none">
+                    <div class="sidebar-heading">
+                      <h2>Categories</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="#">- Nature Lifestyle</a></li>
+                        <li><a href="#">- Awesome Layouts</a></li>
+                        <li><a href="#">- Creative Ideas</a></li>
+                        <li><a href="#">- Responsive Templates</a></li>
+                        <li><a href="#">- HTML5 / CSS3 Templates</a></li>
+                        <li><a href="#">- Creative &amp; Unique</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item tags">
+                    <div class="sidebar-heading">
+                      <h2>Tag Clouds</h2>
+                    </div>
+                    <div class="content d-none">
+                      <ul>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Motivation</a></li>
+                        <li><a href="#">PSD</a></li>
+                        <li><a href="#">Responsive</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Dribbble</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <div class="copyright-text">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/owl.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/isotope.js"></script>
+    <script src="../assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+<!--2768229906858160161-->
+
+  </body>
+
+</html>

@@ -5,11 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python 3.11 comes with a new tomllib package in the standard library. It allows us...">
+    <meta name="description" content="🐍 Python 3.4 introduced support for Enum
+
+A  short 🧵  on
+🔵 What are Enum...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python 3.11 comes with a new tomllib package in the...</title>
+    <title>🐍 python 3.4 introduced support for enum
+
+a  short 🧵...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +26,18 @@
     <link rel="stylesheet" href="../assets/css/owl.css">
 
   </head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BWRY8HGLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5BWRY8HGLE');
+</script>
+
 
   <body>
 
@@ -75,7 +92,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python 3.11 comes with a new tomllib package in the...</h2>
+                <h2>🐍 python 3.4 introduced support for enum
+
+a  short 🧵...</h2>
               </div>
             </div>
           </div>
@@ -97,37 +116,76 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python 3.11 comes with a new tomllib package in the...</span>
-                      <a href="#"><h4>Python 3.11 comes with a new tomllib package in the standard library. It allows us...</h4></a>
+                      <span>🐍 python 3.4 introduced support for enum
+
+a  short 🧵...</span>
+                      <a href="#"><h4>🐍 Python 3.4 introduced support for Enum
+
+A  short 🧵  on
+🔵 What are Enum...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
-                        <li><a href="#">2022-11-20 07:15:31.783174</a></li>
+                        <li><a href="#">2023-01-16 07:15:32.223468</a></li>
 
                       </ul>
-                      <p>Python 3.11 comes with a new tomllib package in the standard library. It allows us to read toml configuration files. 
+                      <p>🐍 Python 3.4 introduced support for Enum
 
-Never heard of toml? Then lets dive into it
+A  short 🧵  on
+🔵 What are Enum ?
+🔵 Why use Enum ?
+🔵 How to use Enum ?
+🔵 Practical Examples<br><br>What is Enum ?
 
-Thread 🧵👇🏾 <a href="https://t.co/zcPCpwzoBR">https://t.co/zcPCpwzoBR</a><br><br>TOML stands for Tom's Obvious Minimal Language. Its a format for (mainly) writing configuration files. You might think why we need another configuration format. Whats wrong with using xml, json or yaml? or even python itself?
-<a href="<a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a>"><a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a></a><br><br>The issue with XML is that it is simply too verbose. You have to type so much for simple configurations. You have to match open and close tags. Empty tags with no children have a weird syntax. It's really easy to mess it up. <a href="https://t.co/q7WC8Ywy6f">https://t.co/q7WC8Ywy6f</a><br><br>Unlike XML, JSON has a clean and minimal structure. It is easy to read a JSON file. Unfortunately, JSON has limitations. You can't add comments. JSON is very strict and will fail if you use single quotes instead of double quotes, or leave a trailing comma at the end of an array. <a href="https://t.co/hgzqxo2nQU">https://t.co/hgzqxo2nQU</a><br><br>That brings us to YAML😶 At first it seems to be easy enough to read and write YAML. But YAML is really, really complex with huge amount of bloat. Did you know that there are NINE different ways to write multi-line strings in YAML? It's a mess. Avoid.
+🔵Enum are best suited to represent a finite set of values such as Days of a week, Months in a year, HTTP Status Code, order status on an e-commerce site etc
 
-<a href="https://t.co/DEhvfy1LZB">https://t.co/DEhvfy1LZB</a><br><br>One approach that is taken is to put all the config into a python file. That way you can use the full power of the language. While it sounds good at first, it has one serious problem: it allows one to write and run arbitrary and potentially dangerous code in the config file.<br><br>And that's where TOML comes in. TOML has been designed to be simple to read and write. It supports things like comments and multi-line strings. It is minimal, having learnt the lesson from YAML. Still, it can easily represent complex nested structures that are used in app configs<br><br>Here is a toml file. We can define sections in square brackets like [build-system]. When parsed, they will become python dictionaries.  Sections can have subsections separated using . Below we have one section tool.poetry and a subsection tool.poetry.dependencies. <a href="https://t.co/O6YI1eYav2">https://t.co/O6YI1eYav2</a><br><br>Each section has key = value pairs. Values can be strings (4 types), numbers, arrays, objects and a few more. The configuration file is easy to read and modify by hand. There is no verbosity or deep indentation. Check out more examples in the spec
+🔵Python Enum use the class syntax but are not normal Python classes<br><br>Why use Enum ?
 
-<a href="<a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a>"><a href="https://t.co/y5PKOh1M3M">https://t.co/y5PKOh1M3M</a></a><br><br>Python now uses pyparsing.toml for configuration, and use of toml is increasing so it makes sense to add tomllib to the std lib. tomllib works similar to the json module, only thing you need open the file in "rb" mode. <a href="https://t.co/ZSZ3EIdPaq">https://t.co/ZSZ3EIdPaq</a><br><br>You will get this output after parsing <a href="https://t.co/an4Wg70AoB">https://t.co/an4Wg70AoB</a><br><br>One gotcha - tomllib can only read and parse toml files, it can't write them out. If you need to write toml output, check out tomli-w
+🔵Easy way to represent constants
 
-<a href="https://t.co/EzgvQn35w2">https://t.co/EzgvQn35w2</a><br><br>For a deeper dive into toml, check out the article below on the site. And if you are interested in intermediate level python, then be sure to follow @playfulpython 
+🔵Group constants together for easy access
 
-<a href="https://t.co/yY2FfjwYyW">https://t.co/yY2FfjwYyW</a></p>
+🔵Increase code readability
+
+🔵Writing better tests<br><br>How to use Enum ?
+
+🔵 Python Enum take the same for as a normal class
+
+🔵 Enum members have a name &amp; a value part
+         🟠 name is present on the left of =
+         🟠 value is present on the right of = <a href="https://t.co/DzAQiICnUg">https://t.co/DzAQiICnUg</a><br><br>How to use Enum ?
+
+🔵You can access Enum members using the
+          🟠 name
+          🟠 index
+          🟠 attributes name &amp; value <a href="https://t.co/AKu0d5G8sT">https://t.co/AKu0d5G8sT</a><br><br>Python supports multiple type of Enum implementations to suit a variety of requirements <a href="https://t.co/qlVA5mmnLZ">https://t.co/qlVA5mmnLZ</a><br><br>Practical Examples
+
+🔵The python standard library module http uses Enums to represent all the Http Status Codes which can be super useful <a href="https://t.co/98RMJSXuZp">https://t.co/98RMJSXuZp</a><br><br>Hello👋
+
+I am Jaydeep from India  🇮🇳
+
+Full time Software Engineer &amp; Part-time content creator on
+🐦Twitter
+🖧 Linkedin
+🎥YouTube
+
+Follow me for content on
+🐍 Python
+🤖Ai/ML
+🎨Data Visualization
+🌟Content creation
+
+Subscribe To My YouTube🔽
+<a href="https://t.co/3aI8jVqZMC">https://t.co/3aI8jVqZMC</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">toml</a></li>
-<li><a href="#">standard library</a></li>
-<li><a href="#">json</a></li>
-<li><a href="#">yaml</a></li>
-<li><a href="#">read</a></li>
+								<li><a href="#">HTTP Status Code</a></li>
+<li><a href="#">Increase code readability</a></li>
+<li><a href="#">time Software Engineer</a></li>
+<li><a href="#">Full time Software</a></li>
+<li><a href="#">access Enum members</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -289,7 +347,7 @@ Thread 🧵👇🏾 <a href="https://t.co/zcPCpwzoBR">https://t.co/zcPCpwzoBR</a
       }
     </script>
 
-<!--2308898568756220951-->
+<!--3726460384880360161-->
 
   </body>
 
