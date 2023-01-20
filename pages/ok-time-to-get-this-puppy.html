@@ -5,13 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python is one of the most versatile programming languages used in almost any industry🔥
+    <meta name="description" content="Ok!! Time to get this puppy rolling. 
 
-Add these...">
+The Goal: git gud at #BugBounty 
+The Method:...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python is one of the most versatile programming languages used...</title>
+    <title>Ok!! time to get this puppy rolling. 
+
+the goal: git...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +92,9 @@ Add these...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python is one of the most versatile programming languages used...</h2>
+                <h2>Ok!! time to get this puppy rolling. 
+
+the goal: git...</h2>
               </div>
             </div>
           </div>
@@ -111,49 +116,63 @@ Add these...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python is one of the most versatile programming languages used...</span>
-                      <a href="#"><h4>Python is one of the most versatile programming languages used in almost any industry🔥
+                      <span>Ok!! time to get this puppy rolling. 
 
-Add these...</h4></a>
+the goal: git...</span>
+                      <a href="#"><h4>Ok!! Time to get this puppy rolling. 
+
+The Goal: git gud at #BugBounty 
+The Method:...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-20 07:15:30.939439</a></li>
 
                       </ul>
-                      <p>Python is one of the most versatile programming languages used in almost any industry🔥
+                      <p>Ok!! Time to get this puppy rolling. 
 
-Add these incredible Python projects to your resume to land a high-paying job
+The Goal: git gud at #BugBounty 
+The Method: Labbing, lots and lots of Labbing.
 
-A Thread 🧵👇<br><br>1. 12 Beginner Python Projects - Coding Course
+This thread will be my write up of what I learned today.
 
-🔗https://t.co/CnjYegHspk<br><br>2. 5 Mini Python Projects - For Beginners
+Disclaimer: IDK what I'm doing right now, don't take my word as authoritative. On Anything. Ever.<br><br>Today's labs were focused on SQLi and XSS. Pretty neat stuff, I had an introduction to SQLi through an old Computerphile video ages ago, so the beginner labs on Portswigger Academy were pretty quick to clear. But what is SQLi you ask?
 
-🔗https://t.co/1QfJuTkKwb<br><br>3. 5 Unique Python Projects
+Here's my attempt to explain...<br><br>SQLi is short for SQL injection, the bare bones basics is when an app takes user input and puts it in a SQL query. Pretty common use case would be when implementing a search function.<br><br>It goes something like this: User enters a search keyword, server receives the search and places it directly into a SQL query to the database, the database returns the data from the query which is then sent back to the user and displayed as their search results.<br><br>Now, lets say I a real mean guy, and I decide to sent something else as my "search"
 
-🔗https://t.co/qgRwRN65f2<br><br>4. 15 Python Projects in Under 15 Minutes
+maybe is sent a ' -- instead. Turns out that those characters have special meaning in SQL, which means I can modify the query to return data I'm not supposed to have.<br><br>Naturally, SQLi has been a known vuln for a hot minute, so it usually won't be that simple. But the basic takeaway is to pay attention when user input is being used to perform server side functions. If that input isn't checked properly, I can get your server to give me things.<br><br>Onwards to XSS, which is an abbreviation for Cross Site Scripting.
 
-🔗https://t.co/zqnoWoIceH<br><br>5. 3 Python Automation Projects - For Beginners
+XSS comes in a few general flavors
+- Reflected
+- Stored
+- Dom Based
 
-🔗https://t.co/cZtQ0rqjJN<br><br>6. 20 Beginner Python Projects
+NGL, The XSS stuff still makes my brain hurt, but I think I got the general idea...<br><br>Broadly speaking, XSS revolves around getting custom (often malicious) Javascript to be run by the browser. 
 
-🔗https://t.co/4TTUuOhlaC<br><br>Its a wrap! Hope you loved it.
+In the case of reflected XSS the bad guy JS will be make use of the web server inserting user input into http responses. A good example is our old friend: Search<br><br>Say I make a search on some blog or news site, usually, when the search results load, I get anew page that has my search term displayed, something like "You Searched for: Hackin"
 
-If you liked this thread:
-1. Follow  @kakkeri32
-2. Retweet and Save this tweet
-3. Turn on notifications
+Now, what can happen, is if i make my search a Malicious &lt;script&gt; tag...<br><br>That tag will be taken by the server and inserted into the html of the response. Meaning I can get the resulting page to load with my own, custom JS. 
 
-I post threads related to web development, job openings, SEO, Tutorials, Cheat sheets, digital marketing and more. .  .</p>
+Why is this bad? Well, since that input might be passed using the URL, I can create a Evil URL and sent it to people...<br><br>If those people click the link, it loads that page up with my evil JS, which allows me to do loads of wicked things, like steal their delicious cookies.
+
+Stored XSS operates simularly. The primary difference is instead of using a URL, I can get my JS to be stored by the DataBase<br><br>I can pull that off through something like a comment or tweet, that gets stored as part of the site. The end result being that any page that causes that data to be loaded and used as part of the site can be contaminated with my Evil JS.<br><br>Ok, Finally, the Dom Based XSS. This one still hurts my head, but I'll give it a go.
+
+the gist of the scene seems to be using the actual code of the webpage itself. 
+
+Often, websites make use of functions that directly modify the page without reloading it...<br><br>In case where it take user input to do so, there are options to get Evil JS into the page once again.
+
+Honestly, thats about the best I can do with it right now. understanding DOM manipulation with JS and JQuery are definitely added to my list of things to research.<br><br>All things considered, The key takeaways from today for Bug Hunting seems to boil down to this: Understand how the App takes and uses User Input, if the app isn't filtering and controlling it properly, you can probably breach data or construct Evil Webpages.<br><br>Also, I really need to get familiar with JS analysis tools, trying to do some of those labs with pure page source reading was a pain.
+
+Until next time, Happy Hackin'</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Beginner Python Projects</a></li>
-<li><a href="#">Mini Python Projects</a></li>
-<li><a href="#">Unique Python Projects</a></li>
-<li><a href="#">Python Automation Projects</a></li>
-<li><a href="#">Python projects</a></li>
+								<li><a href="#">user input</a></li>
+<li><a href="#">XSS</a></li>
+<li><a href="#">search</a></li>
+<li><a href="#">user</a></li>
+<li><a href="#">input</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -315,7 +334,7 @@ I post threads related to web development, job openings, SEO, Tutorials, Cheat s
       }
     </script>
 
-<!--4872204651473232161-->
+<!--1124902570354822161-->
 
   </body>
 

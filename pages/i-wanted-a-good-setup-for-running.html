@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python is one of the most versatile programming languages used in almost any industry🔥
-
-Add these...">
+    <meta name="description" content="I wanted a good setup for running multiple services and a devnet in docker....">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python is one of the most versatile programming languages used...</title>
+    <title>I wanted a good setup for running multiple services and...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +87,7 @@ Add these...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python is one of the most versatile programming languages used...</h2>
+                <h2>I wanted a good setup for running multiple services and...</h2>
               </div>
             </div>
           </div>
@@ -111,49 +109,26 @@ Add these...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python is one of the most versatile programming languages used...</span>
-                      <a href="#"><h4>Python is one of the most versatile programming languages used in almost any industry🔥
-
-Add these...</h4></a>
+                      <span>I wanted a good setup for running multiple services and...</span>
+                      <a href="#"><h4>I wanted a good setup for running multiple services and a devnet in docker....</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-20 07:15:30.939439</a></li>
 
                       </ul>
-                      <p>Python is one of the most versatile programming languages used in almost any industry🔥
-
-Add these incredible Python projects to your resume to land a high-paying job
-
-A Thread 🧵👇<br><br>1. 12 Beginner Python Projects - Coding Course
-
-🔗https://t.co/CnjYegHspk<br><br>2. 5 Mini Python Projects - For Beginners
-
-🔗https://t.co/1QfJuTkKwb<br><br>3. 5 Unique Python Projects
-
-🔗https://t.co/qgRwRN65f2<br><br>4. 15 Python Projects in Under 15 Minutes
-
-🔗https://t.co/zqnoWoIceH<br><br>5. 3 Python Automation Projects - For Beginners
-
-🔗https://t.co/cZtQ0rqjJN<br><br>6. 20 Beginner Python Projects
-
-🔗https://t.co/4TTUuOhlaC<br><br>Its a wrap! Hope you loved it.
-
-If you liked this thread:
-1. Follow  @kakkeri32
-2. Retweet and Save this tweet
-3. Turn on notifications
-
-I post threads related to web development, job openings, SEO, Tutorials, Cheat sheets, digital marketing and more. .  .</p>
+                      <p>I wanted a good setup for running multiple services and a devnet in docker.  Here is what I came up with 🧵<br><br>The repo is an NX/PNPM based monorepo.  Nx is a package manager for doing caching and incremental builds <a href="https://t.co/ZEClWWLQZN.">https://t.co/ZEClWWLQZN.</a>   Pnpm is an npm/yarn alternative that is much faster because it's smarter about how much file system it uses when bundling <a href="https://t.co/iM7Fvy175d">https://t.co/iM7Fvy175d</a><br><br>Docker images usually start by using another docker image as it's base starting point.  First I tried using the official forge docker image.  <a href="https://t.co/9GjWTW3qkr">https://t.co/9GjWTW3qkr</a> This had issues though.  Getting nx to work in docker container was not easy<br><br>Docker has an OS called Alpine. It is a really light and small OS to start with.  Foundrys image is alpine based.  Node seems to go off the rails fast with alpine unless we stay close with the herd.  So I switched to using an official node image <a href="https://t.co/BvdWxbeRpN">https://t.co/BvdWxbeRpN</a><br><br>Additionally, installing a very specific version of node other than the supported one on Alpine is kinda complicated.   Installing forge onto any image is pretty straightforward though<br><br>Rather than use alpine, I made my life easier by using node:18.12.1-bullseye.   Bullseye is heavier, but easier to use as a Docker noob.  It's debian based<br><br>I build my entire repo so I can run anything via sending different commands into this one image.  Later I may use multistage builds to make them smaller <a href="https://t.co/TlQsRqcyYx">https://t.co/TlQsRqcyYx</a><br><br>The last thing I have to debug is setting `ENV NX_DAEMON=false` and I finally have a working dockerfile building my monorepo to run forge and typescript services <a href="https://t.co/myKW8mjpin">https://t.co/myKW8mjpin</a><br><br>Now I want to spin up every server plus a devnet in one easy command.  For that I use docker-compose.  Docker compose allows us to specify how all our services "compose together" in a simple yaml file <a href="https://t.co/6Bqr3WPHM1">https://t.co/6Bqr3WPHM1</a><br><br>Most of my services share configuration.  I put the shared configuration in a seperate yaml file <a href="https://t.co/dlzB3rLbHD">https://t.co/dlzB3rLbHD</a><br><br>Configuring a service is pretty simple and readable after pulling out the common config into `base-app`.   We simply pass in a command to run in our monorepo and what ports to map to outside ports <a href="https://t.co/2FbMex3BFA">https://t.co/2FbMex3BFA</a><br><br>For anvil, we add this special healthcheck method (later I will add a healthcheck to other services too.   We want anvil to be up and healthy before we deploy the contracts <a href="https://t.co/pYntNz64w4">https://t.co/pYntNz64w4</a><br><br>Lastly we deploy the contracts <a href="https://t.co/SJ9wUoSJ1l">https://t.co/SJ9wUoSJ1l</a><br><br>Now we just have to run `docker-compose up` and it spins everything up! <a href="https://t.co/5QyP5LiKZZ">https://t.co/5QyP5LiKZZ</a><br><br>My next step is to get another docker image running e2e tests with Playwright.  Playwright is what I believe is the best e2e test framework for web3 apps today <a href="https://t.co/wlewnS4Lb7">https://t.co/wlewnS4Lb7</a><br><br>I'm a complete docker noob and learned a lot here.   Let me know if there is anything I could do better.   The code can be viewed here <a href="https://t.co/HzWiHnTHIr">https://t.co/HzWiHnTHIr</a>
+<a href="https://t.co/nwtTDYPWWy">https://t.co/nwtTDYPWWy</a>
+<a href="https://t.co/LPpNjh3Mb2">https://t.co/LPpNjh3Mb2</a></p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Beginner Python Projects</a></li>
-<li><a href="#">Mini Python Projects</a></li>
-<li><a href="#">Unique Python Projects</a></li>
-<li><a href="#">Python Automation Projects</a></li>
-<li><a href="#">Python projects</a></li>
+								<li><a href="#">docker</a></li>
+<li><a href="#">docker image</a></li>
+<li><a href="#">wanted a good</a></li>
+<li><a href="#">good setup</a></li>
+<li><a href="#">image</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -315,7 +290,7 @@ I post threads related to web development, job openings, SEO, Tutorials, Cheat s
       }
     </script>
 
-<!--4872204651473232161-->
+<!--3112615701527612161-->
 
   </body>
 

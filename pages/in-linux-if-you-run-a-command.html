@@ -5,13 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Python is one of the most versatile programming languages used in almost any industry🔥
-
-Add these...">
+    <meta name="description" content="In Linux, if you run a command or script in a terminal, it will be...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Python is one of the most versatile programming languages used...</title>
+    <title>In linux, if you run a command or script in...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +87,7 @@ Add these...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Python is one of the most versatile programming languages used...</h2>
+                <h2>In linux, if you run a command or script in...</h2>
               </div>
             </div>
           </div>
@@ -111,49 +109,70 @@ Add these...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Python is one of the most versatile programming languages used...</span>
-                      <a href="#"><h4>Python is one of the most versatile programming languages used in almost any industry🔥
-
-Add these...</h4></a>
+                      <span>In linux, if you run a command or script in...</span>
+                      <a href="#"><h4>In Linux, if you run a command or script in a terminal, it will be...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-20 07:15:30.939439</a></li>
 
                       </ul>
-                      <p>Python is one of the most versatile programming languages used in almost any industry🔥
+                      <p>In Linux, if you run a command or script in a terminal, it will be terminated as soon as you exit your terminal. 
 
-Add these incredible Python projects to your resume to land a high-paying job
+But what if you want it to run in the background until it finishes, even if you exit the terminal? The nohup allows you to do that.
 
-A Thread 🧵👇<br><br>1. 12 Beginner Python Projects - Coding Course
+Learn more on nohup in this 🧵↓<br><br>How to make use of the nohup command:
 
-🔗https://t.co/CnjYegHspk<br><br>2. 5 Mini Python Projects - For Beginners
+The nohup command has the following syntax:
 
-🔗https://t.co/1QfJuTkKwb<br><br>3. 5 Unique Python Projects
+$ nohup COMMAND [ARG]
 
-🔗https://t.co/qgRwRN65f2<br><br>4. 15 Python Projects in Under 15 Minutes
+OR
 
-🔗https://t.co/zqnoWoIceH<br><br>5. 3 Python Automation Projects - For Beginners
+$ nohup OPTION<br><br>The nohup command is very simple; it has only two options:
 
-🔗https://t.co/cZtQ0rqjJN<br><br>6. 20 Beginner Python Projects
+--help - show this help and then exit
 
-🔗https://t.co/4TTUuOhlaC<br><br>Its a wrap! Hope you loved it.
+--version - print the version number and exit.<br><br>Let’s take a look at the following example:
 
-If you liked this thread:
-1. Follow  @kakkeri32
-2. Retweet and Save this tweet
-3. Turn on notifications
+Say, you to compress large amount of data using tar command and ensure that the compression continues even if you close the terminal window accidentally. To do so, use the following command: 
 
-I post threads related to web development, job openings, SEO, Tutorials, Cheat sheets, digital marketing and more. .  .</p>
+$  nohup tar -cvzf backup.tar.gz backups <a href="https://t.co/sLvNgCcHCa">https://t.co/sLvNgCcHCa</a><br><br>In the preceding example, nohup will execute the tar command in the foreground and redirect the tar command's  output to the nohup.out file. This file is generated in your current working directory. 
+
+$ cat nohup.out <a href="https://t.co/wJ5OCzYJj5">https://t.co/wJ5OCzYJj5</a><br><br>If the user has no write permissions  to the working directory, the file is generated in the user's home directory. 
+
+The tar command process will continue to execute even if you log out or close the terminal.<br><br>Backgrounding the nohup command process
+
+Using nohup in the foreground is ineffective because some commands or scripts can take long time to process and  you won't be able to interact with the shell until the command completes.<br><br>To run the command in the background is very simple, append the ampersand  (&amp;) symbol at the end of the command.
+
+When you use the ampersand symbol after a command, it separates it from the current shell and runs it as a background process on the system. <a href="https://t.co/eM7i56ynrg">https://t.co/eM7i56ynrg</a><br><br>The first thing displayed in square brackets is the job number [1] assigned to the background process by the shell. The next number (634131) is the process ID (PID) assigned to the process by the Linux system.<br><br>A new command-line interface prompt appears as soon as the system displays these items. You can see,  you are returned to your current shell, and the command you executed will be safely running in the background. 
+
+At this point, you can now enter new commands at the prompt.<br><br>Using the fg command, you can use the job ID to bring the command to the foreground.
+
+$ fg 634131 
+
+If you need to kill the process for any reason, use the kill command followed by the process ID: 
+
+$ kill -9 634131<br><br>nohup command defaults to redirecting command output to the nohup.out file. Use the standard shell redirection to direct the output to a different file.<br><br>To redirect standard output and standard error to tar-logs.out, for example, use: 
+
+$ nohup tar -cvzf backup.tar.gz backups &gt; tar-logs.out 2&gt;&amp;1 &amp; <a href="https://t.co/j79zVJjzS6">https://t.co/j79zVJjzS6</a><br><br>If you want to redirect standard output and standard error to different files, use the following command: 
+
+$ nohup tar -cvzf backup.tar.gz backups &gt; tar-logs.out 2&gt; tar-log-errors.out <a href="https://t.co/gR2l95dKYx">https://t.co/gR2l95dKYx</a><br><br>If you want to learn more about Linux command redirections we have wrote a thread on that, you can find it on the link below:
+
+<a href="https://t.co/kb9O8EMsnm">https://t.co/kb9O8EMsnm</a> <a href="https://t.co/MktlDesgqr">https://t.co/MktlDesgqr</a><br><br>You are not limited to using nohup to prevent a command from being terminated when you close the terminal or become disconnected. There are several other programs that can do the same thing; here are a few examples:<br><br>1. disown - is a shell builtin that removes a shell job from the shell's job control. Disown, unlike nohup, can be used on running processes.<br><br>3. screen -  also known as GNU Screen, is a terminal multiplexer program that allows you to launch a screen session and open an unlimited number of windows (virtual terminals) within it.<br><br>Even if you are disconnected, processes running in Screen will continue to run even if their window is not visible.<br><br>3. tmux -  is a modern replacement for the GNU screen. You can also use Tmux to create a session and open multiple windows within that session. Because Tmux sessions are persistent, programs running in Tmux will continue to run even if you close the terminal.<br><br>That's it for this thread!
+
+Hope you learn anything new from this thread? If so, please let us know by replying in the comments.
+
+If you're new here, do toss us a  follow us (@linuxopsys) for more threads, tips and resources on Linux.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Beginner Python Projects</a></li>
-<li><a href="#">Mini Python Projects</a></li>
-<li><a href="#">Unique Python Projects</a></li>
-<li><a href="#">Python Automation Projects</a></li>
-<li><a href="#">Python projects</a></li>
+								<li><a href="#">command</a></li>
+<li><a href="#">nohup command</a></li>
+<li><a href="#">nohup</a></li>
+<li><a href="#">tar command</a></li>
+<li><a href="#">nohup command process</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -315,7 +334,7 @@ I post threads related to web development, job openings, SEO, Tutorials, Cheat s
       }
     </script>
 
-<!--4872204651473232161-->
+<!--9087825943109012161-->
 
   </body>
 
