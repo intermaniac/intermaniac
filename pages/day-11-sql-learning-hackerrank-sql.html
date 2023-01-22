@@ -5,11 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know that there are lots of quality #Python podcasts you can listen to...">
+    <meta name="description" content="Day 11: SQL Learning
+
+✅ HackerRank SQL Basic Problem (Weather Observation Station 11)
+✅ HackerRank SQL Basic...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know that there are lots of quality #python...</title>
+    <title>Day 11: sql learning
+
+✅ hackerrank sql basic problem (weather observation...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +92,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know that there are lots of quality #python...</h2>
+                <h2>Day 11: sql learning
+
+✅ hackerrank sql basic problem (weather observation...</h2>
               </div>
             </div>
           </div>
@@ -109,44 +116,64 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know that there are lots of quality #python...</span>
-                      <a href="#"><h4>Did you know that there are lots of quality #Python podcasts you can listen to...</h4></a>
+                      <span>Day 11: sql learning
+
+✅ hackerrank sql basic problem (weather observation...</span>
+                      <a href="#"><h4>Day 11: SQL Learning
+
+✅ HackerRank SQL Basic Problem (Weather Observation Station 11)
+✅ HackerRank SQL Basic...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-22 07:15:28.476381</a></li>
 
                       </ul>
-                      <p>Did you know that there are lots of quality #Python podcasts you can listen to and level up with?
+                      <p>Day 11: SQL Learning
 
-Let's talk about a few of them in a mini-thread!
+✅ HackerRank SQL Basic Problem (Weather Observation Station 11)
+✅ HackerRank SQL Basic Problem (Weather Observation Station 12)
+✅ HackerRank SQL Basic Problem (Higher Than 75 Marks)
 
-🐍🧵👇<br><br>One of the most well-known is Michael Kennedy's (@mkennedy) Talk Python to Me Podcast @TalkPython
+A Thread 🧵<br><br>✅ HackerRank SQL Basic Problem (Weather Observation Station 11)
 
-<a href="https://t.co/zwqP1KorCe">https://t.co/zwqP1KorCe</a><br><br>Michael Kennedy wasn't satisfied with running just one Python podcast. He teamed up with Brian Okken @brianokken to create the Python Bytes Podcast @pythonbytes
+⤵️Problem Statement
 
-<a href="https://t.co/UrCGLSwGj2">https://t.co/UrCGLSwGj2</a><br><br>The Teaching Python Podcast @teachingpython with @KellyPared and @smtibor is also a great Podcast 🐍🏫
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.<br><br>The STATION table is described as follows:
 
-<a href="https://t.co/sVaz6ehMSz">https://t.co/sVaz6ehMSz</a><br><br>The Test and Code in Python Podcast is also hosted by Brian Okken @brianokken
+where LAT_N is the northern latitude and LONG_W is the western longitude. <a href="https://t.co/M6cWvbpsOp">https://t.co/M6cWvbpsOp</a><br><br>⤵️Solution(Oracle)
 
-<a href="https://t.co/p4LzB14SFO">https://t.co/p4LzB14SFO</a><br><br>Tobias Macey created the Podcast.__init__ podcast
+select distinct city from Station
+where not REGEXP_LIKE(lower(city),'^[aeiou]') 
+or not REGEXP_LIKE(city,'[aeiou]$');<br><br>✅ HackerRank SQL Basic Problem (Weather Observation Station 12)
 
-<a href="https://t.co/Y3djUtb89B">https://t.co/Y3djUtb89B</a><br><br>Last but not least is the Real Python Podcast @realpython
+⤵️Problem Statement
 
-<a href="https://t.co/n5uX4QdKRy">https://t.co/n5uX4QdKRy</a><br><br>Which #Python podcast(s) are you listening too? Who did I miss?
+Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.<br><br>⤵️Solution(Oracle)
 
-Let me know by adding them here!<br><br>Oops! I forgot to include the @pybites Podcast. Check them out too:
+select distinct city from Station
+where not REGEXP_LIKE(lower(city),'^[aeiou]')
+and not REGEXP_LIKE(city,'[aeiou]$');<br><br>✅ HackerRank SQL Basic Problem (Higher Than 75 Marks)
 
-<a href="https://t.co/RbMYggmyAz">https://t.co/RbMYggmyAz</a></p>
+⤵️Problem Statement<br><br>Query the Name of any student in STUDENTS who scored higher than 75 Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID<br><br>The STUDENTS table is described as follows: <a href="https://t.co/L8j3CiGF2D">https://t.co/L8j3CiGF2D</a><br><br>⤵️Solution(Oracle)
+
+select name from Students
+where marks &gt; 75
+order by substr(name,length(name)-3+1,length(name)), id;<br><br>That's it for this thread. Hope you find it helpful !🙌
+
+If you liked it, then you can follow me 
+@thisisdeepak07 for more such content.
+
+Thank you everyone for the support.💙</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Python podcast</a></li>
-<li><a href="#">Python Bytes Podcast</a></li>
-<li><a href="#">Teaching Python Podcast</a></li>
-<li><a href="#">Real Python Podcast</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">SQL Basic Problem</a></li>
+<li><a href="#">Weather Observation Station</a></li>
+<li><a href="#">HackerRank SQL Basic</a></li>
+<li><a href="#">Problem Statement Query</a></li>
+<li><a href="#">Basic Problem</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -308,7 +335,7 @@ Let me know by adding them here!<br><br>Oops! I forgot to include the @pybites P
       }
     </script>
 
-<!--4828131336003982161-->
+<!--8184762367697682161-->
 
   </body>
 

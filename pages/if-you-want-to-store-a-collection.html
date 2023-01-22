@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Did you know that there are lots of quality #Python podcasts you can listen to...">
+    <meta name="description" content="If you want to store a collection of objects, you might first reach for the...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Did you know that there are lots of quality #python...</title>
+    <title>If you want to store a collection of objects, you...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +87,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Did you know that there are lots of quality #python...</h2>
+                <h2>If you want to store a collection of objects, you...</h2>
               </div>
             </div>
           </div>
@@ -109,44 +109,38 @@
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Did you know that there are lots of quality #python...</span>
-                      <a href="#"><h4>Did you know that there are lots of quality #Python podcasts you can listen to...</h4></a>
+                      <span>If you want to store a collection of objects, you...</span>
+                      <a href="#"><h4>If you want to store a collection of objects, you might first reach for the...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-22 07:15:28.476381</a></li>
 
                       </ul>
-                      <p>Did you know that there are lots of quality #Python podcasts you can listen to and level up with?
+                      <p>If you want to store a collection of objects, you might first reach for the list data type. And that's a great choice. But python has other options too!
 
-Let's talk about a few of them in a mini-thread!
+Lets do a deep dive 🧵👇🏾<br><br>Before we can analyse the various options, we first need to understand how they are implemented. Lists can be implemented in two ways: as arrays or linked lists. Python lists are implemented as arrays, so lets take a look at how that works<br><br>The list datatype allocates a continuous chunk of memory and stores the references of the objects in the list there. Since the memory is continuous, you can easily know where a particular index is stored and directly read that memory to find the reference to that list element <a href="https://t.co/TLFjMfxPqR">https://t.co/TLFjMfxPqR</a><br><br>Python allocates more memory than items in the list, so that there is space to append new items to the list. When the memory gets full, python allocates a bigger chunk and copies all the data over to the new memory. This is slow, so python's algorithm tries to mimimise this <a href="https://t.co/GsakCF1k1W">https://t.co/GsakCF1k1W</a><br><br>There is a problem with this approach though. If you need to insert an item in the middle of the list, python needs to move subsequent data over by a space before inserting. Copying data is slow, so python list is not suited to a lot of inserts at the start or middle of the list <a href="https://t.co/Zk935ujSHg">https://t.co/Zk935ujSHg</a><br><br>The same goes for removing items from a list. Removing from the end is easy - just reduce the length of the list by one. But removing from any other position involves copying data to cover the gap created by the deleted item.<br><br>Summary of python lists:
 
-🐍🧵👇<br><br>One of the most well-known is Michael Kennedy's (@mkennedy) Talk Python to Me Podcast @TalkPython
+✅ Fast to access any element in the list
+✅ Fast to add or remove an item at the end of the list
+❌ Slow to add or remove items from the middle or start of the list<br><br>So what to do if we need to add or remove lots of items from the start of the list? Are we out of luck? 
 
-<a href="https://t.co/zwqP1KorCe">https://t.co/zwqP1KorCe</a><br><br>Michael Kennedy wasn't satisfied with running just one Python podcast. He teamed up with Brian Okken @brianokken to create the Python Bytes Podcast @pythonbytes
+No! 
 
-<a href="https://t.co/UrCGLSwGj2">https://t.co/UrCGLSwGj2</a><br><br>The Teaching Python Podcast @teachingpython with @KellyPared and @smtibor is also a great Podcast 🐍🏫
+Python provides other options apart from a list. We'll learn about those in the next thread.<br><br>By the way, we have a deep dive article on this topic on our site. If you prefer to read long form content, check it out
 
-<a href="https://t.co/sVaz6ehMSz">https://t.co/sVaz6ehMSz</a><br><br>The Test and Code in Python Podcast is also hosted by Brian Okken @brianokken
+<a href="https://t.co/uiXCbRKZpa">https://t.co/uiXCbRKZpa</a><br><br>And if you like reading deep dive python content, don't forget to follow @playfulpython for more such content.
 
-<a href="https://t.co/p4LzB14SFO">https://t.co/p4LzB14SFO</a><br><br>Tobias Macey created the Podcast.__init__ podcast
-
-<a href="https://t.co/Y3djUtb89B">https://t.co/Y3djUtb89B</a><br><br>Last but not least is the Real Python Podcast @realpython
-
-<a href="https://t.co/n5uX4QdKRy">https://t.co/n5uX4QdKRy</a><br><br>Which #Python podcast(s) are you listening too? Who did I miss?
-
-Let me know by adding them here!<br><br>Oops! I forgot to include the @pybites Podcast. Check them out too:
-
-<a href="https://t.co/RbMYggmyAz">https://t.co/RbMYggmyAz</a></p>
+See you at the next thread to learn of other options apart from the regular python list</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">Python podcast</a></li>
-<li><a href="#">Python Bytes Podcast</a></li>
-<li><a href="#">Teaching Python Podcast</a></li>
-<li><a href="#">Real Python Podcast</a></li>
-<li><a href="#">Python</a></li>
+								<li><a href="#">list</a></li>
+<li><a href="#">python</a></li>
+<li><a href="#">list data type</a></li>
+<li><a href="#">Python lists</a></li>
+<li><a href="#">memory</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -308,7 +302,7 @@ Let me know by adding them here!<br><br>Oops! I forgot to include the @pybites P
       }
     </script>
 
-<!--4828131336003982161-->
+<!--1443180906259382161-->
 
   </body>
 
