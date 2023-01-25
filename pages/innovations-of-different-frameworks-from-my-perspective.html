@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Remove the Image Background using 2 lines of Python code  
+    <meta name="description" content="Innovations of different frameworks from my perspective. @angular, React, @sveltjs, @solid_js, @QwikDev
 
-Source code and other...">
+🧵AngularJS was originally meant...">
     <meta name="author" content="Team intermaniac">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Remove the image background using 2 lines of python code...</title>
+    <title>Innovations of different frameworks from my perspective. @angular, react, @sveltjs,...</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +89,7 @@ Source code and other...">
           <div class="row">
             <div class="col-lg-12">
               <div class="text-content">
-                <h2>Remove the image background using 2 lines of python code...</h2>
+                <h2>Innovations of different frameworks from my perspective. @angular, react, @sveltjs,...</h2>
               </div>
             </div>
           </div>
@@ -111,36 +111,37 @@ Source code and other...">
                       <img src="../assets/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
-                      <span>Remove the image background using 2 lines of python code...</span>
-                      <a href="#"><h4>Remove the Image Background using 2 lines of Python code  
+                      <span>Innovations of different frameworks from my perspective. @angular, react, @sveltjs,...</span>
+                      <a href="#"><h4>Innovations of different frameworks from my perspective. @angular, React, @sveltjs, @solid_js, @QwikDev
 
-Source code and other...</h4></a>
+🧵AngularJS was originally meant...</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">2023-01-25 07:15:29.953257</a></li>
 
                       </ul>
-                      <p>Remove the Image Background using 2 lines of Python code  
+                      <p>Innovations of different frameworks from my perspective. @angular, React, @sveltjs, @solid_js, @QwikDev
 
-Source code and other details in the Thread 🧵👇 <a href="https://t.co/IMQ3ZXC4qV">https://t.co/IMQ3ZXC4qV</a><br><br>Find the source code here 👇
+🧵<br><br>AngularJS was originally meant to extend the HTML tag/attr vocabulary. This meant that AngularJS need to be reactive to any JS object change. Dirty checking was the only way to do it. The upside was that it just worked.<br><br>The other thing to understand is that HTML was partially a source of the truth. HTML attrs would control the FW behavior.<br><br>React introduce few innovations: JS was the source of truth, unidirectional data flow, JSX, and setState.
 
-Star the rep, if you like this program ⭐️
+setState was especially important because it told the FW when it should do dirty checking on the vDOM. This put dirty checking control in the developers hands.<br><br>All of this was course grained reactive. A change would trigger a large amount of JS execution to reconcile the DOM. This would cause performance problems especially with animation. Fine grained reactivity was needed.<br><br>Everyone understood and wanted to do fine grained reactivity. But it was not obvious how to do it with good developer ergonomics. Svelt took a stab at it with the compiler. This was great for compiled code but for non compiled code Svelt had to introduce. Stores.<br><br>Single mental model is always preferred! Here I think @solid_js did great work! It introduce syntax which was easy and it worked everywhere not just in compiled code. The other innovation was no need to explicitly subscribe or unsubscribe.<br><br>I should also call out MOBX which popularized many of reactivity concepts.
 
-<a href="https://t.co/Aux1b3cHr8">https://t.co/Aux1b3cHr8</a><br><br>I hope you like this program. 
+Fine grained reactivity is a win because it minimizes the amount of JS which needs to be executed on value change. Less JS faster app runtime.<br><br>The thing which fine grained reactivity does not solve is the amount of JS executed on startup. All components in the render tree need to execute on startup to build up the reactivity graph. Otherwise reactivity does not work.<br><br>This is where @QwikDev comes in. Resumability allows it to serialize the reactive graph such that nothing needs to execute on application startup.
 
-For more Python content, check out my profile @python_spaces 
+The application is reactive without any JS.<br><br>There are two wins.
 
-<a href="https://t.co/8bbxTFlGza">https://t.co/8bbxTFlGza</a></p>
+1) resumability allows no JS executed on app startup
+2) because reactivity graph is recovered most of the JS never runs. Hence more aggressive tree shaking and lazy loading. Often times only a fraction of JS needs to download.<br><br>There is a strong fine grained reactivity progress over the years. And each innovation stands on the shoulders of other giants.<br><br>@jesgma @MarkoDevTeam As far as compilers go I like them but also have a lot of healthy respect from them. Solving things at runtime is 1000 times simpler then in compiler. So I think they should be reserved for things which can’t be solved any other way.</p>
                       <div class="post-options">
                         <div class="row">
                           <div class="col-12">
                             <ul class="post-tags">
                               <li><i class="fa fa-tags"></i></li>
-								<li><a href="#">code Source code</a></li>
-<li><a href="#">Python code Source</a></li>
-<li><a href="#">Remove the Image</a></li>
-<li><a href="#">Image Background</a></li>
-<li><a href="#">Star the rep</a></li>
+								<li><a href="#">Fine grained reactivity</a></li>
+<li><a href="#">grained reactivity</a></li>
+<li><a href="#">Fine grained</a></li>
+<li><a href="#">reactivity</a></li>
+<li><a href="#">grained</a></li>
                             </ul>
                           </div>
                           <!--<div class="col-6">
@@ -302,7 +303,7 @@ For more Python content, check out my profile @python_spaces
       }
     </script>
 
-<!--7058390256867093161-->
+<!--8047718666009393161-->
 
   </body>
 
