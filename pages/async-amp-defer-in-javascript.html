@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Async &amp; Defer in Javascript! A thread 🔽 https://t.co/CELVXE1K5CAsync and defer are attributes that are...">
+    <meta name="author" content="Team intermaniac">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Async &amp; defer in javascript!  🔽 https://t.co/celvxe1k5casync and defer...</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+  </head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BWRY8HGLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5BWRY8HGLE');
+</script>
+
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><h2>Technology Blog<em>.</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">Blog Entries</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link d-none" href="../post-details.html">Post Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none" href="../contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h2>Async &amp; defer in javascript!  🔽 https://t.co/celvxe1k5casync and defer...</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section class="blog-posts grid-system">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="all-blog-posts">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="blog-post">
+                    <div class="blog-thumb d-none">
+                      <img src="../assets/images/blog-post-02.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                      <span>Async &amp; defer in javascript!  🔽 https://t.co/celvxe1k5casync and defer...</span>
+                      <a href="#"><h4>Async &amp; Defer in Javascript! A thread 🔽 https://t.co/CELVXE1K5CAsync and defer are attributes that are...</h4></a>
+                      <ul class="post-info">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">2023-02-11 07:15:30.124615</a></li>
+
+                      </ul>
+                      <p>Async &amp; Defer in Javascript! A thread 🔽 <a href="https://t.co/CELVXE1K5C">https://t.co/CELVXE1K5C</a><br><br>Async and defer are attributes that are used along with script tags to use the external scripts efficiently on our webpage<br><br>We will see 3 scenarios here
+- Using normal script tag
+- Using async attribute with the script tag
+- Using defer attribute with the script tag<br><br>What happens when we load a webpage?
+When we load a webpage there are two major things happening - one is HTML Parsing second is the loading of the scripts<br><br>Loading of the scripts contains two parts - fetching the script from the network and executing that script line by line<br><br>Whenever we load a webpage HTML Parsing starts and when the execution comes to the script, the parsing stops and the script starts executing - it fetches the script from the network and starts executing line by line, and when this finishes, then again HTML Parsing began's<br><br>Script Loading with Async
+In the case of async, the scripts are fetched from the network in parallel to HTML Parsing and when they are available in the browser then only the scripts start executing, and then only HTML Parsing is blocked at that period of time only<br><br>Script Loading with Defer
+In the case of defer also the scripts are fetched in parallel to HTML Parsing but they are executed only after the whole HTML Parsing finishes then only the scripts would start executing<br><br>Use Cases
+The async attribute doesn’t guarantee the order of execution of the scripts but defer does<br><br>For example, if we have a situation where multiple scripts are dependent on each other then using an async attribute is not a good choice as you don’t know which script would start executing in a particular order and it may break your code, use defer in this case<br><br>We may use async when scripts are not dependent on one another if want to use it with any external scripts such as google analytics and they are independent of each other, otherwise, we should prefer to use defer attribute!<br><br>That's a wrap! I hope you like it do retweet and share it with your network<br><br>Also follow this blog
+<a href="https://t.co/3ps4V6eEJx">https://t.co/3ps4V6eEJx</a></p>
+                      <div class="post-options">
+                        <div class="row">
+                          <div class="col-12">
+                            <ul class="post-tags">
+                              <li><i class="fa fa-tags"></i></li>
+								<li><a href="#">HTML Parsing</a></li>
+<li><a href="#">HTML Parsing starts</a></li>
+<li><a href="#">webpage HTML Parsing</a></li>
+<li><a href="#">HTML Parsing finishes</a></li>
+<li><a href="#">script</a></li>
+                            </ul>
+                          </div>
+                          <!--<div class="col-6">
+                            <ul class="post-share">
+                              <li><i class="fa fa-share-alt"></i></li>
+                              <li><a href="#">Facebook</a>,</li>
+                              <li><a href="#"> Twitter</a></li>
+                            </ul>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item comments">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+                      <ul>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item submit-comment">
+                    <div class="sidebar-heading">
+
+                    </div>
+                    <div class="content">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sidebar-item search">
+                    <form id="search_form" name="gs" method="GET" action="#">
+                      <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item recent-posts d-none">
+                    <div class="sidebar-heading">
+                      <h2>Recent Posts</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="post-details.html">
+                          <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
+                          <span>May 31, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
+                          <span>May 28, 2020</span>
+                        </a></li>
+                        <li><a href="post-details.html">
+                          <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
+                          <span>May 14, 2020</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item categories d-none">
+                    <div class="sidebar-heading">
+                      <h2>Categories</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a href="#">- Nature Lifestyle</a></li>
+                        <li><a href="#">- Awesome Layouts</a></li>
+                        <li><a href="#">- Creative Ideas</a></li>
+                        <li><a href="#">- Responsive Templates</a></li>
+                        <li><a href="#">- HTML5 / CSS3 Templates</a></li>
+                        <li><a href="#">- Creative &amp; Unique</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item tags">
+                    <div class="sidebar-heading">
+                      <h2>Tag Clouds</h2>
+                    </div>
+                    <div class="content d-none">
+                      <ul>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Motivation</a></li>
+                        <li><a href="#">PSD</a></li>
+                        <li><a href="#">Responsive</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Dribbble</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <div class="copyright-text">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/owl.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/isotope.js"></script>
+    <script src="../assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+<!--8408161559677899161-->
+
+  </body>
+
+</html>
